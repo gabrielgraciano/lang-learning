@@ -14,9 +14,11 @@ import { agendar, estadoDe } from './fsrs.js';
 import { NIVEL, DESCRICAO_NIVEL, nivelDe, molde, proximaDica, dicaEsgotada, alternativas, conferir, notaPara, partirFrase, respostaDe } from './niveis.js';
 import { montarSessao, cartaoDe, resumo } from './agenda.js';
 import { ligarCampo, montarTeclado } from './teclado.js';
+import { indexar, familiasDe, familias } from './sino.js';
 import * as banco from './armazenamento.js';
 
 const URL_DADOS = new URL('../dados/palavras.json', import.meta.url);
+const URL_HANJA = new URL('../dados/hanja.json', import.meta.url);
 
 const $ = (seletor) => document.querySelector(seletor);
 
@@ -69,6 +71,8 @@ const el = {
   jamo: $('#jamo'),
   padrao: $('#padrao'),
   parAntonimo: $('#par-antonimo'),
+  familia: $('#familia'),
+  familiaLista: $('#familia-lista'),
   blocoSom: $('#bloco-som'),
   somValor: $('#som-valor'),
   somRegra: $('#som-regra'),
@@ -91,6 +95,8 @@ const el = {
   voltarHoje: $('#voltar-hoje'),
 
   mapa: $('#mapa'),
+  blocoFamilias: $('#bloco-familias'),
+  listaFamilias: $('#lista-familias'),
   detalhe: $('#detalhe'),
 
   ritmo: $('#ritmo'),
@@ -112,6 +118,9 @@ let estado = banco.ler();
 /** @type {null | ReturnType<typeof novaSessao>} */
 let sessao = null;
 let campo = null;
+/** hanja → significado, e o índice morfema → palavras, montados no carregamento. */
+let hanja = {};
+let indiceSino = new Map();
 
 const doisDigitos = (n) => String(n).padStart(2, '0');
 
@@ -432,6 +441,8 @@ function mostrarGabarito(palavra, acertou) {
     el.parAntonimo.replaceChildren('o oposto é ', oposto, ` — ${par.pt}`);
   }
 
+  pintarFamilia(palavra);
+
   // A pronúncia só aparece quando ela contradiz a escrita — que é exatamente
   // quando ela ensina alguma coisa.
   const fala = pronunciar(palavra.hangul, palavra.pronuncia);
@@ -460,6 +471,48 @@ function mostrarGabarito(palavra, acertou) {
 
   falar(palavra.hangul);
   el.seguir.focus();
+}
+
+/**
+ * O morfema compartilhado, e onde mais ele aparece.
+ *
+ * Enquanto 학교 e 학생 forem duas palavras isoladas, são duas coisas para
+ * decorar. No instante em que 學 = "estudar" fica visível nas duas, vocabulário
+ * vira sistema — e 학년, 대학, 유학 passam a ser dedutíveis em vez de novas.
+ */
+function pintarFamilia(palavra) {
+  const grupos = familiasDe(palavra, indiceSino, hanja);
+  el.familia.hidden = grupos.length === 0;
+  if (!grupos.length) return;
+
+  el.familiaLista.replaceChildren(...grupos.map(({ hanja: ideograma, significado, parentes }) => {
+    const item = document.createElement('li');
+
+    const glifo = document.createElement('span');
+    glifo.className = 'hanja';
+    glifo.lang = 'zh';
+    glifo.textContent = ideograma;
+
+    const corpo = document.createElement('span');
+    corpo.className = 'familia-corpo';
+
+    const sentido = document.createElement('span');
+    sentido.className = 'familia-sig';
+    sentido.textContent = significado;
+
+    const lista = document.createElement('span');
+    lista.className = 'familia-parentes';
+    lista.append(...parentes.flatMap((p, i) => {
+      const alvo = document.createElement('b');
+      alvo.lang = 'ko';
+      alvo.textContent = p.hangul;
+      return i === 0 ? [alvo, ` ${p.pt}`] : [' · ', alvo, ` ${p.pt}`];
+    }));
+
+    corpo.append(sentido, lista);
+    item.append(glifo, corpo);
+    return item;
+  }));
 }
 
 /** Desmonta a palavra nas peças de cada sílaba: 고양이 → ㄱㅗ · ㅇㅑㅇ · ㅇㅣ */
@@ -628,6 +681,43 @@ function pintarMapa() {
     secao.append(titulo, grade);
     return secao;
   }));
+
+  pintarFamilias();
+}
+
+function pintarFamilias() {
+  const grupos = familias(indiceSino, hanja);
+  el.blocoFamilias.hidden = grupos.length === 0;
+  if (!grupos.length) return;
+
+  el.listaFamilias.replaceChildren(...grupos.map(({ hanja: ideograma, significado, palavras: membros }) => {
+    const item = document.createElement('li');
+
+    const glifo = document.createElement('span');
+    glifo.className = 'hanja';
+    glifo.lang = 'zh';
+    glifo.textContent = ideograma;
+
+    const corpo = document.createElement('span');
+    corpo.className = 'familia-corpo';
+
+    const sentido = document.createElement('span');
+    sentido.className = 'familia-sig';
+    sentido.textContent = significado;
+
+    const lista = document.createElement('span');
+    lista.className = 'familia-parentes';
+    lista.append(...membros.flatMap((p, i) => {
+      const alvo = document.createElement('b');
+      alvo.lang = 'ko';
+      alvo.textContent = p.hangul;
+      return i === 0 ? [alvo] : [' · ', alvo];
+    }));
+
+    corpo.append(sentido, lista);
+    item.append(glifo, corpo);
+    return item;
+  }));
 }
 
 function mostrarDetalhe(palavra) {
@@ -782,9 +872,11 @@ if (window.speechSynthesis) {
 // -------------------------------------------------------------- carregamento
 
 try {
-  const resposta = await fetch(URL_DADOS);
-  if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`);
-  palavras = await resposta.json();
+  const [respostaPalavras, respostaHanja] = await Promise.all([fetch(URL_DADOS), fetch(URL_HANJA)]);
+  if (!respostaPalavras.ok) throw new Error(`HTTP ${respostaPalavras.status}`);
+  palavras = await respostaPalavras.json();
+  hanja = respostaHanja.ok ? await respostaHanja.json() : {};
+  indiceSino = indexar(palavras);
 
   campo = ligarCampo(el.resposta, { aoEnviar: responderDigitado });
   el.areaTeclado.append(montarTeclado(campo, responderDigitado));

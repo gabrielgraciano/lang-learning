@@ -33,6 +33,11 @@ desenho com as opacidades trocadas: o contraste desambigua "grande" de "bola", e
 a ênfase desambigua qual dos dois lados está sendo pedido. Verbo se ilustra com
 figura em ação — sempre o mesmo personagem, que vira mascote de graça.
 
+**Vocabulário vira sistema.** Cerca de 70% do coreano é sino-coreano. Quando
+você acerta 학생, o gabarito mostra que o 학 é o mesmo de 학교 (學, "estudar") e
+que o 생 é o mesmo de 선생님 (生, "viver") — o que era lista de palavras passa a
+ser rede de morfemas. O índice se monta sozinho a partir dos dados.
+
 **O progresso é memória medida.** No mapa, cada palavra é uma célula cuja cor é
 o estado real do cartão. Quando a palavra fica firme, a célula revela a
 ilustração — a grade vira álbum.
@@ -86,9 +91,11 @@ src/pronuncia.js           # deriva o som a partir da escrita
 src/fsrs.js                # FSRS-5 (pesos padrão) e estados de memória
 src/niveis.js              # a escada de 4 níveis, distratores, dicas
 src/agenda.js              # a fila do dia
+src/sino.js                # morfemas sino-coreanos e famílias de palavras
 src/teclado.js             # transliteração 두벌식 e teclado de tela
 src/armazenamento.js       # progresso, registro, exportar/importar
 dados/palavras.json        # fonte da verdade do vocabulário
+dados/hanja.json           # morfema → significado
 assets/ilustracoes/*.svg   # uma ilustração por palavra
 docs/fundamentacao.md      # por que o app é assim
 ```
@@ -111,7 +118,7 @@ Card ilustrado:
   "modulo": "lugares",
   "imageabilidade": 5,
   "topik": 1,
-  "sino": ["學", "校"],
+  "sino": { "학": "學", "교": "校" },
   "confundiveis": ["estudante", "restaurante"],
   "exemplo": { "ko": "학교에 다녀요.", "pt": "Frequento a escola." },
   "nota": "Escreve-se com dois ㄱ seguidos, mas o segundo endurece: [학꾜]."
@@ -146,8 +153,9 @@ aparece legível.
 | `exemplo`, `nota` | o gabarito de especialista; uma tradução seca não basta |
 | `imageabilidade` | 1 a 5, curadoria manual — o critério de entrada no baralho |
 | `pronuncia` | só quando a regra não dá conta (물고기 → 물꼬기); o normal é deixar em branco e o motor derivar |
-| `sino` | hanja dos morfemas, para as famílias de palavras mais adiante |
-| `classe` | `substantivo`, `verbo`, `adjetivo` ou `funcional` — impede que a múltipla escolha ofereça um substantivo onde só cabe um verbo |
+| `sino` | mapa sílaba → hanja (`{"학":"學","교":"校"}`); alimenta as famílias. Por sílaba e não por posição, porque em 빨간색 só o 색 é sino-coreano |
+| `classe` | `substantivo`, `verbo`, `adjetivo`, `numeral` ou `funcional` — impede que a múltipla escolha ofereça um substantivo onde só cabe um verbo |
+| `campo` | subgrupo dentro do módulo; é o que mantém os distratores dentro do mesmo sistema (nativo vs. sino nos números) |
 | `par` | id do antônimo; obrigatório em adjetivo, que só se aprende em par |
 | `tipo` | `frase` transforma o card: o estímulo passa a ser a frase com lacuna |
 | `frase` | `{ ko, pt }`, com `{}` marcando onde a palavra entra |
@@ -171,11 +179,20 @@ aparece legível.
 | Ações | 20 | ilustrado, figura em ação |
 | Qualidades | 12 | ilustrado, par antônimo com ênfase |
 | Alta frequência | 16 | frase com lacuna |
-| **Total** | **82** | |
+| Números nativos | 10 | ilustrado, fichas contáveis |
+| Números sino-coreanos | 10 | frase com lacuna |
+| Cores | 6 | ilustrado |
+| Contadores | 6 | frase com lacuna |
+| **Total** | **114** | |
+
+O coreano tem dois sistemas de número, e um desenho de três fichas ilustra 셋 e
+삼 igualmente bem. Por isso o nativo é ilustrado (contar coisas *é* o domínio
+dele) e o sino-coreano vem em frase, onde o contexto — 월, 층, 분 — força o
+sistema. Contador também é frase, porque contador nunca aparece sozinho.
 
 ## Próximos passos
 
 - Tela interna com os itens de maior taxa de erro — detector de ilustração ambígua
-- Sistemas fechados: números, cores, contadores
-- Famílias de palavras por morfema sino-coreano (o campo `sino` já está lá)
+- Palavras de tempo: 오늘, 내일, 어제, 아침, 저녁, 주말
 - Mais vocabulário de alta frequência no formato de frase
+- Alinhamento explícito com os níveis TOPIK

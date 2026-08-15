@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="10 fichas">
+  <circle cx="100" cy="100" r="94" fill="#EAF1F5"/>
+  <circle cx="40" cy="80" r="12" fill="#2F6F86"/>
+  <circle cx="70" cy="80" r="12" fill="#2F6F86"/>
+  <circle cx="100" cy="80" r="12" fill="#2F6F86"/>
+  <circle cx="130" cy="80" r="12" fill="#2F6F86"/>
+  <circle cx="160" cy="80" r="12" fill="#2F6F86"/>
+  <circle cx="40" cy="120" r="12" fill="#2F6F86"/>
+  <circle cx="70" cy="120" r="12" fill="#2F6F86"/>
+  <circle cx="100" cy="120" r="12" fill="#2F6F86"/>
+  <circle cx="130" cy="120" r="12" fill="#2F6F86"/>
+  <circle cx="160" cy="120" r="12" fill="#2F6F86"/>
+</svg>
