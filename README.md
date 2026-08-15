@@ -154,7 +154,8 @@ aparece legível.
 | `imageabilidade` | 1 a 5, curadoria manual — o critério de entrada no baralho |
 | `pronuncia` | só quando a regra não dá conta (물고기 → 물꼬기); o normal é deixar em branco e o motor derivar |
 | `sino` | mapa sílaba → hanja (`{"학":"學","교":"校"}`); alimenta as famílias. Por sílaba e não por posição, porque em 빨간색 só o 색 é sino-coreano |
-| `classe` | `substantivo`, `verbo`, `adjetivo` ou `funcional` — impede que a múltipla escolha ofereça um substantivo onde só cabe um verbo |
+| `classe` | `substantivo`, `verbo`, `adjetivo`, `numeral` ou `funcional` — impede que a múltipla escolha ofereça um substantivo onde só cabe um verbo |
+| `campo` | subgrupo dentro do módulo; é o que mantém os distratores dentro do mesmo sistema (nativo vs. sino nos números) |
 | `par` | id do antônimo; obrigatório em adjetivo, que só se aprende em par |
 | `tipo` | `frase` transforma o card: o estímulo passa a ser a frase com lacuna |
 | `frase` | `{ ko, pt }`, com `{}` marcando onde a palavra entra |
