@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Três quadros a distâncias diferentes de quem fala">
+  <circle cx="100" cy="100" r="94" fill="#E3E6EC"/>
+  <path d="M18 160h164" stroke="#BCC4D2" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <rect x="22" y="98" width="58" height="58" rx="5" fill="#2F5F7E"/>
+  <rect x="94" y="112" width="42" height="44" rx="4" fill="#6E8FA8"/>
+  <rect x="148" y="126" width="28" height="30" rx="3" fill="#A9B8C8"/>
+  <g fill="#A8443A">
+    <circle cx="51" cy="52" r="15"/>
+    <path d="M51 70c-11 0-19 12-19 22h38c0-10-8-22-19-22z"/>
+  </g>
+  <g fill="#B58A34">
+    <circle cx="115" cy="66" r="12"/>
+    <path d="M115 80c-9 0-15 10-15 18h30c0-8-6-18-15-18z"/>
+  </g>
+  <path d="M66 86l30 -8" stroke="#8E9CAE" stroke-width="4" stroke-dasharray="7 6" fill="none"/>
+  <path d="M132 96l28 24" stroke="#8E9CAE" stroke-width="4" stroke-dasharray="7 6" fill="none"/>
+</svg>

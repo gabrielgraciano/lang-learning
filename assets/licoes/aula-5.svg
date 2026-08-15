@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Dois quadros que se somam num terceiro">
+  <circle cx="100" cy="100" r="94" fill="#DEE8EA"/>
+  <rect x="26" y="46" width="52" height="52" rx="4" fill="#2F6B7E"/>
+  <rect x="96" y="46" width="52" height="52" rx="4" fill="#6FA3AE" stroke="#2F6B7E" stroke-width="4"/>
+  <g stroke="#2F6B7E" stroke-width="8" stroke-linecap="round">
+    <path d="M87 72h-1"/><path d="M82 62v20"/><path d="M72 72h20" transform="translate(10)"/>
+  </g>
+  <g stroke="#2F6B7E" stroke-width="9" stroke-linecap="round">
+    <path d="M84 118h32"/><path d="M84 136h32"/>
+  </g>
+  <rect x="26" y="152" width="122" height="30" rx="4" fill="#2F6B7E"/>
+  <rect x="96" y="152" width="52" height="30" fill="#6FA3AE"/>
+  <path d="M148 152h26v30h-26z" fill="#B58A34"/>
+  <path d="M148 46h26v52h-26z" fill="#B58A34"/>
+</svg>

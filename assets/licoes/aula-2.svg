@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Dois balões de fala, um concordando e outro discordando">
+  <circle cx="100" cy="100" r="94" fill="#E2E9DE"/>
+  <path d="M28 46h96a12 12 0 0 1 12 12v44a12 12 0 0 1-12 12H62l-20 20v-20H28a12 12 0 0 1-12-12V58a12 12 0 0 1 12-12z" fill="#2F6B4F"/>
+  <path d="M52 82l14 16 28-32" fill="none" stroke="#EAF1E7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M172 96h-72a12 12 0 0 0-12 12v40a12 12 0 0 0 12 12h50l20 18v-18h2a12 12 0 0 0 12-12v-40a12 12 0 0 0-12-12z" fill="#A8443A"/>
+  <g stroke="#F5E7E4" stroke-width="12" stroke-linecap="round">
+    <path d="M112 116l36 28"/><path d="M148 116l-36 28"/>
+  </g>
+</svg>

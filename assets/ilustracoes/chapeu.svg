@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Boné">
+  <circle cx="100" cy="100" r="94" fill="#E7E2EE"/>
+  <path d="M96 44c30 0 54 22 54 50v20H42V94c0-28 24-50 54-50z" fill="#5B4E86"/>
+  <path d="M100 44c28 1 50 23 50 50v20h-50z" fill="#4C4173"/>
+  <path d="M42 108h108c22 0 34 10 34 20H42z" fill="#6E60A0"/>
+  <path d="M96 44c8 0 12 22 12 50v20H84V94c0-28 4-50 12-50z" fill="#7A6BB2" opacity=".55"/>
+  <circle cx="96" cy="50" r="8" fill="#D9A441"/>
+</svg>

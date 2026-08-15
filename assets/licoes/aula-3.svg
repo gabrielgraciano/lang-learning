@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma pessoa parada acenando enquanto outra se afasta">
+  <circle cx="100" cy="100" r="94" fill="#E4E3EC"/>
+  <g fill="#4F4A82">
+    <circle cx="56" cy="74" r="17"/>
+    <path d="M38 150c0-22 8-46 18-46h0c10 0 18 24 18 46z"/>
+  </g>
+  <path d="M72 100c8-12 6-24-2-32" fill="none" stroke="#4F4A82" stroke-width="10" stroke-linecap="round"/>
+  <g fill="#B08238">
+    <circle cx="146" cy="76" r="17"/>
+    <path d="M126 150c2-22 12-46 22-44h0c10 2 14 26 10 44z"/>
+    <path d="M124 148l-8 20 12 4 10-20z"/>
+    <path d="M152 150l8 20-12 4-8-20z"/>
+  </g>
+  <path d="M96 120h34" fill="none" stroke="#8E8AA8" stroke-width="7" stroke-linecap="round"/>
+  <path d="M124 110l14 10-14 10" fill="none" stroke="#8E8AA8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28 170h144" stroke="#C3C1D2" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

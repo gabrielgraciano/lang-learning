@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Dicionário">
+  <circle cx="100" cy="100" r="94" fill="#EDE6DC"/>
+  <path d="M44 40h100a16 16 0 0 1 16 16v104a16 16 0 0 1-16 16H44z" fill="#8C5A3C"/>
+  <path d="M100 40h44a16 16 0 0 1 16 16v104a16 16 0 0 1-16 16h-44z" fill="#7A4B31"/>
+  <path d="M56 48h94v104H56z" fill="#FCF8F1"/>
+  <g fill="#D8CBB8">
+    <rect x="68" y="66" width="30" height="6" rx="3"/>
+    <rect x="68" y="82" width="66" height="5" rx="2.5"/>
+    <rect x="68" y="96" width="52" height="5" rx="2.5"/>
+    <rect x="68" y="114" width="30" height="6" rx="3"/>
+    <rect x="68" y="130" width="66" height="5" rx="2.5"/>
+  </g>
+  <rect x="44" y="40" width="12" height="136" fill="#6B4029"/>
+  <g fill="#C7563F">
+    <rect x="150" y="60" width="10" height="18" rx="2"/>
+    <rect x="150" y="96" width="10" height="18" rx="2"/>
+  </g>
+</svg>

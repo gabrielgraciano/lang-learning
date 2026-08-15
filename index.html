@@ -48,6 +48,15 @@
         <p id="semana-resumo" class="rodape-nota"></p>
       </section>
 
+      <section class="bloco">
+        <h2 class="rotulo">Gramática</h2>
+        <button id="atalho-nivel1" class="cartao-atalho" type="button" data-ir="nivel1">
+          <span class="cartao-atalho-titulo">Nível 1</span>
+          <span class="cartao-atalho-nota">Oito aulas, do primeiro “oi” à primeira negação.</span>
+          <span id="atalho-nivel1-progresso" class="cartao-atalho-progresso"></span>
+        </button>
+      </section>
+
       <nav class="atalhos">
         <button class="botao" type="button" data-ir="mapa">Mapa do vocabulário</button>
         <button class="botao" type="button" data-ir="ajustes">Ajustes</button>
@@ -192,6 +201,60 @@
       </section>
 
       <aside id="detalhe" class="detalhe" hidden aria-live="polite"></aside>
+    </section>
+
+    <!-- ======================= Nível 1 ======================= -->
+    <section id="tela-nivel1" class="tela" hidden>
+      <header class="cabecalho-tela">
+        <button class="botao-icone" type="button" data-ir="hoje" aria-label="Voltar">←</button>
+        <h2 class="titulo-tela">Nível 1</h2>
+      </header>
+
+      <p class="intro">Aqui a gramática é lida, não adivinhada. Cada aula explica
+        um ponto, mostra a frase pronta e passa a palavra para você — o exercício
+        fica a um toque do parágrafo que o explica.</p>
+
+      <p id="nivel1-progresso" class="rodape-nota"></p>
+
+      <ol id="lista-aulas" class="lista-aulas"></ol>
+
+      <p class="rodape-nota">O progresso das aulas fica neste navegador, junto
+        com o do baralho, e sai pelo mesmo botão de exportar.</p>
+    </section>
+
+    <!-- ======================= Uma aula ======================= -->
+    <section id="tela-aula" class="tela" hidden>
+      <header class="cabecalho-tela">
+        <button class="botao-icone" type="button" data-ir="nivel1" aria-label="Voltar para as aulas">←</button>
+        <h2 class="titulo-tela" id="aula-titulo"></h2>
+      </header>
+
+      <div class="aula-capa">
+        <img id="aula-ilustracao" class="aula-ilustracao" src="" alt="">
+        <p class="aula-selo" id="aula-selo" lang="ko" aria-hidden="true"></p>
+        <p class="aula-hangul" id="aula-hangul" lang="ko"></p>
+        <p class="aula-resumo" id="aula-resumo"></p>
+        <p class="aula-objetivo" id="aula-objetivo"></p>
+      </div>
+
+      <div class="abas" role="tablist" aria-label="Partes da aula">
+        <button class="aba" type="button" role="tab" id="aba-explicacao"
+                aria-controls="painel-explicacao" aria-selected="true" data-aba="explicacao">
+          Explicação
+        </button>
+        <button class="aba" type="button" role="tab" id="aba-exercicios"
+                aria-controls="painel-exercicios" aria-selected="false" data-aba="exercicios">
+          Exercícios <span id="aba-exercicios-contagem" class="aba-contagem"></span>
+        </button>
+      </div>
+
+      <div id="painel-explicacao" class="painel" role="tabpanel" aria-labelledby="aba-explicacao" tabindex="-1"></div>
+      <div id="painel-exercicios" class="painel" role="tabpanel" aria-labelledby="aba-exercicios" tabindex="-1" hidden></div>
+
+      <nav class="passo-aula">
+        <button id="aula-anterior" class="botao" type="button">← Aula anterior</button>
+        <button id="aula-proxima" class="botao" type="button">Próxima aula →</button>
+      </nav>
     </section>
 
     <!-- ======================= Ajustes ======================= -->
