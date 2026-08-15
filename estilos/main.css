@@ -28,6 +28,9 @@
 
   --f-hangul: "Gowun Batang", "Apple SD Gothic Neo", "Malgun Gothic",
               "Noto Serif KR", serif;
+  /* Gowun Batang cobre 한글, não hanja: os ideogramas precisam da própria pilha. */
+  --f-hanja: "Noto Serif KR", "Noto Serif CJK KR", "Songti SC", "SimSun",
+             "Apple SD Gothic Neo", "Malgun Gothic", serif;
   --f-ui: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
   --f-nota: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
@@ -792,6 +795,87 @@ kbd {
   font-size: 1.15rem;
   color: var(--tinta);
 }
+
+/* -------------------------------------------- famílias sino-coreanas */
+
+/* O hanja mora numa célula, como as peças de jamo e como as sílabas da marca —
+   é a mesma unidade do 원고지 aplicada ao morfema. */
+.hanja {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--papel);
+  font-family: var(--f-hanja);
+  font-size: 1.45rem;
+  line-height: 1;
+  color: var(--tinta);
+}
+
+.familia {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--linha);
+}
+
+.familia[hidden] { display: none; }
+
+.familia-titulo {
+  margin: 0 0 10px;
+  font-family: var(--f-nota);
+  font-size: .68rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--tinta-2);
+}
+
+.familia-lista,
+.lista-familias {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.familia-lista li,
+.lista-familias li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.familia-corpo {
+  display: grid;
+  gap: 1px;
+  min-width: 0;
+}
+
+.familia-sig {
+  font-family: var(--f-nota);
+  font-size: .72rem;
+  letter-spacing: .04em;
+  color: var(--tinta-2);
+}
+
+.familia-parentes {
+  font-size: .88rem;
+  line-height: 1.45;
+  color: var(--tinta-2);
+  word-break: keep-all;
+}
+
+.familia-parentes b {
+  font-family: var(--f-hangul);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--tinta);
+}
+
+.lista-familias { gap: 12px; }
 
 /* A pronúncia só ganha espaço quando ela contradiz a grafia. */
 .bloco-som {

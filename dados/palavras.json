@@ -168,10 +168,10 @@
     "modulo": "comida",
     "imageabilidade": 5,
     "topik": 1,
-    "sino": [
-      "鷄",
-      "卵"
-    ],
+    "sino": {
+      "계": "鷄",
+      "란": "卵"
+    },
     "confundiveis": [
       "maca",
       "pao"
@@ -193,10 +193,10 @@
     "campo": "bebida",
     "imageabilidade": 5,
     "topik": 1,
-    "sino": [
-      "牛",
-      "乳"
-    ],
+    "sino": {
+      "우": "牛",
+      "유": "乳"
+    },
     "confundiveis": [
       "agua",
       "cafe"
@@ -258,10 +258,10 @@
     "modulo": "pessoas",
     "imageabilidade": 4,
     "topik": 1,
-    "sino": [
-      "學",
-      "生"
-    ],
+    "sino": {
+      "학": "學",
+      "생": "生"
+    },
     "confundiveis": [
       "escola",
       "professor",
@@ -283,10 +283,10 @@
     "modulo": "pessoas",
     "imageabilidade": 4,
     "topik": 1,
-    "sino": [
-      "親",
-      "舊"
-    ],
+    "sino": {
+      "친": "親",
+      "구": "舊"
+    },
     "confundiveis": [
       "pessoa",
       "estudante"
@@ -307,10 +307,10 @@
     "modulo": "pessoas",
     "imageabilidade": 4,
     "topik": 1,
-    "sino": [
-      "先",
-      "生"
-    ],
+    "sino": {
+      "선": "先",
+      "생": "生"
+    },
     "confundiveis": [
       "estudante",
       "pessoa"
@@ -410,9 +410,9 @@
     "modulo": "casa",
     "imageabilidade": 5,
     "topik": 1,
-    "sino": [
-      "門"
-    ],
+    "sino": {
+      "문": "門"
+    },
     "confundiveis": [
       "casa",
       "cadeira"
@@ -432,10 +432,10 @@
     "modulo": "casa",
     "imageabilidade": 5,
     "topik": 1,
-    "sino": [
-      "椅",
-      "子"
-    ],
+    "sino": {
+      "의": "椅",
+      "자": "子"
+    },
     "confundiveis": [
       "porta",
       "bolsa"
@@ -456,9 +456,6 @@
     "modulo": "objetos",
     "imageabilidade": 5,
     "topik": 1,
-    "sino": [
-      "冊"
-    ],
     "confundiveis": [
       "bolsa",
       "relogio"
@@ -518,10 +515,10 @@
     "modulo": "objetos",
     "imageabilidade": 5,
     "topik": 1,
-    "sino": [
-      "時",
-      "計"
-    ],
+    "sino": {
+      "시": "時",
+      "계": "計"
+    },
     "confundiveis": [
       "dinheiro",
       "livro"
@@ -601,9 +598,9 @@
     "modulo": "natureza",
     "imageabilidade": 5,
     "topik": 1,
-    "sino": [
-      "山"
-    ],
+    "sino": {
+      "산": "山"
+    },
     "confundiveis": [
       "mar",
       "arvore"
@@ -663,10 +660,10 @@
     "modulo": "lugares",
     "imageabilidade": 5,
     "topik": 1,
-    "sino": [
-      "學",
-      "校"
-    ],
+    "sino": {
+      "학": "學",
+      "교": "校"
+    },
     "confundiveis": [
       "estudante",
       "restaurante",
@@ -688,10 +685,10 @@
     "modulo": "lugares",
     "imageabilidade": 4,
     "topik": 1,
-    "sino": [
-      "食",
-      "堂"
-    ],
+    "sino": {
+      "식": "食",
+      "당": "堂"
+    },
     "confundiveis": [
       "escola",
       "casa"
@@ -1548,10 +1545,10 @@
       "ko": "무슨 {}가 있어요?",
       "pt": "Qual é o problema?"
     },
-    "sino": [
-      "問",
-      "題"
-    ],
+    "sino": {
+      "문": "問",
+      "제": "題"
+    },
     "confundiveis": [
       "trabalho",
       "pensamento",
@@ -1572,10 +1569,10 @@
       "ko": "그런 {}도 있어요.",
       "pt": "Também há casos assim."
     },
-    "sino": [
-      "境",
-      "遇"
-    ],
+    "sino": {
+      "경": "境",
+      "우": "遇"
+    },
     "confundiveis": [
       "quando",
       "coisa",
@@ -1617,5 +1614,702 @@
       "muito"
     ],
     "nota": "너무 era só 'excessivamente', com sentido negativo. Hoje virou também 'muito' na fala jovem — 너무 좋아요 é elogio. As duas leituras convivem."
+  },
+  {
+    "id": "nat_um",
+    "hangul": "하나",
+    "pt": "um",
+    "ilustracao": "assets/ilustracoes/num_hum.svg",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "nativo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "confundiveis": [
+      "nat_dois"
+    ],
+    "exemplo": {
+      "ko": "한 개 주세요.",
+      "pt": "Me dê um, por favor."
+    },
+    "nota": "O coreano tem dois sistemas de número. Este é o nativo, usado para contar coisas. Antes de um contador ele encurta: 하나 vira 한 — 한 개, não 하나 개."
+  },
+  {
+    "id": "nat_dois",
+    "hangul": "둘",
+    "pt": "dois",
+    "ilustracao": "assets/ilustracoes/num_dois.svg",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "nativo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "confundiveis": [
+      "nat_um",
+      "nat_tres"
+    ],
+    "exemplo": {
+      "ko": "두 개 주세요.",
+      "pt": "Me dê dois, por favor."
+    },
+    "nota": "Antes de contador, 둘 vira 두: 두 명, 두 권. As quatro primeiras são as únicas que encurtam."
+  },
+  {
+    "id": "nat_tres",
+    "hangul": "셋",
+    "pt": "três",
+    "ilustracao": "assets/ilustracoes/num_tres.svg",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "nativo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "confundiveis": [
+      "nat_dois",
+      "nat_quatro"
+    ],
+    "exemplo": {
+      "ko": "세 개 주세요.",
+      "pt": "Me dê três, por favor."
+    },
+    "nota": "Vira 세 antes de contador: 세 잔. Sozinha soa [섿] — o ㅅ final não sai como /s/."
+  },
+  {
+    "id": "nat_quatro",
+    "hangul": "넷",
+    "pt": "quatro",
+    "ilustracao": "assets/ilustracoes/num_quatro.svg",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "nativo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "confundiveis": [
+      "nat_tres",
+      "nat_cinco"
+    ],
+    "exemplo": {
+      "ko": "네 개 주세요.",
+      "pt": "Me dê quatro, por favor."
+    },
+    "nota": "Vira 네 antes de contador: 네 마리. Fecha a lista das que encurtam."
+  },
+  {
+    "id": "nat_cinco",
+    "hangul": "다섯",
+    "pt": "cinco",
+    "ilustracao": "assets/ilustracoes/num_cinco.svg",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "nativo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "confundiveis": [
+      "nat_quatro",
+      "nat_seis"
+    ],
+    "exemplo": {
+      "ko": "다섯 개 주세요.",
+      "pt": "Me dê cinco, por favor."
+    }
+  },
+  {
+    "id": "nat_seis",
+    "hangul": "여섯",
+    "pt": "seis",
+    "ilustracao": "assets/ilustracoes/num_seis.svg",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "nativo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "confundiveis": [
+      "nat_cinco",
+      "nat_sete"
+    ],
+    "exemplo": {
+      "ko": "여섯 개 주세요.",
+      "pt": "Me dê seis, por favor."
+    }
+  },
+  {
+    "id": "nat_sete",
+    "hangul": "일곱",
+    "pt": "sete",
+    "ilustracao": "assets/ilustracoes/num_sete.svg",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "nativo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "confundiveis": [
+      "nat_seis",
+      "nat_oito"
+    ],
+    "exemplo": {
+      "ko": "일곱 개 주세요.",
+      "pt": "Me dê sete, por favor."
+    }
+  },
+  {
+    "id": "nat_oito",
+    "hangul": "여덟",
+    "pt": "oito",
+    "ilustracao": "assets/ilustracoes/num_oito.svg",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "nativo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "confundiveis": [
+      "nat_sete",
+      "nat_nove"
+    ],
+    "exemplo": {
+      "ko": "여덟 개 주세요.",
+      "pt": "Me dê oito, por favor."
+    },
+    "nota": "O ㄼ deixa só o ㄹ soar: [여덜]. O ㅂ fica escrito e calado."
+  },
+  {
+    "id": "nat_nove",
+    "hangul": "아홉",
+    "pt": "nove",
+    "ilustracao": "assets/ilustracoes/num_nove.svg",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "nativo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "confundiveis": [
+      "nat_oito",
+      "nat_dez"
+    ],
+    "exemplo": {
+      "ko": "아홉 개 주세요.",
+      "pt": "Me dê nove, por favor."
+    }
+  },
+  {
+    "id": "nat_dez",
+    "hangul": "열",
+    "pt": "dez",
+    "ilustracao": "assets/ilustracoes/num_dez.svg",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "nativo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "confundiveis": [
+      "nat_nove"
+    ],
+    "exemplo": {
+      "ko": "열 개 주세요.",
+      "pt": "Me dê dez, por favor."
+    },
+    "nota": "A partir daqui os nativos se combinam: 열하나, 열둘. E 스물 (20) encurta para 스무 antes de contador."
+  },
+  {
+    "id": "sino_um",
+    "hangul": "일",
+    "pt": "um (sino-coreano)",
+    "tipo": "frase",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "sino",
+    "imageabilidade": 1,
+    "topik": 1,
+    "sino": {
+      "일": "一"
+    },
+    "confundiveis": [
+      "sino_dois"
+    ],
+    "frase": {
+      "ko": "저는 {}층에 살아요.",
+      "pt": "Moro no primeiro andar."
+    },
+    "nota": "Este é o sistema sino-coreano, o outro conjunto de números. Ele é o que aparece em data, dinheiro, minuto, andar e número de telefone. Para contar objetos, o sistema é o nativo (하나, 둘, 셋)."
+  },
+  {
+    "id": "sino_dois",
+    "hangul": "이",
+    "pt": "dois (sino-coreano)",
+    "tipo": "frase",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "sino",
+    "imageabilidade": 1,
+    "topik": 1,
+    "sino": {
+      "이": "二"
+    },
+    "confundiveis": [
+      "sino_um",
+      "sino_três"
+    ],
+    "frase": {
+      "ko": "{}월은 짧아요.",
+      "pt": "Fevereiro é curto."
+    },
+    "nota": "Mês usa sino: 이월 é fevereiro. Mas hora usa nativo — 두 시, não 이 시. É a troca que mais confunde."
+  },
+  {
+    "id": "sino_três",
+    "hangul": "삼",
+    "pt": "três (sino-coreano)",
+    "tipo": "frase",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "sino",
+    "imageabilidade": 1,
+    "topik": 1,
+    "sino": {
+      "삼": "三"
+    },
+    "confundiveis": [
+      "sino_dois",
+      "sino_quatro"
+    ],
+    "frase": {
+      "ko": "저는 {}학년이에요.",
+      "pt": "Estou no terceiro ano."
+    }
+  },
+  {
+    "id": "sino_quatro",
+    "hangul": "사",
+    "pt": "quatro (sino-coreano)",
+    "tipo": "frase",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "sino",
+    "imageabilidade": 1,
+    "topik": 1,
+    "sino": {
+      "사": "四"
+    },
+    "confundiveis": [
+      "sino_três",
+      "sino_cinco"
+    ],
+    "frase": {
+      "ko": "{}십 분 걸려요.",
+      "pt": "Leva quarenta minutos."
+    }
+  },
+  {
+    "id": "sino_cinco",
+    "hangul": "오",
+    "pt": "cinco (sino-coreano)",
+    "tipo": "frase",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "sino",
+    "imageabilidade": 1,
+    "topik": 1,
+    "sino": {
+      "오": "五"
+    },
+    "confundiveis": [
+      "sino_quatro",
+      "sino_seis"
+    ],
+    "frase": {
+      "ko": "{}월에 만나요.",
+      "pt": "Nos vemos em maio."
+    }
+  },
+  {
+    "id": "sino_seis",
+    "hangul": "육",
+    "pt": "seis (sino-coreano)",
+    "tipo": "frase",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "sino",
+    "imageabilidade": 1,
+    "topik": 1,
+    "sino": {
+      "육": "六"
+    },
+    "confundiveis": [
+      "sino_cinco",
+      "sino_sete"
+    ],
+    "frase": {
+      "ko": "{}층으로 가세요.",
+      "pt": "Vá ao sexto andar."
+    },
+    "nota": "Depois de vogal ou ㄹ, 육 costuma virar 륙: 오륙 (cinco ou seis). O som muda, o morfema é o mesmo."
+  },
+  {
+    "id": "sino_sete",
+    "hangul": "칠",
+    "pt": "sete (sino-coreano)",
+    "tipo": "frase",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "sino",
+    "imageabilidade": 1,
+    "topik": 1,
+    "sino": {
+      "칠": "七"
+    },
+    "confundiveis": [
+      "sino_seis",
+      "sino_oito"
+    ],
+    "frase": {
+      "ko": "{}월은 더워요.",
+      "pt": "Julho é quente."
+    }
+  },
+  {
+    "id": "sino_oito",
+    "hangul": "팔",
+    "pt": "oito (sino-coreano)",
+    "tipo": "frase",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "sino",
+    "imageabilidade": 1,
+    "topik": 1,
+    "sino": {
+      "팔": "八"
+    },
+    "confundiveis": [
+      "sino_sete",
+      "sino_nove"
+    ],
+    "frase": {
+      "ko": "{}월에 여행 가요.",
+      "pt": "Viajo em agosto."
+    }
+  },
+  {
+    "id": "sino_nove",
+    "hangul": "구",
+    "pt": "nove (sino-coreano)",
+    "tipo": "frase",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "sino",
+    "imageabilidade": 1,
+    "topik": 1,
+    "sino": {
+      "구": "九"
+    },
+    "confundiveis": [
+      "sino_oito",
+      "sino_dez"
+    ],
+    "frase": {
+      "ko": "{}번 버스를 타요.",
+      "pt": "Pego o ônibus número 9."
+    }
+  },
+  {
+    "id": "sino_dez",
+    "hangul": "십",
+    "pt": "dez (sino-coreano)",
+    "tipo": "frase",
+    "classe": "numeral",
+    "modulo": "numeros",
+    "campo": "sino",
+    "imageabilidade": 1,
+    "topik": 1,
+    "sino": {
+      "십": "十"
+    },
+    "confundiveis": [
+      "sino_nove"
+    ],
+    "frase": {
+      "ko": "{}분만 기다리세요.",
+      "pt": "Espere só dez minutos."
+    },
+    "nota": "십 é a base de tudo daqui para cima: 십일 (11), 이십 (20), 백 (100), 천 (1.000), 만 (10.000). Preço no mercado coreano se lê em 만."
+  },
+  {
+    "id": "cor_vermelho",
+    "hangul": "빨간색",
+    "pt": "vermelho",
+    "ilustracao": "assets/ilustracoes/cor_vermelho.svg",
+    "classe": "substantivo",
+    "modulo": "cores",
+    "imageabilidade": 5,
+    "topik": 1,
+    "sino": {
+      "색": "色"
+    },
+    "confundiveis": [
+      "cor_azul",
+      "cor_amarelo",
+      "cor_verde"
+    ],
+    "exemplo": {
+      "ko": "빨간색을 좋아해요.",
+      "pt": "Gosto de vermelho."
+    },
+    "nota": "O 색 de todas as cores é 色. Cada cor também tem um adjetivo próprio: 빨갛다 (ser vermelho), que se usa antes do substantivo — 빨간 사과."
+  },
+  {
+    "id": "cor_azul",
+    "hangul": "파란색",
+    "pt": "azul",
+    "ilustracao": "assets/ilustracoes/cor_azul.svg",
+    "classe": "substantivo",
+    "modulo": "cores",
+    "imageabilidade": 5,
+    "topik": 1,
+    "sino": {
+      "색": "色"
+    },
+    "confundiveis": [
+      "cor_vermelho",
+      "cor_amarelo",
+      "cor_verde"
+    ],
+    "exemplo": {
+      "ko": "파란색을 좋아해요.",
+      "pt": "Gosto de azul."
+    }
+  },
+  {
+    "id": "cor_amarelo",
+    "hangul": "노란색",
+    "pt": "amarelo",
+    "ilustracao": "assets/ilustracoes/cor_amarelo.svg",
+    "classe": "substantivo",
+    "modulo": "cores",
+    "imageabilidade": 5,
+    "topik": 1,
+    "sino": {
+      "색": "色"
+    },
+    "confundiveis": [
+      "cor_vermelho",
+      "cor_azul",
+      "cor_verde"
+    ],
+    "exemplo": {
+      "ko": "노란색을 좋아해요.",
+      "pt": "Gosto de amarelo."
+    }
+  },
+  {
+    "id": "cor_verde",
+    "hangul": "초록색",
+    "pt": "verde",
+    "ilustracao": "assets/ilustracoes/cor_verde.svg",
+    "classe": "substantivo",
+    "modulo": "cores",
+    "imageabilidade": 5,
+    "topik": 1,
+    "sino": {
+      "색": "色"
+    },
+    "confundiveis": [
+      "cor_vermelho",
+      "cor_azul",
+      "cor_amarelo"
+    ],
+    "exemplo": {
+      "ko": "초록색을 좋아해요.",
+      "pt": "Gosto de verde."
+    },
+    "nota": "Depois do ㄱ de 록, o ㅅ endurece: [초록쌕]."
+  },
+  {
+    "id": "cor_preto",
+    "hangul": "검은색",
+    "pt": "preto",
+    "ilustracao": "assets/ilustracoes/cor_preto.svg",
+    "classe": "substantivo",
+    "modulo": "cores",
+    "imageabilidade": 5,
+    "topik": 1,
+    "sino": {
+      "색": "色"
+    },
+    "confundiveis": [
+      "cor_vermelho",
+      "cor_azul",
+      "cor_amarelo"
+    ],
+    "exemplo": {
+      "ko": "검은색을 좋아해요.",
+      "pt": "Gosto de preto."
+    },
+    "nota": "O ㅁ de 검 atravessa para a sílaba seguinte: [거믄색]. Escrita e som se separam aqui."
+  },
+  {
+    "id": "cor_branco",
+    "hangul": "하얀색",
+    "pt": "branco",
+    "ilustracao": "assets/ilustracoes/cor_branco.svg",
+    "classe": "substantivo",
+    "modulo": "cores",
+    "imageabilidade": 5,
+    "topik": 1,
+    "sino": {
+      "색": "色"
+    },
+    "confundiveis": [
+      "cor_vermelho",
+      "cor_azul",
+      "cor_amarelo"
+    ],
+    "exemplo": {
+      "ko": "하얀색을 좋아해요.",
+      "pt": "Gosto de branco."
+    }
+  },
+  {
+    "id": "cont_generico",
+    "hangul": "개",
+    "pt": "contador de peças, unidades",
+    "tipo": "frase",
+    "classe": "funcional",
+    "modulo": "contadores",
+    "campo": "contador",
+    "imageabilidade": 1,
+    "topik": 1,
+    "confundiveis": [
+      "cont_pessoas",
+      "cont_animais",
+      "cont_livros"
+    ],
+    "frase": {
+      "ko": "사과 두 {} 주세요.",
+      "pt": "Me dê duas maçãs, por favor."
+    },
+    "padrao": "número nativo + contador",
+    "sino": {
+      "개": "個"
+    },
+    "nota": "개 conta quase qualquer objeto — é o contador que resolve quando você não sabe o certo. É a mesma sílaba de 개 (cachorro), palavras diferentes."
+  },
+  {
+    "id": "cont_pessoas",
+    "hangul": "명",
+    "pt": "contador de pessoas",
+    "tipo": "frase",
+    "classe": "funcional",
+    "modulo": "contadores",
+    "campo": "contador",
+    "imageabilidade": 1,
+    "topik": 1,
+    "confundiveis": [
+      "cont_generico",
+      "cont_animais",
+      "cont_livros"
+    ],
+    "frase": {
+      "ko": "학생 세 {}이 있어요.",
+      "pt": "Há três estudantes."
+    },
+    "padrao": "número nativo + contador",
+    "sino": {
+      "명": "名"
+    },
+    "nota": "Pessoa nunca se conta com 개. Em contexto formal, 분 substitui 명 como forma respeitosa."
+  },
+  {
+    "id": "cont_animais",
+    "hangul": "마리",
+    "pt": "contador de animais",
+    "tipo": "frase",
+    "classe": "funcional",
+    "modulo": "contadores",
+    "campo": "contador",
+    "imageabilidade": 1,
+    "topik": 1,
+    "confundiveis": [
+      "cont_generico",
+      "cont_pessoas",
+      "cont_livros"
+    ],
+    "frase": {
+      "ko": "고양이 한 {}가 있어요.",
+      "pt": "Há um gato."
+    },
+    "padrao": "número nativo + contador",
+    "nota": "마리 é palavra nativa, sem hanja. Vale para bicho de qualquer tamanho, de peixe a elefante."
+  },
+  {
+    "id": "cont_livros",
+    "hangul": "권",
+    "pt": "contador de volumes, livros",
+    "tipo": "frase",
+    "classe": "funcional",
+    "modulo": "contadores",
+    "campo": "contador",
+    "imageabilidade": 1,
+    "topik": 1,
+    "confundiveis": [
+      "cont_generico",
+      "cont_pessoas",
+      "cont_animais"
+    ],
+    "frase": {
+      "ko": "책 두 {}을 샀어요.",
+      "pt": "Comprei dois livros."
+    },
+    "padrao": "número nativo + contador",
+    "sino": {
+      "권": "卷"
+    }
+  },
+  {
+    "id": "cont_copos",
+    "hangul": "잔",
+    "pt": "contador de copos, xícaras",
+    "tipo": "frase",
+    "classe": "funcional",
+    "modulo": "contadores",
+    "campo": "contador",
+    "imageabilidade": 1,
+    "topik": 1,
+    "confundiveis": [
+      "cont_generico",
+      "cont_pessoas",
+      "cont_animais"
+    ],
+    "frase": {
+      "ko": "커피 한 {} 주세요.",
+      "pt": "Um café, por favor."
+    },
+    "padrao": "número nativo + contador",
+    "sino": {
+      "잔": "盞"
+    },
+    "nota": "잔 conta bebida servida. Garrafa é 병, e 병 é também a palavra para doença."
+  },
+  {
+    "id": "cont_folhas",
+    "hangul": "장",
+    "pt": "contador de folhas, coisas planas",
+    "tipo": "frase",
+    "classe": "funcional",
+    "modulo": "contadores",
+    "campo": "contador",
+    "imageabilidade": 1,
+    "topik": 1,
+    "confundiveis": [
+      "cont_generico",
+      "cont_pessoas",
+      "cont_animais"
+    ],
+    "frase": {
+      "ko": "종이 열 {}이 필요해요.",
+      "pt": "Preciso de dez folhas de papel."
+    },
+    "padrao": "número nativo + contador",
+    "sino": {
+      "장": "張"
+    },
+    "nota": "장 conta o que é plano: papel, foto, ingresso, fatia de pão."
   }
 ]

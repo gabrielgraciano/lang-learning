@@ -101,9 +101,14 @@ export const dicaEsgotada = (hangul, grau) => grau >= graus(hangul).length - 2;
  * significado.
  */
 export function distratores(alvo, banco, quantidade = 3) {
-  const disponivel = banco.filter((p) => p.id !== alvo.id);
+  // O coreano tem homógrafos de verdade — 개 é cachorro e é contador, 일 é
+  // trabalho e é o número um. Como palavras são cards separados, duas
+  // alternativas poderiam sair escritas igual, e aí a pessoa acerta o sentido e
+  // erra o clique. A comparação é pela forma exibida, não pelo id.
+  const forma = respostaDe(alvo);
+  const disponivel = banco.filter((p) => p.id !== alvo.id && respostaDe(p) !== forma);
   const escolhidos = [];
-  const jaTem = (p) => escolhidos.some((e) => e.id === p.id);
+  const jaTem = (p) => escolhidos.some((e) => respostaDe(e) === respostaDe(p));
 
   const adicionar = (lista) => {
     for (const palavra of embaralhar(lista)) {

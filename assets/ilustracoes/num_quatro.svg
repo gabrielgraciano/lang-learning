@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="4 fichas">
+  <circle cx="100" cy="100" r="94" fill="#EAF1F5"/>
+  <circle cx="72" cy="72" r="21" fill="#2F6F86"/>
+  <circle cx="128" cy="72" r="21" fill="#2F6F86"/>
+  <circle cx="72" cy="128" r="21" fill="#2F6F86"/>
+  <circle cx="128" cy="128" r="21" fill="#2F6F86"/>
+</svg>

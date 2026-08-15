@@ -92,7 +92,7 @@ vez de tabela. A pronúncia segue o mesmo princípio — calculada, não catalog
 **Limite honesto:** o motor cobre a fonologia regular. 경음화 de origem
 morfológica (물고기 → [물꼬기], 발전 → [발쩐]) depende de informação que a grafia
 não carrega. Para esses casos o banco tem o campo `pronuncia`, que tem
-precedência sobre o cálculo. Nenhuma das 82 palavras do baralho precisa dele
+precedência sobre o cálculo. Nenhuma das 114 palavras do baralho precisa dele
 hoje — as regras dão conta de todas.
 
 ### Decisão 3 — O gabarito é uma resposta de especialista, não uma tradução
@@ -284,6 +284,66 @@ está aprendendo.
 Um efeito colateral bom: a escada de dica passou a operar sobre a forma pedida,
 então 해요 tem sua própria escada (`해_`) sem que 하다 deixe de ser a palavra.
 
+### Decisão 13 — Os dois sistemas de número não podem cair no mesmo card
+
+O coreano tem dois conjuntos de números: o nativo (하나, 둘, 셋) e o
+sino-coreano (일, 이, 삼). Não são sinônimos — são sistemas com domínios
+distintos, e escolher o errado é um dos erros mais audíveis de quem está
+começando. Nativo conta coisas e horas; sino aparece em data, dinheiro, minuto,
+andar e telefone. *두 시 삼십 분* usa os dois na mesma frase.
+
+Isso cria uma armadilha direta para um app que ensina por imagem: **um desenho
+com três fichas ilustra 셋 e 삼 igualmente bem.** Duas palavras, uma imagem,
+nenhuma forma de a pessoa saber qual se está pedindo.
+
+A saída não foi escolher um sistema, foi dar a cada um o formato que o
+desambigua:
+
+| | Nativo | Sino-coreano |
+|---|---|---|
+| Formato | ilustrado, fichas contáveis | frase com lacuna |
+| Por quê | contar objetos *é* o domínio dele | o contexto (월, 층, 분) força o sistema |
+
+E os distratores ficam dentro do sistema, via `campo`, para a múltipla escolha
+nunca oferecer 삼 debaixo de um desenho de três fichas. O contraste entre os dois
+sistemas é ensinado onde ele pode ser explicado — na nota do gabarito — e não
+como pegadinha.
+
+Os contadores (개, 명, 마리, 권, 잔, 장) seguem a mesma lógica e também são
+frase, por um motivo mais simples: contador nunca aparece sozinho. Ele só existe
+grudado num número e num substantivo, então a lacuna é o único jeito honesto de
+cobrá-lo — e de passo ensina as formas pré-nominais 한, 두, 세.
+
+### Decisão 14 — O morfema sino-coreano mora no gabarito, não numa tela nova
+
+Cerca de 70% do vocabulário coreano é sino-coreano, e essa é a alavanca de médio
+prazo do app. Enquanto 학교 e 학생 forem duas palavras isoladas, são duas coisas
+para decorar. No instante em que 學 = "estudar" fica visível nas duas,
+vocabulário deixa de ser lista e vira sistema: 학년, 대학, 유학 passam a ser
+dedutíveis em vez de novas.
+
+A pesquisa que o APPCO1 reúne mostra que aprendizes de coreano recorrem
+predominantemente à memorização e quase não usam estratégia metacognitiva.
+Mostrar o morfema é entregar essa estratégia de graça — mas só funciona no
+momento em que ela tem a quem se agarrar.
+
+Por isso a família aparece **no gabarito**, logo depois de responder, e não numa
+tela separada que ninguém visita. A tela é só o índice, no rodapé do mapa.
+
+Duas escolhas de modelagem que não são óbvias:
+
+- **O mapeamento é por sílaba, não por posição.** Nem toda palavra é
+  inteiramente sino-coreana: em 빨간색 só o 색 (色) é, e 빨간 é nativo. Uma
+  lista posicional daria o hanja errado para a sílaba errada.
+- **Morfema com uma palavra só não é família.** É curiosidade, e no gabarito
+  seria ruído. Só aparece o que leva a outro lugar.
+
+O índice se monta sozinho a partir do campo `sino`, então cada palavra nova que
+traga um morfema já conhecido faz a família crescer sem código. Hoje são três
+famílias — 色 com seis palavras, 學 e 生 com duas cada. 문 (門, porta) e 문제
+(問題, problema) dividem a sílaba mas não o morfema, e por isso não se agrupam,
+que é exatamente o comportamento correto.
+
 ---
 
 ## 3. O que foi deliberadamente deixado de fora
@@ -294,7 +354,6 @@ então 해요 tem sua própria escada (`해_`) sem que 하다 deixe de ser a pal
 | Áudio pré-gerado | Usamos a voz coreana do sistema via Web Speech API. Sem pipeline de TTS, sem megabytes de assets, e desaparece com elegância onde não houver voz instalada. |
 | Gramática e conjugação | Outro produto. |
 | Ranking, amigos, social | O artigo mostra que a comunidade é cara e depende de massa crítica de gente proficiente. Não dá para simular isso. |
-| Sino-coreano como sistema | Fase 3. O campo `sino` já está no banco e 11 palavras já o preenchem, então a migração não vai existir. |
 | Vidas, corações, punição | Punem exatamente o erro produtivo que gera aprendizado. |
 
 ---
@@ -309,7 +368,7 @@ então 해요 tem sua própria escada (`해_`) sem que 하다 deixe de ser a pal
    abriu a porta para o vocabulário não-ilustrável, e as 16 primeiras palavras
    dessa categoria já estão no baralho. O que falta agora não é formato, é
    volume: as listas TOPIK I têm entre 1.671 e 1.850 palavras, e o baralho tem
-   82.
+   114.
 3. **Atrito de digitação no celular.** O `registro` guarda `ms` e `nivel` por
    resposta justamente para responder isso com dado. Se as sessões morrerem no
    nível 3, o caminho é autoavaliação como saída opcional — não como padrão.
@@ -328,10 +387,12 @@ src/pronuncia.js     regras fonológicas → som, com a regra nomeada
 src/fsrs.js          FSRS-5 e os quatro estados de memória
 src/niveis.js        a escada de 4 níveis, distratores, escada de dica
 src/agenda.js        fila do dia: revisão antes de nova, teto, sessão que fecha
+src/sino.js          índice de morfemas e as famílias de palavras
 src/teclado.js       transliteração 두벌식 + teclado de tela
 src/armazenamento.js estado, registro append-only, exportar/importar
 src/app.js           orquestração das telas
 dados/palavras.json  vocabulário — inclui imageabilidade, confundíveis, nota
+dados/hanja.json     morfema → significado
 ```
 
 ## 6. O baralho hoje
@@ -342,9 +403,18 @@ dados/palavras.json  vocabulário — inclui imageabilidade, confundíveis, nota
 | Ações | 20 | ilustrado, figura em ação | verbo |
 | Qualidades | 12 | ilustrado, par com ênfase | adjetivo |
 | Alta frequência | 16 | frase com lacuna | funcional |
-| **Total** | **82** | | |
+| Números nativos | 10 | ilustrado, fichas contáveis | numeral |
+| Números sino-coreanos | 10 | frase com lacuna | numeral |
+| Cores | 6 | ilustrado, chip de cor | substantivo |
+| Contadores | 6 | frase com lacuna | funcional |
+| **Total** | **114** | | |
 
-23 das 48 palavras acrescentadas disparam alguma regra do motor de pronúncia —
-먹다 [먹따], 앉다 [안따], 많다 [만타], 짧다 [짤따], 없다 [업따]. Verbo e adjetivo
-são onde a fonologia coreana mais se afasta da grafia, porque é neles que o
-radical encosta na desinência.
+Verbo e adjetivo são onde a fonologia coreana mais se afasta da grafia, porque é
+neles que o radical encosta na desinência: 먹다 [먹따], 앉다 [안따], 많다 [만타],
+짧다 [짤따], 없다 [업따]. Os sistemas fechados trouxeram mais casos —
+여덟 [여덜], 초록색 [초록쌕], 검은색 [거믄색].
+
+Três famílias sino-coreanas se formaram sozinhas a partir do campo `sino`:
+色 (seis cores), 學 (학교, 학생) e 生 (학생, 선생님). 학생 é o caso que mostra o
+mecanismo inteiro — ela pertence a duas famílias ao mesmo tempo e liga a 학교 por
+um morfema e a 선생님 por outro.
