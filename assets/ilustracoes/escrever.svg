@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pessoa escrevendo num papel">
+  <circle cx="100" cy="100" r="94" fill="#EDF1F6"/>
+  <path d="M50 178c0-24 20-42 44-42s44 18 44 42z" fill="#5B8AAE"/>
+  <circle cx="94" cy="68" r="27" fill="#F0C9A4"/>
+  <path d="M67 64a27 27 0 0 1 54 0c0-18-12-27-27-27S67 46 67 64z" fill="#3E4A57"/>
+  <g fill="none" stroke="#2E3A45" stroke-width="2.8" stroke-linecap="round">
+    <path d="M81 76c2 3 6 3 8 0"/><path d="M99 76c2 3 6 3 8 0"/>
+  </g>
+  <rect x="60" y="132" width="88" height="46" rx="3" fill="#FBFCF9" stroke="#C6D0C6" stroke-width="2.5"/>
+  <g stroke="#B5BFB5" stroke-width="3" stroke-linecap="round"><path d="M72 148h48"/><path d="M72 160h32"/></g>
+  <g transform="rotate(38 142 122)">
+    <rect x="135" y="82" width="14" height="52" rx="3" fill="#F2B33D"/>
+    <path d="M135 134h14l-7 14z" fill="#E8B48C"/>
+    <path d="M139 144h6l-3 4z" fill="#2E3A45"/>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pilha de moedas ao lado de duas moedas — o segundo em destaque">
+  <circle cx="100" cy="100" r="94" fill="#E8F3EA"/>
+  <g opacity=".16"><g fill="#D9A63F"><circle cx="44" cy="146" r="17"/><circle cx="76" cy="146" r="17"/><circle cx="60" cy="118" r="17"/><circle cx="92" cy="118" r="17"/><circle cx="30" cy="118" r="17"/><circle cx="46" cy="90" r="17"/><circle cx="78" cy="90" r="17"/><circle cx="62" cy="62" r="17"/></g></g>
+  <g opacity="1"><g fill="#D9A63F"><circle cx="142" cy="146" r="17"/><circle cx="158" cy="118" r="17"/></g></g>
+</svg>

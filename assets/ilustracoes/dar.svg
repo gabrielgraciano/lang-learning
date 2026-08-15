@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pessoa entregando uma caixa">
+  <circle cx="100" cy="100" r="94" fill="#E4F2E7"/>
+  <path d="M6 176c0-24 18-42 40-42s40 18 40 42z" fill="#5B8AAE"/>
+  <circle cx="46" cy="76" r="26" fill="#F0C9A4"/>
+  <path d="M20 72a26 26 0 0 1 52 0c0-17-11-26-26-26S20 55 20 72z" fill="#3E4A57"/>
+  <circle cx="39" cy="80" r="3" fill="#2E3A45"/><circle cx="55" cy="80" r="3" fill="#2E3A45"/>
+  <path d="M74 108l30 6" stroke="#F0C9A4" stroke-width="13" stroke-linecap="round" fill="none"/>
+  <rect x="112" y="92" width="60" height="52" rx="4" fill="#DE7B68"/>
+  <rect x="112" y="92" width="60" height="16" rx="4" fill="#C96453"/>
+  <path d="M136 92v52" stroke="#FBF0E4" stroke-width="7"/>
+  <g fill="none" stroke="#2F6B4F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M120 62h44"/><path d="M154 52l12 10-12 10"/>
+  </g>
+</svg>

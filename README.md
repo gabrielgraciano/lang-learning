@@ -1,10 +1,14 @@
 # 한국어
 
-Site estático para aprender vocabulário de coreano por ilustração, com
-recuperação ativa, agendamento espaçado FSRS e a pronúncia derivada da escrita.
+Site estático para aprender vocabulário de coreano com recuperação ativa,
+agendamento espaçado FSRS e a pronúncia derivada da escrita.
 
 Você olha o desenho e **produz** a palavra em 한글. A tradução só aparece
 depois — para desfazer dúvida, nunca para entregar a resposta.
+
+Metade do vocabulário mais frequente do coreano não se ilustra sem ambiguidade
+(것, 수, 때, 하다, 있다). Para essas, o estímulo é uma frase com lacuna. Mesmo
+baralho, mesma fila, mesma escada de dificuldade — só o estímulo muda.
 
 ## O que ele faz de diferente
 
@@ -23,6 +27,11 @@ decomposição em jamo invertida — mesma aritmética do bloco Unicode.
 níveis conforme a memória estabiliza — apresentação, reconhecimento entre
 quatro, recall com dica, recall pleno digitado. O nível é derivado da
 estabilidade FSRS, então errar rebaixa a palavra sozinho.
+
+**Adjetivo se aprende em par, e o alvo tem ênfase.** 크다 e 작다 são o mesmo
+desenho com as opacidades trocadas: o contraste desambigua "grande" de "bola", e
+a ênfase desambigua qual dos dois lados está sendo pedido. Verbo se ilustra com
+figura em ação — sempre o mesmo personagem, que vira mascote de graça.
 
 **O progresso é memória medida.** No mapa, cada palavra é uma célula cuja cor é
 o estado real do cartão. Quando a palavra fica firme, a célula revela a
@@ -90,6 +99,8 @@ docs/fundamentacao.md      # por que o app é assim
    isolado sobre um círculo de fundo, paleta reduzida, **sem texto** na imagem.
 2. Acrescente uma entrada em `dados/palavras.json`:
 
+Card ilustrado:
+
 ```json
 {
   "id": "escola",
@@ -107,7 +118,26 @@ docs/fundamentacao.md      # por que o app é assim
 }
 ```
 
-Nenhuma mudança de código é necessária.
+Card de frase, para o que não se ilustra:
+
+```json
+{
+  "id": "possibilidade",
+  "hangul": "수",
+  "pt": "poder, saber fazer",
+  "tipo": "frase",
+  "classe": "funcional",
+  "modulo": "alta-frequencia",
+  "frase": { "ko": "저는 수영할 {} 있어요.", "pt": "Eu sei nadar." },
+  "padrao": "-(으)ㄹ 수 있다 / 없다",
+  "confundiveis": ["coisa", "quando", "caso"],
+  "nota": "수 só existe dentro dessa construção. Fora dela, a palavra não significa nada."
+}
+```
+
+Nenhuma mudança de código é necessária. Um módulo novo aparece sozinho no mapa —
+só o nome acentuado precisa de uma linha em `NOME_MODULO`, e sem ela o id ainda
+aparece legível.
 
 | Campo | Para quê |
 |---|---|
@@ -117,6 +147,12 @@ Nenhuma mudança de código é necessária.
 | `imageabilidade` | 1 a 5, curadoria manual — o critério de entrada no baralho |
 | `pronuncia` | só quando a regra não dá conta (물고기 → 물꼬기); o normal é deixar em branco e o motor derivar |
 | `sino` | hanja dos morfemas, para as famílias de palavras mais adiante |
+| `classe` | `substantivo`, `verbo`, `adjetivo` ou `funcional` — impede que a múltipla escolha ofereça um substantivo onde só cabe um verbo |
+| `par` | id do antônimo; obrigatório em adjetivo, que só se aprende em par |
+| `tipo` | `frase` transforma o card: o estímulo passa a ser a frase com lacuna |
+| `frase` | `{ ko, pt }`, com `{}` marcando onde a palavra entra |
+| `resposta` | a forma que a lacuna pede, quando difere do lema (하다 → 해요) |
+| `padrao` | a construção em que a palavra vive (`-(으)ㄹ 수 있다`) |
 
 ## Controles
 
@@ -127,9 +163,19 @@ Nenhuma mudança de código é necessária.
 | Avançar do gabarito | `Enter` | botão **Continuar** |
 | Digitar 한글 sem IME | layout 두벌식 (`gkrry` → 학교) | teclado de tela |
 
+## O baralho
+
+| Módulo | Palavras | Formato |
+|---|---|---|
+| Substantivos concretos (9 campos) | 34 | ilustrado |
+| Ações | 20 | ilustrado, figura em ação |
+| Qualidades | 12 | ilustrado, par antônimo com ênfase |
+| Alta frequência | 16 | frase com lacuna |
+| **Total** | **82** | |
+
 ## Próximos passos
 
 - Tela interna com os itens de maior taxa de erro — detector de ilustração ambígua
-- Cards de frase com lacuna, para o vocabulário que não é ilustrável
+- Sistemas fechados: números, cores, contadores
 - Famílias de palavras por morfema sino-coreano (o campo `sino` já está lá)
-- Mais módulos: verbos de ação, adjetivos em pares antônimos, sistemas fechados
+- Mais vocabulário de alta frequência no formato de frase

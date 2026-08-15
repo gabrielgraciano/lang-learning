@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Bola grande ao lado de uma bola pequena — o primeiro em destaque">
+  <circle cx="100" cy="100" r="94" fill="#EAF1F5"/>
+  <g opacity="1"><circle cx="68" cy="102" r="44" fill="#DE7B68"/><circle cx="52" cy="86" r="13" fill="#F0A996"/></g>
+  <g opacity=".16"><circle cx="152" cy="128" r="19" fill="#DE7B68"/><circle cx="145" cy="121" r="6" fill="#F0A996"/></g>
+</svg>

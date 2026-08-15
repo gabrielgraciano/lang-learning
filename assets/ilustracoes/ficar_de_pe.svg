@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pessoa em pé, ereta">
+  <circle cx="100" cy="100" r="94" fill="#EAF1F5"/>
+  <path d="M30 162h140" stroke="#9CB2BF" stroke-width="6" stroke-linecap="round"/>
+  <rect x="86" y="112" width="12" height="50" rx="5" fill="#40708F"/>
+  <rect x="102" y="112" width="12" height="50" rx="5" fill="#40708F"/>
+  <path d="M74 116V96a26 26 0 0 1 52 0v20z" fill="#5B8AAE"/>
+  <rect x="62" y="94" width="12" height="44" rx="6" fill="#F0C9A4"/>
+  <rect x="126" y="94" width="12" height="44" rx="6" fill="#F0C9A4"/>
+  <circle cx="100" cy="58" r="26" fill="#F0C9A4"/>
+  <path d="M74 54a26 26 0 0 1 52 0c0-17-11-26-26-26S74 37 74 54z" fill="#3E4A57"/>
+  <circle cx="92" cy="60" r="3" fill="#2E3A45"/><circle cx="109" cy="60" r="3" fill="#2E3A45"/>
+</svg>

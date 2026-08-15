@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pessoa correndo">
+  <circle cx="100" cy="100" r="94" fill="#FDF0DB"/>
+  <g stroke="#E2B463" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M22 84h34"/><path d="M14 108h30"/><path d="M24 132h28"/>
+  </g>
+  <path d="M92 120l-24 38" stroke="#40708F" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M110 118l30 26" stroke="#40708F" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M74 124l6-24a26 26 0 0 1 50 12l-4 20z" fill="#5B8AAE"/>
+  <path d="M84 104l-28 6" stroke="#F0C9A4" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M128 96l26-14" stroke="#F0C9A4" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <circle cx="112" cy="60" r="25" fill="#F0C9A4"/>
+  <path d="M87 58a25 25 0 0 1 50 0c0-17-11-26-25-26s-25 9-25 26z" fill="#3E4A57"/>
+  <circle cx="118" cy="62" r="3" fill="#2E3A45"/>
+</svg>

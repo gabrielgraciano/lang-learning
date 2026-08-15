@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Porta se fechando">
+  <circle cx="100" cy="100" r="94" fill="#F2EAE0"/>
+  <rect x="44" y="30" width="112" height="144" rx="5" fill="#A8794F"/>
+  <rect x="54" y="40" width="92" height="124" rx="4" fill="#CE9F70"/>
+  <rect x="66" y="54" width="30" height="42" rx="3" fill="#B3855A"/>
+  <rect x="104" y="54" width="30" height="42" rx="3" fill="#B3855A"/>
+  <rect x="66" y="112" width="68" height="40" rx="3" fill="#B3855A"/>
+  <circle cx="130" cy="104" r="7" fill="#F0D9A8"/>
+  <g fill="none" stroke="#B85C4E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 100h26"/><path d="M30 90l12 10-12 10"/>
+  </g>
+</svg>

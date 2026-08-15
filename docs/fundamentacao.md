@@ -92,8 +92,8 @@ vez de tabela. A pronúncia segue o mesmo princípio — calculada, não catalog
 **Limite honesto:** o motor cobre a fonologia regular. 경음화 de origem
 morfológica (물고기 → [물꼬기], 발전 → [발쩐]) depende de informação que a grafia
 não carrega. Para esses casos o banco tem o campo `pronuncia`, que tem
-precedência sobre o cálculo. As 34 palavras atuais não precisam de nenhum
-override.
+precedência sobre o cálculo. Nenhuma das 82 palavras do baralho precisa dele
+hoje — as regras dão conta de todas.
 
 ### Decisão 3 — O gabarito é uma resposta de especialista, não uma tradução
 
@@ -141,9 +141,12 @@ Assim um lapso rebaixa a palavra sozinho: a estabilidade cai, o formato afrouxa,
 e ela sobe de novo quando a memória segurar.
 
 Os distratores do nível 1 vêm, em ordem de preferência, do campo `confundiveis`,
-depois do mesmo campo semântico, depois do módulo. Contrastar 물 com 우유 e 커피
-constrói fronteira de significado; contrastar com uma palavra aleatória só testa
-reconhecimento de forma.
+depois do mesmo campo semântico, depois do módulo, depois da mesma classe
+gramatical. Contrastar 물 com 우유 e 커피 constrói fronteira de significado;
+contrastar com uma palavra aleatória só testa reconhecimento de forma. A camada
+de classe gramatical existe porque um substantivo entre quatro verbos se elimina
+sozinho — a alternativa errada precisa ser *possível*, ou a múltipla escolha
+passa a testar sintaxe em vez de significado.
 
 ### Decisão 5 — Digitação em 한글 sem exigir IME
 
@@ -207,6 +210,80 @@ significa mais revisões daqui a quatro dias. **Vínculo** fica de fora, e no lu
 dele o mapa vira álbum: a ilustração só aparece na grade quando a palavra fica
 firme.
 
+### Decisão 9 — Verbo se ilustra com figura em ação, sempre a mesma
+
+Substantivo concreto se ilustra com o objeto. Verbo não: 먹다 não é uma tigela,
+é alguém comendo. Se a ilustração for o objeto, o aprendiz aprende o
+substantivo errado.
+
+Os 20 verbos usam **o mesmo personagem** em todas as cenas — mesma pele, mesmo
+cabelo, mesma roupa. Isso sai de graça (o custo marginal é zero, já que cada
+desenho precisa de alguém) e transforma consistência de estilo em identidade.
+
+Os pares que enganam vêm marcados como confundíveis de propósito, porque a
+múltipla escolha do nível 1 puxa deles primeiro: 가다/오다, 앉다/서다,
+걷다/뛰다, 읽다/보다, 웃다/울다, 열다/닫다, 주다/받다. Para 가다 e 오다 a
+ilustração precisou de uma referência fixa — uma casa — e uma seta, porque
+"ir" e "vir" não se distinguem por quem anda, e sim por onde está quem fala.
+
+### Decisão 10 — Adjetivo é par, e o alvo precisa de ênfase
+
+Adjetivo isolado é a pior ambiguidade possível: uma bola grande desenhada
+sozinha ilustra "bola", não "grande". Por isso todo adjetivo entra em par
+antônimo, com contraste lado a lado.
+
+Só que aí aparece o problema seguinte, que o contraste cria: **se a cena tem
+uma bola grande e uma pequena, qual das duas é a resposta?**
+
+A solução é a cena ser a mesma nos dois cards do par e a diferença estar na
+ênfase — alvo em cor cheia, referência a 16% de opacidade. 크다 e 작다 são o
+mesmo desenho com as opacidades trocadas. O contraste continua desambiguando
+"grande" de "bola", e a ênfase desambigua qual dos dois lados se está pedindo.
+O campo `par` guarda o antônimo, e o gabarito sempre mostra os dois.
+
+### Decisão 11 — O card de frase mora na mesma fila
+
+Cerca de metade do vocabulário de alta frequência não se ilustra sem
+ambiguidade: 것, 수, 때, 하다, 되다, 있다, 없다, 같다. Era o teto declarado do
+formato, e é o que separa "os 500 concretos" de "TOPIK I".
+
+O segundo formato é a frase com lacuna. A implementação é um campo `tipo` na
+palavra, e só o **estímulo** troca:
+
+| | Card ilustrado | Card de frase |
+|---|---|---|
+| Estímulo | a ilustração | a frase com a lacuna + tradução |
+| Escada de 4 níveis | igual | igual |
+| Dica, FSRS, gabarito, mapa | igual | igual |
+
+Fila única, e não uma seção separada, por dois motivos. Duas seções criam duas
+dívidas de revisão e dois lugares onde o atraso se acumula — e a dívida de
+revisão é o que mata usuário de app de repetição espaçada. E intercalar
+formatos retém melhor do que estudar cada um em bloco.
+
+Uma propriedade útil caiu de graça: **a tradução da frase aparece durante o
+teste** — ela é o equivalente da ilustração, o que dá sentido ao buraco — e
+mesmo assim não entrega a resposta, porque essas palavras não têm
+correspondente de um para um em português. É por não terem que elas não são
+ilustráveis.
+
+### Decisão 12 — O lema e a forma que a frase pede são coisas diferentes
+
+하다, 되다, 있다 e 없다 estão entre as palavras mais frequentes do coreano e são
+exatamente as que **não cabem** numa frase na forma de dicionário. Ninguém diz
+"지금 뭐 하다?", diz "지금 뭐 해요?". Exigir a forma de dicionário na lacuna
+ensinaria uma frase que não existe.
+
+Então a palavra guarda as duas coisas: `hangul` é o lema — o que o FSRS agenda,
+o que o mapa mostra, o que se procura no dicionário — e `resposta` é a forma que
+aquela frase pede. As quatro alternativas do nível 1 aparecem todas na mesma
+forma, para a escolha ser de significado e não de conjugação, e o gabarito
+mostra lema e forma lado a lado, que é justamente a informação que falta a quem
+está aprendendo.
+
+Um efeito colateral bom: a escada de dica passou a operar sobre a forma pedida,
+então 해요 tem sua própria escada (`해_`) sem que 하다 deixe de ser a palavra.
+
 ---
 
 ## 3. O que foi deliberadamente deixado de fora
@@ -228,10 +305,11 @@ firme.
    `registro` append-only existe em parte para isso: palavra com taxa de erro
    muito acima da média do módulo quase nunca é palavra difícil, é desenho ruim.
    Falta a tela interna que lista os piores itens.
-2. **O teto do formato.** Cerca de metade do vocabulário TOPIK I não é ilustrável
-   sem ambiguidade — 것, 수, 때, 하다, 되다, 있다. Essas palavras precisam de
-   card de frase com lacuna, que é outro formato. As 34 palavras atuais são todas
-   substantivos concretos, o terreno mais seguro que existe.
+2. **O teto do formato — parcialmente resolvido.** O card de frase (decisão 11)
+   abriu a porta para o vocabulário não-ilustrável, e as 16 primeiras palavras
+   dessa categoria já estão no baralho. O que falta agora não é formato, é
+   volume: as listas TOPIK I têm entre 1.671 e 1.850 palavras, e o baralho tem
+   82.
 3. **Atrito de digitação no celular.** O `registro` guarda `ms` e `nivel` por
    resposta justamente para responder isso com dado. Se as sessões morrerem no
    nível 3, o caminho é autoavaliação como saída opcional — não como padrão.
@@ -255,3 +333,18 @@ src/armazenamento.js estado, registro append-only, exportar/importar
 src/app.js           orquestração das telas
 dados/palavras.json  vocabulário — inclui imageabilidade, confundíveis, nota
 ```
+
+## 6. O baralho hoje
+
+| Módulo | Palavras | Formato | Classe |
+|---|---|---|---|
+| Substantivos concretos (9 campos) | 34 | ilustrado | substantivo |
+| Ações | 20 | ilustrado, figura em ação | verbo |
+| Qualidades | 12 | ilustrado, par com ênfase | adjetivo |
+| Alta frequência | 16 | frase com lacuna | funcional |
+| **Total** | **82** | | |
+
+23 das 48 palavras acrescentadas disparam alguma regra do motor de pronúncia —
+먹다 [먹따], 앉다 [안따], 많다 [만타], 짧다 [짤따], 없다 [업따]. Verbo e adjetivo
+são onde a fonologia coreana mais se afasta da grafia, porque é neles que o
+radical encosta na desinência.

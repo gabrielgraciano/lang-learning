@@ -66,9 +66,16 @@
 
       <p id="etiqueta-nivel" class="etiqueta"></p>
 
-      <figure class="quadro">
+      <!-- O estímulo. Card ilustrado mostra a imagem; card de frase mostra a
+           frase com a lacuna. Daí para baixo, tudo é idêntico. -->
+      <figure class="quadro" id="quadro-imagem">
         <img id="ilustracao" class="ilustracao" src="" alt="">
       </figure>
+
+      <div class="quadro quadro-frase" id="quadro-frase" hidden>
+        <p id="frase-ko" class="frase-ko" lang="ko"></p>
+        <p id="frase-pt" class="frase-pt"></p>
+      </div>
 
       <!-- Nível 0 — apresentação -->
       <div id="prova-intro" class="prova" hidden>
@@ -102,6 +109,9 @@
 
         <p class="gabarito-hangul" lang="ko"><span id="gabarito-palavra"></span></p>
         <p id="jamo" class="jamo" lang="ko" aria-hidden="true"></p>
+
+        <p id="padrao" class="padrao" hidden></p>
+        <p id="par-antonimo" class="par-antonimo" hidden></p>
 
         <div id="bloco-som" class="bloco-som" hidden>
           <p class="som-linha">

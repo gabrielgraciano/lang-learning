@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Lápis comprido acima de um lápis curto — o segundo em destaque">
+  <circle cx="100" cy="100" r="94" fill="#F3EDE2"/>
+  <g opacity=".16"><rect x="30" y="62" width="122" height="26" rx="4" fill="#F2B33D"/><path d="M152 62l22 13-22 13z" fill="#E8B48C"/><path d="M166 71l8 4-8 4z" fill="#2E3A45"/><rect x="30" y="62" width="16" height="26" rx="4" fill="#EFA9BC"/></g>
+  <g opacity="1"><rect x="30" y="114" width="46" height="26" rx="4" fill="#F2B33D"/><path d="M76 114l22 13-22 13z" fill="#E8B48C"/><path d="M90 123l8 4-8 4z" fill="#2E3A45"/><rect x="30" y="114" width="16" height="26" rx="4" fill="#EFA9BC"/></g>
+</svg>
