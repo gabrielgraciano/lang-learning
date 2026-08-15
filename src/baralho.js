@@ -28,5 +28,7 @@ export function novaRodada(palavras) {
     virado: false,
     acertos: 0,
     erradas: [],
+    /** true/false por card já respondido, na ordem da fila. */
+    resultados: [],
   };
 }

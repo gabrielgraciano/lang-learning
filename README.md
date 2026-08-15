@@ -1,8 +1,24 @@
 # 한국어 flashcards
 
 Site estático de flashcards ilustrados para aprender vocabulário de coreano.
-Frente do card: a ilustração. Verso: a palavra em 한글, a romanização e o
-significado em português.
+Frente do card: a ilustração. Verso: a palavra em 한글, a decomposição da
+sílaba em jamo, a romanização e o significado em português.
+
+## Design
+
+A interface é desenhada em cima do 원고지, o papel quadriculado em que se
+aprende a escrever coreano — uma sílaba por célula. A célula é a unidade de
+tudo: o título são três células, o card é uma célula, o progresso é uma fileira
+de células (cheia = acertou, cortada = errou) e o verso desmonta cada sílaba nas
+peças que a formam.
+
+Essa decomposição é calculada, não catalogada: o bloco Hangul Syllables do
+Unicode é gerado por fórmula, então `src/hangul.js` desmonta qualquer sílaba com
+aritmética — 고양이 vira ㄱㅗ · ㅇㅑㅇ · ㅇㅣ sem nenhuma tabela de palavras.
+
+As fontes vêm do Google Fonts (Gowun Batang para o 한글, Archivo para a
+interface, DM Mono para romanização e números). Sem rede, as pilhas de fallback
+seguram o layout.
 
 ## Rodar localmente
 
@@ -27,9 +43,10 @@ configuração extra.
 
 ```
 index.html                 # as três telas (início, estudo, resultado)
-estilos/main.css           # design tokens, card 3D, tema claro/escuro
+estilos/main.css           # design tokens, células, card 3D, tema claro/escuro
 src/app.js                 # orquestra a rodada de estudo
 src/baralho.js             # embaralhar e montar a rodada
+src/hangul.js              # decompõe sílabas 한글 em jamo
 src/armazenamento.js       # preferências e última sessão (localStorage)
 dados/palavras.json        # fonte da verdade do vocabulário
 assets/ilustracoes/*.svg   # uma ilustração por palavra
