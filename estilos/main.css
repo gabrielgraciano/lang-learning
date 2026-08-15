@@ -1,211 +1,362 @@
+/* ==========================================================================
+   한국어 flashcards
+   Direção visual: 원고지 — o papel quadriculado em que se aprende a escrever
+   coreano, uma sílaba por célula. A célula é a unidade de tudo aqui: o título,
+   o card, a trilha de progresso e a decomposição em jamo.
+   ========================================================================== */
+
 /* ------------------------------------------------------------------ tokens */
 
 :root {
-  --fundo: #f4f1ec;
-  --superficie: #ffffff;
-  --superficie-2: #faf8f5;
-  --texto: #2b2b2f;
-  --texto-suave: #6f6a63;
-  --borda: #e2ddd5;
-  --acento: #c2453b;
-  --acento-texto: #ffffff;
-  --verde: #2f7d5a;
-  --vermelho: #b5443c;
-  --sombra: 0 6px 24px rgba(43, 43, 47, .1);
-  --raio: 18px;
+  /* Papel de celadon, tinta e o azul-esverdeado do 단청 das beiradas de templo. */
+  --papel: #e7ebe4;
+  --celula: #fbfcf9;
+  --tinta: #19211d;
+  --tinta-2: #4e5b54;
+  --linha: #c6d0c6;
+  --malha: #dce3da;
+  --guia: #dae2d8;
+  --dancheong: #1d5c6e;
+  --acerto: #2f6b4f;
+  --erro: #9b3e36;
 
-  --fonte: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --fonte-ko: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR",
-              "Nanum Gothic", var(--fonte);
+  --f-hangul: "Gowun Batang", "Apple SD Gothic Neo", "Malgun Gothic",
+              "Noto Serif KR", serif;
+  --f-ui: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-nota: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --grade: 28px;   /* passo da malha do papel */
+  --raio: 3px;     /* célula de papel é quadrada; só o suficiente pra não cortar */
+  --coluna: 27rem;
+  --rodape-verso: 58px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --fundo: #17171a;
-    --superficie: #212126;
-    --superficie-2: #1a1a1e;
-    --texto: #f0ede8;
-    --texto-suave: #a09a92;
-    --borda: #33333a;
-    --acento: #e0685a;
-    --acento-texto: #17171a;
-    --verde: #61b98d;
-    --vermelho: #e0685a;
-    --sombra: 0 6px 24px rgba(0, 0, 0, .4);
+    --papel: #121715;
+    --celula: #1b2320;
+    --tinta: #e8ede6;
+    --tinta-2: #93a099;
+    --linha: #33403b;
+    --malha: #1d2622;
+    --guia: #28322e;
+    --dancheong: #7fc2ce;
+    --acerto: #6fbe93;
+    --erro: #e08c7e;
   }
 }
 
-* { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: border-box; }
+
+/* ------------------------------------------------------------------- papel */
 
 body {
   margin: 0;
   min-height: 100dvh;
   display: grid;
   place-items: center;
-  padding: 24px 20px;
-  background: var(--fundo);
-  color: var(--texto);
-  font-family: var(--fonte);
-  line-height: 1.5;
+  padding: clamp(20px, 6vw, 56px) 20px;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--f-ui);
+  font-size: 16px;
+  line-height: 1.55;
   -webkit-text-size-adjust: 100%;
 }
 
-.container {
+/* A malha do papel quadriculado, fixa atrás de tudo. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(to right, var(--malha) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--malha) 1px, transparent 1px);
+  background-size: var(--grade) var(--grade);
+  -webkit-mask-image: radial-gradient(ellipse 120% 90% at 50% 45%, #000 30%, transparent 100%);
+  mask-image: radial-gradient(ellipse 120% 90% at 50% 45%, #000 30%, transparent 100%);
+  pointer-events: none;
+}
+
+.palco {
   width: 100%;
-  max-width: 460px;
+  max-width: var(--coluna);
 }
 
 .tela[hidden] { display: none; }
 
-/* ------------------------------------------------------------ tela inicial */
+/* --------------------------------------------------------------- tipografia */
 
-.titulo {
-  margin: 0;
-  font-size: clamp(2.2rem, 9vw, 3rem);
-  font-family: var(--fonte-ko);
-  letter-spacing: -.02em;
+.intro {
+  margin: 0 0 28px;
+  max-width: 27ch;
+  color: var(--tinta-2);
 }
 
-.titulo-sub {
-  display: block;
-  font-family: var(--fonte);
-  font-size: .9rem;
-  font-weight: 500;
-  letter-spacing: .22em;
+.sobrancelha {
+  margin: 0 0 10px;
+  font-family: var(--f-nota);
+  font-size: .75rem;
+  letter-spacing: .16em;
   text-transform: uppercase;
-  color: var(--texto-suave);
-  margin-top: 6px;
+  color: var(--tinta-2);
 }
 
-.subtitulo {
-  color: var(--texto-suave);
-  margin: 18px 0 28px;
+kbd {
+  font-family: var(--f-nota);
+  font-size: .82em;
+  padding: 1px 5px;
+  border: 1px solid var(--linha);
+  border-radius: 2px;
+  background: var(--celula);
+  color: var(--tinta);
 }
 
-.ultima-sessao {
-  margin: 0 0 20px;
-  padding: 12px 16px;
-  background: var(--superficie);
-  border: 1px solid var(--borda);
-  border-radius: 12px;
-  font-size: .9rem;
-  color: var(--texto-suave);
+/* -------------------------------------------------------- marca (원고지) */
+
+.marca {
+  display: flex;
+  gap: 0;
+  margin: 0;
+  font-family: var(--f-hangul);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 11vw, 3.4rem);
+  line-height: 1;
 }
 
-.rodape-info {
-  margin: 16px 0 24px;
-  font-size: .875rem;
-  color: var(--texto-suave);
+/* Cada sílaba na sua célula, com as guias de centro que a folha de caligrafia
+   traz impressas. As guias são background, então nunca cobrem o glifo. */
+.marca span {
+  display: grid;
+  place-items: center;
+  width: clamp(4rem, 18vw, 5.4rem);
+  aspect-ratio: 1;
+  border: 1px solid var(--linha);
+  margin-left: -1px;   /* células vizinhas dividem a mesma linha */
+  background-color: var(--celula);
+  background-image:
+    linear-gradient(var(--guia), var(--guia)),
+    linear-gradient(var(--guia), var(--guia));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1px 58%, 58% 1px;
+  animation: assentar .5s cubic-bezier(.2, .7, .3, 1) backwards;
 }
+
+.marca span:first-child { margin-left: 0; }
+.marca span:nth-child(1) { animation-delay: .04s; }
+.marca span:nth-child(2) { animation-delay: .12s; }
+.marca span:nth-child(3) { animation-delay: .2s; }
+
+@keyframes assentar {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.marca-legenda {
+  margin: 14px 0 24px;
+  font-family: var(--f-nota);
+  font-size: .8rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--tinta-2);
+}
+
+/* ------------------------------------------------------------------- ficha */
+
+.ficha {
+  margin: 0 0 24px;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+  font-family: var(--f-nota);
+  font-size: .82rem;
+}
+
+.ficha-linha {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.ficha-linha[hidden] { display: none; }
+
+.ficha dt {
+  color: var(--tinta-2);
+  letter-spacing: .04em;
+}
+
+/* A pontilhada liga o rótulo ao dado, como num sumário. */
+.ficha dd {
+  margin: 0;
+  flex: 1;
+  color: var(--tinta);
+  border-bottom: 1px dotted var(--linha);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ------------------------------------------------------------------ botões */
+
+.botao {
+  font-family: var(--f-ui);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 13px 20px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+  color: var(--tinta);
+  cursor: pointer;
+  transition: background-color .15s ease, border-color .15s ease, transform .1s ease;
+}
+
+.botao:hover { border-color: var(--tinta-2); }
+.botao:active { transform: translateY(1px); }
+.botao:disabled { opacity: .45; cursor: not-allowed; transform: none; }
+.botao[hidden] { display: none; }
+
+.botao-forte {
+  display: block;
+  width: 100%;
+  background: var(--dancheong);
+  border-color: var(--dancheong);
+  color: var(--papel);
+  letter-spacing: .01em;
+}
+
+.botao-forte:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--dancheong) 86%, var(--tinta));
+  border-color: color-mix(in srgb, var(--dancheong) 86%, var(--tinta));
+}
+
+.botao-errei, .botao-acertei { flex: 1; }
+.botao-errei { color: var(--erro); }
+.botao-acertei { color: var(--acerto); }
+.botao-errei:hover { border-color: var(--erro); }
+.botao-acertei:hover { border-color: var(--acerto); }
+
+:focus-visible {
+  outline: 2px solid var(--dancheong);
+  outline-offset: 3px;
+}
+
+/* ------------------------------------------------------------------ opção */
 
 .opcao {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 18px;
   font-size: .9rem;
-  color: var(--texto-suave);
+  color: var(--tinta-2);
   cursor: pointer;
 }
 
-.opcao input { accent-color: var(--acento); width: 17px; height: 17px; }
+.opcao input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--dancheong);
+}
 
-.erro {
-  margin-top: 24px;
+.aviso {
+  margin: 24px 0 0;
   padding: 14px 16px;
-  border-radius: 12px;
-  background: color-mix(in srgb, var(--vermelho) 12%, transparent);
-  color: var(--vermelho);
+  border: 1px solid var(--erro);
+  border-left-width: 3px;
+  border-radius: var(--raio);
+  background: var(--celula);
+  color: var(--tinta);
   font-size: .875rem;
 }
 
-/* ---------------------------------------------------------------- botões */
+.aviso[hidden] { display: none; }
 
-.botao {
-  font: inherit;
-  font-weight: 600;
-  padding: 14px 22px;
-  border-radius: 999px;
-  border: 1px solid var(--borda);
-  background: var(--superficie);
-  color: var(--texto);
-  cursor: pointer;
-  transition: transform .12s ease, filter .12s ease;
-}
+/* ---------------------------------------------------- cabeçalho e trilha */
 
-.botao:hover { filter: brightness(.97); }
-.botao:active { transform: scale(.97); }
-.botao:disabled { opacity: .5; cursor: not-allowed; }
-
-.botao-principal {
-  width: 100%;
-  background: var(--acento);
-  color: var(--acento-texto);
-  border-color: transparent;
-  font-size: 1.05rem;
-}
-
-.botao-errei, .botao-acertei { flex: 1; }
-.botao-errei { color: var(--vermelho); }
-.botao-acertei { color: var(--verde); }
-
-:focus-visible {
-  outline: 3px solid var(--acento);
-  outline-offset: 3px;
-}
-
-/* -------------------------------------------------------------- progresso */
-
-.progresso {
+.cabecalho {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 .contador {
-  font-size: .85rem;
+  margin: 0;
+  font-family: var(--f-nota);
+  font-size: .82rem;
   font-variant-numeric: tabular-nums;
-  color: var(--texto-suave);
-  min-width: 52px;
+  color: var(--tinta-2);
+  white-space: nowrap;
 }
 
-.barra-trilho {
-  flex: 1;
-  height: 6px;
-  background: var(--borda);
-  border-radius: 999px;
-  overflow: hidden;
+/* Uma célula por card da rodada: cheia = acertou, cortada = errou. */
+.trilha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.barra-preenchida {
-  height: 100%;
-  width: 0;
-  background: var(--acento);
-  border-radius: 999px;
-  transition: width .3s ease;
+.trilha li {
+  width: 13px;
+  height: 13px;
+  border: 1px solid var(--linha);
+  border-radius: 1px;
+  position: relative;
 }
 
-/* ------------------------------------------------------------------- card */
+.trilha .passo-atual {
+  border-color: var(--dancheong);
+  box-shadow: inset 0 0 0 1px var(--dancheong);
+}
 
-.card-area { perspective: 1400px; }
+.trilha .passo-acerto {
+  background: var(--acerto);
+  border-color: var(--acerto);
+}
+
+.trilha .passo-erro { border-color: var(--erro); }
+
+.trilha .passo-erro::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(
+    to top left,
+    transparent calc(50% - .8px),
+    var(--erro) calc(50% - .8px) calc(50% + .8px),
+    transparent calc(50% + .8px)
+  );
+}
+
+/* -------------------------------------------------------------------- card */
 
 .card {
-  aspect-ratio: 3 / 4;
+  display: block;
   width: 100%;
-  cursor: pointer;
-  border: 0;
-  background: none;
+  aspect-ratio: 1;
   padding: 0;
-  /* Acompanha o arredondamento das faces para o anel de foco não sair quadrado. */
+  border: 0;
   border-radius: var(--raio);
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  perspective: 1600px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .card-interno {
+  display: block;
   position: relative;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: transform .55s cubic-bezier(.4, .1, .2, 1);
+  transition: transform .6s cubic-bezier(.35, .05, .2, 1);
 }
 
 .card.virado .card-interno { transform: rotateY(180deg); }
@@ -218,132 +369,223 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  padding: 24px;
+  padding: 20px;
+  border: 1px solid var(--linha);
   border-radius: var(--raio);
-  border: 1px solid var(--borda);
-  background: var(--superficie);
-  box-shadow: var(--sombra);
+  background: var(--celula);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
+/* O verso é o card virado: resposta ao centro, tradução no rodapé — assim a
+   composição usa o quadrado inteiro em vez de flutuar no meio. */
 .face-verso {
   transform: rotateY(180deg);
-  background: var(--superficie-2);
+  padding-bottom: var(--rodape-verso);
 }
 
-.face-frente img {
-  width: 100%;
-  max-width: 320px;
+.ilustracao {
+  width: 82%;
+  max-width: 340px;
   height: auto;
 }
 
-.hangul {
-  margin: 0;
-  font-family: var(--fonte-ko);
-  font-size: clamp(3rem, 16vw, 4.5rem);
+.verso-hangul {
+  font-family: var(--f-hangul);
   font-weight: 700;
-  line-height: 1.1;
+  font-size: clamp(3.4rem, 17vw, 5rem);
+  line-height: 1.05;
   word-break: keep-all;
   text-align: center;
 }
 
-.romanizacao {
-  margin: 0;
+.verso-som {
+  margin-top: 14px;
+  font-family: var(--f-nota);
   font-size: 1.05rem;
-  color: var(--texto-suave);
-  letter-spacing: .04em;
+  letter-spacing: .06em;
+  color: var(--tinta-2);
 }
 
-.romanizacao[hidden] { display: none; }
+.verso-som[hidden] { display: none; }
 
-.divisoria {
-  width: 44px;
-  margin: 18px 0;
-  border: 0;
-  border-top: 2px solid var(--borda);
-}
-
-.significado {
-  margin: 0;
-  font-size: 1.35rem;
-  font-weight: 600;
+.verso-pt {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: grid;
+  place-items: center;
+  height: var(--rodape-verso);
+  border-top: 1px solid var(--linha);
+  padding: 0 16px;
   text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-wrap: balance;
 }
+
+/* ------------------------------------------------------------------- jamo */
+
+/* A assinatura: a sílaba desmontada nas peças que a formam. */
+.jamo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.jamo-silaba {
+  display: flex;
+  gap: 0;
+}
+
+.jamo-peca {
+  display: grid;
+  place-items: center;
+  width: clamp(28px, 7.5vw, 34px);
+  aspect-ratio: 1;
+  margin-left: -1px;
+  border: 1px solid var(--linha);
+  background: var(--papel);
+  font-family: var(--f-hangul);
+  font-size: 1.05rem;
+  line-height: 1;
+  color: var(--tinta-2);
+  animation: montar .32s ease backwards;
+}
+
+.jamo-peca:first-child { margin-left: 0; }
+
+@keyframes montar {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.card.virado .jamo-peca { animation-delay: calc(.42s + var(--i) * .05s); }
+.card:not(.virado) .jamo-peca { animation: none; }
 
 .dica {
-  margin: 18px 0 0;
+  margin: 16px 0 0;
   text-align: center;
   font-size: .85rem;
-  color: var(--texto-suave);
+  color: var(--tinta-2);
 }
 
 .dica[hidden] { display: none; }
 
-kbd {
-  font: inherit;
-  font-size: .8em;
-  padding: 2px 6px;
-  border: 1px solid var(--borda);
-  border-bottom-width: 2px;
-  border-radius: 6px;
-  background: var(--superficie);
-}
-
 .respostas {
   display: flex;
-  gap: 12px;
-  margin-top: 18px;
+  gap: 10px;
+  margin-top: 16px;
 }
 
 .respostas[hidden] { display: none; }
 
 /* -------------------------------------------------------------- tela final */
 
-.titulo-fim { margin: 0 0 6px; font-size: 1.6rem; }
-
 .placar {
-  margin: 0 0 22px;
-  font-size: 1.1rem;
-  color: var(--texto-suave);
+  margin: 0 0 16px;
+  font-size: clamp(2rem, 9vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -.02em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+/* O placar quebra entre a frase e o número, nunca no meio do número. */
+.placar b {
+  font-weight: 700;
+  color: var(--dancheong);
+  white-space: nowrap;
+}
+
+.placar small {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--f-nota);
+  font-size: .8rem;
+  font-weight: 400;
+  letter-spacing: .04em;
+  color: var(--tinta-2);
+}
+
+.revisao {
+  margin-top: 28px;
+}
+
+.revisao[hidden] { display: none; }
+
+.revisao-titulo {
+  margin: 0 0 10px;
+  font-family: var(--f-nota);
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--tinta-2);
 }
 
 .lista-erros {
   list-style: none;
-  margin: 0 0 26px;
+  margin: 0;
   padding: 0;
-  display: grid;
-  gap: 8px;
+  border-top: 1px solid var(--linha);
 }
 
 .lista-erros li {
   display: flex;
   align-items: baseline;
   gap: 14px;
-  padding: 12px 16px;
-  border: 1px solid var(--borda);
-  border-radius: 12px;
-  background: var(--superficie);
+  padding: 11px 2px;
+  border-bottom: 1px solid var(--linha);
 }
 
 .erro-hangul {
-  font-family: var(--fonte-ko);
-  font-size: 1.4rem;
+  font-family: var(--f-hangul);
   font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  min-width: 5.5rem;
 }
 
-.erro-pt { color: var(--texto-suave); }
+.erro-som {
+  font-family: var(--f-nota);
+  font-size: .82rem;
+  color: var(--tinta-2);
+}
 
-.acoes-fim { display: grid; gap: 10px; }
+.erro-pt {
+  margin-left: auto;
+  text-align: right;
+  color: var(--tinta-2);
+}
 
-.acoes-fim .botao { width: 100%; }
+.acoes {
+  display: grid;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.acoes .botao { width: 100%; }
+
+/* ------------------------------------------------------------- respiração */
+
+.tela-estudo .trilha { flex: 1; }
+
+/* Na tela final a trilha vira o registro da rodada, então ganha corpo. */
+.tela-fim .trilha { gap: 5px; }
+.tela-fim .trilha li { width: 18px; height: 18px; }
+
+@media (max-width: 380px) {
+  .trilha li { width: 11px; height: 11px; }
+}
 
 /* ---------------------------------------------------------- acessibilidade */
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: .01ms !important;
+    animation-delay: 0ms !important;
     transition-duration: .01ms !important;
   }
 }

@@ -3,59 +3,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Flashcards de Coreano</title>
-  <meta name="description" content="Flashcards ilustrados para aprender vocabulário de coreano.">
-  <meta name="theme-color" content="#f4f1ec">
+  <title>한국어 — flashcards de coreano</title>
+  <meta name="description" content="Flashcards ilustrados para aprender vocabulário de coreano, com a decomposição de cada sílaba em jamo.">
+  <meta name="theme-color" content="#e7ebe4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121715" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="assets/ilustracoes/livro.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Gowun+Batang:wght@400;700&display=swap">
   <link rel="stylesheet" href="estilos/main.css">
 </head>
 <body>
-  <main class="container">
+  <main class="palco">
 
     <!-- ---------------- Tela inicial ---------------- -->
-    <section id="tela-inicio" class="tela">
-      <h1 class="titulo">한국어 <span class="titulo-sub">flashcards</span></h1>
-      <p class="subtitulo">Veja a ilustração, lembre da palavra, vire o card.</p>
+    <section id="tela-inicio" class="tela tela-inicio">
+      <h1 class="marca" lang="ko"><span>한</span><span>국</span><span>어</span></h1>
+      <p class="marca-legenda">flashcards de coreano</p>
 
-      <p id="ultima-sessao" class="ultima-sessao" hidden></p>
+      <p class="intro">Olhe o desenho, diga a palavra em voz alta e vire o card para conferir.</p>
 
-      <button id="comecar" class="botao botao-principal" type="button">Começar</button>
+      <dl class="ficha">
+        <div class="ficha-linha">
+          <dt>Baralho</dt>
+          <dd id="total-palavras">—</dd>
+        </div>
+        <div class="ficha-linha" id="ultima-sessao" hidden>
+          <dt>Última rodada</dt>
+          <dd id="ultima-sessao-valor"></dd>
+        </div>
+      </dl>
 
-      <p id="total-palavras" class="rodape-info"></p>
+      <button id="comecar" class="botao botao-forte" type="button">Começar rodada</button>
 
       <label class="opcao">
         <input type="checkbox" id="toggle-romanizacao" checked>
-        <span>Mostrar romanização no verso</span>
+        <span>Mostrar a romanização no verso</span>
       </label>
 
-      <p id="erro" class="erro" hidden></p>
+      <p id="erro" class="aviso" hidden></p>
     </section>
 
     <!-- ---------------- Tela de estudo ---------------- -->
-    <section id="tela-estudo" class="tela" hidden>
-      <header class="progresso">
-        <span id="contador" class="contador"></span>
-        <div class="barra-trilho"><div id="barra" class="barra-preenchida"></div></div>
+    <section id="tela-estudo" class="tela tela-estudo" hidden>
+      <header class="cabecalho">
+        <p id="contador" class="contador"></p>
+        <ol id="trilha" class="trilha" aria-hidden="true"></ol>
       </header>
 
-      <div class="card-area">
-        <div id="card" class="card" role="button" tabindex="0" aria-pressed="false"
-             aria-label="Card. Ative para revelar a palavra.">
-          <div class="card-interno">
-            <div class="face face-frente">
-              <img id="ilustracao" src="" alt="Ilustração da palavra">
-            </div>
-            <div class="face face-verso">
-              <p id="hangul" class="hangul" lang="ko"></p>
-              <p id="romanizacao" class="romanizacao"></p>
-              <hr class="divisoria">
-              <p id="significado" class="significado"></p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <button id="card" class="card" type="button" aria-label="Card fechado. Ative para revelar a palavra.">
+        <span class="card-interno">
+          <span class="face face-frente">
+            <img id="ilustracao" class="ilustracao" src="" alt="Ilustração da palavra">
+          </span>
+          <span class="face face-verso">
+            <span id="hangul" class="verso-hangul" lang="ko"></span>
+            <span id="jamo" class="jamo" lang="ko" aria-hidden="true"></span>
+            <span id="romanizacao" class="verso-som"></span>
+            <span id="significado" class="verso-pt"></span>
+          </span>
+        </span>
+      </button>
 
-      <p id="dica" class="dica">Toque no card (ou aperte <kbd>Espaço</kbd>) para virar</p>
+      <p id="dica" class="dica">Toque no card ou aperte <kbd>Espaço</kbd> para virar</p>
 
       <div id="respostas" class="respostas" hidden>
         <button id="errei" class="botao botao-errei" type="button">Errei</button>
@@ -64,13 +74,19 @@
     </section>
 
     <!-- ---------------- Tela final ---------------- -->
-    <section id="tela-fim" class="tela" hidden>
-      <h2 class="titulo-fim">Fim da rodada</h2>
-      <p id="placar" class="placar"></p>
-      <ul id="lista-erros" class="lista-erros"></ul>
-      <div class="acoes-fim">
-        <button id="revisar-erros" class="botao botao-principal" type="button" hidden>Revisar as que errei</button>
-        <button id="recomecar" class="botao" type="button">Recomeçar do início</button>
+    <section id="tela-fim" class="tela tela-fim" hidden>
+      <p class="sobrancelha">Rodada concluída</p>
+      <h2 id="placar" class="placar"></h2>
+      <ol id="trilha-fim" class="trilha" aria-hidden="true"></ol>
+
+      <section id="revisao" class="revisao" hidden>
+        <h3 class="revisao-titulo">Passou batido</h3>
+        <ul id="lista-erros" class="lista-erros"></ul>
+      </section>
+
+      <div class="acoes">
+        <button id="revisar-erros" class="botao botao-forte" type="button" hidden>Revisar essas palavras</button>
+        <button id="recomecar" class="botao" type="button">Nova rodada</button>
       </div>
     </section>
 

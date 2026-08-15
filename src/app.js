@@ -1,5 +1,6 @@
 import { novaRodada, embaralhar } from './baralho.js';
 import { lerEstado, salvarEstado } from './armazenamento.js';
+import { decompor } from './hangul.js';
 
 // Resolvido a partir do próprio módulo: funciona tanto na raiz quanto em
 // subdiretório (ex.: usuario.github.io/lang-learning/).
@@ -14,22 +15,26 @@ const el = {
   comecar: document.querySelector('#comecar'),
   totalPalavras: document.querySelector('#total-palavras'),
   ultimaSessao: document.querySelector('#ultima-sessao'),
+  ultimaSessaoValor: document.querySelector('#ultima-sessao-valor'),
   toggleRomanizacao: document.querySelector('#toggle-romanizacao'),
   erro: document.querySelector('#erro'),
 
   card: document.querySelector('#card'),
   ilustracao: document.querySelector('#ilustracao'),
   hangul: document.querySelector('#hangul'),
+  jamo: document.querySelector('#jamo'),
   romanizacao: document.querySelector('#romanizacao'),
   significado: document.querySelector('#significado'),
   contador: document.querySelector('#contador'),
-  barra: document.querySelector('#barra'),
+  trilha: document.querySelector('#trilha'),
   dica: document.querySelector('#dica'),
   respostas: document.querySelector('#respostas'),
   errei: document.querySelector('#errei'),
   acertei: document.querySelector('#acertei'),
 
   placar: document.querySelector('#placar'),
+  trilhaFim: document.querySelector('#trilha-fim'),
+  revisao: document.querySelector('#revisao'),
   listaErros: document.querySelector('#lista-erros'),
   revisarErros: document.querySelector('#revisar-erros'),
   recomecar: document.querySelector('#recomecar'),
@@ -40,6 +45,8 @@ let palavras = [];
 /** @type {ReturnType<typeof novaRodada> | null} */
 let rodada = null;
 let preferencias = { romanizacao: true, ...lerEstado().preferencias };
+
+const doisDigitos = (numero) => String(numero).padStart(2, '0');
 
 // ---------------------------------------------------------------- navegação
 
@@ -52,16 +59,40 @@ function mostrarTela(nome) {
 // ------------------------------------------------------------ tela inicial
 
 function pintarTelaInicial() {
-  el.totalPalavras.textContent = `${palavras.length} palavras no baralho`;
+  el.totalPalavras.textContent = `${palavras.length} palavras`;
   el.toggleRomanizacao.checked = preferencias.romanizacao;
 
   const { ultimaSessao } = lerEstado();
   if (ultimaSessao) {
-    const data = new Date(ultimaSessao.data).toLocaleDateString('pt-BR');
-    el.ultimaSessao.textContent =
-      `Última rodada: ${ultimaSessao.acertos} de ${ultimaSessao.total} em ${data}`;
+    const data = new Date(ultimaSessao.data).toLocaleDateString('pt-BR', {
+      day: '2-digit',
+      month: '2-digit',
+    });
+    el.ultimaSessaoValor.textContent =
+      `${ultimaSessao.acertos} de ${ultimaSessao.total} em ${data}`;
     el.ultimaSessao.hidden = false;
   }
+}
+
+// ----------------------------------------------------------------- trilha
+
+/**
+ * Uma célula por card da rodada: cheia = acertou, cortada = errou, contornada
+ * em azul = a atual. Decorativa (a lista tem aria-hidden); quem lê com leitor
+ * de tela se orienta pelo contador.
+ */
+function pintarTrilha(lista, { ate = Infinity } = {}) {
+  const celulas = rodada.fila.map((_, indice) => {
+    const item = document.createElement('li');
+    const resultado = rodada.resultados[indice];
+
+    if (resultado !== undefined) item.className = resultado ? 'passo-acerto' : 'passo-erro';
+    else if (indice === ate) item.className = 'passo-atual';
+
+    return item;
+  });
+
+  lista.replaceChildren(...celulas);
 }
 
 // ------------------------------------------------------------ tela estudo
@@ -85,11 +116,38 @@ function mostrarCard() {
   el.romanizacao.textContent = palavra.romanizacao;
   el.romanizacao.hidden = !preferencias.romanizacao;
   el.significado.textContent = palavra.pt;
+  montarJamo(palavra.hangul);
 
-  el.contador.textContent = `${rodada.indice + 1} / ${rodada.fila.length}`;
-  el.barra.style.width = `${(rodada.indice / rodada.fila.length) * 100}%`;
+  el.contador.textContent =
+    `${doisDigitos(rodada.indice + 1)} / ${doisDigitos(rodada.fila.length)}`;
+  pintarTrilha(el.trilha, { ate: rodada.indice });
 
+  // Devolve o foco ao card: os botões de resposta somem depois de respondidos e
+  // levariam o foco junto, quebrando a navegação por teclado.
+  el.card.focus();
   precarregarProxima();
+}
+
+/** Desmonta a palavra nas peças de cada sílaba: 고양이 → ㄱㅗ · ㅇㅑ · ㅇㅣ */
+function montarJamo(hangul) {
+  let ordem = 0;
+
+  el.jamo.replaceChildren(
+    ...decompor(hangul).map(({ jamo }) => {
+      const grupo = document.createElement('span');
+      grupo.className = 'jamo-silaba';
+
+      grupo.append(...jamo.map((peca) => {
+        const celula = document.createElement('span');
+        celula.className = 'jamo-peca';
+        celula.style.setProperty('--i', String(ordem++));
+        celula.textContent = peca;
+        return celula;
+      }));
+
+      return grupo;
+    }),
+  );
 }
 
 function precarregarProxima() {
@@ -98,13 +156,22 @@ function precarregarProxima() {
 }
 
 function virar(deveVirar = !rodada.virado) {
+  const palavra = palavraAtual();
   rodada.virado = deveVirar;
+
   el.card.classList.toggle('virado', deveVirar);
   el.card.setAttribute('aria-pressed', String(deveVirar));
+
+  // O verso fica no DOM o tempo todo, então o rótulo é o que controla o que o
+  // leitor de tela anuncia — sem ele a resposta vazaria antes da hora.
+  const som = preferencias.romanizacao ? `, ${palavra.romanizacao}` : '';
   el.card.setAttribute(
     'aria-label',
-    deveVirar ? 'Card revelado. Marque se acertou ou errou.' : 'Card. Ative para revelar a palavra.',
+    deveVirar
+      ? `${palavra.hangul}${som} — ${palavra.pt}. Marque se acertou ou errou.`
+      : 'Card fechado. Ative para revelar a palavra.',
   );
+
   el.respostas.hidden = !deveVirar;
   el.dica.hidden = deveVirar;
 }
@@ -112,6 +179,7 @@ function virar(deveVirar = !rodada.virado) {
 function responder(acertou) {
   if (!rodada.virado) return;
 
+  rodada.resultados[rodada.indice] = acertou;
   if (acertou) rodada.acertos++;
   else rodada.erradas.push(palavraAtual());
 
@@ -124,8 +192,18 @@ function responder(acertou) {
 
 function terminarRodada() {
   const total = rodada.fila.length;
-  el.placar.textContent = `Você acertou ${rodada.acertos} de ${total}`;
-  el.barra.style.width = '100%';
+  const erradas = rodada.erradas.length;
+
+  const numero = document.createElement('b');
+  numero.textContent = `${rodada.acertos} de ${total}`;
+
+  const detalhe = document.createElement('small');
+  detalhe.textContent = erradas === 0
+    ? 'baralho limpo'
+    : `${erradas} ${erradas === 1 ? 'palavra' : 'palavras'} para revisar`;
+
+  el.placar.replaceChildren('Você acertou ', numero, detalhe);
+  pintarTrilha(el.trilhaFim);
 
   el.listaErros.replaceChildren(
     ...rodada.erradas.map((palavra) => {
@@ -136,16 +214,21 @@ function terminarRodada() {
       hangul.lang = 'ko';
       hangul.textContent = palavra.hangul;
 
+      const som = document.createElement('span');
+      som.className = 'erro-som';
+      som.textContent = palavra.romanizacao;
+
       const traducao = document.createElement('span');
       traducao.className = 'erro-pt';
       traducao.textContent = palavra.pt;
 
-      item.append(hangul, traducao);
+      item.append(hangul, som, traducao);
       return item;
     }),
   );
 
-  el.revisarErros.hidden = rodada.erradas.length === 0;
+  el.revisao.hidden = erradas === 0;
+  el.revisarErros.hidden = erradas === 0;
 
   salvarEstado({
     ultimaSessao: { acertos: rodada.acertos, total, data: new Date().toISOString() },
@@ -160,7 +243,6 @@ function iniciarRodada(lista) {
   rodada = novaRodada(lista);
   mostrarTela('estudo');
   mostrarCard();
-  el.card.focus();
 }
 
 // ------------------------------------------------------------------ eventos
@@ -184,6 +266,9 @@ document.addEventListener('keydown', (evento) => {
   switch (evento.key) {
     case ' ':
     case 'Enter':
+      // Se o foco está num controle, quem responde é ele: o próprio card vira
+      // pelo clique nativo do <button>, e Espaço em "Acertei" marca a resposta.
+      if (evento.target.closest('button, input, a')) return;
       evento.preventDefault();
       virar();
       break;
@@ -222,7 +307,7 @@ try {
   el.comecar.disabled = true;
   el.erro.hidden = false;
   el.erro.textContent =
-    'Não consegui carregar o vocabulário. Se estiver abrindo o arquivo direto do disco, ' +
-    'rode um servidor local (python3 -m http.server) e acesse via http://localhost:8000.';
+    'O navegador bloqueia a leitura do vocabulário quando a página é aberta direto do disco. ' +
+    'Rode `python3 -m http.server 8000` na pasta do projeto e abra http://localhost:8000.';
   console.error(causa);
 }
