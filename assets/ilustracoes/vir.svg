@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pessoa se aproximando de uma casa">
+  <circle cx="100" cy="100" r="94" fill="#FBEFE0"/>
+  <path d="M134 116h44v46h-44z" fill="#E8D6C0"/>
+  <path d="M156 84l28 26h-56z" fill="#D9A461"/>
+  <path d="M12 156c0-22 16-38 36-38s36 16 36 38z" fill="#5B8AAE"/>
+  <circle cx="48" cy="84" r="25" fill="#F0C9A4"/>
+  <path d="M23 80a25 25 0 0 1 50 0c0-17-11-25-25-25s-25 8-25 25z" fill="#3E4A57"/>
+  <circle cx="40" cy="86" r="3" fill="#2E3A45"/><circle cx="57" cy="86" r="3" fill="#2E3A45"/>
+  <g fill="none" stroke="#B85C4E" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M126 132h-30"/><path d="M106 121l-12 11 12 11"/>
+  </g>
+</svg>

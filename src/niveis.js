@@ -22,11 +22,15 @@ export const NIVEL = {
   PLENO: 3,
 };
 
+/**
+ * O rótulo do nível. `detalheFrase` cobre os cards sem ilustração — dizer
+ * "só a imagem" numa tela que não tem imagem nenhuma confunde de graça.
+ */
 export const DESCRICAO_NIVEL = {
   0: { rotulo: 'Apresentação', detalhe: 'Primeiro encontro. Sem teste.' },
   1: { rotulo: 'Reconhecimento', detalhe: 'Escolha entre quatro.' },
-  2: { rotulo: 'Recall assistido', detalhe: 'Com a primeira sílaba de apoio.' },
-  3: { rotulo: 'Recall pleno', detalhe: 'Só a imagem.' },
+  2: { rotulo: 'Recall assistido', detalhe: 'Com parte da palavra à mostra.' },
+  3: { rotulo: 'Recall pleno', detalhe: 'Só a imagem.', detalheFrase: 'Só a frase.' },
 };
 
 /**
@@ -111,6 +115,11 @@ export function distratores(alvo, banco, quantidade = 3) {
   adicionar(disponivel.filter((p) => alvo.confundiveis?.includes(p.id)));
   adicionar(disponivel.filter((p) => p.campo && p.campo === alvo.campo));
   adicionar(disponivel.filter((p) => p.modulo === alvo.modulo));
+  // A classe gramatical vem antes do resto porque um substantivo entre quatro
+  // verbos se elimina sozinho: a alternativa errada precisa ser *possível*,
+  // senão a múltipla escolha testa sintaxe em vez de significado. Vale ainda
+  // mais na lacuna de frase, onde só uma classe cabe no buraco.
+  adicionar(disponivel.filter((p) => p.classe === alvo.classe));
   adicionar(disponivel);
 
   return escolhidos;
@@ -145,6 +154,36 @@ export function notaPara({ acertou, usouDica, nivel }) {
   if (!acertou) return 1;
   if (usouDica) return 2;
   return nivel >= NIVEL.PLENO ? 4 : 3;
+}
+
+/**
+ * O que precisa ser digitado — que nem sempre é a palavra do dicionário.
+ *
+ * 하다, 되다, 있다 e 없다 estão entre as palavras mais frequentes do coreano e
+ * são justamente as que **não cabem** numa frase na forma de dicionário: ninguém
+ * diz "지금 뭐 하다?", diz "지금 뭐 해요?". Forçar a forma de dicionário na lacuna
+ * ensinaria uma frase que não existe.
+ *
+ * Então a palavra guarda as duas coisas: `hangul` é o lema — o que o FSRS
+ * agenda, o que o mapa mostra, o que se procura no dicionário — e `resposta` é a
+ * forma que a frase pede. O gabarito mostra as duas lado a lado, que é
+ * exatamente a informação que falta a quem está aprendendo.
+ */
+export const respostaDe = (palavra) => palavra.resposta ?? palavra.hangul;
+
+/**
+ * Parte uma frase-modelo na lacuna. `{}` marca onde a palavra entra.
+ *
+ *   '이건 제 {}이에요.' → { antes: '이건 제 ', depois: '이에요.' }
+ *
+ * O estímulo do card de frase é o par frase-com-lacuna + tradução. A tradução
+ * aparece *durante* o teste, ao contrário do card ilustrado — e não entrega a
+ * resposta justamente porque essas palavras não têm correspondente de um para
+ * um em português. É por não terem que elas não são ilustráveis.
+ */
+export function partirFrase(modelo) {
+  const [antes = '', depois = ''] = modelo.split('{}');
+  return { antes, depois };
 }
 
 /** Fisher-Yates numa cópia. */

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Halter ao lado de um balão — o segundo em destaque">
+  <circle cx="100" cy="100" r="94" fill="#EDEAF3"/>
+  <g opacity=".16">
+    <rect x="40" y="118" width="76" height="12" rx="6" fill="#5C6E8C"/>
+    <rect x="26" y="98" width="22" height="52" rx="6" fill="#3E4A57"/>
+    <rect x="108" y="98" width="22" height="52" rx="6" fill="#3E4A57"/>
+    <g fill="none" stroke="#5C6E8C" stroke-width="5" stroke-linecap="round"><path d="M60 158l-8 12"/><path d="M96 158l8 12"/></g>
+  </g>
+  <g opacity="1">
+    <ellipse cx="152" cy="66" rx="28" ry="34" fill="#EFA9BC"/>
+    <path d="M146 100h12l-6 10z" fill="#EFA9BC"/>
+    <path d="M152 110c8 14-8 22 0 40" fill="none" stroke="#B08FA0" stroke-width="3"/>
+  </g>
+</svg>

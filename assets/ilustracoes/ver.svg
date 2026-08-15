@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pessoa olhando à distância com a mão sobre os olhos">
+  <circle cx="100" cy="100" r="94" fill="#E9F2F8"/>
+  <path d="M56 178c0-24 20-42 44-42s44 18 44 42z" fill="#5B8AAE"/>
+  <circle cx="100" cy="76" r="30" fill="#F0C9A4"/>
+  <circle cx="88" cy="80" r="8" fill="#FFFFFF"/><circle cx="88" cy="80" r="4" fill="#2E3A45"/>
+  <circle cx="112" cy="80" r="8" fill="#FFFFFF"/><circle cx="112" cy="80" r="4" fill="#2E3A45"/>
+  <path d="M70 72a30 30 0 0 1 60 0c0-19-13-29-30-29S70 53 70 72z" fill="#3E4A57"/>
+  <path d="M64 56h72a6 6 0 0 1 0 12H64a6 6 0 0 1 0-12z" fill="#E8B48C"/>
+  <g fill="none" stroke="#4E9FD6" stroke-width="6" stroke-linecap="round">
+    <path d="M154 44c8 6 8 16 0 22"/><path d="M166 34c14 12 14 32 0 44"/>
+  </g>
+</svg>

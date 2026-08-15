@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pessoa com a mão em concha na orelha">
+  <circle cx="100" cy="100" r="94" fill="#EFEAF6"/>
+  <path d="M48 178c0-24 20-42 44-42s44 18 44 42z" fill="#5B8AAE"/>
+  <circle cx="92" cy="78" r="29" fill="#F0C9A4"/>
+  <path d="M63 74a29 29 0 0 1 58 0c0-19-13-28-29-28S63 55 63 74z" fill="#3E4A57"/>
+  <circle cx="84" cy="82" r="3.2" fill="#2E3A45"/><circle cx="101" cy="82" r="3.2" fill="#2E3A45"/>
+  <ellipse cx="120" cy="84" rx="8" ry="11" fill="#E8B48C"/>
+  <path d="M128 70c14-4 20 6 18 16s-12 14-18 10" fill="#F0C9A4"/>
+  <g fill="none" stroke="#8C7FC0" stroke-width="6" stroke-linecap="round">
+    <path d="M156 68c8 8 8 22 0 30"/><path d="M170 56c14 14 14 40 0 54"/>
+  </g>
+</svg>

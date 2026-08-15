@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pessoa bebendo de um copo">
+  <circle cx="100" cy="100" r="94" fill="#E9F1F8"/>
+  <path d="M58 174c0-26 19-46 42-46s42 20 42 46z" fill="#5B8AAE"/>
+  <circle cx="100" cy="76" r="28" fill="#F0C9A4"/>
+  <path d="M72 72a28 28 0 0 1 56 0c0-19-12-28-28-28S72 53 72 72z" fill="#3E4A57"/>
+  <circle cx="90" cy="74" r="3.2" fill="#2E3A45"/><circle cx="110" cy="74" r="3.2" fill="#2E3A45"/>
+  <g transform="rotate(-26 106 104)">
+    <path d="M84 92h44l-6 44a5 5 0 0 1-5 4H95a5 5 0 0 1-5-4z" fill="#F4FAFE" stroke="#9CC4DE" stroke-width="2.5"/>
+    <path d="M87 116h38l-3.5 20a5 5 0 0 1-5 4H95.5a5 5 0 0 1-5-4z" fill="#4E9FD6"/>
+  </g>
+  <path d="M60 128l-14 26" fill="none" stroke="#F0C9A4" stroke-width="14" stroke-linecap="round"/>
+</svg>

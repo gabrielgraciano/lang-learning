@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pessoa sentada numa cadeira">
+  <circle cx="100" cy="100" r="94" fill="#F0EDE6"/>
+  <rect x="128" y="52" width="14" height="76" rx="6" fill="#B98A5E"/>
+  <rect x="72" y="120" width="76" height="14" rx="6" fill="#CE9F70"/>
+  <rect x="78" y="132" width="11" height="42" rx="5" fill="#B98A5E"/>
+  <rect x="132" y="132" width="11" height="42" rx="5" fill="#B98A5E"/>
+  <path d="M60 134h44v-30a22 22 0 0 0-44 0z" fill="#40708F"/>
+  <path d="M82 120h46v14H82z" fill="#5B8AAE"/>
+  <circle cx="82" cy="76" r="26" fill="#F0C9A4"/>
+  <path d="M56 72a26 26 0 0 1 52 0c0-17-11-26-26-26S56 55 56 72z" fill="#3E4A57"/>
+  <circle cx="74" cy="78" r="3" fill="#2E3A45"/><circle cx="91" cy="78" r="3" fill="#2E3A45"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pessoa dormindo deitada">
+  <circle cx="100" cy="100" r="94" fill="#E7E6F3"/>
+  <rect x="26" y="120" width="150" height="16" rx="8" fill="#8C7FC0"/>
+  <path d="M34 120h44c0-13 11-22 24-22h58v22z" fill="#6E62A8"/>
+  <ellipse cx="60" cy="112" rx="26" ry="16" fill="#F4F2FB"/>
+  <circle cx="72" cy="100" r="26" fill="#F0C9A4"/>
+  <path d="M46 96a26 26 0 0 1 52 0c0-17-11-26-26-26S46 81 46 96z" fill="#3E4A57"/>
+  <g fill="none" stroke="#2E3A45" stroke-width="2.8" stroke-linecap="round">
+    <path d="M62 100c2-3 6-3 8 0"/><path d="M78 100c2-3 6-3 8 0"/>
+  </g>
+  <g fill="#8C7FC0" opacity=".8">
+    <circle cx="118" cy="72" r="5"/><circle cx="134" cy="56" r="7"/><circle cx="154" cy="38" r="9"/>
+  </g>
+</svg>

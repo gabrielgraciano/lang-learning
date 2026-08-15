@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pessoa lendo um livro aberto">
+  <circle cx="100" cy="100" r="94" fill="#F3EDE2"/>
+  <path d="M56 178c0-24 20-42 44-42s44 18 44 42z" fill="#5B8AAE"/>
+  <circle cx="100" cy="70" r="27" fill="#F0C9A4"/>
+  <path d="M73 66a27 27 0 0 1 54 0c0-18-12-27-27-27S73 48 73 66z" fill="#3E4A57"/>
+  <g fill="none" stroke="#2E3A45" stroke-width="2.8" stroke-linecap="round">
+    <path d="M87 78c2 3 6 3 8 0"/><path d="M105 78c2 3 6 3 8 0"/>
+  </g>
+  <path d="M100 122L44 134v40l56-12z" fill="#FBFCF9" stroke="#C6D0C6" stroke-width="2.5"/>
+  <path d="M100 122l56 12v40l-56-12z" fill="#F1F3EE" stroke="#C6D0C6" stroke-width="2.5"/>
+  <g stroke="#B5BFB5" stroke-width="3" stroke-linecap="round">
+    <path d="M56 146h30"/><path d="M56 158h30"/><path d="M114 146h30"/><path d="M114 158h30"/>
+  </g>
+</svg>

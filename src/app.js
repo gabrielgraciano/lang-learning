@@ -11,7 +11,7 @@
 import { decompor } from './hangul.js';
 import { pronunciar } from './pronuncia.js';
 import { agendar, estadoDe } from './fsrs.js';
-import { NIVEL, DESCRICAO_NIVEL, nivelDe, molde, proximaDica, dicaEsgotada, alternativas, conferir, notaPara } from './niveis.js';
+import { NIVEL, DESCRICAO_NIVEL, nivelDe, molde, proximaDica, dicaEsgotada, alternativas, conferir, notaPara, partirFrase, respostaDe } from './niveis.js';
 import { montarSessao, cartaoDe, resumo } from './agenda.js';
 import { ligarCampo, montarTeclado } from './teclado.js';
 import * as banco from './armazenamento.js';
@@ -42,7 +42,11 @@ const el = {
   trilha: $('#trilha'),
   sair: $('#sair'),
   etiquetaNivel: $('#etiqueta-nivel'),
+  quadroImagem: $('#quadro-imagem'),
   ilustracao: $('#ilustracao'),
+  quadroFrase: $('#quadro-frase'),
+  fraseKo: $('#frase-ko'),
+  frasePt: $('#frase-pt'),
 
   provaIntro: $('#prova-intro'),
   introHangul: $('#intro-hangul'),
@@ -63,6 +67,8 @@ const el = {
   veredito: $('#veredito'),
   gabaritoPalavra: $('#gabarito-palavra'),
   jamo: $('#jamo'),
+  padrao: $('#padrao'),
+  parAntonimo: $('#par-antonimo'),
   blocoSom: $('#bloco-som'),
   somValor: $('#som-valor'),
   somRegra: $('#som-regra'),
@@ -108,6 +114,20 @@ let sessao = null;
 let campo = null;
 
 const doisDigitos = (n) => String(n).padStart(2, '0');
+
+/**
+ * Nome de exibição dos módulos. Só existe por causa dos acentos — um módulo
+ * novo que não esteja aqui ainda aparece legível, só que sem acentuação, então
+ * acrescentar vocabulário continua não exigindo mexer em código.
+ */
+const NOME_MODULO = {
+  comida: 'Comida e bebida',
+  acoes: 'Ações',
+  'alta-frequencia': 'Alta frequência',
+};
+
+const rotuloModulo = (id) =>
+  NOME_MODULO[id] ?? id.replace(/-/g, ' ').replace(/^./, (c) => c.toUpperCase());
 
 // ------------------------------------------------------------------ navegação
 
@@ -229,16 +249,11 @@ function mostrarItem() {
   sessao.inicio = performance.now();
 
   esconderProvas();
-
-  el.ilustracao.src = palavra.ilustracao;
-  // A imagem não pode entregar a resposta pelo alt: quem usa leitor de tela
-  // recebe a mesma pergunta que quem enxerga.
-  el.ilustracao.alt = nivel === NIVEL.INTRODUCAO
-    ? `Ilustração de ${palavra.pt}`
-    : 'Ilustração da palavra a adivinhar';
+  pintarEstimulo(palavra, { revelar: nivel === NIVEL.INTRODUCAO });
 
   const descricao = DESCRICAO_NIVEL[nivel];
-  el.etiquetaNivel.textContent = `${descricao.rotulo} · ${descricao.detalhe}`;
+  const detalhe = (ehFrase(palavra) && descricao.detalheFrase) || descricao.detalhe;
+  el.etiquetaNivel.textContent = `${descricao.rotulo} · ${detalhe}`;
 
   el.contador.textContent = `${doisDigitos(Math.min(sessao.resultados.length + 1, sessao.total))} / ${doisDigitos(sessao.total)}`;
   pintarTrilha(el.trilha, sessao.resultados.length);
@@ -246,6 +261,45 @@ function mostrarItem() {
   if (nivel === NIVEL.INTRODUCAO) return mostrarIntro(palavra);
   if (nivel === NIVEL.RECONHECIMENTO) return mostrarEscolha(palavra);
   return mostrarDigitacao(palavra, nivel);
+}
+
+const ehFrase = (palavra) => palavra.tipo === 'frase';
+
+/**
+ * O estímulo do card. É o único ponto onde os dois formatos divergem: palavra
+ * ilustrável mostra o desenho, palavra que não se ilustra mostra a frase com a
+ * lacuna. Da pergunta para baixo — escada, dica, FSRS, gabarito — tudo é igual.
+ */
+function pintarEstimulo(palavra, { revelar = false } = {}) {
+  const frase = ehFrase(palavra);
+  el.quadroImagem.hidden = frase;
+  el.quadroFrase.hidden = !frase;
+
+  if (frase) return pintarFrase(palavra, revelar);
+
+  el.ilustracao.src = palavra.ilustracao;
+  // A imagem não pode entregar a resposta pelo alt: quem usa leitor de tela
+  // recebe a mesma pergunta que quem enxerga.
+  el.ilustracao.alt = revelar
+    ? `Ilustração de ${palavra.pt}`
+    : 'Ilustração da palavra a adivinhar';
+}
+
+function pintarFrase(palavra, revelar) {
+  const { antes, depois } = partirFrase(palavra.frase.ko);
+
+  const lacuna = document.createElement('span');
+  lacuna.className = revelar ? 'lacuna lacuna-cheia' : 'lacuna';
+  lacuna.textContent = revelar ? respostaDe(palavra) : '';
+
+  el.fraseKo.replaceChildren(antes, lacuna, depois);
+  // O buraco é desenhado em CSS, então quem ouve a página precisa que ele seja
+  // dito em palavra.
+  el.fraseKo.setAttribute('aria-label', revelar
+    ? palavra.frase.ko.replace('{}', respostaDe(palavra))
+    : `${antes} lacuna ${depois}`);
+
+  el.frasePt.textContent = palavra.frase.pt;
 }
 
 function mostrarIntro(palavra) {
@@ -265,7 +319,7 @@ function mostrarEscolha(palavra) {
     botao.type = 'button';
     botao.className = 'alternativa';
     botao.lang = 'ko';
-    botao.textContent = opcao.hangul;
+    botao.textContent = respostaDe(opcao);
     botao.addEventListener('click', () => avaliar(opcao.id === palavra.id));
     item.append(botao);
     return item;
@@ -278,10 +332,11 @@ function mostrarDigitacao(palavra, nivel) {
   el.provaDigitar.hidden = false;
   campo.limpar();
 
+  el.perguntaDigitar.textContent = ehFrase(palavra)
+    ? 'Complete a frase em 한글'
+    : 'Escreva a palavra em 한글';
+
   const assistido = nivel === NIVEL.ASSISTIDO;
-  el.perguntaDigitar.textContent = assistido
-    ? 'Escreva a palavra inteira em 한글'
-    : 'Escreva em 한글';
 
   // O nível 2 já começa com um degrau de apoio; o 3 começa do zero.
   sessao.grau = assistido ? 1 : 0;
@@ -290,15 +345,16 @@ function mostrarDigitacao(palavra, nivel) {
 }
 
 function atualizarMolde(palavra) {
+  const alvo = respostaDe(palavra);
   el.molde.hidden = sessao.grau === 0;
-  el.molde.textContent = sessao.grau === 0 ? '' : molde(palavra.hangul, sessao.grau);
-  el.botaoDica.hidden = dicaEsgotada(palavra.hangul, sessao.grau);
+  el.molde.textContent = sessao.grau === 0 ? '' : molde(alvo, sessao.grau);
+  el.botaoDica.hidden = dicaEsgotada(alvo, sessao.grau);
 }
 
 function pedirDica() {
   const { palavra } = itemAtual();
   sessao.usouDica = true;
-  sessao.grau = proximaDica(palavra.hangul, sessao.grau);
+  sessao.grau = proximaDica(respostaDe(palavra), sessao.grau);
   atualizarMolde(palavra);
   el.resposta.focus();
 }
@@ -306,7 +362,7 @@ function pedirDica() {
 function responderDigitado() {
   const { palavra } = itemAtual();
   if (!el.resposta.value.trim()) return;
-  avaliar(conferir(el.resposta.value, palavra.hangul));
+  avaliar(conferir(el.resposta.value, respostaDe(palavra)));
 }
 
 // ------------------------------------------------------------------ gabarito
@@ -349,14 +405,32 @@ function avaliar(acertou) {
 function mostrarGabarito(palavra, acertou) {
   esconderProvas();
   el.gabarito.hidden = false;
-
-  el.ilustracao.alt = `Ilustração de ${palavra.pt}`;
+  pintarEstimulo(palavra, { revelar: true });
 
   el.veredito.textContent = acertou ? 'Acertou' : 'Ainda não';
   el.veredito.className = `veredito ${acertou ? 'veredito-acerto' : 'veredito-erro'}`;
 
   el.gabaritoPalavra.textContent = palavra.hangul;
   montarJamo(palavra.hangul);
+
+  // 수 e 것 não existem soltas — só dentro de uma construção. Mostrar o padrão
+  // é o que evita o aprendiz memorizar uma palavra que ele nunca vai usar
+  // sozinha.
+  const forma = respostaDe(palavra);
+  const partes = [palavra.padrao, forma === palavra.hangul ? null : `na frase: ${forma}`]
+    .filter(Boolean);
+  el.padrao.hidden = partes.length === 0;
+  el.padrao.textContent = partes.join('   ·   ');
+
+  // Adjetivo se aprende em par: 크다 só significa alguma coisa contra 작다.
+  const par = palavra.par ? palavras.find((p) => p.id === palavra.par) : null;
+  el.parAntonimo.hidden = !par;
+  if (par) {
+    const oposto = document.createElement('b');
+    oposto.lang = 'ko';
+    oposto.textContent = par.hangul;
+    el.parAntonimo.replaceChildren('o oposto é ', oposto, ` — ${par.pt}`);
+  }
 
   // A pronúncia só aparece quando ela contradiz a escrita — que é exatamente
   // quando ela ensina alguma coisa.
@@ -513,7 +587,7 @@ function pintarMapa() {
 
     const titulo = document.createElement('h3');
     titulo.className = 'rotulo';
-    titulo.textContent = modulo;
+    titulo.textContent = rotuloModulo(modulo);
 
     const grade = document.createElement('ul');
     grade.className = 'grade';
@@ -528,17 +602,22 @@ function pintarMapa() {
       botao.className = `celula estado-${nome}`;
       botao.setAttribute('aria-label', `${palavra.hangul} — ${nome}`);
 
+      const firme = nome === 'estavel' || nome === 'dominado';
+
       // A ilustração só aparece na grade quando a palavra está firme: a grade
-      // vira álbum à medida que a memória segura.
-      if (nome === 'estavel' || nome === 'dominado') {
+      // vira álbum à medida que a memória segura. Palavra de frase não tem
+      // desenho, então o prêmio dela é a própria palavra, escrita por inteiro.
+      if (firme && palavra.ilustracao) {
         const miniatura = document.createElement('img');
         miniatura.src = palavra.ilustracao;
         miniatura.alt = '';
         miniatura.loading = 'lazy';
         botao.append(miniatura);
-      } else {
-        botao.textContent = nome === 'novo' ? '' : palavra.hangul[0];
+      } else if (nome !== 'novo') {
         botao.lang = 'ko';
+        botao.textContent = palavra.ilustracao ? palavra.hangul[0] : palavra.hangul;
+        if (!palavra.ilustracao) botao.classList.add('celula-texto');
+        if (firme) botao.classList.add('celula-firme');
       }
 
       botao.addEventListener('click', () => mostrarDetalhe(palavra));

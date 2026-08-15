@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Rosto chorando">
+  <circle cx="100" cy="100" r="94" fill="#E6ECF2"/>
+  <circle cx="100" cy="100" r="62" fill="#F0C9A4"/>
+  <path d="M38 96a62 62 0 0 1 124 0c0-38-28-58-62-58S38 58 38 96z" fill="#3E4A57"/>
+  <g fill="none" stroke="#2E3A45" stroke-width="5" stroke-linecap="round">
+    <path d="M72 104c4 7 12 7 16 0"/><path d="M112 104c4 7 12 7 16 0"/>
+  </g>
+  <g fill="#4E9FD6">
+    <path d="M80 116s-8 12-8 18a8 8 0 0 0 16 0c0-6-8-18-8-18z"/>
+    <path d="M120 116s-8 12-8 18a8 8 0 0 0 16 0c0-6-8-18-8-18z"/>
+    <path d="M74 148s-6 9-6 13a6 6 0 0 0 12 0c0-4-6-13-6-13z" opacity=".7"/>
+  </g>
+  <path d="M84 140c5-6 27-6 32 0" fill="none" stroke="#B85C4E" stroke-width="5" stroke-linecap="round"/>
+</svg>
