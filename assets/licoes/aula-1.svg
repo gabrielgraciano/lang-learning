@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Duas pessoas se cumprimentando, uma delas curvando-se">
+  <circle cx="100" cy="100" r="94" fill="#DCE7E6"/>
+  <g fill="#2F5F6E">
+    <circle cx="62" cy="72" r="18"/>
+    <path d="M44 148c0-20 8-42 18-42h0c10 0 18 22 18 42z"/>
+  </g>
+  <path d="M78 108c14-6 24-2 30 8" fill="none" stroke="#2F5F6E" stroke-width="11" stroke-linecap="round"/>
+  <g fill="#B0563F">
+    <circle cx="146" cy="86" r="17" transform="rotate(22 146 86)"/>
+    <path d="M128 152c4-20 16-40 26-38h0c10 2 14 24 10 44z"/>
+  </g>
+  <path d="M126 116c-12-8-22-6-30 2" fill="none" stroke="#B0563F" stroke-width="11" stroke-linecap="round"/>
+  <path d="M60 168h80" stroke="#B7C6C4" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

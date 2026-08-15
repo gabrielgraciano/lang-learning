@@ -42,6 +42,12 @@ ser rede de morfemas. O índice se monta sozinho a partir dos dados.
 o estado real do cartão. Quando a palavra fica firme, a célula revela a
 ilustração — a grade vira álbum.
 
+**A gramática é lida, não adivinhada.** Além do baralho, o Nível 1 traz oito
+aulas com explicação em texto e em áudio e 88 exercícios — e dentro de cada
+trecho da explicação há um atalho para os exercícios daquele trecho, para
+praticar sem perder o lugar da leitura. O que cada aula cobre está em
+[`livros.md`](livros.md).
+
 Sem streak, sem vidas, sem ranking. Meta semanal com folga e ritmo ajustável.
 
 O porquê de cada uma dessas escolhas está em [`docs/fundamentacao.md`](docs/fundamentacao.md).
@@ -83,21 +89,25 @@ funciona sem configuração extra.
 ## Estrutura
 
 ```
-index.html                 # hoje, estudo, fim, mapa, ajustes
+index.html                 # hoje, estudo, fim, mapa, nível 1, aula, ajustes
 estilos/main.css           # tokens, células, temas claro e escuro
-src/app.js                 # orquestra as telas e o laço de estudo
+src/app.js                 # orquestra as telas, o laço de estudo e as aulas
 src/hangul.js              # decompõe e compõe sílabas 한글
 src/pronuncia.js           # deriva o som a partir da escrita
 src/fsrs.js                # FSRS-5 (pesos padrão) e estados de memória
 src/niveis.js              # a escada de 4 níveis, distratores, dicas
 src/agenda.js              # a fila do dia
+src/licoes.js              # correção dos exercícios e progresso das aulas
 src/sino.js                # morfemas sino-coreanos e famílias de palavras
 src/teclado.js             # transliteração 두벌식 e teclado de tela
 src/armazenamento.js       # progresso, registro, exportar/importar
 dados/palavras.json        # fonte da verdade do vocabulário
 dados/hanja.json           # morfema → significado
+dados/licoes.json          # fonte da verdade das aulas do Nível 1
 assets/ilustracoes/*.svg   # uma ilustração por palavra
+assets/licoes/*.svg        # uma ilustração por aula
 docs/fundamentacao.md      # por que o app é assim
+livros.md                  # o que cada aula do Nível 1 cobre
 ```
 
 ## Adicionar uma palavra

@@ -1,0 +1,3073 @@
+[
+  {
+    "id": "aula-1",
+    "numero": 1,
+    "hanja": "一",
+    "titulo": "Oi e obrigado",
+    "hangul": "안녕하세요. 감사합니다.",
+    "resumo": "As duas primeiras frases, e a descoberta de que as duas terminam do mesmo jeito por um motivo.",
+    "ilustracao": "assets/licoes/aula-1.svg",
+    "objetivo": "Cumprimentar alguém e agradecer — e reconhecer, pela terminação, quando uma frase está no registro formal.",
+    "vocabulario": [
+      {
+        "ko": "안녕",
+        "pt": "paz, bem-estar, saúde",
+        "hanja": "安寧"
+      },
+      {
+        "ko": "하세요",
+        "pt": "você faz? / faça, por favor"
+      },
+      {
+        "ko": "안녕하세요",
+        "pt": "olá, oi, bom dia, boa tarde, boa noite"
+      },
+      {
+        "ko": "감사",
+        "pt": "gratidão",
+        "hanja": "感謝"
+      },
+      {
+        "ko": "합니다",
+        "pt": "eu faço, estou fazendo"
+      },
+      {
+        "ko": "감사합니다",
+        "pt": "obrigado, obrigada"
+      },
+      {
+        "ko": "존댓말",
+        "pt": "fala formal, o registro de respeito"
+      },
+      {
+        "ko": "반말",
+        "pt": "fala informal, o registro íntimo"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a1-t1",
+        "titulo": "안녕하세요 serve para o dia inteiro",
+        "grupo": "a1-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Português tem uma saudação por faixa do dia — bom dia, boa tarde, boa noite. Coreano tem uma só, e ela não olha para o relógio."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "안녕",
+              "하세요"
+            ],
+            "glosas": [
+              "paz, bem-estar",
+              "você faz?"
+            ],
+            "resultado": "안녕하세요",
+            "traducao": "olá"
+          },
+          {
+            "tipo": "p",
+            "texto": "Literalmente é uma pergunta: “você está em paz?”. De tanto uso ela deixou de esperar resposta — do mesmo jeito que “tudo bem?” em português já não é uma pergunta sobre como você está. Quem é cumprimentado com 안녕하세요 responde 안녕하세요."
+          },
+          {
+            "tipo": "nota",
+            "texto": "Escrever com ponto ou com interrogação dá na mesma: 안녕하세요. e 안녕하세요? são as duas corretas."
+          }
+        ]
+      },
+      {
+        "id": "a1-t2",
+        "titulo": "감사합니다 não tem “você” dentro",
+        "grupo": "a1-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "“Obrigado” em coreano é uma palavra de gratidão colada num verbo de fazer."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "감사",
+              "합니다"
+            ],
+            "glosas": [
+              "gratidão",
+              "eu faço"
+            ],
+            "resultado": "감사합니다",
+            "traducao": "obrigado"
+          },
+          {
+            "tipo": "p",
+            "texto": "Repare no que não está ali: ninguém. Em inglês se diz thank you, com o “you” explícito; em coreano a frase não tem sujeito nem objeto, porque quem agradece e a quem se agradece são óbvios pela situação. Essa economia vai reaparecer em quase toda frase daqui para frente — coreano só nomeia o que não dá para deduzir."
+          },
+          {
+            "tipo": "som",
+            "grafia": "감사합니다",
+            "texto": "A grafia termina em 합니다, mas ninguém diz “hap-ni-da”. O ㅂ no fim de 합 encontra o ㄴ de 니 e vira ㅁ — a boca já está fechada para o ㅂ, e soltar o ar antes do ㄴ dá trabalho à toa."
+          }
+        ]
+      },
+      {
+        "id": "a1-t3",
+        "titulo": "존댓말 e 반말: em que registro você está",
+        "grupo": "a1-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Coreano marca respeito na terminação do verbo, não no vocabulário. São dois grandes registros: 존댓말, a fala formal, e 반말, a fala íntima."
+          },
+          {
+            "tipo": "p",
+            "texto": "A regra de bolso funciona desde a primeira aula: se a frase termina em -요 ou em -니다, é 존댓말. 안녕하세요 termina em -요. 감사합니다 termina em -니다. As duas são formais."
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Use 존댓말 com quem você acabou de conhecer, com quem é mais velho e em qualquer situação de serviço. Errar para o lado formal não ofende ninguém; errar para o lado informal ofende."
+          },
+          {
+            "tipo": "nota",
+            "texto": "반말 não é falta de educação em si — é intimidade. Entre amigos da mesma idade, insistir em 존댓말 soa distante. O problema é usar 반말 antes de a intimidade existir."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Na feira, alguém entrega uma sacola.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "안녕하세요.",
+          "pt": "Olá."
+        },
+        {
+          "quem": "B",
+          "ko": "안녕하세요.",
+          "pt": "Olá."
+        },
+        {
+          "quem": "A",
+          "ko": "여기요.",
+          "pt": "Aqui está."
+        },
+        {
+          "quem": "B",
+          "ko": "감사합니다.",
+          "pt": "Obrigado."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a1-g1",
+        "titulo": "A saudação",
+        "itens": [
+          {
+            "id": "a1-e1",
+            "tipo": "escolha",
+            "enunciado": "Você encontra alguém às três da tarde. O que diz?",
+            "opcoes": [
+              {
+                "ko": "안녕하세요"
+              },
+              {
+                "ko": "감사합니다"
+              },
+              {
+                "ko": "존댓말"
+              },
+              {
+                "ko": "반말"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "안녕하세요 não muda com a hora — é a saudação das três da tarde e das onze da noite."
+          },
+          {
+            "id": "a1-e2",
+            "tipo": "escolha",
+            "enunciado": "Alguém te cumprimenta com 안녕하세요. Como você responde?",
+            "opcoes": [
+              {
+                "ko": "안녕하세요"
+              },
+              {
+                "ko": "감사합니다"
+              },
+              {
+                "ko": "네?"
+              },
+              {
+                "ko": "안녕"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "A resposta é a mesma frase. Não existe um “bem, e você?” obrigatório aqui."
+          },
+          {
+            "id": "a1-e3",
+            "tipo": "montar",
+            "enunciado": "Monte a saudação, sílaba por sílaba.",
+            "dica": "olá",
+            "pecas": [
+              "요",
+              "하",
+              "녕",
+              "세",
+              "안"
+            ],
+            "correta": "안녕하세요",
+            "explicacao": "안녕 (paz) + 하세요 (você faz?)."
+          },
+          {
+            "id": "a1-e4",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "안녕하세요 pode ser escrito com ponto final ou com interrogação.",
+            "correta": true,
+            "explicacao": "As duas grafias circulam e as duas estão certas."
+          }
+        ]
+      },
+      {
+        "id": "a1-g2",
+        "titulo": "O agradecimento",
+        "itens": [
+          {
+            "id": "a1-e5",
+            "tipo": "associar",
+            "enunciado": "Ligue cada pedaço ao seu significado.",
+            "pares": [
+              {
+                "a": "감사",
+                "b": "gratidão"
+              },
+              {
+                "a": "합니다",
+                "b": "eu faço"
+              },
+              {
+                "a": "안녕",
+                "b": "paz, bem-estar"
+              },
+              {
+                "a": "하세요",
+                "b": "você faz?"
+              }
+            ],
+            "explicacao": "As duas frases da aula são a mesma construção: uma palavra de conteúdo + um verbo de fazer."
+          },
+          {
+            "id": "a1-e6",
+            "tipo": "montar",
+            "enunciado": "Monte “obrigado”.",
+            "dica": "obrigado",
+            "pecas": [
+              "다",
+              "감",
+              "니",
+              "합",
+              "사"
+            ],
+            "correta": "감사합니다",
+            "explicacao": "감사 + 합니다."
+          },
+          {
+            "id": "a1-e7",
+            "tipo": "escolha",
+            "enunciado": "Por que 합니다 soa [함니다]?",
+            "opcoes": [
+              {
+                "pt": "O ㅂ final encontra o ㄴ seguinte e vira ㅁ"
+              },
+              {
+                "pt": "O ㅂ é mudo no fim de sílaba"
+              },
+              {
+                "pt": "É uma exceção sem regra"
+              },
+              {
+                "pt": "A grafia certa seria 함니다"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Chama-se 비음화, nasalização. Uma oclusiva antes de nasal vira nasal — e é a mesma regra em 감사합니다 e 죄송합니다."
+          }
+        ]
+      },
+      {
+        "id": "a1-g3",
+        "titulo": "Formal ou informal",
+        "itens": [
+          {
+            "id": "a1-e8",
+            "tipo": "lacuna",
+            "enunciado": "Complete a regra de bolso.",
+            "antes": "Se a frase termina em -요 ou -니다, ela está em",
+            "depois": ".",
+            "banco": [
+              "존댓말",
+              "반말",
+              "안녕"
+            ],
+            "correta": 0,
+            "explicacao": "존댓말 é o registro formal. As duas frases desta aula estão nele."
+          },
+          {
+            "id": "a1-e9",
+            "tipo": "escolha",
+            "enunciado": "Como se chama o registro íntimo, usado entre amigos próximos?",
+            "opcoes": [
+              {
+                "ko": "반말"
+              },
+              {
+                "ko": "존댓말"
+              },
+              {
+                "ko": "안녕"
+              },
+              {
+                "ko": "감사"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "반말. Ele não é grosseiro por natureza — é íntimo, e por isso depende da relação já existir."
+          },
+          {
+            "id": "a1-e10",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte o que você escutou.",
+            "audio": "감사합니다",
+            "pecas": [
+              "사",
+              "다",
+              "감",
+              "합",
+              "니"
+            ],
+            "correta": "감사합니다",
+            "explicacao": "Você ouviu [감사함니다] e escreveu 감사합니다 — som e grafia não coincidem, e é a grafia que se escreve."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-2",
+    "numero": 2,
+    "hanja": "二",
+    "titulo": "Sim, não, como?",
+    "hangul": "네. 아니요.",
+    "resumo": "네 e 아니요 não são “verdadeiro” e “falso” — são “concordo” e “discordo”. A diferença aparece na primeira pergunta negativa.",
+    "ilustracao": "assets/licoes/aula-2.svg",
+    "objetivo": "Responder sim e não sem cair na armadilha das perguntas negativas, e reconhecer os outros usos de 네.",
+    "vocabulario": [
+      {
+        "ko": "네",
+        "pt": "sim, isso, entendi"
+      },
+      {
+        "ko": "아니요",
+        "pt": "não"
+      },
+      {
+        "ko": "맞아요",
+        "pt": "está certo, é isso"
+      },
+      {
+        "ko": "네?",
+        "pt": "como? o quê?"
+      },
+      {
+        "ko": "커피",
+        "pt": "café"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a2-t1",
+        "titulo": "네 e 아니요 respondem à pessoa, não ao fato",
+        "grupo": "a2-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "네 é sim e 아니요 é não — só que não exatamente. Em português, sim e não respondem se o fato é verdadeiro. Em coreano, 네 e 아니요 respondem se você concorda com o que a pessoa disse."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "",
+              "o que significa de verdade"
+            ],
+            "linhas": [
+              [
+                "네",
+                "isso mesmo / concordo / o que você disse está certo"
+              ],
+              [
+                "아니요",
+                "não é isso / discordo / o que você disse não está certo"
+              ]
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "Enquanto a pergunta é afirmativa, os dois sistemas dão o mesmo resultado e nada parece estranho. A diferença só aparece quando a pergunta vem negativa."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "커피 안 좋아해요?",
+                "pt": "Você não gosta de café?"
+              },
+              {
+                "ko": "네. 안 좋아해요.",
+                "pt": "Isso, não gosto. (em português: “não”)"
+              },
+              {
+                "ko": "아니요. 좋아해요.",
+                "pt": "Que nada, eu gosto. (em português: “sim”)"
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Numa pergunta negativa, o 네 coreano vira “não” em português, e o 아니요 vira “sim”. Não é o coreano que está invertido: é que ele responde a outra pergunta."
+          }
+        ]
+      },
+      {
+        "id": "a2-t2",
+        "titulo": "네 sozinho quase nunca é “sim”",
+        "grupo": "a2-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Numa conversa entre coreanos você vai ouvir 네 o tempo todo, muito mais vezes do que alguém poderia estar dizendo sim. Boa parte desses 네 é o equivalente ao nosso “sei”, “ahã”, “tá” — o ruído que mostra que você continua ouvindo."
+          },
+          {
+            "tipo": "dialogo",
+            "falas": [
+              {
+                "quem": "A",
+                "pt": "Comprei um livro ontem."
+              },
+              {
+                "quem": "B",
+                "ko": "네.",
+                "pt": "(ah, é?)"
+              },
+              {
+                "quem": "A",
+                "pt": "E gostei muito."
+              },
+              {
+                "quem": "B",
+                "ko": "네…",
+                "pt": "(sei…)"
+              },
+              {
+                "quem": "A",
+                "pt": "Mas foi meio caro."
+              },
+              {
+                "quem": "B",
+                "ko": "네.",
+                "pt": "(entendi)"
+              }
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "Também é o que se responde quando alguém chama seu nome — ali 네 é “presente”, “oi”, “pois não”."
+          }
+        ]
+      },
+      {
+        "id": "a2-t3",
+        "titulo": "네, 맞아요 e 네?",
+        "grupo": "a2-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Justamente porque 네 pode ser só um ruído de escuta, existe uma forma de dizer sim que não deixa dúvida: acrescentar 맞아요, “está certo”."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "네, 맞아요.",
+                "pt": "Sim, é isso mesmo."
+              }
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "E a mesma sílaba, com entonação de pergunta, vira outra coisa: 네? é “como?”, “o quê?”, “desculpa, não ouvi”. Serve para pedir repetição e para demonstrar surpresa."
+          },
+          {
+            "tipo": "nota",
+            "texto": "네? dito com a sobrancelha levantada é surpresa; dito baixo é “não entendi”. A frase é a mesma — muda a entonação."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Na copa do escritório.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "커피 좋아해요?",
+          "pt": "Você gosta de café?"
+        },
+        {
+          "quem": "B",
+          "ko": "네. 좋아해요.",
+          "pt": "Gosto, sim."
+        },
+        {
+          "quem": "A",
+          "ko": "블랙커피 좋아해요?",
+          "pt": "Gosta de café preto?"
+        },
+        {
+          "quem": "B",
+          "ko": "네, 맞아요.",
+          "pt": "Isso, gosto."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a2-g1",
+        "titulo": "Concordar e discordar",
+        "itens": [
+          {
+            "id": "a2-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra à tradução.",
+            "pares": [
+              {
+                "a": "네",
+                "b": "sim"
+              },
+              {
+                "a": "아니요",
+                "b": "não"
+              },
+              {
+                "a": "맞아요",
+                "b": "está certo"
+              },
+              {
+                "a": "커피",
+                "b": "café"
+              },
+              {
+                "a": "네?",
+                "b": "como?"
+              }
+            ],
+            "explicacao": "Cinco palavras e você já responde a maior parte das perguntas simples."
+          },
+          {
+            "id": "a2-e2",
+            "tipo": "escolha",
+            "enunciado": "Qual é a diferença entre o sim/não do coreano e o do português?",
+            "opcoes": [
+              {
+                "pt": "O coreano responde se você concorda com quem falou, não se o fato é verdadeiro"
+              },
+              {
+                "pt": "O coreano é mais enfático"
+              },
+              {
+                "pt": "Em coreano não existe “não”"
+              },
+              {
+                "pt": "Não há diferença nenhuma"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Por isso a resposta muda de lado quando a pergunta vem negativa."
+          },
+          {
+            "id": "a2-e3",
+            "tipo": "escolha",
+            "enunciado": "Perguntam: 커피 안 좋아해요? (“Você não gosta de café?”). Você não gosta mesmo. O que responde?",
+            "opcoes": [
+              {
+                "ko": "네"
+              },
+              {
+                "ko": "아니요"
+              },
+              {
+                "ko": "맞아요"
+              },
+              {
+                "ko": "네?"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "네 — “isso mesmo, não gosto”. Você está concordando com quem perguntou."
+          },
+          {
+            "id": "a2-e4",
+            "tipo": "escolha",
+            "enunciado": "Mesma pergunta: 커피 안 좋아해요? Só que você gosta de café. O que responde?",
+            "opcoes": [
+              {
+                "ko": "아니요"
+              },
+              {
+                "ko": "네"
+              },
+              {
+                "ko": "존댓말"
+              },
+              {
+                "ko": "감사합니다"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "아니요 — “que nada, eu gosto”. Você está discordando de quem perguntou."
+          }
+        ]
+      },
+      {
+        "id": "a2-g2",
+        "titulo": "Os outros usos de 네",
+        "itens": [
+          {
+            "id": "a2-e5",
+            "tipo": "escolha",
+            "enunciado": "Numa conversa, 네 repetido a cada frase do outro significa o quê?",
+            "opcoes": [
+              {
+                "pt": "“Sei”, “ahã” — sinal de que você está escutando"
+              },
+              {
+                "pt": "Que você concorda com tudo"
+              },
+              {
+                "pt": "Que você quer encerrar a conversa"
+              },
+              {
+                "pt": "Que você não entendeu"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "É o mesmo papel do nosso “ahã”. Não compromete você com nada do que foi dito."
+          },
+          {
+            "id": "a2-e6",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "네 também é o que se responde quando alguém chama o seu nome.",
+            "correta": true,
+            "explicacao": "Ali ele funciona como “oi” ou “pois não”."
+          }
+        ]
+      },
+      {
+        "id": "a2-g3",
+        "titulo": "Reforçar e pedir repetição",
+        "itens": [
+          {
+            "id": "a2-e7",
+            "tipo": "lacuna",
+            "enunciado": "Complete a frase que deixa claro que você está mesmo concordando.",
+            "antes": "네,",
+            "depois": ".",
+            "banco": [
+              "맞아요",
+              "아니요",
+              "커피"
+            ],
+            "correta": 0,
+            "explicacao": "네, 맞아요 = “sim, é isso mesmo”. Não dá para confundir com escuta passiva."
+          },
+          {
+            "id": "a2-e8",
+            "tipo": "escolha",
+            "enunciado": "Qual destas equivalências está errada?",
+            "opcoes": [
+              {
+                "pt": "네 = obrigado"
+              },
+              {
+                "pt": "네 = sim"
+              },
+              {
+                "pt": "네? = como?"
+              },
+              {
+                "pt": "네 = entendi"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "“Obrigado” é 감사합니다. 네 nunca agradece."
+          },
+          {
+            "id": "a2-e9",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte a resposta.",
+            "audio": "네, 맞아요",
+            "pecas": [
+              "맞",
+              "네,",
+              "요",
+              "아"
+            ],
+            "correta": "네, 맞아요",
+            "explicacao": "네, 맞아요 — o sim que não deixa dúvida."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-3",
+    "numero": 3,
+    "hanja": "三",
+    "titulo": "Tchau — mas quem está indo?",
+    "hangul": "안녕히 계세요. 안녕히 가세요.",
+    "resumo": "Coreano tem dois tchaus, e a escolha não depende de formalidade: depende de quem sai e quem fica.",
+    "ilustracao": "assets/licoes/aula-3.svg",
+    "objetivo": "Escolher a despedida certa pela posição de cada um na cena.",
+    "vocabulario": [
+      {
+        "ko": "안녕히",
+        "pt": "em paz (advérbio de 안녕)"
+      },
+      {
+        "ko": "계세요",
+        "pt": "fique, permaneça"
+      },
+      {
+        "ko": "가세요",
+        "pt": "vá"
+      },
+      {
+        "ko": "안녕히 계세요",
+        "pt": "tchau — dito por quem está saindo"
+      },
+      {
+        "ko": "안녕히 가세요",
+        "pt": "tchau — dito por quem está ficando"
+      },
+      {
+        "ko": "가다",
+        "pt": "ir"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a3-t1",
+        "titulo": "A mesma palavra 안녕 de novo",
+        "grupo": "a3-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "As duas despedidas começam com a palavra que você já viu em 안녕하세요: 안녕, paz e bem-estar. O que muda é o verbo que vem depois — e o verbo é escolhido pela cena, não pelo grau de formalidade."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "안녕히",
+              "계세요"
+            ],
+            "glosas": [
+              "em paz",
+              "fique"
+            ],
+            "resultado": "안녕히 계세요",
+            "traducao": "fique em paz"
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "안녕히",
+              "가세요"
+            ],
+            "glosas": [
+              "em paz",
+              "vá"
+            ],
+            "resultado": "안녕히 가세요",
+            "traducao": "vá em paz"
+          }
+        ]
+      },
+      {
+        "id": "a3-t2",
+        "titulo": "Quem sai diz uma, quem fica diz a outra",
+        "grupo": "a3-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "A regra sai direto da tradução literal. Você deseja ao outro o que o outro vai fazer."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Sua posição",
+              "O que você diz"
+            ],
+            "linhas": [
+              [
+                "Você está saindo, o outro fica",
+                "안녕히 계세요 — “fique em paz”"
+              ],
+              [
+                "Você fica, o outro está saindo",
+                "안녕히 가세요 — “vá em paz”"
+              ],
+              [
+                "Os dois estão saindo",
+                "안녕히 가세요, dos dois lados"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Ninguém fica: ninguém tem por que mandar o outro ficar. Quando os dois vão embora, os dois dizem 안녕히 가세요."
+          },
+          {
+            "tipo": "nota",
+            "texto": "Saindo de uma loja, quem vai embora é você e quem fica é o atendente: você diz 안녕히 계세요 e ouve 안녕히 가세요 de volta."
+          }
+        ]
+      },
+      {
+        "id": "a3-t3",
+        "titulo": "Na rua ninguém pronuncia tudo",
+        "grupo": "a3-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "안녕하세요, 안녕히 계세요 e 안녕히 가세요 são compridas e muito frequentes, e frase frequente encurta. Na prática, o que chega ao ouvido costuma ser só o fim: 세요."
+          },
+          {
+            "tipo": "p",
+            "texto": "Isso não é um problema de audição sua. Vale treinar reconhecendo o contorno da frase inteira em vez de caçar sílaba por sílaba — e reparar em quem está de casaco na mão para saber qual das duas despedidas está vindo."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Fim de expediente. Uma pessoa vai embora, a outra fica.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "안녕히 계세요.",
+          "pt": "Tchau. (quem está saindo)"
+        },
+        {
+          "quem": "B",
+          "ko": "네, 안녕히 가세요.",
+          "pt": "Tchau. (quem está ficando)"
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a3-g1",
+        "titulo": "As peças",
+        "itens": [
+          {
+            "id": "a3-e1",
+            "tipo": "escolha",
+            "enunciado": "O que significa 안녕?",
+            "opcoes": [
+              {
+                "pt": "Paz, bem-estar, saúde"
+              },
+              {
+                "pt": "Televisão"
+              },
+              {
+                "pt": "Obrigado"
+              },
+              {
+                "pt": "Laranja"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "A mesma 안녕 que abre 안녕하세요 e as duas despedidas."
+          },
+          {
+            "id": "a3-e2",
+            "tipo": "escolha",
+            "enunciado": "Se 가다 é “ir”, qual frase quer dizer literalmente “vá em paz”?",
+            "opcoes": [
+              {
+                "ko": "안녕히 가세요"
+              },
+              {
+                "ko": "안녕히 계세요"
+              },
+              {
+                "ko": "감사합니다"
+              },
+              {
+                "ko": "맞아요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "가세요 vem de 가다. Quem fica manda o outro ir em paz."
+          }
+        ]
+      },
+      {
+        "id": "a3-g2",
+        "titulo": "Quem sai, quem fica",
+        "itens": [
+          {
+            "id": "a3-e3",
+            "tipo": "escolha",
+            "enunciado": "Você está saindo do café e o atendente fica. O que você diz?",
+            "opcoes": [
+              {
+                "ko": "안녕히 계세요"
+              },
+              {
+                "ko": "안녕히 가세요"
+              },
+              {
+                "ko": "안녕하세요"
+              },
+              {
+                "ko": "감사합니다"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Quem sai deseja que o outro fique em paz: 안녕히 계세요."
+          },
+          {
+            "id": "a3-e4",
+            "tipo": "escolha",
+            "enunciado": "Agora você é o atendente, e o cliente vai embora. O que você diz?",
+            "opcoes": [
+              {
+                "ko": "안녕히 가세요"
+              },
+              {
+                "ko": "안녕히 계세요"
+              },
+              {
+                "ko": "네?"
+              },
+              {
+                "ko": "저기요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Quem fica deseja que o outro vá em paz: 안녕히 가세요."
+          },
+          {
+            "id": "a3-e5",
+            "tipo": "escolha",
+            "enunciado": "Vocês dois estão indo embora, cada um para um lado. O que se diz?",
+            "opcoes": [
+              {
+                "ko": "안녕히 가세요",
+                "pt": "dos dois lados"
+              },
+              {
+                "ko": "안녕히 계세요",
+                "pt": "dos dois lados"
+              },
+              {
+                "ko": "존댓말"
+              },
+              {
+                "ko": "감사합니다"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Ninguém fica, então ninguém diz “fique”. Os dois mandam o outro ir em paz."
+          },
+          {
+            "id": "a3-e6",
+            "tipo": "montar",
+            "enunciado": "Monte a despedida de quem está saindo.",
+            "dica": "fique em paz",
+            "pecas": [
+              "계",
+              "안",
+              "히",
+              "세",
+              "녕",
+              "요"
+            ],
+            "correta": "안녕히계세요",
+            "explicacao": "안녕히 계세요. No papel vai com espaço; aqui você montou as sílabas na ordem."
+          },
+          {
+            "id": "a3-e7",
+            "tipo": "montar",
+            "enunciado": "Monte a despedida de quem está ficando.",
+            "dica": "vá em paz",
+            "pecas": [
+              "가",
+              "요",
+              "안",
+              "세",
+              "녕",
+              "히"
+            ],
+            "correta": "안녕히가세요",
+            "explicacao": "안녕히 가세요."
+          }
+        ]
+      },
+      {
+        "id": "a3-g3",
+        "titulo": "Ouvir de verdade",
+        "itens": [
+          {
+            "id": "a3-e8",
+            "tipo": "escolha",
+            "enunciado": "Falando rápido, que parte destas frases costuma sobrar para o ouvinte?",
+            "opcoes": [
+              {
+                "ko": "세요"
+              },
+              {
+                "ko": "안녕"
+              },
+              {
+                "ko": "하"
+              },
+              {
+                "ko": "가요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O fim é o que resiste. Por isso vale reconhecer a frase pelo contorno, não sílaba por sílaba."
+          },
+          {
+            "id": "a3-e9",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte a despedida.",
+            "audio": "안녕히 가세요",
+            "pecas": [
+              "녕",
+              "가",
+              "안",
+              "세",
+              "히",
+              "요"
+            ],
+            "correta": "안녕히가세요",
+            "explicacao": "안녕히 가세요 — quem falou está ficando."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-4",
+    "numero": 4,
+    "hanja": "四",
+    "titulo": "Desculpa e licença",
+    "hangul": "죄송합니다. 저기요.",
+    "resumo": "Pedir desculpa e chamar a atenção de alguém são duas coisas diferentes em coreano — e “sinto muito” não é nenhuma das duas.",
+    "ilustracao": "assets/licoes/aula-4.svg",
+    "objetivo": "Pedir desculpa, chamar um garçom e passar no meio de uma multidão sem trocar as frases.",
+    "vocabulario": [
+      {
+        "ko": "죄송",
+        "pt": "culpa, vergonha",
+        "hanja": "罪悚"
+      },
+      {
+        "ko": "죄송합니다",
+        "pt": "desculpe, me perdoe"
+      },
+      {
+        "ko": "저기",
+        "pt": "ali, lá"
+      },
+      {
+        "ko": "저기요",
+        "pt": "com licença, ei (para chamar alguém)"
+      },
+      {
+        "ko": "잠시만요",
+        "pt": "um segundinho"
+      },
+      {
+        "ko": "잠깐만요",
+        "pt": "um segundinho"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a4-t1",
+        "titulo": "죄송합니다 é a mesma fôrma de 감사합니다",
+        "grupo": "a4-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Se 감사합니다 é 감사 (gratidão) + 합니다 (eu faço), dá para adivinhar como se pede desculpa antes de ver a resposta."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "죄송",
+              "합니다"
+            ],
+            "glosas": [
+              "culpa, vergonha",
+              "eu faço"
+            ],
+            "resultado": "죄송합니다",
+            "traducao": "desculpe"
+          },
+          {
+            "tipo": "som",
+            "grafia": "죄송합니다",
+            "texto": "E a mesma nasalização da aula 1 acontece aqui: ㅂ antes de ㄴ vira ㅁ. Uma regra, duas frases."
+          }
+        ]
+      },
+      {
+        "id": "a4-t2",
+        "titulo": "죄송합니다 não é “sinto muito”",
+        "grupo": "a4-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Este é o erro que mais aparece na prática. Em português, “sinto muito” serve tanto para assumir culpa quanto para lamentar uma notícia ruim. 죄송합니다 só faz a primeira coisa."
+          },
+          {
+            "tipo": "destaque",
+            "texto": "죄송합니다 é sempre “a culpa é minha”, “eu não devia ter feito isso”. Nunca é “que pena”, “sinto muito por você”."
+          },
+          {
+            "tipo": "p",
+            "texto": "Se um amigo coreano conta uma notícia triste e você responde 죄송합니다, a reação natural dele é perguntar por que você está se desculpando — na cabeça dele você acabou de assumir responsabilidade por algo."
+          }
+        ]
+      },
+      {
+        "id": "a4-t3",
+        "titulo": "저기요 chama; 죄송합니다 abre caminho",
+        "grupo": "a4-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "저기 quer dizer “ali”. 저기요 é literalmente algo como “ei, aí” — o jeito educado de chamar a atenção de quem não está olhando para você."
+          },
+          {
+            "tipo": "p",
+            "texto": "Em português, “com licença” cobre situações bem diferentes. Em coreano elas se dividem:"
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Situação",
+              "O que dizer"
+            ],
+            "linhas": [
+              [
+                "Chamar alguém para falar",
+                "저기요"
+              ],
+              [
+                "Chamar o garçom para pedir",
+                "저기요"
+              ],
+              [
+                "Passar no meio de gente",
+                "잠시만요 / 잠깐만요 / 죄송합니다"
+              ],
+              [
+                "Assumir um erro",
+                "죄송합니다"
+              ]
+            ]
+          },
+          {
+            "tipo": "nota",
+            "texto": "잠시만요 e 잠깐만요 significam a mesma coisa — “um segundinho”. Pode usar qualquer uma das duas."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Num café cheio.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "저기요.",
+          "pt": "Com licença. (chamando o atendente)"
+        },
+        {
+          "quem": "B",
+          "ko": "네?",
+          "pt": "Pois não?"
+        },
+        {
+          "quem": "A",
+          "ko": "커피요.",
+          "pt": "Um café."
+        },
+        {
+          "quem": "B",
+          "ko": "네.",
+          "pt": "Certo."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a4-g1",
+        "titulo": "A construção",
+        "itens": [
+          {
+            "id": "a4-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra ao significado.",
+            "pares": [
+              {
+                "a": "죄송",
+                "b": "culpa, vergonha"
+              },
+              {
+                "a": "합니다",
+                "b": "eu faço"
+              },
+              {
+                "a": "저기",
+                "b": "ali"
+              },
+              {
+                "a": "잠시만요",
+                "b": "um segundinho"
+              }
+            ],
+            "explicacao": "죄송합니다 e 감사합니다 são a mesma construção com miolos diferentes."
+          },
+          {
+            "id": "a4-e2",
+            "tipo": "montar",
+            "enunciado": "Monte “desculpe”.",
+            "dica": "desculpe",
+            "pecas": [
+              "송",
+              "합",
+              "죄",
+              "다",
+              "니"
+            ],
+            "correta": "죄송합니다",
+            "explicacao": "죄송 + 합니다."
+          }
+        ]
+      },
+      {
+        "id": "a4-g2",
+        "titulo": "O falso amigo",
+        "itens": [
+          {
+            "id": "a4-e3",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Um amigo conta que perdeu o emprego. Você pode responder 죄송합니다 para dizer “sinto muito”.",
+            "correta": false,
+            "explicacao": "Não. 죄송합니다 só quer dizer “a culpa é minha”. Usada aí, soa como se você fosse o responsável pela demissão."
+          },
+          {
+            "id": "a4-e4",
+            "tipo": "escolha",
+            "enunciado": "Quando 죄송합니다 é a frase certa?",
+            "opcoes": [
+              {
+                "pt": "Quando você fez algo errado e quer se desculpar"
+              },
+              {
+                "pt": "Quando alguém te dá uma notícia ruim"
+              },
+              {
+                "pt": "Quando você quer agradecer"
+              },
+              {
+                "pt": "Quando você chega em algum lugar"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Ela assume culpa. Só isso."
+          }
+        ]
+      },
+      {
+        "id": "a4-g3",
+        "titulo": "Chamar e passar",
+        "itens": [
+          {
+            "id": "a4-e5",
+            "tipo": "escolha",
+            "enunciado": "Você quer chamar o garçom para pedir. O que diz?",
+            "opcoes": [
+              {
+                "ko": "저기요"
+              },
+              {
+                "ko": "죄송합니다"
+              },
+              {
+                "ko": "안녕하세요"
+              },
+              {
+                "ko": "커피"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "저기요 é o chamado. Não pede desculpa de nada."
+          },
+          {
+            "id": "a4-e6",
+            "tipo": "escolha",
+            "enunciado": "Você precisa passar no meio de um vagão lotado. Qual destas NÃO serve?",
+            "opcoes": [
+              {
+                "ko": "감사합니다"
+              },
+              {
+                "ko": "잠시만요"
+              },
+              {
+                "ko": "잠깐만요"
+              },
+              {
+                "ko": "죄송합니다"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "감사합니다 é “obrigado”. As outras três abrem caminho."
+          },
+          {
+            "id": "a4-e7",
+            "tipo": "lacuna",
+            "enunciado": "Complete: para chamar a atenção de alguém que não está olhando para você, diga…",
+            "antes": "",
+            "depois": "",
+            "banco": [
+              "저기요",
+              "죄송합니다",
+              "안녕히 가세요"
+            ],
+            "correta": 0,
+            "explicacao": "저기요 — de 저기, “ali”."
+          },
+          {
+            "id": "a4-e8",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "저기요",
+            "pecas": [
+              "기",
+              "저",
+              "요"
+            ],
+            "correta": "저기요",
+            "explicacao": "저기요."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-5",
+    "numero": 5,
+    "hanja": "五",
+    "titulo": "É isso — a primeira frase de verdade",
+    "hangul": "-이에요 / -예요",
+    "resumo": "O verbo “ser” do coreano não vem antes do substantivo: gruda no fim dele. E qual das duas formas usar depende só de a palavra terminar em consoante ou em vogal.",
+    "ilustracao": "assets/licoes/aula-5.svg",
+    "objetivo": "Montar frases do tipo “é água”, “sou estudante”, “é isso?” — e escolher entre 이에요 e 예요 sem pensar.",
+    "vocabulario": [
+      {
+        "ko": "가방",
+        "pt": "bolsa, mochila",
+        "ilustracao": "assets/ilustracoes/bolsa.svg"
+      },
+      {
+        "ko": "물",
+        "pt": "água",
+        "ilustracao": "assets/ilustracoes/agua.svg"
+      },
+      {
+        "ko": "사무실",
+        "pt": "escritório",
+        "hanja": "事務室",
+        "ilustracao": "assets/ilustracoes/escritorio.svg"
+      },
+      {
+        "ko": "학교",
+        "pt": "escola",
+        "hanja": "學校",
+        "ilustracao": "assets/ilustracoes/escola.svg"
+      },
+      {
+        "ko": "학생",
+        "pt": "estudante",
+        "hanja": "學生",
+        "ilustracao": "assets/ilustracoes/estudante.svg"
+      },
+      {
+        "ko": "저",
+        "pt": "eu (humilde)"
+      },
+      {
+        "ko": "뭐",
+        "pt": "o quê"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a5-t1",
+        "titulo": "A ordem é invertida",
+        "grupo": "a5-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Em português o verbo vem antes do substantivo: é água. Em coreano ele vem depois, colado, sem espaço."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Português",
+              "Coreano"
+            ],
+            "linhas": [
+              [
+                "é + água",
+                "물 + 이에요"
+              ],
+              [
+                "sou + estudante",
+                "학생 + 이에요"
+              ]
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "Não existe artigo: 물이에요 pode ser “é água”, “é a água” ou “é uma água”, conforme a situação. E não existe sujeito obrigatório — 학생이에요 sozinho já é “sou estudante”."
+          }
+        ]
+      },
+      {
+        "id": "a5-t2",
+        "titulo": "이에요 ou 예요: olhe a última letra",
+        "grupo": "a5-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "A escolha entre as duas formas não tem nada a ver com significado. Tem a ver com o som da palavra anterior."
+          },
+          {
+            "tipo": "regra",
+            "linhas": [
+              {
+                "condicao": "termina em consoante (tem 받침)",
+                "resultado": "-이에요"
+              },
+              {
+                "condicao": "termina em vogal",
+                "resultado": "-예요"
+              }
+            ]
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "물이에요.",
+                "pt": "É água.",
+                "conta": "물 termina em ㄹ"
+              },
+              {
+                "ko": "가방이에요.",
+                "pt": "É uma bolsa.",
+                "conta": "가방 termina em ㅇ"
+              },
+              {
+                "ko": "사무실이에요.",
+                "pt": "É um escritório.",
+                "conta": "사무실 termina em ㄹ"
+              },
+              {
+                "ko": "학교예요.",
+                "pt": "É uma escola.",
+                "conta": "학교 termina em ㅛ"
+              },
+              {
+                "ko": "저예요.",
+                "pt": "Sou eu.",
+                "conta": "저 termina em ㅓ"
+              }
+            ]
+          },
+          {
+            "tipo": "nota",
+            "texto": "É só para a boca não tropeçar — duas vogais seguidas dão trabalho, então entra um 이 no meio quando a palavra acaba em consoante. Trocar as duas não impede ninguém de te entender, mas a forma certa sai sozinha com prática."
+          },
+          {
+            "tipo": "som",
+            "grafia": "물이에요",
+            "texto": "Repare que a consoante final pula para a sílaba seguinte quando se fala. Escreve-se 물이에요, ouve-se [무리에요]. Chama-se 연음, ligação — e vai acontecer em toda palavra com 받침 seguida de vogal."
+          }
+        ]
+      },
+      {
+        "id": "a5-t3",
+        "titulo": "Pergunta é a mesma frase, subindo",
+        "grupo": "a5-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Não há inversão nem palavra extra. A mesma frase vira pergunta só com a entonação subindo no fim — e, no papel, com um ponto de interrogação."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "물이에요.",
+                "pt": "É água."
+              },
+              {
+                "ko": "물이에요?",
+                "pt": "É água?"
+              },
+              {
+                "ko": "학생이에요.",
+                "pt": "Sou estudante."
+              },
+              {
+                "ko": "학생이에요?",
+                "pt": "Você é estudante?"
+              }
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "Junte com 뭐, “o quê”, e você tem a pergunta mais útil do idioma para quem está começando:"
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "뭐예요?",
+                "pt": "O que é?"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Alguém aponta para um objeto na mesa.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "뭐예요?",
+          "pt": "O que é isso?"
+        },
+        {
+          "quem": "B",
+          "ko": "장난감이에요.",
+          "pt": "É um brinquedo."
+        },
+        {
+          "quem": "A",
+          "ko": "장난감이에요?",
+          "pt": "É um brinquedo?"
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a5-g1",
+        "titulo": "Vocabulário da aula",
+        "itens": [
+          {
+            "id": "a5-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra à tradução.",
+            "pares": [
+              {
+                "a": "가방",
+                "b": "bolsa"
+              },
+              {
+                "a": "물",
+                "b": "água"
+              },
+              {
+                "a": "사무실",
+                "b": "escritório"
+              },
+              {
+                "a": "학교",
+                "b": "escola"
+              },
+              {
+                "a": "저",
+                "b": "eu"
+              },
+              {
+                "a": "뭐",
+                "b": "o quê"
+              }
+            ],
+            "explicacao": "학교 e 학생 dividem o 학 de “estudar” — a mesma peça reaparece em dezenas de palavras."
+          }
+        ]
+      },
+      {
+        "id": "a5-g2",
+        "titulo": "이에요 ou 예요",
+        "itens": [
+          {
+            "id": "a5-e2",
+            "tipo": "escolha",
+            "enunciado": "A palavra termina em consoante. Qual terminação entra?",
+            "opcoes": [
+              {
+                "ko": "-이에요"
+              },
+              {
+                "ko": "-예요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Consoante final pede 이에요."
+          },
+          {
+            "id": "a5-e3",
+            "tipo": "escolha",
+            "enunciado": "A palavra termina em vogal. Qual terminação entra?",
+            "opcoes": [
+              {
+                "ko": "-예요"
+              },
+              {
+                "ko": "-이에요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Vogal final pede 예요."
+          },
+          {
+            "id": "a5-e4",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “É uma bolsa.”",
+            "antes": "가방",
+            "depois": ".",
+            "banco": [
+              "이에요",
+              "예요"
+            ],
+            "correta": 0,
+            "explicacao": "가방 termina em ㅇ, consoante. 가방이에요."
+          },
+          {
+            "id": "a5-e5",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “É uma escola.”",
+            "antes": "학교",
+            "depois": ".",
+            "banco": [
+              "예요",
+              "이에요"
+            ],
+            "correta": 0,
+            "explicacao": "학교 termina na vogal ㅛ. 학교예요."
+          },
+          {
+            "id": "a5-e6",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “Sou eu.”",
+            "antes": "저",
+            "depois": ".",
+            "banco": [
+              "예요",
+              "이에요"
+            ],
+            "correta": 0,
+            "explicacao": "저 termina na vogal ㅓ. 저예요."
+          },
+          {
+            "id": "a5-e7",
+            "tipo": "montar",
+            "enunciado": "Monte “É um escritório.”",
+            "dica": "사무실 = escritório",
+            "pecas": [
+              "사무실",
+              "예요",
+              "이에요"
+            ],
+            "correta": "사무실이에요",
+            "explicacao": "사무실 termina em ㄹ. 사무실이에요."
+          },
+          {
+            "id": "a5-e8",
+            "tipo": "escolha",
+            "enunciado": "Como se pronuncia 물이에요?",
+            "opcoes": [
+              {
+                "ko": "[무리에요]"
+              },
+              {
+                "ko": "[물이에요]"
+              },
+              {
+                "ko": "[묻이에요]"
+              },
+              {
+                "ko": "[무이에요]"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O ㄹ final de 물 pula para a sílaba seguinte. É a ligação (연음), e ela vale para qualquer 받침 antes de vogal."
+          }
+        ]
+      },
+      {
+        "id": "a5-g3",
+        "titulo": "Afirmar e perguntar",
+        "itens": [
+          {
+            "id": "a5-e9",
+            "tipo": "montar",
+            "enunciado": "Monte “O que é?”",
+            "dica": "뭐 = o quê",
+            "pecas": [
+              "뭐",
+              "예요?",
+              "이에요?"
+            ],
+            "correta": "뭐예요?",
+            "explicacao": "뭐 termina em vogal. 뭐예요?"
+          },
+          {
+            "id": "a5-e10",
+            "tipo": "montar",
+            "enunciado": "Monte “É água?”",
+            "dica": "물 = água",
+            "pecas": [
+              "물",
+              "이에요?",
+              "예요?"
+            ],
+            "correta": "물이에요?",
+            "explicacao": "Mesma frase da afirmação, com entonação subindo."
+          },
+          {
+            "id": "a5-e11",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Para transformar 학생이에요 em pergunta, é preciso mudar a ordem das palavras.",
+            "correta": false,
+            "explicacao": "Não muda nada na frase. Só a entonação sobe — e no papel entra o ponto de interrogação."
+          },
+          {
+            "id": "a5-e12",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "학교예요",
+            "pecas": [
+              "학교",
+              "예요",
+              "이에요"
+            ],
+            "correta": "학교예요",
+            "explicacao": "학교예요 — “é uma escola”."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-6",
+    "numero": 6,
+    "hanja": "六",
+    "titulo": "Isto aqui — e o que é isto?",
+    "hangul": "이거. 이거 뭐예요?",
+    "resumo": "Com uma palavra nova você passa a apontar para as coisas — e a pergunta que mais serve para aprender vocabulário sozinho fica pronta.",
+    "ilustracao": "assets/licoes/aula-6.svg",
+    "objetivo": "Perguntar o nome de qualquer objeto e responder apontando.",
+    "vocabulario": [
+      {
+        "ko": "이거",
+        "pt": "isto, isto aqui"
+      },
+      {
+        "ko": "책",
+        "pt": "livro",
+        "ilustracao": "assets/ilustracoes/livro.svg"
+      },
+      {
+        "ko": "사전",
+        "pt": "dicionário",
+        "hanja": "辭典",
+        "ilustracao": "assets/ilustracoes/dicionario.svg"
+      },
+      {
+        "ko": "핸드폰",
+        "pt": "celular",
+        "ilustracao": "assets/ilustracoes/celular.svg"
+      },
+      {
+        "ko": "카메라",
+        "pt": "câmera",
+        "ilustracao": "assets/ilustracoes/camera.svg"
+      },
+      {
+        "ko": "커피",
+        "pt": "café",
+        "ilustracao": "assets/ilustracoes/cafe.svg"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a6-t1",
+        "titulo": "이거 = este + coisa",
+        "grupo": "a6-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "이거 não é uma palavra indivisível. São duas peças que você vai reencontrar na próxima aula."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "이",
+              "것"
+            ],
+            "glosas": [
+              "este",
+              "coisa"
+            ],
+            "resultado": "이거",
+            "traducao": "isto"
+          },
+          {
+            "tipo": "p",
+            "texto": "No dicionário a forma antiga, 이것, ainda aparece — é como se escrevia e se pronunciava. Com o tempo a fala encurtou para 이거, e hoje é 이거 que se ouve na conversa."
+          }
+        ]
+      },
+      {
+        "id": "a6-t2",
+        "titulo": "이거 + substantivo + 이에요/예요",
+        "grupo": "a6-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "A frase da aula anterior continua igual. Você só põe 이거 na frente para dizer de qual coisa está falando."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "책이에요.",
+                "pt": "É um livro."
+              },
+              {
+                "ko": "이거 책이에요.",
+                "pt": "Isto é um livro."
+              },
+              {
+                "ko": "카메라예요.",
+                "pt": "É uma câmera."
+              },
+              {
+                "ko": "이거 카메라예요.",
+                "pt": "Isto é uma câmera."
+              },
+              {
+                "ko": "이거 사전이에요.",
+                "pt": "Isto é um dicionário."
+              }
+            ]
+          },
+          {
+            "tipo": "nota",
+            "texto": "A regra de 이에요/예요 não muda por causa do 이거. Quem decide a terminação continua sendo a última letra do substantivo, não a primeira palavra da frase."
+          }
+        ]
+      },
+      {
+        "id": "a6-t3",
+        "titulo": "이거 뭐예요?",
+        "grupo": "a6-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Junte 이거 com o 뭐예요? da aula 5 e você tem a ferramenta mais produtiva desta fase: uma pergunta que transforma qualquer coreano por perto em professor de vocabulário."
+          },
+          {
+            "tipo": "destaque",
+            "texto": "이거 뭐예요? — “O que é isto?”"
+          },
+          {
+            "tipo": "p",
+            "texto": "E as respostas já são todas conhecidas: 네, 맞아요 para confirmar, 아니요 para corrigir."
+          },
+          {
+            "tipo": "dialogo",
+            "falas": [
+              {
+                "quem": "A",
+                "ko": "이거 커피예요?",
+                "pt": "Isto é café?"
+              },
+              {
+                "quem": "B",
+                "ko": "아니요. 이거 물이에요.",
+                "pt": "Não. Isto é água."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Numa papelaria.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "이거 볼펜이에요?",
+          "pt": "Isto é uma caneta?"
+        },
+        {
+          "quem": "B",
+          "ko": "아니요. 샤프예요.",
+          "pt": "Não. É uma lapiseira."
+        },
+        {
+          "quem": "A",
+          "ko": "이거는요? 볼펜이에요?",
+          "pt": "E este aqui? É caneta?"
+        },
+        {
+          "quem": "B",
+          "ko": "네. 볼펜 맞아요.",
+          "pt": "Sim, é caneta mesmo."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a6-g1",
+        "titulo": "Vocabulário da aula",
+        "itens": [
+          {
+            "id": "a6-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra à tradução.",
+            "pares": [
+              {
+                "a": "뭐",
+                "b": "o quê"
+              },
+              {
+                "a": "책",
+                "b": "livro"
+              },
+              {
+                "a": "사전",
+                "b": "dicionário"
+              },
+              {
+                "a": "핸드폰",
+                "b": "celular"
+              },
+              {
+                "a": "카메라",
+                "b": "câmera"
+              },
+              {
+                "a": "이거",
+                "b": "isto"
+              }
+            ],
+            "explicacao": "핸드폰 e 카메라 são empréstimos do inglês, escritos em 한글 pelo som."
+          },
+          {
+            "id": "a6-e2",
+            "tipo": "imagem",
+            "enunciado": "Qual é o nome disto?",
+            "ilustracao": "assets/ilustracoes/livro.svg",
+            "opcoes": [
+              {
+                "ko": "책"
+              },
+              {
+                "ko": "물"
+              },
+              {
+                "ko": "카메라"
+              },
+              {
+                "ko": "핸드폰"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "책 = livro."
+          },
+          {
+            "id": "a6-e3",
+            "tipo": "imagem",
+            "enunciado": "Qual é o nome disto?",
+            "ilustracao": "assets/ilustracoes/camera.svg",
+            "opcoes": [
+              {
+                "ko": "카메라"
+              },
+              {
+                "ko": "사전"
+              },
+              {
+                "ko": "책"
+              },
+              {
+                "ko": "물"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "카메라 = câmera."
+          },
+          {
+            "id": "a6-e4",
+            "tipo": "imagem",
+            "enunciado": "Qual é o nome disto?",
+            "ilustracao": "assets/ilustracoes/celular.svg",
+            "opcoes": [
+              {
+                "ko": "핸드폰"
+              },
+              {
+                "ko": "카메라"
+              },
+              {
+                "ko": "사전"
+              },
+              {
+                "ko": "책"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "핸드폰 = celular."
+          },
+          {
+            "id": "a6-e5",
+            "tipo": "imagem",
+            "enunciado": "Qual é o nome disto?",
+            "ilustracao": "assets/ilustracoes/dicionario.svg",
+            "opcoes": [
+              {
+                "ko": "사전"
+              },
+              {
+                "ko": "책"
+              },
+              {
+                "ko": "핸드폰"
+              },
+              {
+                "ko": "물"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "사전 = dicionário. Parece com 책, mas é outra palavra."
+          },
+          {
+            "id": "a6-e6",
+            "tipo": "imagem",
+            "enunciado": "Qual é o nome disto?",
+            "ilustracao": "assets/ilustracoes/agua.svg",
+            "opcoes": [
+              {
+                "ko": "물"
+              },
+              {
+                "ko": "커피"
+              },
+              {
+                "ko": "카메라"
+              },
+              {
+                "ko": "책"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "물 = água."
+          }
+        ]
+      },
+      {
+        "id": "a6-g2",
+        "titulo": "Isto é…",
+        "itens": [
+          {
+            "id": "a6-e7",
+            "tipo": "montar",
+            "enunciado": "Monte “Isto é um livro.”",
+            "dica": "책 = livro",
+            "pecas": [
+              "이거",
+              "책",
+              "이에요",
+              "예요"
+            ],
+            "correta": "이거책이에요",
+            "explicacao": "이거 책이에요. 책 termina em ㄱ, então entra 이에요."
+          },
+          {
+            "id": "a6-e8",
+            "tipo": "montar",
+            "enunciado": "Monte “Isto é uma câmera.”",
+            "dica": "카메라 = câmera",
+            "pecas": [
+              "이거",
+              "카메라",
+              "예요",
+              "이에요"
+            ],
+            "correta": "이거카메라예요",
+            "explicacao": "이거 카메라예요. 카메라 termina na vogal ㅏ."
+          },
+          {
+            "id": "a6-e9",
+            "tipo": "escolha",
+            "enunciado": "Qual está certa?",
+            "opcoes": [
+              {
+                "ko": "이거 사전이에요."
+              },
+              {
+                "ko": "이거 사전예요."
+              },
+              {
+                "ko": "사전 이거예요."
+              },
+              {
+                "ko": "이에요 이거 사전."
+              }
+            ],
+            "correta": 0,
+            "explicacao": "사전 termina em ㄴ, então 이에요. E a ordem é sempre 이거 + substantivo + terminação."
+          }
+        ]
+      },
+      {
+        "id": "a6-g3",
+        "titulo": "Perguntar e responder",
+        "itens": [
+          {
+            "id": "a6-e10",
+            "tipo": "montar",
+            "enunciado": "Monte “O que é isto?”",
+            "dica": "a pergunta mais útil da fase",
+            "pecas": [
+              "이거",
+              "뭐",
+              "예요?"
+            ],
+            "correta": "이거뭐예요?",
+            "explicacao": "이거 뭐예요?"
+          },
+          {
+            "id": "a6-e11",
+            "tipo": "escolha",
+            "enunciado": "Perguntam 이거 커피예요? mas é água. Qual resposta está completa e correta?",
+            "opcoes": [
+              {
+                "ko": "아니요. 이거 물이에요."
+              },
+              {
+                "ko": "네. 이거 물이에요."
+              },
+              {
+                "ko": "아니요. 이거 커피예요."
+              },
+              {
+                "ko": "네, 맞아요."
+              }
+            ],
+            "correta": 0,
+            "explicacao": "아니요 discorda, e a frase seguinte corrige."
+          },
+          {
+            "id": "a6-e12",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte a pergunta.",
+            "audio": "이거 뭐예요?",
+            "pecas": [
+              "뭐",
+              "이거",
+              "예요?"
+            ],
+            "correta": "이거뭐예요?",
+            "explicacao": "이거 뭐예요?"
+          },
+          {
+            "id": "a6-e13",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "이거 물이에요",
+            "pecas": [
+              "물",
+              "이거",
+              "이에요"
+            ],
+            "correta": "이거물이에요",
+            "explicacao": "이거 물이에요 — falado, soa [이거 무리에요]."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-7",
+    "numero": 7,
+    "hanja": "七",
+    "titulo": "Este, esse, aquele",
+    "hangul": "이 / 그 / 저 + 거·것",
+    "resumo": "Coreano divide o espaço em três, e a divisão do meio não é distância: é de quem está perto.",
+    "ilustracao": "assets/licoes/aula-7.svg",
+    "objetivo": "Apontar para qualquer coisa da sala escolhendo entre 이, 그 e 저 — e saber por que sozinhos eles não bastam.",
+    "vocabulario": [
+      {
+        "ko": "이",
+        "pt": "este (perto de mim)"
+      },
+      {
+        "ko": "그",
+        "pt": "esse (perto de você), aquele que já foi mencionado"
+      },
+      {
+        "ko": "저",
+        "pt": "aquele (longe dos dois)"
+      },
+      {
+        "ko": "거 / 것",
+        "pt": "coisa, item"
+      },
+      {
+        "ko": "사람",
+        "pt": "pessoa"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a7-t1",
+        "titulo": "Três posições, não duas",
+        "grupo": "a7-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Português trabalha com dois eixos na prática: perto (este/esse) e longe (aquele). Coreano tem três, e o critério do meio é o que costuma escapar."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "",
+              "Onde está a coisa"
+            ],
+            "linhas": [
+              [
+                "이",
+                "perto de mim, quem fala"
+              ],
+              [
+                "그",
+                "perto de você, com quem eu falo"
+              ],
+              [
+                "저",
+                "longe de nós dois"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "그 não é “meio longe”. É “aí, do seu lado”. A referência é a outra pessoa, não a distância em metros."
+          }
+        ]
+      },
+      {
+        "id": "a7-t2",
+        "titulo": "그 também serve para o que não está à vista",
+        "grupo": "a7-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Quando a coisa não está na sala — foi mencionada na conversa, ou você está falando de algo que ninguém vê — a escolha é 그."
+          },
+          {
+            "tipo": "p",
+            "texto": "É o mais próximo que o coreano tem do nosso “aquele que a gente falou”. Se você estiver em dúvida sobre qual usar para algo que não está visível, 그 é a aposta certa."
+          }
+        ]
+      },
+      {
+        "id": "a7-t3",
+        "titulo": "이, 그, 저 não andam sozinhos",
+        "grupo": "a7-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Estes três só funcionam grudados em outra palavra — são modificadores, não pronomes. Para dizer “isto”, “isso”, “aquilo”, é preciso acrescentar 거 (ou a forma mais formal, 것), que quer dizer “coisa”."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Modificador",
+              "+ coisa",
+              "= pronome"
+            ],
+            "linhas": [
+              [
+                "이 — este",
+                "거",
+                "이거 — isto"
+              ],
+              [
+                "그 — esse",
+                "거",
+                "그거 — isso"
+              ],
+              [
+                "저 — aquele",
+                "거",
+                "저거 — aquilo"
+              ]
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "Com um substantivo qualquer, eles entram direto, sem 거:"
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "이 책",
+                "pt": "este livro"
+              },
+              {
+                "ko": "그 카메라",
+                "pt": "essa câmera (aí com você)"
+              },
+              {
+                "ko": "저 학교",
+                "pt": "aquela escola (lá longe)"
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Com pessoas, nunca use 거. Pessoa é 사람: 이 사람, 그 사람, 저 사람. Chamar alguém de 이거 é tratar a pessoa como objeto."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Numa loja de tênis.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "이 브랜드 좋아해요?",
+          "pt": "Você gosta desta marca? (a que estou segurando)"
+        },
+        {
+          "quem": "B",
+          "ko": "아니요.",
+          "pt": "Não."
+        },
+        {
+          "quem": "A",
+          "ko": "그럼 저 브랜드 좋아해요?",
+          "pt": "Então gosta daquela marca ali?"
+        },
+        {
+          "quem": "B",
+          "ko": "네, 좋아해요.",
+          "pt": "Sim, gosto."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a7-g1",
+        "titulo": "As três posições",
+        "itens": [
+          {
+            "id": "a7-e1",
+            "tipo": "lacuna",
+            "enunciado": "Algo que está perto de você, quem fala.",
+            "antes": "",
+            "depois": "+ 거 = isto",
+            "banco": [
+              "이",
+              "그",
+              "저"
+            ],
+            "correta": 0,
+            "explicacao": "이 é o que está do seu lado."
+          },
+          {
+            "id": "a7-e2",
+            "tipo": "lacuna",
+            "enunciado": "Algo que está perto da outra pessoa.",
+            "antes": "",
+            "depois": "+ 거 = isso",
+            "banco": [
+              "그",
+              "이",
+              "저"
+            ],
+            "correta": 0,
+            "explicacao": "그 aponta para o lado do interlocutor."
+          },
+          {
+            "id": "a7-e3",
+            "tipo": "lacuna",
+            "enunciado": "Algo longe de você e da outra pessoa.",
+            "antes": "",
+            "depois": "+ 거 = aquilo",
+            "banco": [
+              "저",
+              "이",
+              "그"
+            ],
+            "correta": 0,
+            "explicacao": "저 é o que está longe dos dois."
+          },
+          {
+            "id": "a7-e4",
+            "tipo": "escolha",
+            "enunciado": "Você fala de uma coisa que não está à vista de ninguém. Qual usar?",
+            "opcoes": [
+              {
+                "ko": "그"
+              },
+              {
+                "ko": "이"
+              },
+              {
+                "ko": "저"
+              },
+              {
+                "ko": "거"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "그 cobre o que está fora do campo de visão e o que já foi mencionado."
+          }
+        ]
+      },
+      {
+        "id": "a7-g2",
+        "titulo": "Modificador e pronome",
+        "itens": [
+          {
+            "id": "a7-e5",
+            "tipo": "associar",
+            "enunciado": "Ligue cada expressão ao significado.",
+            "pares": [
+              {
+                "a": "이것",
+                "b": "isto, esta coisa"
+              },
+              {
+                "a": "그것",
+                "b": "isso, essa coisa"
+              },
+              {
+                "a": "저것",
+                "b": "aquilo, aquela coisa lá"
+              },
+              {
+                "a": "이 사람",
+                "b": "esta pessoa aqui"
+              },
+              {
+                "a": "그 사람",
+                "b": "essa pessoa, ele/ela"
+              },
+              {
+                "a": "저 사람",
+                "b": "aquela pessoa lá"
+              }
+            ],
+            "explicacao": "Com coisa entra 것/거; com gente entra 사람."
+          },
+          {
+            "id": "a7-e6",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "이, 그 e 저 podem ser usados sozinhos para dizer “isto”, “isso” e “aquilo”.",
+            "correta": false,
+            "explicacao": "Sozinhos são só modificadores. Para virar pronome precisam de 거 ou 것."
+          },
+          {
+            "id": "a7-e7",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Para se referir a uma pessoa, pode-se dizer 이거.",
+            "correta": false,
+            "explicacao": "거 é “coisa”. Com pessoa, usa-se 사람: 이 사람, 그 사람, 저 사람."
+          }
+        ]
+      },
+      {
+        "id": "a7-g3",
+        "titulo": "Traduzir",
+        "itens": [
+          {
+            "id": "a7-e8",
+            "tipo": "montar",
+            "enunciado": "Monte “aquele celular lá” (longe dos dois).",
+            "dica": "핸드폰 = celular",
+            "pecas": [
+              "저",
+              "핸드폰",
+              "이",
+              "그"
+            ],
+            "correta": "저핸드폰",
+            "explicacao": "저 핸드폰."
+          },
+          {
+            "id": "a7-e9",
+            "tipo": "montar",
+            "enunciado": "Monte “essa câmera aí” (perto de quem ouve).",
+            "dica": "카메라 = câmera",
+            "pecas": [
+              "그",
+              "카메라",
+              "저",
+              "이"
+            ],
+            "correta": "그카메라",
+            "explicacao": "그 카메라."
+          },
+          {
+            "id": "a7-e10",
+            "tipo": "montar",
+            "enunciado": "Monte “este livro” (na sua mão).",
+            "dica": "책 = livro",
+            "pecas": [
+              "이",
+              "책",
+              "그",
+              "저"
+            ],
+            "correta": "이책",
+            "explicacao": "이 책."
+          },
+          {
+            "id": "a7-e11",
+            "tipo": "montar",
+            "enunciado": "Monte “aquela escola lá”.",
+            "dica": "학교 = escola",
+            "pecas": [
+              "저",
+              "학교",
+              "이",
+              "그"
+            ],
+            "correta": "저학교",
+            "explicacao": "저 학교."
+          },
+          {
+            "id": "a7-e12",
+            "tipo": "montar",
+            "enunciado": "Monte “esse escritório” (o que já mencionamos).",
+            "dica": "사무실 = escritório",
+            "pecas": [
+              "그",
+              "사무실",
+              "저",
+              "이"
+            ],
+            "correta": "그사무실",
+            "explicacao": "그 사무실 — 그 também cobre o que já apareceu na conversa."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-8",
+    "numero": 8,
+    "hanja": "八",
+    "titulo": "Não é isso",
+    "hangul": "아니에요",
+    "resumo": "A negação de “ser” é uma palavra inteira que vai no fim da frase — e a ordem final revela como o coreano monta uma sentença.",
+    "ilustracao": "assets/licoes/aula-8.svg",
+    "objetivo": "Negar identidade: “não sou eu”, “isto não é leite”, “aquilo não é um gato”.",
+    "vocabulario": [
+      {
+        "ko": "아니에요",
+        "pt": "não é, não sou, não é isso"
+      },
+      {
+        "ko": "아니다",
+        "pt": "não ser (forma de dicionário)"
+      },
+      {
+        "ko": "우유",
+        "pt": "leite",
+        "ilustracao": "assets/ilustracoes/leite.svg"
+      },
+      {
+        "ko": "고양이",
+        "pt": "gato",
+        "ilustracao": "assets/ilustracoes/gato.svg"
+      },
+      {
+        "ko": "학생",
+        "pt": "estudante",
+        "hanja": "學生",
+        "ilustracao": "assets/ilustracoes/estudante.svg"
+      },
+      {
+        "ko": "모자",
+        "pt": "chapéu, boné",
+        "ilustracao": "assets/ilustracoes/chapeu.svg"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a8-t1",
+        "titulo": "Substantivo + 아니에요",
+        "grupo": "a8-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Se 이에요/예요 é “é”, 아니에요 é “não é”. Só que 아니에요 não gruda no substantivo: vem depois dele, separado por um espaço."
+          },
+          {
+            "tipo": "regra",
+            "linhas": [
+              {
+                "condicao": "substantivo + 아니에요",
+                "resultado": "não é (aquele) substantivo"
+              }
+            ]
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "저 아니에요.",
+                "pt": "Não sou eu."
+              },
+              {
+                "ko": "우유 아니에요.",
+                "pt": "Não é leite."
+              },
+              {
+                "ko": "물 아니에요.",
+                "pt": "Não é água."
+              }
+            ]
+          },
+          {
+            "tipo": "nota",
+            "texto": "Não há duas formas para escolher aqui. Termine o substantivo em consoante ou em vogal, 아니에요 é sempre 아니에요."
+          }
+        ]
+      },
+      {
+        "id": "a8-t2",
+        "titulo": "A ordem completa da frase",
+        "grupo": "a8-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Junte com o 이거 da aula 6 e a frase fica com três blocos — na ordem exatamente inversa à do português."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "이거",
+              "책",
+              "아니에요"
+            ],
+            "glosas": [
+              "isto",
+              "livro",
+              "não é"
+            ],
+            "resultado": "이거 책 아니에요",
+            "traducao": "isto não é um livro"
+          },
+          {
+            "tipo": "p",
+            "texto": "Traduzido palavra por palavra, sai “isto livro não-é”. Estranha em português, mas é o esqueleto de toda frase coreana: o que se afirma ou nega fica sempre no fim."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "이거 우유 아니에요.",
+                "pt": "Isto não é leite."
+              },
+              {
+                "ko": "저 학생 아니에요.",
+                "pt": "Não sou estudante."
+              },
+              {
+                "ko": "저거 고양이 아니에요.",
+                "pt": "Aquilo não é um gato."
+              },
+              {
+                "ko": "그거 핸드폰 아니에요.",
+                "pt": "Isso não é um celular."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a8-t3",
+        "titulo": "아니에요 vem de 아니다",
+        "grupo": "a8-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "아니에요 é a forma formal do presente de 아니다. E isso abre uma regra que vale para o idioma inteiro:"
+          },
+          {
+            "tipo": "destaque",
+            "texto": "No dicionário, todo verbo coreano termina em -다. Se você encontrar uma palavra terminada em -다, quase certamente é um verbo."
+          },
+          {
+            "tipo": "p",
+            "texto": "É por isso que 가다 (ir) apareceu na aula 3 nessa forma, e não como 가세요. A forma de dicionário é o ponto de partida; as terminações que você está aprendendo são o que se põe no lugar do -다."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Alguém aponta para um copo do outro lado da mesa.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "그거 우유예요?",
+          "pt": "Isso é leite?"
+        },
+        {
+          "quem": "B",
+          "ko": "아니요. 우유 아니에요. 물이에요.",
+          "pt": "Não. Não é leite. É água."
+        },
+        {
+          "quem": "A",
+          "ko": "네, 알겠어요.",
+          "pt": "Ah, entendi."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a8-g1",
+        "titulo": "Vocabulário e forma",
+        "itens": [
+          {
+            "id": "a8-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra à tradução.",
+            "pares": [
+              {
+                "a": "우유",
+                "b": "leite"
+              },
+              {
+                "a": "고양이",
+                "b": "gato"
+              },
+              {
+                "a": "학생",
+                "b": "estudante"
+              },
+              {
+                "a": "모자",
+                "b": "chapéu"
+              },
+              {
+                "a": "아니에요",
+                "b": "não é"
+              },
+              {
+                "a": "거",
+                "b": "coisa"
+              }
+            ],
+            "explicacao": "우유 e 물 são as duas bebidas que mais aparecem nos exercícios desta fase — vale não confundir."
+          },
+          {
+            "id": "a8-e2",
+            "tipo": "imagem",
+            "enunciado": "Qual é o nome disto?",
+            "ilustracao": "assets/ilustracoes/leite.svg",
+            "opcoes": [
+              {
+                "ko": "우유"
+              },
+              {
+                "ko": "물"
+              },
+              {
+                "ko": "커피"
+              },
+              {
+                "ko": "고양이"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "우유 = leite."
+          },
+          {
+            "id": "a8-e3",
+            "tipo": "imagem",
+            "enunciado": "Qual é o nome disto?",
+            "ilustracao": "assets/ilustracoes/chapeu.svg",
+            "opcoes": [
+              {
+                "ko": "모자"
+              },
+              {
+                "ko": "가방"
+              },
+              {
+                "ko": "책"
+              },
+              {
+                "ko": "우유"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "모자 = chapéu ou boné."
+          },
+          {
+            "id": "a8-e4",
+            "tipo": "escolha",
+            "enunciado": "Como se diz “não sou eu”?",
+            "opcoes": [
+              {
+                "ko": "저 아니에요."
+              },
+              {
+                "ko": "우유 아니에요."
+              },
+              {
+                "ko": "감사합니다."
+              },
+              {
+                "ko": "물이에요."
+              }
+            ],
+            "correta": 0,
+            "explicacao": "저 (eu) + 아니에요."
+          }
+        ]
+      },
+      {
+        "id": "a8-g2",
+        "titulo": "Montar a negação",
+        "itens": [
+          {
+            "id": "a8-e5",
+            "tipo": "escolha",
+            "enunciado": "Traduzida palavra por palavra, 이거 책 아니에요 fica:",
+            "opcoes": [
+              {
+                "pt": "isto livro não-é"
+              },
+              {
+                "pt": "não é isto livro"
+              },
+              {
+                "pt": "isto não é livro"
+              },
+              {
+                "pt": "livro não é isto"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O que se nega vai para o fim. A tradução natural é “isto não é um livro”, mas a ordem coreana é a primeira."
+          },
+          {
+            "id": "a8-e6",
+            "tipo": "montar",
+            "enunciado": "Monte “Isto não é café.”",
+            "dica": "커피 = café",
+            "pecas": [
+              "이거",
+              "커피",
+              "아니에요"
+            ],
+            "correta": "이거커피아니에요",
+            "explicacao": "이거 커피 아니에요."
+          },
+          {
+            "id": "a8-e7",
+            "tipo": "montar",
+            "enunciado": "Monte “Aquilo não é um gato.” (longe dos dois)",
+            "dica": "고양이 = gato",
+            "pecas": [
+              "저거",
+              "고양이",
+              "아니에요"
+            ],
+            "correta": "저거고양이아니에요",
+            "explicacao": "저거 고양이 아니에요."
+          },
+          {
+            "id": "a8-e8",
+            "tipo": "montar",
+            "enunciado": "Monte “Isso não é um celular.” (aí com você)",
+            "dica": "핸드폰 = celular",
+            "pecas": [
+              "그거",
+              "핸드폰",
+              "아니에요"
+            ],
+            "correta": "그거핸드폰아니에요",
+            "explicacao": "그거 핸드폰 아니에요."
+          },
+          {
+            "id": "a8-e9",
+            "tipo": "montar",
+            "enunciado": "Monte “Sim, é isso mesmo. Isto é leite.”",
+            "dica": "duas frases",
+            "pecas": [
+              "네,",
+              "맞아요.",
+              "이거",
+              "우유예요."
+            ],
+            "correta": "네,맞아요.이거우유예요.",
+            "explicacao": "네, 맞아요. 이거 우유예요."
+          },
+          {
+            "id": "a8-e10",
+            "tipo": "escolha",
+            "enunciado": "Alguém aponta para algo perto de si e pergunta 이거 모자예요? Qual resposta usa o demonstrativo certo?",
+            "opcoes": [
+              {
+                "ko": "그거 모자 아니에요."
+              },
+              {
+                "ko": "이거 모자 아니에요."
+              },
+              {
+                "ko": "저거 모자 아니에요."
+              },
+              {
+                "ko": "뭐?!"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O objeto está perto de quem perguntou, ou seja, longe de você. Do seu lado da conversa ele é 그거."
+          }
+        ]
+      },
+      {
+        "id": "a8-g3",
+        "titulo": "Revisão das oito aulas",
+        "itens": [
+          {
+            "id": "a8-e11",
+            "tipo": "montar",
+            "enunciado": "Monte “Sim, sou estudante.”",
+            "dica": "학생 = estudante",
+            "pecas": [
+              "네,",
+              "학생",
+              "이에요."
+            ],
+            "correta": "네,학생이에요.",
+            "explicacao": "네, 학생이에요. O 저 é opcional — o coreano dispensa o sujeito óbvio."
+          },
+          {
+            "id": "a8-e12",
+            "tipo": "montar",
+            "enunciado": "Monte “Não. Isto é um escritório.”",
+            "dica": "사무실 = escritório",
+            "pecas": [
+              "아니요.",
+              "이거",
+              "사무실이에요."
+            ],
+            "correta": "아니요.이거사무실이에요.",
+            "explicacao": "아니요. 이거 사무실이에요."
+          },
+          {
+            "id": "a8-e13",
+            "tipo": "escolha",
+            "enunciado": "Toda palavra coreana terminada em -다 no dicionário é provavelmente…",
+            "opcoes": [
+              {
+                "pt": "um verbo"
+              },
+              {
+                "pt": "um substantivo"
+              },
+              {
+                "pt": "um advérbio"
+              },
+              {
+                "pt": "um empréstimo do inglês"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "아니다, 가다, 하다 — a forma de dicionário de todo verbo termina em -다."
+          },
+          {
+            "id": "a8-e14",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "이거 모자 아니에요",
+            "pecas": [
+              "모자",
+              "이거",
+              "아니에요"
+            ],
+            "correta": "이거모자아니에요",
+            "explicacao": "이거 모자 아니에요."
+          },
+          {
+            "id": "a8-e15",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "그거 우유 아니에요",
+            "pecas": [
+              "우유",
+              "그거",
+              "아니에요"
+            ],
+            "correta": "그거우유아니에요",
+            "explicacao": "그거 우유 아니에요."
+          }
+        ]
+      }
+    ]
+  }
+]

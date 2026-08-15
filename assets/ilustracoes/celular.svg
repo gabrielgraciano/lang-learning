@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Telefone celular">
+  <circle cx="100" cy="100" r="94" fill="#E3E9E4"/>
+  <rect x="58" y="26" width="84" height="148" rx="16" fill="#3E4C46"/>
+  <rect x="100" y="26" width="42" height="148" rx="16" fill="#33403A"/>
+  <rect x="68" y="44" width="64" height="104" rx="5" fill="#EAF0EB"/>
+  <rect x="68" y="44" width="64" height="104" rx="5" fill="#CFDCD2" opacity=".5"/>
+  <g fill="#7FA08D">
+    <rect x="78" y="58" width="44" height="7" rx="3.5"/>
+    <rect x="78" y="74" width="44" height="7" rx="3.5"/>
+    <rect x="78" y="90" width="30" height="7" rx="3.5"/>
+  </g>
+  <circle cx="100" cy="160" r="7" fill="#8FA89A"/>
+  <rect x="88" y="33" width="24" height="5" rx="2.5" fill="#8FA89A"/>
+</svg>

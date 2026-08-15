@@ -13,12 +13,14 @@ import { pronunciar } from './pronuncia.js';
 import { agendar, estadoDe } from './fsrs.js';
 import { NIVEL, DESCRICAO_NIVEL, nivelDe, molde, proximaDica, dicaEsgotada, alternativas, conferir, notaPara, partirFrase, respostaDe } from './niveis.js';
 import { montarSessao, cartaoDe, resumo } from './agenda.js';
+import * as licoes from './licoes.js';
 import { ligarCampo, montarTeclado } from './teclado.js';
 import { indexar, familiasDe, familias } from './sino.js';
 import * as banco from './armazenamento.js';
 
 const URL_DADOS = new URL('../dados/palavras.json', import.meta.url);
 const URL_HANJA = new URL('../dados/hanja.json', import.meta.url);
+const URL_LICOES = new URL('../dados/licoes.json', import.meta.url);
 
 const $ = (seletor) => document.querySelector(seletor);
 
@@ -28,6 +30,8 @@ const el = {
     estudo: $('#tela-estudo'),
     fim: $('#tela-fim'),
     mapa: $('#tela-mapa'),
+    nivel1: $('#tela-nivel1'),
+    aula: $('#tela-aula'),
     ajustes: $('#tela-ajustes'),
   },
 
@@ -110,10 +114,33 @@ const el = {
   importar: $('#importar'),
   arquivo: $('#arquivo'),
   avisoDados: $('#aviso-dados'),
+
+  atalhoNivel1: $('#atalho-nivel1'),
+  atalhoNivel1Progresso: $('#atalho-nivel1-progresso'),
+  nivel1Progresso: $('#nivel1-progresso'),
+  listaAulas: $('#lista-aulas'),
+
+  aulaTitulo: $('#aula-titulo'),
+  aulaIlustracao: $('#aula-ilustracao'),
+  aulaSelo: $('#aula-selo'),
+  aulaHangul: $('#aula-hangul'),
+  aulaResumo: $('#aula-resumo'),
+  aulaObjetivo: $('#aula-objetivo'),
+  abaExplicacao: $('#aba-explicacao'),
+  abaExercicios: $('#aba-exercicios'),
+  abaExerciciosContagem: $('#aba-exercicios-contagem'),
+  painelExplicacao: $('#painel-explicacao'),
+  painelExercicios: $('#painel-exercicios'),
+  aulaAnterior: $('#aula-anterior'),
+  aulaProxima: $('#aula-proxima'),
 };
 
 /** @type {object[]} */
 let palavras = [];
+/** @type {object[]} As oito aulas do Nível 1. */
+let aulas = [];
+/** @type {object|null} */
+let aulaAberta = null;
 let estado = banco.ler();
 /** @type {null | ReturnType<typeof novaSessao>} */
 let sessao = null;
@@ -143,8 +170,10 @@ const rotuloModulo = (id) =>
 function ir(nome) {
   for (const [chave, secao] of Object.entries(el.telas)) secao.hidden = chave !== nome;
   window.scrollTo({ top: 0 });
+  pararNarracao();
   if (nome === 'hoje') pintarHoje();
   if (nome === 'mapa') pintarMapa();
+  if (nome === 'nivel1') pintarNivel1();
   if (nome === 'ajustes') pintarAjustes();
 }
 
@@ -152,7 +181,11 @@ function ir(nome) {
 
 let vozes = [];
 const carregarVozes = () => { vozes = window.speechSynthesis?.getVoices() ?? []; };
-const vozCoreana = () => vozes.find((v) => v.lang?.toLowerCase().startsWith('ko')) ?? null;
+const vozDe = (prefixo) =>
+  vozes.find((v) => v.lang?.toLowerCase().startsWith(prefixo)) ?? null;
+const vozCoreana = () => vozDe('ko');
+/** Para narrar a explicação. Sem voz pt, o inglês lendo português fica pior que nada. */
+const vozPortuguesa = () => vozDe('pt');
 
 function falar(texto) {
   if (!estado.preferencias.som || !window.speechSynthesis) return;
@@ -160,11 +193,80 @@ function falar(texto) {
   if (!voz) return;
 
   window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(enunciado(texto, voz));
+}
+
+/**
+ * Fala uma frase coreana sob demanda, ignorando a preferência de som.
+ *
+ * `falar` respeita a preferência porque dispara sozinho no meio do estudo — som
+ * inesperado num lugar público é motivo real para desligar. Aqui quem apertou o
+ * botão foi a pessoa, e recusar por causa de um ajuste de outra tela seria só um
+ * botão que não faz nada.
+ */
+function falarAgora(texto) {
+  const voz = vozCoreana();
+  if (!voz || !window.speechSynthesis) return false;
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(enunciado(texto, voz));
+  return true;
+}
+
+function enunciado(texto, voz, taxa = 0.85) {
   const fala = new SpeechSynthesisUtterance(texto);
   fala.voice = voz;
   fala.lang = voz.lang;
-  fala.rate = 0.85;
-  window.speechSynthesis.speak(fala);
+  fala.rate = taxa;
+  return fala;
+}
+
+/** Quem está narrando agora, para o botão de outro tópico interromper este. */
+let narracao = null;
+
+/**
+ * Lê um tópico inteiro em voz alta, alternando de voz conforme o idioma do
+ * trecho: a explicação em português, os exemplos em coreano. É por isso que a
+ * narração não é um arquivo de áudio — o texto sabe em que língua cada pedaço
+ * está, e uma gravação só saberia se alguém gravasse as duas.
+ */
+function narrar(segmentos, { aoMudar } = {}) {
+  pararNarracao();
+  if (!window.speechSynthesis) return false;
+
+  const ko = vozCoreana();
+  const pt = vozPortuguesa();
+  const fila = segmentos
+    .map(({ texto, lang }) => ({ texto, voz: lang === 'ko' ? ko : pt }))
+    .filter((s) => s.voz && s.texto.trim());
+  if (!fila.length) return false;
+
+  narracao = { cancelada: false };
+  const atual = narracao;
+  let i = 0;
+
+  const seguinte = () => {
+    if (atual.cancelada) return;
+    if (i >= fila.length) { narracao = null; aoMudar?.(false); return; }
+    const { texto, voz } = fila[i++];
+    const fala = enunciado(texto, voz, voz.lang.startsWith('ko') ? 0.8 : 1);
+    fala.addEventListener('end', seguinte);
+    fala.addEventListener('error', seguinte);
+    window.speechSynthesis.speak(fala);
+  };
+
+  aoMudar?.(true);
+  seguinte();
+  return true;
+}
+
+function pararNarracao() {
+  if (narracao) narracao.cancelada = true;
+  narracao = null;
+  window.speechSynthesis?.cancel();
+  for (const botao of document.querySelectorAll('.botao-narrar[aria-pressed="true"]')) {
+    botao.setAttribute('aria-pressed', 'false');
+    botao.textContent = botao.dataset.rotulo ?? 'Ouvir';
+  }
 }
 
 // -------------------------------------------------------------- tela: hoje
@@ -764,6 +866,838 @@ function mostrarDetalhe(palavra) {
   falar(palavra.hangul);
 }
 
+// ------------------------------------------------------------ tela: Nível 1
+
+/**
+ * Ajudante de DOM local. O resto do app monta elemento a elemento porque monta
+ * poucos; uma aula é quase toda construída em JS a partir do JSON, e sem isto
+ * a seção viraria três linhas de cerimônia por parágrafo.
+ */
+function nova(tag, classe, texto) {
+  const elemento = document.createElement(tag);
+  if (classe) elemento.className = classe;
+  if (texto !== undefined) elemento.textContent = texto;
+  return elemento;
+}
+
+const feitos = () => estado.licoes ?? {};
+
+function pintarNivel1() {
+  const geral = licoes.progressoGeral(aulas, feitos());
+
+  el.nivel1Progresso.textContent = geral.total
+    ? `${geral.aulasCompletas} de ${geral.aulas} aulas concluídas · ${geral.acertos} de ${geral.total} exercícios`
+    : '';
+
+  el.listaAulas.replaceChildren(...aulas.map((aula) => {
+    const p = licoes.progressoDaAula(aula, feitos());
+
+    const cartao = nova('button', 'cartao-aula');
+    cartao.type = 'button';
+    if (p.completa) cartao.classList.add('cartao-aula-completa');
+
+    const selo = nova('span', 'selo-aula', aula.hanja);
+    selo.lang = 'ko';
+    selo.setAttribute('aria-hidden', 'true');
+
+    const corpo = nova('span', 'cartao-aula-corpo');
+    const numero = nova('span', 'cartao-aula-numero', `Aula ${aula.numero}`);
+    const hangul = nova('span', 'cartao-aula-hangul', aula.hangul);
+    hangul.lang = 'ko';
+    const titulo = nova('span', 'cartao-aula-titulo', aula.titulo);
+    corpo.append(numero, hangul, titulo, barraProgresso(p));
+
+    cartao.append(selo, corpo);
+    cartao.addEventListener('click', () => abrirAula(aula));
+
+    const linha = nova('li');
+    linha.append(cartao);
+    return linha;
+  }));
+
+  const geralTexto = geral.total
+    ? `${geral.aulasCompletas}/${geral.aulas} aulas · ${geral.acertos}/${geral.total} exercícios`
+    : 'oito aulas';
+  el.atalhoNivel1Progresso.textContent = geralTexto;
+}
+
+function barraProgresso({ acertos, total, fracao }) {
+  const barra = nova('span', 'progresso');
+  const trilho = nova('span', 'progresso-trilho');
+  const cheio = nova('span', 'progresso-cheio');
+  cheio.style.width = `${Math.round(fracao * 100)}%`;
+  trilho.append(cheio);
+  barra.append(trilho, nova('span', 'progresso-conta', `${acertos}/${total}`));
+  return barra;
+}
+
+function abrirAula(aula) {
+  aulaAberta = aula;
+
+  el.aulaTitulo.textContent = `Aula ${aula.numero} · ${aula.titulo}`;
+  el.aulaIlustracao.src = aula.ilustracao;
+  el.aulaIlustracao.alt = '';
+  el.aulaSelo.textContent = aula.hanja;
+  el.aulaHangul.textContent = aula.hangul;
+  el.aulaResumo.textContent = aula.resumo;
+  el.aulaObjetivo.textContent = aula.objetivo;
+
+  const posicao = aulas.indexOf(aula);
+  el.aulaAnterior.disabled = posicao <= 0;
+  el.aulaProxima.disabled = posicao >= aulas.length - 1;
+
+  pintarExplicacao(aula);
+  pintarExercicios(aula);
+  trocarAba('explicacao', { rolar: false });
+  ir('aula');
+}
+
+// ------------------------------------------------------------ aba: explicação
+
+function pintarExplicacao(aula) {
+  const partes = [blocoVocabulario(aula)];
+
+  for (const topico of aula.topicos) partes.push(blocoTopico(aula, topico));
+  if (aula.dialogo) partes.push(blocoDialogo(aula.dialogo, 'Diálogo'));
+
+  el.painelExplicacao.replaceChildren(...partes);
+}
+
+function blocoVocabulario(aula) {
+  const secao = nova('section', 'bloco-aula');
+  secao.append(nova('h3', 'rotulo', 'Palavras desta aula'));
+
+  const lista = nova('ul', 'vocabulario');
+  for (const palavra of aula.vocabulario) {
+    const linha = nova('li', 'vocabulario-item');
+
+    if (palavra.ilustracao) {
+      const figura = nova('img', 'vocabulario-figura');
+      figura.src = palavra.ilustracao;
+      figura.alt = '';
+      figura.loading = 'lazy';
+      linha.append(figura);
+    }
+
+    const ko = nova('button', 'vocabulario-ko', palavra.ko);
+    ko.type = 'button';
+    ko.lang = 'ko';
+    ko.title = 'Ouvir';
+    ko.addEventListener('click', () => falarAgora(palavra.ko));
+
+    const pt = nova('span', 'vocabulario-pt', palavra.pt);
+    linha.append(ko, pt);
+
+    if (palavra.hanja) {
+      const hanjaTexto = nova('span', 'vocabulario-hanja', palavra.hanja);
+      hanjaTexto.lang = 'ko';
+      linha.append(hanjaTexto);
+    }
+
+    lista.append(linha);
+  }
+
+  secao.append(lista);
+  return secao;
+}
+
+function blocoTopico(aula, topico) {
+  const secao = nova('section', 'bloco-aula topico');
+  secao.id = topico.id;
+
+  const cabecalho = nova('header', 'topico-cabecalho');
+  const titulo = nova('h3', 'topico-titulo', topico.titulo);
+  cabecalho.append(titulo, botaoNarrar(topico));
+  secao.append(cabecalho);
+
+  for (const parte of topico.corpo) secao.append(pintarParte(parte));
+
+  const grupo = licoes.grupoDoTopico(aula, topico);
+  if (grupo) secao.append(atalhoParaGrupo(grupo));
+
+  return secao;
+}
+
+/**
+ * O atalho que o brief pedia: cada trecho da explicação leva direto aos
+ * exercícios que cobram aquele trecho. Ele troca de aba e rola até o grupo, em
+ * vez de abrir outra tela, porque a aula é uma coisa só — sair dela para
+ * praticar e ter que voltar para ler o resto quebraria a leitura no meio.
+ */
+function atalhoParaGrupo(grupo) {
+  const feito = grupo.itens.filter((item) => feitos()[item.id]?.acertou).length;
+
+  const nota = nova('span', 'atalho-exercicio-nota',
+    `${grupo.titulo} · ${feito} de ${grupo.itens.length}`);
+  nota.id = `${grupo.id}-nota`;
+
+  const botao = nova('button', 'atalho-exercicio');
+  botao.type = 'button';
+  botao.append(nova('span', 'atalho-exercicio-rotulo', 'Praticar isto'), nota);
+  botao.addEventListener('click', () => irParaGrupo(grupo.id));
+  return botao;
+}
+
+function pintarParte(parte) {
+  switch (parte.tipo) {
+    case 'p':
+      return nova('p', 'topico-p', parte.texto);
+
+    case 'destaque':
+      return nova('p', 'topico-destaque', parte.texto);
+
+    case 'nota':
+      return nova('p', 'topico-nota', parte.texto);
+
+    case 'formula':
+      return pintarFormula(parte);
+
+    case 'regra': {
+      const lista = nova('ul', 'regra');
+      for (const linha of parte.linhas) {
+        const item = nova('li', 'regra-linha');
+        item.append(
+          nova('span', 'regra-condicao', linha.condicao),
+          nova('span', 'regra-seta', '→'),
+          korean(nova('span', 'regra-resultado', linha.resultado)),
+        );
+        lista.append(item);
+      }
+      return lista;
+    }
+
+    case 'tabela':
+      return pintarTabela(parte);
+
+    case 'exemplos':
+      return pintarExemplos(parte.itens);
+
+    case 'dialogo':
+      return blocoDialogo(parte, null);
+
+    case 'som':
+      return pintarSom(parte);
+
+    default:
+      return nova('p', 'topico-p', parte.texto ?? '');
+  }
+}
+
+const korean = (elemento) => { elemento.lang = 'ko'; return elemento; };
+
+/**
+ * A fórmula: 감사 + 합니다 = 감사합니다. É o formato em que estas oito aulas
+ * ensinam quase tudo, porque quase toda frase desta fase é feita encaixando uma
+ * peça no fim de outra.
+ */
+function pintarFormula(parte) {
+  const figura = nova('figure', 'formula');
+  const linha = nova('div', 'formula-linha');
+
+  parte.partes.forEach((peca, i) => {
+    if (i > 0) linha.append(nova('span', 'formula-sinal', '+'));
+    const bloco = nova('span', 'formula-bloco');
+    bloco.append(korean(nova('b', 'formula-ko', peca)));
+    if (parte.glosas?.[i]) bloco.append(nova('small', 'formula-glosa', parte.glosas[i]));
+    linha.append(bloco);
+  });
+
+  linha.append(nova('span', 'formula-sinal', '='));
+  const alvo = nova('span', 'formula-bloco formula-alvo');
+  alvo.append(korean(nova('b', 'formula-ko', parte.resultado)));
+  if (parte.traducao) alvo.append(nova('small', 'formula-glosa', parte.traducao));
+  linha.append(alvo);
+
+  const ouvir = nova('button', 'botao-som', '♪');
+  ouvir.type = 'button';
+  ouvir.setAttribute('aria-label', `Ouvir ${parte.resultado}`);
+  ouvir.addEventListener('click', () => falarAgora(parte.resultado));
+
+  figura.append(linha, ouvir);
+  return figura;
+}
+
+function pintarTabela(parte) {
+  const tabela = nova('table', 'tabela-aula');
+
+  if (parte.colunas?.some(Boolean)) {
+    const cabecalho = nova('thead');
+    const linha = nova('tr');
+    for (const coluna of parte.colunas) linha.append(nova('th', null, coluna));
+    cabecalho.append(linha);
+    tabela.append(cabecalho);
+  }
+
+  const corpo = nova('tbody');
+  for (const celulas of parte.linhas) {
+    const linha = nova('tr');
+    celulas.forEach((celula, i) => {
+      const cel = nova('td', i === 0 ? 'tabela-chave' : null, celula);
+      if (/[가-힣]/.test(celula)) cel.lang = 'ko';
+      linha.append(cel);
+    });
+    corpo.append(linha);
+  }
+
+  tabela.append(corpo);
+  const rolagem = nova('div', 'tabela-rolagem');
+  rolagem.append(tabela);
+  return rolagem;
+}
+
+function pintarExemplos(itens) {
+  const lista = nova('ul', 'aula-exemplos');
+  for (const item of itens) {
+    const linha = nova('li', 'aula-exemplo');
+
+    const ko = nova('button', 'aula-exemplo-ko', item.ko);
+    ko.type = 'button';
+    ko.lang = 'ko';
+    ko.title = 'Ouvir';
+    ko.addEventListener('click', () => falarAgora(item.ko));
+
+    linha.append(ko, nova('span', 'aula-exemplo-pt', item.pt));
+    if (item.conta) linha.append(nova('small', 'aula-exemplo-conta', item.conta));
+    lista.append(linha);
+  }
+  return lista;
+}
+
+function blocoDialogo(dialogo, titulo) {
+  const secao = nova('section', 'dialogo');
+  if (titulo) secao.append(nova('h3', 'rotulo', titulo));
+  if (dialogo.contexto) secao.append(nova('p', 'dialogo-contexto', dialogo.contexto));
+
+  const lista = nova('ol', 'dialogo-falas');
+  for (const fala of dialogo.falas) {
+    const linha = nova('li', 'dialogo-fala');
+    linha.append(nova('span', 'dialogo-quem', fala.quem));
+
+    const corpo = nova('span', 'dialogo-corpo');
+    if (fala.ko) {
+      const ko = nova('button', 'dialogo-ko', fala.ko);
+      ko.type = 'button';
+      ko.lang = 'ko';
+      ko.title = 'Ouvir';
+      ko.addEventListener('click', () => falarAgora(fala.ko));
+      corpo.append(ko);
+    }
+    corpo.append(nova('span', 'dialogo-pt', fala.pt));
+
+    linha.append(corpo);
+    lista.append(linha);
+  }
+
+  secao.append(lista);
+  return secao;
+}
+
+/**
+ * O quadro de pronúncia usa o mesmo motor de `pronuncia.js` que o baralho, em
+ * vez de repetir a forma falada à mão no JSON: se a regra mudar no motor, a
+ * aula muda junto, e nunca há duas verdades sobre a mesma palavra.
+ */
+function pintarSom(parte) {
+  const caixa = nova('aside', 'quadro-som');
+  const { som } = pronunciar(parte.grafia);
+
+  const linha = nova('p', 'quadro-som-linha');
+  linha.append(
+    korean(nova('span', 'quadro-som-grafia', parte.grafia)),
+    nova('span', 'quadro-som-seta', 'soa'),
+    korean(nova('b', 'quadro-som-valor', `[${som}]`)),
+  );
+
+  const ouvir = nova('button', 'botao-som', '♪');
+  ouvir.type = 'button';
+  ouvir.setAttribute('aria-label', `Ouvir ${parte.grafia}`);
+  ouvir.addEventListener('click', () => falarAgora(parte.grafia));
+  linha.append(ouvir);
+
+  caixa.append(linha, nova('p', 'quadro-som-texto', parte.texto));
+  return caixa;
+}
+
+/** O botão de áudio da explicação — lê o tópico inteiro, alternando de voz. */
+function botaoNarrar(topico) {
+  const botao = nova('button', 'botao-narrar', 'Ouvir');
+  botao.type = 'button';
+  botao.dataset.rotulo = 'Ouvir';
+  botao.setAttribute('aria-pressed', 'false');
+
+  botao.addEventListener('click', () => {
+    if (botao.getAttribute('aria-pressed') === 'true') { pararNarracao(); return; }
+    pararNarracao();
+
+    const tocou = narrar(segmentosDoTopico(topico), {
+      aoMudar: (tocando) => {
+        botao.setAttribute('aria-pressed', String(tocando));
+        botao.textContent = tocando ? 'Parar' : 'Ouvir';
+      },
+    });
+
+    if (!tocou) {
+      botao.disabled = true;
+      botao.textContent = 'Sem voz';
+      botao.title = 'Nenhuma voz do sistema encontrada para narrar este trecho.';
+    }
+  });
+
+  return botao;
+}
+
+/**
+ * Reduz um tópico a uma fila de trechos com idioma. Tabela fica de fora de
+ * propósito: lida em voz alta, uma tabela vira uma enxurrada de palavras soltas
+ * sem as colunas que lhe dão sentido.
+ */
+function segmentosDoTopico(topico) {
+  const fila = [{ texto: topico.titulo, lang: 'pt' }];
+
+  for (const parte of topico.corpo) {
+    if (parte.tipo === 'p' || parte.tipo === 'destaque' || parte.tipo === 'nota') {
+      fila.push({ texto: parte.texto, lang: 'pt' });
+    } else if (parte.tipo === 'som') {
+      fila.push({ texto: parte.texto, lang: 'pt' });
+      fila.push({ texto: parte.grafia, lang: 'ko' });
+    } else if (parte.tipo === 'formula') {
+      fila.push({ texto: parte.resultado, lang: 'ko' });
+      if (parte.traducao) fila.push({ texto: parte.traducao, lang: 'pt' });
+    } else if (parte.tipo === 'exemplos') {
+      for (const item of parte.itens) {
+        fila.push({ texto: item.ko, lang: 'ko' });
+        fila.push({ texto: item.pt, lang: 'pt' });
+      }
+    } else if (parte.tipo === 'dialogo') {
+      for (const fala of parte.falas) {
+        if (fala.ko) fila.push({ texto: fala.ko, lang: 'ko' });
+        fila.push({ texto: fala.pt, lang: 'pt' });
+      }
+    } else if (parte.tipo === 'regra') {
+      for (const linha of parte.linhas) {
+        fila.push({ texto: linha.condicao, lang: 'pt' });
+        fila.push({ texto: linha.resultado, lang: 'ko' });
+      }
+    }
+  }
+
+  return fila;
+}
+
+// ------------------------------------------------------------ aba: exercícios
+
+function pintarExercicios(aula) {
+  let numero = 0;
+
+  const secoes = aula.grupos.map((grupo) => {
+    const secao = nova('section', 'grupo-exercicio');
+    secao.id = `grupo-${grupo.id}`;
+    secao.append(nova('h3', 'rotulo', grupo.titulo));
+
+    const lista = nova('ol', 'lista-exercicios');
+    for (const item of grupo.itens) lista.append(montarExercicio(item, ++numero));
+    secao.append(lista);
+
+    const voltar = nova('button', 'atalho-explicacao');
+    voltar.type = 'button';
+    voltar.textContent = '← Voltar à explicação';
+    voltar.addEventListener('click', () => {
+      const topico = aula.topicos.find((t) => t.grupo === grupo.id);
+      trocarAba('explicacao');
+      if (topico) rolarAte(document.getElementById(topico.id));
+    });
+    secao.append(voltar);
+
+    return secao;
+  });
+
+  el.painelExercicios.replaceChildren(...secoes);
+  atualizarContagens();
+}
+
+function montarExercicio(item, numero) {
+  const linha = nova('li', 'exercicio');
+  linha.id = `ex-${item.id}`;
+  linha.dataset.id = item.id;
+
+  const cabecalho = nova('div', 'exercicio-cabecalho');
+  cabecalho.append(nova('span', 'exercicio-numero', String(numero)));
+  cabecalho.append(nova('p', 'exercicio-enunciado', item.enunciado));
+  linha.append(cabecalho);
+
+  const retorno = nova('p', 'exercicio-retorno');
+  retorno.hidden = true;
+  retorno.setAttribute('role', 'status');
+
+  const concluir = (acertou) => {
+    estado = banco.registrarExercicio(estado, item.id, acertou);
+    banco.salvar(estado);
+
+    linha.classList.toggle('exercicio-certo', acertou);
+    linha.classList.toggle('exercicio-errado', !acertou);
+    retorno.hidden = false;
+    retorno.textContent = `${acertou ? '✓' : '✕'} ${item.explicacao}`;
+    atualizarContagens();
+  };
+
+  linha.append(corpoDoExercicio(item, concluir), retorno);
+
+  if (feitos()[item.id]?.acertou) linha.classList.add('exercicio-visto');
+  return linha;
+}
+
+function corpoDoExercicio(item, concluir) {
+  switch (item.tipo) {
+    case 'escolha':
+    case 'imagem':
+      return exercicioEscolha(item, concluir);
+    case 'vf':
+      return exercicioVerdadeiroFalso(item, concluir);
+    case 'lacuna':
+      return exercicioLacuna(item, concluir);
+    case 'montar':
+    case 'ditado':
+      return exercicioMontar(item, concluir);
+    case 'associar':
+      return exercicioAssociar(item, concluir);
+    default:
+      return nova('p', 'exercicio-retorno', 'Exercício não reconhecido.');
+  }
+}
+
+/** Trava um exercício depois de respondido, deixando visível o que foi escolhido. */
+function travar(container) {
+  for (const botao of container.querySelectorAll('button')) botao.disabled = true;
+}
+
+function exercicioEscolha(item, concluir) {
+  const caixa = nova('div', 'exercicio-corpo');
+
+  if (item.ilustracao) {
+    const figura = nova('img', 'exercicio-figura');
+    figura.src = item.ilustracao;
+    figura.alt = 'Ilustração da palavra a reconhecer';
+    caixa.append(figura);
+  }
+
+  const { opcoes, correta } = licoes.alternativasEmbaralhadas(item);
+  const lista = nova('ul', 'escolha-lista');
+
+  opcoes.forEach((opcao, i) => {
+    const botao = nova('button', 'escolha-opcao');
+    botao.type = 'button';
+
+    if (opcao.ko) {
+      botao.append(korean(nova('span', 'escolha-ko', opcao.ko)));
+      if (opcao.pt) botao.append(nova('small', 'escolha-pt', opcao.pt));
+    } else {
+      botao.append(nova('span', 'escolha-pt-solta', opcao.pt));
+    }
+
+    botao.addEventListener('click', () => {
+      const acertou = i === correta;
+      botao.classList.add(acertou ? 'escolha-certa' : 'escolha-errada');
+      if (!acertou) lista.children[correta]?.querySelector('button')?.classList.add('escolha-certa');
+      travar(lista);
+      if (opcao.ko) falarAgora(opcao.ko);
+      concluir(acertou);
+    });
+
+    const linha = nova('li');
+    linha.append(botao);
+    lista.append(linha);
+  });
+
+  caixa.append(lista);
+  return caixa;
+}
+
+function exercicioVerdadeiroFalso(item, concluir) {
+  const caixa = nova('div', 'exercicio-corpo');
+  caixa.append(nova('p', 'exercicio-afirmacao', item.afirmacao));
+
+  const lista = nova('ul', 'escolha-lista escolha-lista-dupla');
+  for (const [rotulo, valor] of [['Verdadeiro', true], ['Falso', false]]) {
+    const botao = nova('button', 'escolha-opcao', rotulo);
+    botao.type = 'button';
+    botao.addEventListener('click', () => {
+      const acertou = valor === item.correta;
+      botao.classList.add(acertou ? 'escolha-certa' : 'escolha-errada');
+      travar(lista);
+      concluir(acertou);
+    });
+    const linha = nova('li');
+    linha.append(botao);
+    lista.append(linha);
+  }
+
+  caixa.append(lista);
+  return caixa;
+}
+
+function exercicioLacuna(item, concluir) {
+  const caixa = nova('div', 'exercicio-corpo');
+
+  const frase = nova('p', 'lacuna-frase');
+  if (item.antes) frase.append(korean(nova('span', 'lacuna-texto', item.antes)));
+  const vazio = korean(nova('span', 'lacuna-vazio'));
+  frase.append(vazio);
+  if (item.depois) frase.append(korean(nova('span', 'lacuna-texto', item.depois)));
+  caixa.append(frase);
+
+  const { banco: opcoes, correta } = licoes.bancoEmbaralhado(item);
+  const lista = nova('ul', 'pecas');
+
+  opcoes.forEach((texto, i) => {
+    const botao = korean(nova('button', 'peca', texto));
+    botao.type = 'button';
+    botao.addEventListener('click', () => {
+      const acertou = i === correta;
+      vazio.textContent = texto;
+      vazio.classList.add(acertou ? 'lacuna-certa' : 'lacuna-errada');
+      botao.classList.add(acertou ? 'peca-certa' : 'peca-errada');
+      travar(lista);
+      if (acertou) falarAgora(`${item.antes ?? ''}${texto}`);
+      concluir(acertou);
+    });
+    const linha = nova('li');
+    linha.append(botao);
+    lista.append(linha);
+  });
+
+  caixa.append(lista);
+  return caixa;
+}
+
+/**
+ * Montar a frase tocando nas peças. É o formato que substitui o "escreva a
+ * tradução" do papel: quem está na aula 1 ainda não tem teclado coreano nem
+ * ortografia, e cobrar digitação aqui testaria o teclado, não a gramática.
+ * O baralho é que cobra produção escrita — cada tela testa uma coisa.
+ */
+function exercicioMontar(item, concluir) {
+  const caixa = nova('div', 'exercicio-corpo');
+
+  if (item.tipo === 'ditado') {
+    const ouvir = nova('button', 'botao-ouvir', '♪ Ouvir de novo');
+    ouvir.type = 'button';
+    ouvir.addEventListener('click', () => {
+      if (!falarAgora(item.audio)) {
+        ouvir.disabled = true;
+        ouvir.textContent = 'Sem voz coreana neste aparelho';
+        pista.hidden = false;
+        pista.textContent = `Sem áudio disponível, então aqui está o texto: ${item.audio}`;
+      }
+    });
+    caixa.append(ouvir);
+  } else if (item.dica) {
+    caixa.append(nova('p', 'exercicio-dica', item.dica));
+  }
+
+  const pista = nova('p', 'exercicio-dica');
+  pista.hidden = true;
+  pista.lang = 'ko';
+  caixa.append(pista);
+
+  const linha = nova('div', 'montagem');
+  linha.setAttribute('aria-live', 'polite');
+  linha.lang = 'ko';
+
+  const pecas = nova('ul', 'pecas');
+  const escolhidas = [];
+
+  const redesenhar = () => {
+    linha.replaceChildren(...escolhidas.map(({ texto }, i) => {
+      const ficha = korean(nova('button', 'peca peca-posta', texto));
+      ficha.type = 'button';
+      ficha.setAttribute('aria-label', `Tirar ${texto}`);
+      ficha.addEventListener('click', () => {
+        const [devolvida] = escolhidas.splice(i, 1);
+        devolvida.origem.disabled = false;
+        devolvida.origem.classList.remove('peca-usada');
+        redesenhar();
+      });
+      return ficha;
+    }));
+
+    if (!escolhidas.length) linha.append(nova('span', 'montagem-vazia', 'toque nas peças abaixo'));
+    if (licoes.completou(item, escolhidas.map((p) => p.texto))) conferir();
+  };
+
+  const conferir = () => {
+    const acertou = licoes.conferir(item, escolhidas.map((p) => p.texto));
+    linha.classList.add(acertou ? 'montagem-certa' : 'montagem-errada');
+    if (acertou) {
+      travar(linha);
+      travar(pecas);
+      falarAgora(item.correta);
+      concluir(acertou);
+      return;
+    }
+
+    // Errou: devolve tudo e deixa tentar de novo. Corrigir sem poder refazer
+    // transformaria o exercício em prova, e ele existe para ensinar.
+    concluir(false);
+    window.setTimeout(() => {
+      linha.classList.remove('montagem-errada');
+      for (const peca of escolhidas) {
+        peca.origem.disabled = false;
+        peca.origem.classList.remove('peca-usada');
+      }
+      escolhidas.length = 0;
+      redesenhar();
+    }, 900);
+  };
+
+  for (const texto of licoes.embaralhar(item.pecas)) {
+    const botao = korean(nova('button', 'peca', texto));
+    botao.type = 'button';
+    botao.addEventListener('click', () => {
+      botao.disabled = true;
+      botao.classList.add('peca-usada');
+      escolhidas.push({ texto, origem: botao });
+      redesenhar();
+    });
+    const li = nova('li');
+    li.append(botao);
+    pecas.append(li);
+  }
+
+  redesenhar();
+  caixa.append(linha, pecas);
+
+  if (item.tipo === 'ditado') window.setTimeout(() => falarAgora(item.audio), 200);
+  return caixa;
+}
+
+/**
+ * Associar em duas colunas: toca de um lado, toca do outro. O par certo trava
+ * na hora — feedback por par, e não só no fim, é o que torna o exercício
+ * legível sem instrução escrita.
+ */
+function exercicioAssociar(item, concluir) {
+  const caixa = nova('div', 'exercicio-corpo');
+  const grade = nova('div', 'associar');
+
+  const colunaA = nova('ul', 'associar-coluna');
+  const colunaB = nova('ul', 'associar-coluna');
+
+  let selecionada = null;
+  let restantes = item.pares.length;
+  let errou = false;
+
+  const botoesA = new Map();
+
+  for (const par of licoes.embaralhar(item.pares)) {
+    const botao = korean(nova('button', 'associar-item', par.a));
+    botao.type = 'button';
+    botao.addEventListener('click', () => {
+      if (selecionada) selecionada.botao.classList.remove('associar-ativo');
+      selecionada = { botao, par };
+      botao.classList.add('associar-ativo');
+      falarAgora(par.a);
+    });
+    botoesA.set(par.b, botao);
+    const li = nova('li');
+    li.append(botao);
+    colunaA.append(li);
+  }
+
+  for (const par of licoes.embaralhar(item.pares)) {
+    const botao = nova('button', 'associar-item associar-pt', par.b);
+    botao.type = 'button';
+    botao.addEventListener('click', () => {
+      if (!selecionada) return;
+
+      const certo = selecionada.par.b === par.b;
+      if (certo) {
+        selecionada.botao.classList.remove('associar-ativo');
+        selecionada.botao.classList.add('associar-ligado');
+        selecionada.botao.disabled = true;
+        botao.classList.add('associar-ligado');
+        botao.disabled = true;
+        selecionada = null;
+        restantes -= 1;
+        if (restantes === 0) {
+          concluir(true);
+          if (errou) {
+            caixa.append(nova('p', 'exercicio-dica',
+              'Fechou. Os pares que resistiram são os que vale reler na explicação.'));
+          }
+        }
+        return;
+      }
+
+      errou = true;
+      const alvo = botoesA.get(par.b);
+      botao.classList.add('associar-recusa');
+      selecionada.botao.classList.add('associar-recusa');
+      const anterior = selecionada;
+      selecionada = null;
+      window.setTimeout(() => {
+        botao.classList.remove('associar-recusa');
+        anterior.botao.classList.remove('associar-recusa', 'associar-ativo');
+        if (alvo) alvo.classList.remove('associar-recusa');
+      }, 500);
+    });
+    const li = nova('li');
+    li.append(botao);
+    colunaB.append(li);
+  }
+
+  grade.append(colunaA, colunaB);
+  caixa.append(grade);
+  return caixa;
+}
+
+// -------------------------------------------------------------- abas e atalhos
+
+function trocarAba(nome, { rolar = true } = {}) {
+  const explicacao = nome === 'explicacao';
+
+  el.painelExplicacao.hidden = !explicacao;
+  el.painelExercicios.hidden = explicacao;
+  el.abaExplicacao.setAttribute('aria-selected', String(explicacao));
+  el.abaExercicios.setAttribute('aria-selected', String(!explicacao));
+  el.abaExplicacao.classList.toggle('aba-ativa', explicacao);
+  el.abaExercicios.classList.toggle('aba-ativa', !explicacao);
+
+  pararNarracao();
+  if (rolar) (explicacao ? el.painelExplicacao : el.painelExercicios).focus({ preventScroll: true });
+}
+
+function irParaGrupo(grupoId) {
+  trocarAba('exercicios');
+  rolarAte(document.getElementById(`grupo-${grupoId}`));
+}
+
+function rolarAte(alvo) {
+  if (!alvo) return;
+  const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  alvo.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' });
+  alvo.classList.add('realce');
+  window.setTimeout(() => alvo.classList.remove('realce'), 1200);
+}
+
+/** Mantém os contadores das abas, dos atalhos e da lista em dia após cada resposta. */
+function atualizarContagens() {
+  if (!aulaAberta) return;
+  const p = licoes.progressoDaAula(aulaAberta, feitos());
+  el.abaExerciciosContagem.textContent = `${p.acertos}/${p.total}`;
+
+  for (const grupo of aulaAberta.grupos) {
+    const feito = grupo.itens.filter((item) => feitos()[item.id]?.acertou).length;
+    const nota = document.getElementById(`${grupo.id}-nota`);
+    if (nota) nota.textContent = `${grupo.titulo} · ${feito} de ${grupo.itens.length}`;
+  }
+
+  for (const item of licoes.itensDaAula(aulaAberta)) {
+    if (feitos()[item.id]?.acertou) {
+      document.getElementById(`ex-${item.id}`)?.classList.add('exercicio-visto');
+    }
+  }
+}
+
 // ------------------------------------------------------------ tela: ajustes
 
 function pintarAjustes() {
@@ -824,6 +1758,20 @@ for (const botao of document.querySelectorAll('[data-ir]')) {
   botao.addEventListener('click', () => ir(botao.dataset.ir));
 }
 
+for (const aba of document.querySelectorAll('[data-aba]')) {
+  aba.addEventListener('click', () => trocarAba(aba.dataset.aba));
+}
+
+el.aulaAnterior.addEventListener('click', () => {
+  const anterior = aulas[aulas.indexOf(aulaAberta) - 1];
+  if (anterior) abrirAula(anterior);
+});
+
+el.aulaProxima.addEventListener('click', () => {
+  const proxima = aulas[aulas.indexOf(aulaAberta) + 1];
+  if (proxima) abrirAula(proxima);
+});
+
 el.ritmo.addEventListener('input', () => {
   const valor = Number(el.ritmo.value);
   el.ritmoValor.textContent = `${valor} por dia`;
@@ -872,16 +1820,24 @@ if (window.speechSynthesis) {
 // -------------------------------------------------------------- carregamento
 
 try {
-  const [respostaPalavras, respostaHanja] = await Promise.all([fetch(URL_DADOS), fetch(URL_HANJA)]);
+  const [respostaPalavras, respostaHanja, respostaLicoes] = await Promise.all([
+    fetch(URL_DADOS), fetch(URL_HANJA), fetch(URL_LICOES),
+  ]);
   if (!respostaPalavras.ok) throw new Error(`HTTP ${respostaPalavras.status}`);
   palavras = await respostaPalavras.json();
   hanja = respostaHanja.ok ? await respostaHanja.json() : {};
+  aulas = respostaLicoes.ok ? await respostaLicoes.json() : [];
   indiceSino = indexar(palavras);
 
   campo = ligarCampo(el.resposta, { aoEnviar: responderDigitado });
   el.areaTeclado.append(montarTeclado(campo, responderDigitado));
 
+  // Sem aulas o baralho continua inteiro, então o atalho some em vez de levar
+  // a uma tela vazia.
+  el.atalhoNivel1.hidden = aulas.length === 0;
+
   pintarHoje();
+  pintarNivel1();
 } catch (causa) {
   el.comecar.disabled = true;
   el.erro.hidden = false;

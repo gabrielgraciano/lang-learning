@@ -1158,11 +1158,940 @@ kbd {
   text-align: right;
 }
 
+/* ==========================================================================
+   Nível 1 — as aulas de gramática
+
+   O baralho é uma célula por vez; a aula é uma página. A unidade continua
+   sendo a mesma do 원고지, só que aqui ela aparece em dois papéis: parada, na
+   fórmula que a explicação mostra (감사 + 합니다 = 감사합니다), e móvel, na
+   peça que o exercício manda encaixar. Ler e praticar usam o mesmo objeto de
+   propósito — é o que faz o exercício dispensar instrução escrita.
+
+   O selo vermelho é a única cor nova do app. Ele marca número de aula e aula
+   concluída, como o 인장 que fecha um documento coreano — e não aparece em
+   nenhum outro lugar, para não competir com o vermelho de erro.
+   ========================================================================== */
+
+:root {
+  --inju: #a8332c;
+  --inju-papel: #fdfbfa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --inju: #c1584e;
+    --inju-papel: #f6ebe9;
+  }
+}
+
+/* ------------------------------------------------- atalho na tela de hoje */
+
+.cartao-atalho {
+  display: grid;
+  gap: 3px;
+  width: 100%;
+  text-align: left;
+  padding: 16px 18px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+  color: var(--tinta);
+  cursor: pointer;
+  font-family: var(--f-ui);
+  transition: border-color .15s ease;
+}
+
+.cartao-atalho:hover { border-color: var(--dancheong); }
+.cartao-atalho[hidden] { display: none; }
+
+.cartao-atalho-titulo { font-size: 1.05rem; font-weight: 700; }
+.cartao-atalho-nota { font-size: .86rem; color: var(--tinta-2); }
+
+.cartao-atalho-progresso {
+  margin-top: 4px;
+  font-family: var(--f-nota);
+  font-size: .74rem;
+  letter-spacing: .06em;
+  color: var(--tinta-2);
+}
+
+/* ------------------------------------------------------- lista de aulas */
+
+.lista-aulas {
+  list-style: none;
+  margin: 22px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.cartao-aula {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  text-align: left;
+  padding: 14px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+  color: var(--tinta);
+  font-family: var(--f-ui);
+  cursor: pointer;
+  transition: border-color .15s ease, transform .1s ease;
+}
+
+.cartao-aula:hover { border-color: var(--dancheong); }
+.cartao-aula:active { transform: translateY(1px); }
+
+/* O selo: quadrado cheio com o algarismo em hanja reservado no branco do
+   papel, como um 인장 carimbado. É a mesma numeração sino-coreana que o
+   baralho já ensina, então o enfeite carrega informação. */
+.selo-aula {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 2px;
+  background: var(--inju);
+  color: var(--inju-papel);
+  font-family: var(--f-hanja);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.cartao-aula-corpo { display: grid; gap: 2px; flex: 1; min-width: 0; }
+
+.cartao-aula-numero {
+  font-family: var(--f-nota);
+  font-size: .7rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--tinta-2);
+}
+
+.cartao-aula-hangul {
+  font-family: var(--f-hangul);
+  font-size: 1.12rem;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.cartao-aula-titulo { font-size: .88rem; color: var(--tinta-2); }
+
+.cartao-aula-completa .selo-aula { box-shadow: 0 0 0 3px color-mix(in srgb, var(--inju) 22%, transparent); }
+
+.progresso {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 7px;
+}
+
+.progresso-trilho {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--guia);
+  overflow: hidden;
+}
+
+.progresso-cheio {
+  display: block;
+  height: 100%;
+  background: var(--dancheong);
+  transition: width .3s ease;
+}
+
+.progresso-conta {
+  font-family: var(--f-nota);
+  font-size: .7rem;
+  color: var(--tinta-2);
+  min-width: 4ch;
+  text-align: right;
+}
+
+/* ------------------------------------------------------------ capa da aula */
+
+.aula-capa {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 20px 16px 22px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+  position: relative;
+}
+
+.aula-ilustracao { width: 122px; height: 122px; }
+
+.aula-selo {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 2px;
+  background: var(--inju);
+  color: var(--inju-papel);
+  font-family: var(--f-hanja);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.aula-hangul {
+  margin: 6px 0 0;
+  font-family: var(--f-hangul);
+  font-size: 1.35rem;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.aula-resumo {
+  margin: 0;
+  max-width: 32ch;
+  font-size: .9rem;
+  color: var(--tinta-2);
+}
+
+.aula-objetivo {
+  margin: 8px 0 0;
+  max-width: 32ch;
+  padding-top: 10px;
+  border-top: 1px solid var(--guia);
+  font-size: .84rem;
+  color: var(--tinta-2);
+}
+
+/* ------------------------------------------------------------------- abas */
+
+.abas {
+  display: flex;
+  gap: 0;
+  margin: 24px 0 0;
+  border-bottom: 1px solid var(--linha);
+}
+
+.aba {
+  flex: 1;
+  padding: 12px 8px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  background: none;
+  color: var(--tinta-2);
+  font-family: var(--f-ui);
+  font-size: .95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.aba:hover { color: var(--tinta); }
+
+.aba-ativa {
+  color: var(--tinta);
+  border-bottom-color: var(--dancheong);
+}
+
+.aba-contagem {
+  font-family: var(--f-nota);
+  font-size: .74rem;
+  font-weight: 400;
+  color: var(--tinta-2);
+}
+
+.painel { padding-top: 4px; }
+.painel[hidden] { display: none; }
+.painel:focus { outline: none; }
+
+.passo-aula {
+  display: flex;
+  gap: 10px;
+  margin-top: 34px;
+  padding-top: 20px;
+  border-top: 1px solid var(--guia);
+}
+
+.passo-aula .botao { flex: 1; font-size: .88rem; padding: 12px 10px; }
+
+/* --------------------------------------------------------- blocos da aula */
+
+.bloco-aula { margin-top: 30px; }
+
+.topico { scroll-margin-top: 16px; }
+
+.topico-cabecalho {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--guia);
+}
+
+.topico-titulo {
+  margin: 0;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.botao-narrar {
+  flex: none;
+  padding: 6px 12px;
+  border: 1px solid var(--linha);
+  border-radius: 100px;
+  background: var(--celula);
+  color: var(--tinta-2);
+  font-family: var(--f-nota);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.botao-narrar:hover:not(:disabled) { border-color: var(--dancheong); color: var(--tinta); }
+.botao-narrar:disabled { opacity: .5; cursor: not-allowed; }
+
+.botao-narrar[aria-pressed="true"] {
+  background: var(--dancheong);
+  border-color: var(--dancheong);
+  color: var(--papel);
+}
+
+/* A prosa da aula é para ler, não para varrer: mede mais larga e respira mais
+   que o resto do app, que é todo feito de rótulos curtos. */
+.topico-p {
+  margin: 0 0 14px;
+  font-size: .97rem;
+  line-height: 1.68;
+}
+
+.topico-destaque {
+  margin: 16px 0;
+  padding: 13px 16px;
+  border-left: 3px solid var(--dancheong);
+  background: var(--celula);
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+.topico-nota {
+  margin: 14px 0;
+  padding-left: 14px;
+  border-left: 1px solid var(--linha);
+  font-size: .86rem;
+  line-height: 1.6;
+  color: var(--tinta-2);
+}
+
+/* ---------------------------------------------------------------- fórmula */
+
+.formula {
+  margin: 18px 0;
+  padding: 16px 14px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.formula-linha {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.formula-bloco {
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  padding: 8px 11px;
+  border: 1px solid var(--guia);
+  border-radius: 2px;
+  background: var(--papel);
+}
+
+.formula-alvo {
+  border-color: var(--dancheong);
+  background: color-mix(in srgb, var(--dancheong) 9%, var(--celula));
+}
+
+.formula-ko {
+  font-family: var(--f-hangul);
+  font-size: 1.16rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.formula-glosa {
+  font-size: .68rem;
+  line-height: 1.3;
+  color: var(--tinta-2);
+  text-align: center;
+  max-width: 12ch;
+}
+
+.formula-sinal {
+  font-family: var(--f-nota);
+  font-size: 1rem;
+  color: var(--tinta-2);
+}
+
+.botao-som {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--linha);
+  border-radius: 100px;
+  background: var(--papel);
+  color: var(--tinta-2);
+  font-size: .9rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.botao-som:hover { border-color: var(--dancheong); color: var(--tinta); }
+
+/* ------------------------------------------------- regra, tabela, exemplos */
+
+.regra {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.regra-linha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 11px 14px;
+  border: 1px solid var(--guia);
+  border-radius: var(--raio);
+  background: var(--celula);
+}
+
+.regra-condicao { flex: 1; font-size: .88rem; color: var(--tinta-2); min-width: 14ch; }
+.regra-seta { color: var(--tinta-2); }
+
+.regra-resultado {
+  font-family: var(--f-hangul);
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.tabela-rolagem { margin: 16px 0; overflow-x: auto; }
+
+.tabela-aula {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .88rem;
+}
+
+.tabela-aula th {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--linha);
+  font-family: var(--f-nota);
+  font-size: .68rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--tinta-2);
+}
+
+.tabela-aula td {
+  padding: 10px;
+  border-bottom: 1px solid var(--guia);
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+.tabela-aula tr:last-child td { border-bottom: 0; }
+
+.tabela-chave {
+  font-family: var(--f-hangul);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.aula-exemplos {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.aula-exemplo {
+  display: grid;
+  gap: 2px;
+  padding: 9px 12px;
+  border-radius: var(--raio);
+  background: var(--celula);
+}
+
+/* O coreano é botão porque é clicável para ouvir — mas não deve parecer um
+   botão dentro de uma lista de exemplos, ou a lista vira barra de comandos. */
+.aula-exemplo-ko,
+.dialogo-ko,
+.vocabulario-ko {
+  justify-self: start;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--tinta);
+  font-family: var(--f-hangul);
+  font-size: 1.06rem;
+  line-height: 1.45;
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px dotted var(--linha);
+}
+
+.aula-exemplo-ko:hover,
+.dialogo-ko:hover,
+.vocabulario-ko:hover { color: var(--dancheong); border-bottom-color: var(--dancheong); }
+
+.aula-exemplo-pt { font-size: .87rem; color: var(--tinta-2); }
+.aula-exemplo-conta { font-size: .74rem; color: var(--tinta-2); opacity: .85; }
+
+/* -------------------------------------------------------------- vocabulário */
+
+.vocabulario {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 2px;
+}
+
+.vocabulario-item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 8px 12px;
+  border-radius: var(--raio);
+  background: var(--celula);
+}
+
+.vocabulario-figura { width: 26px; height: 26px; align-self: center; flex: none; }
+.vocabulario-pt { flex: 1; font-size: .87rem; color: var(--tinta-2); min-width: 12ch; }
+
+.vocabulario-hanja {
+  font-family: var(--f-hanja);
+  font-size: .8rem;
+  color: var(--tinta-2);
+  opacity: .8;
+}
+
+/* ----------------------------------------------------------------- diálogo */
+
+.dialogo { margin-top: 30px; }
+
+.dialogo-contexto {
+  margin: 0 0 12px;
+  font-size: .84rem;
+  font-style: italic;
+  color: var(--tinta-2);
+}
+
+.dialogo-falas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.dialogo-fala {
+  display: flex;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: var(--raio);
+  background: var(--celula);
+}
+
+.dialogo-quem {
+  flex: none;
+  width: 1.4em;
+  font-family: var(--f-nota);
+  font-size: .78rem;
+  color: var(--tinta-2);
+  padding-top: 3px;
+}
+
+.dialogo-corpo { display: grid; gap: 2px; }
+.dialogo-pt { font-size: .85rem; color: var(--tinta-2); }
+
+/* ------------------------------------------------------- quadro de som */
+
+.quadro-som {
+  margin: 18px 0;
+  padding: 13px 15px;
+  border: 1px dashed var(--linha);
+  border-radius: var(--raio);
+}
+
+.quadro-som-linha {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+  margin: 0 0 7px;
+}
+
+.quadro-som-grafia,
+.quadro-som-valor { font-family: var(--f-hangul); font-size: 1.06rem; }
+.quadro-som-valor { color: var(--dancheong); }
+
+.quadro-som-seta {
+  font-family: var(--f-nota);
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--tinta-2);
+}
+
+.quadro-som-texto { margin: 0; font-size: .85rem; line-height: 1.6; color: var(--tinta-2); }
+
+/* -------------------------------------------------- atalho para exercícios */
+
+/* O elo entre as duas abas. Fica no fim do tópico porque é ali que a leitura
+   daquele ponto termina — praticar antes de terminar de ler seria interromper,
+   e no fim da aula inteira já seria tarde. */
+.atalho-exercicio {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  text-align: left;
+  margin-top: 16px;
+  padding: 12px 15px;
+  border: 1px solid var(--dancheong);
+  border-radius: var(--raio);
+  background: color-mix(in srgb, var(--dancheong) 8%, var(--celula));
+  color: var(--tinta);
+  font-family: var(--f-ui);
+  cursor: pointer;
+  transition: background-color .15s ease;
+}
+
+.atalho-exercicio:hover { background: color-mix(in srgb, var(--dancheong) 16%, var(--celula)); }
+
+.atalho-exercicio-rotulo { font-size: .92rem; font-weight: 700; color: var(--dancheong); }
+.atalho-exercicio-nota { font-family: var(--f-nota); font-size: .72rem; color: var(--tinta-2); }
+
+.atalho-explicacao {
+  margin-top: 14px;
+  padding: 9px 0;
+  border: 0;
+  background: none;
+  color: var(--tinta-2);
+  font-family: var(--f-ui);
+  font-size: .84rem;
+  cursor: pointer;
+}
+
+.atalho-explicacao:hover { color: var(--dancheong); }
+
+.realce { animation: piscar 1.2s ease; }
+
+@keyframes piscar {
+  0%, 100% { background: transparent; }
+  25% { background: color-mix(in srgb, var(--dancheong) 14%, transparent); }
+}
+
+/* ------------------------------------------------------------- exercícios */
+
+.grupo-exercicio {
+  margin-top: 30px;
+  scroll-margin-top: 16px;
+  border-radius: var(--raio);
+}
+
+.lista-exercicios {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.exercicio {
+  padding: 15px;
+  border: 1px solid var(--linha);
+  border-left-width: 3px;
+  border-radius: var(--raio);
+  background: var(--celula);
+}
+
+.exercicio-certo { border-left-color: var(--acerto); }
+.exercicio-errado { border-left-color: var(--erro); }
+.exercicio-visto .exercicio-numero { background: var(--acerto); border-color: var(--acerto); color: var(--papel); }
+
+.exercicio-cabecalho { display: flex; gap: 11px; align-items: flex-start; }
+
+.exercicio-numero {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--linha);
+  border-radius: 2px;
+  font-family: var(--f-nota);
+  font-size: .72rem;
+  color: var(--tinta-2);
+}
+
+.exercicio-enunciado { margin: 0; font-size: .93rem; line-height: 1.5; }
+.exercicio-corpo { margin-top: 13px; margin-left: 33px; }
+
+.exercicio-afirmacao {
+  margin: 0 0 11px;
+  padding: 10px 13px;
+  border-radius: var(--raio);
+  background: var(--papel);
+  font-size: .92rem;
+  line-height: 1.5;
+}
+
+.exercicio-dica {
+  margin: 0 0 10px;
+  font-size: .8rem;
+  color: var(--tinta-2);
+}
+
+.exercicio-dica[hidden] { display: none; }
+
+.exercicio-figura {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 13px;
+}
+
+.exercicio-retorno {
+  margin: 12px 0 0 33px;
+  font-size: .85rem;
+  line-height: 1.55;
+  color: var(--tinta-2);
+}
+
+.exercicio-retorno[hidden] { display: none; }
+.exercicio-certo .exercicio-retorno { color: var(--acerto); }
+.exercicio-errado .exercicio-retorno { color: var(--erro); }
+
+/* ------------------------------------------------------------ alternativas */
+
+.escolha-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 7px;
+}
+
+.escolha-lista-dupla { grid-template-columns: 1fr 1fr; }
+
+.escolha-opcao {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+  padding: 11px 14px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--f-ui);
+  font-size: .95rem;
+  cursor: pointer;
+  transition: border-color .15s ease, background-color .15s ease;
+}
+
+.escolha-opcao:hover:not(:disabled) { border-color: var(--dancheong); }
+.escolha-opcao:disabled { cursor: default; opacity: .75; }
+
+.escolha-ko { font-family: var(--f-hangul); font-size: 1.06rem; }
+.escolha-pt { font-size: .78rem; color: var(--tinta-2); }
+.escolha-pt-solta { font-size: .92rem; line-height: 1.45; }
+
+.escolha-certa {
+  border-color: var(--acerto);
+  background: color-mix(in srgb, var(--acerto) 12%, var(--papel));
+  opacity: 1;
+}
+
+.escolha-errada {
+  border-color: var(--erro);
+  background: color-mix(in srgb, var(--erro) 12%, var(--papel));
+}
+
+/* ----------------------------------------------------------------- lacuna */
+
+.lacuna-frase {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 0 0 13px;
+  padding: 13px;
+  border-radius: var(--raio);
+  background: var(--papel);
+  font-family: var(--f-hangul);
+  font-size: 1.14rem;
+}
+
+.lacuna-vazio {
+  min-width: 4.5em;
+  padding: 2px 8px;
+  border-bottom: 2px solid var(--dancheong);
+  text-align: center;
+}
+
+.lacuna-certa { color: var(--acerto); border-bottom-color: var(--acerto); }
+.lacuna-errada { color: var(--erro); border-bottom-color: var(--erro); }
+
+/* ------------------------------------------------------- peças de montagem */
+
+.pecas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.peca {
+  padding: 9px 14px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--f-hangul);
+  font-size: 1.1rem;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: border-color .15s ease, opacity .15s ease, transform .1s ease;
+}
+
+.peca:hover:not(:disabled) { border-color: var(--dancheong); }
+.peca:active:not(:disabled) { transform: translateY(1px); }
+.peca-usada { opacity: .28; cursor: default; }
+.peca-certa { border-color: var(--acerto); background: color-mix(in srgb, var(--acerto) 12%, var(--papel)); }
+.peca-errada { border-color: var(--erro); background: color-mix(in srgb, var(--erro) 12%, var(--papel)); }
+
+.peca-posta { background: var(--celula); border-color: var(--tinta-2); }
+
+/* A linha de montagem é a régua do 원고지: as peças assentam nela. */
+.montagem {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 52px;
+  margin-bottom: 11px;
+  padding: 7px 11px;
+  border-bottom: 2px solid var(--linha);
+  background: var(--papel);
+  border-radius: var(--raio) var(--raio) 0 0;
+}
+
+.montagem-vazia { font-family: var(--f-ui); font-size: .8rem; color: var(--tinta-2); }
+.montagem-certa { border-bottom-color: var(--acerto); }
+.montagem-errada { border-bottom-color: var(--erro); animation: tremer .3s ease; }
+
+@keyframes tremer {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.botao-ouvir {
+  margin-bottom: 11px;
+  padding: 9px 15px;
+  border: 1px solid var(--linha);
+  border-radius: 100px;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--f-ui);
+  font-size: .85rem;
+  cursor: pointer;
+}
+
+.botao-ouvir:hover:not(:disabled) { border-color: var(--dancheong); }
+.botao-ouvir:disabled { opacity: .6; cursor: not-allowed; }
+
+/* ---------------------------------------------------------------- associar */
+
+.associar { display: flex; gap: 9px; }
+.associar-coluna { list-style: none; margin: 0; padding: 0; flex: 1; display: grid; gap: 6px; align-content: start; }
+
+.associar-item {
+  width: 100%;
+  padding: 10px 8px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--f-hangul);
+  font-size: 1.04rem;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: border-color .15s ease, background-color .15s ease;
+}
+
+.associar-pt { font-family: var(--f-ui); font-size: .85rem; }
+.associar-item:hover:not(:disabled) { border-color: var(--dancheong); }
+
+.associar-ativo {
+  border-color: var(--dancheong);
+  background: color-mix(in srgb, var(--dancheong) 14%, var(--papel));
+}
+
+.associar-ligado {
+  border-color: var(--acerto);
+  background: color-mix(in srgb, var(--acerto) 12%, var(--papel));
+  color: var(--tinta-2);
+  cursor: default;
+}
+
+.associar-recusa {
+  border-color: var(--erro);
+  background: color-mix(in srgb, var(--erro) 12%, var(--papel));
+}
+
 /* ---------------------------------------------------------- acessibilidade */
 
 @media (max-width: 380px) {
   .trilha li { width: 11px; height: 11px; }
   .tecla { padding: 10px 1px; font-size: .95rem; }
+  .exercicio-corpo, .exercicio-retorno { margin-left: 0; }
+  .escolha-lista-dupla { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

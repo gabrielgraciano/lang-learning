@@ -1,0 +1,8 @@
+# Os livros de origem não entram no repositório.
+#
+# O material de estudo é obra de terceiros, e versionar o PDF inteiro num repo
+# público é redistribuir a obra — coisa bem diferente de aprender com ela e
+# escrever conteúdo próprio a partir dela, que é o que o app faz. Deixe os
+# arquivos na pasta de estudo, fora daqui.
+*.pdf
+*.epub

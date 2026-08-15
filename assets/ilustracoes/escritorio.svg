@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Escritório">
+  <circle cx="100" cy="100" r="94" fill="#DFE7EC"/>
+  <path d="M34 168V52a8 8 0 0 1 8-8h72a8 8 0 0 1 8 8v116z" fill="#5D7288"/>
+  <path d="M122 168V78a8 8 0 0 1 8-8h36a8 8 0 0 1 8 8v90z" fill="#46596C"/>
+  <g fill="#CFE0EA">
+    <rect x="48" y="62" width="24" height="24" rx="3"/><rect x="84" y="62" width="24" height="24" rx="3"/>
+    <rect x="48" y="98" width="24" height="24" rx="3"/><rect x="84" y="98" width="24" height="24" rx="3"/>
+    <rect x="136" y="90" width="24" height="24" rx="3"/>
+    <rect x="136" y="126" width="24" height="24" rx="3"/>
+  </g>
+  <rect x="48" y="134" width="60" height="34" rx="3" fill="#D9A441"/>
+  <rect x="24" y="168" width="152" height="10" rx="4" fill="#3D4C5C"/>
+</svg>

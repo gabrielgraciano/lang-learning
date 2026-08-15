@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Mão levantada chamando atenção">
+  <circle cx="100" cy="100" r="94" fill="#EDE4DA"/>
+  <g fill="#C98B5E">
+    <rect x="86" y="36" width="22" height="70" rx="11"/>
+    <rect x="110" y="48" width="22" height="60" rx="11"/>
+    <rect x="62" y="52" width="22" height="56" rx="11"/>
+    <rect x="134" y="70" width="21" height="44" rx="10.5"/>
+  </g>
+  <path d="M62 96h74a26 26 0 0 1 26 26v14a34 34 0 0 1-34 34H92a30 30 0 0 1-30-30z" fill="#E0A472"/>
+  <path d="M62 96c-16 4-24 16-20 28l8 22 20-10z" fill="#C98B5E"/>
+  <g stroke="#A8443A" stroke-width="8" stroke-linecap="round" fill="none">
+    <path d="M40 42l14 14"/><path d="M100 20v18"/><path d="M160 42l-14 14"/>
+  </g>
+</svg>

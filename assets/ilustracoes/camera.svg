@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Câmera fotográfica">
+  <circle cx="100" cy="100" r="94" fill="#E4EAEE"/>
+  <path d="M74 58h52l8 14h22a12 12 0 0 1 12 12v56a12 12 0 0 1-12 12H44a12 12 0 0 1-12-12V84a12 12 0 0 1 12-12h22z" fill="#46586B"/>
+  <path d="M100 58h26l8 14h22a12 12 0 0 1 12 12v56a12 12 0 0 1-12 12h-56z" fill="#3A4A5A"/>
+  <circle cx="100" cy="114" r="34" fill="#8FA3B5"/>
+  <circle cx="100" cy="114" r="26" fill="#22313E"/>
+  <circle cx="100" cy="114" r="14" fill="#4E7A93"/>
+  <circle cx="91" cy="105" r="5" fill="#DCE6EC"/>
+  <rect x="140" y="84" width="16" height="10" rx="5" fill="#D9A441"/>
+</svg>

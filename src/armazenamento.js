@@ -31,6 +31,13 @@ const VAZIO = {
   registro: [],
   /** 'AAAA-MM-DD' → contagem do dia, para a meta semanal. */
   dias: {},
+  /**
+   * id do exercício → { acertou, em }. Separado de `cartoes` de propósito: aula
+   * não é cartão. O exercício confere que a explicação entrou e depois não tem
+   * mais o que agendar, então aqui basta um sim/não — sem estabilidade, sem
+   * intervalo, sem entrar na fila do dia.
+   */
+  licoes: {},
 };
 
 const clonar = (valor) => JSON.parse(JSON.stringify(valor));
@@ -50,6 +57,7 @@ export function ler() {
         cartoes: salvo.cartoes ?? {},
         registro: salvo.registro ?? [],
         dias: salvo.dias ?? {},
+        licoes: salvo.licoes ?? {},
       };
     }
     return migrar();
@@ -114,6 +122,25 @@ export function registrar(estado, { id, cartao, nota, nivel, ms, usouDica }) {
   };
 }
 
+/**
+ * Grava o resultado de um exercício de aula. Um item já acertado não é
+ * rebaixado por uma passada errada depois: refazer para conferir se ainda sabe
+ * é uso legítimo, e apagar o progresso por causa disso desencorajaria revisar.
+ */
+export function registrarExercicio(estado, id, acertou) {
+  const antes = estado.licoes[id];
+  return {
+    ...estado,
+    licoes: {
+      ...estado.licoes,
+      [id]: {
+        acertou: acertou || Boolean(antes?.acertou),
+        em: new Date().toISOString(),
+      },
+    },
+  };
+}
+
 export const comPreferencias = (estado, patch) => ({
   ...estado,
   preferencias: { ...estado.preferencias, ...patch },
@@ -160,5 +187,6 @@ export function importar(texto) {
     preferencias: { ...VAZIO.preferencias, ...dados.preferencias },
     registro: Array.isArray(dados.registro) ? dados.registro : [],
     dias: dados.dias ?? {},
+    licoes: dados.licoes ?? {},
   };
 }
