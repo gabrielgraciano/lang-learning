@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Montanha">
+  <defs><clipPath id="m"><circle cx="100" cy="100" r="94"/></clipPath></defs>
+  <circle cx="100" cy="100" r="94" fill="#E6EFF3"/>
+  <circle cx="148" cy="56" r="19" fill="#FBD87F"/>
+  <g clip-path="url(#m)">
+    <path d="M52 168L124 64l72 104z" fill="#8CA6B8"/>
+    <path d="M124 64l24 34h-48z" fill="#F4F9FC"/>
+    <path d="M-10 168L74 46l84 122z" fill="#5F7D93"/>
+    <path d="M74 46l26 38H48z" fill="#F4F9FC"/>
+  </g>
+</svg>

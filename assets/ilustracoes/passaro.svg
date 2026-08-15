@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pássaro">
+  <circle cx="100" cy="100" r="94" fill="#EAF4EC"/>
+  <path d="M46 118l-26-12 24-12z" fill="#3D87BE"/>
+  <ellipse cx="96" cy="106" rx="46" ry="36" fill="#6FB7E3"/>
+  <circle cx="132" cy="76" r="25" fill="#8CCBEC"/>
+  <path d="M154 72l24 8-23 10z" fill="#F2A93B"/>
+  <circle cx="139" cy="70" r="4.5" fill="#26374A"/>
+  <path d="M62 96c22-8 44 2 50 22-20 10-44 4-50-22z" fill="#4E9FD6"/>
+  <g stroke="#F2A93B" stroke-width="6" stroke-linecap="round">
+    <path d="M88 140v20"/><path d="M110 140v20"/>
+  </g>
+</svg>

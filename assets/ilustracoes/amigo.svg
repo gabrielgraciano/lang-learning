@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Dois amigos lado a lado">
+  <circle cx="100" cy="100" r="94" fill="#FCEDE4"/>
+  <circle cx="132" cy="80" r="23" fill="#4E93B5"/>
+  <path d="M92 166c0-24 18-42 40-42s40 18 40 42z" fill="#8CC0D8"/>
+  <circle cx="70" cy="80" r="23" fill="#D97B54"/>
+  <path d="M30 166c0-24 18-42 40-42s40 18 40 42z" fill="#EFA482"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Relógio">
+  <circle cx="100" cy="100" r="94" fill="#EDF1F6"/>
+  <circle cx="100" cy="102" r="64" fill="#5C6E8C"/>
+  <circle cx="100" cy="102" r="53" fill="#FBFCFE"/>
+  <g fill="#9AA8BE">
+    <circle cx="100" cy="58" r="4"/><circle cx="144" cy="102" r="4"/>
+    <circle cx="100" cy="146" r="4"/><circle cx="56" cy="102" r="4"/>
+  </g>
+  <g fill="none" stroke="#3E4A57" stroke-width="6" stroke-linecap="round">
+    <path d="M100 102V70"/><path d="M100 102l25 15"/>
+  </g>
+  <circle cx="100" cy="102" r="6" fill="#E0685A"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Cadeira">
+  <circle cx="100" cy="100" r="94" fill="#F0EDE6"/>
+  <rect x="62" y="34" width="76" height="72" rx="10" fill="#C58C5A"/>
+  <rect x="74" y="46" width="52" height="48" rx="6" fill="#DDAE7C"/>
+  <rect x="48" y="104" width="104" height="20" rx="7" fill="#D9A470"/>
+  <rect x="58" y="122" width="14" height="52" rx="5" fill="#A9743F"/>
+  <rect x="128" y="122" width="14" height="52" rx="5" fill="#A9743F"/>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Camiseta">
+  <circle cx="100" cy="100" r="94" fill="#EAF1F5"/>
+  <path d="M76 44L36 68l16 30 20-11v75a4 4 0 0 0 4 4h48a4 4 0 0 0 4-4V87l20 11 16-30-40-24a26 26 0 0 1-48 0z" fill="#5B9BD5"/>
+  <path d="M100 62a26 26 0 0 0 24-18l-8-4a18 18 0 0 1-32 0l-8 4a26 26 0 0 0 24 18z" fill="#3D7CB4"/>
+</svg>
