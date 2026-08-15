@@ -1,0 +1,82 @@
+[
+  {
+    "id": "agua",
+    "hangul": "물",
+    "romanizacao": "mul",
+    "pt": "água",
+    "ilustracao": "assets/ilustracoes/agua.svg",
+    "categoria": "substantivos-basicos"
+  },
+  {
+    "id": "arroz",
+    "hangul": "밥",
+    "romanizacao": "bap",
+    "pt": "arroz cozido / comida",
+    "ilustracao": "assets/ilustracoes/arroz.svg",
+    "categoria": "substantivos-basicos"
+  },
+  {
+    "id": "livro",
+    "hangul": "책",
+    "romanizacao": "chaek",
+    "pt": "livro",
+    "ilustracao": "assets/ilustracoes/livro.svg",
+    "categoria": "substantivos-basicos"
+  },
+  {
+    "id": "casa",
+    "hangul": "집",
+    "romanizacao": "jip",
+    "pt": "casa",
+    "ilustracao": "assets/ilustracoes/casa.svg",
+    "categoria": "substantivos-basicos"
+  },
+  {
+    "id": "arvore",
+    "hangul": "나무",
+    "romanizacao": "namu",
+    "pt": "árvore",
+    "ilustracao": "assets/ilustracoes/arvore.svg",
+    "categoria": "substantivos-basicos"
+  },
+  {
+    "id": "gato",
+    "hangul": "고양이",
+    "romanizacao": "goyangi",
+    "pt": "gato",
+    "ilustracao": "assets/ilustracoes/gato.svg",
+    "categoria": "substantivos-basicos"
+  },
+  {
+    "id": "cachorro",
+    "hangul": "개",
+    "romanizacao": "gae",
+    "pt": "cachorro",
+    "ilustracao": "assets/ilustracoes/cachorro.svg",
+    "categoria": "substantivos-basicos"
+  },
+  {
+    "id": "maca",
+    "hangul": "사과",
+    "romanizacao": "sagwa",
+    "pt": "maçã",
+    "ilustracao": "assets/ilustracoes/maca.svg",
+    "categoria": "substantivos-basicos"
+  },
+  {
+    "id": "cafe",
+    "hangul": "커피",
+    "romanizacao": "keopi",
+    "pt": "café",
+    "ilustracao": "assets/ilustracoes/cafe.svg",
+    "categoria": "substantivos-basicos"
+  },
+  {
+    "id": "escola",
+    "hangul": "학교",
+    "romanizacao": "hakgyo",
+    "pt": "escola",
+    "ilustracao": "assets/ilustracoes/escola.svg",
+    "categoria": "substantivos-basicos"
+  }
+]

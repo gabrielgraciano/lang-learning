@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Casa">
+  <circle cx="100" cy="100" r="94" fill="#DFF0E2"/>
+  <rect x="50" y="96" width="100" height="64" fill="#FFF7EC"/>
+  <rect x="100" y="96" width="50" height="64" fill="#F2E6D6"/>
+  <path d="M100 40l74 58H26z" fill="#E0685A"/>
+  <path d="M100 40l74 58h-74z" fill="#C4503F"/>
+  <rect x="60" y="110" width="26" height="26" rx="3" fill="#7FC4E8"/>
+  <rect x="114" y="110" width="26" height="26" rx="3" fill="#63AFD6"/>
+  <path d="M88 160v-28a12 12 0 0 1 24 0v28z" fill="#9A7355"/>
+  <circle cx="106" cy="146" r="3" fill="#FFF7EC"/>
+</svg>

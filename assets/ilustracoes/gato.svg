@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Gato">
+  <circle cx="100" cy="100" r="94" fill="#F9E2EA"/>
+  <path d="M140 150c22 2 27-16 17-29" fill="none" stroke="#98A5B3" stroke-width="14" stroke-linecap="round"/>
+  <path d="M100 96c24 0 38 26 38 46 0 10-17 14-38 14s-38-4-38-14c0-20 14-46 38-46z" fill="#98A5B3"/>
+  <path d="M68 54l10 28 22-12z" fill="#98A5B3"/>
+  <path d="M132 54l-10 28-22-12z" fill="#98A5B3"/>
+  <circle cx="100" cy="86" r="34" fill="#A9B5C2"/>
+  <path d="M74 62l6 16 12-7z" fill="#EFA9BC"/>
+  <path d="M126 62l-6 16-12-7z" fill="#EFA9BC"/>
+  <circle cx="88" cy="84" r="5" fill="#33404F"/>
+  <circle cx="112" cy="84" r="5" fill="#33404F"/>
+  <path d="M95 94h10l-5 6z" fill="#EFA9BC"/>
+  <g fill="none" stroke="#33404F" stroke-width="2.5" stroke-linecap="round">
+    <path d="M100 100v3"/>
+    <path d="M100 103c0 4-5 5-8 3"/>
+    <path d="M100 103c0 4 5 5 8 3"/>
+    <path d="M74 88H61"/>
+    <path d="M75 96l-12 5"/>
+    <path d="M126 88h13"/>
+    <path d="M125 96l12 5"/>
+  </g>
+</svg>

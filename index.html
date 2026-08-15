@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flashcards de Coreano</title>
+  <meta name="description" content="Flashcards ilustrados para aprender vocabulário de coreano.">
+  <meta name="theme-color" content="#f4f1ec">
+  <link rel="icon" href="assets/ilustracoes/livro.svg">
+  <link rel="stylesheet" href="estilos/main.css">
+</head>
+<body>
+  <main class="container">
+
+    <!-- ---------------- Tela inicial ---------------- -->
+    <section id="tela-inicio" class="tela">
+      <h1 class="titulo">한국어 <span class="titulo-sub">flashcards</span></h1>
+      <p class="subtitulo">Veja a ilustração, lembre da palavra, vire o card.</p>
+
+      <p id="ultima-sessao" class="ultima-sessao" hidden></p>
+
+      <button id="comecar" class="botao botao-principal" type="button">Começar</button>
+
+      <p id="total-palavras" class="rodape-info"></p>
+
+      <label class="opcao">
+        <input type="checkbox" id="toggle-romanizacao" checked>
+        <span>Mostrar romanização no verso</span>
+      </label>
+
+      <p id="erro" class="erro" hidden></p>
+    </section>
+
+    <!-- ---------------- Tela de estudo ---------------- -->
+    <section id="tela-estudo" class="tela" hidden>
+      <header class="progresso">
+        <span id="contador" class="contador"></span>
+        <div class="barra-trilho"><div id="barra" class="barra-preenchida"></div></div>
+      </header>
+
+      <div class="card-area">
+        <div id="card" class="card" role="button" tabindex="0" aria-pressed="false"
+             aria-label="Card. Ative para revelar a palavra.">
+          <div class="card-interno">
+            <div class="face face-frente">
+              <img id="ilustracao" src="" alt="Ilustração da palavra">
+            </div>
+            <div class="face face-verso">
+              <p id="hangul" class="hangul" lang="ko"></p>
+              <p id="romanizacao" class="romanizacao"></p>
+              <hr class="divisoria">
+              <p id="significado" class="significado"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p id="dica" class="dica">Toque no card (ou aperte <kbd>Espaço</kbd>) para virar</p>
+
+      <div id="respostas" class="respostas" hidden>
+        <button id="errei" class="botao botao-errei" type="button">Errei</button>
+        <button id="acertei" class="botao botao-acertei" type="button">Acertei</button>
+      </div>
+    </section>
+
+    <!-- ---------------- Tela final ---------------- -->
+    <section id="tela-fim" class="tela" hidden>
+      <h2 class="titulo-fim">Fim da rodada</h2>
+      <p id="placar" class="placar"></p>
+      <ul id="lista-erros" class="lista-erros"></ul>
+      <div class="acoes-fim">
+        <button id="revisar-erros" class="botao botao-principal" type="button" hidden>Revisar as que errei</button>
+        <button id="recomecar" class="botao" type="button">Recomeçar do início</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

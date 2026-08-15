@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Livro aberto">
+  <circle cx="100" cy="100" r="94" fill="#E9E3F7"/>
+  <path d="M100 62c-18-13-42-17-64-14v92c22-3 46 1 64 14 18-13 42-17 64-14V48c-22-3-46 1-64 14z" fill="#7C6BB0"/>
+  <path d="M100 70c-16-11-36-15-56-12v76c20-3 40 1 56 12z" fill="#FFFFFF"/>
+  <path d="M100 70c16-11 36-15 56-12v76c-20-3-40 1-56 12z" fill="#F7F4FD"/>
+  <g fill="#D6CFE9">
+    <rect x="54" y="80" width="34" height="5" rx="2.5"/>
+    <rect x="54" y="94" width="34" height="5" rx="2.5"/>
+    <rect x="54" y="108" width="34" height="5" rx="2.5"/>
+    <rect x="54" y="122" width="24" height="5" rx="2.5"/>
+    <rect x="112" y="80" width="34" height="5" rx="2.5"/>
+    <rect x="112" y="94" width="34" height="5" rx="2.5"/>
+    <rect x="112" y="108" width="34" height="5" rx="2.5"/>
+    <rect x="112" y="122" width="24" height="5" rx="2.5"/>
+  </g>
+  <rect x="96" y="68" width="8" height="80" rx="3" fill="#6A5A9C"/>
+</svg>

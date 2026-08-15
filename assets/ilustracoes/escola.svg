@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Escola">
+  <circle cx="100" cy="100" r="94" fill="#E3EAF7"/>
+  <path d="M100 14h18l-6 7 6 7h-18z" fill="#E0685A"/>
+  <path d="M100 30V14" fill="none" stroke="#5C6E8C" stroke-width="4" stroke-linecap="round"/>
+  <rect x="82" y="52" width="36" height="42" fill="#F2F4F8"/>
+  <path d="M100 28l27 24H73z" fill="#E0685A"/>
+  <circle cx="100" cy="72" r="12" fill="#FBD87F"/>
+  <g fill="none" stroke="#5C6E8C" stroke-width="2.5" stroke-linecap="round">
+    <path d="M100 72v-7"/>
+    <path d="M100 72l5 4"/>
+  </g>
+  <rect x="40" y="94" width="120" height="66" fill="#F2F4F8"/>
+  <rect x="100" y="94" width="60" height="66" fill="#E4E9F2"/>
+  <rect x="36" y="84" width="128" height="12" rx="5" fill="#5C6E8C"/>
+  <g fill="#7FC4E8">
+    <rect x="52" y="108" width="20" height="20" rx="3"/>
+    <rect x="128" y="108" width="20" height="20" rx="3"/>
+    <rect x="52" y="134" width="20" height="20" rx="3"/>
+    <rect x="128" y="134" width="20" height="20" rx="3"/>
+  </g>
+  <path d="M88 160v-26a12 12 0 0 1 24 0v26z" fill="#5C6E8C"/>
+</svg>

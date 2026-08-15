@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Copo de água">
+  <circle cx="100" cy="100" r="94" fill="#DCEBF7"/>
+  <path d="M100 24s-13 17-13 25a13 13 0 0 0 26 0c0-8-13-25-13-25z" fill="#6FB7E3"/>
+  <path d="M69 62h62l-9 92a6 6 0 0 1-6 5H84a6 6 0 0 1-6-5z" fill="#F4FAFE"/>
+  <path d="M73.6 108h52.8l-4.4 46a6 6 0 0 1-6 5H84a6 6 0 0 1-6-5z" fill="#4E9FD6"/>
+  <ellipse cx="100" cy="108" rx="26.4" ry="5" fill="#6FB7E3"/>
+  <ellipse cx="100" cy="62" rx="31" ry="6.5" fill="#CFE4F3"/>
+  <path d="M84 74l-3 66h7l3-66z" fill="#FFFFFF" opacity=".55"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Cachorro">
+  <circle cx="100" cy="100" r="94" fill="#F6EAD8"/>
+  <path d="M100 100c24 0 38 24 38 44 0 10-17 14-38 14s-38-4-38-14c0-20 14-44 38-44z" fill="#C79A6B"/>
+  <ellipse cx="67" cy="92" rx="13" ry="27" fill="#A87D52" transform="rotate(-14 67 92)"/>
+  <ellipse cx="133" cy="92" rx="13" ry="27" fill="#A87D52" transform="rotate(14 133 92)"/>
+  <circle cx="100" cy="84" r="34" fill="#C79A6B"/>
+  <path d="M100 50a34 34 0 0 1 30 18 34 34 0 0 1-30 15z" fill="#B5885A"/>
+  <ellipse cx="100" cy="101" rx="23" ry="16" fill="#EFDCC1"/>
+  <ellipse cx="100" cy="92" rx="8" ry="6" fill="#33404F"/>
+  <g fill="none" stroke="#33404F" stroke-width="2.5" stroke-linecap="round">
+    <path d="M100 98v6"/>
+    <path d="M100 104c0 4-5 6-9 4"/>
+    <path d="M100 104c0 4 5 6 9 4"/>
+  </g>
+  <circle cx="86" cy="76" r="5" fill="#33404F"/>
+  <circle cx="114" cy="76" r="5" fill="#33404F"/>
+</svg>
