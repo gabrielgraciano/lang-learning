@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Estudante">
+  <circle cx="100" cy="100" r="94" fill="#E3EAF7"/>
+  <circle cx="100" cy="60" r="25" fill="#5C6E8C"/>
+  <path d="M52 158c0-27 21-46 48-46s48 19 48 46z" fill="#8497B6"/>
+  <rect x="56" y="132" width="88" height="32" rx="4" fill="#E0685A"/>
+  <rect x="56" y="132" width="88" height="9" rx="4" fill="#C4523F"/>
+  <path d="M100 141v23" fill="none" stroke="#F6E4DF" stroke-width="4"/>
+</svg>

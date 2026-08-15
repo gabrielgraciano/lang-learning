@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Kimchi">
+  <circle cx="100" cy="100" r="94" fill="#FBE7E2"/>
+  <g fill="#D8503F">
+    <path d="M62 108c2-24 16-40 38-40s36 16 38 40z"/>
+    <path d="M52 108c4-14 14-22 26-22s20 8 22 22z"/>
+    <path d="M100 108c2-14 12-22 24-22s22 8 24 22z"/>
+  </g>
+  <g fill="#B33B2E">
+    <path d="M80 86c4-8 10-12 18-12"/>
+    <circle cx="76" cy="98" r="5"/>
+    <circle cx="122" cy="96" r="5"/>
+    <circle cx="100" cy="88" r="5"/>
+  </g>
+  <path d="M44 106h112c0 30-25 52-56 52s-56-22-56-52z" fill="#FFFDF8"/>
+  <path d="M44 106h112c0 6-1 12-3 18H47c-2-6-3-12-3-18z" fill="#ECE4D8"/>
+</svg>

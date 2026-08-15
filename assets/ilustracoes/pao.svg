@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pão">
+  <circle cx="100" cy="100" r="94" fill="#F8EFDF"/>
+  <path d="M40 122c0-36 27-60 60-60s60 24 60 60z" fill="#D99C55"/>
+  <rect x="40" y="118" width="120" height="42" rx="16" fill="#E8BE85"/>
+  <g fill="none" stroke="#C0813F" stroke-width="7" stroke-linecap="round">
+    <path d="M70 100l14-16"/>
+    <path d="M96 94l14-16"/>
+    <path d="M122 100l12-14"/>
+  </g>
+</svg>

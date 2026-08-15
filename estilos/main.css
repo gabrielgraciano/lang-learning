@@ -1,8 +1,8 @@
 /* ==========================================================================
-   한국어 flashcards
-   Direção visual: 원고지 — o papel quadriculado em que se aprende a escrever
-   coreano, uma sílaba por célula. A célula é a unidade de tudo aqui: o título,
-   o card, a trilha de progresso e a decomposição em jamo.
+   한국어 — vocabulário de coreano
+   Direção visual: 원고지, o papel quadriculado em que se aprende a escrever
+   coreano, uma sílaba por célula. A célula é a unidade de tudo: o título, a
+   trilha da sessão, a grade do mapa e a decomposição em jamo.
    ========================================================================== */
 
 /* ------------------------------------------------------------------ tokens */
@@ -20,6 +20,12 @@
   --acerto: #2f6b4f;
   --erro: #9b3e36;
 
+  /* Estados de memória — a escala do mapa. */
+  --est-novo: #d7ded6;
+  --est-aprendendo: #cf8b3d;
+  --est-estavel: #2f6f86;
+  --est-dominado: #b8912f;
+
   --f-hangul: "Gowun Batang", "Apple SD Gothic Neo", "Malgun Gothic",
               "Noto Serif KR", serif;
   --f-ui: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -28,7 +34,6 @@
   --grade: 28px;   /* passo da malha do papel */
   --raio: 3px;     /* célula de papel é quadrada; só o suficiente pra não cortar */
   --coluna: 27rem;
-  --rodape-verso: 58px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,6 +48,11 @@
     --dancheong: #7fc2ce;
     --acerto: #6fbe93;
     --erro: #e08c7e;
+
+    --est-novo: #2a3430;
+    --est-aprendendo: #e0a35c;
+    --est-estavel: #6bb2c6;
+    --est-dominado: #d8b455;
   }
 }
 
@@ -54,8 +64,8 @@ body {
   margin: 0;
   min-height: 100dvh;
   display: grid;
-  place-items: center;
-  padding: clamp(20px, 6vw, 56px) 20px;
+  place-items: start center;
+  padding: clamp(20px, 6vw, 48px) 20px clamp(40px, 10vw, 72px);
   background: var(--papel);
   color: var(--tinta);
   font-family: var(--f-ui);
@@ -74,8 +84,8 @@ body::before {
     linear-gradient(to right, var(--malha) 1px, transparent 1px),
     linear-gradient(to bottom, var(--malha) 1px, transparent 1px);
   background-size: var(--grade) var(--grade);
-  -webkit-mask-image: radial-gradient(ellipse 120% 90% at 50% 45%, #000 30%, transparent 100%);
-  mask-image: radial-gradient(ellipse 120% 90% at 50% 45%, #000 30%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 120% 90% at 50% 40%, #000 30%, transparent 100%);
+  mask-image: radial-gradient(ellipse 120% 90% at 50% 40%, #000 30%, transparent 100%);
   pointer-events: none;
 }
 
@@ -89,8 +99,8 @@ body::before {
 /* --------------------------------------------------------------- tipografia */
 
 .intro {
-  margin: 0 0 28px;
-  max-width: 27ch;
+  margin: 0 0 26px;
+  max-width: 34ch;
   color: var(--tinta-2);
 }
 
@@ -103,6 +113,23 @@ body::before {
   color: var(--tinta-2);
 }
 
+.rotulo {
+  margin: 0 0 10px;
+  font-family: var(--f-nota);
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--tinta-2);
+}
+
+.rodape-nota {
+  margin: 10px 0 0;
+  font-size: .82rem;
+  line-height: 1.5;
+  color: var(--tinta-2);
+}
+
 kbd {
   font-family: var(--f-nota);
   font-size: .82em;
@@ -112,6 +139,9 @@ kbd {
   background: var(--celula);
   color: var(--tinta);
 }
+
+.bloco { margin-top: 30px; }
+.bloco[hidden] { display: none; }
 
 /* -------------------------------------------------------- marca (원고지) */
 
@@ -155,7 +185,7 @@ kbd {
 }
 
 .marca-legenda {
-  margin: 14px 0 24px;
+  margin: 14px 0 22px;
   font-family: var(--f-nota);
   font-size: .8rem;
   letter-spacing: .2em;
@@ -166,7 +196,7 @@ kbd {
 /* ------------------------------------------------------------------- ficha */
 
 .ficha {
-  margin: 0 0 24px;
+  margin: 0 0 22px;
   padding: 0;
   display: grid;
   gap: 6px;
@@ -185,6 +215,7 @@ kbd {
 .ficha dt {
   color: var(--tinta-2);
   letter-spacing: .04em;
+  white-space: nowrap;
 }
 
 /* A pontilhada liga o rótulo ao dado, como num sumário. */
@@ -231,15 +262,48 @@ kbd {
   border-color: color-mix(in srgb, var(--dancheong) 86%, var(--tinta));
 }
 
-.botao-errei, .botao-acertei { flex: 1; }
-.botao-errei { color: var(--erro); }
-.botao-acertei { color: var(--acerto); }
-.botao-errei:hover { border-color: var(--erro); }
-.botao-acertei:hover { border-color: var(--acerto); }
+
+.botao-sutil {
+  padding: 11px 14px;
+  font-size: .85rem;
+  font-weight: 500;
+  color: var(--tinta-2);
+}
+
+.botao-icone {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+  color: var(--tinta-2);
+  font-family: var(--f-ui);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.botao-icone:hover { border-color: var(--tinta-2); color: var(--tinta); }
 
 :focus-visible {
   outline: 2px solid var(--dancheong);
   outline-offset: 3px;
+}
+
+.atalhos {
+  display: grid;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.acoes {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
 }
 
 /* ------------------------------------------------------------------ opção */
@@ -248,15 +312,15 @@ kbd {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 18px;
-  font-size: .9rem;
-  color: var(--tinta-2);
+  font-size: .95rem;
+  color: var(--tinta);
   cursor: pointer;
 }
 
 .opcao input {
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
+  flex: none;
   accent-color: var(--dancheong);
 }
 
@@ -273,13 +337,64 @@ kbd {
 
 .aviso[hidden] { display: none; }
 
+.nota-fila {
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  border: 1px solid var(--linha);
+  border-left: 3px solid var(--est-aprendendo);
+  border-radius: var(--raio);
+  background: var(--celula);
+  font-size: .84rem;
+  color: var(--tinta-2);
+}
+
+.nota-fila[hidden] { display: none; }
+
+/* -------------------------------------------------------------- meta semanal */
+
+/* Sete células. Um dia perdido é uma célula vazia, não um contador zerado. */
+.semana {
+  display: flex;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dia {
+  flex: 1;
+  height: 30px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+}
+
+.dia-feito {
+  background: var(--dancheong);
+  border-color: var(--dancheong);
+}
+
 /* ---------------------------------------------------- cabeçalho e trilha */
 
 .cabecalho {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 18px;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.cabecalho-tela {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.titulo-tela {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -.01em;
 }
 
 .contador {
@@ -291,7 +406,7 @@ kbd {
   white-space: nowrap;
 }
 
-/* Uma célula por card da rodada: cheia = acertou, cortada = errou. */
+/* Uma célula por card da sessão: cheia = acertou, cortada = errou. */
 .trilha {
   display: flex;
   flex-wrap: wrap;
@@ -299,6 +414,7 @@ kbd {
   margin: 0;
   padding: 0;
   list-style: none;
+  flex: 1;
 }
 
 .trilha li {
@@ -333,125 +449,261 @@ kbd {
   );
 }
 
-/* -------------------------------------------------------------------- card */
+.tela-fim .trilha { gap: 5px; }
+.tela-fim .trilha li { width: 18px; height: 18px; }
 
-.card {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1;
-  padding: 0;
-  border: 0;
-  border-radius: var(--raio);
-  background: none;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-  perspective: 1600px;
-  -webkit-tap-highlight-color: transparent;
-}
+/* --------------------------------------------------------------- o quadro */
 
-.card-interno {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform .6s cubic-bezier(.35, .05, .2, 1);
-}
-
-.card.virado .card-interno { transform: rotateY(180deg); }
-.card.sem-transicao .card-interno { transition: none; }
-
-.face {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  border: 1px solid var(--linha);
-  border-radius: var(--raio);
-  background: var(--celula);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-
-/* O verso é o card virado: resposta ao centro, tradução no rodapé — assim a
-   composição usa o quadrado inteiro em vez de flutuar no meio. */
-.face-verso {
-  transform: rotateY(180deg);
-  padding-bottom: var(--rodape-verso);
-}
-
-.ilustracao {
-  width: 82%;
-  max-width: 340px;
-  height: auto;
-}
-
-.verso-hangul {
-  font-family: var(--f-hangul);
-  font-weight: 700;
-  font-size: clamp(3.4rem, 17vw, 5rem);
-  line-height: 1.05;
-  word-break: keep-all;
-  text-align: center;
-}
-
-.verso-som {
-  margin-top: 14px;
+.etiqueta {
+  margin: 0 0 10px;
   font-family: var(--f-nota);
-  font-size: 1.05rem;
-  letter-spacing: .06em;
+  font-size: .7rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
   color: var(--tinta-2);
 }
 
-.verso-som[hidden] { display: none; }
-
-.verso-pt {
-  position: absolute;
-  inset: auto 0 0 0;
+/* A ilustração ocupa uma célula grande — o card é a célula do 원고지. */
+.quadro {
+  margin: 0;
   display: grid;
   place-items: center;
-  height: var(--rodape-verso);
-  border-top: 1px solid var(--linha);
-  padding: 0 16px;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-wrap: balance;
+  aspect-ratio: 1;
+  max-height: 46vh;
+  padding: 18px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+  position: relative;
 }
 
-/* ------------------------------------------------------------------- jamo */
+.ilustracao {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+/* ------------------------------------------------------------------ provas */
+
+.prova { margin-top: 18px; }
+.prova[hidden] { display: none; }
+
+.pergunta {
+  margin: 0 0 12px;
+  font-size: .95rem;
+  font-weight: 600;
+}
+
+.intro-hangul {
+  margin: 0;
+  text-align: center;
+  font-family: var(--f-hangul);
+  font-weight: 700;
+  font-size: clamp(2.6rem, 13vw, 3.6rem);
+  line-height: 1.15;
+  word-break: keep-all;
+}
+
+.intro-pt {
+  margin: 4px 0 18px;
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--tinta-2);
+}
+
+/* --------------------------------------------------------- múltipla escolha */
+
+.alternativas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.alternativa {
+  width: 100%;
+  padding: 16px 10px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+  color: var(--tinta);
+  font-family: var(--f-hangul);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  word-break: keep-all;
+  cursor: pointer;
+  transition: border-color .15s ease, transform .1s ease;
+}
+
+.alternativa:hover { border-color: var(--dancheong); }
+.alternativa:active { transform: translateY(1px); }
+
+/* ---------------------------------------------------------------- digitação */
+
+/* O molde é a dica do nível 2: a sílaba que se tem, a lacuna que falta. */
+.molde {
+  margin: 0 0 12px;
+  text-align: center;
+  font-family: var(--f-hangul);
+  font-weight: 700;
+  font-size: clamp(1.8rem, 9vw, 2.4rem);
+  letter-spacing: .12em;
+  color: var(--tinta-2);
+}
+
+.molde[hidden] { display: none; }
+
+.rotulo-campo {
+  display: block;
+  margin-bottom: 6px;
+  font-family: var(--f-nota);
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--tinta-2);
+}
+
+.campo {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+  color: var(--tinta);
+  font-family: var(--f-hangul);
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: .06em;
+}
+
+.campo:focus { outline: 2px solid var(--dancheong); outline-offset: 2px; }
+
+.botao-largo {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* ------------------------------------------------------------------ teclado */
+
+/* Teclado 두벌식. Existe para que exigir 한글 não dependa de o aparelho ter
+   um IME coreano instalado — se dependesse, a exigência viraria barreira. */
+.teclado {
+  display: grid;
+  gap: 5px;
+  margin-top: 14px;
+}
+
+.teclado-fileira {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.tecla {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 11px 2px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+  color: var(--tinta);
+  font-family: var(--f-hangul);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tecla:hover { border-color: var(--tinta-2); }
+.tecla:active { background: var(--papel); transform: translateY(1px); }
+
+.tecla-larga { flex: 1.4 1 0; font-family: var(--f-ui); font-size: .95rem; }
+
+.tecla-ativa {
+  background: var(--dancheong);
+  border-color: var(--dancheong);
+  color: var(--papel);
+}
+
+.tecla-enviar {
+  flex: 2.4 1 0;
+  font-family: var(--f-ui);
+  font-size: .9rem;
+  font-weight: 600;
+  background: var(--dancheong);
+  border-color: var(--dancheong);
+  color: var(--papel);
+}
+
+/* ---------------------------------------------------------------- gabarito */
+
+/* O gabarito é a resposta que um falante experiente daria: a palavra, como ela
+   soa de verdade, o que significa, uma frase de uso e a observação que desfaz a
+   confusão. Uma tradução seca seria a resposta de baixo esforço. */
+.gabarito {
+  margin-top: 18px;
+  padding: 20px 18px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+}
+
+.gabarito[hidden] { display: none; }
+
+.veredito {
+  margin: 0 0 12px;
+  font-family: var(--f-nota);
+  font-size: .72rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.veredito-acerto { color: var(--acerto); }
+.veredito-erro { color: var(--erro); }
+
+.gabarito-hangul {
+  margin: 0;
+  text-align: center;
+  font-family: var(--f-hangul);
+  font-weight: 700;
+  font-size: clamp(2.6rem, 13vw, 3.6rem);
+  line-height: 1.15;
+  word-break: keep-all;
+}
 
 /* A assinatura: a sílaba desmontada nas peças que a formam. */
 .jamo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
-  margin-top: 18px;
+  gap: 10px;
+  margin: 14px 0 0;
 }
 
-.jamo-silaba {
-  display: flex;
-  gap: 0;
-}
+.jamo-silaba { display: flex; gap: 0; }
 
 .jamo-peca {
   display: grid;
   place-items: center;
-  width: clamp(28px, 7.5vw, 34px);
+  width: clamp(26px, 7vw, 32px);
   aspect-ratio: 1;
   margin-left: -1px;
   border: 1px solid var(--linha);
   background: var(--papel);
   font-family: var(--f-hangul);
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1;
   color: var(--tinta-2);
-  animation: montar .32s ease backwards;
+  animation: montar .3s ease backwards;
+  animation-delay: calc(var(--i) * .045s);
 }
 
 .jamo-peca:first-child { margin-left: 0; }
@@ -461,25 +713,107 @@ kbd {
   to   { opacity: 1; transform: none; }
 }
 
-.card.virado .jamo-peca { animation-delay: calc(.42s + var(--i) * .05s); }
-.card:not(.virado) .jamo-peca { animation: none; }
+/* A pronúncia só ganha espaço quando ela contradiz a grafia. */
+.bloco-som {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border: 1px solid var(--linha);
+  border-left: 3px solid var(--dancheong);
+  border-radius: var(--raio);
+  background: var(--papel);
+}
 
-.dica {
-  margin: 16px 0 0;
+.bloco-som[hidden] { display: none; }
+
+.som-linha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.som-rotulo {
+  font-family: var(--f-nota);
+  font-size: .68rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--tinta-2);
+}
+
+.som-valor {
+  font-family: var(--f-hangul);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: var(--dancheong);
+}
+
+.som-linha .botao-icone { margin-left: auto; }
+
+.som-regra {
+  margin: 8px 0 0;
+  font-size: .82rem;
+  line-height: 1.5;
+  color: var(--tinta-2);
+}
+
+.som-regra[hidden] { display: none; }
+
+.romanizacao {
+  margin: 12px 0 0;
   text-align: center;
+  font-family: var(--f-nota);
+  font-size: .95rem;
+  letter-spacing: .06em;
+  color: var(--tinta-2);
+}
+
+.romanizacao[hidden] { display: none; }
+
+/* A tradução é feedback, não pista — por isso ela mora aqui, discreta. */
+.gabarito-pt {
+  margin: 16px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--linha);
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+.exemplo {
+  display: grid;
+  gap: 4px;
+  margin: 16px 0 0;
+  padding: 12px 14px;
+  border-radius: var(--raio);
+  background: var(--papel);
+}
+
+.exemplo[hidden] { display: none; }
+
+.exemplo-ko {
+  font-family: var(--f-hangul);
+  font-size: 1.15rem;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+.exemplo-pt {
   font-size: .85rem;
   color: var(--tinta-2);
 }
 
-.dica[hidden] { display: none; }
-
-.respostas {
-  display: flex;
-  gap: 10px;
-  margin-top: 16px;
+.nota {
+  margin: 14px 0 0;
+  font-size: .88rem;
+  line-height: 1.6;
+  color: var(--tinta-2);
 }
 
-.respostas[hidden] { display: none; }
+.nota[hidden] { display: none; }
+
+.gabarito .botao-forte { margin-top: 20px; }
 
 /* -------------------------------------------------------------- tela final */
 
@@ -492,7 +826,6 @@ kbd {
   text-wrap: balance;
 }
 
-/* O placar quebra entre a frase e o número, nunca no meio do número. */
 .placar b {
   font-weight: 700;
   color: var(--dancheong);
@@ -503,36 +836,20 @@ kbd {
   display: block;
   margin-top: 6px;
   font-family: var(--f-nota);
-  font-size: .8rem;
+  font-size: .78rem;
   font-weight: 400;
   letter-spacing: .04em;
   color: var(--tinta-2);
 }
 
-.revisao {
-  margin-top: 28px;
-}
-
-.revisao[hidden] { display: none; }
-
-.revisao-titulo {
-  margin: 0 0 10px;
-  font-family: var(--f-nota);
-  font-size: .75rem;
-  font-weight: 500;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  color: var(--tinta-2);
-}
-
-.lista-erros {
+.lista-palavras {
   list-style: none;
   margin: 0;
   padding: 0;
   border-top: 1px solid var(--linha);
 }
 
-.lista-erros li {
+.lista-palavras li {
   display: flex;
   align-items: baseline;
   gap: 14px;
@@ -540,47 +857,144 @@ kbd {
   border-bottom: 1px solid var(--linha);
 }
 
-.erro-hangul {
+.lista-hangul {
   font-family: var(--f-hangul);
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   line-height: 1.2;
   min-width: 5.5rem;
 }
 
-.erro-som {
-  font-family: var(--f-nota);
-  font-size: .82rem;
-  color: var(--tinta-2);
-}
-
-.erro-pt {
+.lista-pt {
   margin-left: auto;
   text-align: right;
   color: var(--tinta-2);
 }
 
-.acoes {
-  display: grid;
-  gap: 10px;
-  margin-top: 28px;
+/* --------------------------------------------------------------- tela mapa */
+
+.legenda-estados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 0 0 22px;
+  padding: 0;
+  list-style: none;
+  font-size: .8rem;
+  color: var(--tinta-2);
 }
 
-.acoes .botao { width: 100%; }
+.legenda-estados li { display: flex; align-items: center; gap: 7px; }
 
-/* ------------------------------------------------------------- respiração */
+.marca-estado {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--linha);
+  border-radius: 1px;
+}
 
-.tela-estudo .trilha { flex: 1; }
+.mapa { display: grid; gap: 26px; }
 
-/* Na tela final a trilha vira o registro da rodada, então ganha corpo. */
-.tela-fim .trilha { gap: 5px; }
-.tela-fim .trilha li { width: 18px; height: 18px; }
+.mapa-grupo .rotulo { margin-bottom: 8px; }
 
-@media (max-width: 380px) {
-  .trilha li { width: 11px; height: 11px; }
+/* A grade é o progresso visível: cada palavra é uma célula que esquenta. */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(52px, 1fr));
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.celula {
+  width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  padding: 3px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+  color: var(--tinta-2);
+  font-family: var(--f-hangul);
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform .12s ease, border-color .15s ease;
+}
+
+.celula:hover { transform: translateY(-2px); border-color: var(--tinta-2); }
+.celula img { width: 100%; height: 100%; object-fit: contain; }
+
+.estado-novo { background: var(--est-novo); }
+.estado-aprendendo { background: color-mix(in srgb, var(--est-aprendendo) 26%, var(--celula)); border-color: var(--est-aprendendo); }
+.estado-estavel { border-color: var(--est-estavel); box-shadow: inset 0 0 0 1px var(--est-estavel); }
+.estado-dominado { border-color: var(--est-dominado); box-shadow: inset 0 0 0 2px var(--est-dominado); }
+
+.marca-estado.estado-aprendendo { background: var(--est-aprendendo); border-color: var(--est-aprendendo); }
+.marca-estado.estado-estavel { background: var(--est-estavel); border-color: var(--est-estavel); }
+.marca-estado.estado-dominado { background: var(--est-dominado); border-color: var(--est-dominado); }
+
+.detalhe {
+  position: sticky;
+  bottom: 12px;
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--celula);
+  box-shadow: 0 6px 24px rgb(0 0 0 / .08);
+}
+
+.detalhe[hidden] { display: none; }
+
+.detalhe-hangul {
+  margin: 0 0 12px;
+  font-family: var(--f-hangul);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.detalhe .ficha { margin-bottom: 0; }
+
+/* ------------------------------------------------------------ tela ajustes */
+
+.ajuste {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--linha);
+}
+
+.ajuste:last-of-type { border-bottom: 0; }
+
+.deslizante {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.deslizante input[type="range"] {
+  flex: 1;
+  accent-color: var(--dancheong);
+}
+
+.deslizante-valor {
+  font-family: var(--f-nota);
+  font-size: .82rem;
+  color: var(--tinta-2);
+  white-space: nowrap;
+  min-width: 7ch;
+  text-align: right;
 }
 
 /* ---------------------------------------------------------- acessibilidade */
+
+@media (max-width: 380px) {
+  .trilha li { width: 11px; height: 11px; }
+  .tecla { padding: 10px 1px; font-size: .95rem; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

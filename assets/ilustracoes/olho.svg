@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Olho">
+  <circle cx="100" cy="100" r="94" fill="#E9F2F8"/>
+  <path d="M26 100c19-31 45-46 74-46s55 15 74 46c-19 31-45 46-74 46s-55-15-74-46z" fill="#FFFFFF"/>
+  <circle cx="100" cy="100" r="35" fill="#5B7FA6"/>
+  <circle cx="100" cy="100" r="17" fill="#26374A"/>
+  <circle cx="89" cy="89" r="8" fill="#FFFFFF" opacity=".9"/>
+  <path d="M26 100c19-31 45-46 74-46s55 15 74 46" fill="none" stroke="#3E5872" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Mar">
+  <defs><clipPath id="s"><circle cx="100" cy="100" r="94"/></clipPath></defs>
+  <circle cx="100" cy="100" r="94" fill="#DCEBF7"/>
+  <circle cx="146" cy="56" r="20" fill="#FBD87F"/>
+  <g clip-path="url(#s)">
+    <rect x="0" y="112" width="200" height="88" fill="#4E9FD6"/>
+    <path d="M0 112c14 0 14 10 28 10s14-10 28-10 14 10 28 10 14-10 28-10 14 10 28 10 14-10 28-10 14 10 28 10v-14H0z" fill="#6FB7E3"/>
+    <g fill="#8FCBEA">
+      <path d="M22 142c10 0 10 8 20 8s10-8 20-8"/>
+      <path d="M118 158c10 0 10 8 20 8s10-8 20-8"/>
+    </g>
+    <g fill="none" stroke="#A7D8F2" stroke-width="5" stroke-linecap="round">
+      <path d="M30 146c8 0 8 7 16 7s8-7 16-7"/>
+      <path d="M120 166c8 0 8 7 16 7s8-7 16-7"/>
+    </g>
+  </g>
+</svg>

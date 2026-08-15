@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>한국어 — flashcards de coreano</title>
-  <meta name="description" content="Flashcards ilustrados para aprender vocabulário de coreano, com a decomposição de cada sílaba em jamo.">
+  <title>한국어 — vocabulário de coreano</title>
+  <meta name="description" content="Vocabulário de coreano por ilustração, com recuperação ativa, agendamento FSRS e a pronúncia derivada da escrita.">
   <meta name="theme-color" content="#e7ebe4" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#121715" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="assets/ilustracoes/livro.svg">
@@ -16,77 +16,216 @@
 <body>
   <main class="palco">
 
-    <!-- ---------------- Tela inicial ---------------- -->
-    <section id="tela-inicio" class="tela tela-inicio">
+    <!-- ======================= Hoje ======================= -->
+    <section id="tela-hoje" class="tela">
       <h1 class="marca" lang="ko"><span>한</span><span>국</span><span>어</span></h1>
-      <p class="marca-legenda">flashcards de coreano</p>
+      <p class="marca-legenda">vocabulário de coreano</p>
 
-      <p class="intro">Olhe o desenho, diga a palavra em voz alta e vire o card para conferir.</p>
+      <p class="intro">Olhe o desenho e produza a palavra. A tradução só aparece
+        depois — para desfazer dúvida, nunca para entregar a resposta.</p>
 
       <dl class="ficha">
         <div class="ficha-linha">
-          <dt>Baralho</dt>
-          <dd id="total-palavras">—</dd>
+          <dt>Hoje</dt>
+          <dd id="ficha-hoje">—</dd>
         </div>
-        <div class="ficha-linha" id="ultima-sessao" hidden>
-          <dt>Última rodada</dt>
-          <dd id="ultima-sessao-valor"></dd>
+        <div class="ficha-linha">
+          <dt>Na memória</dt>
+          <dd id="ficha-firmes">—</dd>
+        </div>
+        <div class="ficha-linha">
+          <dt>Baralho</dt>
+          <dd id="ficha-total">—</dd>
         </div>
       </dl>
 
-      <button id="comecar" class="botao botao-forte" type="button">Começar rodada</button>
+      <button id="comecar" class="botao botao-forte" type="button">Começar</button>
+      <p id="aviso-fila" class="nota-fila" hidden></p>
 
-      <label class="opcao">
-        <input type="checkbox" id="toggle-romanizacao" checked>
-        <span>Mostrar a romanização no verso</span>
-      </label>
+      <section class="bloco">
+        <h2 class="rotulo">Meta da semana</h2>
+        <ol id="semana" class="semana" aria-label="Dias estudados nos últimos sete dias"></ol>
+        <p id="semana-resumo" class="rodape-nota"></p>
+      </section>
+
+      <nav class="atalhos">
+        <button class="botao" type="button" data-ir="mapa">Mapa do vocabulário</button>
+        <button class="botao" type="button" data-ir="ajustes">Ajustes</button>
+      </nav>
 
       <p id="erro" class="aviso" hidden></p>
     </section>
 
-    <!-- ---------------- Tela de estudo ---------------- -->
-    <section id="tela-estudo" class="tela tela-estudo" hidden>
+    <!-- ======================= Estudo ======================= -->
+    <section id="tela-estudo" class="tela" hidden>
       <header class="cabecalho">
         <p id="contador" class="contador"></p>
         <ol id="trilha" class="trilha" aria-hidden="true"></ol>
+        <button id="sair" class="botao-icone" type="button" aria-label="Encerrar sessão">✕</button>
       </header>
 
-      <button id="card" class="card" type="button" aria-label="Card fechado. Ative para revelar a palavra.">
-        <span class="card-interno">
-          <span class="face face-frente">
-            <img id="ilustracao" class="ilustracao" src="" alt="Ilustração da palavra">
-          </span>
-          <span class="face face-verso">
-            <span id="hangul" class="verso-hangul" lang="ko"></span>
-            <span id="jamo" class="jamo" lang="ko" aria-hidden="true"></span>
-            <span id="romanizacao" class="verso-som"></span>
-            <span id="significado" class="verso-pt"></span>
-          </span>
-        </span>
-      </button>
+      <p id="etiqueta-nivel" class="etiqueta"></p>
 
-      <p id="dica" class="dica">Toque no card ou aperte <kbd>Espaço</kbd> para virar</p>
+      <figure class="quadro">
+        <img id="ilustracao" class="ilustracao" src="" alt="">
+      </figure>
 
-      <div id="respostas" class="respostas" hidden>
-        <button id="errei" class="botao botao-errei" type="button">Errei</button>
-        <button id="acertei" class="botao botao-acertei" type="button">Acertei</button>
+      <!-- Nível 0 — apresentação -->
+      <div id="prova-intro" class="prova" hidden>
+        <p class="intro-hangul" lang="ko"><span id="intro-hangul"></span></p>
+        <p id="intro-pt" class="intro-pt"></p>
+        <button id="intro-seguir" class="botao botao-forte" type="button">Entendi</button>
+      </div>
+
+      <!-- Nível 1 — reconhecimento -->
+      <div id="prova-escolha" class="prova" hidden>
+        <p class="pergunta">Qual é a palavra?</p>
+        <ul id="alternativas" class="alternativas"></ul>
+      </div>
+
+      <!-- Níveis 2 e 3 — produção -->
+      <div id="prova-digitar" class="prova" hidden>
+        <p class="pergunta" id="pergunta-digitar">Escreva em 한글</p>
+        <p id="molde" class="molde" lang="ko" aria-hidden="true"></p>
+        <label class="rotulo-campo" for="resposta">Sua resposta em 한글</label>
+        <input id="resposta" class="campo" type="text" lang="ko" autocomplete="off"
+               autocapitalize="off" autocorrect="off" spellcheck="false" inputmode="text">
+        <button id="botao-dica" class="botao botao-sutil botao-largo" type="button">Preciso de uma dica</button>
+        <div id="area-teclado"></div>
+        <p class="rodape-nota">Sem teclado coreano? Digite pelo layout 두벌식 —
+          <kbd>g</kbd><kbd>k</kbd><kbd>r</kbd><kbd>r</kbd><kbd>y</kbd> vira 학교.</p>
+      </div>
+
+      <!-- Gabarito -->
+      <div id="gabarito" class="gabarito" hidden aria-live="polite">
+        <p id="veredito" class="veredito"></p>
+
+        <p class="gabarito-hangul" lang="ko"><span id="gabarito-palavra"></span></p>
+        <p id="jamo" class="jamo" lang="ko" aria-hidden="true"></p>
+
+        <div id="bloco-som" class="bloco-som" hidden>
+          <p class="som-linha">
+            <span class="som-rotulo">som</span>
+            <span id="som-valor" class="som-valor" lang="ko"></span>
+            <button id="ouvir" class="botao-icone" type="button" aria-label="Ouvir a palavra">♪</button>
+          </p>
+          <p id="som-regra" class="som-regra"></p>
+        </div>
+
+        <p id="romanizacao" class="romanizacao" hidden></p>
+        <p id="gabarito-pt" class="gabarito-pt"></p>
+
+        <p id="exemplo" class="exemplo" hidden>
+          <span id="exemplo-ko" class="exemplo-ko" lang="ko"></span>
+          <span id="exemplo-pt" class="exemplo-pt"></span>
+        </p>
+
+        <p id="nota" class="nota" hidden></p>
+
+        <button id="seguir" class="botao botao-forte" type="button">Continuar</button>
       </div>
     </section>
 
-    <!-- ---------------- Tela final ---------------- -->
-    <section id="tela-fim" class="tela tela-fim" hidden>
-      <p class="sobrancelha">Rodada concluída</p>
+    <!-- ======================= Fim ======================= -->
+    <section id="tela-fim" class="tela" hidden>
+      <p class="sobrancelha">Sessão encerrada</p>
       <h2 id="placar" class="placar"></h2>
       <ol id="trilha-fim" class="trilha" aria-hidden="true"></ol>
 
-      <section id="revisao" class="revisao" hidden>
-        <h3 class="revisao-titulo">Passou batido</h3>
-        <ul id="lista-erros" class="lista-erros"></ul>
+      <section id="bloco-subiram" class="bloco" hidden>
+        <h3 class="rotulo">Subiram de nível</h3>
+        <ul id="lista-subiram" class="lista-palavras"></ul>
       </section>
 
+      <section id="bloco-tropecos" class="bloco" hidden>
+        <h3 class="rotulo">Tropeçaram</h3>
+        <ul id="lista-tropecos" class="lista-palavras"></ul>
+      </section>
+
+      <p id="proxima" class="rodape-nota"></p>
+
       <div class="acoes">
-        <button id="revisar-erros" class="botao botao-forte" type="button" hidden>Revisar essas palavras</button>
-        <button id="recomecar" class="botao" type="button">Nova rodada</button>
+        <button id="voltar-hoje" class="botao botao-forte" type="button">Voltar ao início</button>
+      </div>
+    </section>
+
+    <!-- ======================= Mapa ======================= -->
+    <section id="tela-mapa" class="tela" hidden>
+      <header class="cabecalho-tela">
+        <button class="botao-icone" type="button" data-ir="hoje" aria-label="Voltar">←</button>
+        <h2 class="titulo-tela">Mapa do vocabulário</h2>
+      </header>
+
+      <p class="intro">Cada palavra é uma célula, e a cor é a estabilidade real
+        da sua memória — não pontos. Ver a grade esquentar é o progresso.</p>
+
+      <ul class="legenda-estados">
+        <li><i class="marca-estado estado-novo"></i>não vista</li>
+        <li><i class="marca-estado estado-aprendendo"></i>aprendendo</li>
+        <li><i class="marca-estado estado-estavel"></i>firme</li>
+        <li><i class="marca-estado estado-dominado"></i>dominada</li>
+      </ul>
+
+      <div id="mapa" class="mapa"></div>
+
+      <aside id="detalhe" class="detalhe" hidden aria-live="polite"></aside>
+    </section>
+
+    <!-- ======================= Ajustes ======================= -->
+    <section id="tela-ajustes" class="tela" hidden>
+      <header class="cabecalho-tela">
+        <button class="botao-icone" type="button" data-ir="hoje" aria-label="Voltar">←</button>
+        <h2 class="titulo-tela">Ajustes</h2>
+      </header>
+
+      <div class="ajuste">
+        <label class="rotulo-campo" for="ritmo">Palavras novas por dia</label>
+        <div class="deslizante">
+          <input id="ritmo" type="range" min="3" max="20" step="1">
+          <output id="ritmo-valor" class="deslizante-valor"></output>
+        </div>
+        <p class="rodape-nota">Mais palavras novas hoje significa mais revisões
+          daqui a quatro dias. O ritmo é seu.</p>
+      </div>
+
+      <div class="ajuste">
+        <label class="rotulo-campo" for="meta">Meta semanal</label>
+        <div class="deslizante">
+          <input id="meta" type="range" min="1" max="7" step="1">
+          <output id="meta-valor" class="deslizante-valor"></output>
+        </div>
+        <p class="rodape-nota">Meta com folga, não streak: um dia perdido não
+          zera nada.</p>
+      </div>
+
+      <div class="ajuste">
+        <label class="opcao">
+          <input type="checkbox" id="toggle-romanizacao">
+          <span>Mostrar romanização no gabarito</span>
+        </label>
+        <p class="rodape-nota">Desligada por padrão. A romanização representa mal
+          os sons do coreano e ensina pronúncia errada — o app mostra a pronúncia
+          em 한글 no lugar dela.</p>
+      </div>
+
+      <div class="ajuste">
+        <label class="opcao">
+          <input type="checkbox" id="toggle-som">
+          <span>Ler a palavra em voz alta</span>
+        </label>
+        <p class="rodape-nota" id="nota-som">Usa a voz coreana do seu sistema.</p>
+      </div>
+
+      <div class="ajuste">
+        <h3 class="rotulo">Seus dados</h3>
+        <p class="rodape-nota">Tudo fica neste navegador. Exporte para não perder
+          o histórico ao trocar de aparelho ou limpar o site.</p>
+        <div class="acoes">
+          <button id="exportar" class="botao" type="button">Exportar progresso</button>
+          <button id="importar" class="botao" type="button">Importar progresso</button>
+          <input id="arquivo" type="file" accept="application/json,.json" hidden>
+        </div>
+        <p id="aviso-dados" class="rodape-nota" role="status"></p>
       </div>
     </section>
 
