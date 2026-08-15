@@ -32,11 +32,17 @@ Por decisão do dono do repositório, **o título e os autores dos livros não s
 citados em lugar nenhum do app nem do código.** Se você for acrescentar
 material, mantenha isso.
 
-> **Ponto em aberto, que vale resolver.** Os dois PDFs completos estão
-> versionados na raiz deste repositório, que é público. Isso é redistribuição
-> de obra inteira — um risco muito maior que citar um nome, e some com um
-> `git rm` mais uma limpeza de histórico. A decisão é do dono do repositório;
-> este documento só registra o problema.
+**Os PDFs não ficam no repositório.** Eles estiveram versionados na raiz por um
+tempo e foram removidos: versionar a obra inteira num repo público é
+redistribuí-la, coisa bem diferente de aprender com ela e escrever conteúdo
+próprio a partir dela. O `.gitignore` barra `*.pdf` e `*.epub` para não
+voltarem por descuido. Guarde os livros na pasta de estudo, fora daqui.
+
+> **Ainda em aberto.** Remover no commit tira os arquivos da ponta, mas eles
+> continuam recuperáveis no histórico, no commit que os adicionou. Sumir de vez
+> exige reescrever o histórico (`git filter-repo` ou equivalente) e um
+> force-push na `main` — operação destrutiva, que invalida qualquer clone
+> existente. Decisão do dono do repositório.
 
 ---
 
