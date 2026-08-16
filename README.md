@@ -126,6 +126,7 @@ assets/historias/*.svg     # uma ilustração por dia
 docs/fundamentacao.md      # por que o app é assim
 livros.md                  # o que cada aula do Nível 1 cobre
 historias.md               # o que cada dia das Histórias cobre
+protocolo.md               # como portar o próximo livro para dentro do app
 ```
 
 ## Adicionar uma palavra

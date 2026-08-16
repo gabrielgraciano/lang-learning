@@ -5,7 +5,8 @@ dos vinte e cinco dias, as cenas em que elas aparecem, onde o conteúdo mora e
 por que a entrada no baralho é uma decisão de quem estuda e não do arquivo.
 
 `livros.md` faz o mesmo pelo **Nível 1**, que é gramática e vem de outros dois
-livros. O *porquê* de o app inteiro ser como é continua em
+livros, e [`protocolo.md`](protocolo.md) traz o passo a passo de portar um livro
+novo. O *porquê* de o app inteiro ser como é continua em
 `docs/fundamentacao.md`; as convenções de código, em `CLAUDE.md`.
 
 ---
