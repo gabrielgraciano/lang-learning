@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma caixa de encomenda ao lado de um cone de sinalização">
+  <circle cx="100" cy="100" r="94" fill="#EDE4DE"/>
+  <rect x="22" y="70" width="72" height="60" rx="5" fill="#C99B52"/>
+  <path d="M22 92h72" stroke="#8A6430" stroke-width="6"/>
+  <path d="M58 70v22" stroke="#8A6430" stroke-width="6"/>
+  <rect x="34" y="102" width="34" height="18" rx="2" fill="#F3EFE4"/>
+  <path d="M30 140h58" stroke="#C7A79A" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M144 54l30 88h-60z" fill="#B05A42"/>
+  <path d="M128 100h32l6 18h-44z" fill="#F3EFE4"/>
+  <rect x="104" y="142" width="80" height="12" rx="4" fill="#8C4A38"/>
+  <circle cx="112" cy="46" r="9" fill="#E0A63A"/>
+  <path d="M112 30v-8" stroke="#E0A63A" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M96 38l-7-6" stroke="#E0A63A" stroke-width="5" stroke-linecap="round" fill="none"/>
+</svg>

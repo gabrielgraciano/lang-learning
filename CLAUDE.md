@@ -20,7 +20,7 @@ tem uma decisão documentada por trás. Leia antes de reverter.
 
 Além do baralho há duas seções de conteúdo, cada uma com o seu próprio mapa:
 **Nível 1** (gramática, 25 aulas) em `livros.md`, e **Histórias** (vocabulário,
-10 dias de 20 palavras) em `historias.md`. As duas rodam na mesma tela e são
+25 dias de 20 palavras) em `historias.md`. As duas rodam na mesma tela e são
 corrigidas pelo mesmo `src/licoes.js`; o que muda é o arquivo de dados.
 
 ## Regra zero: sem build, sem dependências
@@ -168,13 +168,13 @@ console.log('dica que vaza a resposta:', vaza.length ? vaza.map(w => w.hangul) :
 
 // distratores: nunca repetido, nunca de classe gramatical diferente.
 // Roda nos DOIS baralhos que o app alcança: o do arquivo e o do arquivo com os
-// dez dias das Histórias promovidos, que é um clique de distância.
+// vinte e cinco dias das Histórias promovidos, que é um clique de distância.
 import { distratores, alternativas } from './src/niveis.js';
 import dias from './dados/dias.json' with { type: 'json' };
 const idsDias = new Set(dias.flatMap((d) => d.palavras));
 for (const [nome, banco] of [
   ['baralho de hoje', palavras.filter((p) => p.baralho !== false)],
-  ['com os dez dias', palavras.filter((p) => p.baralho !== false || idsDias.has(p.id))],
+  ['com os 25 dias', palavras.filter((p) => p.baralho !== false || idsDias.has(p.id))],
 ]) {
   let fora = 0, tot = 0, dup = 0, rodadas = 0;
   for (let i = 0; i < 15; i++) for (const w of banco) {

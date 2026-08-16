@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma caixa de mudança e um quadro pendurado na parede">
+  <circle cx="100" cy="100" r="94" fill="#EDE4DE"/>
+  <rect x="22" y="88" width="76" height="66" rx="6" fill="#B08238"/>
+  <path d="M22 108h76" stroke="#8A6430" stroke-width="7"/>
+  <path d="M56 88v20" stroke="#8A6430" stroke-width="7"/>
+  <path d="M30 88l14-18h32l14 18z" fill="#C99B52"/>
+  <rect x="112" y="46" width="66" height="56" rx="4" fill="#8C4A38"/>
+  <rect x="120" y="54" width="50" height="40" rx="2" fill="#F0E3DC"/>
+  <path d="M126 88l16-20 10 12 8-8 12 16z" fill="#7FA894"/>
+  <circle cx="134" cy="66" r="5" fill="#E0A63A"/>
+  <path d="M110 118h72" stroke="#C7A79A" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M118 126v34" stroke="#C7A79A" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M174 126v34" stroke="#C7A79A" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma maçã sobre uma balança ao lado de uma mão enfaixada">
+  <circle cx="100" cy="100" r="94" fill="#EFE1E4"/>
+  <path d="M56 46c-4-8 2-14 8-14 2 8-2 12-8 14z" fill="#4F7A68"/>
+  <path d="M56 48c-16 0-26 12-26 26s12 30 26 30 26-14 26-30-10-26-26-26z" fill="#A8332C"/>
+  <rect x="16" y="112" width="80" height="16" rx="8" fill="#8E8AA8"/>
+  <path d="M28 128h56v12H28z" fill="#C9C6DC"/>
+  <circle cx="56" cy="120" r="5" fill="#4F4A82"/>
+  <path d="M126 62c10-6 20 2 20 12v34h-38V88c0-12 8-22 18-26z" fill="#E8D9C0"/>
+  <path d="M108 108h38v30a10 10 0 0 1-10 10h-18a10 10 0 0 1-10-10z" fill="#E8D9C0"/>
+  <g fill="#F3EFE4">
+    <rect x="104" y="96" width="46" height="12" rx="6"/>
+    <rect x="104" y="118" width="46" height="12" rx="6"/>
+  </g>
+  <path d="M150 100l22-8" stroke="#F3EFE4" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <path d="M112 158h34v18h-34z" fill="#C9C6DC"/>
+</svg>

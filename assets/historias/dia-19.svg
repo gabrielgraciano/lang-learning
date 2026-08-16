@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Um guarda-chuva aberto sob a chuva ao lado de um inseto">
+  <circle cx="100" cy="100" r="94" fill="#DFE8EE"/>
+  <path d="M12 96c0-30 22-52 50-52s50 22 50 52z" fill="#3D7A9B"/>
+  <path d="M12 96c8-12 16-12 24 0s16 12 24 0 16-12 24 0 16 12 24 0" fill="#7FAAC4"/>
+  <path d="M62 96v56a12 12 0 0 1-24 0" stroke="#5E4A34" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M62 44V32" stroke="#5E4A34" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <g stroke="#5E8FB0" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M126 40l-6 14"/><path d="M150 30l-6 14"/><path d="M174 42l-6 14"/>
+    <path d="M138 66l-6 14"/><path d="M164 70l-6 14"/>
+  </g>
+  <ellipse cx="150" cy="128" rx="26" ry="20" fill="#A8332C"/>
+  <path d="M150 108v40" stroke="#5E4A34" stroke-width="4"/>
+  <circle cx="150" cy="102" r="12" fill="#4A4A4A"/>
+  <circle cx="140" cy="124" r="4" fill="#4A4A4A"/>
+  <circle cx="160" cy="134" r="4" fill="#4A4A4A"/>
+  <path d="M142 92l-8-12" stroke="#4A4A4A" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M158 92l8-12" stroke="#4A4A4A" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>

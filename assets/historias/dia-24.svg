@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Duas figuras idênticas ao lado de uma bola de basquete">
+  <circle cx="100" cy="100" r="94" fill="#E4E3EC"/>
+  <g fill="#4F4A82">
+    <circle cx="44" cy="60" r="16"/>
+    <path d="M26 130c0-24 8-46 18-46s18 22 18 46z"/>
+  </g>
+  <g fill="#8E8AA8">
+    <circle cx="88" cy="60" r="16"/>
+    <path d="M70 130c0-24 8-46 18-46s18 22 18 46z"/>
+  </g>
+  <rect x="34" y="52" width="20" height="7" rx="3" fill="#2E2E2E"/>
+  <circle cx="148" cy="112" r="38" fill="#C0662E"/>
+  <path d="M148 74v76" stroke="#7A3A16" stroke-width="4" fill="none"/>
+  <path d="M110 112h76" stroke="#7A3A16" stroke-width="4" fill="none"/>
+  <path d="M120 84c14 16 14 40 0 56" stroke="#7A3A16" stroke-width="4" fill="none"/>
+  <path d="M176 84c-14 16-14 40 0 56" stroke="#7A3A16" stroke-width="4" fill="none"/>
+  <path d="M20 150h150" stroke="#C3C1D2" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

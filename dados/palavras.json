@@ -3122,12 +3122,13 @@
     "romanizacao": "anida",
     "pt": "não ser (forma de dicionário)",
     "modulo": "gramatica",
-    "classe": "verbo",
+    "classe": "funcional",
     "imageabilidade": 1,
     "topik": 1,
     "aula": 8,
     "confundiveis": [
-      "nao_e"
+      "nao_e",
+      "nao_haver"
     ],
     "exemplo": {
       "ko": "아니에요.",
@@ -4081,8 +4082,8 @@
     "topik": 1,
     "aula": 14,
     "confundiveis": [
-      "fazer",
-      "sair_passear"
+      "praticar",
+      "descansar"
     ],
     "exemplo": {
       "ko": "사무실에서 일해요.",
@@ -4632,8 +4633,8 @@
     "topik": 1,
     "aula": 19,
     "confundiveis": [
-      "ontem",
-      "onde"
+      "onde",
+      "o_que"
     ],
     "exemplo": {
       "ko": "언제 왔어요?",
@@ -4647,13 +4648,12 @@
     "hangul": "어제",
     "romanizacao": "eoje",
     "pt": "ontem",
-    "modulo": "alta-frequencia",
+    "modulo": "tempo",
     "classe": "substantivo",
     "imageabilidade": 2,
     "topik": 1,
     "aula": 19,
     "confundiveis": [
-      "interrog_quando",
       "hoje",
       "amanha"
     ],
@@ -5106,8 +5106,8 @@
       "부": "夫"
     },
     "confundiveis": [
-      "trabalhar",
-      "esforco"
+      "exercicio_fisico",
+      "sonho"
     ],
     "exemplo": {
       "ko": "공부해요.",
@@ -5139,7 +5139,8 @@
       "pt": "Faço exercício."
     },
     "nota": "運動 — “mover-se”. O 동 (動) reaparece em 자동차 (carro, “veículo que se move sozinho”).",
-    "baralho": false
+    "baralho": false,
+    "campo": "nocao"
   },
   {
     "id": "culinaria",
@@ -5202,15 +5203,16 @@
     "topik": 1,
     "aula": 22,
     "confundiveis": [
-      "cancao",
-      "pensamento"
+      "memoria",
+      "sonho"
     ],
     "exemplo": {
       "ko": "사랑해요.",
       "pt": "Eu te amo."
     },
     "nota": "사랑해요 é a frase mais conhecida do idioma — e é apenas 사랑 + 하다 conjugado, como 공부해요 e 운동해요.",
-    "baralho": false
+    "baralho": false,
+    "campo": "nocao"
   },
   {
     "id": "cancao",
@@ -5357,8 +5359,8 @@
     "topik": 1,
     "aula": 23,
     "confundiveis": [
-      "fazer",
-      "carregar"
+      "preparar",
+      "fazer_bem"
     ],
     "exemplo": {
       "ko": "누가 만들었어요?",
@@ -5697,7 +5699,7 @@
     "hangul": "저녁",
     "romanizacao": "jeonyeok",
     "pt": "noite (início); jantar",
-    "modulo": "alta-frequencia",
+    "modulo": "tempo",
     "classe": "substantivo",
     "imageabilidade": 3,
     "topik": 1,
@@ -5996,7 +5998,8 @@
       "ko": "옷을 입고 화장을 해요.",
       "pt": "Visto a roupa e me maquio."
     },
-    "baralho": false
+    "baralho": false,
+    "par": "tirar_roupa"
   },
   {
     "id": "maquiagem",
@@ -6830,7 +6833,8 @@
       "ko": "경기에서 지다",
       "pt": "perder o jogo"
     },
-    "baralho": false
+    "baralho": false,
+    "par": "vencer"
   },
   {
     "id": "quarto",
@@ -7573,7 +7577,8 @@
       "ko": "여름에는 밖에 잘 안 나가요.",
       "pt": "No verão quase não saio para fora."
     },
-    "baralho": false
+    "baralho": false,
+    "par": "entrar"
   },
   {
     "id": "ar_condicionado",
@@ -8633,7 +8638,8 @@
       "ko": "해가 지면 어두워요.",
       "pt": "Quando o sol se põe, escurece."
     },
-    "baralho": false
+    "baralho": false,
+    "par": "claro_luz"
   },
   {
     "id": "descer",
@@ -8651,6 +8657,4895 @@
     "exemplo": {
       "ko": "그래서 해가 지기 전에 산을 내려가요.",
       "pt": "Por isso desço a montanha antes de o sol se pôr."
+    },
+    "baralho": false,
+    "par": "subir"
+  },
+  {
+    "id": "celebridade",
+    "hangul": "연예인",
+    "romanizacao": "yeonyein",
+    "pt": "celebridade, artista",
+    "modulo": "pessoas",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 11,
+    "sino": {
+      "연": "演",
+      "예": "藝",
+      "인": "人"
+    },
+    "exemplo": {
+      "ko": "제가 좋아하는 연예인은 누구일까요?",
+      "pt": "Quem será o artista de que eu gosto?"
+    },
+    "nota": "演藝人 — “pessoa das artes de representar”. O mesmo 인 (人) está em 한국인 e 주인공.",
+    "baralho": false
+  },
+  {
+    "id": "altura_pessoa",
+    "hangul": "키",
+    "romanizacao": "ki",
+    "pt": "altura (de uma pessoa)",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 11,
+    "confundiveis": [
+      "peso_corpo",
+      "idade"
+    ],
+    "exemplo": {
+      "ko": "키가 커요.",
+      "pt": "Ele é alto."
+    },
+    "baralho": false
+  },
+  {
+    "id": "rosto",
+    "hangul": "얼굴",
+    "romanizacao": "eolgul",
+    "pt": "rosto",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 11,
+    "confundiveis": [
+      "cabeca",
+      "olho"
+    ],
+    "exemplo": {
+      "ko": "웃는 얼굴이 정말 귀여워요.",
+      "pt": "O rosto dele sorrindo é muito fofo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "fofo",
+    "hangul": "귀엽다",
+    "romanizacao": "gwiyeopda",
+    "pt": "ser fofo",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 11,
+    "confundiveis": [
+      "bonito",
+      "bacana"
+    ],
+    "exemplo": {
+      "ko": "웃는 얼굴이 정말 귀여워요.",
+      "pt": "O rosto dele sorrindo é muito fofo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "perna",
+    "hangul": "다리",
+    "romanizacao": "dari",
+    "pt": "perna",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 11,
+    "confundiveis": [
+      "pe",
+      "mao",
+      "ombro"
+    ],
+    "exemplo": {
+      "ko": "눈이 크고 다리가 길어요.",
+      "pt": "Tem olhos grandes e pernas compridas."
+    },
+    "baralho": false
+  },
+  {
+    "id": "irma_de_mulher",
+    "hangul": "언니",
+    "romanizacao": "eonni",
+    "pt": "irmã mais velha (de uma mulher)",
+    "modulo": "pessoas",
+    "classe": "substantivo",
+    "campo": "familia",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 11,
+    "confundiveis": [
+      "irma_de_homem",
+      "irmao_de_mulher"
+    ],
+    "exemplo": {
+      "ko": "언니랑 같이 여행을 가요.",
+      "pt": "Vou viajar com a minha irmã mais velha."
+    },
+    "nota": "Par de 누나: quem fala é que decide. Mulher diz 언니, homem diz 누나 para a mesma irmã.",
+    "baralho": false
+  },
+  {
+    "id": "juntos",
+    "hangul": "같이",
+    "romanizacao": "gati",
+    "pt": "juntos, junto com",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "funcao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 11,
+    "exemplo": {
+      "ko": "언니랑 같이 여행을 가요.",
+      "pt": "Vou viajar com a minha irmã mais velha."
+    },
+    "baralho": false
+  },
+  {
+    "id": "viagem",
+    "hangul": "여행",
+    "romanizacao": "yeohaeng",
+    "pt": "viagem",
+    "modulo": "lazer",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 11,
+    "sino": {
+      "여": "旅",
+      "행": "行"
+    },
+    "exemplo": {
+      "ko": "언니랑 같이 여행을 가요.",
+      "pt": "Vou viajar com a minha irmã mais velha."
+    },
+    "nota": "旅行 — “ir de jornada”. O mesmo 행 (行) está em 은행 (banco) e 비행기.",
+    "baralho": false
+  },
+  {
+    "id": "aviao",
+    "hangul": "비행기",
+    "romanizacao": "bihaenggi",
+    "pt": "avião",
+    "modulo": "transporte",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 11,
+    "sino": {
+      "비": "飛",
+      "행": "行",
+      "기": "機"
+    },
+    "confundiveis": [
+      "metro",
+      "onibus"
+    ],
+    "exemplo": {
+      "ko": "비행기를 타고 가요.",
+      "pt": "A gente vai de avião."
+    },
+    "nota": "飛行機 — “máquina que voa indo”. O mesmo 기 (機) está em 세탁기 (máquina de lavar).",
+    "baralho": false
+  },
+  {
+    "id": "primeira_vez",
+    "hangul": "처음",
+    "romanizacao": "cheoeum",
+    "pt": "começo, primeira vez",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "ritmo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 11,
+    "confundiveis": [
+      "proximo",
+      "de_novo"
+    ],
+    "exemplo": {
+      "ko": "저는 비행기를 처음 타요.",
+      "pt": "É a primeira vez que eu ando de avião."
+    },
+    "baralho": false
+  },
+  {
+    "id": "janela",
+    "hangul": "창문",
+    "romanizacao": "changmun",
+    "pt": "janela",
+    "modulo": "casa",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 11,
+    "sino": {
+      "창": "窓",
+      "문": "門"
+    },
+    "confundiveis": [
+      "porta",
+      "parede"
+    ],
+    "exemplo": {
+      "ko": "창문 옆자리에 앉았어요.",
+      "pt": "Sentei no lugar do lado da janela."
+    },
+    "nota": "窓門 — “porta de janela”. O mesmo 문 (門) está em 문 (porta) e 대문 (portão).",
+    "baralho": false
+  },
+  {
+    "id": "daqui_a_pouco",
+    "hangul": "이따가",
+    "romanizacao": "ittaga",
+    "pt": "daqui a pouco",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "ritmo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 11,
+    "confundiveis": [
+      "depois",
+      "ja_antes"
+    ],
+    "exemplo": {
+      "ko": "이따가 하늘을 볼 수 있을 거예요.",
+      "pt": "Daqui a pouco vou poder ver o céu."
+    },
+    "baralho": false
+  },
+  {
+    "id": "ceu",
+    "hangul": "하늘",
+    "romanizacao": "haneul",
+    "pt": "céu",
+    "modulo": "natureza",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 11,
+    "confundiveis": [
+      "nuvem",
+      "sol"
+    ],
+    "exemplo": {
+      "ko": "이따가 하늘을 볼 수 있을 거예요.",
+      "pt": "Daqui a pouco vou poder ver o céu."
+    },
+    "baralho": false
+  },
+  {
+    "id": "nuvem",
+    "hangul": "구름",
+    "romanizacao": "gureum",
+    "pt": "nuvem",
+    "modulo": "natureza",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 11,
+    "confundiveis": [
+      "ceu",
+      "chuva"
+    ],
+    "exemplo": {
+      "ko": "구름도 볼 수 있을까요?",
+      "pt": "Será que dá para ver as nuvens também?"
+    },
+    "baralho": false
+  },
+  {
+    "id": "contato",
+    "hangul": "연락",
+    "romanizacao": "yeollak",
+    "pt": "contato",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 12,
+    "sino": {
+      "연": "連",
+      "락": "絡"
+    },
+    "exemplo": {
+      "ko": "친구에게 연락을 했어요.",
+      "pt": "Entrei em contato com um amigo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "ajudar",
+    "hangul": "도와주다",
+    "romanizacao": "dowajuda",
+    "pt": "ajudar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 12,
+    "confundiveis": [
+      "ensinar",
+      "dar"
+    ],
+    "exemplo": {
+      "ko": "친구가 이사를 도와줄 거예요.",
+      "pt": "Ele vai me ajudar na mudança."
+    },
+    "baralho": false
+  },
+  {
+    "id": "andar_predio",
+    "hangul": "층",
+    "romanizacao": "cheung",
+    "pt": "andar (de um prédio)",
+    "modulo": "casa",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 12,
+    "sino": {
+      "층": "層"
+    },
+    "confundiveis": [
+      "parede",
+      "elevador"
+    ],
+    "exemplo": {
+      "ko": "저희 집은 5층이에요.",
+      "pt": "Minha casa é no quinto andar."
+    },
+    "baralho": false
+  },
+  {
+    "id": "elevador",
+    "hangul": "엘리베이터",
+    "romanizacao": "ellibeiteo",
+    "pt": "elevador",
+    "modulo": "casa",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 12,
+    "confundiveis": [
+      "porta",
+      "janela"
+    ],
+    "exemplo": {
+      "ko": "엘리베이터가 없어요.",
+      "pt": "Não tem elevador."
+    },
+    "baralho": false
+  },
+  {
+    "id": "caixa",
+    "hangul": "상자",
+    "romanizacao": "sangja",
+    "pt": "caixa",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 12,
+    "sino": {
+      "상": "箱",
+      "자": "子"
+    },
+    "confundiveis": [
+      "bolsa",
+      "lixo"
+    ],
+    "exemplo": {
+      "ko": "무거운 상자를 들고 계단을 올라가요.",
+      "pt": "Subo a escada carregando uma caixa pesada."
+    },
+    "nota": "箱子 — o mesmo 자 (子) de 의자, 모자 e 남자: um sufixo que faz coisa de coisa.",
+    "baralho": false
+  },
+  {
+    "id": "levantar_peso",
+    "hangul": "들다",
+    "romanizacao": "deulda",
+    "pt": "levantar, carregar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 12,
+    "confundiveis": [
+      "pegar",
+      "pôr_dentro"
+    ],
+    "exemplo": {
+      "ko": "무거운 상자를 들고 계단을 올라가요.",
+      "pt": "Subo a escada carregando uma caixa pesada."
+    },
+    "baralho": false
+  },
+  {
+    "id": "pôr_dentro",
+    "hangul": "넣다",
+    "romanizacao": "neota",
+    "pt": "pôr dentro",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 12,
+    "confundiveis": [
+      "tirar_de_dentro",
+      "levantar_peso"
+    ],
+    "exemplo": {
+      "ko": "방에 침대를 넣어요.",
+      "pt": "Ponho a cama no quarto."
+    },
+    "baralho": false
+  },
+  {
+    "id": "estreito",
+    "hangul": "좁다",
+    "romanizacao": "jopda",
+    "pt": "ser estreito, ser apertado",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 12,
+    "par": "espacoso",
+    "exemplo": {
+      "ko": "그런데 방이 너무 좁아요.",
+      "pt": "Só que o quarto é apertado demais."
+    },
+    "baralho": false
+  },
+  {
+    "id": "tirar_de_dentro",
+    "hangul": "빼다",
+    "romanizacao": "ppaeda",
+    "pt": "tirar, retirar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 12,
+    "confundiveis": [
+      "pôr_dentro",
+      "levantar_peso"
+    ],
+    "exemplo": {
+      "ko": "침대를 다시 빼요.",
+      "pt": "Tiro a cama de novo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "mudanca_casa",
+    "hangul": "이사",
+    "romanizacao": "isa",
+    "pt": "mudança (de casa)",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 12,
+    "sino": {
+      "이": "移",
+      "사": "徙"
+    },
+    "exemplo": {
+      "ko": "어제 이사했어요.",
+      "pt": "Me mudei ontem."
+    },
+    "baralho": false
+  },
+  {
+    "id": "sozinho",
+    "hangul": "혼자",
+    "romanizacao": "honja",
+    "pt": "sozinho",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "funcao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 12,
+    "confundiveis": [
+      "juntos",
+      "nos_nosso"
+    ],
+    "exemplo": {
+      "ko": "드디어 혼자 살아요.",
+      "pt": "Finalmente moro sozinho."
+    },
+    "baralho": false
+  },
+  {
+    "id": "sala_de_estar",
+    "hangul": "거실",
+    "romanizacao": "geosil",
+    "pt": "sala de estar",
+    "modulo": "casa",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 12,
+    "sino": {
+      "거": "居",
+      "실": "室"
+    },
+    "confundiveis": [
+      "quarto",
+      "cozinha"
+    ],
+    "exemplo": {
+      "ko": "거실 벽에 그림을 걸고 싶어요.",
+      "pt": "Quero pendurar um quadro na parede da sala."
+    },
+    "nota": "居室 — “sala de morar”. O mesmo 실 (室) está em 교실, 화장실 e 사무실.",
+    "baralho": false
+  },
+  {
+    "id": "parede",
+    "hangul": "벽",
+    "romanizacao": "byeok",
+    "pt": "parede",
+    "modulo": "casa",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 12,
+    "sino": {
+      "벽": "壁"
+    },
+    "confundiveis": [
+      "janela",
+      "andar_predio"
+    ],
+    "exemplo": {
+      "ko": "거실 벽에 그림을 걸고 싶어요.",
+      "pt": "Quero pendurar um quadro na parede da sala."
+    },
+    "baralho": false
+  },
+  {
+    "id": "quadro_desenho",
+    "hangul": "그림",
+    "romanizacao": "geurim",
+    "pt": "quadro, desenho",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 12,
+    "confundiveis": [
+      "foto",
+      "espelho"
+    ],
+    "exemplo": {
+      "ko": "거실 벽에 그림을 걸고 싶어요.",
+      "pt": "Quero pendurar um quadro na parede da sala."
+    },
+    "baralho": false
+  },
+  {
+    "id": "cozinha",
+    "hangul": "부엌",
+    "romanizacao": "bueok",
+    "pt": "cozinha",
+    "modulo": "casa",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 12,
+    "confundiveis": [
+      "sala_de_estar",
+      "banheiro"
+    ],
+    "exemplo": {
+      "ko": "부엌에서 음식도 직접 만들 거예요.",
+      "pt": "Vou fazer a comida eu mesmo na cozinha."
+    },
+    "baralho": false
+  },
+  {
+    "id": "apagar",
+    "hangul": "지우다",
+    "romanizacao": "jiuda",
+    "pt": "apagar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 13,
+    "confundiveis": [
+      "lavar",
+      "escrever"
+    ],
+    "exemplo": {
+      "ko": "화장을 지워요.",
+      "pt": "Tiro a maquiagem."
+    },
+    "baralho": false
+  },
+  {
+    "id": "cogumelo",
+    "hangul": "버섯",
+    "romanizacao": "beoseot",
+    "pt": "cogumelo",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 13,
+    "confundiveis": [
+      "cenoura",
+      "cebola"
+    ],
+    "exemplo": {
+      "ko": "버섯과 당근을 넣어요.",
+      "pt": "Ponho cogumelo e cenoura."
+    },
+    "baralho": false
+  },
+  {
+    "id": "cenoura",
+    "hangul": "당근",
+    "romanizacao": "danggeun",
+    "pt": "cenoura",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 13,
+    "confundiveis": [
+      "cogumelo",
+      "batata"
+    ],
+    "exemplo": {
+      "ko": "버섯과 당근을 넣어요.",
+      "pt": "Ponho cogumelo e cenoura."
+    },
+    "baralho": false
+  },
+  {
+    "id": "chamar",
+    "hangul": "부르다",
+    "romanizacao": "bureuda",
+    "pt": "chamar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 13,
+    "confundiveis": [
+      "telefonar",
+      "falar"
+    ],
+    "exemplo": {
+      "ko": "아이들을 불러요.",
+      "pt": "Chamo as crianças."
+    },
+    "baralho": false
+  },
+  {
+    "id": "tudo",
+    "hangul": "다",
+    "romanizacao": "da",
+    "pt": "tudo, todo",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "funcao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 13,
+    "confundiveis": [
+      "muito",
+      "sozinho"
+    ],
+    "exemplo": {
+      "ko": "다 함께 산책을 가요.",
+      "pt": "Todo mundo vai passear."
+    },
+    "baralho": false
+  },
+  {
+    "id": "passeio",
+    "hangul": "산책",
+    "romanizacao": "sanchaek",
+    "pt": "passeio a pé",
+    "modulo": "lazer",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 13,
+    "sino": {
+      "산": "散",
+      "책": "策"
+    },
+    "confundiveis": [
+      "caminhada_montanha",
+      "viagem"
+    ],
+    "exemplo": {
+      "ko": "다 함께 산책을 가요.",
+      "pt": "Todo mundo vai passear."
+    },
+    "baralho": false
+  },
+  {
+    "id": "claro_luz",
+    "hangul": "밝다",
+    "romanizacao": "bakda",
+    "pt": "ser claro, ser iluminado",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 13,
+    "par": "escuro",
+    "exemplo": {
+      "ko": "거리가 아직 밝아요.",
+      "pt": "A rua ainda está clara."
+    },
+    "baralho": false
+  },
+  {
+    "id": "confortavel",
+    "hangul": "편하다",
+    "romanizacao": "pyeonhada",
+    "pt": "ser confortável",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 13,
+    "sino": {
+      "편": "便"
+    },
+    "par": "desconfortavel_dificil",
+    "exemplo": {
+      "ko": "아이들이랑 산책하면 마음이 편해요.",
+      "pt": "Passear com as crianças me deixa em paz."
+    },
+    "baralho": false
+  },
+  {
+    "id": "sonho",
+    "hangul": "꿈",
+    "romanizacao": "kkum",
+    "pt": "sonho",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 13,
+    "confundiveis": [
+      "sono",
+      "sensacao"
+    ],
+    "exemplo": {
+      "ko": "제 꿈은 사진 작가예요.",
+      "pt": "Meu sonho é ser fotógrafo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "foto",
+    "hangul": "사진",
+    "romanizacao": "sajin",
+    "pt": "foto",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 13,
+    "sino": {
+      "사": "寫",
+      "진": "眞"
+    },
+    "confundiveis": [
+      "quadro_desenho",
+      "espelho"
+    ],
+    "exemplo": {
+      "ko": "학교에서 사진을 배우고 있어요.",
+      "pt": "Estou aprendendo fotografia na escola."
+    },
+    "nota": "寫眞 — “copiar o real”. É a palavra que o coreano cunhou para fotografia.",
+    "baralho": false
+  },
+  {
+    "id": "aprender",
+    "hangul": "배우다",
+    "romanizacao": "baeuda",
+    "pt": "aprender",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 13,
+    "confundiveis": [
+      "ensinar",
+      "praticar"
+    ],
+    "exemplo": {
+      "ko": "학교에서 사진을 배우고 있어요.",
+      "pt": "Estou aprendendo fotografia na escola."
+    },
+    "baralho": false
+  },
+  {
+    "id": "preco",
+    "hangul": "가격",
+    "romanizacao": "gagyeok",
+    "pt": "preço",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 13,
+    "sino": {
+      "가": "價",
+      "격": "格"
+    },
+    "exemplo": {
+      "ko": "그런데 가격이 너무 비싸요.",
+      "pt": "Só que o preço é caro demais."
+    },
+    "baralho": false
+  },
+  {
+    "id": "caro",
+    "hangul": "비싸다",
+    "romanizacao": "bissada",
+    "pt": "ser caro",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 13,
+    "par": "barato",
+    "exemplo": {
+      "ko": "그런데 가격이 너무 비싸요.",
+      "pt": "Só que o preço é caro demais."
+    },
+    "baralho": false
+  },
+  {
+    "id": "celular_ko",
+    "hangul": "휴대폰",
+    "romanizacao": "hyudaepon",
+    "pt": "celular",
+    "modulo": "tecnologia",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 13,
+    "sino": {
+      "휴": "携",
+      "대": "帶"
+    },
+    "confundiveis": [
+      "notebook",
+      "computador"
+    ],
+    "exemplo": {
+      "ko": "그래서 휴대폰으로 사진을 찍어요.",
+      "pt": "Por isso tiro foto com o celular."
+    },
+    "nota": "携帶 (“levar consigo”) + 폰 do inglês phone. Meia sino-coreana, meia emprestada.",
+    "baralho": false
+  },
+  {
+    "id": "fotografar",
+    "hangul": "찍다",
+    "romanizacao": "jjikda",
+    "pt": "tirar (foto), filmar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 13,
+    "exemplo": {
+      "ko": "그래서 휴대폰으로 사진을 찍어요.",
+      "pt": "Por isso tiro foto com o celular."
+    },
+    "baralho": false
+  },
+  {
+    "id": "praticar",
+    "hangul": "연습하다",
+    "romanizacao": "yeonseupada",
+    "pt": "praticar, treinar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 13,
+    "sino": {
+      "연": "練",
+      "습": "習"
+    },
+    "exemplo": {
+      "ko": "열심히 연습할 거예요.",
+      "pt": "Vou praticar com afinco."
+    },
+    "baralho": false
+  },
+  {
+    "id": "famoso",
+    "hangul": "유명하다",
+    "romanizacao": "yumyeonghada",
+    "pt": "ser famoso",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 13,
+    "sino": {
+      "유": "有",
+      "명": "名"
+    },
+    "exemplo": {
+      "ko": "유명한 사진 작가가 되고 싶어요.",
+      "pt": "Quero virar um fotógrafo famoso."
+    },
+    "nota": "有名 — “ter nome”. O mesmo 명 (名) está em 명함 (cartão de visita).",
+    "baralho": false
+  },
+  {
+    "id": "primavera",
+    "hangul": "봄",
+    "romanizacao": "bom",
+    "pt": "primavera",
+    "modulo": "tempo",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 14,
+    "confundiveis": [
+      "verao",
+      "inverno"
+    ],
+    "exemplo": {
+      "ko": "봄이 왔어요.",
+      "pt": "A primavera chegou."
+    },
+    "baralho": false
+  },
+  {
+    "id": "morno",
+    "hangul": "따뜻하다",
+    "romanizacao": "ttatteutada",
+    "pt": "ser morno, ser quentinho",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 14,
+    "confundiveis": [
+      "calor_ambiente",
+      "fresco"
+    ],
+    "exemplo": {
+      "ko": "날씨가 따뜻해요.",
+      "pt": "O tempo está quentinho."
+    },
+    "baralho": false
+  },
+  {
+    "id": "bonito",
+    "hangul": "예쁘다",
+    "romanizacao": "yeppeuda",
+    "pt": "ser bonito",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 14,
+    "confundiveis": [
+      "fofo",
+      "bacana"
+    ],
+    "exemplo": {
+      "ko": "예쁜 꽃이 피었어요.",
+      "pt": "As flores bonitas desabrocharam."
+    },
+    "baralho": false
+  },
+  {
+    "id": "morango",
+    "hangul": "딸기",
+    "romanizacao": "ttalgi",
+    "pt": "morango",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 14,
+    "confundiveis": [
+      "maca",
+      "banana"
+    ],
+    "exemplo": {
+      "ko": "봄에는 딸기가 많이 나와요.",
+      "pt": "Na primavera sai muito morango."
+    },
+    "baralho": false
+  },
+  {
+    "id": "gostar_de",
+    "hangul": "좋아하다",
+    "romanizacao": "joahada",
+    "pt": "gostar de",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 14,
+    "confundiveis": [
+      "detestar",
+      "acreditar"
+    ],
+    "exemplo": {
+      "ko": "딸기는 제가 제일 좋아하는 과일이에요.",
+      "pt": "Morango é a fruta de que eu mais gosto."
+    },
+    "baralho": false
+  },
+  {
+    "id": "fruta",
+    "hangul": "과일",
+    "romanizacao": "gwail",
+    "pt": "fruta",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 14,
+    "confundiveis": [
+      "verdura",
+      "carne"
+    ],
+    "exemplo": {
+      "ko": "딸기는 제가 제일 좋아하는 과일이에요.",
+      "pt": "Morango é a fruta de que eu mais gosto."
+    },
+    "baralho": false
+  },
+  {
+    "id": "neve",
+    "hangul": "눈",
+    "romanizacao": "nun",
+    "pt": "neve",
+    "modulo": "natureza",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 14,
+    "confundiveis": [
+      "chuva",
+      "nuvem"
+    ],
+    "exemplo": {
+      "ko": "그런데 갑자기 눈이 와요.",
+      "pt": "Só que de repente começa a nevar."
+    },
+    "nota": "Escreve-se igual a 눈 (olho) e são palavras diferentes. A vogal é longa na neve e curta no olho, mas quase ninguém marca isso hoje.",
+    "baralho": false
+  },
+  {
+    "id": "vento",
+    "hangul": "바람",
+    "romanizacao": "baram",
+    "pt": "vento",
+    "modulo": "natureza",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 14,
+    "confundiveis": [
+      "chuva",
+      "neve"
+    ],
+    "exemplo": {
+      "ko": "바람도 불어요.",
+      "pt": "E o vento também sopra."
+    },
+    "baralho": false
+  },
+  {
+    "id": "frio_ambiente",
+    "hangul": "춥다",
+    "romanizacao": "chupda",
+    "pt": "estar frio (o tempo)",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 14,
+    "confundiveis": [
+      "calor_ambiente",
+      "fresco",
+      "morno"
+    ],
+    "exemplo": {
+      "ko": "너무 춥다",
+      "pt": "estar frio demais"
+    },
+    "nota": "춥다 é o frio do ar; 차갑다 é o frio do que se toca. Janeiro é 춥다, o refrigerante é 차갑다.",
+    "baralho": false
+  },
+  {
+    "id": "saber",
+    "hangul": "알다",
+    "romanizacao": "alda",
+    "pt": "saber, conhecer",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 14,
+    "par": "nao_saber",
+    "exemplo": {
+      "ko": "친구도 이 카페를 알아요.",
+      "pt": "Ele também conhece esta cafeteria."
+    },
+    "baralho": false
+  },
+  {
+    "id": "cachecol",
+    "hangul": "목도리",
+    "romanizacao": "mokdori",
+    "pt": "cachecol",
+    "modulo": "roupa",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 14,
+    "confundiveis": [
+      "luva",
+      "meia"
+    ],
+    "exemplo": {
+      "ko": "장갑이랑 목도리를 살 거예요.",
+      "pt": "Vou comprar luva e cachecol."
+    },
+    "nota": "목 (pescoço) + 도리 (o que dá a volta) — a mesma lógica de 목걸이.",
+    "baralho": false
+  },
+  {
+    "id": "fazer_bem",
+    "hangul": "잘하다",
+    "romanizacao": "jalhada",
+    "pt": "fazer bem, mandar bem",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 15,
+    "par": "fazer_mal",
+    "exemplo": {
+      "ko": "엄마는 요리를 잘해요.",
+      "pt": "Minha mãe cozinha bem."
+    },
+    "baralho": false
+  },
+  {
+    "id": "fazer_mal",
+    "hangul": "못하다",
+    "romanizacao": "motada",
+    "pt": "não fazer bem, ir mal",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 15,
+    "par": "fazer_bem",
+    "exemplo": {
+      "ko": "저는 요리를 못해요.",
+      "pt": "Eu não sei cozinhar."
+    },
+    "baralho": false
+  },
+  {
+    "id": "cebola",
+    "hangul": "양파",
+    "romanizacao": "yangpa",
+    "pt": "cebola",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 15,
+    "sino": {
+      "양": "洋"
+    },
+    "confundiveis": [
+      "batata",
+      "cenoura"
+    ],
+    "exemplo": {
+      "ko": "양파를 깠어요.",
+      "pt": "Descasquei a cebola."
+    },
+    "nota": "洋파 — “a 파 do ocidente”. 파 sozinho é cebolinha; a cebola redonda chegou depois e ganhou o 洋 de 양말 e 양복.",
+    "baralho": false
+  },
+  {
+    "id": "batata",
+    "hangul": "감자",
+    "romanizacao": "gamja",
+    "pt": "batata",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 15,
+    "confundiveis": [
+      "cebola",
+      "cenoura"
+    ],
+    "exemplo": {
+      "ko": "감자를 칼로 썰었어요.",
+      "pt": "Piquei a batata com a faca."
+    },
+    "baralho": false
+  },
+  {
+    "id": "faca",
+    "hangul": "칼",
+    "romanizacao": "kal",
+    "pt": "faca",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 15,
+    "confundiveis": [
+      "caneta",
+      "copo"
+    ],
+    "exemplo": {
+      "ko": "감자를 칼로 썰었어요.",
+      "pt": "Piquei a batata com a faca."
+    },
+    "baralho": false
+  },
+  {
+    "id": "picar",
+    "hangul": "썰다",
+    "romanizacao": "sseolda",
+    "pt": "picar, fatiar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 15,
+    "confundiveis": [
+      "ferver",
+      "lavar"
+    ],
+    "exemplo": {
+      "ko": "감자를 칼로 썰었어요.",
+      "pt": "Piquei a batata com a faca."
+    },
+    "baralho": false
+  },
+  {
+    "id": "dedo_mao",
+    "hangul": "손가락",
+    "romanizacao": "songarak",
+    "pt": "dedo da mão",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 15,
+    "confundiveis": [
+      "dedo_pe",
+      "mao",
+      "ombro"
+    ],
+    "exemplo": {
+      "ko": "손가락을 다쳤어요.",
+      "pt": "Machuquei o dedo."
+    },
+    "nota": "손 (mão) + 가락 (haste fina). O do pé segue a mesma receita: 발가락.",
+    "baralho": false
+  },
+  {
+    "id": "entrega",
+    "hangul": "배달",
+    "romanizacao": "baedal",
+    "pt": "entrega, delivery",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 15,
+    "sino": {
+      "배": "配",
+      "달": "達"
+    },
+    "exemplo": {
+      "ko": "결국 배달 음식을 시켰어요.",
+      "pt": "No fim pedi delivery."
+    },
+    "baralho": false
+  },
+  {
+    "id": "visita_cliente",
+    "hangul": "손님",
+    "romanizacao": "sonnim",
+    "pt": "visita, cliente",
+    "modulo": "pessoas",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 15,
+    "confundiveis": [
+      "amigo",
+      "casal"
+    ],
+    "exemplo": {
+      "ko": "오늘 밤 저희 집에 손님들이 올 거예요.",
+      "pt": "Hoje à noite vêm visitas lá em casa."
+    },
+    "nota": "손 (hóspede) + 님, o sufixo de respeito que também está em 선생님.",
+    "baralho": false
+  },
+  {
+    "id": "roupa_para_lavar",
+    "hangul": "빨래",
+    "romanizacao": "ppallae",
+    "pt": "roupa suja, lavar roupa",
+    "modulo": "casa",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 15,
+    "confundiveis": [
+      "louca_para_lavar",
+      "limpeza"
+    ],
+    "exemplo": {
+      "ko": "빨래도 하고 설거지도 했어요.",
+      "pt": "Lavei a roupa e lavei a louça."
+    },
+    "baralho": false
+  },
+  {
+    "id": "louca_para_lavar",
+    "hangul": "설거지",
+    "romanizacao": "seolgeoji",
+    "pt": "lavar a louça",
+    "modulo": "casa",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 15,
+    "confundiveis": [
+      "roupa_para_lavar",
+      "limpeza"
+    ],
+    "exemplo": {
+      "ko": "빨래도 하고 설거지도 했어요.",
+      "pt": "Lavei a roupa e lavei a louça."
+    },
+    "baralho": false
+  },
+  {
+    "id": "coberta",
+    "hangul": "이불",
+    "romanizacao": "ibul",
+    "pt": "coberta, edredom",
+    "modulo": "casa",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 15,
+    "confundiveis": [
+      "travesseiro",
+      "cama"
+    ],
+    "exemplo": {
+      "ko": "이불과 베개를 정리했어요.",
+      "pt": "Arrumei a coberta e os travesseiros."
+    },
+    "baralho": false
+  },
+  {
+    "id": "travesseiro",
+    "hangul": "베개",
+    "romanizacao": "begae",
+    "pt": "travesseiro",
+    "modulo": "casa",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 15,
+    "confundiveis": [
+      "coberta",
+      "cama"
+    ],
+    "exemplo": {
+      "ko": "이불과 베개를 정리했어요.",
+      "pt": "Arrumei a coberta e os travesseiros."
+    },
+    "baralho": false
+  },
+  {
+    "id": "lixo",
+    "hangul": "쓰레기",
+    "romanizacao": "sseuregi",
+    "pt": "lixo",
+    "modulo": "casa",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 15,
+    "confundiveis": [
+      "coberta",
+      "caixa"
+    ],
+    "exemplo": {
+      "ko": "쓰레기를 버렸어요.",
+      "pt": "Joguei o lixo fora."
+    },
+    "baralho": false
+  },
+  {
+    "id": "mercado",
+    "hangul": "시장",
+    "romanizacao": "sijang",
+    "pt": "mercado, feira",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 15,
+    "sino": {
+      "시": "市",
+      "장": "場"
+    },
+    "confundiveis": [
+      "loja",
+      "mercado_grande"
+    ],
+    "exemplo": {
+      "ko": "시장에 가서 장을 봤어요.",
+      "pt": "Fui ao mercado fazer compras."
+    },
+    "nota": "市場 — “lugar de mercado”. O mesmo 시 (市) está em 도시 (cidade).",
+    "baralho": false
+  },
+  {
+    "id": "salgadinho",
+    "hangul": "과자",
+    "romanizacao": "gwaja",
+    "pt": "salgadinho, biscoito",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 15,
+    "sino": {
+      "과": "菓",
+      "자": "子"
+    },
+    "confundiveis": [
+      "bolo",
+      "pao"
+    ],
+    "exemplo": {
+      "ko": "아이들을 위해 과자도 샀어요.",
+      "pt": "Comprei salgadinho para as crianças."
+    },
+    "baralho": false
+  },
+  {
+    "id": "preparar",
+    "hangul": "준비하다",
+    "romanizacao": "junbihada",
+    "pt": "preparar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 15,
+    "sino": {
+      "준": "準",
+      "비": "備"
+    },
+    "exemplo": {
+      "ko": "이제 음식을 준비할 거예요.",
+      "pt": "Agora vou preparar a comida."
+    },
+    "baralho": false
+  },
+  {
+    "id": "internet",
+    "hangul": "인터넷",
+    "romanizacao": "inteonet",
+    "pt": "internet",
+    "modulo": "tecnologia",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 16,
+    "confundiveis": [
+      "email",
+      "computador"
+    ],
+    "exemplo": {
+      "ko": "인터넷으로 치마를 주문했어요.",
+      "pt": "Encomendei uma saia pela internet."
+    },
+    "baralho": false
+  },
+  {
+    "id": "saia",
+    "hangul": "치마",
+    "romanizacao": "chima",
+    "pt": "saia",
+    "modulo": "roupa",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 16,
+    "confundiveis": [
+      "calca",
+      "camiseta"
+    ],
+    "exemplo": {
+      "ko": "인터넷으로 치마를 주문했어요.",
+      "pt": "Encomendei uma saia pela internet."
+    },
+    "baralho": false
+  },
+  {
+    "id": "encomendar",
+    "hangul": "주문하다",
+    "romanizacao": "jumunhada",
+    "pt": "encomendar, fazer pedido",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 16,
+    "sino": {
+      "주": "注",
+      "문": "文"
+    },
+    "exemplo": {
+      "ko": "인터넷으로 치마를 주문했어요.",
+      "pt": "Encomendei uma saia pela internet."
+    },
+    "baralho": false
+  },
+  {
+    "id": "fracasso",
+    "hangul": "실패",
+    "romanizacao": "silpae",
+    "pt": "fracasso",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 16,
+    "sino": {
+      "실": "失",
+      "패": "敗"
+    },
+    "par": "sucesso",
+    "exemplo": {
+      "ko": "이번에도 실패예요.",
+      "pt": "Desta vez também foi fracasso."
+    },
+    "baralho": false
+  },
+  {
+    "id": "compras",
+    "hangul": "쇼핑",
+    "romanizacao": "syoping",
+    "pt": "compras",
+    "modulo": "lazer",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 16,
+    "confundiveis": [
+      "viagem",
+      "passeio"
+    ],
+    "exemplo": {
+      "ko": "인터넷 쇼핑은 너무 어려워요.",
+      "pt": "Comprar pela internet é difícil demais."
+    },
+    "baralho": false
+  },
+  {
+    "id": "dificil",
+    "hangul": "어렵다",
+    "romanizacao": "eoryeopda",
+    "pt": "ser difícil",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 16,
+    "par": "facil",
+    "exemplo": {
+      "ko": "인터넷 쇼핑은 너무 어려워요.",
+      "pt": "Comprar pela internet é difícil demais."
+    },
+    "baralho": false
+  },
+  {
+    "id": "sucesso",
+    "hangul": "성공",
+    "romanizacao": "seonggong",
+    "pt": "sucesso",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 16,
+    "sino": {
+      "성": "成",
+      "공": "功"
+    },
+    "par": "fracasso",
+    "exemplo": {
+      "ko": "언제 성공할까요?",
+      "pt": "Quando será que eu acerto?"
+    },
+    "baralho": false
+  },
+  {
+    "id": "proximo",
+    "hangul": "다음",
+    "romanizacao": "daeum",
+    "pt": "o próximo, a seguir",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "ritmo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 16,
+    "confundiveis": [
+      "primeira_vez",
+      "depois"
+    ],
+    "exemplo": {
+      "ko": "다음에는 모자를 주문할 거예요.",
+      "pt": "Da próxima vez vou encomendar um chapéu."
+    },
+    "baralho": false
+  },
+  {
+    "id": "compromisso",
+    "hangul": "약속",
+    "romanizacao": "yaksok",
+    "pt": "compromisso, promessa",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 16,
+    "sino": {
+      "약": "約",
+      "속": "束"
+    },
+    "exemplo": {
+      "ko": "친구와 약속이 있는데 늦었어요.",
+      "pt": "Eu tinha compromisso com um amigo e estava atrasado."
+    },
+    "nota": "約束 — “amarrar o combinado”. O mesmo 약 (約) está em 예약 (reserva).",
+    "baralho": false
+  },
+  {
+    "id": "atrasado",
+    "hangul": "늦다",
+    "romanizacao": "neutda",
+    "pt": "estar atrasado",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 16,
+    "confundiveis": [
+      "lento",
+      "dificil"
+    ],
+    "exemplo": {
+      "ko": "친구와 약속이 있는데 늦었어요.",
+      "pt": "Eu tinha compromisso com um amigo e estava atrasado."
+    },
+    "baralho": false
+  },
+  {
+    "id": "moto",
+    "hangul": "오토바이",
+    "romanizacao": "otobai",
+    "pt": "moto",
+    "modulo": "transporte",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 16,
+    "confundiveis": [
+      "carro",
+      "bicicleta"
+    ],
+    "exemplo": {
+      "ko": "그런데 오토바이가 갑자기 끼어들었어요.",
+      "pt": "Só que uma moto cortou na frente de repente."
+    },
+    "nota": "Do inglês auto-bi(cycle) pelo japonês — o coreano ficou com a metade que o inglês jogou fora.",
+    "baralho": false
+  },
+  {
+    "id": "acidente",
+    "hangul": "사고",
+    "romanizacao": "sago",
+    "pt": "acidente",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 16,
+    "sino": {
+      "사": "事",
+      "고": "故"
+    },
+    "exemplo": {
+      "ko": "그래서 사고가 났어요.",
+      "pt": "E aí deu acidente."
+    },
+    "baralho": false
+  },
+  {
+    "id": "policia",
+    "hangul": "경찰",
+    "romanizacao": "gyeongchal",
+    "pt": "polícia",
+    "modulo": "pessoas",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 16,
+    "sino": {
+      "경": "警",
+      "찰": "察"
+    },
+    "confundiveis": [
+      "medico",
+      "professor"
+    ],
+    "exemplo": {
+      "ko": "경찰이 왔어요.",
+      "pt": "A polícia veio."
+    },
+    "baralho": false
+  },
+  {
+    "id": "mensagem_texto",
+    "hangul": "문자",
+    "romanizacao": "munja",
+    "pt": "mensagem de texto",
+    "modulo": "tecnologia",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 16,
+    "sino": {
+      "문": "文",
+      "자": "字"
+    },
+    "exemplo": {
+      "ko": "친구한테 문자를 보냈어요.",
+      "pt": "Mandei mensagem para o meu amigo."
+    },
+    "nota": "文字 é literalmente “caractere escrito”; virou o nome do SMS.",
+    "baralho": false
+  },
+  {
+    "id": "enviar",
+    "hangul": "보내다",
+    "romanizacao": "bonaeda",
+    "pt": "enviar, passar (tempo)",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 16,
+    "confundiveis": [
+      "receber",
+      "dar"
+    ],
+    "exemplo": {
+      "ko": "친구한테 문자를 보냈어요.",
+      "pt": "Mandei mensagem para o meu amigo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "cintura",
+    "hangul": "허리",
+    "romanizacao": "heori",
+    "pt": "cintura, lombar",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 16,
+    "confundiveis": [
+      "ombro",
+      "barriga"
+    ],
+    "exemplo": {
+      "ko": "허리를 조금 다친 것 같아요.",
+      "pt": "Acho que machuquei um pouco a lombar."
+    },
+    "baralho": false
+  },
+  {
+    "id": "um_pouco",
+    "hangul": "조금",
+    "romanizacao": "jogeum",
+    "pt": "um pouco",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "funcao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 16,
+    "confundiveis": [
+      "muito",
+      "tudo"
+    ],
+    "exemplo": {
+      "ko": "허리를 조금 다친 것 같아요.",
+      "pt": "Acho que machuquei um pouco a lombar."
+    },
+    "baralho": false
+  },
+  {
+    "id": "cantor",
+    "hangul": "가수",
+    "romanizacao": "gasu",
+    "pt": "cantor",
+    "modulo": "pessoas",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 17,
+    "sino": {
+      "가": "歌",
+      "수": "手"
+    },
+    "confundiveis": [
+      "celebridade",
+      "professor"
+    ],
+    "exemplo": {
+      "ko": "요즘 한국 가수들이 인기가 많아요.",
+      "pt": "Os cantores coreanos andam muito populares."
+    },
+    "nota": "歌手 — “mão do canto”. O mesmo 수 (手) está em 세수 e 수건.",
+    "baralho": false
+  },
+  {
+    "id": "popularidade",
+    "hangul": "인기",
+    "romanizacao": "ingi",
+    "pt": "popularidade",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 17,
+    "sino": {
+      "인": "人",
+      "기": "氣"
+    },
+    "exemplo": {
+      "ko": "요즘 한국 가수들이 인기가 많아요.",
+      "pt": "Os cantores coreanos andam muito populares."
+    },
+    "baralho": false
+  },
+  {
+    "id": "pais",
+    "hangul": "나라",
+    "romanizacao": "nara",
+    "pt": "país",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 17,
+    "confundiveis": [
+      "cidade",
+      "mercado"
+    ],
+    "exemplo": {
+      "ko": "다른 나라 가수들보다 인기가 많아요.",
+      "pt": "Mais populares que os cantores de outros países."
+    },
+    "baralho": false
+  },
+  {
+    "id": "lingua_coreana",
+    "hangul": "한국어",
+    "romanizacao": "hangugeo",
+    "pt": "coreano (a língua)",
+    "modulo": "escola",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 17,
+    "sino": {
+      "한": "韓",
+      "국": "國",
+      "어": "語"
+    },
+    "confundiveis": [
+      "lingua_inglesa",
+      "palavra_vocabulo"
+    ],
+    "exemplo": {
+      "ko": "한국 노래를 듣기 위해서 한국어 공부가 필요해요.",
+      "pt": "Para ouvir canção coreana é preciso estudar coreano."
+    },
+    "nota": "韓國語 — “língua do país Han”. O mesmo 어 (語) está em 영어 e 단어.",
+    "baralho": false
+  },
+  {
+    "id": "necessario",
+    "hangul": "필요하다",
+    "romanizacao": "piryohada",
+    "pt": "ser necessário, precisar",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 17,
+    "sino": {
+      "필": "必",
+      "요": "要"
+    },
+    "exemplo": {
+      "ko": "한국 노래를 듣기 위해서 한국어 공부가 필요해요.",
+      "pt": "Para ouvir canção coreana é preciso estudar coreano."
+    },
+    "baralho": false
+  },
+  {
+    "id": "palavra_vocabulo",
+    "hangul": "단어",
+    "romanizacao": "daneo",
+    "pt": "palavra, vocábulo",
+    "modulo": "escola",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 17,
+    "sino": {
+      "단": "單",
+      "어": "語"
+    },
+    "confundiveis": [
+      "lingua_coreana",
+      "lingua_inglesa"
+    ],
+    "exemplo": {
+      "ko": "단어 발음을 귀 기울여 들어요.",
+      "pt": "Presto atenção na pronúncia das palavras."
+    },
+    "baralho": false
+  },
+  {
+    "id": "orelha",
+    "hangul": "귀",
+    "romanizacao": "gwi",
+    "pt": "orelha",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 17,
+    "confundiveis": [
+      "nariz",
+      "boca",
+      "olho"
+    ],
+    "exemplo": {
+      "ko": "단어 발음을 귀 기울여 들어요.",
+      "pt": "Presto atenção na pronúncia das palavras."
+    },
+    "baralho": false
+  },
+  {
+    "id": "mapa_papel",
+    "hangul": "지도",
+    "romanizacao": "jido",
+    "pt": "mapa",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 17,
+    "sino": {
+      "지": "地",
+      "도": "圖"
+    },
+    "confundiveis": [
+      "calendario",
+      "jornal"
+    ],
+    "exemplo": {
+      "ko": "지도에서 한국을 찾아 봐요.",
+      "pt": "Procuro a Coreia no mapa."
+    },
+    "nota": "地圖 — “desenho da terra”. O mesmo 지 (地) está em 지하철 e 지구.",
+    "baralho": false
+  },
+  {
+    "id": "endereco",
+    "hangul": "주소",
+    "romanizacao": "juso",
+    "pt": "endereço",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 17,
+    "sino": {
+      "주": "住",
+      "소": "所"
+    },
+    "exemplo": {
+      "ko": "제가 좋아하는 가수 회사 주소가 궁금해요.",
+      "pt": "Fiquei curioso para saber o endereço da empresa do cantor de que eu gosto."
+    },
+    "baralho": false
+  },
+  {
+    "id": "curioso_saber",
+    "hangul": "궁금하다",
+    "romanizacao": "gunggeumhada",
+    "pt": "estar curioso, querer saber",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 17,
+    "confundiveis": [
+      "curioso_fascinante",
+      "necessario"
+    ],
+    "exemplo": {
+      "ko": "제가 좋아하는 가수 회사 주소가 궁금해요.",
+      "pt": "Fiquei curioso para saber o endereço da empresa do cantor de que eu gosto."
+    },
+    "baralho": false
+  },
+  {
+    "id": "resfriado",
+    "hangul": "감기",
+    "romanizacao": "gamgi",
+    "pt": "resfriado, gripe",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 17,
+    "sino": {
+      "감": "感",
+      "기": "氣"
+    },
+    "exemplo": {
+      "ko": "그래서 감기에 걸렸어요.",
+      "pt": "E aí peguei um resfriado."
+    },
+    "nota": "感氣 — “pegar o ar”. O mesmo 감 (感) está em 감사 e 감정 (emoção).",
+    "baralho": false
+  },
+  {
+    "id": "nariz",
+    "hangul": "코",
+    "romanizacao": "ko",
+    "pt": "nariz",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 17,
+    "confundiveis": [
+      "orelha",
+      "boca",
+      "olho"
+    ],
+    "exemplo": {
+      "ko": "코에서 콧물이 나왔어요.",
+      "pt": "Saiu ranho do nariz."
+    },
+    "baralho": false
+  },
+  {
+    "id": "sair_aparecer",
+    "hangul": "나오다",
+    "romanizacao": "naoda",
+    "pt": "sair, vir para fora",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 17,
+    "confundiveis": [
+      "entrar",
+      "sair_de_dentro"
+    ],
+    "exemplo": {
+      "ko": "코에서 콧물이 나왔어요.",
+      "pt": "Saiu ranho do nariz."
+    },
+    "baralho": false
+  },
+  {
+    "id": "farmacia",
+    "hangul": "약국",
+    "romanizacao": "yakguk",
+    "pt": "farmácia",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 17,
+    "sino": {
+      "약": "藥",
+      "국": "局"
+    },
+    "confundiveis": [
+      "hospital",
+      "loja"
+    ],
+    "exemplo": {
+      "ko": "약국에 가서 약을 샀어요.",
+      "pt": "Fui à farmácia e comprei remédio."
+    },
+    "baralho": false
+  },
+  {
+    "id": "remedio",
+    "hangul": "약",
+    "romanizacao": "yak",
+    "pt": "remédio",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 17,
+    "sino": {
+      "약": "藥"
+    },
+    "confundiveis": [
+      "agua",
+      "faca"
+    ],
+    "exemplo": {
+      "ko": "약을 먹다",
+      "pt": "tomar remédio"
+    },
+    "baralho": false
+  },
+  {
+    "id": "saude",
+    "hangul": "건강",
+    "romanizacao": "geongang",
+    "pt": "saúde",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 17,
+    "sino": {
+      "건": "健",
+      "강": "康"
+    },
+    "exemplo": {
+      "ko": "건강은 정말 중요한 것 같아요.",
+      "pt": "Acho que saúde é muito importante mesmo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "banana",
+    "hangul": "바나나",
+    "romanizacao": "banana",
+    "pt": "banana",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 18,
+    "confundiveis": [
+      "morango",
+      "maca"
+    ],
+    "exemplo": {
+      "ko": "오늘 아침에는 사과랑 바나나랑 감자를 먹었어요.",
+      "pt": "Hoje de manhã comi maçã, banana e batata."
+    },
+    "baralho": false
+  },
+  {
+    "id": "pepino",
+    "hangul": "오이",
+    "romanizacao": "oi",
+    "pt": "pepino",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 18,
+    "confundiveis": [
+      "tomate",
+      "cenoura"
+    ],
+    "exemplo": {
+      "ko": "점심에는 오이랑 토마토를 먹었어요.",
+      "pt": "No almoço comi pepino e tomate."
+    },
+    "baralho": false
+  },
+  {
+    "id": "tomate",
+    "hangul": "토마토",
+    "romanizacao": "tomato",
+    "pt": "tomate",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 18,
+    "confundiveis": [
+      "pepino",
+      "batata"
+    ],
+    "exemplo": {
+      "ko": "점심에는 오이랑 토마토를 먹었어요.",
+      "pt": "No almoço comi pepino e tomate."
+    },
+    "baralho": false
+  },
+  {
+    "id": "barriga",
+    "hangul": "배",
+    "romanizacao": "bae",
+    "pt": "barriga",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 18,
+    "confundiveis": [
+      "cintura",
+      "ombro"
+    ],
+    "exemplo": {
+      "ko": "저녁에는 너무 배가 고파서 마음이 약해졌어요.",
+      "pt": "À noite fiquei com tanta fome que fraquejei."
+    },
+    "nota": "A mesma grafia é barriga, pera e navio. Três palavras diferentes que o contexto separa.",
+    "baralho": false
+  },
+  {
+    "id": "coracao_mente",
+    "hangul": "마음",
+    "romanizacao": "maeum",
+    "pt": "coração, ânimo",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 18,
+    "confundiveis": [
+      "sensacao",
+      "sonho"
+    ],
+    "exemplo": {
+      "ko": "저녁에는 너무 배가 고파서 마음이 약해졌어요.",
+      "pt": "À noite fiquei com tanta fome que fraquejei."
+    },
+    "baralho": false
+  },
+  {
+    "id": "fraco",
+    "hangul": "약하다",
+    "romanizacao": "yakada",
+    "pt": "ser fraco",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 18,
+    "sino": {
+      "약": "弱"
+    },
+    "confundiveis": [
+      "lento",
+      "facil"
+    ],
+    "exemplo": {
+      "ko": "저녁에는 너무 배가 고파서 마음이 약해졌어요.",
+      "pt": "À noite fiquei com tanta fome que fraquejei."
+    },
+    "baralho": false
+  },
+  {
+    "id": "peso_corpo",
+    "hangul": "몸무게",
+    "romanizacao": "mommuge",
+    "pt": "peso (do corpo)",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 18,
+    "confundiveis": [
+      "altura_pessoa",
+      "idade"
+    ],
+    "exemplo": {
+      "ko": "몸무게가 늘었어요.",
+      "pt": "O peso aumentou."
+    },
+    "nota": "몸 (corpo) + 무게 (peso), de 무겁다. Nativa de ponta a ponta.",
+    "baralho": false
+  },
+  {
+    "id": "de_jeito_nenhum",
+    "hangul": "절대",
+    "romanizacao": "jeoldae",
+    "pt": "de jeito nenhum, jamais",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "funcao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 18,
+    "confundiveis": [
+      "nao_adv",
+      "tudo"
+    ],
+    "exemplo": {
+      "ko": "절대로 다시는 마음 약해지지 않을 거예요.",
+      "pt": "Nunca mais vou fraquejar."
+    },
+    "baralho": false
+  },
+  {
+    "id": "cair_no_chao",
+    "hangul": "넘어지다",
+    "romanizacao": "neomeojida",
+    "pt": "cair, tropeçar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 18,
+    "confundiveis": [
+      "deitar",
+      "descer"
+    ],
+    "exemplo": {
+      "ko": "어제 운동을 하다가 넘어졌어요.",
+      "pt": "Ontem caí enquanto me exercitava."
+    },
+    "baralho": false
+  },
+  {
+    "id": "machucar_se",
+    "hangul": "다치다",
+    "romanizacao": "dachida",
+    "pt": "machucar-se",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 18,
+    "confundiveis": [
+      "cair_no_chao",
+      "assustar_se"
+    ],
+    "exemplo": {
+      "ko": "손을 다쳤어요.",
+      "pt": "Machuquei a mão."
+    },
+    "baralho": false
+  },
+  {
+    "id": "hospital",
+    "hangul": "병원",
+    "romanizacao": "byeongwon",
+    "pt": "hospital",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 18,
+    "sino": {
+      "병": "病",
+      "원": "院"
+    },
+    "confundiveis": [
+      "farmacia",
+      "escola"
+    ],
+    "exemplo": {
+      "ko": "병원에 갔어요.",
+      "pt": "Fui ao hospital."
+    },
+    "nota": "病院 — “casa da doença”. O mesmo 원 (院) está em 학원 (cursinho).",
+    "baralho": false
+  },
+  {
+    "id": "medico",
+    "hangul": "의사",
+    "romanizacao": "uisa",
+    "pt": "médico",
+    "modulo": "pessoas",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 18,
+    "sino": {
+      "의": "醫",
+      "사": "師"
+    },
+    "confundiveis": [
+      "professor",
+      "policia"
+    ],
+    "exemplo": {
+      "ko": "의사 선생님에게 진료를 받았어요.",
+      "pt": "Fui atendido pelo médico."
+    },
+    "nota": "醫師 — “mestre da medicina”. O mesmo 사 (師) está em 선생님 e 요리사.",
+    "baralho": false
+  },
+  {
+    "id": "desconfortavel_dificil",
+    "hangul": "힘들다",
+    "romanizacao": "himdeulda",
+    "pt": "ser cansativo, ser duro",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 18,
+    "par": "confortavel",
+    "exemplo": {
+      "ko": "손을 다쳐서 밥 먹기가 너무 힘들어요.",
+      "pt": "Como machuquei a mão, comer está muito difícil."
+    },
+    "nota": "힘 (força) + 들다 (entrar): o que exige força de você.",
+    "baralho": false
+  },
+  {
+    "id": "bicicleta",
+    "hangul": "자전거",
+    "romanizacao": "jajeongeo",
+    "pt": "bicicleta",
+    "modulo": "transporte",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 19,
+    "sino": {
+      "자": "自",
+      "전": "轉",
+      "거": "車"
+    },
+    "confundiveis": [
+      "moto",
+      "carro"
+    ],
+    "exemplo": {
+      "ko": "학교에 자전거를 타고 다녀요.",
+      "pt": "Vou para a escola de bicicleta."
+    },
+    "nota": "自轉車 — “veículo que gira sozinho”. O mesmo 자 (自) está em 자동차.",
+    "baralho": false
+  },
+  {
+    "id": "frequentar",
+    "hangul": "다니다",
+    "romanizacao": "danida",
+    "pt": "frequentar, ir com regularidade",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 19,
+    "exemplo": {
+      "ko": "학교에 자전거를 타고 다녀요.",
+      "pt": "Vou para a escola de bicicleta."
+    },
+    "baralho": false
+  },
+  {
+    "id": "guarda_chuva",
+    "hangul": "우산",
+    "romanizacao": "usan",
+    "pt": "guarda-chuva",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 19,
+    "sino": {
+      "우": "雨",
+      "산": "傘"
+    },
+    "confundiveis": [
+      "chapeu",
+      "luva"
+    ],
+    "exemplo": {
+      "ko": "우산이 없었어요.",
+      "pt": "Eu não tinha guarda-chuva."
+    },
+    "baralho": false
+  },
+  {
+    "id": "sapato",
+    "hangul": "신발",
+    "romanizacao": "sinbal",
+    "pt": "sapato, calçado",
+    "modulo": "roupa",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 19,
+    "confundiveis": [
+      "meia",
+      "luva"
+    ],
+    "exemplo": {
+      "ko": "신발도 젖었어요.",
+      "pt": "O sapato também molhou."
+    },
+    "baralho": false
+  },
+  {
+    "id": "tirar_roupa",
+    "hangul": "벗다",
+    "romanizacao": "beotda",
+    "pt": "tirar (roupa, sapato)",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 19,
+    "par": "vestir",
+    "exemplo": {
+      "ko": "집에 오자마자 신발을 벗었어요.",
+      "pt": "Assim que cheguei em casa, tirei o sapato."
+    },
+    "baralho": false
+  },
+  {
+    "id": "banho",
+    "hangul": "목욕",
+    "romanizacao": "mogyok",
+    "pt": "banho (de banheira)",
+    "modulo": "higiene",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 19,
+    "sino": {
+      "목": "沐",
+      "욕": "浴"
+    },
+    "confundiveis": [
+      "lavar_rosto",
+      "natacao"
+    ],
+    "exemplo": {
+      "ko": "그래서 목욕을 했어요.",
+      "pt": "E aí tomei um banho de banheira."
+    },
+    "baralho": false
+  },
+  {
+    "id": "irmao_de_mulher",
+    "hangul": "오빠",
+    "romanizacao": "oppa",
+    "pt": "irmão mais velho (de uma mulher)",
+    "modulo": "pessoas",
+    "classe": "substantivo",
+    "campo": "familia",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 19,
+    "confundiveis": [
+      "irma_de_mulher",
+      "irmao_mais_velho_de_homem"
+    ],
+    "exemplo": {
+      "ko": "오빠가 가끔 거짓말을 해요.",
+      "pt": "Meu irmão mais velho às vezes conta mentira."
+    },
+    "nota": "Mulher diz 오빠, homem diz 형 — outra vez a boca de quem fala decide o nome.",
+    "baralho": false
+  },
+  {
+    "id": "as_vezes",
+    "hangul": "가끔",
+    "romanizacao": "gakkeum",
+    "pt": "às vezes",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "ritmo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 19,
+    "confundiveis": [
+      "com_frequencia",
+      "todo_dia"
+    ],
+    "exemplo": {
+      "ko": "오빠가 가끔 거짓말을 해요.",
+      "pt": "Meu irmão mais velho às vezes conta mentira."
+    },
+    "baralho": false
+  },
+  {
+    "id": "mentira",
+    "hangul": "거짓말",
+    "romanizacao": "geojinmal",
+    "pt": "mentira",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 19,
+    "confundiveis": [
+      "segredo",
+      "engano"
+    ],
+    "exemplo": {
+      "ko": "오빠가 가끔 거짓말을 해요.",
+      "pt": "Meu irmão mais velho às vezes conta mentira."
+    },
+    "baralho": false
+  },
+  {
+    "id": "irritacao",
+    "hangul": "짜증",
+    "romanizacao": "jjajeung",
+    "pt": "irritação, saco cheio",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 19,
+    "confundiveis": [
+      "preocupacao",
+      "decepcao"
+    ],
+    "exemplo": {
+      "ko": "그래서 너무 짜증이 나요.",
+      "pt": "E isso me irrita demais."
+    },
+    "baralho": false
+  },
+  {
+    "id": "manha_periodo",
+    "hangul": "오전",
+    "romanizacao": "ojeon",
+    "pt": "manhã (antes do meio-dia)",
+    "modulo": "tempo",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 19,
+    "sino": {
+      "오": "午",
+      "전": "前"
+    },
+    "confundiveis": [
+      "tarde_periodo",
+      "manha"
+    ],
+    "exemplo": {
+      "ko": "오늘 오전에는 제 머리에 벌레가 있다고 했어요.",
+      "pt": "Hoje de manhã ele disse que tinha um bicho na minha cabeça."
+    },
+    "nota": "午前 — “antes do meio-dia”, o par exato de 오후 (午後).",
+    "baralho": false
+  },
+  {
+    "id": "inseto",
+    "hangul": "벌레",
+    "romanizacao": "beolle",
+    "pt": "inseto, bicho",
+    "modulo": "animais",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 19,
+    "confundiveis": [
+      "passaro",
+      "rato"
+    ],
+    "exemplo": {
+      "ko": "오늘 오전에는 제 머리에 벌레가 있다고 했어요.",
+      "pt": "Hoje de manhã ele disse que tinha um bicho na minha cabeça."
+    },
+    "baralho": false
+  },
+  {
+    "id": "assustar_se",
+    "hangul": "놀라다",
+    "romanizacao": "nollada",
+    "pt": "assustar-se, surpreender-se",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 19,
+    "exemplo": {
+      "ko": "정말 깜짝 놀랐어요.",
+      "pt": "Levei um susto de verdade."
+    },
+    "baralho": false
+  },
+  {
+    "id": "detestavel",
+    "hangul": "싫다",
+    "romanizacao": "silta",
+    "pt": "não gostar, ser detestável",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 19,
+    "confundiveis": [
+      "e_bom",
+      "divertido"
+    ],
+    "exemplo": {
+      "ko": "저는 벌레가 너무 싫어요.",
+      "pt": "Eu detesto inseto."
+    },
+    "baralho": false
+  },
+  {
+    "id": "mamae",
+    "hangul": "엄마",
+    "romanizacao": "eomma",
+    "pt": "mamãe",
+    "modulo": "pessoas",
+    "classe": "substantivo",
+    "campo": "familia",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 20,
+    "confundiveis": [
+      "papai",
+      "avo_materna"
+    ],
+    "exemplo": {
+      "ko": "저녁에 엄마랑 마트에 갔어요.",
+      "pt": "À noite fui ao supermercado com a mamãe."
+    },
+    "baralho": false
+  },
+  {
+    "id": "mercado_grande",
+    "hangul": "마트",
+    "romanizacao": "mateu",
+    "pt": "supermercado",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 20,
+    "confundiveis": [
+      "mercado",
+      "loja"
+    ],
+    "exemplo": {
+      "ko": "저녁에 엄마랑 마트에 갔어요.",
+      "pt": "À noite fui ao supermercado com a mamãe."
+    },
+    "baralho": false
+  },
+  {
+    "id": "carne",
+    "hangul": "고기",
+    "romanizacao": "gogi",
+    "pt": "carne",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 20,
+    "confundiveis": [
+      "peixe_comida",
+      "verdura"
+    ],
+    "exemplo": {
+      "ko": "엄마는 고기를 샀어요.",
+      "pt": "Ela comprou carne."
+    },
+    "baralho": false
+  },
+  {
+    "id": "peixe_comida",
+    "hangul": "생선",
+    "romanizacao": "saengseon",
+    "pt": "peixe (para comer)",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 20,
+    "sino": {
+      "생": "生",
+      "선": "鮮"
+    },
+    "confundiveis": [
+      "carne",
+      "verdura"
+    ],
+    "exemplo": {
+      "ko": "그리고 생선이랑 채소도 샀어요.",
+      "pt": "E compramos peixe e verdura também."
+    },
+    "nota": "生鮮 — “fresco e vivo”. É o peixe do prato; o do rio é 물고기.",
+    "baralho": false
+  },
+  {
+    "id": "verdura",
+    "hangul": "채소",
+    "romanizacao": "chaeso",
+    "pt": "verdura, legume",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 20,
+    "sino": {
+      "채": "菜",
+      "소": "蔬"
+    },
+    "confundiveis": [
+      "fruta",
+      "carne"
+    ],
+    "exemplo": {
+      "ko": "그리고 생선이랑 채소도 샀어요.",
+      "pt": "E compramos peixe e verdura também."
+    },
+    "baralho": false
+  },
+  {
+    "id": "falar",
+    "hangul": "말하다",
+    "romanizacao": "malhada",
+    "pt": "falar, dizer",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 20,
+    "confundiveis": [
+      "chamar",
+      "ouvir"
+    ],
+    "exemplo": {
+      "ko": "천천히 말하다",
+      "pt": "falar devagar"
+    },
+    "baralho": false
+  },
+  {
+    "id": "ovo_de_galinha",
+    "hangul": "달걀",
+    "romanizacao": "dalgyal",
+    "pt": "ovo",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "campo": "alimento",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 20,
+    "confundiveis": [
+      "ovo",
+      "batata"
+    ],
+    "exemplo": {
+      "ko": "그리고 달걀도 샀어요.",
+      "pt": "E compramos ovo também."
+    },
+    "nota": "닭 (galinha) + 알 (ovo), gasto pelo uso. 계란 (鷄卵) é a mesma coisa em sino-coreano.",
+    "baralho": false
+  },
+  {
+    "id": "avo_paterno",
+    "hangul": "할아버지",
+    "romanizacao": "harabeoji",
+    "pt": "avô",
+    "modulo": "pessoas",
+    "classe": "substantivo",
+    "campo": "familia",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 20,
+    "confundiveis": [
+      "avo_materna",
+      "papai"
+    ],
+    "exemplo": {
+      "ko": "저희 할아버지는 매일 산에 올라가요.",
+      "pt": "Meu avô sobe a montanha todo dia."
+    },
+    "baralho": false
+  },
+  {
+    "id": "subir",
+    "hangul": "올라가다",
+    "romanizacao": "ollagada",
+    "pt": "subir",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 20,
+    "par": "descer",
+    "exemplo": {
+      "ko": "저희 할아버지는 매일 산에 올라가요.",
+      "pt": "Meu avô sobe a montanha todo dia."
+    },
+    "baralho": false
+  },
+  {
+    "id": "acreditar",
+    "hangul": "믿다",
+    "romanizacao": "mitda",
+    "pt": "acreditar, confiar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 20,
+    "confundiveis": [
+      "saber",
+      "pensar_v"
+    ],
+    "exemplo": {
+      "ko": "매일 산에 올라가면 건강해진다고 믿어요.",
+      "pt": "Ele acredita que subir a montanha todo dia deixa a gente saudável."
+    },
+    "baralho": false
+  },
+  {
+    "id": "cheiro",
+    "hangul": "냄새",
+    "romanizacao": "naemsae",
+    "pt": "cheiro",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 20,
+    "confundiveis": [
+      "gosto_sabor",
+      "sensacao"
+    ],
+    "exemplo": {
+      "ko": "저는 나무 냄새를 좋아해요.",
+      "pt": "Eu gosto do cheiro das árvores."
+    },
+    "baralho": false
+  },
+  {
+    "id": "corpo_humano",
+    "hangul": "몸",
+    "romanizacao": "mom",
+    "pt": "corpo",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 20,
+    "confundiveis": [
+      "cabeca",
+      "barriga"
+    ],
+    "exemplo": {
+      "ko": "몸을 많이 움직이는 것도 좋아해요.",
+      "pt": "E gosto de mexer bastante o corpo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "mover_se",
+    "hangul": "움직이다",
+    "romanizacao": "umjigida",
+    "pt": "mover-se, mexer",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 20,
+    "confundiveis": [
+      "subir",
+      "descer"
+    ],
+    "exemplo": {
+      "ko": "몸을 많이 움직이는 것도 좋아해요.",
+      "pt": "E gosto de mexer bastante o corpo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "aeroporto",
+    "hangul": "공항",
+    "romanizacao": "gonghang",
+    "pt": "aeroporto",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 21,
+    "sino": {
+      "공": "空",
+      "항": "港"
+    },
+    "confundiveis": [
+      "estacao",
+      "hotel"
+    ],
+    "exemplo": {
+      "ko": "공항이 너무 넓어서 길을 잃어버렸어요.",
+      "pt": "O aeroporto é tão grande que eu me perdi."
+    },
+    "nota": "空港 — “porto do ar”. O mesmo 공 (空) está em 공책 (livro vazio).",
+    "baralho": false
+  },
+  {
+    "id": "espacoso",
+    "hangul": "넓다",
+    "romanizacao": "neolda",
+    "pt": "ser espaçoso, ser largo",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 21,
+    "par": "estreito",
+    "exemplo": {
+      "ko": "공항이 너무 넓어서 길을 잃어버렸어요.",
+      "pt": "O aeroporto é tão grande que eu me perdi."
+    },
+    "baralho": false
+  },
+  {
+    "id": "rua_caminho",
+    "hangul": "길",
+    "romanizacao": "gil",
+    "pt": "rua, caminho",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 21,
+    "confundiveis": [
+      "pais",
+      "estacao"
+    ],
+    "exemplo": {
+      "ko": "공항이 너무 넓어서 길을 잃어버렸어요.",
+      "pt": "O aeroporto é tão grande que eu me perdi."
+    },
+    "baralho": false
+  },
+  {
+    "id": "perder_objeto",
+    "hangul": "잃어버리다",
+    "romanizacao": "ireobeorida",
+    "pt": "perder (algo)",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 21,
+    "confundiveis": [
+      "esquecer",
+      "procurar"
+    ],
+    "exemplo": {
+      "ko": "공항이 너무 넓어서 길을 잃어버렸어요.",
+      "pt": "O aeroporto é tão grande que eu me perdi."
+    },
+    "baralho": false
+  },
+  {
+    "id": "aqui",
+    "hangul": "여기",
+    "romanizacao": "yeogi",
+    "pt": "aqui",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "posicao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 21,
+    "confundiveis": [
+      "ali",
+      "onde"
+    ],
+    "exemplo": {
+      "ko": "여기가 어디인지 모르겠어요.",
+      "pt": "Não sei onde é aqui."
+    },
+    "baralho": false
+  },
+  {
+    "id": "livraria",
+    "hangul": "서점",
+    "romanizacao": "seojeom",
+    "pt": "livraria",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 21,
+    "sino": {
+      "서": "書",
+      "점": "店"
+    },
+    "confundiveis": [
+      "loja",
+      "farmacia"
+    ],
+    "exemplo": {
+      "ko": "서점에 들어갔어요.",
+      "pt": "Entrei numa livraria."
+    },
+    "nota": "書店 — “loja de livros”. O mesmo 점 (店) está em 편의점.",
+    "baralho": false
+  },
+  {
+    "id": "entrar",
+    "hangul": "들어가다",
+    "romanizacao": "deureogada",
+    "pt": "entrar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 21,
+    "par": "sair_de_dentro",
+    "exemplo": {
+      "ko": "서점에 들어갔어요.",
+      "pt": "Entrei numa livraria."
+    },
+    "baralho": false
+  },
+  {
+    "id": "perguntar",
+    "hangul": "물어보다",
+    "romanizacao": "mureoboda",
+    "pt": "perguntar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 21,
+    "confundiveis": [
+      "falar",
+      "chamar"
+    ],
+    "exemplo": {
+      "ko": "길을 물어봤어요.",
+      "pt": "Perguntei o caminho."
+    },
+    "baralho": false
+  },
+  {
+    "id": "universidade",
+    "hangul": "대학교",
+    "romanizacao": "daehakgyo",
+    "pt": "universidade",
+    "modulo": "escola",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 21,
+    "sino": {
+      "대": "大",
+      "학": "學",
+      "교": "校"
+    },
+    "confundiveis": [
+      "escola",
+      "sala_de_aula"
+    ],
+    "exemplo": {
+      "ko": "저희 대학교는 신촌 역에서 아주 가까워요.",
+      "pt": "Minha universidade é bem perto da estação Sinchon."
+    },
+    "nota": "大學校 — “a escola grande”. Os mesmos 학교 de sempre, com 大 na frente.",
+    "baralho": false
+  },
+  {
+    "id": "estacao",
+    "hangul": "역",
+    "romanizacao": "yeok",
+    "pt": "estação (de trem, metrô)",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 21,
+    "sino": {
+      "역": "驛"
+    },
+    "confundiveis": [
+      "aeroporto",
+      "banco_dinheiro"
+    ],
+    "exemplo": {
+      "ko": "저희 대학교는 신촌 역에서 아주 가까워요.",
+      "pt": "Minha universidade é bem perto da estação Sinchon."
+    },
+    "baralho": false
+  },
+  {
+    "id": "perto",
+    "hangul": "가깝다",
+    "romanizacao": "gakkapda",
+    "pt": "ser perto",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 21,
+    "par": "longe",
+    "exemplo": {
+      "ko": "저희 대학교는 신촌 역에서 아주 가까워요.",
+      "pt": "Minha universidade é bem perto da estação Sinchon."
+    },
+    "baralho": false
+  },
+  {
+    "id": "direita",
+    "hangul": "오른쪽",
+    "romanizacao": "oreunjjok",
+    "pt": "lado direito",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "posicao",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 21,
+    "par": "esquerda",
+    "exemplo": {
+      "ko": "오른쪽에 은행이 있고, 왼쪽에 편의점이 있어요.",
+      "pt": "À direita tem um banco e à esquerda uma loja de conveniência."
+    },
+    "baralho": false
+  },
+  {
+    "id": "banco_dinheiro",
+    "hangul": "은행",
+    "romanizacao": "eunhaeng",
+    "pt": "banco",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 21,
+    "sino": {
+      "은": "銀",
+      "행": "行"
+    },
+    "confundiveis": [
+      "loja_conveniencia",
+      "estacao"
+    ],
+    "exemplo": {
+      "ko": "오른쪽에 은행이 있고, 왼쪽에 편의점이 있어요.",
+      "pt": "À direita tem um banco e à esquerda uma loja de conveniência."
+    },
+    "nota": "銀行 — “a casa da prata”. O mesmo 행 (行) está em 여행 e 비행기.",
+    "baralho": false
+  },
+  {
+    "id": "esquerda",
+    "hangul": "왼쪽",
+    "romanizacao": "oenjjok",
+    "pt": "lado esquerdo",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "posicao",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 21,
+    "par": "direita",
+    "exemplo": {
+      "ko": "오른쪽에 은행이 있고, 왼쪽에 편의점이 있어요.",
+      "pt": "À direita tem um banco e à esquerda uma loja de conveniência."
+    },
+    "baralho": false
+  },
+  {
+    "id": "loja_conveniencia",
+    "hangul": "편의점",
+    "romanizacao": "pyeonuijeom",
+    "pt": "loja de conveniência",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 21,
+    "sino": {
+      "편": "便",
+      "의": "宜",
+      "점": "店"
+    },
+    "confundiveis": [
+      "mercado_grande",
+      "banco_dinheiro"
+    ],
+    "exemplo": {
+      "ko": "오른쪽에 은행이 있고, 왼쪽에 편의점이 있어요.",
+      "pt": "À direita tem um banco e à esquerda uma loja de conveniência."
+    },
+    "baralho": false
+  },
+  {
+    "id": "frente",
+    "hangul": "앞",
+    "romanizacao": "ap",
+    "pt": "frente, na frente de",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "posicao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 21,
+    "par": "atras",
+    "exemplo": {
+      "ko": "앞으로 걸어가요.",
+      "pt": "Siga andando em frente."
+    },
+    "baralho": false
+  },
+  {
+    "id": "atravessar",
+    "hangul": "건너다",
+    "romanizacao": "geonneoda",
+    "pt": "atravessar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 21,
+    "confundiveis": [
+      "entrar",
+      "subir"
+    ],
+    "exemplo": {
+      "ko": "길을 건너요.",
+      "pt": "Atravesse a rua."
+    },
+    "baralho": false
+  },
+  {
+    "id": "de_novo",
+    "hangul": "다시",
+    "romanizacao": "dasi",
+    "pt": "de novo",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "ritmo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 21,
+    "confundiveis": [
+      "outra_vez",
+      "proximo"
+    ],
+    "exemplo": {
+      "ko": "다시 앞으로 걸어가요.",
+      "pt": "Ande em frente de novo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "cor_palavra",
+    "hangul": "색깔",
+    "romanizacao": "saekkkal",
+    "pt": "cor",
+    "modulo": "cores",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 22,
+    "confundiveis": [
+      "cor_vermelho",
+      "cor_preto"
+    ],
+    "exemplo": {
+      "ko": "제가 좋아하는 색깔은 검은색이에요.",
+      "pt": "A cor de que eu gosto é preto."
+    },
+    "baralho": false
+  },
+  {
+    "id": "carteira_dinheiro",
+    "hangul": "지갑",
+    "romanizacao": "jigap",
+    "pt": "carteira",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 22,
+    "sino": {
+      "지": "紙",
+      "갑": "匣"
+    },
+    "confundiveis": [
+      "bolsa",
+      "caixa"
+    ],
+    "exemplo": {
+      "ko": "검은색 지갑, 검은색 자동차, 검은색 가방 등등 검은색 물건이 많아요.",
+      "pt": "Carteira preta, automóvel preto, bolsa preta — tenho muita coisa preta."
+    },
+    "baralho": false
+  },
+  {
+    "id": "automovel",
+    "hangul": "자동차",
+    "romanizacao": "jadongcha",
+    "pt": "automóvel",
+    "modulo": "transporte",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 22,
+    "sino": {
+      "자": "自",
+      "동": "動",
+      "차": "車"
+    },
+    "confundiveis": [
+      "moto",
+      "bicicleta"
+    ],
+    "exemplo": {
+      "ko": "검은색 지갑, 검은색 자동차, 검은색 가방 등등 검은색 물건이 많아요.",
+      "pt": "Carteira preta, automóvel preto, bolsa preta — tenho muita coisa preta."
+    },
+    "nota": "自動車 — “veículo que se move sozinho”. O mesmo 동 (動) está em 동물.",
+    "baralho": false
+  },
+  {
+    "id": "nao_saber",
+    "hangul": "모르다",
+    "romanizacao": "moreuda",
+    "pt": "não saber",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 22,
+    "par": "saber",
+    "exemplo": {
+      "ko": "여기가 어디인지 모르겠어요.",
+      "pt": "Não sei onde é aqui."
+    },
+    "baralho": false
+  },
+  {
+    "id": "irmao_mais_velho_de_homem",
+    "hangul": "형",
+    "romanizacao": "hyeong",
+    "pt": "irmão mais velho (de um homem)",
+    "modulo": "pessoas",
+    "classe": "substantivo",
+    "campo": "familia",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 22,
+    "sino": {
+      "형": "兄"
+    },
+    "confundiveis": [
+      "irmao_de_mulher",
+      "irma_de_homem"
+    ],
+    "exemplo": {
+      "ko": "그런데 저희 형은 하얀색을 좋아해요.",
+      "pt": "Já o meu irmão mais velho gosta de branco."
+    },
+    "baralho": false
+  },
+  {
+    "id": "diferente",
+    "hangul": "다르다",
+    "romanizacao": "dareuda",
+    "pt": "ser diferente",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 22,
+    "par": "parecido",
+    "confundiveis": [
+      "parecido",
+      "estranho"
+    ],
+    "exemplo": {
+      "ko": "저랑 저희 형은 성격이 많이 달라요.",
+      "pt": "Eu e ele temos personalidades bem diferentes."
+    },
+    "baralho": false
+  },
+  {
+    "id": "bondoso",
+    "hangul": "착하다",
+    "romanizacao": "chakada",
+    "pt": "ser bondoso",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 22,
+    "confundiveis": [
+      "bonito",
+      "fofo"
+    ],
+    "exemplo": {
+      "ko": "제 친구는 정말 착해요.",
+      "pt": "Meu amigo é muito bondoso."
+    },
+    "baralho": false
+  },
+  {
+    "id": "lapis",
+    "hangul": "연필",
+    "romanizacao": "yeonpil",
+    "pt": "lápis",
+    "modulo": "escola",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 22,
+    "sino": {
+      "연": "鉛",
+      "필": "筆"
+    },
+    "confundiveis": [
+      "caneta",
+      "caderno"
+    ],
+    "exemplo": {
+      "ko": "제가 연필을 빌려주면 항상 잃어버려요.",
+      "pt": "Quando eu empresto um lápis, ele sempre perde."
+    },
+    "nota": "鉛筆 — “pincel de chumbo”. O mesmo 필 (筆) está em 필통 (estojo).",
+    "baralho": false
+  },
+  {
+    "id": "emprestar_dar",
+    "hangul": "빌려주다",
+    "romanizacao": "billyeojuda",
+    "pt": "emprestar (a alguém)",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 22,
+    "confundiveis": [
+      "pegar_emprestado",
+      "dar"
+    ],
+    "exemplo": {
+      "ko": "제가 연필을 빌려주면 항상 잃어버려요.",
+      "pt": "Quando eu empresto um lápis, ele sempre perde."
+    },
+    "baralho": false
+  },
+  {
+    "id": "caneta_pen",
+    "hangul": "펜",
+    "romanizacao": "pen",
+    "pt": "caneta",
+    "modulo": "escola",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 22,
+    "confundiveis": [
+      "lapis",
+      "caderno"
+    ],
+    "exemplo": {
+      "ko": "어제는 펜을 빌려줬어요.",
+      "pt": "Ontem emprestei uma caneta."
+    },
+    "baralho": false
+  },
+  {
+    "id": "outra_vez",
+    "hangul": "또",
+    "romanizacao": "tto",
+    "pt": "de novo, mais uma vez",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "ritmo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 22,
+    "confundiveis": [
+      "de_novo",
+      "as_vezes"
+    ],
+    "exemplo": {
+      "ko": "또 잃어버렸어요.",
+      "pt": "Perdeu de novo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "motivo",
+    "hangul": "이유",
+    "romanizacao": "iyu",
+    "pt": "motivo, razão",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 22,
+    "sino": {
+      "이": "理",
+      "유": "由"
+    },
+    "exemplo": {
+      "ko": "이유를 모르겠어요.",
+      "pt": "Não sei o motivo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "enlouquecer",
+    "hangul": "미치다",
+    "romanizacao": "michida",
+    "pt": "enlouquecer, pirar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 22,
+    "confundiveis": [
+      "assustar_se",
+      "ficar_bravo"
+    ],
+    "exemplo": {
+      "ko": "미치겠어요.",
+      "pt": "Vou enlouquecer."
+    },
+    "baralho": false
+  },
+  {
+    "id": "ruim",
+    "hangul": "나쁘다",
+    "romanizacao": "nappeuda",
+    "pt": "ser ruim",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 22,
+    "confundiveis": [
+      "e_bom",
+      "detestavel"
+    ],
+    "exemplo": {
+      "ko": "나쁜 아이는 아니에요.",
+      "pt": "Não é que ele seja ruim."
+    },
+    "baralho": false
+  },
+  {
+    "id": "casamento",
+    "hangul": "결혼",
+    "romanizacao": "gyeolhon",
+    "pt": "casamento",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 23,
+    "sino": {
+      "결": "結",
+      "혼": "婚"
+    },
+    "exemplo": {
+      "ko": "저는 결혼한 다음에 많이 달라졌어요.",
+      "pt": "Depois que casei, mudei bastante."
+    },
+    "baralho": false
+  },
+  {
+    "id": "planta",
+    "hangul": "식물",
+    "romanizacao": "singmul",
+    "pt": "planta",
+    "modulo": "natureza",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 23,
+    "sino": {
+      "식": "植",
+      "물": "物"
+    },
+    "confundiveis": [
+      "arvore",
+      "flor"
+    ],
+    "exemplo": {
+      "ko": "집에서 식물을 길러요.",
+      "pt": "Cultivo plantas em casa."
+    },
+    "nota": "植物 — “coisa que se planta”, o par exato de 動物 (animal).",
+    "baralho": false
+  },
+  {
+    "id": "cartao",
+    "hangul": "카드",
+    "romanizacao": "kadeu",
+    "pt": "cartão",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 23,
+    "confundiveis": [
+      "carteira_dinheiro",
+      "foto"
+    ],
+    "exemplo": {
+      "ko": "카드를 안 쓰고 현금을 쓰기로 정했어요.",
+      "pt": "Decidi não usar cartão e usar dinheiro vivo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "decidir",
+    "hangul": "정하다",
+    "romanizacao": "jeonghada",
+    "pt": "decidir, definir",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 23,
+    "sino": {
+      "정": "定"
+    },
+    "confundiveis": [
+      "escolher",
+      "preparar"
+    ],
+    "exemplo": {
+      "ko": "카드를 안 쓰고 현금을 쓰기로 정했어요.",
+      "pt": "Decidi não usar cartão e usar dinheiro vivo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "barato",
+    "hangul": "싸다",
+    "romanizacao": "ssada",
+    "pt": "ser barato",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 23,
+    "par": "caro",
+    "exemplo": {
+      "ko": "물건을 싸게 파는 시장에 가요.",
+      "pt": "Vou ao mercado que vende barato."
+    },
+    "baralho": false
+  },
+  {
+    "id": "ferver",
+    "hangul": "끓이다",
+    "romanizacao": "kkeurida",
+    "pt": "ferver, cozinhar em água",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 23,
+    "confundiveis": [
+      "picar",
+      "lavar"
+    ],
+    "exemplo": {
+      "ko": "국을 끓이고 밥을 해요.",
+      "pt": "Ferve a sopa e faço o arroz."
+    },
+    "baralho": false
+  },
+  {
+    "id": "doce",
+    "hangul": "달다",
+    "romanizacao": "dalda",
+    "pt": "ser doce",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "campo": "sabor",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 23,
+    "par": "amargo",
+    "exemplo": {
+      "ko": "어떤 음식은 너무 달아요.",
+      "pt": "Um prato ou outro fica doce demais."
+    },
+    "baralho": false
+  },
+  {
+    "id": "amargo",
+    "hangul": "쓰다",
+    "romanizacao": "sseuda",
+    "pt": "ser amargo",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "campo": "sabor",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 23,
+    "par": "doce",
+    "exemplo": {
+      "ko": "커피가 쓰다",
+      "pt": "o café é amargo"
+    },
+    "nota": "Escreve-se igual a 쓰다 (escrever, usar). São três palavras com a mesma grafia, e só a frase separa.",
+    "baralho": false
+  },
+  {
+    "id": "decepcao",
+    "hangul": "실망",
+    "romanizacao": "silmang",
+    "pt": "decepção",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 23,
+    "sino": {
+      "실": "失",
+      "망": "望"
+    },
+    "exemplo": {
+      "ko": "그래도 실망하지 않아요.",
+      "pt": "Mesmo assim não me decepciono."
+    },
+    "nota": "失望 — “perder a esperança”. O mesmo 실 (失) está em 실패 (fracasso).",
+    "baralho": false
+  },
+  {
+    "id": "plano",
+    "hangul": "계획",
+    "romanizacao": "gyehoek",
+    "pt": "plano",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 23,
+    "sino": {
+      "계": "計",
+      "획": "劃"
+    },
+    "exemplo": {
+      "ko": "더 연습할 계획이에요.",
+      "pt": "É meu plano praticar mais."
+    },
+    "baralho": false
+  },
+  {
+    "id": "pelo",
+    "hangul": "털",
+    "romanizacao": "teol",
+    "pt": "pelo, pelagem",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 23,
+    "confundiveis": [
+      "cabeca",
+      "orelha"
+    ],
+    "exemplo": {
+      "ko": "겨울에는 털모자도 팔아요.",
+      "pt": "No inverno vendo até gorro de pelo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "anel",
+    "hangul": "반지",
+    "romanizacao": "banji",
+    "pt": "anel",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 23,
+    "confundiveis": [
+      "brinco",
+      "colar"
+    ],
+    "exemplo": {
+      "ko": "반지랑 목걸이도 팔아요.",
+      "pt": "Vendo anel e colar também."
+    },
+    "baralho": false
+  },
+  {
+    "id": "radio_aparelho",
+    "hangul": "라디오",
+    "romanizacao": "radio",
+    "pt": "rádio",
+    "modulo": "tecnologia",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 23,
+    "confundiveis": [
+      "televisao",
+      "celular_ko"
+    ],
+    "exemplo": {
+      "ko": "손님이 없을 때는 라디오를 들어요.",
+      "pt": "Quando não tem cliente, ouço rádio."
+    },
+    "baralho": false
+  },
+  {
+    "id": "vidro",
+    "hangul": "유리",
+    "romanizacao": "yuri",
+    "pt": "vidro",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 23,
+    "sino": {
+      "유": "琉",
+      "리": "璃"
+    },
+    "confundiveis": [
+      "papel",
+      "espelho"
+    ],
+    "exemplo": {
+      "ko": "가게 유리창을 닦기도 해요.",
+      "pt": "Às vezes limpo a vidraça da loja."
+    },
+    "baralho": false
+  },
+  {
+    "id": "jornal",
+    "hangul": "신문",
+    "romanizacao": "sinmun",
+    "pt": "jornal",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 23,
+    "sino": {
+      "신": "新",
+      "문": "聞"
+    },
+    "confundiveis": [
+      "livro",
+      "papel"
+    ],
+    "exemplo": {
+      "ko": "유리창은 보통 신문이나 종이로 닦아요.",
+      "pt": "A vidraça normalmente se limpa com jornal ou papel."
+    },
+    "nota": "新聞 — “o novo que se ouve”. O mesmo 문 (聞) é de ouvir, e não o 門 de porta e janela.",
+    "baralho": false
+  },
+  {
+    "id": "papel",
+    "hangul": "종이",
+    "romanizacao": "jongi",
+    "pt": "papel",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 23,
+    "confundiveis": [
+      "jornal",
+      "vidro"
+    ],
+    "exemplo": {
+      "ko": "유리창은 보통 신문이나 종이로 닦아요.",
+      "pt": "A vidraça normalmente se limpa com jornal ou papel."
+    },
+    "baralho": false
+  },
+  {
+    "id": "cumprimento",
+    "hangul": "인사",
+    "romanizacao": "insa",
+    "pt": "cumprimento, saudação",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 23,
+    "sino": {
+      "인": "人",
+      "사": "事"
+    },
+    "exemplo": {
+      "ko": "손님이 오면 밝게 인사해요.",
+      "pt": "Quando chega cliente, cumprimento com alegria."
+    },
+    "baralho": false
+  },
+  {
+    "id": "gemeo",
+    "hangul": "쌍둥이",
+    "romanizacao": "ssangdungi",
+    "pt": "gêmeo",
+    "modulo": "pessoas",
+    "classe": "substantivo",
+    "campo": "familia",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 24,
+    "sino": {
+      "쌍": "雙"
+    },
+    "confundiveis": [
+      "irmao_mais_novo",
+      "bebe"
+    ],
+    "exemplo": {
+      "ko": "저희 학교에는 쌍둥이 형제가 있어요.",
+      "pt": "Na minha escola tem irmãos gêmeos."
+    },
+    "baralho": false
+  },
+  {
+    "id": "novo_de_idade",
+    "hangul": "어리다",
+    "romanizacao": "eorida",
+    "pt": "ser novo de idade",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 24,
+    "confundiveis": [
+      "fofo",
+      "bonito"
+    ],
+    "exemplo": {
+      "ko": "어렸을 때는 아주 똑같았어요.",
+      "pt": "Quando eram pequenos, eram idênticos."
+    },
+    "baralho": false
+  },
+  {
+    "id": "parecido",
+    "hangul": "비슷하다",
+    "romanizacao": "biseutada",
+    "pt": "ser parecido",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 24,
+    "par": "diferente",
+    "exemplo": {
+      "ko": "지금은 비슷하게 생겼어요.",
+      "pt": "Agora são parecidos."
+    },
+    "baralho": false
+  },
+  {
+    "id": "pensar_v",
+    "hangul": "생각하다",
+    "romanizacao": "saenggakada",
+    "pt": "pensar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 24,
+    "confundiveis": [
+      "acreditar",
+      "saber"
+    ],
+    "exemplo": {
+      "ko": "생각하는 것도 비슷해요.",
+      "pt": "Até o jeito de pensar é parecido."
+    },
+    "baralho": false
+  },
+  {
+    "id": "facil",
+    "hangul": "쉽다",
+    "romanizacao": "swipda",
+    "pt": "ser fácil",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 24,
+    "par": "dificil",
+    "exemplo": {
+      "ko": "하지만 쉽게 구별할 수 있어요.",
+      "pt": "Mas dá para distinguir com facilidade."
+    },
+    "baralho": false
+  },
+  {
+    "id": "oculos",
+    "hangul": "안경",
+    "romanizacao": "angyeong",
+    "pt": "óculos",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 24,
+    "sino": {
+      "안": "眼",
+      "경": "鏡"
+    },
+    "confundiveis": [
+      "espelho",
+      "chapeu"
+    ],
+    "exemplo": {
+      "ko": "형은 안경을 썼어요.",
+      "pt": "O mais velho usa óculos."
+    },
+    "nota": "眼鏡 — “espelho do olho”. O mesmo 경 (鏡) está em 망원경 (telescópio).",
+    "baralho": false
+  },
+  {
+    "id": "boca",
+    "hangul": "입",
+    "romanizacao": "ip",
+    "pt": "boca",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 24,
+    "confundiveis": [
+      "nariz",
+      "orelha",
+      "olho"
+    ],
+    "exemplo": {
+      "ko": "동생은 입 옆에 점이 있어요.",
+      "pt": "O mais novo tem uma pinta do lado da boca."
+    },
+    "baralho": false
+  },
+  {
+    "id": "longe",
+    "hangul": "멀다",
+    "romanizacao": "meolda",
+    "pt": "ser longe",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 24,
+    "par": "perto",
+    "exemplo": {
+      "ko": "그런데 멀리서 보면 잘 몰라요.",
+      "pt": "Só que de longe não dá para saber direito."
+    },
+    "baralho": false
+  },
+  {
+    "id": "atras",
+    "hangul": "뒤",
+    "romanizacao": "dwi",
+    "pt": "atrás, depois de",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "posicao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 24,
+    "par": "frente",
+    "exemplo": {
+      "ko": "뒤에서 봐도 잘 몰라요.",
+      "pt": "Por trás também não."
+    },
+    "baralho": false
+  },
+  {
+    "id": "engano",
+    "hangul": "실수",
+    "romanizacao": "silsu",
+    "pt": "engano, deslize",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 24,
+    "sino": {
+      "실": "失",
+      "수": "手"
+    },
+    "exemplo": {
+      "ko": "실수할 수도 있어요.",
+      "pt": "Dá para cometer um engano."
+    },
+    "nota": "失手 — “errar a mão”. O terceiro 실 (失) do livro, com 실패 e 실망.",
+    "baralho": false
+  },
+  {
+    "id": "futebol",
+    "hangul": "축구",
+    "romanizacao": "chukgu",
+    "pt": "futebol",
+    "modulo": "lazer",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 24,
+    "sino": {
+      "축": "蹴",
+      "구": "球"
+    },
+    "confundiveis": [
+      "basquete",
+      "beisebol"
+    ],
+    "exemplo": {
+      "ko": "축구, 농구, 야구 다 좋아해요.",
+      "pt": "Futebol, basquete, beisebol — gosto de tudo."
+    },
+    "nota": "蹴球 — “bola de chutar”. O mesmo 구 (球) está em 농구, 야구 e 지구.",
+    "baralho": false
+  },
+  {
+    "id": "basquete",
+    "hangul": "농구",
+    "romanizacao": "nonggu",
+    "pt": "basquete",
+    "modulo": "lazer",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 24,
+    "sino": {
+      "농": "籠",
+      "구": "球"
+    },
+    "confundiveis": [
+      "futebol",
+      "beisebol"
+    ],
+    "exemplo": {
+      "ko": "축구, 농구, 야구 다 좋아해요.",
+      "pt": "Futebol, basquete, beisebol — gosto de tudo."
+    },
+    "nota": "籠球 — “bola do cesto”, exatamente como o inglês basket-ball.",
+    "baralho": false
+  },
+  {
+    "id": "beisebol",
+    "hangul": "야구",
+    "romanizacao": "yagu",
+    "pt": "beisebol",
+    "modulo": "lazer",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 24,
+    "sino": {
+      "야": "野",
+      "구": "球"
+    },
+    "confundiveis": [
+      "futebol",
+      "basquete"
+    ],
+    "exemplo": {
+      "ko": "축구, 농구, 야구 다 좋아해요.",
+      "pt": "Futebol, basquete, beisebol — gosto de tudo."
+    },
+    "nota": "野球 — “bola do campo”. O mesmo 야 (野) está em 야채 (verdura).",
+    "baralho": false
+  },
+  {
+    "id": "passar_tempo",
+    "hangul": "지나다",
+    "romanizacao": "jinada",
+    "pt": "passar (tempo, lugar)",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 24,
+    "confundiveis": [
+      "atravessar",
+      "partir"
+    ],
+    "exemplo": {
+      "ko": "지난 주말에 농구를 했어요.",
+      "pt": "No fim de semana passado joguei basquete."
+    },
+    "baralho": false
+  },
+  {
+    "id": "vencer",
+    "hangul": "이기다",
+    "romanizacao": "igida",
+    "pt": "vencer, ganhar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 24,
+    "par": "perder_disputa",
+    "exemplo": {
+      "ko": "저희 팀이 이겼어요.",
+      "pt": "Meu time venceu."
+    },
+    "baralho": false
+  },
+  {
+    "id": "braco",
+    "hangul": "팔",
+    "romanizacao": "pal",
+    "pt": "braço",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 24,
+    "confundiveis": [
+      "perna",
+      "ombro",
+      "dedo_mao"
+    ],
+    "exemplo": {
+      "ko": "하지만 팔을 다쳤어요.",
+      "pt": "Mas machuquei o braço."
+    },
+    "nota": "Escreve-se igual a 팔 (八, oito). O baralho já ensina o número; aqui é o membro.",
+    "baralho": false
+  },
+  {
+    "id": "segredo",
+    "hangul": "비밀",
+    "romanizacao": "bimil",
+    "pt": "segredo",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "campo": "nocao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 24,
+    "sino": {
+      "비": "祕",
+      "밀": "密"
+    },
+    "confundiveis": [
+      "mentira",
+      "motivo"
+    ],
+    "exemplo": {
+      "ko": "엄마한테는 비밀이에요.",
+      "pt": "Para a mamãe é segredo."
+    },
+    "baralho": false
+  },
+  {
+    "id": "dedo_pe",
+    "hangul": "발가락",
+    "romanizacao": "balgarak",
+    "pt": "dedo do pé",
+    "modulo": "corpo",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 24,
+    "confundiveis": [
+      "dedo_mao",
+      "pe"
+    ],
+    "exemplo": {
+      "ko": "어렸을 때는 축구를 좋아해서 발가락을 자주 다쳤어요.",
+      "pt": "Quando pequeno eu gostava de futebol e machucava o dedo do pé com frequência."
+    },
+    "baralho": false
+  },
+  {
+    "id": "lingua_inglesa",
+    "hangul": "영어",
+    "romanizacao": "yeongeo",
+    "pt": "inglês (a língua)",
+    "modulo": "escola",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 24,
+    "sino": {
+      "영": "英",
+      "어": "語"
+    },
+    "confundiveis": [
+      "lingua_coreana",
+      "palavra_vocabulo"
+    ],
+    "exemplo": {
+      "ko": "엄마는 제가 영어 공부하는 것을 제일 좋아해요.",
+      "pt": "O que ela mais gosta é que eu estude inglês."
+    },
+    "baralho": false
+  },
+  {
+    "id": "estacionamento",
+    "hangul": "주차장",
+    "romanizacao": "juchajang",
+    "pt": "estacionamento",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 25,
+    "sino": {
+      "주": "駐",
+      "차": "車",
+      "장": "場"
+    },
+    "confundiveis": [
+      "estacao",
+      "aeroporto"
+    ],
+    "exemplo": {
+      "ko": "영화관 주차장에 내렸어요.",
+      "pt": "Desci no estacionamento do cinema."
+    },
+    "nota": "駐車場 — “lugar de parar o carro”. O mesmo 장 (場) está em 시장 e 운동장.",
+    "baralho": false
+  },
+  {
+    "id": "escolher",
+    "hangul": "고르다",
+    "romanizacao": "goreuda",
+    "pt": "escolher",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 25,
+    "confundiveis": [
+      "decidir",
+      "contar_numero"
+    ],
+    "exemplo": {
+      "ko": "세 개 중에서 고르다",
+      "pt": "escolher entre três"
+    },
+    "baralho": false
+  },
+  {
+    "id": "bilhete",
+    "hangul": "표",
+    "romanizacao": "pyo",
+    "pt": "bilhete, ingresso",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 25,
+    "sino": {
+      "표": "票"
+    },
+    "confundiveis": [
+      "cartao",
+      "papel"
+    ],
+    "exemplo": {
+      "ko": "표를 샀어요.",
+      "pt": "Comprei o bilhete."
+    },
+    "baralho": false
+  },
+  {
+    "id": "contar_numero",
+    "hangul": "세다",
+    "romanizacao": "seda",
+    "pt": "contar (números)",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 25,
+    "confundiveis": [
+      "escolher",
+      "ler"
+    ],
+    "exemplo": {
+      "ko": "사람 수를 세어 봤어요.",
+      "pt": "Contei as pessoas."
+    },
+    "baralho": false
+  },
+  {
+    "id": "fogo_luz",
+    "hangul": "불",
+    "romanizacao": "bul",
+    "pt": "fogo, luz",
+    "modulo": "natureza",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 25,
+    "confundiveis": [
+      "agua",
+      "sol"
+    ],
+    "exemplo": {
+      "ko": "불이 꺼지고 영화가 시작됐어요.",
+      "pt": "A luz apagou e o filme começou."
+    },
+    "baralho": false
+  },
+  {
+    "id": "voar",
+    "hangul": "날다",
+    "romanizacao": "nalda",
+    "pt": "voar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 25,
+    "confundiveis": [
+      "correr",
+      "mover_se"
+    ],
+    "exemplo": {
+      "ko": "주인공이 하늘을 날았어요.",
+      "pt": "O protagonista voou pelo céu."
+    },
+    "baralho": false
+  },
+  {
+    "id": "terra_planeta",
+    "hangul": "지구",
+    "romanizacao": "jigu",
+    "pt": "Terra (o planeta)",
+    "modulo": "natureza",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "dia": 25,
+    "sino": {
+      "지": "地",
+      "구": "球"
+    },
+    "confundiveis": [
+      "universo",
+      "sol"
+    ],
+    "exemplo": {
+      "ko": "지구를 떠나서 우주로 갔어요.",
+      "pt": "Deixou a Terra e foi para o espaço."
+    },
+    "nota": "地球 — “bola de terra”. O mesmo 구 (球) das três bolas do dia anterior.",
+    "baralho": false
+  },
+  {
+    "id": "universo",
+    "hangul": "우주",
+    "romanizacao": "uju",
+    "pt": "universo, espaço",
+    "modulo": "natureza",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 25,
+    "sino": {
+      "우": "宇",
+      "주": "宙"
+    },
+    "confundiveis": [
+      "terra_planeta",
+      "ceu"
+    ],
+    "exemplo": {
+      "ko": "지구를 떠나서 우주로 갔어요.",
+      "pt": "Deixou a Terra e foi para o espaço."
+    },
+    "baralho": false
+  },
+  {
+    "id": "compreender",
+    "hangul": "알아듣다",
+    "romanizacao": "aradeutda",
+    "pt": "compreender (o que se ouve)",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 25,
+    "confundiveis": [
+      "saber",
+      "ouvir"
+    ],
+    "exemplo": {
+      "ko": "그런데 옆 사람이 시끄러워서 알아듣기 힘들었어요.",
+      "pt": "Só que a pessoa do lado era barulhenta e ficou difícil de entender."
+    },
+    "baralho": false
+  },
+  {
+    "id": "trocar",
+    "hangul": "바꾸다",
+    "romanizacao": "bakkuda",
+    "pt": "trocar, mudar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 25,
+    "confundiveis": [
+      "escolher",
+      "mover_se"
+    ],
+    "exemplo": {
+      "ko": "그래서 자리를 바꿨어요.",
+      "pt": "E aí troquei de lugar."
+    },
+    "baralho": false
+  },
+  {
+    "id": "direcao_dirigir",
+    "hangul": "운전",
+    "romanizacao": "unjeon",
+    "pt": "direção, dirigir",
+    "modulo": "transporte",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 25,
+    "sino": {
+      "운": "運",
+      "전": "轉"
+    },
+    "exemplo": {
+      "ko": "운전을 해서 마트에 갔어요.",
+      "pt": "Dirigi até o supermercado."
+    },
+    "nota": "運轉 — “mover e girar”. O mesmo 전 (轉) está em 자전거.",
+    "baralho": false
+  },
+  {
+    "id": "lento",
+    "hangul": "느리다",
+    "romanizacao": "neurida",
+    "pt": "ser lento",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "dia": 25,
+    "confundiveis": [
+      "atrasado",
+      "fraco"
+    ],
+    "exemplo": {
+      "ko": "느리게 주차를 하고 차에서 내렸어요.",
+      "pt": "Estacionei devagar e desci do carro."
+    },
+    "baralho": false
+  },
+  {
+    "id": "descer_de",
+    "hangul": "내리다",
+    "romanizacao": "naerida",
+    "pt": "descer de, saltar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "dia": 25,
+    "confundiveis": [
+      "embarcar",
+      "descer"
+    ],
+    "exemplo": {
+      "ko": "느리게 주차를 하고 차에서 내렸어요.",
+      "pt": "Estacionei devagar e desci do carro."
+    },
+    "baralho": false
+  },
+  {
+    "id": "chave",
+    "hangul": "열쇠",
+    "romanizacao": "yeolsoe",
+    "pt": "chave",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 25,
+    "confundiveis": [
+      "carteira_dinheiro",
+      "cartao"
+    ],
+    "exemplo": {
+      "ko": "열쇠를 떨어뜨렸어요.",
+      "pt": "Deixei a chave cair."
+    },
+    "nota": "열 (de 열다, abrir) + 쇠 (metal) — “o metal que abre”.",
+    "baralho": false
+  },
+  {
+    "id": "aquilo_isso",
+    "hangul": "그것",
+    "romanizacao": "geugeot",
+    "pt": "isso, aquilo",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 25,
+    "confundiveis": [
+      "isso",
+      "aquilo"
+    ],
+    "exemplo": {
+      "ko": "그런데 그것은 너무 가벼웠어요.",
+      "pt": "Só que aquilo estava leve demais."
+    },
+    "baralho": false
+  },
+  {
+    "id": "papel_higienico",
+    "hangul": "휴지",
+    "romanizacao": "hyuji",
+    "pt": "papel higiênico, lenço",
+    "modulo": "higiene",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "dia": 25,
+    "sino": {
+      "휴": "休",
+      "지": "紙"
+    },
+    "confundiveis": [
+      "toalha",
+      "sabonete"
+    ],
+    "exemplo": {
+      "ko": "휴지였어요.",
+      "pt": "Era um papel."
+    },
+    "baralho": false
+  },
+  {
+    "id": "estar_correto",
+    "hangul": "맞다",
+    "romanizacao": "matda",
+    "pt": "estar certo, bater",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "dia": 25,
+    "confundiveis": [
+      "saber",
+      "acreditar"
+    ],
+    "exemplo": {
+      "ko": "답이 맞다",
+      "pt": "a resposta está certa"
     },
     "baralho": false
   }

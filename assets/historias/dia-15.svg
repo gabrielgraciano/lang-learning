@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma faca cortando cebola ao lado de roupa no varal">
+  <circle cx="100" cy="100" r="94" fill="#E5E9DE"/>
+  <circle cx="52" cy="118" r="30" fill="#E8D9C0"/>
+  <path d="M52 88v60" stroke="#C4AE8E" stroke-width="4"/>
+  <path d="M28 106c16 6 32 6 48 0" stroke="#C4AE8E" stroke-width="4" fill="none"/>
+  <path d="M28 130c16-6 32-6 48 0" stroke="#C4AE8E" stroke-width="4" fill="none"/>
+  <path d="M22 72l58 10-4 12-56-14z" fill="#9AA39D"/>
+  <path d="M80 82l22 4-2 10-24-2z" fill="#7A6248"/>
+  <path d="M112 46h70" stroke="#8A9A80" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M118 50h30v30l-15 12-15-12z" fill="#4F8F96"/>
+  <path d="M152 50h30v26h-30z" fill="#C08A38"/>
+  <path d="M112 120h70" stroke="#8A9A80" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M124 124h44v34a6 6 0 0 1-6 6h-32a6 6 0 0 1-6-6z" fill="#B05A42"/>
+</svg>

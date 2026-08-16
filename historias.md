@@ -1,8 +1,8 @@
 # Histórias — o que cada dia cobre
 
-Este documento é o mapa da seção **Histórias** do app: as duzentas palavras dos
-dez dias, as cenas em que elas aparecem, onde o conteúdo mora e por que a
-entrada no baralho é uma decisão de quem estuda e não do arquivo.
+Este documento é o mapa da seção **Histórias** do app: as quinhentas palavras
+dos vinte e cinco dias, as cenas em que elas aparecem, onde o conteúdo mora e
+por que a entrada no baralho é uma decisão de quem estuda e não do arquivo.
 
 `livros.md` faz o mesmo pelo **Nível 1**, que é gramática e vem de outros dois
 livros. O *porquê* de o app inteiro ser como é continua em
@@ -38,14 +38,14 @@ diferente de aprender com ela. O `.gitignore` barra `*.pdf` e `*.epub`.
 ## Vinte palavras por dia, não dez
 
 O livro ensina dez palavras por dia. Aqui cada dia junta **dois dias do livro**,
-e por isso traz vinte palavras e duas cenas. Os dez dias do app cobrem os vinte
-primeiros dias do livro — duzentas palavras.
+e por isso traz vinte palavras e duas cenas. Os vinte e cinco dias do app cobrem
+os cinquenta dias do livro — o livro inteiro, quinhentas palavras.
 
 Foi pedido assim e a mudança se sustenta: a cena é a unidade que faz a palavra
 colar, e ela continua com dez palavras cada. O que dobra é o tamanho da sessão
 de leitura, não a densidade da cena.
 
-## Os dez dias
+## Os vinte e cinco dias
 
 | # | Selo | Cenas | Palavras-chave | Palavras | Exercícios |
 |---|---|---|---|---|---|
@@ -60,17 +60,45 @@ de leitura, não a densidade da cena.
 | 9 | 九 | O casal do lado / O sábado do videogame | 초대 · 요일 | 20 (15 novas) | 50 |
 | 10 | 十 | O círculo no calendário / Da cidade para a montanha | 모양 · 도시 | 20 (18 novas) | 50 |
 
-**Total: 200 palavras (139 novas, 61 já no app) e 499 exercícios.**
+| 11 | 十一 | O artista favorito / A primeira vez de avião | 연예인 · 여행 | 20 (14 novas) | 50 |
+| 12 | 十二 | A cama que não coube / A casa só minha | 연락 · 이사 | 20 (15 novas) | 50 |
+| 13 | 十三 | O jantar com as crianças / O fotógrafo sem câmera | 산책 · 사진 | 20 (17 novas) | 50 |
+| 14 | 十四 | A primavera do morango / A neve que atrasou o encontro | 봄 · 기다리다 | 20 (11 novas) | 50 |
+| 15 | 十五 | A comida para a mãe / A casa antes das visitas | 배달 · 시장 | 20 (17 novas) | 50 |
+| 16 | 十六 | A saia que não serviu / O táxi e a moto | 실패 · 약속 | 20 (17 novas) | 50 |
+| 17 | 十七 | Por que estudar coreano / O resfriado da porta aberta | 가수 · 문 | 20 (16 novas) | 50 |
+| 18 | 十八 | A dieta de um dia / A mão machucada | 사과 · 운동 | 20 (13 novas) | 50 |
+| 19 | 十九 | A chuva no caminho de casa / O irmão mentiroso | 학생 · 오전 | 20 (14 novas) | 50 |
+| 20 | 二十 | O mercado com a mãe / A montanha do avô | 생선 · 산 | 20 (13 novas) | 49 |
+| 21 | 二十一 | Perdido no aeroporto / Como chegar à universidade | 공항 · 대학교 | 20 (18 novas) | 50 |
+| 22 | 二十二 | Preto e branco / O amigo que perde tudo | 지갑 · 문제 | 20 (14 novas) | 47 |
+| 23 | 二十三 | Depois de casar / A loja de roupa | 결혼 · 유리 | 20 (17 novas) | 50 |
+| 24 | 二十四 | Os gêmeos da escola / O braço machucado | 안경 · 축구 | 20 (19 novas) | 50 |
+| 25 | 二十五 | A sessão de cinema / A chave debaixo do carro | 주차장 · 운전 | 20 (17 novas) | 50 |
 
-O dia 3 tem 49 porque uma das cenas do livro traz nove lacunas em vez de dez.
-O selo é o algarismo sino-coreano do dia, a mesma numeração que o baralho
-ensina — enfeite que carrega informação.
+**Total: 500 palavras (371 novas, 129 já no app) e 1245 exercícios.**
 
-As 61 palavras que já existiam entram pelo id que já tinham: 학교, 먹다, 커피 e
-outras cinquenta e oito já eram cartão do baralho ou já tinham entrado pelo
+Os dias 3, 20 e 22 têm menos de 50. Nos dois primeiros é porque uma cena do
+livro traz nove lacunas em vez de dez; no 22, porque a cena de Preto e branco
+tem poucas combinações limpas e os dois exercícios de escolha não teriam três
+distratores plausíveis — melhor não existir do que existir fraco.
+
+O selo é o algarismo sino-coreano do dia, a mesma numeração que o baralho ensina
+— enfeite que carrega informação. A partir do dia 11 ele tem dois ideogramas e a
+partir do 21, três; empilham no mesmo quadrado, como num 인장 esculpido.
+
+As 129 palavras que já existiam entram pelo id que já tinham: 학교, 먹다, 커피 e
+outras cento e vinte e seis já eram cartão do baralho ou já tinham entrado pelo
 Nível 1. Duas aparecem no livro na forma de dicionário e no app na forma polida
 (좋다/좋아요, 맛있다/맛있어요) — é a mesma palavra, então reusa a entrada em vez
 de duplicar, e a grafia mostrada é a do livro.
+
+**Três homógrafos o livro ensina mais de uma vez**, e ele mesmo os numera:
+쓰다01 (escrever), 쓰다02 (usar) e 쓰다03 (ser amargo); 눈01 (olho) e 눈02
+(neve). Os dois primeiros 쓰다 são a mesma entrada que o baralho já tinha; os
+outros três são palavras diferentes que se escrevem igual, como 개 (cachorro) e
+개 (o contador). No arquivo do livro a chave carrega o número; no app o que se
+mostra é sempre a grafia limpa.
 
 ## O balaio de revisão é um só
 
@@ -80,16 +108,16 @@ Esta é a decisão central da seção e vale explicar por inteiro.
 redes de morfemas — e o 자 de 의자 nunca reencontraria o de 모자. O FSRS, a
 escada de quatro níveis, a meta semanal e o mapa continuam sendo um de cada.
 
-**Mas a entrada é por dia, e quem abre a porta é quem estuda.** As duzentas
+**Mas a entrada é por dia, e quem abre a porta é quem estuda.** As quinhentas
 palavras entram em `dados/palavras.json` com `baralho: false`: já contam para o
 mapa, para o dicionário e para as famílias de morfemas, mas não ocupam a fila.
 No fim da leitura de cada dia há um botão que promove as vinte daquele dia.
 
 Por que não despejar tudo de uma vez: `montarFila` entrega palavra nova na ordem
-do arquivo, então duzentas palavras entrando juntas numa fila calibrada para
-cento e quatorze viraria uma fila de trezentos e catorze sem cara de nada — e a
-ordem curada do baralho (frequência × imageabilidade) seria substituída pela
-ordem de um livro que tem outro critério.
+do arquivo, então quinhentas palavras entrando juntas numa fila calibrada para
+cento e quatorze viraria uma fila de seiscentos sem cara de nada — e a ordem
+curada do baralho (frequência × imageabilidade) seria substituída pela ordem de
+um livro que tem outro critério.
 
 **Onde isso mora no código.** A promoção é uma lista de ids em
 `estado.promovidas` no `localStorage` — não uma edição de JSON. O baralho sai de
@@ -170,11 +198,11 @@ Nenhum tipo novo. Os quatro feitios do livro caíram nos que já existiam:
 
 | No livro | Aqui | Quantos |
 |---|---|---|
-| ligar palavra ↔ significado (10 pares) | `associar`, em duas rodadas de 5 | 40 |
-| palavras cruzadas (7 pistas) | `montar` — significado → montar a palavra por sílaba | 140 |
-| preencher lacuna (10 frases) | `lacuna`, com banco de 3 | 199 |
-| — | `escolha` — qual combinação existe de verdade | 40 |
-| — | `ditado` — 2 palavras entre quatro + 2 frases para montar, por cena | 80 |
+| ligar palavra ↔ significado (10 pares) | `associar`, em duas rodadas de 5 | 100 |
+| palavras cruzadas (7 pistas) | `montar` — significado → montar a palavra por sílaba | 350 |
+| preencher lacuna (10 frases) | `lacuna`, com banco de 3 | 497 |
+| — | `escolha` — qual combinação existe de verdade | 98 |
+| — | `ditado` — 2 palavras entre quatro + 2 frases para montar, por cena | 200 |
 
 As palavras cruzadas viraram montagem por sílaba porque grade de cruzadas não
 cabe em tela de telefone e porque o que a pista cobra — significado → grafia — é
@@ -237,17 +265,19 @@ entradas anteriores já faziam. O script de romanização foi conferido contra
 todas elas: bate em todas menos três, e as três são exceções conhecidas
 (맛없어요, e os nomes próprios 서울 e 부산).
 
-**O hanja subiu de 83 para 167 verbetes.** As 55 palavras sino-coreanas trazidas
-por esta leva puxaram 84 ideogramas novos para `dados/hanja.json`, e o índice de
-famílias passou de pouco mais de cem para 165. 學 agora liga 학교, 학생 e 방학;
-室 liga 교실, 화장실 e 사무실; 子 liga 의자, 모자, 사자, 남자 e 여자.
+**O hanja subiu de 83 para 274 verbetes.** As 137 palavras sino-coreanas
+trazidas pelas Histórias puxaram 191 ideogramas novos para `dados/hanja.json`, e
+o índice de famílias passou de pouco mais de cem para 272. 學 agora liga 학교,
+학생, 방학 e 대학교; 室 liga 교실, 화장실, 사무실 e 거실; 球 liga 축구, 농구,
+야구 e 지구; 失 liga 실패, 실망 e 실수.
 
 ### Um ajuste que a promoção obrigou
 
 O invariante de `distratores` — nenhuma alternativa de classe gramatical
 diferente da do alvo — valia para o baralho de 114. Assim que a promoção passou
-a poder crescer o baralho para 275, ele parou de valer: 9,8% dos distratores
-saíam da classe errada.
+a poder crescer o baralho para 541, ele parou de valer: 9,8% dos distratores
+saíam da classe errada na primeira leva, e mais 0,95% voltaram quando os dias 11
+a 25 entraram.
 
 A causa não era a promoção, era o degrau do módulo. `distratores` prefere, nesta
 ordem, confundível explícito → mesmo `campo` → mesmo `modulo` → mesma `classe`.
@@ -263,10 +293,13 @@ degrau da classe. A correção foi de dados, não de código:
 - 맛있어요 e 맛없어요 saíram do módulo `comida` para `qualidades`: são
   adjetivos, e sozinhos num módulo de substantivos devolviam e recebiam
   distrator da classe errada;
-- oito listas de `confundiveis` que cruzavam classe foram corrigidas.
+- dezessete listas de `confundiveis` que cruzavam classe foram corrigidas;
+- 아니다 passou de `verbo` a `funcional`, para concordar com 아니에요, que o
+  banco já classificava assim — a cópula negativa sozinha num módulo de
+  funcionais era o que sobrava depois de tudo.
 
 Depois disso o índice é **0,00% tanto no baralho de hoje quanto no baralho com
-os dez dias promovidos**. Se você acrescentar palavra a um módulo de classe
+os vinte e cinco dias promovidos**. Se você acrescentar palavra a um módulo de classe
 mista, rode a checagem da seção de verificação antes de considerar terminado.
 
 ## Áudio
@@ -293,13 +326,13 @@ motivos do dia — a mala e a televisão, o calendário e a montanha — porque 
   grade em si não sobrevive a uma tela de telefone.
 - **As páginas de revisão a cada dez dias.** São recombinação do que já foi
   cobrado; num app com agendamento espaçado, revisão é a fila, não uma página.
-- **Cerca de 26 das 200 colunas de "palavras relacionadas".** O texto do PDF
+- **Cerca de 80 das 500 colunas de "palavras relacionadas".** O texto do PDF
   quebra glosa longa entre páginas e o casamento com o termo sai trocado nesses
-  casos. Melhor faltar a combinação do que mostrar a errada — as outras 174
+  casos. Melhor faltar a combinação do que mostrar a errada — as outras 420
   estão lá, uma por verbete.
-- **Os dias 21 a 50 do livro.** Ficaram para uma próxima leva. A estrutura
-  aguenta: acrescentar dias é acrescentar objetos a `dados/dias.json` e entradas
-  a `dados/palavras.json`, sem tocar em código.
+- **A página de "ligar" do livro, como fonte de pares.** Ela é embaralhada de
+  propósito: é o exercício. Os pares do `associar` saem da tabela de verbetes,
+  onde cada palavra está ao lado do próprio significado.
 
 ## Verificação
 
@@ -373,7 +406,7 @@ console.log('ilustração do dia faltando:',
 const idsDias = new Set(dias.flatMap((d) => d.palavras));
 for (const [nome, pool] of [
   ['baralho de hoje', banco.filter((p) => p.baralho !== false)],
-  ['com os dez dias', banco.filter((p) => p.baralho !== false || idsDias.has(p.id))],
+  ['com os 25 dias', banco.filter((p) => p.baralho !== false || idsDias.has(p.id))],
 ]) {
   let fora = 0, total = 0;
   for (let i = 0; i < 25; i++) for (const w of pool) {
@@ -409,10 +442,10 @@ manter um harness genérico.
 O resultado desta leva:
 
 ```
-exercícios respondidos: 499
-baralho: 114 → 130 · dicionário no mapa: 286
-progresso final: 10 de 10 dias concluídos · 499 de 499 exercícios · 55 de 200 palavras no baralho
-✓ os dez dias, 499 exercícios certos, promoção ao baralho e nada no console
+exercícios respondidos: 1245
+baralho: 114 → 130 · dicionário no mapa: 518
+progresso final: 25 de 25 dias concluídos · 1245 de 1245 exercícios · 88 de 499 palavras no baralho
+✓ os vinte e cinco dias, 1245 exercícios certos, promoção ao baralho e nada no console
 ```
 
 E as três baterias que já existiam continuam passando sem alteração: o Nível 1

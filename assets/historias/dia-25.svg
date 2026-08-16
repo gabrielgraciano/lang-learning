@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma tela de cinema ao lado de uma chave caída">
+  <circle cx="100" cy="100" r="94" fill="#DEDCEA"/>
+  <rect x="16" y="40" width="106" height="66" rx="4" fill="#2E2E2E"/>
+  <rect x="24" y="48" width="90" height="50" rx="2" fill="#C9C6DC"/>
+  <circle cx="52" cy="66" r="7" fill="#E8D28C"/>
+  <path d="M76 88l14-20 10 12 8-8 10 16z" fill="#8E8AA8"/>
+  <path d="M30 116h78" stroke="#4F4A82" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <g fill="#4F4A82">
+    <rect x="26" y="126" width="26" height="16" rx="4"/>
+    <rect x="60" y="126" width="26" height="16" rx="4"/>
+    <rect x="94" y="126" width="26" height="16" rx="4"/>
+  </g>
+  <circle cx="150" cy="82" r="24" fill="none" stroke="#C08A38" stroke-width="11"/>
+  <path d="M150 106v56" stroke="#C08A38" stroke-width="11" stroke-linecap="round" fill="none"/>
+  <path d="M150 136h18" stroke="#C08A38" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <path d="M150 154h14" stroke="#C08A38" stroke-width="9" stroke-linecap="round" fill="none"/>
+</svg>
