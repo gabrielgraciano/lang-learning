@@ -9,6 +9,9 @@ convenções de código continuam em `CLAUDE.md`. Aqui é só o Nível 1 — a s
 **Histórias**, que vem de outro livro e ensina vocabulário em vez de gramática,
 tem o seu próprio mapa em [`historias.md`](historias.md).
 
+Para **portar um livro novo**, o passo a passo está em
+[`protocolo.md`](protocolo.md); este documento é o resultado, não o processo.
+
 ---
 
 ## De onde vem o conteúdo

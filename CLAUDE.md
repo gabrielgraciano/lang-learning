@@ -23,6 +23,10 @@ Além do baralho há duas seções de conteúdo, cada uma com o seu próprio map
 25 dias de 20 palavras) em `historias.md`. As duas rodam na mesma tela e são
 corrigidas pelo mesmo `src/licoes.js`; o que muda é o arquivo de dados.
 
+Se a tarefa for **portar mais um livro**, leia `protocolo.md` antes de começar:
+é o passo a passo do que foi feito nas duas seções, com as armadilhas que já
+custaram tempo e a bateria de verificação que precisa passar.
+
 ## Regra zero: sem build, sem dependências
 
 Não há `package.json`, não há bundler, não há linter configurado, não há
