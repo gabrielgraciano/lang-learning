@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Duas etiquetas presas em quadros diferentes">
+  <circle cx="100" cy="100" r="94" fill="#E2E6EA"/>
+  <rect x="24" y="42" width="72" height="48" rx="4" fill="#37607A"/>
+  <path d="M96 52h34a8 8 0 0 1 8 8v12a8 8 0 0 1-8 8H96z" fill="#C77C3A"/>
+  <circle cx="124" cy="66" r="5" fill="#E2E6EA"/>
+  <rect x="24" y="112" width="72" height="48" rx="4" fill="#6E93A8"/>
+  <path d="M96 122h50a8 8 0 0 1 8 8v12a8 8 0 0 1-8 8H96z" fill="#8C4A57"/>
+  <circle cx="140" cy="136" r="5" fill="#E2E6EA"/>
+  <g fill="#FBFCFD" opacity=".85">
+    <rect x="38" y="58" width="44" height="6" rx="3"/>
+    <rect x="38" y="70" width="30" height="6" rx="3"/>
+    <rect x="38" y="128" width="44" height="6" rx="3"/>
+    <rect x="38" y="140" width="30" height="6" rx="3"/>
+  </g>
+</svg>

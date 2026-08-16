@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma pergunta e várias opções abrindo em leque">
+  <circle cx="100" cy="100" r="94" fill="#E3EAE6"/>
+  <path d="M22 34h72a12 12 0 0 1 12 12v40a12 12 0 0 1-12 12H52l-20 18v-18h-10a12 12 0 0 1-12-12V46a12 12 0 0 1 12-12z" fill="#2F6B5C"/>
+  <path d="M46 56c0-8 7-13 14-13s14 5 14 12c0 9-12 10-12 18" fill="none" stroke="#E6F0EA" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="62" cy="85" r="5" fill="#E6F0EA"/>
+  <g fill="#7FA894">
+    <rect x="118" y="42" width="60" height="22" rx="6"/>
+    <rect x="118" y="76" width="60" height="22" rx="6"/>
+    <rect x="118" y="110" width="60" height="22" rx="6"/>
+    <rect x="118" y="144" width="60" height="22" rx="6"/>
+  </g>
+  <rect x="118" y="110" width="60" height="22" rx="6" fill="#C08A38"/>
+  <path d="M104 121h10" stroke="#C08A38" stroke-width="6" stroke-linecap="round"/>
+</svg>

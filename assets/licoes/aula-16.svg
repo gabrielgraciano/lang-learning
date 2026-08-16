@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Um bloco perdendo a ponta e ganhando três terminações">
+  <circle cx="100" cy="100" r="94" fill="#DEE7EA"/>
+  <rect x="26" y="30" width="64" height="40" rx="5" fill="#2F6B7E"/>
+  <rect x="94" y="30" width="34" height="40" rx="5" fill="#B24B3E" opacity=".35"/>
+  <path d="M96 34l30 32M126 34l-30 32" stroke="#B24B3E" stroke-width="7" stroke-linecap="round"/>
+  <path d="M58 78v22" stroke="#7C98A4" stroke-width="5" stroke-linecap="round"/>
+  <path d="M58 100h96" stroke="#7C98A4" stroke-width="5" stroke-linecap="round"/>
+  <g stroke="#7C98A4" stroke-width="5" stroke-linecap="round">
+    <path d="M58 100v28"/><path d="M106 100v28"/><path d="M154 100v28"/>
+  </g>
+  <g fill="#4E8A9E">
+    <rect x="30" y="130" width="56" height="34" rx="5"/>
+    <rect x="78" y="130" width="56" height="34" rx="5"/>
+    <rect x="126" y="130" width="56" height="34" rx="5"/>
+  </g>
+  <rect x="78" y="130" width="56" height="34" rx="5" fill="#2F6B7E"/>
+</svg>

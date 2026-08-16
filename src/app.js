@@ -950,6 +950,9 @@ function pintarNivel1() {
     const selo = nova('span', 'selo-aula', aula.hanja);
     selo.lang = 'ko';
     selo.setAttribute('aria-hidden', 'true');
+    // Da aula 11 em diante o algarismo tem dois ideogramas. Eles empilham, como
+    // num selo de verdade, mas precisam de corpo menor para caber no quadrado.
+    if ([...aula.hanja].length > 1) selo.classList.add('selo-aula-duplo');
 
     const corpo = nova('span', 'cartao-aula-corpo');
     const numero = nova('span', 'cartao-aula-numero', `Aula ${aula.numero}`);
@@ -989,6 +992,7 @@ function abrirAula(aula) {
   el.aulaIlustracao.src = aula.ilustracao;
   el.aulaIlustracao.alt = '';
   el.aulaSelo.textContent = aula.hanja;
+  el.aulaSelo.classList.toggle('aula-selo-duplo', [...aula.hanja].length > 1);
   el.aulaHangul.textContent = aula.hangul;
   el.aulaResumo.textContent = aula.resumo;
   el.aulaObjetivo.textContent = aula.objetivo;

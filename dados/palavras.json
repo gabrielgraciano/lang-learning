@@ -3481,5 +3481,943 @@
       "com_licenca"
     ],
     "baralho": false
+  },
+  {
+    "id": "hoje",
+    "hangul": "오늘",
+    "romanizacao": "oneul",
+    "pt": "hoje",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 9,
+    "exemplo": {
+      "ko": "오늘은 날씨 좋네요.",
+      "pt": "Hoje o tempo está bom."
+    },
+    "nota": "오늘 e 내일 são palavras nativas, sem hanja. Note que 오늘 termina em ㄹ, então a partícula de tópico é 은: 오늘은.",
+    "confundiveis": [
+      "amanha"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "amanha",
+    "hangul": "내일",
+    "romanizacao": "naeil",
+    "pt": "amanhã",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 9,
+    "exemplo": {
+      "ko": "내일 시간 있어요?",
+      "pt": "Você tem tempo amanhã?"
+    },
+    "nota": "내일 (來日) é sino-coreano — “o dia que vem”. Curiosamente, “ontem” (어제) e “hoje” (오늘) são nativas: só o amanhã veio do chinês.",
+    "confundiveis": [
+      "hoje"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "clima",
+    "hangul": "날씨",
+    "romanizacao": "nalssi",
+    "pt": "tempo, clima",
+    "modulo": "natureza",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 9,
+    "exemplo": {
+      "ko": "날씨 좋네요.",
+      "pt": "O tempo está bom."
+    },
+    "nota": "날 (dia) + 씨. Não confunda com 시간, que é o tempo que passa — 날씨 é só o tempo que faz.",
+    "confundiveis": [
+      "tempo_duracao"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "e_bom",
+    "hangul": "좋아요",
+    "romanizacao": "joayo",
+    "pt": "é bom, gosto disso",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 9,
+    "exemplo": {
+      "ko": "이 책이 좋아요.",
+      "pt": "É este livro que é bom."
+    },
+    "nota": "De 좋다. O radical 좋 tem a vogal ㅗ, então a terminação é 아요 — a regra da aula 16 já estava agindo aqui.",
+    "baralho": false
+  },
+  {
+    "id": "suco_laranja",
+    "hangul": "오렌지 주스",
+    "romanizacao": "orenji juseu",
+    "pt": "suco de laranja",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 9,
+    "exemplo": {
+      "ko": "오렌지 주스 주세요.",
+      "pt": "Um suco de laranja, por favor."
+    },
+    "nota": "Dois empréstimos colados. 주스 vem de “juice” — o ㅈ coreano cobre o som que o inglês escreve com j.",
+    "confundiveis": [
+      "laranja"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "laranja",
+    "hangul": "오렌지",
+    "romanizacao": "orenji",
+    "pt": "laranja",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 11,
+    "exemplo": {
+      "ko": "오렌지 있어요?",
+      "pt": "Tem laranja?"
+    },
+    "nota": "A fruta é o empréstimo 오렌지; a cor laranja é 주황색, palavra completamente diferente.",
+    "confundiveis": [
+      "suco_laranja",
+      "maca"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "tempo_duracao",
+    "hangul": "시간",
+    "romanizacao": "sigan",
+    "pt": "tempo (que passa), hora",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 10,
+    "sino": {
+      "시": "時",
+      "간": "間"
+    },
+    "exemplo": {
+      "ko": "시간 없어요.",
+      "pt": "Não tenho tempo."
+    },
+    "nota": "時間 — “intervalo de horas”. O 시 (時) é o mesmo de 잠시만요 e o que conta as horas: 세 시 = três horas.",
+    "confundiveis": [
+      "clima"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "graca",
+    "hangul": "재미",
+    "romanizacao": "jaemi",
+    "pt": "graça, diversão",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 10,
+    "exemplo": {
+      "ko": "재미있어요.",
+      "pt": "É divertido."
+    },
+    "nota": "Quase nunca aparece sozinha: vive colada em 있어요 e 없어요. 재미있어요 = “graça existe” = é interessante.",
+    "baralho": false
+  },
+  {
+    "id": "existe",
+    "hangul": "있어요",
+    "romanizacao": "isseoyo",
+    "pt": "tem, existe, eu tenho",
+    "modulo": "alta-frequencia",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 10,
+    "exemplo": {
+      "ko": "물 있어요?",
+      "pt": "Tem água?"
+    },
+    "nota": "Uma palavra para “existir” e “ter” — o que separa as duas é a situação, não o idioma. É 있 + 어요, a conjugação da aula 16.",
+    "confundiveis": [
+      "nao_existe",
+      "nao_e"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "nao_existe",
+    "hangul": "없어요",
+    "romanizacao": "eopseoyo",
+    "pt": "não tem, não existe",
+    "modulo": "alta-frequencia",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 10,
+    "exemplo": {
+      "ko": "시간 없어요.",
+      "pt": "Não tenho tempo."
+    },
+    "nota": "Verbo próprio, não negação de 있어요. E não confunda com 아니에요: esta nega identidade, 없어요 nega existência.",
+    "confundiveis": [
+      "existe",
+      "nao_e"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "por_favor_de",
+    "hangul": "주세요",
+    "romanizacao": "juseyo",
+    "pt": "me dê, por favor",
+    "modulo": "expressoes",
+    "classe": "expressao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 11,
+    "exemplo": {
+      "ko": "커피 주세요.",
+      "pt": "Um café, por favor."
+    },
+    "nota": "De 주다 (dar), com o mesmo -세요 de 하세요 e 가세요. Está sempre em 존댓말, com qualquer pessoa — é o que a torna tão utilizável.",
+    "confundiveis": [
+      "com_licenca"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "hamburguer",
+    "hangul": "햄버거",
+    "romanizacao": "haembeogeo",
+    "pt": "hambúrguer",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 11,
+    "exemplo": {
+      "ko": "햄버거 먹고 싶어요.",
+      "pt": "Quero comer hambúrguer."
+    },
+    "nota": "Três sílabas para duas em inglês: cada consoante coreana carrega sua vogal, e empréstimo sempre estica.",
+    "baralho": false
+  },
+  {
+    "id": "cerveja",
+    "hangul": "맥주",
+    "romanizacao": "maekju",
+    "pt": "cerveja",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 11,
+    "exemplo": {
+      "ko": "맥주 주세요.",
+      "pt": "Uma cerveja, por favor."
+    },
+    "nota": "麥酒 — “bebida de cevada”. O mesmo 주 (酒) aparece em 소주 e 청주.",
+    "confundiveis": [
+      "bebida_alcoolica",
+      "cafe"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "luva",
+    "hangul": "장갑",
+    "romanizacao": "janggap",
+    "pt": "luva",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 11,
+    "exemplo": {
+      "ko": "장갑 있어요?",
+      "pt": "Tem luva?"
+    },
+    "nota": "手匣 na origem — “caixa de mão”. Contam-se aos pares, com 켤레, como sapatos.",
+    "confundiveis": [
+      "chapeu",
+      "roupa"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "gosto_sabor",
+    "hangul": "맛",
+    "romanizacao": "mat",
+    "pt": "gosto, sabor",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 12,
+    "exemplo": {
+      "ko": "맛있어요.",
+      "pt": "Está gostoso."
+    },
+    "nota": "O ㅅ final soa de três jeitos: [맏] sozinho, [마시…] antes de 있어요, [마덥…] antes de 없어요. Uma letra, três sons, tudo por causa do que vem depois.",
+    "baralho": false
+  },
+  {
+    "id": "gostoso",
+    "hangul": "맛있어요",
+    "romanizacao": "masisseoyo",
+    "pt": "está gostoso",
+    "modulo": "comida",
+    "classe": "adjetivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 12,
+    "exemplo": {
+      "ko": "삼겹살 맛있어요.",
+      "pt": "O samgyeopsal está gostoso."
+    },
+    "nota": "맛 (gosto) + 있어요 (existe). Mesma fôrma de 재미있어요 — aprender a soma dispensa decorar a palavra.",
+    "confundiveis": [
+      "ruim_gosto"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "ruim_gosto",
+    "hangul": "맛없어요",
+    "romanizacao": "madeopseoyo",
+    "pt": "está ruim (de gosto)",
+    "modulo": "comida",
+    "classe": "adjetivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 12,
+    "pronuncia": "마덥써요",
+    "exemplo": {
+      "ko": "굴 맛없어요.",
+      "pt": "Ostra é ruim."
+    },
+    "nota": "맛 + 없어요. Antes de uma palavra (não de um sufixo), o 받침 primeiro neutraliza — ㅅ vira ㄷ — e só então liga: por isso [마덥써요] e não [마섭써요]. É a única palavra do arquivo que precisa do campo `pronuncia`, porque `pronunciar()` liga direto sem neutralizar nesse contexto.",
+    "confundiveis": [
+      "gostoso"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "bem_adv",
+    "hangul": "잘",
+    "romanizacao": "jal",
+    "pt": "bem (advérbio)",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 12,
+    "exemplo": {
+      "ko": "잘 먹었습니다.",
+      "pt": "Obrigado pela comida."
+    },
+    "nota": "Vem antes do verbo, como todo advérbio coreano. 잘 먹었습니다 é literalmente “comi bem”.",
+    "baralho": false
+  },
+  {
+    "id": "gimbap",
+    "hangul": "김밥",
+    "romanizacao": "gimbap",
+    "pt": "gimbap (rolinho de arroz e alga)",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 12,
+    "exemplo": {
+      "ko": "김밥 주세요.",
+      "pt": "Um gimbap, por favor."
+    },
+    "nota": "김 (alga) + 밥 (arroz). Duas palavras que você já sabia, coladas — e o nome do prato viaja junto com ele.",
+    "confundiveis": [
+      "arroz",
+      "kimchi"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "bolo",
+    "hangul": "케이크",
+    "romanizacao": "keikeu",
+    "pt": "bolo",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 12,
+    "exemplo": {
+      "ko": "이 케이크 맛있어요.",
+      "pt": "Este bolo está gostoso."
+    },
+    "nota": "Termina em vogal, então 케이크예요.",
+    "confundiveis": [
+      "pao",
+      "sorvete"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "frango_frito",
+    "hangul": "치킨",
+    "romanizacao": "chikin",
+    "pt": "frango frito",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 12,
+    "exemplo": {
+      "ko": "치킨 맛있어요.",
+      "pt": "O frango está gostoso."
+    },
+    "nota": "치킨 é especificamente o frango frito de entrega — a galinha viva é 닭. Empréstimo que restringiu o sentido do original.",
+    "confundiveis": [
+      "passaro",
+      "samgyeopsal"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "samgyeopsal",
+    "hangul": "삼겹살",
+    "romanizacao": "samgyeopsal",
+    "pt": "samgyeopsal (barriga de porco)",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 12,
+    "sino": {
+      "삼": "三"
+    },
+    "exemplo": {
+      "ko": "삼겹살 맛있어요.",
+      "pt": "O samgyeopsal está gostoso."
+    },
+    "nota": "삼 (三, três) + 겹 (camada) + 살 (carne) — “três camadas”. O número da aula 15 já estava aqui.",
+    "confundiveis": [
+      "frango_frito",
+      "peixe_cru"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "ostra",
+    "hangul": "굴",
+    "romanizacao": "gul",
+    "pt": "ostra",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 12,
+    "exemplo": {
+      "ko": "굴 맛없어요.",
+      "pt": "Ostra é ruim."
+    },
+    "nota": "Uma sílaba só. Termina em ㄹ, então 굴이에요.",
+    "confundiveis": [
+      "peixe_cru",
+      "ovo"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "peixe_cru",
+    "hangul": "회",
+    "romanizacao": "hoe",
+    "pt": "peixe cru fatiado",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 13,
+    "exemplo": {
+      "ko": "회 먹고 싶어요.",
+      "pt": "Quero comer peixe cru."
+    },
+    "nota": "膾 — o sashimi coreano. A vogal ㅚ é uma só letra, ditada num movimento, não “o-e”.",
+    "confundiveis": [
+      "ostra",
+      "samgyeopsal"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "mais",
+    "hangul": "더",
+    "romanizacao": "deo",
+    "pt": "mais",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 13,
+    "exemplo": {
+      "ko": "더 주세요.",
+      "pt": "Me dê mais, por favor."
+    },
+    "nota": "Vem antes do que se quer mais: 더 먹고 싶어요, 더 주세요. É a frase da segunda porção em qualquer restaurante.",
+    "baralho": false
+  },
+  {
+    "id": "comprar",
+    "hangul": "사다",
+    "romanizacao": "sada",
+    "pt": "comprar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "aula": 14,
+    "exemplo": {
+      "ko": "뭐 사고 싶어요?",
+      "pt": "O que você quer comprar?"
+    },
+    "nota": "Radical 사, vogal ㅏ → 사요 no presente. Não confunda com 사다 e 살다 (morar), que só diferem no batchim.",
+    "confundiveis": [
+      "morar",
+      "dar"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "sair_passear",
+    "hangul": "놀다",
+    "romanizacao": "nolda",
+    "pt": "sair, passar o tempo, brincar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 14,
+    "exemplo": {
+      "ko": "놀고 싶어요.",
+      "pt": "Quero sair."
+    },
+    "nota": "Entre adultos não tem nada de infantil: 놀다 é encontrar gente e passar o tempo junto. Radical 놀, vogal ㅗ → 놀아요.",
+    "confundiveis": [
+      "descansar",
+      "trabalhar"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "descansar",
+    "hangul": "쉬다",
+    "romanizacao": "swida",
+    "pt": "descansar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 14,
+    "exemplo": {
+      "ko": "쉬고 싶어요.",
+      "pt": "Quero descansar."
+    },
+    "nota": "A vogal ㅟ é ㅜ e ㅣ ditos juntos, num movimento só — a mesma de 쥐.",
+    "confundiveis": [
+      "sair_passear",
+      "dormir"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "trabalhar",
+    "hangul": "일하다",
+    "romanizacao": "ilhada",
+    "pt": "trabalhar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 14,
+    "exemplo": {
+      "ko": "사무실에서 일해요.",
+      "pt": "Trabalho num escritório."
+    },
+    "nota": "일 (trabalho) + 하다 (fazer). Substantivo + 하다 é uma das fábricas de verbo do coreano, e todos se conjugam pelo 하다: 일해요.",
+    "confundiveis": [
+      "fazer",
+      "sair_passear"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "televisao",
+    "hangul": "텔레비전",
+    "romanizacao": "tellebijeon",
+    "pt": "televisão",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 14,
+    "exemplo": {
+      "ko": "텔레비전 보고 싶어요.",
+      "pt": "Quero ver televisão."
+    },
+    "nota": "Quatro sílabas. Na fala vira 티비, do inglês “TV” — e é essa forma curta que se ouve mais.",
+    "confundiveis": [
+      "computador",
+      "celular"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "noticias",
+    "hangul": "뉴스",
+    "romanizacao": "nyuseu",
+    "pt": "notícias, telejornal",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 14,
+    "exemplo": {
+      "ko": "뉴스 보고 싶어요.",
+      "pt": "Quero ver o noticiário."
+    },
+    "nota": "Empréstimo do inglês. Termina em vogal: 뉴스예요.",
+    "confundiveis": [
+      "televisao",
+      "filme"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "filme",
+    "hangul": "영화",
+    "romanizacao": "yeonghwa",
+    "pt": "filme",
+    "modulo": "alta-frequencia",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "aula": 14,
+    "exemplo": {
+      "ko": "영화 보고 싶어요.",
+      "pt": "Quero ver um filme."
+    },
+    "nota": "映畫 — “imagem projetada”. Com objeto na frente, 보고 싶어요 é literal; sem objeto, vira saudade.",
+    "confundiveis": [
+      "noticias",
+      "televisao"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "refrigerante_cola",
+    "hangul": "콜라",
+    "romanizacao": "kolla",
+    "pt": "refrigerante de cola",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 14,
+    "exemplo": {
+      "ko": "콜라 마시고 싶어요.",
+      "pt": "Quero beber refrigerante."
+    },
+    "nota": "O ㄹㄹ duplo é um L longo, não dois sons separados.",
+    "confundiveis": [
+      "refrigerante_limao",
+      "cerveja"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "refrigerante_limao",
+    "hangul": "사이다",
+    "romanizacao": "saida",
+    "pt": "refrigerante de limão",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 14,
+    "exemplo": {
+      "ko": "사이다 주세요.",
+      "pt": "Me vê um refrigerante de limão."
+    },
+    "nota": "De “cider”, mas não é sidra: na Coreia 사이다 é o refrigerante transparente, tipo Sprite. Falso amigo perfeito.",
+    "confundiveis": [
+      "refrigerante_cola"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "pizza",
+    "hangul": "피자",
+    "romanizacao": "pija",
+    "pt": "pizza",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 9,
+    "exemplo": {
+      "ko": "피자가 비싸요.",
+      "pt": "É a pizza que está cara."
+    },
+    "nota": "Termina em vogal, então a partícula de sujeito é 가: 피자가.",
+    "confundiveis": [
+      "hamburguer",
+      "bolo"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "bater_em",
+    "hangul": "때리다",
+    "romanizacao": "ttaerida",
+    "pt": "bater em",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "aula": 16,
+    "exemplo": {
+      "ko": "때려요.",
+      "pt": "Ele bate."
+    },
+    "nota": "Radical 때리, terminado em ㅣ — a forma completa 때리어요 contrai para 때려요, como todo verbo em -이다.",
+    "baralho": false
+  },
+  {
+    "id": "aparecer",
+    "hangul": "보이다",
+    "romanizacao": "boida",
+    "pt": "ser visto, aparecer",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 16,
+    "exemplo": {
+      "ko": "보여요.",
+      "pt": "Dá para ver. / Aparece."
+    },
+    "nota": "É 보다 (ver) na voz passiva. 보여요 (aparece) e 봐요 (eu vejo) vêm da mesma raiz e se confundem de ouvido — vale separar cedo.",
+    "confundiveis": [
+      "ver"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "morar",
+    "hangul": "살다",
+    "romanizacao": "salda",
+    "pt": "morar, viver",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 16,
+    "exemplo": {
+      "ko": "어디 살아요?",
+      "pt": "Onde você mora?"
+    },
+    "nota": "Radical 살, vogal ㅏ → 살아요, que soa [사라요]. Difere de 사다 (comprar) só pelo batchim ㄹ.",
+    "confundiveis": [
+      "comprar",
+      "vender"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "vender",
+    "hangul": "팔다",
+    "romanizacao": "palda",
+    "pt": "vender",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "aula": 16,
+    "exemplo": {
+      "ko": "여기서 팔아요.",
+      "pt": "Vende-se aqui."
+    },
+    "nota": "팔아요 soa [파라요]. E cuidado: 팔 sozinho é “oito” e também “braço” — três palavras, uma sílaba.",
+    "confundiveis": [
+      "comprar",
+      "morar"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "esperar",
+    "hangul": "기다리다",
+    "romanizacao": "gidarida",
+    "pt": "esperar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 16,
+    "exemplo": {
+      "ko": "기다려요.",
+      "pt": "Estou esperando."
+    },
+    "nota": "Radical 기다리 → 기다려요, com a mesma contração de 때리다. É o verbo do 잠시만요.",
+    "confundiveis": [
+      "descansar"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "sino_cem",
+    "hangul": "백",
+    "romanizacao": "baek",
+    "pt": "cem",
+    "modulo": "numeros",
+    "classe": "numeral",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 15,
+    "sino": {
+      "백": "百"
+    },
+    "exemplo": {
+      "ko": "백이십삼",
+      "pt": "123"
+    },
+    "nota": "Não se diz 일백 para 100, do mesmo jeito que não se diz 일십 para 10.",
+    "confundiveis": [
+      "sino_mil",
+      "sino_dez_mil"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "sino_mil",
+    "hangul": "천",
+    "romanizacao": "cheon",
+    "pt": "mil",
+    "modulo": "numeros",
+    "classe": "numeral",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 15,
+    "sino": {
+      "천": "千"
+    },
+    "exemplo": {
+      "ko": "사천오백 원",
+      "pt": "4.500 won"
+    },
+    "nota": "천 (千). Depois dele não vem “dez mil” composto — vem 만, palavra própria.",
+    "confundiveis": [
+      "sino_cem",
+      "sino_dez_mil"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "sino_dez_mil",
+    "hangul": "만",
+    "romanizacao": "man",
+    "pt": "dez mil",
+    "modulo": "numeros",
+    "classe": "numeral",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 15,
+    "sino": {
+      "만": "萬"
+    },
+    "exemplo": {
+      "ko": "십만 원",
+      "pt": "100.000 won"
+    },
+    "nota": "Aqui o coreano deixa de acompanhar o português: o agrupamento é de quatro em quatro zeros, não de três em três. 100.000 é 십만, “dez dez-miles”.",
+    "confundiveis": [
+      "sino_mil",
+      "sino_cem"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "won",
+    "hangul": "원",
+    "romanizacao": "won",
+    "pt": "won (moeda coreana)",
+    "modulo": "numeros",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 15,
+    "exemplo": {
+      "ko": "사천오백 원이에요.",
+      "pt": "São 4.500 won."
+    },
+    "nota": "圓 na origem — “redondo”, como o 円 japonês e o 元 chinês. Vem depois do número, sempre.",
+    "baralho": false
+  },
+  {
+    "id": "zero_conta",
+    "hangul": "영",
+    "romanizacao": "yeong",
+    "pt": "zero (em conta)",
+    "modulo": "numeros",
+    "classe": "numeral",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 15,
+    "exemplo": {
+      "ko": "영 점 오",
+      "pt": "0,5"
+    },
+    "nota": "零. Usa-se em matemática e em placar. Para ler dígito por dígito, o zero é 공.",
+    "confundiveis": [
+      "zero_digito"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "zero_digito",
+    "hangul": "공",
+    "romanizacao": "gong",
+    "pt": "zero (dígito a dígito)",
+    "modulo": "numeros",
+    "classe": "numeral",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 15,
+    "exemplo": {
+      "ko": "공일공",
+      "pt": "010 (prefixo de celular)"
+    },
+    "nota": "空 — “vazio”. É o zero de número de telefone e de senha, lido dígito por dígito.",
+    "confundiveis": [
+      "zero_conta"
+    ],
+    "baralho": false
   }
 ]

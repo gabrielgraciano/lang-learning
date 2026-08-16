@@ -1,8 +1,8 @@
 # Nível 1 — o que cada aula cobre
 
-Este documento é o mapa da seção **Nível 1** do app: o que cada uma das oito
-aulas ensina, onde o conteúdo mora, como acrescentar a nona, e o que foi
-deliberadamente deixado de fora.
+Este documento é o mapa da seção **Nível 1** do app: o que cada uma das
+dezesseis aulas ensina, onde o conteúdo mora, como acrescentar a próxima, e o
+que foi deliberadamente deixado de fora.
 
 O *porquê* de o app inteiro ser como é continua em `docs/fundamentacao.md`; as
 convenções de código continuam em `CLAUDE.md`. Aqui é só o Nível 1.
@@ -15,8 +15,8 @@ O material de origem são dois livros de gramática coreana para iniciantes que
 estão na pasta de estudo: um **livro-texto**, que explica cada ponto e traz um
 punhado de exercícios no fim de cada lição, e um **caderno de exercícios**, que
 não explica nada e só cobra — vocabulário, compreensão, ditado, tradução,
-embaralhamento de sílabas. As oito primeiras lições dos dois cobrem exatamente
-a mesma sequência de tópicos, então cada aula daqui junta os dois: a explicação
+embaralhamento de sílabas. As dezesseis primeiras lições dos dois cobrem
+exatamente a mesma sequência de tópicos, então cada aula daqui junta os dois: a explicação
 sai do livro-texto, os exercícios saem dos dois somados.
 
 **Nada aqui é transcrição.** Os pontos gramaticais não pertencem a ninguém —
@@ -46,12 +46,12 @@ voltarem por descuido. Guarde os livros na pasta de estudo, fora daqui.
 
 ---
 
-## As oito aulas
+## As dezesseis aulas
 
 Cada aula tem: uma capa (selo, frase-título, resumo, objetivo), uma lista de
 vocabulário, **três tópicos** de explicação, um diálogo de fecho, e **quatro
 grupos** de exercícios — um por tópico, mais um de ditado que treina a aula
-inteira. São **213 exercícios** no total.
+inteira. São **394 exercícios** no total.
 
 | Aula | Palavras | Exercícios | Por grupo | Ditado |
 |---|---|---|---|---|
@@ -63,6 +63,14 @@ inteira. São **213 exercícios** no total.
 | 6 | 6 | 29 | 9 + 7 + 8 + 5 | 5 |
 | 7 | 6 | 29 | 7 + 6 + 11 + 5 | 5 |
 | 8 | 6 | 35 | 7 + 12 + 10 + 6 | 6 |
+| 9 | 8 | 23 | 9 + 5 + 4 + 5 | 5 |
+| 10 | 6 | 21 | 5 + 5 + 6 + 5 | 5 |
+| 11 | 7 | 22 | 6 + 6 + 4 + 6 | 6 |
+| 12 | 9 | 22 | 6 + 4 + 6 + 6 | 6 |
+| 13 | 6 | 19 | 7 + 3 + 4 + 5 | 5 |
+| 14 | 9 | 22 | 4 + 7 + 6 + 5 | 5 |
+| 15 | 14 | 24 | 7 + 8 + 4 + 5 | 5 |
+| 16 | 8 | 28 | 10 + 6 + 6 + 6 | 6 |
 
 ### Aula 1 · 안녕하세요. 감사합니다. — “Oi e obrigado”
 *8 palavras · 25 exercícios*
@@ -143,11 +151,90 @@ inteira. São **213 exercícios** no total.
 | A ordem completa da frase | 이거 책 아니에요 = “isto livro não-é”; o que se nega fica no fim | Montar a negação (12) |
 | 아니에요 vem de 아니다 | a forma de dicionário; todo verbo coreano termina em -다 | Revisão das oito aulas (10) |
 
+### Aula 9 · -은/는, -이/가 — “Do que a frase está falando”
+*8 palavras · 23 exercícios*
+
+| Tópico | O que ensina | Grupo de exercícios |
+|---|---|---|
+| Duas partículas, duas perguntas diferentes | marca de tópico (-은/-는) e de sujeito (-이/-가); 받침 → 은/이, vogal → 는/가 | Qual partícula entra (9) |
+| -은/는 carrega um “ao contrário das outras coisas” | o contraste que 은/는 acrescenta sem estar escrito: 오늘은 vs 오늘 날씨는 | O contraste do 은/는 (5) |
+| -이/가 responde “qual deles?” | 이/가 seleciona um item entre vários — responde “qual deles?” | Selecionar com 이/가 (4) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (5) |
+
+### Aula 10 · 있어요. 없어요. — “Ter e existir são a mesma palavra”
+*6 palavras · 21 exercícios*
+
+| Tópico | O que ensina | Grupo de exercícios |
+|---|---|---|
+| Uma palavra para “ter” e para “existir” | existir e possuir na mesma palavra; a coisa vem antes do verbo | Ter e perguntar (5) |
+| 없어요 é palavra própria, não 있어요 negado | 없어요 é verbo próprio, não 있어요 negado; e não se confunde com 아니에요 | A ausência tem palavra própria (5) |
+| 있어요 vira peça de outras palavras | 재미있어요 e a combinação com as partículas da aula 9 | Composições e partículas (6) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (5) |
+
+### Aula 11 · 주세요 — “Me vê um, por favor”
+*7 palavras · 22 exercícios*
+
+| Tópico | O que ensina | Grupo de exercícios |
+|---|---|---|
+| 주세요 vem de “dar” | 주세요 vem de 주다 (dar); objeto primeiro, pedido no fim; sem plural obrigatório | Vocabulário e a construção (6) |
+| 있어요? para saber, 주세요 para pedir | 있어요? para saber se tem, 주세요 para pedir — a conversa inteira de um balcão | A conversa do balcão (6) |
+| 주세요 não tem versão informal para estranho | 주세요 está sempre em 존댓말, com qualquer interlocutor | Quando usar (4) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (6) |
+
+### Aula 12 · 맛있어요. 맛없어요. — “Está gostoso”
+*9 palavras · 22 exercícios*
+
+| Tópico | O que ensina | Grupo de exercícios |
+|---|---|---|
+| 맛 + 있어요 — a mesma fôrma de 재미있어요 | 맛 + 있어요 / 없어요 — a mesma fôrma de 재미있어요 | Gostoso e ruim (6) |
+| O ㅅ de 맛 muda de som três vezes | o ㅅ de 맛 soa [t], [s] ou [d] conforme o que vem depois | O som que a letra esconde (4) |
+| O que se diz antes e depois de comer | 잘 먹겠습니다 antes de comer, 잘 먹었습니다 depois | À mesa (6) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (6) |
+
+### Aula 13 · -고 싶어요 — “Quero”
+*6 palavras · 19 exercícios*
+
+| Tópico | O que ensina | Grupo de exercícios |
+|---|---|---|
+| Tire o -다, ponha -고 싶어요 | tire o -다 do dicionário e encaixe -고 싶어요; não varia nunca | Montar o “quero” (7) |
+| 보고 싶어요 também é “estou com saudade” | 보고 싶어요 é “quero ver” e também “estou com saudade” | Os dois sentidos de 보고 싶어요 (3) |
+| 더 = mais | 더 = mais, antes do verbo: 더 먹고 싶어요, 더 주세요 | Mais um pouco (4) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (5) |
+
+### Aula 14 · 뭐 하고 싶어요? — “O que você quer fazer?”
+*9 palavras · 22 exercícios*
+
+| Tópico | O que ensina | Grupo de exercícios |
+|---|---|---|
+| 뭐 + verbo + 고 싶어요? | 뭐 + verbo + 고 싶어요? — 뭐 ocupa o lugar da resposta | A pergunta (4) |
+| Dez verbos que cobrem um dia inteiro | dez verbos do dia a dia, e o padrão substantivo + 하다 | Os verbos (7) |
+| Responder é repetir o verbo da pergunta | responde-se repetindo o verbo da pergunta, não com 네 sozinho | Perguntar e responder (6) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (5) |
+
+### Aula 15 · 일 이 삼 사 오 육 칠 팔 구 십 — “Contar com dez sílabas”
+*14 palavras · 24 exercícios*
+
+| Tópico | O que ensina | Grupo de exercícios |
+|---|---|---|
+| Dez sílabas, e o resto é encaixe | 일이삼사오육칠팔구십 e o encaixe: dezena primeiro, unidade depois | De um a dez, e o encaixe (7) |
+| 백, 천, 만 — e a virada em dez mil | 백, 천, 만 — e o agrupamento de quatro em quatro zeros | Centenas, milhares e a virada (8) |
+| Você já conhece estes morfemas | os mesmos morfemas já estavam em 삼겹살, 일요일, 만원 | Os números já estavam nas palavras (4) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (5) |
+
+### Aula 16 · -아요 / -어요 / -여요 — “O presente, enfim”
+*8 palavras · 28 exercícios*
+
+| Tópico | O que ensina | Grupo de exercícios |
+|---|---|---|
+| Tire o -다 e olhe a última vogal | tire o -다 e olhe a última vogal do radical: ㅏ/ㅗ → 아요, resto → 어요, 하 → 해요 | A regra das três terminações (10) |
+| 하 + 여요 virou 해요, e outras contrações | 하 + 여요 = 해요, e as contrações 보아요 → 봐요, 오아요 → 와요 | 해요 e as contrações (6) |
+| Você já vinha usando isto | 있어요, 없어요, 좋아요, 맞아요 sempre foram esta conjugação | O círculo se fecha (6) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (6) |
 ---
 
 ## Como o conteúdo é guardado
 
-Tudo em **`dados/licoes.json`** — um array de oito objetos. Como em
+Tudo em **`dados/licoes.json`** — um array de dezesseis objetos. Como em
 `dados/palavras.json`, nenhuma mudança de conteúdo exige tocar em código.
 
 ```jsonc
@@ -200,6 +287,19 @@ exercício que ninguém alcança pela leitura.
 O bloco `som` **não** guarda a forma falada: ele chama `pronunciar()` de
 `src/pronuncia.js` na hora de desenhar. Se a regra mudar no motor, a aula muda
 junto, e nunca existem duas verdades sobre a mesma palavra.
+
+> **Uma lacuna conhecida do motor.** Quando um 받침 é seguido de outra
+> **palavra** começada por vogal, a norma manda neutralizar primeiro e só então
+> ligar: 맛없어요 é [마덥써요], porque o ㅅ vira ㄷ antes de ligar. `pronunciar()`
+> liga direto e devolve [마섭써요]. Ele não tem como saber, olhando só a cadeia
+> de sílabas, se o que vem depois é uma palavra ou um sufixo — e antes de
+> sufixo (맛이 → [마시]) ligar direto é que está certo.
+>
+> Por isso 맛없어요 é hoje a **única** entrada de `dados/palavras.json` que usa o
+> campo `pronuncia`. Se você escrever um bloco `som` sobre uma palavra nesse
+> contexto, confira o resultado à mão antes — o motor vai errar. Consertar isso
+> de verdade exigiria o motor saber onde termina cada palavra, o que é uma
+> mudança de escopo maior que uma aula.
 
 ### Tipos de exercício (`grupos[].itens`)
 
@@ -291,7 +391,7 @@ Mesmas regras de `CLAUDE.md`: 200×200, sujeito isolado, paleta de ~5 cores,
 Toda palavra que aparece na seção de vocabulário de uma aula está também em
 **`dados/palavras.json`**, com o mesmo esquema das palavras do baralho:
 romanização, módulo, classe, `sino` quando é sino-coreana, exemplo e nota. São
-**171 entradas** hoje — 114 no baralho, 57 só no dicionário.
+**217 entradas** hoje — 114 no baralho, 103 só no dicionário.
 
 O que separa as duas metades é um campo:
 
@@ -373,6 +473,10 @@ mecânico (definir, desembaralhar, traduzir, ouvir e escrever) e o livro-texto �
 situacional (“você pisou no pé de alguém no metrô; o que diz?”). Onde os dois
 cobriam o mesmo ponto, ficou um exercício só.
 
+As aulas 9 a 16 já nasceram nesse padrão: 181 exercícios, dos quais 43 de
+ditado, cobrindo todas as faixas de ditado do caderno para essas lições e as
+questões situacionais do livro-texto.
+
 ---
 
 ## Verificação
@@ -409,13 +513,12 @@ Confira, para cada item:
    confirme que `completou()` dispara na montagem certa e **não** dispara num
    prefixo dela.
 
-Tudo deve dar zero problema. Hoje: **8 aulas, 213 exercícios** — escolha 61,
-ditado 49, montar 42, vf 20, lacuna 16, associar 15, imagem 10.
+Tudo deve dar zero problema. Hoje: **16 aulas, 394 exercícios** — escolha 117, ditado 92, montar 85, vf 34, lacuna 29, associar 27, imagem 10.
 
 ### Dicionário e baralho (Node, sem navegador)
 
-1. **O baralho não muda de tamanho** quando você só acrescenta dicionário
-   (`p.filter((w) => w.baralho !== false).length`) — é o que garante que nenhuma
+1. **O baralho não muda de tamanho** — 114 palavras — quando você só acrescenta
+   dicionário (`p.filter((w) => w.baralho !== false).length`) — é o que garante que nenhuma
    palavra nova entrou na fila do dia sem querer.
 2. **Todo hanja citado em algum `sino` tem verbete em `dados/hanja.json`**,
    senão a família aparece sem significado.
@@ -430,7 +533,7 @@ ditado 49, montar 42, vf 20, lacuna 16, associar 15, imagem 10.
 Mesma receita de `CLAUDE.md` (Chromium em `/opt/pw-browsers`, `python3 -m
 http.server`). O roteiro específico daqui: abrir as oito aulas, conferir que o
 número de tópicos e de atalhos bate com o JSON, clicar num “Praticar isto” e
-verificar que ele troca de aba **e** revela o grupo certo, responder os 213
+verificar que ele troca de aba **e** revela o grupo certo, responder os 394
 exercícios **lendo as respostas de `dados/licoes.json`** (nunca decoradas no
 script), e conferir ao final: zero erro de console, contador de cada aba em
 `n/n`, resumo em “8 de 8 aulas”, e o progresso sobrevivendo a um `reload`. Os
@@ -453,14 +556,14 @@ Duas armadilhas que já custaram tempo:
 
 ---
 
-## Acrescentar a aula 9
+## Acrescentar a aula 17
 
 1. Escreva a entrada em `dados/licoes.json` seguindo o esquema acima: três
    tópicos, três grupos com dono, e um grupo de ditado marcado `"solto": true`.
-2. Desenhe `assets/licoes/aula-9.svg` (200×200, sem texto). Olhe as oito
+2. Desenhe `assets/licoes/aula-17.svg` (200×200, sem texto). Olhe as dezesseis
    existentes antes — as de gramática são diagramáticas, não figurativas.
 3. Acrescente o vocabulário da aula a `dados/palavras.json` com
-   `"baralho": false` e `"aula": 9`, e os hanja novos a `dados/hanja.json`.
+   `"baralho": false` e `"aula": 17`, e os hanja novos a `dados/hanja.json`.
 4. Se o vocabulário novo precisar de objeto ilustrado que ainda não existe,
    desenhe em `assets/ilustracoes/` seguindo as regras do `CLAUDE.md`.
 5. Rode as invariantes acima e os dois roteiros do navegador.

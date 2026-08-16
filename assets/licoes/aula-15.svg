@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Ábaco de contas em três fileiras">
+  <circle cx="100" cy="100" r="94" fill="#E9E4DA"/>
+  <rect x="28" y="34" width="144" height="132" rx="8" fill="none" stroke="#7A5C3E" stroke-width="9"/>
+  <g stroke="#B79B78" stroke-width="4">
+    <path d="M28 68h144"/><path d="M28 100h144"/><path d="M28 132h144"/>
+  </g>
+  <g fill="#37607A">
+    <circle cx="52" cy="68" r="11"/><circle cx="78" cy="68" r="11"/><circle cx="104" cy="68" r="11"/>
+  </g>
+  <g fill="#C08A38">
+    <circle cx="52" cy="100" r="11"/><circle cx="78" cy="100" r="11"/>
+  </g>
+  <g fill="#8C4A57">
+    <circle cx="52" cy="132" r="11"/><circle cx="78" cy="132" r="11"/>
+    <circle cx="104" cy="132" r="11"/><circle cx="130" cy="132" r="11"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Balão de pensamento com uma peça encaixando num verbo">
+  <circle cx="100" cy="100" r="94" fill="#E5E2EE"/>
+  <path d="M40 34h120a14 14 0 0 1 14 14v56a14 14 0 0 1-14 14H84l-26 24v-24H40a14 14 0 0 1-14-14V48a14 14 0 0 1 14-14z" fill="#584C86"/>
+  <rect x="46" y="58" width="46" height="36" rx="4" fill="#EDEAF6"/>
+  <rect x="102" y="58" width="52" height="36" rx="4" fill="#9186C0"/>
+  <path d="M96 66v20M88 76h16" stroke="#EDEAF6" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#584C86">
+    <circle cx="52" cy="158" r="9"/><circle cx="36" cy="176" r="6"/>
+  </g>
+  <path d="M118 150h44" stroke="#B0563F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M152 140l14 10-14 10" fill="none" stroke="#B0563F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
