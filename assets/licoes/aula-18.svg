@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Alfinete de mapa sobre um caminho que leva a um prédio">
+  <circle cx="100" cy="100" r="94" fill="#DFE8E9"/>
+  <path d="M22 158c30-6 34-40 60-46s34-34 62-40" fill="none" stroke="#9FB6B8" stroke-width="7" stroke-linecap="round" stroke-dasharray="3 14"/>
+  <path d="M62 62a26 26 0 0 1 52 0c0 20-26 46-26 46S62 82 62 62z" fill="#2F6B7E"/>
+  <circle cx="88" cy="62" r="11" fill="#DFE8E9"/>
+  <path d="M128 116h44v50h-44z" fill="#54798A"/>
+  <path d="M128 116l22-16 22 16" fill="#3E606F"/>
+  <g fill="#CFE0E4">
+    <rect x="138" y="128" width="12" height="12" rx="2"/><rect x="156" y="128" width="12" height="12" rx="2"/>
+    <rect x="138" y="146" width="12" height="12" rx="2"/><rect x="156" y="146" width="12" height="12" rx="2"/>
+  </g>
+  <rect x="20" y="166" width="160" height="8" rx="4" fill="#9FB6B8"/>
+</svg>

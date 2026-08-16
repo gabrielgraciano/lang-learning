@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Silhueta de pessoa atrás de uma porta entreaberta">
+  <circle cx="100" cy="100" r="94" fill="#E3E6EC"/>
+  <rect x="30" y="28" width="86" height="146" rx="5" fill="#6B5E4A"/>
+  <rect x="42" y="40" width="62" height="122" rx="3" fill="#8A7A60"/>
+  <circle cx="96" cy="102" r="6" fill="#D9C79E"/>
+  <path d="M124 174V96a34 34 0 0 1 68 0v78z" fill="#4A5B86"/>
+  <circle cx="158" cy="62" r="24" fill="#4A5B86"/>
+  <circle cx="158" cy="62" r="24" fill="#5D6E9C" opacity=".5"/>
+  <path d="M150 168h16" stroke="#E3E6EC" stroke-width="6" stroke-linecap="round"/>
+</svg>

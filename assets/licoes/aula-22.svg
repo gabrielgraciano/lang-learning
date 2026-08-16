@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma peça entrando numa engrenagem e saindo dobrada">
+  <circle cx="100" cy="100" r="94" fill="#DFE6E2"/>
+  <path d="M100 48l10 3 7-8 9 6-3 10 10 4v11l-10 4 3 10-9 6-7-8-10 3-10-3-7 8-9-6 3-10-10-4V63l10-4-3-10 9-6 7 8 10-3z" fill="#3E6B55"/>
+  <circle cx="100" cy="69" r="13" fill="#DFE6E2"/>
+  <rect x="24" y="132" width="54" height="30" rx="5" fill="#7FA894"/>
+  <rect x="86" y="132" width="42" height="30" rx="5" fill="#3E6B55"/>
+  <rect x="136" y="132" width="42" height="30" rx="5" fill="#C08A38"/>
+  <g stroke="#8FA79A" stroke-width="5" stroke-linecap="round">
+    <path d="M51 108v18"/><path d="M107 108v18"/><path d="M157 108v18"/>
+  </g>
+</svg>

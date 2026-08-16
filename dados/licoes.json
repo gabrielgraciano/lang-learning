@@ -10402,5 +10402,5997 @@
         ]
       }
     ]
+  },
+  {
+    "id": "aula-17",
+    "numero": 17,
+    "hanja": "十七",
+    "titulo": "O que já aconteceu",
+    "hangul": "-았어요 / -었어요 / -였어요",
+    "resumo": "O passado é o presente com uma sílaba a mais. Se você aprendeu a aula 16, já sabe esta.",
+    "ilustracao": "assets/licoes/aula-17.svg",
+    "objetivo": "Conjugar qualquer verbo no passado a partir da forma de presente que você já monta.",
+    "vocabulario": [
+      {
+        "ko": "잡다",
+        "pt": "pegar, segurar"
+      },
+      {
+        "ko": "멋있다",
+        "pt": "ser bacana, ser estiloso"
+      },
+      {
+        "ko": "이상하다",
+        "pt": "ser estranho"
+      },
+      {
+        "ko": "기다리다",
+        "pt": "esperar"
+      },
+      {
+        "ko": "쓰다",
+        "pt": "escrever, usar",
+        "ilustracao": "assets/ilustracoes/escrever.svg"
+      },
+      {
+        "ko": "적다",
+        "pt": "anotar; ser pouco"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a17-t1",
+        "titulo": "Troque o 요 por -ㅆ어요",
+        "grupo": "a17-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Há dois jeitos de olhar para esta aula. O formal é dizer que existem três terminações de passado. O prático é notar que elas são as três do presente com 从 dentro — e que dá para partir da forma que você já sabe montar."
+          },
+          {
+            "tipo": "regra",
+            "linhas": [
+              {
+                "condicao": "먹어요 (presente)",
+                "resultado": "먹었어요 (passado)"
+              },
+              {
+                "condicao": "가요 (presente)",
+                "resultado": "갔어요 (passado)"
+              },
+              {
+                "condicao": "해요 (presente)",
+                "resultado": "했어요 (passado)"
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Pegue o presente, tire o 요 do fim e ponha -ㅆ어요 no lugar. O resto da palavra não muda."
+          },
+          {
+            "tipo": "p",
+            "texto": "Escrita como regra de terminação, é a mesma tabela da aula 16 com 았/었/였 no lugar de 아/어/여:"
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Última vogal do radical",
+              "Presente",
+              "Passado"
+            ],
+            "linhas": [
+              [
+                "ㅏ ou ㅗ",
+                "-아요",
+                "-았어요"
+              ],
+              [
+                "qualquer outra",
+                "-어요",
+                "-었어요"
+              ],
+              [
+                "radical 하",
+                "해요",
+                "했어요"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a17-t2",
+        "titulo": "As contrações continuam valendo",
+        "grupo": "a17-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Se o radical termina em vogal, ela se funde com a terminação — exatamente como no presente. Nada de novo para decorar."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Dicionário",
+              "Presente",
+              "Passado"
+            ],
+            "linhas": [
+              [
+                "사다 — comprar",
+                "사요",
+                "샀어요"
+              ],
+              [
+                "오다 — vir",
+                "와요",
+                "왔어요"
+              ],
+              [
+                "보다 — ver",
+                "봐요",
+                "봤어요"
+              ],
+              [
+                "기다리다 — esperar",
+                "기다려요",
+                "기다렸어요"
+              ],
+              [
+                "하다 — fazer",
+                "해요",
+                "했어요"
+              ]
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "E os verbos com radical fechado por consoante seguem o caminho simples, sem fusão nenhuma:"
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "잡았어요.",
+                "pt": "Peguei.",
+                "conta": "잡 tem ㅏ → 았어요"
+              },
+              {
+                "ko": "먹었어요.",
+                "pt": "Comi.",
+                "conta": "먹 tem ㅓ → 었어요"
+              },
+              {
+                "ko": "팔았어요.",
+                "pt": "Vendi.",
+                "conta": "팔 tem ㅏ → 았어요"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a17-t3",
+        "titulo": "Um passado, vários usos",
+        "grupo": "a17-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Coreano não separa o pretérito perfeito do imperfeito como o português. 먹었어요 cobre “comi”, “comia” e “tinha comido” — o contexto e as palavras de tempo resolvem."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "어제 왔어요.",
+                "pt": "Vim ontem."
+              },
+              {
+                "ko": "학교에서 친구 봤어요.",
+                "pt": "Vi um amigo na escola."
+              },
+              {
+                "ko": "기다렸어요.",
+                "pt": "Eu esperei. / Eu estava esperando."
+              }
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "E este 었 você já tinha encontrado, sem saber que era ele: está em 잘 먹었습니다, a frase do fim da refeição, na aula 12."
+          },
+          {
+            "tipo": "destaque",
+            "texto": "잘 먹겠습니다 (vou comer) e 잘 먹었습니다 (comi) diferem exatamente pela sílaba que marca o tempo."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Reencontro no escritório.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "어제 왜 안 왔어요?",
+          "pt": "Por que você não veio ontem?"
+        },
+        {
+          "quem": "B",
+          "ko": "일했어요.",
+          "pt": "Eu trabalhei."
+        },
+        {
+          "quem": "A",
+          "ko": "기다렸어요.",
+          "pt": "Eu esperei."
+        },
+        {
+          "quem": "B",
+          "ko": "죄송합니다.",
+          "pt": "Desculpe."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a17-g1",
+        "titulo": "Do presente para o passado",
+        "itens": [
+          {
+            "id": "a17-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada verbo à tradução.",
+            "pares": [
+              {
+                "a": "잡다",
+                "b": "pegar"
+              },
+              {
+                "a": "멋있다",
+                "b": "ser bacana"
+              },
+              {
+                "a": "이상하다",
+                "b": "ser estranho"
+              },
+              {
+                "a": "기다리다",
+                "b": "esperar"
+              },
+              {
+                "a": "적다",
+                "b": "anotar"
+              }
+            ],
+            "explicacao": "Todos na forma de dicionário. O primeiro passo continua sendo tirar o -다."
+          },
+          {
+            "id": "a17-e2",
+            "tipo": "escolha",
+            "enunciado": "Se o presente é 먹어요, qual é o passado?",
+            "opcoes": [
+              {
+                "ko": "먹었어요"
+              },
+              {
+                "ko": "먹았어요"
+              },
+              {
+                "ko": "먹여요"
+              },
+              {
+                "ko": "먹어써요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Tire o 요, ponha -ㅆ어요: 먹어 → 먹었어요."
+          },
+          {
+            "id": "a17-e3",
+            "tipo": "escolha",
+            "enunciado": "E se o presente é 가요?",
+            "opcoes": [
+              {
+                "ko": "갔어요"
+              },
+              {
+                "ko": "가았어요"
+              },
+              {
+                "ko": "가었어요"
+              },
+              {
+                "ko": "갓어요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "가요 → 갔어요."
+          },
+          {
+            "id": "a17-e4",
+            "tipo": "montar",
+            "enunciado": "Conjugue 잡다 no passado.",
+            "dica": "vogal ㅏ",
+            "pecas": [
+              "잡",
+              "았어요",
+              "었어요"
+            ],
+            "correta": "잡았어요",
+            "explicacao": "잡았어요 — soa [자바써요]."
+          },
+          {
+            "id": "a17-e5",
+            "tipo": "montar",
+            "enunciado": "Conjugue 팔다 no passado.",
+            "dica": "vogal ㅏ",
+            "pecas": [
+              "팔",
+              "았어요",
+              "었어요"
+            ],
+            "correta": "팔았어요",
+            "explicacao": "팔았어요 — soa [파라써요]."
+          },
+          {
+            "id": "a17-e6",
+            "tipo": "montar",
+            "enunciado": "Conjugue 멋있다 no passado.",
+            "dica": "vogal ㅣ no radical 멋있",
+            "pecas": [
+              "멋있",
+              "었어요",
+              "았어요"
+            ],
+            "correta": "멋있었어요",
+            "explicacao": "멋있었어요. O radical já contém 있, e ele leva 었어요."
+          },
+          {
+            "id": "a17-e7",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Para formar o passado, tira-se o radical do verbo e acrescenta-se 았어요.",
+            "correta": false,
+            "explicacao": "O que se tira é o -다 final, não o radical. O radical é justamente o que fica."
+          },
+          {
+            "id": "a17-e8",
+            "tipo": "escolha",
+            "enunciado": "O verbo 하다 leva qual terminação de passado?",
+            "opcoes": [
+              {
+                "ko": "-였어요, que virou 했어요"
+              },
+              {
+                "ko": "-았어요"
+              },
+              {
+                "ko": "-었어요"
+              },
+              {
+                "ko": "-았었어요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "하 + 였어요 = 했어요, do mesmo jeito que 하 + 여요 = 해요."
+          }
+        ]
+      },
+      {
+        "id": "a17-g2",
+        "titulo": "As contrações",
+        "itens": [
+          {
+            "id": "a17-e9",
+            "tipo": "escolha",
+            "enunciado": "사다 (comprar) no passado:",
+            "opcoes": [
+              {
+                "ko": "샀어요"
+              },
+              {
+                "ko": "사았어요"
+              },
+              {
+                "ko": "사었어요"
+              },
+              {
+                "ko": "섰어요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "사 + 았어요 funde para 샀어요."
+          },
+          {
+            "id": "a17-e10",
+            "tipo": "escolha",
+            "enunciado": "오다 (vir) no passado:",
+            "opcoes": [
+              {
+                "ko": "왔어요"
+              },
+              {
+                "ko": "오았어요"
+              },
+              {
+                "ko": "웠어요"
+              },
+              {
+                "ko": "옸어요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "오 + 았어요 = 왔어요, a mesma fusão de 와요."
+          },
+          {
+            "id": "a17-e11",
+            "tipo": "escolha",
+            "enunciado": "보다 (ver) no passado:",
+            "opcoes": [
+              {
+                "ko": "봤어요"
+              },
+              {
+                "ko": "보았어요만"
+              },
+              {
+                "ko": "봐았어요"
+              },
+              {
+                "ko": "봈어요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "봐요 → 봤어요."
+          },
+          {
+            "id": "a17-e12",
+            "tipo": "montar",
+            "enunciado": "Conjugue 기다리다 no passado.",
+            "dica": "radical terminado em ㅣ",
+            "pecas": [
+              "기다",
+              "렸어요",
+              "리었어요"
+            ],
+            "correta": "기다렸어요",
+            "explicacao": "기다리 + 었어요 contrai para 기다렸어요."
+          },
+          {
+            "id": "a17-e13",
+            "tipo": "montar",
+            "enunciado": "Conjugue 이상하다 no passado.",
+            "dica": "termina em 하다",
+            "pecas": [
+              "이상",
+              "했어요",
+              "핬어요"
+            ],
+            "correta": "이상했어요",
+            "explicacao": "이상했어요 — “era estranho”."
+          },
+          {
+            "id": "a17-e14",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "샀어요 quer dizer “eu comi”.",
+            "correta": false,
+            "explicacao": "샀어요 é de 사다, comprar. “Comi” é 먹었어요."
+          }
+        ]
+      },
+      {
+        "id": "a17-g3",
+        "titulo": "Usar o passado",
+        "itens": [
+          {
+            "id": "a17-e15",
+            "tipo": "montar",
+            "enunciado": "Monte “Vim ontem.”",
+            "dica": "어제 = ontem",
+            "pecas": [
+              "어제",
+              "왔어요.",
+              "와요."
+            ],
+            "correta": "어제왔어요.",
+            "explicacao": "어제 왔어요."
+          },
+          {
+            "id": "a17-e16",
+            "tipo": "montar",
+            "enunciado": "Monte “Eu esperei.”",
+            "dica": "기다리다 = esperar",
+            "pecas": [
+              "기다렸어요.",
+              "기다려요.",
+              "기다리다"
+            ],
+            "correta": "기다렸어요.",
+            "explicacao": "기다렸어요 — vale “esperei” e “estava esperando”."
+          },
+          {
+            "id": "a17-e17",
+            "tipo": "escolha",
+            "enunciado": "먹었어요 pode traduzir:",
+            "opcoes": [
+              {
+                "pt": "“comi”, “comia” e “tinha comido” — o contexto resolve"
+              },
+              {
+                "pt": "só “comi”"
+              },
+              {
+                "pt": "só “comia”"
+              },
+              {
+                "pt": "“vou comer”"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Coreano não separa perfeito de imperfeito como o português."
+          },
+          {
+            "id": "a17-e18",
+            "tipo": "escolha",
+            "enunciado": "Onde você já tinha encontrado este 었, sem saber?",
+            "opcoes": [
+              {
+                "ko": "잘 먹었습니다",
+                "pt": "a frase do fim da refeição"
+              },
+              {
+                "ko": "감사합니다",
+                "pt": "obrigado"
+              },
+              {
+                "ko": "안녕하세요",
+                "pt": "olá"
+              },
+              {
+                "ko": "주세요",
+                "pt": "me dê"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "잘 먹겠습니다 (vou comer) e 잘 먹었습니다 (comi) diferem justamente pela sílaba de tempo."
+          },
+          {
+            "id": "a17-e19",
+            "tipo": "montar",
+            "enunciado": "Monte “Por que você não veio ontem?”",
+            "dica": "안 = não, da próxima aula",
+            "pecas": [
+              "어제",
+              "왜",
+              "안",
+              "왔어요?"
+            ],
+            "correta": "어제왜안왔어요?",
+            "explicacao": "어제 왜 안 왔어요?"
+          }
+        ]
+      },
+      {
+        "id": "a17-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "a17-e20",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "왔어요",
+            "pecas": [
+              "왔어요",
+              "와요",
+              "가요"
+            ],
+            "correta": "왔어요",
+            "explicacao": "왔어요 — de 오다."
+          },
+          {
+            "id": "a17-e21",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "잡았어요",
+            "pecas": [
+              "잡",
+              "았어요",
+              "었어요"
+            ],
+            "correta": "잡았어요",
+            "explicacao": "잡았어요 — soa [자바써요]."
+          },
+          {
+            "id": "a17-e22",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "기다렸어요",
+            "pecas": [
+              "기다",
+              "렸어요",
+              "려요"
+            ],
+            "correta": "기다렸어요",
+            "explicacao": "기다렸어요."
+          },
+          {
+            "id": "a17-e23",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha o tempo verbal que você ouviu.",
+            "audio": "했어요",
+            "opcoes": [
+              {
+                "ko": "했어요",
+                "pt": "passado"
+              },
+              {
+                "ko": "해요",
+                "pt": "presente"
+              },
+              {
+                "ko": "하고 싶어요",
+                "pt": "quero fazer"
+              },
+              {
+                "ko": "하세요",
+                "pt": "faça"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "했어요 — a sílaba 했 carrega o passado."
+          },
+          {
+            "id": "a17-e24",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha o que você ouviu.",
+            "audio": "샀어요",
+            "opcoes": [
+              {
+                "ko": "샀어요",
+                "pt": "comprei"
+              },
+              {
+                "ko": "왔어요",
+                "pt": "vim"
+              },
+              {
+                "ko": "봤어요",
+                "pt": "vi"
+              },
+              {
+                "ko": "했어요",
+                "pt": "fiz"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "샀어요 — de 사다. Quatro passados contraídos que se confundem de ouvido."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-18",
+    "numero": 18,
+    "hanja": "十八",
+    "titulo": "Onde, e para onde",
+    "hangul": "어디, -에, -에서",
+    "resumo": "Duas partículas de lugar que o português resolve com a mesma preposição — e a diferença entre estar e agir.",
+    "ilustracao": "assets/licoes/aula-18.svg",
+    "objetivo": "Dizer onde você está, para onde vai e onde faz as coisas, escolhendo entre 에 e 에서.",
+    "vocabulario": [
+      {
+        "ko": "어디",
+        "pt": "onde"
+      },
+      {
+        "ko": "지금",
+        "pt": "agora"
+      },
+      {
+        "ko": "집",
+        "pt": "casa",
+        "ilustracao": "assets/ilustracoes/casa.svg"
+      },
+      {
+        "ko": "한국",
+        "pt": "Coreia",
+        "hanja": "韓國"
+      },
+      {
+        "ko": "-에",
+        "pt": "em, a, para (destino e localização)"
+      },
+      {
+        "ko": "-에서",
+        "pt": "em, de (onde a ação acontece)"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a18-t1",
+        "titulo": "-에 marca onde a coisa está e para onde ela vai",
+        "grupo": "a18-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "-에 gruda no fim do lugar, sem variação por 받침. Ela cobre dois usos que o português separa em “em” e “para”."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "학교",
+              "-에",
+              "갔어요"
+            ],
+            "glosas": [
+              "escola",
+              "para",
+              "fui"
+            ],
+            "resultado": "학교에 갔어요",
+            "traducao": "fui para a escola"
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "한국에 왔어요.",
+                "pt": "Vim para a Coreia.",
+                "conta": "destino"
+              },
+              {
+                "ko": "집에 가요.",
+                "pt": "Vou para casa.",
+                "conta": "destino"
+              },
+              {
+                "ko": "지금 어디에 있어요?",
+                "pt": "Onde você está agora?",
+                "conta": "localização com 있다"
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Com 가다, 오다 e 있다, a partícula é 에."
+          },
+          {
+            "tipo": "nota",
+            "texto": "-에 faz muito mais do que lugar: marca também tempo e situação. Aqui só o lugar interessa; o resto aparece adiante."
+          }
+        ]
+      },
+      {
+        "id": "a18-t2",
+        "titulo": "-에서 marca onde a ação acontece",
+        "grupo": "a18-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Quando o lugar não é destino nem posição, mas o palco de uma ação, a partícula muda."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Frase",
+              "Por quê"
+            ],
+            "linhas": [
+              [
+                "집에 가요 — vou para casa",
+                "casa é destino → 에"
+              ],
+              [
+                "집에 있어요 — estou em casa",
+                "casa é posição → 에"
+              ],
+              [
+                "집에서 일해요 — trabalho em casa",
+                "casa é onde a ação ocorre → 에서"
+              ],
+              [
+                "학교에서 친구 봤어요 — vi um amigo na escola",
+                "escola é onde a ação ocorreu → 에서"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Se o verbo é “ir”, “vir” ou “estar”, use 에. Se é qualquer outra coisa que se faz ali, use 에서."
+          },
+          {
+            "tipo": "p",
+            "texto": "E -에서 tem um segundo sentido, que a aula 25 vai retomar: “de”, o ponto de partida."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "부산에서 왔어요.",
+                "pt": "Vim de Busan."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a18-t3",
+        "titulo": "어디 precisa da partícula",
+        "grupo": "a18-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "어디 é “onde”, e ele se comporta como qualquer outro lugar: leva a mesma partícula que a resposta levaria."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "어디에 가고 싶어요?",
+                "pt": "Para onde você quer ir?",
+                "conta": "destino → 에"
+              },
+              {
+                "ko": "어디에 있어요?",
+                "pt": "Onde você está?",
+                "conta": "posição → 에"
+              },
+              {
+                "ko": "어디에서 일해요?",
+                "pt": "Onde você trabalha?",
+                "conta": "ação → 에서"
+              }
+            ]
+          },
+          {
+            "tipo": "nota",
+            "texto": "Na fala rápida a partícula costuma cair: 어디 가요? é o que se ouve na rua. Não está errado — é informal. E 어디에서 encurta para 어디서."
+          },
+          {
+            "tipo": "p",
+            "texto": "Guarde o contraste para a próxima aula: 언제 (“quando”) não precisa de partícula nenhuma. É a diferença que a aula 19 explora."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Dois colegas se cruzam na porta.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "어디 가요?",
+          "pt": "Aonde você vai?"
+        },
+        {
+          "quem": "B",
+          "ko": "학교에 가요.",
+          "pt": "Vou para a escola."
+        },
+        {
+          "quem": "A",
+          "ko": "학교에서 뭐 해요?",
+          "pt": "O que você faz na escola?"
+        },
+        {
+          "quem": "B",
+          "ko": "책 읽어요.",
+          "pt": "Leio livros."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a18-g1",
+        "titulo": "A partícula -에",
+        "itens": [
+          {
+            "id": "a18-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra à tradução.",
+            "pares": [
+              {
+                "a": "어디",
+                "b": "onde"
+              },
+              {
+                "a": "지금",
+                "b": "agora"
+              },
+              {
+                "a": "집",
+                "b": "casa"
+              },
+              {
+                "a": "한국",
+                "b": "Coreia"
+              }
+            ],
+            "explicacao": "한국 (韓國) tem o mesmo 국 (國, país) de 중국 (China) e 미국 (EUA)."
+          },
+          {
+            "id": "a18-e2",
+            "tipo": "escolha",
+            "enunciado": "O que -에 significa?",
+            "opcoes": [
+              {
+                "pt": "Em, a, para"
+              },
+              {
+                "pt": "De, desde"
+              },
+              {
+                "pt": "Com"
+              },
+              {
+                "pt": "Sobre"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Marca destino e localização — e, fora de lugar, também tempo e situação."
+          },
+          {
+            "id": "a18-e3",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “Vou para casa.”",
+            "antes": "집",
+            "depois": " 가요.",
+            "banco": [
+              "에",
+              "에서"
+            ],
+            "correta": 0,
+            "explicacao": "가다 pede 에: 집에 가요."
+          },
+          {
+            "id": "a18-e4",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “Onde você está agora?”",
+            "antes": "지금 어디",
+            "depois": " 있어요?",
+            "banco": [
+              "에",
+              "에서"
+            ],
+            "correta": 0,
+            "explicacao": "있다 pede 에: 어디에 있어요?"
+          },
+          {
+            "id": "a18-e5",
+            "tipo": "montar",
+            "enunciado": "Monte “Vim para a Coreia.”",
+            "dica": "한국 = Coreia",
+            "pecas": [
+              "한국에",
+              "왔어요.",
+              "한국에서"
+            ],
+            "correta": "한국에왔어요.",
+            "explicacao": "한국에 왔어요 — destino."
+          },
+          {
+            "id": "a18-e6",
+            "tipo": "escolha",
+            "enunciado": "-에 muda de forma se a palavra terminar em consoante?",
+            "opcoes": [
+              {
+                "pt": "Não, é sempre 에"
+              },
+              {
+                "pt": "Sim, vira 이에"
+              },
+              {
+                "pt": "Sim, vira 에이"
+              },
+              {
+                "pt": "Depende do verbo"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Ao contrário de 은/는 e 이/가, esta não varia."
+          }
+        ]
+      },
+      {
+        "id": "a18-g2",
+        "titulo": "A partícula -에서",
+        "itens": [
+          {
+            "id": "a18-e7",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “Trabalho no escritório.”",
+            "antes": "사무실",
+            "depois": " 일해요.",
+            "banco": [
+              "에서",
+              "에"
+            ],
+            "correta": 0,
+            "explicacao": "일하다 é ação → 에서. 사무실에서 일해요."
+          },
+          {
+            "id": "a18-e8",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “Hoje vi um amigo na escola.”",
+            "antes": "오늘 학교",
+            "depois": " 친구 봤어요.",
+            "banco": [
+              "에서",
+              "에"
+            ],
+            "correta": 0,
+            "explicacao": "보다 é ação → 에서."
+          },
+          {
+            "id": "a18-e9",
+            "tipo": "escolha",
+            "enunciado": "Qual é a regra de bolso?",
+            "opcoes": [
+              {
+                "pt": "가다/오다/있다 pedem 에; qualquer outra ação pede 에서"
+              },
+              {
+                "pt": "에 para lugares grandes, 에서 para pequenos"
+              },
+              {
+                "pt": "에 no presente, 에서 no passado"
+              },
+              {
+                "pt": "São intercambiáveis"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Destino e posição de um lado; palco da ação do outro."
+          },
+          {
+            "id": "a18-e10",
+            "tipo": "escolha",
+            "enunciado": "집에 가요 e 집에서 일해요 diferem porque:",
+            "opcoes": [
+              {
+                "pt": "No primeiro a casa é destino; no segundo, é onde a ação acontece"
+              },
+              {
+                "pt": "O primeiro é formal e o segundo informal"
+              },
+              {
+                "pt": "O primeiro é passado"
+              },
+              {
+                "pt": "Não há diferença real"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "A mesma casa, dois papéis diferentes na frase."
+          },
+          {
+            "id": "a18-e11",
+            "tipo": "montar",
+            "enunciado": "Monte “Trabalho em casa.”",
+            "dica": "집 = casa",
+            "pecas": [
+              "집에서",
+              "일해요.",
+              "집에"
+            ],
+            "correta": "집에서일해요.",
+            "explicacao": "집에서 일해요."
+          },
+          {
+            "id": "a18-e12",
+            "tipo": "escolha",
+            "enunciado": "부산에서 왔어요 quer dizer:",
+            "opcoes": [
+              {
+                "pt": "Vim de Busan"
+              },
+              {
+                "pt": "Vou para Busan"
+              },
+              {
+                "pt": "Estou em Busan"
+              },
+              {
+                "pt": "Trabalho em Busan"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Este é o segundo sentido de 에서: o ponto de partida. A aula 25 volta a ele."
+          }
+        ]
+      },
+      {
+        "id": "a18-g3",
+        "titulo": "Perguntar com 어디",
+        "itens": [
+          {
+            "id": "a18-e13",
+            "tipo": "montar",
+            "enunciado": "Monte “Para onde você quer ir?”",
+            "dica": "revisão da aula 13",
+            "pecas": [
+              "어디에",
+              "가고",
+              "싶어요?"
+            ],
+            "correta": "어디에가고싶어요?",
+            "explicacao": "어디에 가고 싶어요?"
+          },
+          {
+            "id": "a18-e14",
+            "tipo": "montar",
+            "enunciado": "Monte “Onde você trabalha?”",
+            "dica": "ação → 에서",
+            "pecas": [
+              "어디에서",
+              "일해요?",
+              "어디에"
+            ],
+            "correta": "어디에서일해요?",
+            "explicacao": "어디에서 일해요? — na fala vira 어디서 일해요?"
+          },
+          {
+            "id": "a18-e15",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Na fala do dia a dia, dizer 어디 가요? sem a partícula é errado.",
+            "correta": false,
+            "explicacao": "É apenas informal, e muito comum. A partícula cai o tempo todo na conversa."
+          },
+          {
+            "id": "a18-e16",
+            "tipo": "escolha",
+            "enunciado": "Lendo o diálogo — A pergunta 학교에서 뭐 해요? e B responde 책 읽어요. O que B vai fazer?",
+            "opcoes": [
+              {
+                "pt": "Ler um livro"
+              },
+              {
+                "pt": "Ir para casa"
+              },
+              {
+                "pt": "Trabalhar"
+              },
+              {
+                "pt": "Comer"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "책 읽어요 — 읽다 (ler) no presente."
+          }
+        ]
+      },
+      {
+        "id": "a18-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "a18-e17",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "한국에 왔어요",
+            "pecas": [
+              "한국에",
+              "왔어요",
+              "한국에서"
+            ],
+            "correta": "한국에왔어요",
+            "explicacao": "한국에 왔어요."
+          },
+          {
+            "id": "a18-e18",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "어디에 가고 싶어요?",
+            "pecas": [
+              "어디에",
+              "가고",
+              "싶어요?"
+            ],
+            "correta": "어디에가고싶어요?",
+            "explicacao": "어디에 가고 싶어요?"
+          },
+          {
+            "id": "a18-e19",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "집에서 일해요",
+            "pecas": [
+              "집에서",
+              "일해요",
+              "집에"
+            ],
+            "correta": "집에서일해요",
+            "explicacao": "집에서 일해요 — soa [지베서 이래요]."
+          },
+          {
+            "id": "a18-e20",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a partícula que você ouviu.",
+            "audio": "학교에서 봤어요",
+            "opcoes": [
+              {
+                "ko": "학교에서 봤어요",
+                "pt": "na escola (ação)"
+              },
+              {
+                "ko": "학교에 봤어요",
+                "pt": "—"
+              },
+              {
+                "ko": "학교는 봤어요",
+                "pt": "—"
+              },
+              {
+                "ko": "학교가 봤어요",
+                "pt": "—"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "보다 é ação, então 에서."
+          },
+          {
+            "id": "a18-e21",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a palavra do vocabulário que você ouviu.",
+            "audio": "지금",
+            "opcoes": [
+              {
+                "ko": "지금"
+              },
+              {
+                "ko": "어디"
+              },
+              {
+                "ko": "집"
+              },
+              {
+                "ko": "한국"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "지금 — agora."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-19",
+    "numero": 19,
+    "hanja": "十九",
+    "titulo": "Quando",
+    "hangul": "언제",
+    "resumo": "A palavra de pergunta mais fácil do idioma, porque é a única que não pede partícula nenhuma.",
+    "ilustracao": "assets/licoes/aula-19.svg",
+    "objetivo": "Perguntar quando algo aconteceu ou acontece, e responder com as palavras de tempo do dia a dia.",
+    "vocabulario": [
+      {
+        "ko": "언제",
+        "pt": "quando"
+      },
+      {
+        "ko": "어제",
+        "pt": "ontem"
+      },
+      {
+        "ko": "아까",
+        "pt": "há pouco (ainda hoje)"
+      },
+      {
+        "ko": "나중에",
+        "pt": "depois, mais tarde"
+      },
+      {
+        "ko": "도착하다",
+        "pt": "chegar"
+      },
+      {
+        "ko": "일어나다",
+        "pt": "levantar, acordar"
+      },
+      {
+        "ko": "아침",
+        "pt": "manhã"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a19-t1",
+        "titulo": "언제 anda sozinho",
+        "grupo": "a19-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Na aula anterior, 어디 precisava de 에 ou 에서 para funcionar. 언제 não precisa de nada: entra na frase cru."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "",
+              "Com partícula",
+              "Sem partícula"
+            ],
+            "linhas": [
+              [
+                "어디 — onde",
+                "어디에 가요?",
+                "—"
+              ],
+              [
+                "언제 — quando",
+                "—",
+                "언제 가요?"
+              ]
+            ]
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "언제 왔어요?",
+                "pt": "Quando você veio?"
+              },
+              {
+                "ko": "언제 일해요?",
+                "pt": "Quando você trabalha?"
+              },
+              {
+                "ko": "언제 도착했어요?",
+                "pt": "Quando você chegou?"
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "언제 vai antes do verbo, e nada mais precisa mudar na frase."
+          },
+          {
+            "tipo": "nota",
+            "texto": "Cuidado com o par 언제 (quando) e 어제 (ontem). Uma letra de diferença, e é fácil trocar de ouvido."
+          }
+        ]
+      },
+      {
+        "id": "a19-t2",
+        "titulo": "As palavras de tempo",
+        "grupo": "a19-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Para responder “quando”, um punhado de palavras cobre quase tudo. Você já tem três delas."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Palavra",
+              "Quando"
+            ],
+            "linhas": [
+              [
+                "어제",
+                "ontem"
+              ],
+              [
+                "오늘",
+                "hoje"
+              ],
+              [
+                "내일",
+                "amanhã"
+              ],
+              [
+                "지금",
+                "agora"
+              ],
+              [
+                "아까",
+                "há pouco — ainda dentro de hoje"
+              ],
+              [
+                "나중에",
+                "depois, mais tarde"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "아까 é a palavra que o português não tem: “mais cedo, ainda hoje”. Se foi ontem, não é 아까."
+          },
+          {
+            "tipo": "p",
+            "texto": "Repare que 나중에 já vem com a partícula 에 colada — é uma expressão fixa de tempo, e o 에 aí marca “em que momento”, o outro uso da partícula que a aula 18 deixou de lado."
+          }
+        ]
+      },
+      {
+        "id": "a19-t3",
+        "titulo": "Perguntar e responder no tempo certo",
+        "grupo": "a19-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Com o passado da aula 17 e o presente da 16, 언제 rende os dois tipos de pergunta — e a resposta simplesmente troca 언제 pela palavra de tempo."
+          },
+          {
+            "tipo": "dialogo",
+            "falas": [
+              {
+                "quem": "A",
+                "ko": "언제 사무실에 왔어요?",
+                "pt": "Quando você chegou ao escritório?"
+              },
+              {
+                "quem": "B",
+                "ko": "아까 왔어요.",
+                "pt": "Cheguei há pouco."
+              },
+              {
+                "quem": "A",
+                "ko": "언제 집에 가요?",
+                "pt": "Quando você vai para casa?"
+              },
+              {
+                "quem": "B",
+                "ko": "나중에 가요.",
+                "pt": "Vou depois."
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "É o mesmo mecanismo de 뭐 na aula 14: a palavra de pergunta ocupa exatamente o lugar onde a resposta vai entrar."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Manhã no escritório.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "아침에 언제 일어나요?",
+          "pt": "Você acorda que horas de manhã?"
+        },
+        {
+          "quem": "B",
+          "ko": "일찍 일어나요.",
+          "pt": "Acordo cedo."
+        },
+        {
+          "quem": "A",
+          "ko": "언제 집에 가요?",
+          "pt": "E quando vai para casa?"
+        },
+        {
+          "quem": "B",
+          "ko": "나중에요.",
+          "pt": "Mais tarde."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a19-g1",
+        "titulo": "언제 sem partícula",
+        "itens": [
+          {
+            "id": "a19-e1",
+            "tipo": "escolha",
+            "enunciado": "O que diferencia 언제 de 어디, gramaticalmente?",
+            "opcoes": [
+              {
+                "pt": "언제 não precisa de partícula; 어디 precisa"
+              },
+              {
+                "pt": "언제 vai no fim da frase"
+              },
+              {
+                "pt": "언제 só serve no passado"
+              },
+              {
+                "pt": "Nada, funcionam igual"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "어디에, 어디에서 — mas 언제 entra cru."
+          },
+          {
+            "id": "a19-e2",
+            "tipo": "montar",
+            "enunciado": "Monte “Quando você veio?”",
+            "dica": "오다 no passado",
+            "pecas": [
+              "언제",
+              "왔어요?",
+              "에"
+            ],
+            "correta": "언제왔어요?",
+            "explicacao": "언제 왔어요? — sem partícula."
+          },
+          {
+            "id": "a19-e3",
+            "tipo": "montar",
+            "enunciado": "Monte “Quando você trabalha?”",
+            "dica": "일하다 no presente",
+            "pecas": [
+              "언제",
+              "일해요?",
+              "에서"
+            ],
+            "correta": "언제일해요?",
+            "explicacao": "언제 일해요?"
+          },
+          {
+            "id": "a19-e4",
+            "tipo": "escolha",
+            "enunciado": "Qual está certa?",
+            "opcoes": [
+              {
+                "ko": "언제 가요?"
+              },
+              {
+                "ko": "언제에 가요?"
+              },
+              {
+                "ko": "언제에서 가요?"
+              },
+              {
+                "ko": "언제가 가요?"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "언제 dispensa partícula."
+          },
+          {
+            "id": "a19-e5",
+            "tipo": "escolha",
+            "enunciado": "언제 e 어제 — qual é qual?",
+            "opcoes": [
+              {
+                "pt": "언제 = quando · 어제 = ontem"
+              },
+              {
+                "pt": "언제 = ontem · 어제 = quando"
+              },
+              {
+                "pt": "As duas significam “quando”"
+              },
+              {
+                "pt": "As duas significam “ontem”"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Uma letra de diferença. Vale treinar de ouvido antes que vire hábito errado."
+          }
+        ]
+      },
+      {
+        "id": "a19-g2",
+        "titulo": "As palavras de tempo",
+        "itens": [
+          {
+            "id": "a19-e6",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra ao momento.",
+            "pares": [
+              {
+                "a": "어제",
+                "b": "ontem"
+              },
+              {
+                "a": "오늘",
+                "b": "hoje"
+              },
+              {
+                "a": "내일",
+                "b": "amanhã"
+              },
+              {
+                "a": "지금",
+                "b": "agora"
+              },
+              {
+                "a": "아까",
+                "b": "há pouco"
+              },
+              {
+                "a": "나중에",
+                "b": "depois"
+              }
+            ],
+            "explicacao": "Seis palavras e você responde quase qualquer “quando”."
+          },
+          {
+            "id": "a19-e7",
+            "tipo": "escolha",
+            "enunciado": "아까 quer dizer:",
+            "opcoes": [
+              {
+                "pt": "Há pouco, ainda dentro de hoje"
+              },
+              {
+                "pt": "Ontem"
+              },
+              {
+                "pt": "Daqui a pouco"
+              },
+              {
+                "pt": "Há muito tempo"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "É a palavra que o português não tem numa peça só. Se foi ontem, não é 아까."
+          },
+          {
+            "id": "a19-e8",
+            "tipo": "associar",
+            "enunciado": "Ligue os verbos desta aula.",
+            "pares": [
+              {
+                "a": "도착하다",
+                "b": "chegar"
+              },
+              {
+                "a": "일어나다",
+                "b": "levantar, acordar"
+              },
+              {
+                "a": "아침",
+                "b": "manhã"
+              }
+            ],
+            "explicacao": "도착하다 é mais um verbo em 하다 — conjuga 도착해요, 도착했어요."
+          },
+          {
+            "id": "a19-e9",
+            "tipo": "escolha",
+            "enunciado": "Por que 나중에 já vem com 에 colado?",
+            "opcoes": [
+              {
+                "pt": "É expressão fixa de tempo, e o 에 aí marca “em que momento”"
+              },
+              {
+                "pt": "Por engano da ortografia"
+              },
+              {
+                "pt": "Porque 나중 é um lugar"
+              },
+              {
+                "pt": "Porque termina em consoante"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "É o outro uso de 에, o de tempo — o que a aula 18 deixou de lado."
+          }
+        ]
+      },
+      {
+        "id": "a19-g3",
+        "titulo": "Perguntar e responder",
+        "itens": [
+          {
+            "id": "a19-e10",
+            "tipo": "montar",
+            "enunciado": "Monte “Quando você chegou à escola?”",
+            "dica": "도착하다 no passado",
+            "pecas": [
+              "언제",
+              "학교에",
+              "도착했어요?"
+            ],
+            "correta": "언제학교에도착했어요?",
+            "explicacao": "언제 학교에 도착했어요? — 언제 sem partícula, 학교 com 에."
+          },
+          {
+            "id": "a19-e11",
+            "tipo": "montar",
+            "enunciado": "Responda: “Cheguei há pouco.”",
+            "dica": "아까 = há pouco",
+            "pecas": [
+              "아까",
+              "왔어요.",
+              "언제"
+            ],
+            "correta": "아까왔어요.",
+            "explicacao": "아까 왔어요 — a palavra de tempo ocupa o lugar do 언제."
+          },
+          {
+            "id": "a19-e12",
+            "tipo": "montar",
+            "enunciado": "Monte “Quando você vai para casa?”",
+            "dica": "집에 가다",
+            "pecas": [
+              "언제",
+              "집에",
+              "가요?"
+            ],
+            "correta": "언제집에가요?",
+            "explicacao": "언제 집에 가요?"
+          },
+          {
+            "id": "a19-e13",
+            "tipo": "escolha",
+            "enunciado": "Perguntam 언제 왔어요? Qual resposta NÃO cabe?",
+            "opcoes": [
+              {
+                "ko": "내일 왔어요."
+              },
+              {
+                "ko": "어제 왔어요."
+              },
+              {
+                "ko": "아까 왔어요."
+              },
+              {
+                "ko": "오늘 왔어요."
+              }
+            ],
+            "correta": 0,
+            "explicacao": "A pergunta está no passado; “amanhã” não pode ter acontecido."
+          },
+          {
+            "id": "a19-e14",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "A palavra de pergunta ocupa o mesmo lugar onde a resposta vai entrar.",
+            "correta": true,
+            "explicacao": "É o mesmo mecanismo de 뭐 e 어디 — o que torna a conversa fácil para quem está começando."
+          }
+        ]
+      },
+      {
+        "id": "a19-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "a19-e15",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "아침에 언제 일어나요?",
+            "pecas": [
+              "아침에",
+              "언제",
+              "일어나요?"
+            ],
+            "correta": "아침에언제일어나요?",
+            "explicacao": "아침에 언제 일어나요?"
+          },
+          {
+            "id": "a19-e16",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "언제 집에 가요?",
+            "pecas": [
+              "언제",
+              "집에",
+              "가요?"
+            ],
+            "correta": "언제집에가요?",
+            "explicacao": "언제 집에 가요?"
+          },
+          {
+            "id": "a19-e17",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha o que você ouviu.",
+            "audio": "언제",
+            "opcoes": [
+              {
+                "ko": "언제",
+                "pt": "quando"
+              },
+              {
+                "ko": "어제",
+                "pt": "ontem"
+              },
+              {
+                "ko": "어디",
+                "pt": "onde"
+              },
+              {
+                "ko": "얼마",
+                "pt": "quanto"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "언제 e 어제 são o par que mais confunde de ouvido."
+          },
+          {
+            "id": "a19-e18",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha o que você ouviu.",
+            "audio": "어제",
+            "opcoes": [
+              {
+                "ko": "어제",
+                "pt": "ontem"
+              },
+              {
+                "ko": "언제",
+                "pt": "quando"
+              },
+              {
+                "ko": "오늘",
+                "pt": "hoje"
+              },
+              {
+                "ko": "아까",
+                "pt": "há pouco"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "어제 — agora do outro lado do par."
+          },
+          {
+            "id": "a19-e19",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a palavra do vocabulário que você ouviu.",
+            "audio": "나중에",
+            "opcoes": [
+              {
+                "ko": "나중에"
+              },
+              {
+                "ko": "아까"
+              },
+              {
+                "ko": "지금"
+              },
+              {
+                "ko": "내일"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "나중에 — depois."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-20",
+    "numero": 20,
+    "hanja": "二十",
+    "titulo": "O outro sistema de números",
+    "hangul": "하나, 둘, 셋, 넷…",
+    "resumo": "Coreano tem dois sistemas de contagem, e o segundo é o que se usa para contar coisas, pessoas e idade.",
+    "ilustracao": "assets/licoes/aula-20.svg",
+    "objetivo": "Contar objetos, pessoas e anos de idade com os números nativos, e saber quando usar cada sistema.",
+    "vocabulario": [
+      {
+        "ko": "하나",
+        "pt": "um"
+      },
+      {
+        "ko": "둘",
+        "pt": "dois"
+      },
+      {
+        "ko": "셋",
+        "pt": "três"
+      },
+      {
+        "ko": "넷",
+        "pt": "quatro"
+      },
+      {
+        "ko": "열",
+        "pt": "dez"
+      },
+      {
+        "ko": "스물",
+        "pt": "vinte"
+      },
+      {
+        "ko": "살",
+        "pt": "anos (de idade)"
+      },
+      {
+        "ko": "개",
+        "pt": "unidade (contador geral)"
+      },
+      {
+        "ko": "명",
+        "pt": "pessoa (contador)"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a20-t1",
+        "titulo": "Dez números novos, e as dezenas têm nome próprio",
+        "grupo": "a20-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Este é o sistema nativo, sem hanja nenhum por trás. Ele não substitui o da aula 15 — os dois convivem, cada um com seu território."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "linhas": [
+              [
+                "하나",
+                "둘",
+                "셋",
+                "넷",
+                "다섯"
+              ]
+            ]
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ],
+            "linhas": [
+              [
+                "여섯",
+                "일곱",
+                "여덟",
+                "아홉",
+                "열"
+              ]
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "De 11 a 19 funciona como no sino-coreano: 열 mais a unidade."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "열하나",
+                "pt": "11"
+              },
+              {
+                "ko": "열다섯",
+                "pt": "15"
+              },
+              {
+                "ko": "열아홉",
+                "pt": "19"
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Aqui vem a parte trabalhosa: cada dezena tem nome próprio. Não se diz “dois-dez” para 20."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "20",
+              "30",
+              "40",
+              "50"
+            ],
+            "linhas": [
+              [
+                "스물",
+                "서른",
+                "마흔",
+                "쉰"
+              ]
+            ]
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "60",
+              "70",
+              "80",
+              "90"
+            ],
+            "linhas": [
+              [
+                "예순",
+                "일흔",
+                "여든",
+                "아흔"
+              ]
+            ]
+          },
+          {
+            "tipo": "nota",
+            "texto": "O sistema nativo para por aí. De cem em diante volta o sino-coreano: 백, 천, 만 — e é por isso que 1004 é 천넷, misturando os dois."
+          }
+        ]
+      },
+      {
+        "id": "a20-t2",
+        "titulo": "Contador obrigatório, e cinco números que se encolhem",
+        "grupo": "a20-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Não se conta coisa em coreano sem um contador — uma palavrinha que diz de que tipo de coisa se trata. Português tem algo parecido em “duas folhas de papel”, só que ali é opcional."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Contador",
+              "Para",
+              "Exemplo"
+            ],
+            "linhas": [
+              [
+                "개",
+                "coisas em geral",
+                "사과 세 개 — três maçãs"
+              ],
+              [
+                "명",
+                "pessoas",
+                "사람 두 명 — duas pessoas"
+              ],
+              [
+                "마리",
+                "animais",
+                "강아지 한 마리 — um cachorrinho"
+              ],
+              [
+                "살",
+                "idade",
+                "스무 살 — vinte anos"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "A ordem é: substantivo, número, contador. 사과 세 개, e não 세 개 사과."
+          },
+          {
+            "tipo": "p",
+            "texto": "E cinco números mudam de forma quando um contador vem em seguida. São os que você mais vai usar, então vale decorar o par:"
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Sozinho",
+              "Antes de contador"
+            ],
+            "linhas": [
+              [
+                "하나",
+                "한 — 한 개"
+              ],
+              [
+                "둘",
+                "두 — 두 명"
+              ],
+              [
+                "셋",
+                "세 — 세 개"
+              ],
+              [
+                "넷",
+                "네 — 네 마리"
+              ],
+              [
+                "스물",
+                "스무 — 스무 살"
+              ]
+            ]
+          },
+          {
+            "tipo": "nota",
+            "texto": "Só esses cinco. 다섯, 여섯 e os outros entram sem mudar nada: 다섯 개, 여섯 명."
+          }
+        ]
+      },
+      {
+        "id": "a20-t3",
+        "titulo": "Qual sistema usar",
+        "grupo": "a20-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "A pergunta que fica é quando usar cada um. A divisão não é arbitrária, mas também não tem uma regra única — vale guardar por território."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Sino-coreano (일 이 삼)",
+              "Nativo (하나 둘 셋)"
+            ],
+            "linhas": [
+              [
+                "datas e meses",
+                "contar objetos"
+              ],
+              [
+                "dinheiro e preços",
+                "contar pessoas"
+              ],
+              [
+                "telefones e endereços",
+                "idade"
+              ],
+              [
+                "minutos",
+                "horas do relógio"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "A hora do relógio mistura os dois numa frase só: 세 시 삼십 분 — “três horas e trinta minutos”, nativo para a hora, sino para os minutos."
+          },
+          {
+            "tipo": "p",
+            "texto": "Se você errar o sistema, vai ser entendido do mesmo jeito na maioria das vezes. O que não convém é decorar as duas listas sem nunca contar nada — o par número + contador é o que fixa."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Na frutaria.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "사과 있어요?",
+          "pt": "Tem maçã?"
+        },
+        {
+          "quem": "B",
+          "ko": "네, 있어요.",
+          "pt": "Tem, sim."
+        },
+        {
+          "quem": "A",
+          "ko": "세 개 주세요.",
+          "pt": "Me vê três."
+        },
+        {
+          "quem": "B",
+          "ko": "네. 삼천 원이에요.",
+          "pt": "Certo. São 3.000 won."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a20-g1",
+        "titulo": "Os números nativos",
+        "itens": [
+          {
+            "id": "a20-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada número ao algarismo.",
+            "pares": [
+              {
+                "a": "하나",
+                "b": "1"
+              },
+              {
+                "a": "둘",
+                "b": "2"
+              },
+              {
+                "a": "셋",
+                "b": "3"
+              },
+              {
+                "a": "넷",
+                "b": "4"
+              },
+              {
+                "a": "다섯",
+                "b": "5"
+              }
+            ],
+            "explicacao": "Nenhum hanja por trás — é vocabulário nativo puro."
+          },
+          {
+            "id": "a20-e2",
+            "tipo": "associar",
+            "enunciado": "E de seis a dez.",
+            "pares": [
+              {
+                "a": "여섯",
+                "b": "6"
+              },
+              {
+                "a": "일곱",
+                "b": "7"
+              },
+              {
+                "a": "여덟",
+                "b": "8"
+              },
+              {
+                "a": "아홉",
+                "b": "9"
+              },
+              {
+                "a": "열",
+                "b": "10"
+              }
+            ],
+            "explicacao": "여덟 se escreve com dois batchim (ㄼ) mas soa [여덜]."
+          },
+          {
+            "id": "a20-e3",
+            "tipo": "associar",
+            "enunciado": "As dezenas, que têm nome próprio.",
+            "pares": [
+              {
+                "a": "스물",
+                "b": "20"
+              },
+              {
+                "a": "서른",
+                "b": "30"
+              },
+              {
+                "a": "마흔",
+                "b": "40"
+              },
+              {
+                "a": "쉰",
+                "b": "50"
+              }
+            ],
+            "explicacao": "Não se compõe “dois-dez”: cada dezena é palavra inteira."
+          },
+          {
+            "id": "a20-e4",
+            "tipo": "associar",
+            "enunciado": "E as de sessenta a noventa.",
+            "pares": [
+              {
+                "a": "예순",
+                "b": "60"
+              },
+              {
+                "a": "일흔",
+                "b": "70"
+              },
+              {
+                "a": "여든",
+                "b": "80"
+              },
+              {
+                "a": "아흔",
+                "b": "90"
+              }
+            ],
+            "explicacao": "É a parte trabalhosa desta aula — e para por aqui: de cem em diante volta o sino-coreano."
+          },
+          {
+            "id": "a20-e5",
+            "tipo": "escolha",
+            "enunciado": "Como se diz 19 em números nativos?",
+            "opcoes": [
+              {
+                "ko": "열아홉"
+              },
+              {
+                "ko": "십구"
+              },
+              {
+                "ko": "아홉열"
+              },
+              {
+                "ko": "열구"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "열 (10) + 아홉 (9). 십구 seria o sino-coreano."
+          },
+          {
+            "id": "a20-e6",
+            "tipo": "escolha",
+            "enunciado": "E 22?",
+            "opcoes": [
+              {
+                "ko": "스물둘"
+              },
+              {
+                "ko": "이십이"
+              },
+              {
+                "ko": "둘스물"
+              },
+              {
+                "ko": "스물이"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "스물 (20) + 둘 (2)."
+          },
+          {
+            "id": "a20-e7",
+            "tipo": "escolha",
+            "enunciado": "Quanto é 64 em números nativos?",
+            "opcoes": [
+              {
+                "ko": "예순넷"
+              },
+              {
+                "ko": "육십사"
+              },
+              {
+                "ko": "여든넷"
+              },
+              {
+                "ko": "예순사"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "예순 (60) + 넷 (4)."
+          },
+          {
+            "id": "a20-e8",
+            "tipo": "montar",
+            "enunciado": "Monte 75 em números nativos.",
+            "dica": "70 + 5",
+            "pecas": [
+              "일흔",
+              "다섯",
+              "예순"
+            ],
+            "correta": "일흔다섯",
+            "explicacao": "일흔다섯."
+          }
+        ]
+      },
+      {
+        "id": "a20-g2",
+        "titulo": "Contadores e as formas curtas",
+        "itens": [
+          {
+            "id": "a20-e9",
+            "tipo": "associar",
+            "enunciado": "Ligue cada contador ao que ele conta.",
+            "pares": [
+              {
+                "a": "개",
+                "b": "coisas em geral"
+              },
+              {
+                "a": "명",
+                "b": "pessoas"
+              },
+              {
+                "a": "마리",
+                "b": "animais"
+              },
+              {
+                "a": "살",
+                "b": "anos de idade"
+              }
+            ],
+            "explicacao": "Sem contador, o número fica solto. Contar em coreano é sempre número + contador."
+          },
+          {
+            "id": "a20-e10",
+            "tipo": "escolha",
+            "enunciado": "Qual é a ordem certa?",
+            "opcoes": [
+              {
+                "ko": "사과 세 개",
+                "pt": "substantivo, número, contador"
+              },
+              {
+                "ko": "세 개 사과",
+                "pt": "número, contador, substantivo"
+              },
+              {
+                "ko": "개 세 사과",
+                "pt": "—"
+              },
+              {
+                "ko": "세 사과 개",
+                "pt": "—"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "사과 세 개 — “maçã três unidades”."
+          },
+          {
+            "id": "a20-e11",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “três maçãs”.",
+            "antes": "사과",
+            "depois": " 개",
+            "banco": [
+              "세",
+              "셋",
+              "삼"
+            ],
+            "correta": 0,
+            "explicacao": "셋 vira 세 antes de contador."
+          },
+          {
+            "id": "a20-e12",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “duas pessoas”.",
+            "antes": "사람",
+            "depois": " 명",
+            "banco": [
+              "두",
+              "둘",
+              "이"
+            ],
+            "correta": 0,
+            "explicacao": "둘 vira 두 antes de contador."
+          },
+          {
+            "id": "a20-e13",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “um cachorrinho”.",
+            "antes": "강아지",
+            "depois": " 마리",
+            "banco": [
+              "한",
+              "하나",
+              "일"
+            ],
+            "correta": 0,
+            "explicacao": "하나 vira 한 antes de contador."
+          },
+          {
+            "id": "a20-e14",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “vinte anos de idade”.",
+            "antes": "",
+            "depois": " 살",
+            "banco": [
+              "스무",
+              "스물",
+              "이십"
+            ],
+            "correta": 0,
+            "explicacao": "스물 vira 스무 antes de contador."
+          },
+          {
+            "id": "a20-e15",
+            "tipo": "escolha",
+            "enunciado": "Quais números mudam de forma antes de contador?",
+            "opcoes": [
+              {
+                "pt": "1, 2, 3, 4 e 20"
+              },
+              {
+                "pt": "Todos"
+              },
+              {
+                "pt": "Só 1 e 2"
+              },
+              {
+                "pt": "Nenhum"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "하나→한, 둘→두, 셋→세, 넷→네, 스물→스무. Os outros entram inteiros."
+          },
+          {
+            "id": "a20-e16",
+            "tipo": "escolha",
+            "enunciado": "“Cinco unidades” fica:",
+            "opcoes": [
+              {
+                "ko": "다섯 개"
+              },
+              {
+                "ko": "다서 개"
+              },
+              {
+                "ko": "다스 개"
+              },
+              {
+                "ko": "오 개"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "다섯 não muda — só os cinco da lista mudam."
+          }
+        ]
+      },
+      {
+        "id": "a20-g3",
+        "titulo": "Qual sistema, em que situação",
+        "itens": [
+          {
+            "id": "a20-e17",
+            "tipo": "escolha",
+            "enunciado": "Para dizer um preço, qual sistema?",
+            "opcoes": [
+              {
+                "pt": "Sino-coreano (일, 이, 삼…)"
+              },
+              {
+                "pt": "Nativo (하나, 둘, 셋…)"
+              },
+              {
+                "pt": "Tanto faz"
+              },
+              {
+                "pt": "Os dois juntos"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Dinheiro é sempre sino-coreano: 사천오백 원."
+          },
+          {
+            "id": "a20-e18",
+            "tipo": "escolha",
+            "enunciado": "Para dizer sua idade?",
+            "opcoes": [
+              {
+                "pt": "Nativo + 살"
+              },
+              {
+                "pt": "Sino-coreano + 살"
+              },
+              {
+                "pt": "Nativo sem contador"
+              },
+              {
+                "pt": "Sino-coreano sem contador"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "스무 살, 서른 살. Idade é território do nativo."
+          },
+          {
+            "id": "a20-e19",
+            "tipo": "escolha",
+            "enunciado": "A hora “três e trinta” em coreano usa:",
+            "opcoes": [
+              {
+                "pt": "Nativo para a hora e sino para os minutos — 세 시 삼십 분"
+              },
+              {
+                "pt": "Só nativo"
+              },
+              {
+                "pt": "Só sino-coreano"
+              },
+              {
+                "pt": "Nativo para os minutos e sino para a hora"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "É a frase que mais mistura os dois sistemas — e a que mais confunde no começo."
+          },
+          {
+            "id": "a20-e20",
+            "tipo": "escolha",
+            "enunciado": "Como se diz 1004 em números nativos?",
+            "opcoes": [
+              {
+                "ko": "천넷"
+              },
+              {
+                "ko": "천사"
+              },
+              {
+                "ko": "열백넷"
+              },
+              {
+                "ko": "천하나"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "천 (sino) + 넷 (nativo). O sistema nativo não tem palavra para mil, então os dois se misturam."
+          },
+          {
+            "id": "a20-e21",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "O sistema nativo vai até dez mil, como o sino-coreano.",
+            "correta": false,
+            "explicacao": "Ele para em 아흔아홉 (99). De cem em diante só existe o sino-coreano."
+          }
+        ]
+      },
+      {
+        "id": "a20-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "a20-e22",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha o número.",
+            "audio": "스물둘",
+            "opcoes": [
+              {
+                "pt": "22"
+              },
+              {
+                "pt": "20"
+              },
+              {
+                "pt": "12"
+              },
+              {
+                "pt": "32"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "스물 (20) + 둘 (2)."
+          },
+          {
+            "id": "a20-e23",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha o número.",
+            "audio": "예순넷",
+            "opcoes": [
+              {
+                "pt": "64"
+              },
+              {
+                "pt": "46"
+              },
+              {
+                "pt": "74"
+              },
+              {
+                "pt": "84"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "예순 (60) + 넷 (4)."
+          },
+          {
+            "id": "a20-e24",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha o número.",
+            "audio": "열아홉",
+            "opcoes": [
+              {
+                "pt": "19"
+              },
+              {
+                "pt": "9"
+              },
+              {
+                "pt": "29"
+              },
+              {
+                "pt": "91"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "열 (10) + 아홉 (9)."
+          },
+          {
+            "id": "a20-e25",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "세 개",
+            "pecas": [
+              "세",
+              "개",
+              "셋"
+            ],
+            "correta": "세개",
+            "explicacao": "세 개 — a forma curta de 셋 antes do contador."
+          },
+          {
+            "id": "a20-e26",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "스무 살",
+            "pecas": [
+              "스무",
+              "살",
+              "스물"
+            ],
+            "correta": "스무살",
+            "explicacao": "스무 살 — vinte anos."
+          },
+          {
+            "id": "a20-e27",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha o que você ouviu.",
+            "audio": "마흔",
+            "opcoes": [
+              {
+                "ko": "마흔",
+                "pt": "40"
+              },
+              {
+                "ko": "마리",
+                "pt": "contador de animais"
+              },
+              {
+                "ko": "아흔",
+                "pt": "90"
+              },
+              {
+                "ko": "여든",
+                "pt": "80"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "마흔 e 아흔 são o par que mais se confunde."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-21",
+    "numero": 21,
+    "hanja": "二十一",
+    "titulo": "Negar qualquer coisa",
+    "hangul": "안 …, -지 않다",
+    "resumo": "Dois jeitos de dizer que não, um curto e um comprido — e os dois servem para qualquer verbo.",
+    "ilustracao": "assets/licoes/aula-21.svg",
+    "objetivo": "Negar qualquer frase, escolhendo entre a forma coloquial e a mais formal.",
+    "vocabulario": [
+      {
+        "ko": "안",
+        "pt": "não (antes do verbo)"
+      },
+      {
+        "ko": "버리다",
+        "pt": "jogar fora"
+      },
+      {
+        "ko": "맵다",
+        "pt": "ser apimentado"
+      },
+      {
+        "ko": "배고프다",
+        "pt": "estar com fome"
+      },
+      {
+        "ko": "아프다",
+        "pt": "doer, estar doente"
+      },
+      {
+        "ko": "아직",
+        "pt": "ainda"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a21-t1",
+        "titulo": "안 na frente do verbo",
+        "grupo": "a21-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "O jeito curto é o mais usado na conversa: ponha 안 imediatamente antes do verbo já conjugado, e pronto."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "안",
+              "가요"
+            ],
+            "glosas": [
+              "não",
+              "vou"
+            ],
+            "resultado": "안 가요",
+            "traducao": "não vou"
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "집에 안 가요.",
+                "pt": "Não vou para casa."
+              },
+              {
+                "ko": "그거 안 버렸어요.",
+                "pt": "Não joguei aquilo fora."
+              },
+              {
+                "ko": "안 매워요.",
+                "pt": "Não é apimentado."
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "안 não muda nada no verbo. O tempo continua sendo marcado onde sempre foi, no fim."
+          },
+          {
+            "tipo": "som",
+            "grafia": "안 먹어요",
+            "texto": "Ele se cola ao verbo na fala e vira uma palavra só no ritmo, mas continua separado na escrita."
+          }
+        ]
+      },
+      {
+        "id": "a21-t2",
+        "titulo": "-지 않다, o jeito comprido",
+        "grupo": "a21-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "A segunda forma é mais longa e soa um pouco mais formal ou mais enfática. Ela entra no lugar da terminação: tire o -다 do dicionário e ponha -지 않다, depois conjugue o 않다 normalmente."
+          },
+          {
+            "tipo": "regra",
+            "linhas": [
+              {
+                "condicao": "가다 → 가 + 지 않다",
+                "resultado": "가지 않아요 (não vou)"
+              },
+              {
+                "condicao": "no passado",
+                "resultado": "가지 않았어요 (não fui)"
+              }
+            ]
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Verbo",
+              "Com 안",
+              "Com -지 않다"
+            ],
+            "linhas": [
+              [
+                "먹다",
+                "안 먹어요",
+                "먹지 않아요"
+              ],
+              [
+                "마시다",
+                "안 마셔요",
+                "마시지 않아요"
+              ],
+              [
+                "버리다",
+                "안 버려요",
+                "버리지 않아요"
+              ],
+              [
+                "자다",
+                "안 자요",
+                "자지 않아요"
+              ],
+              [
+                "하다",
+                "안 해요",
+                "하지 않아요"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Repare em 하다: a negação curta é 안 해요, não “하 안 요”. 안 vai antes do verbo inteiro, sempre."
+          },
+          {
+            "tipo": "nota",
+            "texto": "As duas formas significam a mesma coisa. Na dúvida, use 안 — é a que mais se ouve no dia a dia e entre amigos."
+          }
+        ]
+      },
+      {
+        "id": "a21-t3",
+        "titulo": "Responder “não” a uma pergunta",
+        "grupo": "a21-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Junte com o 아니요 da aula 2 e você tem a resposta negativa completa: a partícula de discordância, e depois a frase negada."
+          },
+          {
+            "tipo": "dialogo",
+            "falas": [
+              {
+                "quem": "A",
+                "ko": "김밥이 매워요?",
+                "pt": "O gimbap é apimentado?"
+              },
+              {
+                "quem": "B",
+                "ko": "아니요. 안 매워요.",
+                "pt": "Não. Não é apimentado."
+              }
+            ]
+          },
+          {
+            "tipo": "dialogo",
+            "falas": [
+              {
+                "quem": "A",
+                "ko": "케이크 먹었어요?",
+                "pt": "Você comeu o bolo?"
+              },
+              {
+                "quem": "B",
+                "ko": "아니요. 안 먹었어요.",
+                "pt": "Não. Não comi."
+              }
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "E com 아직 (“ainda”) você diz que não fez, mas pode vir a fazer:"
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "아직 안 버렸어요.",
+                "pt": "Ainda não joguei fora."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Arrumando a casa.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "그거 버렸어요?",
+          "pt": "Você jogou aquilo fora?"
+        },
+        {
+          "quem": "B",
+          "ko": "아니요. 아직 안 버렸어요.",
+          "pt": "Não. Ainda não joguei."
+        },
+        {
+          "quem": "A",
+          "ko": "왜요?",
+          "pt": "Por quê?"
+        },
+        {
+          "quem": "B",
+          "ko": "시간 없었어요.",
+          "pt": "Não tive tempo."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a21-g1",
+        "titulo": "A negação curta",
+        "itens": [
+          {
+            "id": "a21-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra à tradução.",
+            "pares": [
+              {
+                "a": "버리다",
+                "b": "jogar fora"
+              },
+              {
+                "a": "맵다",
+                "b": "ser apimentado"
+              },
+              {
+                "a": "배고프다",
+                "b": "estar com fome"
+              },
+              {
+                "a": "아프다",
+                "b": "doer"
+              },
+              {
+                "a": "아직",
+                "b": "ainda"
+              }
+            ],
+            "explicacao": "맵다, 배고프다 e 아프다 descrevem estado — em coreano são verbos, não adjetivos com “estar”."
+          },
+          {
+            "id": "a21-e2",
+            "tipo": "escolha",
+            "enunciado": "Onde 안 entra na frase?",
+            "opcoes": [
+              {
+                "pt": "Imediatamente antes do verbo"
+              },
+              {
+                "pt": "Depois do verbo"
+              },
+              {
+                "pt": "No começo da frase"
+              },
+              {
+                "pt": "No fim"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "집에 안 가요 — o 안 cola no verbo."
+          },
+          {
+            "id": "a21-e3",
+            "tipo": "montar",
+            "enunciado": "Monte “Não vou para casa.”",
+            "dica": "집에 가요 negado",
+            "pecas": [
+              "집에",
+              "안",
+              "가요."
+            ],
+            "correta": "집에안가요.",
+            "explicacao": "집에 안 가요."
+          },
+          {
+            "id": "a21-e4",
+            "tipo": "montar",
+            "enunciado": "Monte “Não é apimentado.”",
+            "dica": "맵다 → 매워요",
+            "pecas": [
+              "안",
+              "매워요.",
+              "맵다"
+            ],
+            "correta": "안매워요.",
+            "explicacao": "안 매워요."
+          },
+          {
+            "id": "a21-e5",
+            "tipo": "escolha",
+            "enunciado": "Como se nega 해요 (de 하다)?",
+            "opcoes": [
+              {
+                "ko": "안 해요"
+              },
+              {
+                "ko": "하 안 요"
+              },
+              {
+                "ko": "해 안요"
+              },
+              {
+                "ko": "안해다"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "안 vai antes do verbo inteiro, mesmo quando o verbo é composto."
+          },
+          {
+            "id": "a21-e6",
+            "tipo": "escolha",
+            "enunciado": "안 muda alguma coisa na conjugação do verbo?",
+            "opcoes": [
+              {
+                "pt": "Não, o verbo continua igual"
+              },
+              {
+                "pt": "Sim, obriga o presente"
+              },
+              {
+                "pt": "Sim, tira o 요"
+              },
+              {
+                "pt": "Sim, muda o radical"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O tempo continua sendo marcado no fim: 안 갔어요, 안 가요."
+          }
+        ]
+      },
+      {
+        "id": "a21-g2",
+        "titulo": "A negação comprida",
+        "itens": [
+          {
+            "id": "a21-e7",
+            "tipo": "escolha",
+            "enunciado": "Qual das duas formas é mais comum no dia a dia e entre amigos?",
+            "opcoes": [
+              {
+                "ko": "안 + verbo"
+              },
+              {
+                "ko": "-지 않다"
+              },
+              {
+                "pt": "As duas igualmente"
+              },
+              {
+                "pt": "Nenhuma; usa-se 아니요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "-지 않다 soa mais formal ou mais enfático."
+          },
+          {
+            "id": "a21-e8",
+            "tipo": "montar",
+            "enunciado": "Negue 가다 na forma comprida, no presente.",
+            "dica": "-지 않다 conjugado",
+            "pecas": [
+              "가",
+              "지 않아요",
+              "안"
+            ],
+            "correta": "가지않아요",
+            "explicacao": "가지 않아요 — o 않다 é que se conjuga."
+          },
+          {
+            "id": "a21-e9",
+            "tipo": "montar",
+            "enunciado": "Agora no passado.",
+            "dica": "não fui",
+            "pecas": [
+              "가",
+              "지 않았어요",
+              "지 않아요"
+            ],
+            "correta": "가지않았어요",
+            "explicacao": "가지 않았어요."
+          },
+          {
+            "id": "a21-e10",
+            "tipo": "lacuna",
+            "enunciado": "Complete a forma comprida de 먹다.",
+            "antes": "먹",
+            "depois": "",
+            "banco": [
+              "지 않아요",
+              "안 어요",
+              "지 안아요"
+            ],
+            "correta": 0,
+            "explicacao": "먹지 않아요."
+          },
+          {
+            "id": "a21-e11",
+            "tipo": "escolha",
+            "enunciado": "Qual é a forma comprida de 마시다?",
+            "opcoes": [
+              {
+                "ko": "마시지 않아요"
+              },
+              {
+                "ko": "마셔지 않아요"
+              },
+              {
+                "ko": "안 마시지요"
+              },
+              {
+                "ko": "마시 않아요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Tire o -다, ponha -지 않다: 마시지 않아요."
+          },
+          {
+            "id": "a21-e12",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "안 먹어요 e 먹지 않아요 significam coisas diferentes.",
+            "correta": false,
+            "explicacao": "Significam a mesma coisa. Muda o registro, não o sentido."
+          }
+        ]
+      },
+      {
+        "id": "a21-g3",
+        "titulo": "Responder que não",
+        "itens": [
+          {
+            "id": "a21-e13",
+            "tipo": "montar",
+            "enunciado": "Perguntam 집에 가요? Responda que não.",
+            "dica": "아니요 + frase negada",
+            "pecas": [
+              "아니요.",
+              "집에",
+              "안",
+              "가요."
+            ],
+            "correta": "아니요.집에안가요.",
+            "explicacao": "아니요. 집에 안 가요."
+          },
+          {
+            "id": "a21-e14",
+            "tipo": "montar",
+            "enunciado": "Perguntam 케이크 먹었어요? Responda que não.",
+            "dica": "no passado",
+            "pecas": [
+              "아니요.",
+              "안",
+              "먹었어요."
+            ],
+            "correta": "아니요.안먹었어요.",
+            "explicacao": "아니요. 안 먹었어요."
+          },
+          {
+            "id": "a21-e15",
+            "tipo": "montar",
+            "enunciado": "Monte “Ainda não joguei fora.”",
+            "dica": "아직 = ainda",
+            "pecas": [
+              "아직",
+              "안",
+              "버렸어요."
+            ],
+            "correta": "아직안버렸어요.",
+            "explicacao": "아직 안 버렸어요 — 아직 vem antes do 안."
+          },
+          {
+            "id": "a21-e16",
+            "tipo": "escolha",
+            "enunciado": "O que 아직 acrescenta a uma frase negada?",
+            "opcoes": [
+              {
+                "pt": "Que ainda não aconteceu, mas pode vir a acontecer"
+              },
+              {
+                "pt": "Que nunca vai acontecer"
+              },
+              {
+                "pt": "Que já aconteceu"
+              },
+              {
+                "pt": "Nada, é enfeite"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "아직 안 버렸어요 deixa a porta aberta; 안 버렸어요 sozinho é só o fato."
+          },
+          {
+            "id": "a21-e17",
+            "tipo": "montar",
+            "enunciado": "Perguntam 아파요? Responda que não.",
+            "dica": "아프다 → 아파요",
+            "pecas": [
+              "아니요.",
+              "안",
+              "아파요."
+            ],
+            "correta": "아니요.안아파요.",
+            "explicacao": "아니요. 안 아파요."
+          }
+        ]
+      },
+      {
+        "id": "a21-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "a21-e18",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "안 매워요?",
+            "pecas": [
+              "안",
+              "매워요?",
+              "매워요."
+            ],
+            "correta": "안매워요?",
+            "explicacao": "안 매워요? — “não é apimentado?”"
+          },
+          {
+            "id": "a21-e19",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "아직 안 버렸어요",
+            "pecas": [
+              "아직",
+              "안",
+              "버렸어요"
+            ],
+            "correta": "아직안버렸어요",
+            "explicacao": "아직 안 버렸어요."
+          },
+          {
+            "id": "a21-e20",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "집에 안 가요?",
+            "pecas": [
+              "집에",
+              "안",
+              "가요?"
+            ],
+            "correta": "집에안가요?",
+            "explicacao": "집에 안 가요?"
+          },
+          {
+            "id": "a21-e21",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a forma que você ouviu.",
+            "audio": "안 해요",
+            "opcoes": [
+              {
+                "ko": "안 해요",
+                "pt": "negação curta"
+              },
+              {
+                "ko": "하지 않아요",
+                "pt": "negação comprida"
+              },
+              {
+                "ko": "해요",
+                "pt": "afirmativa"
+              },
+              {
+                "ko": "했어요",
+                "pt": "passado"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "안 해요 — a curta, de 하다."
+          },
+          {
+            "id": "a21-e22",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a palavra do vocabulário que você ouviu.",
+            "audio": "아직",
+            "opcoes": [
+              {
+                "ko": "아직"
+              },
+              {
+                "ko": "아까"
+              },
+              {
+                "ko": "아파요"
+              },
+              {
+                "ko": "안"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "아직 — ainda. Não confunda com 아까, “há pouco”."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-22",
+    "numero": 22,
+    "hanja": "二十二",
+    "titulo": "A fábrica de verbos",
+    "hangul": "하다",
+    "resumo": "Um verbo que se cola em substantivo e produz outro verbo. Quinze palavras novas aqui viram trinta.",
+    "ilustracao": "assets/licoes/aula-22.svg",
+    "objetivo": "Reconhecer e formar verbos em 하다 — e dobrar o vocabulário sem decorar o dobro.",
+    "vocabulario": [
+      {
+        "ko": "공부",
+        "pt": "estudo",
+        "hanja": "工夫"
+      },
+      {
+        "ko": "운동",
+        "pt": "exercício, esporte",
+        "hanja": "運動"
+      },
+      {
+        "ko": "요리",
+        "pt": "culinária, prato",
+        "hanja": "料理"
+      },
+      {
+        "ko": "청소",
+        "pt": "limpeza",
+        "hanja": "淸掃"
+      },
+      {
+        "ko": "사랑",
+        "pt": "amor"
+      },
+      {
+        "ko": "노래",
+        "pt": "canção"
+      },
+      {
+        "ko": "생각",
+        "pt": "pensamento"
+      },
+      {
+        "ko": "기억",
+        "pt": "memória",
+        "hanja": "記憶"
+      },
+      {
+        "ko": "노력",
+        "pt": "esforço",
+        "hanja": "努力"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a22-t1",
+        "titulo": "Substantivo + 하다 = verbo",
+        "grupo": "a22-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Você já viu isso funcionando em 일하다 (trabalhar), que é 일 (trabalho) + 하다 (fazer). O que a aula acrescenta é que aquilo não era exceção: é um mecanismo, e ele produz centenas de verbos."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "공부",
+              "하다"
+            ],
+            "glosas": [
+              "estudo",
+              "fazer"
+            ],
+            "resultado": "공부하다",
+            "traducao": "estudar"
+          },
+          {
+            "tipo": "p",
+            "texto": "E como todo verbo em 하다 se conjuga pelo 하다, você já sabe conjugar todos eles desde a aula 16."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Substantivo",
+              "Verbo",
+              "Presente",
+              "Passado"
+            ],
+            "linhas": [
+              [
+                "공부 — estudo",
+                "공부하다",
+                "공부해요",
+                "공부했어요"
+              ],
+              [
+                "운동 — exercício",
+                "운동하다",
+                "운동해요",
+                "운동했어요"
+              ],
+              [
+                "요리 — culinária",
+                "요리하다",
+                "요리해요",
+                "요리했어요"
+              ],
+              [
+                "청소 — limpeza",
+                "청소하다",
+                "청소해요",
+                "청소했어요"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Um substantivo aprendido rende duas palavras: o nome da coisa e o verbo de fazê-la."
+          }
+        ]
+      },
+      {
+        "id": "a22-t2",
+        "titulo": "Quinze substantivos, trinta palavras",
+        "grupo": "a22-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Esta é a lista que o material trabalha. Leia como quinze pares, não como trinta itens soltos."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Substantivo",
+              "Verbo"
+            ],
+            "linhas": [
+              [
+                "공부 — estudo",
+                "공부하다 — estudar"
+              ],
+              [
+                "일 — trabalho",
+                "일하다 — trabalhar"
+              ],
+              [
+                "기억 — memória",
+                "기억하다 — lembrar"
+              ],
+              [
+                "청소 — limpeza",
+                "청소하다 — limpar"
+              ],
+              [
+                "요리 — culinária",
+                "요리하다 — cozinhar"
+              ],
+              [
+                "이사 — mudança",
+                "이사하다 — mudar de casa"
+              ],
+              [
+                "노래 — canção",
+                "노래하다 — cantar"
+              ],
+              [
+                "노력 — esforço",
+                "노력하다 — esforçar-se"
+              ],
+              [
+                "운동 — exercício",
+                "운동하다 — exercitar-se"
+              ],
+              [
+                "사랑 — amor",
+                "사랑하다 — amar"
+              ],
+              [
+                "말 — fala",
+                "말하다 — falar"
+              ],
+              [
+                "생각 — pensamento",
+                "생각하다 — pensar"
+              ]
+            ]
+          },
+          {
+            "tipo": "nota",
+            "texto": "Boa parte destes substantivos é sino-coreana, e os morfemas se repetem: o 동 de 운동 (movimento) é o mesmo de 자동차 (carro, “veículo que se move sozinho”)."
+          },
+          {
+            "tipo": "p",
+            "texto": "Vale notar que 사랑해요 é justamente esta construção — 사랑 (amor) + 해요. A frase mais conhecida do idioma é um verbo de fábrica."
+          }
+        ]
+      },
+      {
+        "id": "a22-t3",
+        "titulo": "Negar um verbo de 하다",
+        "grupo": "a22-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Aqui aparece uma sutileza que a aula anterior não cobriu. Quando o verbo é substantivo + 하다, a negação curta entra no meio, e não antes de tudo."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Afirmativa",
+              "Negação curta",
+              "Negação comprida"
+            ],
+            "linhas": [
+              [
+                "공부해요",
+                "공부 안 해요",
+                "공부하지 않아요"
+              ],
+              [
+                "운동해요",
+                "운동 안 해요",
+                "운동하지 않아요"
+              ],
+              [
+                "노력해요",
+                "노력 안 해요",
+                "노력하지 않아요"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "O 안 fica entre o substantivo e o 하다: 공부 안 해요, não “안 공부해요”."
+          },
+          {
+            "tipo": "p",
+            "texto": "A razão é que o 안 nega o verbo, e o verbo ali é só o 하다 — o substantivo é o que se faz. Já a negação comprida, que entra na terminação, não tem esse problema: 공부하지 않아요 mantém a palavra inteira."
+          },
+          {
+            "tipo": "nota",
+            "texto": "Com verbos que não são compostos, nada muda: 안 먹어요, 안 가요, como na aula 21."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Fim de semana.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "주말에 뭐 해요?",
+          "pt": "O que você faz no fim de semana?"
+        },
+        {
+          "quem": "B",
+          "ko": "운동해요. 그리고 청소해요.",
+          "pt": "Faço exercício. E limpo a casa."
+        },
+        {
+          "quem": "A",
+          "ko": "공부 안 해요?",
+          "pt": "Não estuda?"
+        },
+        {
+          "quem": "B",
+          "ko": "공부는 나중에 해요.",
+          "pt": "Estudar, eu faço depois."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a22-g1",
+        "titulo": "Como a fábrica funciona",
+        "itens": [
+          {
+            "id": "a22-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada substantivo à tradução.",
+            "pares": [
+              {
+                "a": "공부",
+                "b": "estudo"
+              },
+              {
+                "a": "운동",
+                "b": "exercício"
+              },
+              {
+                "a": "요리",
+                "b": "culinária"
+              },
+              {
+                "a": "청소",
+                "b": "limpeza"
+              },
+              {
+                "a": "노래",
+                "b": "canção"
+              }
+            ],
+            "explicacao": "Cada um destes vira verbo com 하다 colado."
+          },
+          {
+            "id": "a22-e2",
+            "tipo": "associar",
+            "enunciado": "E mais quatro.",
+            "pares": [
+              {
+                "a": "사랑",
+                "b": "amor"
+              },
+              {
+                "a": "생각",
+                "b": "pensamento"
+              },
+              {
+                "a": "기억",
+                "b": "memória"
+              },
+              {
+                "a": "노력",
+                "b": "esforço"
+              }
+            ],
+            "explicacao": "사랑 + 해요 = 사랑해요, a frase mais conhecida do idioma."
+          },
+          {
+            "id": "a22-e3",
+            "tipo": "montar",
+            "enunciado": "Forme o verbo “estudar”.",
+            "dica": "공부 = estudo",
+            "pecas": [
+              "공부",
+              "하다",
+              "되다"
+            ],
+            "correta": "공부하다",
+            "explicacao": "공부하다."
+          },
+          {
+            "id": "a22-e4",
+            "tipo": "montar",
+            "enunciado": "Conjugue “estudar” no presente.",
+            "dica": "revisão da aula 16",
+            "pecas": [
+              "공부",
+              "해요",
+              "하요"
+            ],
+            "correta": "공부해요",
+            "explicacao": "공부해요 — todo verbo em 하다 conjuga pelo 하다."
+          },
+          {
+            "id": "a22-e5",
+            "tipo": "montar",
+            "enunciado": "Conjugue “fazer exercício” no passado.",
+            "dica": "운동 = exercício",
+            "pecas": [
+              "운동",
+              "했어요",
+              "해요"
+            ],
+            "correta": "운동했어요",
+            "explicacao": "운동했어요."
+          },
+          {
+            "id": "a22-e6",
+            "tipo": "escolha",
+            "enunciado": "Por que você já sabia conjugar todos estes verbos?",
+            "opcoes": [
+              {
+                "pt": "Porque todos conjugam pelo 하다, que a aula 16 já cobriu"
+              },
+              {
+                "pt": "Porque são irregulares"
+              },
+              {
+                "pt": "Porque não se conjugam"
+              },
+              {
+                "pt": "Porque terminam em vogal"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "하 + 여요 = 해요. Aprender um resolve centenas."
+          }
+        ]
+      },
+      {
+        "id": "a22-g2",
+        "titulo": "Os pares",
+        "itens": [
+          {
+            "id": "a22-e7",
+            "tipo": "associar",
+            "enunciado": "Ligue cada verbo ao sentido.",
+            "pares": [
+              {
+                "a": "공부하다",
+                "b": "estudar"
+              },
+              {
+                "a": "청소하다",
+                "b": "limpar"
+              },
+              {
+                "a": "요리하다",
+                "b": "cozinhar"
+              },
+              {
+                "a": "노래하다",
+                "b": "cantar"
+              },
+              {
+                "a": "운동하다",
+                "b": "exercitar-se"
+              }
+            ],
+            "explicacao": "Cinco verbos que você acabou de ganhar de graça."
+          },
+          {
+            "id": "a22-e8",
+            "tipo": "associar",
+            "enunciado": "E mais cinco.",
+            "pares": [
+              {
+                "a": "사랑하다",
+                "b": "amar"
+              },
+              {
+                "a": "생각하다",
+                "b": "pensar"
+              },
+              {
+                "a": "기억하다",
+                "b": "lembrar"
+              },
+              {
+                "a": "말하다",
+                "b": "falar"
+              },
+              {
+                "a": "노력하다",
+                "b": "esforçar-se"
+              }
+            ],
+            "explicacao": "말하다 vem de 말, a mesma palavra de 존댓말 e 반말."
+          },
+          {
+            "id": "a22-e9",
+            "tipo": "escolha",
+            "enunciado": "이사하다 quer dizer:",
+            "opcoes": [
+              {
+                "pt": "Mudar de casa"
+              },
+              {
+                "pt": "Viajar"
+              },
+              {
+                "pt": "Trabalhar"
+              },
+              {
+                "pt": "Descansar"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "이사 é a mudança de residência."
+          },
+          {
+            "id": "a22-e10",
+            "tipo": "montar",
+            "enunciado": "Monte “Eu te amo.”",
+            "dica": "a frase mais conhecida do idioma",
+            "pecas": [
+              "사랑",
+              "해요.",
+              "하다"
+            ],
+            "correta": "사랑해요.",
+            "explicacao": "사랑해요 — substantivo + 하다 conjugado, como todos os outros."
+          },
+          {
+            "id": "a22-e11",
+            "tipo": "montar",
+            "enunciado": "Monte “Eu cozinho.”",
+            "dica": "요리 = culinária",
+            "pecas": [
+              "요리",
+              "해요.",
+              "했어요."
+            ],
+            "correta": "요리해요.",
+            "explicacao": "요리해요."
+          },
+          {
+            "id": "a22-e12",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Aprender um substantivo desta lista rende duas palavras.",
+            "correta": true,
+            "explicacao": "O nome da coisa e o verbo de fazê-la. É o melhor retorno de vocabulário do Nível 1."
+          },
+          {
+            "id": "a22-e13",
+            "tipo": "escolha",
+            "enunciado": "O 동 de 운동 (movimento) reaparece em:",
+            "opcoes": [
+              {
+                "ko": "자동차",
+                "pt": "carro — “veículo que se move sozinho”"
+              },
+              {
+                "ko": "공부",
+                "pt": "estudo"
+              },
+              {
+                "ko": "청소",
+                "pt": "limpeza"
+              },
+              {
+                "ko": "노래",
+                "pt": "canção"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "É a rede de morfemas de novo: um pedaço aprendido destrava palavras que você ainda não viu."
+          }
+        ]
+      },
+      {
+        "id": "a22-g3",
+        "titulo": "Negar no meio",
+        "itens": [
+          {
+            "id": "a22-e14",
+            "tipo": "escolha",
+            "enunciado": "Como se nega 공부해요 na forma curta?",
+            "opcoes": [
+              {
+                "ko": "공부 안 해요"
+              },
+              {
+                "ko": "안 공부해요"
+              },
+              {
+                "ko": "공부해 안요"
+              },
+              {
+                "ko": "안공부 해요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O 안 entra entre o substantivo e o 하다 — porque o verbo ali é só o 하다."
+          },
+          {
+            "id": "a22-e15",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “não faço exercício”.",
+            "antes": "운동",
+            "depois": " 해요.",
+            "banco": [
+              "안",
+              "지 않",
+              "아니"
+            ],
+            "correta": 0,
+            "explicacao": "운동 안 해요."
+          },
+          {
+            "id": "a22-e16",
+            "tipo": "montar",
+            "enunciado": "Monte “não me esforço” na forma comprida.",
+            "dica": "-지 않다",
+            "pecas": [
+              "노력하",
+              "지 않아요.",
+              "안"
+            ],
+            "correta": "노력하지않아요.",
+            "explicacao": "노력하지 않아요 — a forma comprida mantém a palavra inteira."
+          },
+          {
+            "id": "a22-e17",
+            "tipo": "escolha",
+            "enunciado": "Por que 안 vai no meio nos verbos de 하다?",
+            "opcoes": [
+              {
+                "pt": "Porque 안 nega o verbo, e o verbo ali é só o 하다"
+              },
+              {
+                "pt": "Por eufonia, sem razão gramatical"
+              },
+              {
+                "pt": "Porque o substantivo é longo demais"
+              },
+              {
+                "pt": "É opcional; tanto faz"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O substantivo é o que se faz; o 하다 é o fazer, e é ele que se nega."
+          },
+          {
+            "id": "a22-e18",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Com verbos simples como 먹다, o 안 também vai no meio.",
+            "correta": false,
+            "explicacao": "Não há meio: 안 먹어요. A regra do meio só existe porque o verbo composto tem duas partes."
+          }
+        ]
+      },
+      {
+        "id": "a22-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "a22-e19",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "노력했어요",
+            "pecas": [
+              "노력",
+              "했어요",
+              "해요"
+            ],
+            "correta": "노력했어요",
+            "explicacao": "노력했어요 — “me esforcei”."
+          },
+          {
+            "id": "a22-e20",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "운동해요",
+            "pecas": [
+              "운동",
+              "해요",
+              "했어요"
+            ],
+            "correta": "운동해요",
+            "explicacao": "운동해요."
+          },
+          {
+            "id": "a22-e21",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "노력 안 해요",
+            "pecas": [
+              "노력",
+              "안",
+              "해요"
+            ],
+            "correta": "노력안해요",
+            "explicacao": "노력 안 해요 — o 안 no meio."
+          },
+          {
+            "id": "a22-e22",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha o que você ouviu.",
+            "audio": "공부해요",
+            "opcoes": [
+              {
+                "ko": "공부해요",
+                "pt": "estudo"
+              },
+              {
+                "ko": "공부 안 해요",
+                "pt": "não estudo"
+              },
+              {
+                "ko": "공부했어요",
+                "pt": "estudei"
+              },
+              {
+                "ko": "요리해요",
+                "pt": "cozinho"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Afirmativa no presente."
+          },
+          {
+            "id": "a22-e23",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a palavra do vocabulário que você ouviu.",
+            "audio": "청소",
+            "opcoes": [
+              {
+                "ko": "청소"
+              },
+              {
+                "ko": "공부"
+              },
+              {
+                "ko": "요리"
+              },
+              {
+                "ko": "운동"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "청소 (淸掃) — limpeza."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-23",
+    "numero": 23,
+    "hanja": "二十三",
+    "titulo": "Quem",
+    "hangul": "누구? 누가?",
+    "resumo": "A palavra é uma só, mas ela muda de forma quando quem pergunta é o sujeito — e essa mudança é obrigatória.",
+    "ilustracao": "assets/licoes/aula-23.svg",
+    "objetivo": "Perguntar quem é e quem fez, e atender porta e telefone.",
+    "vocabulario": [
+      {
+        "ko": "누구",
+        "pt": "quem"
+      },
+      {
+        "ko": "누가",
+        "pt": "quem (como sujeito)"
+      },
+      {
+        "ko": "여보세요",
+        "pt": "alô? (só ao telefone)"
+      },
+      {
+        "ko": "만들다",
+        "pt": "fazer, fabricar"
+      },
+      {
+        "ko": "옮기다",
+        "pt": "mudar de lugar, carregar"
+      },
+      {
+        "ko": "전화하다",
+        "pt": "telefonar"
+      },
+      {
+        "ko": "치즈",
+        "pt": "queijo"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a23-t1",
+        "titulo": "누구 pergunta quem é",
+        "grupo": "a23-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "누구 é a quinta e última palavra de pergunta do Nível 1. Junte com a terminação da aula 5 e ela vira a pergunta de identidade."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "누구",
+              "예요?"
+            ],
+            "glosas": [
+              "quem",
+              "é?"
+            ],
+            "resultado": "누구예요?",
+            "traducao": "quem é?"
+          },
+          {
+            "tipo": "p",
+            "texto": "누구 termina em vogal, então a terminação é 예요 — a mesma regra da aula 5, sem exceção."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "누구예요?",
+                "pt": "Quem é?"
+              },
+              {
+                "ko": "이 사람 누구예요?",
+                "pt": "Quem é esta pessoa?"
+              },
+              {
+                "ko": "누구였어요?",
+                "pt": "Quem era?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a23-t2",
+        "titulo": "Quando “quem” é o sujeito, vira 누가",
+        "grupo": "a23-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Aqui está o ponto da aula. Se você pergunta quem *fez* alguma coisa, 누구 não serve sozinho: ele precisa da partícula de sujeito da aula 9 — e a junção encolhe."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "누구",
+              "가"
+            ],
+            "glosas": [
+              "quem",
+              "partícula de sujeito"
+            ],
+            "resultado": "누가",
+            "traducao": "quem (fez)"
+          },
+          {
+            "tipo": "destaque",
+            "texto": "누구 + 가 não vira “누구가”. Vira 누가, e essa é a única forma correta."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Pergunta",
+              "Forma",
+              "Por quê"
+            ],
+            "linhas": [
+              [
+                "누구예요?",
+                "누구",
+                "quem é — identidade"
+              ],
+              [
+                "누가 했어요?",
+                "누가",
+                "quem fez — sujeito da ação"
+              ],
+              [
+                "누가 왔어요?",
+                "누가",
+                "quem veio — sujeito"
+              ],
+              [
+                "누가 만들었어요?",
+                "누가",
+                "quem fez isto — sujeito"
+              ]
+            ]
+          },
+          {
+            "tipo": "nota",
+            "texto": "É um erro comum omitir a partícula aqui, por analogia com 언제 e 뭐, que dispensam. Com 누구 ela é obrigatória quando ele é quem age."
+          }
+        ]
+      },
+      {
+        "id": "a23-t3",
+        "titulo": "Na porta e no telefone",
+        "grupo": "a23-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Duas situações usam frases fixas, e trocá-las soa mal — vale guardar cada uma no seu lugar."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Situação",
+              "O que se diz"
+            ],
+            "linhas": [
+              [
+                "Batem à porta",
+                "누구세요? — quem é?"
+              ],
+              [
+                "Você atende o telefone",
+                "여보세요? — alô?"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "여보세요 só existe ao telefone. Dizê-la para alguém à sua frente soa esquisito."
+          },
+          {
+            "tipo": "p",
+            "texto": "E o contrário também vale: atender o telefone com 누구세요? soa ríspido, como se você exigisse identificação antes de cumprimentar."
+          },
+          {
+            "tipo": "dialogo",
+            "falas": [
+              {
+                "quem": "A",
+                "ko": "똑똑똑",
+                "pt": "(toc toc toc)"
+              },
+              {
+                "quem": "B",
+                "ko": "누구세요?",
+                "pt": "Quem é?"
+              },
+              {
+                "quem": "A",
+                "ko": "저는 현우예요.",
+                "pt": "Sou o Hyunwoo."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Alguém recebe um presente feito à mão.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "이거 누가 만들었어요?",
+          "pt": "Quem fez isto?"
+        },
+        {
+          "quem": "B",
+          "ko": "제 친구가 만들었어요.",
+          "pt": "Um amigo meu fez."
+        },
+        {
+          "quem": "A",
+          "ko": "누구예요?",
+          "pt": "Quem é?"
+        },
+        {
+          "quem": "B",
+          "ko": "경은 씨예요.",
+          "pt": "É a Kyeong-eun."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a23-g1",
+        "titulo": "누구 e identidade",
+        "itens": [
+          {
+            "id": "a23-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra à tradução.",
+            "pares": [
+              {
+                "a": "누구",
+                "b": "quem"
+              },
+              {
+                "a": "여보세요",
+                "b": "alô? (telefone)"
+              },
+              {
+                "a": "만들다",
+                "b": "fazer, fabricar"
+              },
+              {
+                "a": "전화하다",
+                "b": "telefonar"
+              },
+              {
+                "a": "치즈",
+                "b": "queijo"
+              }
+            ],
+            "explicacao": "전화하다 é mais um verbo de fábrica: 전화 (telefone) + 하다."
+          },
+          {
+            "id": "a23-e2",
+            "tipo": "montar",
+            "enunciado": "Monte “Quem é?”",
+            "dica": "누구 termina em vogal",
+            "pecas": [
+              "누구",
+              "예요?",
+              "이에요?"
+            ],
+            "correta": "누구예요?",
+            "explicacao": "누구예요? — vogal final pede 예요, como na aula 5."
+          },
+          {
+            "id": "a23-e3",
+            "tipo": "escolha",
+            "enunciado": "Por que é 누구예요? e não 누구이에요?",
+            "opcoes": [
+              {
+                "pt": "누구 termina em vogal, e vogal pede 예요"
+              },
+              {
+                "pt": "Porque é pergunta"
+              },
+              {
+                "pt": "Porque 누구 é pessoa"
+              },
+              {
+                "pt": "As duas estão certas"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "A regra da aula 5 continua valendo sem exceção."
+          },
+          {
+            "id": "a23-e4",
+            "tipo": "montar",
+            "enunciado": "Monte “Quem é esta pessoa?”",
+            "dica": "이 사람 = esta pessoa",
+            "pecas": [
+              "이 사람",
+              "누구",
+              "예요?"
+            ],
+            "correta": "이사람누구예요?",
+            "explicacao": "이 사람 누구예요?"
+          },
+          {
+            "id": "a23-e5",
+            "tipo": "montar",
+            "enunciado": "Desembaralhe: 요구예누",
+            "dica": "quem é?",
+            "pecas": [
+              "요",
+              "구",
+              "예",
+              "누"
+            ],
+            "correta": "누구예요",
+            "explicacao": "누구예요?"
+          }
+        ]
+      },
+      {
+        "id": "a23-g2",
+        "titulo": "누가 e a ação",
+        "itens": [
+          {
+            "id": "a23-e6",
+            "tipo": "escolha",
+            "enunciado": "누구 + 가 resulta em:",
+            "opcoes": [
+              {
+                "ko": "누가"
+              },
+              {
+                "ko": "누구가"
+              },
+              {
+                "ko": "누기"
+              },
+              {
+                "ko": "누구이"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "A junção encolhe, e 누가 é a única forma correta."
+          },
+          {
+            "id": "a23-e7",
+            "tipo": "escolha",
+            "enunciado": "“Quem fez?” fica:",
+            "opcoes": [
+              {
+                "ko": "누가 했어요?"
+              },
+              {
+                "ko": "누구 했어요?"
+              },
+              {
+                "ko": "누구가 했어요?"
+              },
+              {
+                "ko": "누구예요 했어요?"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Como “quem” é o sujeito da ação, entra 누가."
+          },
+          {
+            "id": "a23-e8",
+            "tipo": "montar",
+            "enunciado": "Desembaralhe: 했어가요누",
+            "dica": "quem fez?",
+            "pecas": [
+              "했어",
+              "가",
+              "요",
+              "누"
+            ],
+            "correta": "누가했어요",
+            "explicacao": "누가 했어요?"
+          },
+          {
+            "id": "a23-e9",
+            "tipo": "montar",
+            "enunciado": "Monte “Quem telefonou?”",
+            "dica": "전화하다 no passado",
+            "pecas": [
+              "누가",
+              "전화했어요?",
+              "누구"
+            ],
+            "correta": "누가전화했어요?",
+            "explicacao": "누가 전화했어요?"
+          },
+          {
+            "id": "a23-e10",
+            "tipo": "montar",
+            "enunciado": "Monte “Quem fez isto?”",
+            "dica": "만들다 no passado",
+            "pecas": [
+              "이거",
+              "누가",
+              "만들었어요?"
+            ],
+            "correta": "이거누가만들었어요?",
+            "explicacao": "이거 누가 만들었어요?"
+          },
+          {
+            "id": "a23-e11",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Quando “quem” é o sujeito da ação, basta usar 누구 sem partícula.",
+            "correta": false,
+            "explicacao": "A partícula é obrigatória aí — e a forma resultante é 누가."
+          },
+          {
+            "id": "a23-e12",
+            "tipo": "escolha",
+            "enunciado": "Qual destas está ERRADA?",
+            "opcoes": [
+              {
+                "ko": "누구가 왔어요?"
+              },
+              {
+                "ko": "누가 왔어요?"
+              },
+              {
+                "ko": "누구예요?"
+              },
+              {
+                "ko": "누구세요?"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "누구가 não existe. Ou 누가 (sujeito), ou 누구 sem partícula (identidade)."
+          }
+        ]
+      },
+      {
+        "id": "a23-g3",
+        "titulo": "Porta e telefone",
+        "itens": [
+          {
+            "id": "a23-e13",
+            "tipo": "escolha",
+            "enunciado": "Batem à sua porta. O que você diz?",
+            "opcoes": [
+              {
+                "ko": "누구세요?"
+              },
+              {
+                "ko": "여보세요?"
+              },
+              {
+                "ko": "누가 왔어요?"
+              },
+              {
+                "ko": "안녕하세요?"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "누구세요? é a frase da porta."
+          },
+          {
+            "id": "a23-e14",
+            "tipo": "escolha",
+            "enunciado": "O telefone toca e você atende. O que diz?",
+            "opcoes": [
+              {
+                "ko": "여보세요?"
+              },
+              {
+                "ko": "누구세요?"
+              },
+              {
+                "ko": "누구예요?"
+              },
+              {
+                "ko": "안녕히 계세요?"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "여보세요 só existe ao telefone."
+          },
+          {
+            "id": "a23-e15",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Atender o telefone com 누구세요? soa ríspido.",
+            "correta": true,
+            "explicacao": "Soa como exigir identificação antes de cumprimentar. Na porta, a mesma frase é normal."
+          },
+          {
+            "id": "a23-e16",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "여보세요 serve para chamar a atenção de alguém à sua frente.",
+            "correta": false,
+            "explicacao": "Para isso é 저기요, da aula 4. 여보세요 é do telefone."
+          },
+          {
+            "id": "a23-e17",
+            "tipo": "montar",
+            "enunciado": "Seu colega falou com quem bateu à porta e voltou. Pergunte quem era.",
+            "dica": "누구 no passado",
+            "pecas": [
+              "누구였어요?",
+              "누구예요?",
+              "누가"
+            ],
+            "correta": "누구였어요?",
+            "explicacao": "누구였어요? — “quem era?”."
+          }
+        ]
+      },
+      {
+        "id": "a23-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "a23-e18",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "누가 왔어요?",
+            "pecas": [
+              "누가",
+              "왔어요?",
+              "누구"
+            ],
+            "correta": "누가왔어요?",
+            "explicacao": "누가 왔어요? — “quem veio?”."
+          },
+          {
+            "id": "a23-e19",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "누가 샀어요?",
+            "pecas": [
+              "누가",
+              "샀어요?",
+              "누구"
+            ],
+            "correta": "누가샀어요?",
+            "explicacao": "누가 샀어요? — “quem comprou?”."
+          },
+          {
+            "id": "a23-e20",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a forma que você ouviu.",
+            "audio": "누구",
+            "opcoes": [
+              {
+                "ko": "누구",
+                "pt": "quem (identidade)"
+              },
+              {
+                "ko": "누가",
+                "pt": "quem (sujeito)"
+              },
+              {
+                "ko": "누나",
+                "pt": "irmã mais velha"
+              },
+              {
+                "ko": "너무",
+                "pt": "demais"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "누구 — a forma sem partícula."
+          },
+          {
+            "id": "a23-e21",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha o que você ouviu.",
+            "audio": "여보세요",
+            "opcoes": [
+              {
+                "ko": "여보세요",
+                "pt": "alô (telefone)"
+              },
+              {
+                "ko": "누구세요",
+                "pt": "quem é (porta)"
+              },
+              {
+                "ko": "저기요",
+                "pt": "com licença"
+              },
+              {
+                "ko": "안녕하세요",
+                "pt": "olá"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "여보세요 — do telefone."
+          },
+          {
+            "id": "a23-e22",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a palavra do vocabulário que você ouviu.",
+            "audio": "만들다",
+            "opcoes": [
+              {
+                "ko": "만들다",
+                "pt": "fazer"
+              },
+              {
+                "ko": "옮기다",
+                "pt": "carregar"
+              },
+              {
+                "ko": "기다리다",
+                "pt": "esperar"
+              },
+              {
+                "ko": "전화하다",
+                "pt": "telefonar"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "만들다 — fabricar, fazer com as mãos."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-24",
+    "numero": 24,
+    "hanja": "二十四",
+    "titulo": "Por quê e como",
+    "hangul": "왜? 어떻게? 얼마? 얼마나?",
+    "resumo": "As últimas palavras de pergunta, e o quadro completo dos 의문사 que o Nível 1 entrega.",
+    "ilustracao": "assets/licoes/aula-24.svg",
+    "objetivo": "Perguntar por quê, como, quanto custa e quão — fechando o repertório de perguntas.",
+    "vocabulario": [
+      {
+        "ko": "왜",
+        "pt": "por quê"
+      },
+      {
+        "ko": "어떻게",
+        "pt": "como"
+      },
+      {
+        "ko": "얼마",
+        "pt": "quanto (dinheiro)"
+      },
+      {
+        "ko": "얼마나",
+        "pt": "quão, quanto (grau)"
+      },
+      {
+        "ko": "자주",
+        "pt": "com frequência"
+      },
+      {
+        "ko": "찾다",
+        "pt": "procurar, encontrar"
+      },
+      {
+        "ko": "내다",
+        "pt": "pagar"
+      },
+      {
+        "ko": "의문사",
+        "pt": "palavra interrogativa",
+        "hanja": "疑問詞"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a24-t1",
+        "titulo": "왜 e 어떻게",
+        "grupo": "a24-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Como 언제, estas duas entram sem partícula, direto antes do verbo."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "왜 안 왔어요?",
+                "pt": "Por que você não veio?"
+              },
+              {
+                "ko": "어떻게 찾았어요?",
+                "pt": "Como você encontrou?"
+              },
+              {
+                "ko": "왜 전화했어요?",
+                "pt": "Por que você telefonou?"
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "왜요? sozinho é “por quê?” como pergunta inteira — a resposta curta mais útil desta aula."
+          },
+          {
+            "tipo": "nota",
+            "texto": "어떻게 se escreve com ㅎ mas soa [어떠케]: o ㅎ funde com o ㄱ seguinte e produz uma aspirada. É a regra 격음화, que o app aplica sozinho."
+          }
+        ]
+      },
+      {
+        "id": "a24-t2",
+        "titulo": "얼마 é dinheiro; 얼마나 é grau",
+        "grupo": "a24-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "As duas se parecem e significam coisas diferentes. A sílaba a mais muda o tipo de pergunta."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Palavra",
+              "Pergunta",
+              "Exemplo"
+            ],
+            "linhas": [
+              [
+                "얼마",
+                "quanto custa",
+                "얼마예요? — quanto é?"
+              ],
+              [
+                "얼마나",
+                "quão + adjetivo/advérbio",
+                "얼마나 무거워요? — quão pesado é?"
+              ]
+            ]
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "얼마 냈어요?",
+                "pt": "Quanto você pagou?",
+                "conta": "dinheiro → 얼마"
+              },
+              {
+                "ko": "얼마나 자주 와요?",
+                "pt": "Com que frequência você vem?",
+                "conta": "grau → 얼마나 + advérbio"
+              },
+              {
+                "ko": "얼마나 커요?",
+                "pt": "Quão grande é?",
+                "conta": "grau → 얼마나 + adjetivo"
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "얼마나 quase nunca vem sozinho: ele pede um adjetivo ou advérbio logo depois."
+          }
+        ]
+      },
+      {
+        "id": "a24-t3",
+        "titulo": "O quadro completo",
+        "grupo": "a24-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Estas são todas as 의문사 que o Nível 1 entrega. Vale ver juntas, porque a diferença entre elas é justamente o que decide se precisa ou não de partícula."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Palavra",
+              "Sentido",
+              "Partícula"
+            ],
+            "linhas": [
+              [
+                "뭐",
+                "o quê",
+                "opcional"
+              ],
+              [
+                "어디",
+                "onde",
+                "precisa — 에 / 에서"
+              ],
+              [
+                "언제",
+                "quando",
+                "não precisa"
+              ],
+              [
+                "누구",
+                "quem",
+                "vira 누가 como sujeito"
+              ],
+              [
+                "왜",
+                "por quê",
+                "não precisa"
+              ],
+              [
+                "어떻게",
+                "como",
+                "não precisa"
+              ],
+              [
+                "얼마",
+                "quanto custa",
+                "não precisa"
+              ],
+              [
+                "얼마나",
+                "quão",
+                "pede adjetivo/advérbio"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Oito palavras, e você monta praticamente qualquer pergunta de conversa cotidiana."
+          },
+          {
+            "tipo": "p",
+            "texto": "Repare no padrão que atravessa todas: a palavra de pergunta ocupa exatamente o lugar onde a resposta vai entrar. É o que torna a conversa em coreano possível bem antes de o vocabulário estar completo."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Numa loja, sobre uma bolsa.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "저기요. 그거 얼마였어요?",
+          "pt": "Com licença. Quanto custou isso?"
+        },
+        {
+          "quem": "B",
+          "ko": "이 가방이요? 만 이천 원이었어요. 왜요?",
+          "pt": "Esta bolsa? Custou 12.000 won. Por quê?"
+        },
+        {
+          "quem": "A",
+          "ko": "너무 귀여워요!",
+          "pt": "É muito bonitinha!"
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a24-g1",
+        "titulo": "왜 e 어떻게",
+        "itens": [
+          {
+            "id": "a24-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra à tradução.",
+            "pares": [
+              {
+                "a": "왜",
+                "b": "por quê"
+              },
+              {
+                "a": "어떻게",
+                "b": "como"
+              },
+              {
+                "a": "자주",
+                "b": "com frequência"
+              },
+              {
+                "a": "찾다",
+                "b": "procurar"
+              },
+              {
+                "a": "내다",
+                "b": "pagar"
+              }
+            ],
+            "explicacao": "찾다 cobre “procurar” e “encontrar” — o contexto separa."
+          },
+          {
+            "id": "a24-e2",
+            "tipo": "montar",
+            "enunciado": "Monte “Por que você não veio ontem?”",
+            "dica": "revisão das aulas 17 e 21",
+            "pecas": [
+              "어제",
+              "왜",
+              "안",
+              "왔어요?"
+            ],
+            "correta": "어제왜안왔어요?",
+            "explicacao": "어제 왜 안 왔어요?"
+          },
+          {
+            "id": "a24-e3",
+            "tipo": "montar",
+            "enunciado": "Monte “Como você encontrou isto?”",
+            "dica": "찾다 no passado",
+            "pecas": [
+              "이거",
+              "어떻게",
+              "찾았어요?"
+            ],
+            "correta": "이거어떻게찾았어요?",
+            "explicacao": "이거 어떻게 찾았어요?"
+          },
+          {
+            "id": "a24-e4",
+            "tipo": "escolha",
+            "enunciado": "Como se pronuncia 어떻게?",
+            "opcoes": [
+              {
+                "ko": "[어떠케]"
+              },
+              {
+                "ko": "[어떠게]"
+              },
+              {
+                "ko": "[어떧게]"
+              },
+              {
+                "ko": "[어떠헤]"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O ㅎ funde com o ㄱ e produz uma aspirada. Chama-se 격음화."
+          },
+          {
+            "id": "a24-e5",
+            "tipo": "escolha",
+            "enunciado": "왜요? sozinho quer dizer:",
+            "opcoes": [
+              {
+                "pt": "Por quê?"
+              },
+              {
+                "pt": "Como assim?"
+              },
+              {
+                "pt": "Quanto?"
+              },
+              {
+                "pt": "Quem?"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "É a pergunta inteira em duas sílabas — a resposta curta mais útil da aula."
+          }
+        ]
+      },
+      {
+        "id": "a24-g2",
+        "titulo": "얼마 e 얼마나",
+        "itens": [
+          {
+            "id": "a24-e6",
+            "tipo": "escolha",
+            "enunciado": "Para perguntar o preço de algo, usa-se:",
+            "opcoes": [
+              {
+                "ko": "얼마"
+              },
+              {
+                "ko": "얼마나"
+              },
+              {
+                "ko": "어떻게"
+              },
+              {
+                "ko": "왜"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "얼마예요? — “quanto é?”."
+          },
+          {
+            "id": "a24-e7",
+            "tipo": "escolha",
+            "enunciado": "E para perguntar quão pesado algo é?",
+            "opcoes": [
+              {
+                "ko": "얼마나"
+              },
+              {
+                "ko": "얼마"
+              },
+              {
+                "ko": "어떻게"
+              },
+              {
+                "ko": "뭐"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "얼마나 무거워요? — 얼마나 pede o adjetivo depois."
+          },
+          {
+            "id": "a24-e8",
+            "tipo": "montar",
+            "enunciado": "Monte “Quanto você pagou?”",
+            "dica": "내다 no passado",
+            "pecas": [
+              "얼마",
+              "냈어요?",
+              "얼마나"
+            ],
+            "correta": "얼마냈어요?",
+            "explicacao": "얼마 냈어요?"
+          },
+          {
+            "id": "a24-e9",
+            "tipo": "montar",
+            "enunciado": "Monte “Com que frequência você vem aqui?”",
+            "dica": "여기 = aqui · 자주 = com frequência",
+            "pecas": [
+              "여기",
+              "얼마나",
+              "자주",
+              "와요?"
+            ],
+            "correta": "여기얼마나자주와요?",
+            "explicacao": "여기 얼마나 자주 와요?"
+          },
+          {
+            "id": "a24-e10",
+            "tipo": "montar",
+            "enunciado": "Monte “Por que isto é pesado?”",
+            "dica": "무겁다 → 무거워요",
+            "pecas": [
+              "이거",
+              "왜",
+              "무거워요?"
+            ],
+            "correta": "이거왜무거워요?",
+            "explicacao": "이거 왜 무거워요?"
+          },
+          {
+            "id": "a24-e11",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "얼마나 costuma aparecer sozinho, sem nada depois.",
+            "correta": false,
+            "explicacao": "Ele pede um adjetivo ou advérbio: 얼마나 커요?, 얼마나 자주?"
+          },
+          {
+            "id": "a24-e12",
+            "tipo": "escolha",
+            "enunciado": "No diálogo, quanto custou a bolsa?",
+            "opcoes": [
+              {
+                "pt": "12.000 won"
+              },
+              {
+                "pt": "2.000 won"
+              },
+              {
+                "pt": "120.000 won"
+              },
+              {
+                "pt": "1.200 won"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "만 이천 원 — 만 (10.000) + 이천 (2.000). A aula 15 volta a ser útil."
+          }
+        ]
+      },
+      {
+        "id": "a24-g3",
+        "titulo": "O quadro completo",
+        "itens": [
+          {
+            "id": "a24-e13",
+            "tipo": "associar",
+            "enunciado": "Ligue cada interrogativa ao sentido.",
+            "pares": [
+              {
+                "a": "뭐",
+                "b": "o quê"
+              },
+              {
+                "a": "어디",
+                "b": "onde"
+              },
+              {
+                "a": "언제",
+                "b": "quando"
+              },
+              {
+                "a": "누구",
+                "b": "quem"
+              },
+              {
+                "a": "왜",
+                "b": "por quê"
+              }
+            ],
+            "explicacao": "As cinco primeiras, das aulas 5, 18, 19 e 23."
+          },
+          {
+            "id": "a24-e14",
+            "tipo": "associar",
+            "enunciado": "E as três desta aula.",
+            "pares": [
+              {
+                "a": "어떻게",
+                "b": "como"
+              },
+              {
+                "a": "얼마",
+                "b": "quanto custa"
+              },
+              {
+                "a": "얼마나",
+                "b": "quão"
+              }
+            ],
+            "explicacao": "Oito no total — e com elas você monta quase qualquer pergunta cotidiana."
+          },
+          {
+            "id": "a24-e15",
+            "tipo": "escolha",
+            "enunciado": "Qual destas PRECISA de partícula?",
+            "opcoes": [
+              {
+                "ko": "어디"
+              },
+              {
+                "ko": "언제"
+              },
+              {
+                "ko": "왜"
+              },
+              {
+                "ko": "어떻게"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "어디에, 어디에서. As outras entram cruas."
+          },
+          {
+            "id": "a24-e16",
+            "tipo": "escolha",
+            "enunciado": "O que 의문사 quer dizer?",
+            "opcoes": [
+              {
+                "pt": "Palavra interrogativa"
+              },
+              {
+                "pt": "Frase negativa"
+              },
+              {
+                "pt": "Verbo irregular"
+              },
+              {
+                "pt": "Partícula"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "疑問詞 — “palavra de dúvida e pergunta”."
+          },
+          {
+            "id": "a24-e17",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "A palavra de pergunta ocupa o mesmo lugar onde a resposta vai entrar.",
+            "correta": true,
+            "explicacao": "Vale para as oito. É o que torna a conversa possível antes de o vocabulário estar completo."
+          }
+        ]
+      },
+      {
+        "id": "a24-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "a24-e18",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "어떻게 찾았어요?",
+            "pecas": [
+              "어떻게",
+              "찾았어요?",
+              "왜"
+            ],
+            "correta": "어떻게찾았어요?",
+            "explicacao": "어떻게 찾았어요? — soa [어떠케 차자써요]."
+          },
+          {
+            "id": "a24-e19",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "왜 안 왔어요?",
+            "pecas": [
+              "왜",
+              "안",
+              "왔어요?"
+            ],
+            "correta": "왜안왔어요?",
+            "explicacao": "왜 안 왔어요?"
+          },
+          {
+            "id": "a24-e20",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "얼마나 무거워요?",
+            "pecas": [
+              "얼마나",
+              "무거워요?",
+              "얼마"
+            ],
+            "correta": "얼마나무거워요?",
+            "explicacao": "얼마나 무거워요?"
+          },
+          {
+            "id": "a24-e21",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha qual das duas você ouviu.",
+            "audio": "얼마예요?",
+            "opcoes": [
+              {
+                "ko": "얼마예요?",
+                "pt": "quanto custa?"
+              },
+              {
+                "ko": "얼마나예요?",
+                "pt": "—"
+              },
+              {
+                "ko": "뭐예요?",
+                "pt": "o que é?"
+              },
+              {
+                "ko": "누구예요?",
+                "pt": "quem é?"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "얼마예요? — a pergunta de preço."
+          },
+          {
+            "id": "a24-e22",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a palavra do vocabulário que você ouviu.",
+            "audio": "자주",
+            "opcoes": [
+              {
+                "ko": "자주"
+              },
+              {
+                "ko": "아주"
+              },
+              {
+                "ko": "지금"
+              },
+              {
+                "ko": "저기"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "자주 — com frequência."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aula-25",
+    "numero": 25,
+    "hanja": "二十五",
+    "titulo": "De um ponto a outro",
+    "hangul": "-에서/-부터 … -까지",
+    "resumo": "A última aula do Nível 1: marcar começo e fim, no espaço e no tempo.",
+    "ilustracao": "assets/licoes/aula-25.svg",
+    "objetivo": "Dizer de onde até onde, e de quando até quando.",
+    "vocabulario": [
+      {
+        "ko": "-부터",
+        "pt": "desde, a partir de (tempo)"
+      },
+      {
+        "ko": "-까지",
+        "pt": "até (lugar e tempo)"
+      },
+      {
+        "ko": "서울",
+        "pt": "Seul"
+      },
+      {
+        "ko": "부산",
+        "pt": "Busan"
+      },
+      {
+        "ko": "아침",
+        "pt": "manhã"
+      },
+      {
+        "ko": "저녁",
+        "pt": "noite (início da noite)"
+      },
+      {
+        "ko": "밤",
+        "pt": "noite (tarde da noite)"
+      },
+      {
+        "ko": "머리",
+        "pt": "cabeça, cabelo"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "a25-t1",
+        "titulo": "-까지 fecha os dois lados",
+        "grupo": "a25-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Comece pelo fim, porque é a parte fácil: -까지 quer dizer “até”, e serve tanto para lugar quanto para tempo. Uma partícula, os dois usos."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "서울까지",
+                "pt": "até Seul",
+                "conta": "lugar"
+              },
+              {
+                "ko": "내일까지",
+                "pt": "até amanhã",
+                "conta": "tempo"
+              },
+              {
+                "ko": "저녁까지",
+                "pt": "até a noite",
+                "conta": "tempo"
+              },
+              {
+                "ko": "언제까지?",
+                "pt": "Até quando?",
+                "conta": "com interrogativa"
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "-까지 nunca muda de forma, e cobre lugar e tempo sozinho. O que muda é a partícula do outro lado, a do começo."
+          }
+        ]
+      },
+      {
+        "id": "a25-t2",
+        "titulo": "-에서 para lugar, -부터 para tempo",
+        "grupo": "a25-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "O ponto de partida tem duas partículas, e a divisão é por tipo: lugar de um lado, tempo do outro."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Partícula",
+              "Para",
+              "Exemplo"
+            ],
+            "linhas": [
+              [
+                "-에서",
+                "lugar",
+                "집에서 사무실까지 — de casa até o escritório"
+              ],
+              [
+                "-부터",
+                "tempo",
+                "아침부터 저녁까지 — de manhã até a noite"
+              ]
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "O -에서 aqui é o mesmo da aula 18, no sentido de “de”, o ponto de partida — e não no de “onde a ação acontece”."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "부산에서 왔어요.",
+                "pt": "Vim de Busan."
+              },
+              {
+                "ko": "지금부터 내일까지",
+                "pt": "de agora até amanhã"
+              },
+              {
+                "ko": "몇 시부터 몇 시까지?",
+                "pt": "De que horas a que horas?"
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "지금부터, não “지금에서”. Agora é tempo, e tempo pede 부터."
+          },
+          {
+            "tipo": "nota",
+            "texto": "A divisão não é uma regra de ferro: as duas às vezes se intercambiam, e você vai ouvir 부터 com lugar. Mas seguindo a divisão você nunca erra."
+          }
+        ]
+      },
+      {
+        "id": "a25-t3",
+        "titulo": "O Nível 1 fecha aqui",
+        "grupo": "a25-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Esta é a última aula. Vale olhar para trás e ver o que as vinte e cinco entregaram, porque é mais do que parece quando se olha uma de cada vez."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Você consegue",
+              "Desde a aula"
+            ],
+            "linhas": [
+              [
+                "cumprimentar, agradecer, despedir-se",
+                "1 a 4"
+              ],
+              [
+                "dizer o que uma coisa é, e o que não é",
+                "5 a 8"
+              ],
+              [
+                "marcar tópico, sujeito e existência",
+                "9 e 10"
+              ],
+              [
+                "pedir, elogiar a comida, dizer o que quer",
+                "11 a 14"
+              ],
+              [
+                "contar, nos dois sistemas",
+                "15 e 20"
+              ],
+              [
+                "conjugar presente e passado",
+                "16 e 17"
+              ],
+              [
+                "dizer onde, quando e por quê",
+                "18, 19, 24"
+              ],
+              [
+                "negar qualquer frase",
+                "21"
+              ],
+              [
+                "formar verbos a partir de substantivos",
+                "22"
+              ],
+              [
+                "perguntar quem",
+                "23"
+              ],
+              [
+                "marcar começo e fim",
+                "25"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Com isso você sustenta uma conversa simples inteira — perguntar, responder, pedir, negar e situar no tempo e no espaço."
+          },
+          {
+            "tipo": "p",
+            "texto": "O que falta daqui para frente é sobretudo vocabulário e as terminações que dão nuance: futuro, obrigação, permissão, conexão entre frases. A gramática de base já está de pé."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Planejando o dia.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "언제까지 일해요?",
+          "pt": "Até quando você trabalha?"
+        },
+        {
+          "quem": "B",
+          "ko": "아침부터 저녁까지 일해요.",
+          "pt": "Trabalho de manhã até a noite."
+        },
+        {
+          "quem": "A",
+          "ko": "집에서 사무실까지 얼마나 걸려요?",
+          "pt": "Quanto tempo leva de casa até o escritório?"
+        },
+        {
+          "quem": "B",
+          "ko": "삼십 분이요.",
+          "pt": "Trinta minutos."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "a25-g1",
+        "titulo": "A partícula -까지",
+        "itens": [
+          {
+            "id": "a25-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra à tradução.",
+            "pares": [
+              {
+                "a": "서울",
+                "b": "Seul"
+              },
+              {
+                "a": "부산",
+                "b": "Busan"
+              },
+              {
+                "a": "아침",
+                "b": "manhã"
+              },
+              {
+                "a": "저녁",
+                "b": "noite (início)"
+              },
+              {
+                "a": "머리",
+                "b": "cabeça"
+              }
+            ],
+            "explicacao": "저녁 é o começo da noite e também o jantar; 밤 é a noite tarde."
+          },
+          {
+            "id": "a25-e2",
+            "tipo": "escolha",
+            "enunciado": "-까지 quer dizer:",
+            "opcoes": [
+              {
+                "pt": "Até — para lugar e para tempo"
+              },
+              {
+                "pt": "De, desde"
+              },
+              {
+                "pt": "Só para lugar"
+              },
+              {
+                "pt": "Só para tempo"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Uma partícula, os dois usos, sem variação de forma."
+          },
+          {
+            "id": "a25-e3",
+            "tipo": "montar",
+            "enunciado": "Monte “até amanhã”.",
+            "dica": "내일 = amanhã",
+            "pecas": [
+              "내일",
+              "까지",
+              "부터"
+            ],
+            "correta": "내일까지",
+            "explicacao": "내일까지."
+          },
+          {
+            "id": "a25-e4",
+            "tipo": "montar",
+            "enunciado": "Monte “Até quando?”",
+            "dica": "언제 = quando",
+            "pecas": [
+              "언제",
+              "까지?",
+              "부터?"
+            ],
+            "correta": "언제까지?",
+            "explicacao": "언제까지? — 까지 gruda direto na interrogativa."
+          },
+          {
+            "id": "a25-e5",
+            "tipo": "escolha",
+            "enunciado": "-까지 muda de forma conforme o 받침 da palavra?",
+            "opcoes": [
+              {
+                "pt": "Não, é sempre 까지"
+              },
+              {
+                "pt": "Sim, vira 이까지"
+              },
+              {
+                "pt": "Sim, vira 까지이"
+              },
+              {
+                "pt": "Depende do verbo"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Como 에 e 에서, esta não varia."
+          }
+        ]
+      },
+      {
+        "id": "a25-g2",
+        "titulo": "-에서 ou -부터",
+        "itens": [
+          {
+            "id": "a25-e6",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “de casa até o escritório”.",
+            "antes": "집",
+            "depois": " 사무실까지",
+            "banco": [
+              "에서",
+              "부터",
+              "까지"
+            ],
+            "correta": 0,
+            "explicacao": "Lugar → 에서. 집에서 사무실까지."
+          },
+          {
+            "id": "a25-e7",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “de manhã até a noite”.",
+            "antes": "아침",
+            "depois": " 저녁까지",
+            "banco": [
+              "부터",
+              "에서",
+              "까지"
+            ],
+            "correta": 0,
+            "explicacao": "Tempo → 부터. 아침부터 저녁까지."
+          },
+          {
+            "id": "a25-e8",
+            "tipo": "lacuna",
+            "enunciado": "Complete: “de agora até amanhã”.",
+            "antes": "지금",
+            "depois": " 내일까지",
+            "banco": [
+              "부터",
+              "에서",
+              "까지"
+            ],
+            "correta": 0,
+            "explicacao": "지금부터, nunca 지금에서 — agora é tempo."
+          },
+          {
+            "id": "a25-e9",
+            "tipo": "escolha",
+            "enunciado": "-에서 se associa a quê?",
+            "opcoes": [
+              {
+                "pt": "Lugares"
+              },
+              {
+                "pt": "Tempo"
+              },
+              {
+                "pt": "Pessoas"
+              },
+              {
+                "pt": "Quantidades"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "E -부터 se associa a tempo. É a divisão desta aula."
+          },
+          {
+            "id": "a25-e10",
+            "tipo": "montar",
+            "enunciado": "Monte “Vim de Busan.”",
+            "dica": "부산 = Busan",
+            "pecas": [
+              "부산에서",
+              "왔어요.",
+              "부산부터"
+            ],
+            "correta": "부산에서왔어요.",
+            "explicacao": "부산에서 왔어요 — o 에서 de ponto de partida, da aula 18."
+          },
+          {
+            "id": "a25-e11",
+            "tipo": "montar",
+            "enunciado": "Monte “De que horas a que horas?”",
+            "dica": "몇 시 = que horas",
+            "pecas": [
+              "몇 시부터",
+              "몇 시까지?",
+              "몇 시에서"
+            ],
+            "correta": "몇시부터몇시까지?",
+            "explicacao": "몇 시부터 몇 시까지? — horas são tempo."
+          },
+          {
+            "id": "a25-e12",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "-에서 e -부터 nunca podem ser trocados.",
+            "correta": false,
+            "explicacao": "Às vezes se intercambiam, e você vai ouvir 부터 com lugar. Mas seguindo a divisão lugar/tempo você nunca erra."
+          },
+          {
+            "id": "a25-e13",
+            "tipo": "montar",
+            "enunciado": "Monte “de Seul até Busan”.",
+            "dica": "dois lugares",
+            "pecas": [
+              "서울에서",
+              "부산까지",
+              "서울부터"
+            ],
+            "correta": "서울에서부산까지",
+            "explicacao": "서울에서 부산까지."
+          }
+        ]
+      },
+      {
+        "id": "a25-g3",
+        "titulo": "Fechando o Nível 1",
+        "itens": [
+          {
+            "id": "a25-e14",
+            "tipo": "montar",
+            "enunciado": "Monte “Trabalho de manhã até a noite.”",
+            "dica": "revisão das aulas 16 e 25",
+            "pecas": [
+              "아침부터",
+              "저녁까지",
+              "일해요."
+            ],
+            "correta": "아침부터저녁까지일해요.",
+            "explicacao": "아침부터 저녁까지 일해요."
+          },
+          {
+            "id": "a25-e15",
+            "tipo": "montar",
+            "enunciado": "Monte “Até quando você trabalha?”",
+            "dica": "revisão das aulas 19 e 25",
+            "pecas": [
+              "언제까지",
+              "일해요?",
+              "언제부터"
+            ],
+            "correta": "언제까지일해요?",
+            "explicacao": "언제까지 일해요?"
+          },
+          {
+            "id": "a25-e16",
+            "tipo": "escolha",
+            "enunciado": "Qual destas você NÃO consegue fazer com o Nível 1?",
+            "opcoes": [
+              {
+                "pt": "Falar sobre o que vai acontecer no futuro"
+              },
+              {
+                "pt": "Perguntar quanto custa"
+              },
+              {
+                "pt": "Negar qualquer frase"
+              },
+              {
+                "pt": "Contar objetos e pessoas"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O futuro e as terminações de nuance ficam para os níveis seguintes. A base já está de pé."
+          },
+          {
+            "id": "a25-e17",
+            "tipo": "montar",
+            "enunciado": "Monte “Por que você não veio ontem? Eu esperei.”",
+            "dica": "revisão das aulas 17, 21 e 24",
+            "pecas": [
+              "어제",
+              "왜",
+              "안",
+              "왔어요?",
+              "기다렸어요."
+            ],
+            "correta": "어제왜안왔어요?기다렸어요.",
+            "explicacao": "어제 왜 안 왔어요? 기다렸어요."
+          },
+          {
+            "id": "a25-e18",
+            "tipo": "montar",
+            "enunciado": "Monte “Com licença. Quanto custa isto?”",
+            "dica": "revisão das aulas 4, 6 e 24",
+            "pecas": [
+              "저기요.",
+              "이거",
+              "얼마예요?"
+            ],
+            "correta": "저기요.이거얼마예요?",
+            "explicacao": "저기요. 이거 얼마예요? — quatro aulas diferentes numa frase de balcão."
+          },
+          {
+            "id": "a25-e19",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Terminado o Nível 1, o que falta é sobretudo vocabulário e terminações de nuance.",
+            "correta": true,
+            "explicacao": "A gramática de base — ser, ter, tempo, negação, perguntas, partículas — está toda de pé."
+          }
+        ]
+      },
+      {
+        "id": "a25-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "a25-e20",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "집에서 사무실까지",
+            "pecas": [
+              "집에서",
+              "사무실까지",
+              "집부터"
+            ],
+            "correta": "집에서사무실까지",
+            "explicacao": "집에서 사무실까지."
+          },
+          {
+            "id": "a25-e21",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "아침부터 저녁까지",
+            "pecas": [
+              "아침부터",
+              "저녁까지",
+              "아침에서"
+            ],
+            "correta": "아침부터저녁까지",
+            "explicacao": "아침부터 저녁까지."
+          },
+          {
+            "id": "a25-e22",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "지금부터 내일까지",
+            "pecas": [
+              "지금부터",
+              "내일까지",
+              "지금에서"
+            ],
+            "correta": "지금부터내일까지",
+            "explicacao": "지금부터 내일까지."
+          },
+          {
+            "id": "a25-e23",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a partícula que você ouviu.",
+            "audio": "언제까지?",
+            "opcoes": [
+              {
+                "ko": "언제까지?",
+                "pt": "até quando?"
+              },
+              {
+                "ko": "언제부터?",
+                "pt": "desde quando?"
+              },
+              {
+                "ko": "언제요?",
+                "pt": "quando?"
+              },
+              {
+                "ko": "언제에?",
+                "pt": "—"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "까지 fecha; 부터 abre."
+          },
+          {
+            "id": "a25-e24",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a palavra do vocabulário que você ouviu.",
+            "audio": "저녁",
+            "opcoes": [
+              {
+                "ko": "저녁"
+              },
+              {
+                "ko": "아침"
+              },
+              {
+                "ko": "밤"
+              },
+              {
+                "ko": "지금"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "저녁 — o início da noite, e também o jantar."
+          }
+        ]
+      }
+    ]
   }
 ]
