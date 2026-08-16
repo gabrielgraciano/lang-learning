@@ -48,11 +48,19 @@ exercícios — sendo 138 de ouvir e responder. Dentro de cada trecho da explica
 daquele trecho, para praticar sem perder o lugar da leitura. O que cada aula
 cobre está em [`livros.md`](livros.md).
 
-**O vocabulário das aulas vira dicionário antes de virar cartão.** Toda palavra
-apresentada no Nível 1 entra em `dados/palavras.json` com o esquema completo —
-romanização, morfemas sino-coreanos, exemplo, nota — mas marcada `baralho:
-false`, fora da fila do dia. Ela já conta para as famílias de morfemas e aparece
-no mapa; virar cartão é apagar uma linha do JSON.
+**Palavra solta se decora e se esquece.** As Histórias trazem dez dias de vinte
+palavras cada, e cada dia amarra as suas em duas cenas curtas — alguém que
+trabalha demais e só aparece no fim de semana, a manhã de sempre, a cachorra que
+morreu. São 200 palavras e 499 exercícios, tirados das próprias frases das cenas.
+O que cada dia cobre está em [`historias.md`](historias.md).
+
+**O vocabulário novo vira dicionário antes de virar cartão.** Toda palavra
+apresentada no Nível 1 ou nas Histórias entra em `dados/palavras.json` com o
+esquema completo — romanização, morfemas sino-coreanos, exemplo, nota — mas
+marcada `baralho: false`, fora da fila do dia. Ela já conta para as famílias de
+morfemas e aparece no mapa. Nas Histórias, o botão no fim de cada dia põe as
+vinte palavras dele na fila: um balaio de revisão só, mas a porta se abre um dia
+de cada vez.
 
 Sem streak, sem vidas, sem ranking. Meta semanal com folga e ritmo ajustável.
 
@@ -95,25 +103,28 @@ funciona sem configuração extra.
 ## Estrutura
 
 ```
-index.html                 # hoje, estudo, fim, mapa, nível 1, aula, ajustes
+index.html                 # hoje, estudo, fim, mapa, nível 1, histórias, aula, ajustes
 estilos/main.css           # tokens, células, temas claro e escuro
-src/app.js                 # orquestra as telas, o laço de estudo e as aulas
+src/app.js                 # orquestra as telas, o laço de estudo, as aulas e os dias
 src/hangul.js              # decompõe e compõe sílabas 한글
 src/pronuncia.js           # deriva o som a partir da escrita
 src/fsrs.js                # FSRS-5 (pesos padrão) e estados de memória
 src/niveis.js              # a escada de 4 níveis, distratores, dicas
 src/agenda.js              # a fila do dia
-src/licoes.js              # correção dos exercícios e progresso das aulas
+src/licoes.js              # correção dos exercícios e progresso das aulas e dos dias
 src/sino.js                # morfemas sino-coreanos e famílias de palavras
 src/teclado.js             # transliteração 두벌식 e teclado de tela
 src/armazenamento.js       # progresso, registro, exportar/importar
-dados/palavras.json        # o dicionário: baralho + vocabulário das aulas
+dados/palavras.json        # o dicionário: baralho + vocabulário das aulas e dos dias
 dados/hanja.json           # morfema → significado
 dados/licoes.json          # fonte da verdade das aulas do Nível 1
+dados/dias.json            # fonte da verdade dos dias das Histórias
 assets/ilustracoes/*.svg   # uma ilustração por palavra
 assets/licoes/*.svg        # uma ilustração por aula
+assets/historias/*.svg     # uma ilustração por dia
 docs/fundamentacao.md      # por que o app é assim
 livros.md                  # o que cada aula do Nível 1 cobre
+historias.md               # o que cada dia das Histórias cobre
 ```
 
 ## Adicionar uma palavra
@@ -170,8 +181,9 @@ aparece legível.
 | `imageabilidade` | 1 a 5, curadoria manual — o critério de entrada no baralho |
 | `pronuncia` | só quando a regra não dá conta (물고기 → 물꼬기); o normal é deixar em branco e o motor derivar |
 | `sino` | mapa sílaba → hanja (`{"학":"學","교":"校"}`); alimenta as famílias. Por sílaba e não por posição, porque em 빨간색 só o 색 é sino-coreano |
-| `baralho` | `false` guarda a palavra no dicionário sem pôr na fila do dia. É como o vocabulário do Nível 1 entra antes de virar cartão; ausente significa `true`. Hoje: 114 no baralho, 163 só no dicionário |
+| `baralho` | `false` guarda a palavra no dicionário sem pôr na fila do dia. É como o vocabulário do Nível 1 e das Histórias entra antes de virar cartão; ausente significa `true`. Hoje: 114 no baralho, 302 só no dicionário |
 | `aula` | de qual aula do Nível 1 a palavra veio, quando veio de alguma |
+| `dia` | de qual dia das Histórias a palavra veio. O botão do dia promove as vinte dele para a fila, e a promoção mora no `localStorage`, não aqui |
 | `classe` | `substantivo`, `verbo`, `adjetivo`, `numeral` ou `funcional` — impede que a múltipla escolha ofereça um substantivo onde só cabe um verbo |
 | `campo` | subgrupo dentro do módulo; é o que mantém os distratores dentro do mesmo sistema (nativo vs. sino nos números) |
 | `par` | id do antônimo; obrigatório em adjetivo, que só se aprende em par |
@@ -211,6 +223,6 @@ sistema. Contador também é frase, porque contador nunca aparece sozinho.
 ## Próximos passos
 
 - Tela interna com os itens de maior taxa de erro — detector de ilustração ambígua
-- Palavras de tempo: 오늘, 내일, 어제, 아침, 저녁, 주말
+- Os dias 11 a 25 das Histórias (o livro tem cinquenta; dez viraram vinte aqui)
 - Mais vocabulário de alta frequência no formato de frase
 - Alinhamento explícito com os níveis TOPIK

@@ -1203,6 +1203,7 @@ kbd {
 
 .cartao-atalho:hover { border-color: var(--dancheong); }
 .cartao-atalho[hidden] { display: none; }
+.cartao-atalho + .cartao-atalho { margin-top: 10px; }
 
 .cartao-atalho-titulo { font-size: 1.05rem; font-weight: 700; }
 .cartao-atalho-nota { font-size: .86rem; color: var(--tinta-2); }
@@ -1279,6 +1280,22 @@ kbd {
 }
 
 .cartao-aula-titulo { font-size: .88rem; color: var(--tinta-2); }
+
+/* Selo de tinta no canto do cartão: o dia cujas vinte palavras já estão na
+   fila. Não é conquista nem medalha — é estado, e some se você exportar e
+   reimportar um progresso anterior à promoção. */
+.cartao-aula-marca {
+  justify-self: start;
+  margin-top: 6px;
+  padding: 2px 7px;
+  border: 1px solid color-mix(in srgb, var(--inju) 40%, transparent);
+  border-radius: 2px;
+  font-family: var(--f-nota);
+  font-size: .66rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--inju);
+}
 
 /* Algarismo de dois ideogramas empilha, como num selo esculpido — só precisa
    de corpo menor e entrelinha apertada para caber no mesmo quadrado. */
@@ -1715,6 +1732,80 @@ kbd {
   color: var(--tinta-2);
   opacity: .8;
 }
+
+.vocabulario-rom {
+  font-family: var(--f-nota);
+  font-size: .72rem;
+  letter-spacing: .04em;
+  color: var(--tinta-2);
+  opacity: .75;
+}
+
+/* ------------------------------------------------------------- combinações */
+
+/* A companhia da palavra, em duas colunas presas por um filete: o coreano
+   pesa à esquerda e o português corre à direita, para o olho poder descer só
+   pela coluna de 한글 quando já não precisa da tradução. */
+.combinacoes-bloco { margin: 20px 0 0; }
+
+.combinacoes-rotulo {
+  font-family: var(--f-nota);
+  font-size: .68rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--tinta-2);
+}
+
+.combinacoes {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0 0 0 14px;
+  border-left: 2px solid color-mix(in srgb, var(--celadon) 55%, transparent);
+  display: grid;
+  gap: 1px;
+}
+
+.combinacao {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+.combinacao-ko {
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: var(--f-hangul);
+  font-size: .98rem;
+  color: var(--tinta);
+  text-align: left;
+}
+
+.combinacao-ko:hover { color: var(--dancheong); }
+
+.combinacao-pt {
+  flex: 1;
+  min-width: 14ch;
+  font-size: .82rem;
+  color: var(--tinta-2);
+}
+
+/* --------------------------------------------------------------- promoção */
+
+/* O bloco que fecha o dia. Fica com a borda em vermelhão porque é a única
+   ação da tela que muda o baralho — todo o resto ali só marca exercício. */
+.promocao {
+  padding: 16px 18px;
+  border: 1px solid color-mix(in srgb, var(--inju) 35%, transparent);
+  border-radius: var(--raio);
+  background: color-mix(in srgb, var(--inju) 4%, var(--celula));
+}
+
+.promocao .rotulo { margin-top: 0; }
+.promocao .topico-p { margin-bottom: 14px; }
 
 /* ----------------------------------------------------------------- diálogo */
 

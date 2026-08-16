@@ -49,11 +49,16 @@
       </section>
 
       <section class="bloco">
-        <h2 class="rotulo">Gramática</h2>
+        <h2 class="rotulo">Além do baralho</h2>
         <button id="atalho-nivel1" class="cartao-atalho" type="button" data-ir="nivel1">
           <span class="cartao-atalho-titulo">Nível 1</span>
-          <span class="cartao-atalho-nota">Oito aulas, do primeiro “oi” à primeira negação.</span>
+          <span class="cartao-atalho-nota">Vinte e cinco aulas, do primeiro “oi” à primeira negação.</span>
           <span id="atalho-nivel1-progresso" class="cartao-atalho-progresso"></span>
+        </button>
+        <button id="atalho-historias" class="cartao-atalho" type="button" data-ir="historias">
+          <span class="cartao-atalho-titulo">Histórias</span>
+          <span class="cartao-atalho-nota">Dez dias, vinte palavras cada, amarradas por uma cena.</span>
+          <span id="atalho-historias-progresso" class="cartao-atalho-progresso"></span>
         </button>
       </section>
 
@@ -230,10 +235,30 @@
         com o do baralho, e sai pelo mesmo botão de exportar.</p>
     </section>
 
-    <!-- ======================= Uma aula ======================= -->
+    <!-- ======================= Histórias ======================= -->
+    <section id="tela-historias" class="tela" hidden>
+      <header class="cabecalho-tela">
+        <button class="botao-icone" type="button" data-ir="hoje" aria-label="Voltar">←</button>
+        <h2 class="titulo-tela">Histórias</h2>
+      </header>
+
+      <p class="intro">Vinte palavras por dia, amarradas por duas cenas curtas.
+        Palavra solta se decora e se esquece; palavra dentro de uma cena fica.
+        Cada dia entra no dicionário na hora e no baralho quando você quiser.</p>
+
+      <p id="historias-progresso" class="rodape-nota"></p>
+
+      <ol id="lista-dias" class="lista-aulas"></ol>
+
+      <p class="rodape-nota">As palavras já contam para o mapa e para as famílias
+        de morfemas antes de virarem cartão. O botão no fim de cada dia é o que
+        as põe na fila de revisão.</p>
+    </section>
+
+    <!-- ======================= Uma aula ou um dia ======================= -->
     <section id="tela-aula" class="tela" hidden>
       <header class="cabecalho-tela">
-        <button class="botao-icone" type="button" data-ir="nivel1" aria-label="Voltar para as aulas">←</button>
+        <button id="aula-voltar" class="botao-icone" type="button" data-ir="nivel1" aria-label="Voltar">←</button>
         <h2 class="titulo-tela" id="aula-titulo"></h2>
       </header>
 
@@ -260,8 +285,8 @@
       <div id="painel-exercicios" class="painel" role="tabpanel" aria-labelledby="aba-exercicios" tabindex="-1" hidden></div>
 
       <nav class="passo-aula">
-        <button id="aula-anterior" class="botao" type="button">← Aula anterior</button>
-        <button id="aula-proxima" class="botao" type="button">Próxima aula →</button>
+        <button id="aula-anterior" class="botao" type="button">← Anterior</button>
+        <button id="aula-proxima" class="botao" type="button">Próxima →</button>
       </nav>
     </section>
 

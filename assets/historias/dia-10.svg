@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma folha de calendário com um dia circulado diante de picos de montanha">
+  <circle cx="100" cy="100" r="94" fill="#E1E8E4"/>
+  <path d="M96 150l40-62 26 40 16-24 22 46z" fill="#4F7A68"/>
+  <path d="M136 88l14 22h-28z" fill="#EDF3F0"/>
+  <rect x="18" y="46" width="82" height="94" rx="8" fill="#F3F1E9"/>
+  <rect x="18" y="46" width="82" height="22" rx="8" fill="#A8332C"/>
+  <path d="M34 46V32" stroke="#8E8AA8" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M84 46V32" stroke="#8E8AA8" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <g fill="#C6CFC9">
+    <rect x="30" y="80" width="12" height="12" rx="2"/>
+    <rect x="52" y="80" width="12" height="12" rx="2"/>
+    <rect x="74" y="80" width="12" height="12" rx="2"/>
+    <rect x="30" y="102" width="12" height="12" rx="2"/>
+    <rect x="74" y="102" width="12" height="12" rx="2"/>
+    <rect x="30" y="122" width="12" height="12" rx="2"/>
+    <rect x="52" y="122" width="12" height="12" rx="2"/>
+  </g>
+  <circle cx="58" cy="108" r="13" fill="none" stroke="#A8332C" stroke-width="5"/>
+  <path d="M12 150h178" stroke="#8FA79B" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

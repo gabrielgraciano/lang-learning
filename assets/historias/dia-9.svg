@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Duas casas vizinhas ao lado de um controle de videogame">
+  <circle cx="100" cy="100" r="94" fill="#E5E9DE"/>
+  <path d="M14 82L48 52l34 30z" fill="#8C4A38"/>
+  <rect x="24" y="82" width="48" height="46" fill="#C08A38"/>
+  <rect x="40" y="98" width="16" height="30" fill="#5E4A34"/>
+  <path d="M76 82l34-30 34 30z" fill="#8C4A38"/>
+  <rect x="86" y="82" width="48" height="46" fill="#D9A85A"/>
+  <rect x="102" y="98" width="16" height="30" fill="#5E4A34"/>
+  <rect x="60" y="140" width="86" height="34" rx="17" fill="#4F4A82"/>
+  <path d="M76 150v14" stroke="#E4E3EC" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M69 157h14" stroke="#E4E3EC" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <circle cx="126" cy="151" r="5" fill="#E4E3EC"/>
+  <circle cx="136" cy="162" r="5" fill="#E4E3EC"/>
+  <path d="M12 128h178" stroke="#A9B49A" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>
