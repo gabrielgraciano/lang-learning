@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Frase cortada por uma barra diagonal">
+  <circle cx="100" cy="100" r="94" fill="#EDE2E0"/>
+  <g fill="#7C6470">
+    <rect x="26" y="56" width="66" height="26" rx="5"/>
+    <rect x="102" y="56" width="72" height="26" rx="5"/>
+    <rect x="26" y="118" width="90" height="26" rx="5"/>
+    <rect x="126" y="118" width="48" height="26" rx="5"/>
+  </g>
+  <path d="M158 34L46 168" stroke="#EDE2E0" stroke-width="28" stroke-linecap="round"/>
+  <path d="M158 34L46 168" stroke="#A8332C" stroke-width="14" stroke-linecap="round"/>
+</svg>

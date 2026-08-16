@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Mão aberta contando ao lado de objetos enfileirados">
+  <circle cx="100" cy="100" r="94" fill="#E7E3EE"/>
+  <g fill="#C98B5E">
+    <rect x="30" y="40" width="17" height="56" rx="8.5"/>
+    <rect x="52" y="30" width="17" height="66" rx="8.5"/>
+    <rect x="74" y="34" width="17" height="62" rx="8.5"/>
+    <rect x="96" y="46" width="17" height="50" rx="8.5"/>
+  </g>
+  <path d="M30 88h84a24 24 0 0 1 24 24v16a34 34 0 0 1-34 34H56a26 26 0 0 1-26-26z" fill="#E0A472"/>
+  <path d="M30 88c-14 6-18 18-12 28l10 18 18-12z" fill="#C98B5E"/>
+  <g fill="#5B4E86">
+    <circle cx="150" cy="42" r="12"/><circle cx="176" cy="42" r="12"/>
+    <circle cx="150" cy="70" r="12"/>
+  </g>
+</svg>

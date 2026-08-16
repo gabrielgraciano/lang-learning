@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Seta apontando para trás numa linha do tempo">
+  <circle cx="100" cy="100" r="94" fill="#E4E6EC"/>
+  <path d="M20 100h160" stroke="#A9B0C0" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="150" cy="100" r="13" fill="none" stroke="#A9B0C0" stroke-width="6"/>
+  <circle cx="62" cy="100" r="17" fill="#4A5B86"/>
+  <path d="M126 66L62 100l64 34z" fill="#4A5B86"/>
+  <g fill="#B0563F">
+    <rect x="30" y="132" width="64" height="30" rx="5"/>
+  </g>
+  <g fill="#8E97AC">
+    <rect x="118" y="136" width="52" height="22" rx="5"/>
+  </g>
+  <path d="M62 42v34" stroke="#4A5B86" stroke-width="5" stroke-linecap="round" stroke-dasharray="6 7"/>
+</svg>
