@@ -195,15 +195,29 @@ const rotuloModulo = (id) =>
 
 // ------------------------------------------------------------------ navegação
 
+/**
+ * Troca de tela.
+ *
+ * O destino desconhecido cai no início em vez de esconder tudo. Isso não é
+ * defensividade à toa: o `index.html` e o `src/app.js` são dois arquivos que o
+ * navegador guarda em cache separado, e um deploy pode ser servido com o HTML
+ * novo e o JS ainda velho. O HTML novo traz um botão `data-ir` que o JS velho
+ * não conhece, e sem esta linha a tela some inteira — página em branco, sem
+ * nem um erro no console para explicar. Melhor a seção nova não abrir do que o
+ * app inteiro sumir.
+ */
 function ir(nome) {
-  for (const [chave, secao] of Object.entries(el.telas)) secao.hidden = chave !== nome;
+  const destino = el.telas[nome] ? nome : 'hoje';
+  for (const [chave, secao] of Object.entries(el.telas)) {
+    if (secao) secao.hidden = chave !== destino;
+  }
   window.scrollTo({ top: 0 });
   pararNarracao();
-  if (nome === 'hoje') pintarHoje();
-  if (nome === 'mapa') pintarMapa();
-  if (nome === 'nivel1') pintarNivel1();
-  if (nome === 'historias') pintarHistorias();
-  if (nome === 'ajustes') pintarAjustes();
+  if (destino === 'hoje') pintarHoje();
+  if (destino === 'mapa') pintarMapa();
+  if (destino === 'nivel1') pintarNivel1();
+  if (destino === 'historias') pintarHistorias();
+  if (destino === 'ajustes') pintarAjustes();
 }
 
 /**
