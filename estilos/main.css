@@ -1280,6 +1280,17 @@ kbd {
 
 .cartao-aula-titulo { font-size: .88rem; color: var(--tinta-2); }
 
+/* Algarismo de dois ideogramas empilha, como num selo esculpido — só precisa
+   de corpo menor e entrelinha apertada para caber no mesmo quadrado. */
+.selo-aula-duplo,
+.aula-selo-duplo {
+  font-size: .82rem;
+  line-height: .95;
+  letter-spacing: 0;
+}
+
+.aula-selo-duplo { font-size: .68rem; }
+
 .cartao-aula-completa .selo-aula { box-shadow: 0 0 0 3px color-mix(in srgb, var(--inju) 22%, transparent); }
 
 .progresso {

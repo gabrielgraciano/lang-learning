@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Prato com hashis e um coração de aprovação">
+  <circle cx="100" cy="100" r="94" fill="#EFE2DE"/>
+  <ellipse cx="98" cy="126" rx="66" ry="20" fill="#C9B0A8"/>
+  <ellipse cx="98" cy="120" rx="66" ry="20" fill="#FBF5F3"/>
+  <ellipse cx="98" cy="118" rx="48" ry="13" fill="#EADFDA"/>
+  <g fill="#B5573F">
+    <ellipse cx="82" cy="115" rx="15" ry="8"/>
+    <ellipse cx="110" cy="119" rx="13" ry="7"/>
+    <ellipse cx="96" cy="108" rx="12" ry="6"/>
+  </g>
+  <g stroke="#8A6A46" stroke-width="5" stroke-linecap="round">
+    <path d="M136 44l-26 60"/><path d="M150 50l-26 60"/>
+  </g>
+  <path d="M52 52c0-9 12-13 17-5 5-8 17-4 17 5 0 11-17 21-17 21S52 63 52 52z" fill="#B5573F"/>
+</svg>
