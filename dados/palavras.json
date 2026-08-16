@@ -2311,5 +2311,1175 @@
       "장": "張"
     },
     "nota": "장 conta o que é plano: papel, foto, ingresso, fatia de pão."
+  },
+  {
+    "id": "ola",
+    "hangul": "안녕하세요",
+    "romanizacao": "annyeonghaseyo",
+    "pt": "olá, oi, bom dia",
+    "modulo": "expressoes",
+    "classe": "expressao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 1,
+    "exemplo": {
+      "ko": "안녕하세요. 저 학생이에요.",
+      "pt": "Olá. Sou estudante."
+    },
+    "nota": "Uma saudação para o dia inteiro — não muda com a hora. Literalmente “você está em paz?”, e a resposta é a mesma frase de volta.",
+    "confundiveis": [
+      "tchau_quem_sai",
+      "tchau_quem_fica"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "paz_bemestar",
+    "hangul": "안녕",
+    "romanizacao": "annyeong",
+    "pt": "paz, bem-estar, saúde",
+    "modulo": "expressoes",
+    "classe": "substantivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 1,
+    "sino": {
+      "안": "安",
+      "녕": "寧"
+    },
+    "exemplo": {
+      "ko": "안녕히 가세요.",
+      "pt": "Vá em paz."
+    },
+    "nota": "É a raiz que abre 안녕하세요 e as duas despedidas. Entre amigos, 안녕 sozinho vira “oi” e “tchau” em 반말 — a mesma palavra nos dois sentidos.",
+    "baralho": false
+  },
+  {
+    "id": "obrigado",
+    "hangul": "감사합니다",
+    "romanizacao": "gamsahamnida",
+    "pt": "obrigado, obrigada",
+    "modulo": "expressoes",
+    "classe": "expressao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 1,
+    "exemplo": {
+      "ko": "감사합니다!",
+      "pt": "Obrigado!"
+    },
+    "nota": "Escreve-se 합니다 e diz-se [함니다]: o ㅂ final encontra o ㄴ seguinte e vira ㅁ. A frase não tem sujeito nem objeto — em coreano não se diz a quem se agradece.",
+    "confundiveis": [
+      "desculpe"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "gratidao",
+    "hangul": "감사",
+    "romanizacao": "gamsa",
+    "pt": "gratidão",
+    "modulo": "expressoes",
+    "classe": "substantivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 1,
+    "sino": {
+      "감": "感",
+      "사": "謝"
+    },
+    "exemplo": {
+      "ko": "감사 인사를 했어요.",
+      "pt": "Fiz um agradecimento."
+    },
+    "nota": "感謝 — “sentir + agradecer”. O mesmo 감 (感) aparece em 감동 (comoção) e 감정 (emoção).",
+    "baralho": false
+  },
+  {
+    "id": "eu_faco",
+    "hangul": "합니다",
+    "romanizacao": "hamnida",
+    "pt": "eu faço, estou fazendo",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 1,
+    "exemplo": {
+      "ko": "감사합니다.",
+      "pt": "Obrigado."
+    },
+    "nota": "A forma mais formal do presente de 하다. É o -니다 que denuncia 존댓말 — e é o que faz 감사 e 죄송 virarem frases inteiras.",
+    "confundiveis": [
+      "voce_faz"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "voce_faz",
+    "hangul": "하세요",
+    "romanizacao": "haseyo",
+    "pt": "você faz? / faça, por favor",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 1,
+    "exemplo": {
+      "ko": "안녕하세요.",
+      "pt": "Olá."
+    },
+    "nota": "Serve de pergunta e de pedido educado ao mesmo tempo. É o mesmo -세요 de 계세요 e 가세요.",
+    "confundiveis": [
+      "eu_faco"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "fala_formal",
+    "hangul": "존댓말",
+    "romanizacao": "jondaenmal",
+    "pt": "fala formal, registro de respeito",
+    "modulo": "gramatica",
+    "classe": "substantivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 1,
+    "exemplo": {
+      "ko": "존댓말로 하세요.",
+      "pt": "Fale na forma respeitosa."
+    },
+    "nota": "Regra de bolso: terminou em -요 ou -니다, é 존댓말. Errar para o lado formal não ofende ninguém; para o informal, ofende.",
+    "confundiveis": [
+      "fala_informal"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "fala_informal",
+    "hangul": "반말",
+    "romanizacao": "banmal",
+    "pt": "fala informal, registro íntimo",
+    "modulo": "gramatica",
+    "classe": "substantivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 1,
+    "sino": {
+      "반": "半"
+    },
+    "exemplo": {
+      "ko": "반말 해도 돼요?",
+      "pt": "Posso falar informalmente?"
+    },
+    "nota": "半말 — “meia fala”, a frase cortada pela metade, sem a terminação de respeito. Não é grosseria: é intimidade, e por isso depende de a relação já existir.",
+    "confundiveis": [
+      "fala_formal"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "sim",
+    "hangul": "네",
+    "romanizacao": "ne",
+    "pt": "sim, isso, entendi",
+    "modulo": "expressoes",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 2,
+    "exemplo": {
+      "ko": "네, 맞아요.",
+      "pt": "Sim, é isso mesmo."
+    },
+    "nota": "Responde se você concorda com quem falou, não se o fato é verdadeiro — por isso numa pergunta negativa 네 vira “não” em português. Também é o “ahã” da conversa e o “presente” de quando chamam seu nome.",
+    "confundiveis": [
+      "nao",
+      "como"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "nao",
+    "hangul": "아니요",
+    "romanizacao": "aniyo",
+    "pt": "não",
+    "modulo": "expressoes",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 2,
+    "exemplo": {
+      "ko": "아니요. 물이에요.",
+      "pt": "Não. É água."
+    },
+    "nota": "Expressa discordância com o que foi dito. Diante de pergunta negativa, 아니요 é o nosso “sim”.",
+    "confundiveis": [
+      "sim",
+      "nao_e"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "esta_certo",
+    "hangul": "맞아요",
+    "romanizacao": "majayo",
+    "pt": "está certo, é isso mesmo",
+    "modulo": "expressoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 2,
+    "exemplo": {
+      "ko": "네, 맞아요.",
+      "pt": "Sim, é isso mesmo."
+    },
+    "nota": "Vem de 맞다, “estar correto”. Existe porque 네 sozinho pode ser só escuta passiva — 네, 맞아요 não deixa dúvida de que você concordou.",
+    "confundiveis": [
+      "sim"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "como",
+    "hangul": "네?",
+    "romanizacao": "ne?",
+    "pt": "como? o quê?",
+    "modulo": "expressoes",
+    "classe": "expressao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 2,
+    "exemplo": {
+      "ko": "네? 다시 말해 주세요.",
+      "pt": "Como? Repete, por favor."
+    },
+    "nota": "A mesma sílaba de “sim”, com entonação subindo. Dita baixo é “não ouvi”; dita com a sobrancelha levantada é surpresa.",
+    "confundiveis": [
+      "sim",
+      "o_que"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "tchau_quem_sai",
+    "hangul": "안녕히 계세요",
+    "romanizacao": "annyeonghi gyeseyo",
+    "pt": "tchau (dito por quem está saindo)",
+    "modulo": "expressoes",
+    "classe": "expressao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 3,
+    "exemplo": {
+      "ko": "먼저 갈게요. 안녕히 계세요.",
+      "pt": "Vou indo. Tchau."
+    },
+    "nota": "Literalmente “fique em paz”. Você deseja ao outro o que o outro vai fazer — e quem fica é ele.",
+    "confundiveis": [
+      "tchau_quem_fica",
+      "ola"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "tchau_quem_fica",
+    "hangul": "안녕히 가세요",
+    "romanizacao": "annyeonghi gaseyo",
+    "pt": "tchau (dito por quem está ficando)",
+    "modulo": "expressoes",
+    "classe": "expressao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 3,
+    "exemplo": {
+      "ko": "안녕히 가세요!",
+      "pt": "Tchau, boa viagem!"
+    },
+    "nota": "Literalmente “vá em paz”. Quando os dois estão saindo, ninguém fica — e aí os dois dizem esta.",
+    "confundiveis": [
+      "tchau_quem_sai",
+      "ola"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "em_paz",
+    "hangul": "안녕히",
+    "romanizacao": "annyeonghi",
+    "pt": "em paz",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 3,
+    "sino": {
+      "안": "安",
+      "녕": "寧"
+    },
+    "exemplo": {
+      "ko": "안녕히 주무세요.",
+      "pt": "Durma em paz. (boa noite)"
+    },
+    "nota": "O -히 transforma 안녕 em advérbio. O mesmo sufixo aparece em 조용히 (silenciosamente) e 천천히 (devagar).",
+    "baralho": false
+  },
+  {
+    "id": "fique",
+    "hangul": "계세요",
+    "romanizacao": "gyeseyo",
+    "pt": "fique, permaneça",
+    "modulo": "gramatica",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 3,
+    "exemplo": {
+      "ko": "안녕히 계세요.",
+      "pt": "Fique em paz."
+    },
+    "nota": "Forma respeitosa de 있다 (estar). É o verbo que escolhe a despedida: quem sai manda o outro ficar.",
+    "confundiveis": [
+      "va"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "va",
+    "hangul": "가세요",
+    "romanizacao": "gaseyo",
+    "pt": "vá",
+    "modulo": "gramatica",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 3,
+    "exemplo": {
+      "ko": "안녕히 가세요.",
+      "pt": "Vá em paz."
+    },
+    "nota": "De 가다 (ir), no mesmo -세요 de 하세요. Quem fica manda o outro ir.",
+    "confundiveis": [
+      "fique"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "desculpe",
+    "hangul": "죄송합니다",
+    "romanizacao": "joesonghamnida",
+    "pt": "desculpe, me perdoe",
+    "modulo": "expressoes",
+    "classe": "expressao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 4,
+    "exemplo": {
+      "ko": "늦어서 죄송합니다.",
+      "pt": "Desculpe pelo atraso."
+    },
+    "nota": "Só assume culpa. Nunca serve para lamentar notícia ruim — dito nesse contexto, soa como se você fosse o responsável pelo que aconteceu.",
+    "confundiveis": [
+      "obrigado",
+      "com_licenca"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "culpa",
+    "hangul": "죄송",
+    "romanizacao": "joesong",
+    "pt": "culpa, vergonha",
+    "modulo": "expressoes",
+    "classe": "substantivo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 4,
+    "sino": {
+      "죄": "罪",
+      "송": "悚"
+    },
+    "exemplo": {
+      "ko": "죄송합니다.",
+      "pt": "Desculpe."
+    },
+    "nota": "罪悚 — “culpa + temor”. O mesmo 죄 (罪) aparece em 죄인 (culpado) e 무죄 (inocência).",
+    "baralho": false
+  },
+  {
+    "id": "com_licenca",
+    "hangul": "저기요",
+    "romanizacao": "jeogiyo",
+    "pt": "com licença, ei (para chamar alguém)",
+    "modulo": "expressoes",
+    "classe": "expressao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 4,
+    "exemplo": {
+      "ko": "저기요, 물 좀 주세요.",
+      "pt": "Com licença, me traz água?"
+    },
+    "nota": "De 저기 (“ali”). Chama a atenção de quem não está olhando para você e chama o garçom — mas não pede desculpa de nada.",
+    "confundiveis": [
+      "desculpe",
+      "um_segundo"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "ali",
+    "hangul": "저기",
+    "romanizacao": "jeogi",
+    "pt": "ali, lá",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 4,
+    "exemplo": {
+      "ko": "저기 있어요.",
+      "pt": "Está ali."
+    },
+    "nota": "O mesmo 저 de 저거 e 저 사람: longe de quem fala e de quem ouve.",
+    "baralho": false
+  },
+  {
+    "id": "um_segundo",
+    "hangul": "잠시만요",
+    "romanizacao": "jamsimanyo",
+    "pt": "um segundinho",
+    "modulo": "expressoes",
+    "classe": "expressao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 4,
+    "sino": {
+      "잠": "暫",
+      "시": "時"
+    },
+    "exemplo": {
+      "ko": "잠시만요, 지나갈게요.",
+      "pt": "Um segundinho, vou passar."
+    },
+    "nota": "暫時 — “por um instante”. Serve para abrir caminho na multidão e para pedir que esperem. 잠깐만요 é a versão nativa, e quer dizer exatamente a mesma coisa.",
+    "confundiveis": [
+      "um_instante",
+      "com_licenca"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "um_instante",
+    "hangul": "잠깐만요",
+    "romanizacao": "jamkkanmanyo",
+    "pt": "um segundinho",
+    "modulo": "expressoes",
+    "classe": "expressao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 4,
+    "exemplo": {
+      "ko": "잠깐만요!",
+      "pt": "Um instante!"
+    },
+    "nota": "Palavra nativa, sinônimo exato de 잠시만요. Pode usar qualquer uma das duas.",
+    "confundiveis": [
+      "um_segundo"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "escritorio",
+    "hangul": "사무실",
+    "romanizacao": "samusil",
+    "pt": "escritório",
+    "ilustracao": "assets/ilustracoes/escritorio.svg",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "aula": 5,
+    "sino": {
+      "사": "事",
+      "무": "務",
+      "실": "室"
+    },
+    "exemplo": {
+      "ko": "이거 사무실이에요.",
+      "pt": "Isto é um escritório."
+    },
+    "nota": "事務室 — “sala de assuntos e ofícios”. O 실 (室) de “sala” reaparece em 교실 (sala de aula) e 화장실 (banheiro).",
+    "baralho": false
+  },
+  {
+    "id": "eu_humilde",
+    "hangul": "저",
+    "romanizacao": "jeo",
+    "pt": "eu (forma humilde)",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 5,
+    "exemplo": {
+      "ko": "저예요.",
+      "pt": "Sou eu."
+    },
+    "nota": "저 é o “eu” que se usa em 존댓말; 나 é o de 반말. E cuidado: 저 também é o demonstrativo “aquele” — mesma grafia, dois sentidos, desfeitos pelo lugar na frase.",
+    "confundiveis": [
+      "dem_aquele"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "o_que",
+    "hangul": "뭐",
+    "romanizacao": "mwo",
+    "pt": "o quê",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 5,
+    "exemplo": {
+      "ko": "이거 뭐예요?",
+      "pt": "O que é isto?"
+    },
+    "nota": "Encurtamento de 무엇. Com a terminação de “ser” vira 뭐예요? — a pergunta mais produtiva de quem está começando.",
+    "confundiveis": [
+      "como"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "isto",
+    "hangul": "이거",
+    "romanizacao": "igeo",
+    "pt": "isto, isto aqui",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 6,
+    "exemplo": {
+      "ko": "이거 책이에요.",
+      "pt": "Isto é um livro."
+    },
+    "nota": "이 (este) + 것 (coisa). No dicionário aparece 이것, que é como se escrevia; a fala encurtou para 이거.",
+    "confundiveis": [
+      "isso",
+      "aquilo"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "isso",
+    "hangul": "그거",
+    "romanizacao": "geugeo",
+    "pt": "isso (aí com você)",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 7,
+    "exemplo": {
+      "ko": "그거 우유예요?",
+      "pt": "Isso é leite?"
+    },
+    "nota": "Aponta o que está perto de quem ouve — e também o que já foi mencionado ou não está à vista de ninguém.",
+    "confundiveis": [
+      "isto",
+      "aquilo"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "aquilo",
+    "hangul": "저거",
+    "romanizacao": "jeogeo",
+    "pt": "aquilo (longe dos dois)",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 7,
+    "exemplo": {
+      "ko": "저거 고양이 아니에요.",
+      "pt": "Aquilo não é um gato."
+    },
+    "nota": "Longe de quem fala e de quem ouve. Se a coisa está fora de vista, o certo não é 저거 e sim 그거.",
+    "confundiveis": [
+      "isto",
+      "isso"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "dem_este",
+    "hangul": "이",
+    "romanizacao": "i",
+    "pt": "este (perto de mim)",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 7,
+    "exemplo": {
+      "ko": "이 책 좋아요.",
+      "pt": "Este livro é bom."
+    },
+    "nota": "Modificador: não vira “isto” sozinho. Para virar pronome precisa de 거/것 — e diante de pessoa usa-se 사람, nunca 거.",
+    "confundiveis": [
+      "dem_esse",
+      "dem_aquele"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "dem_esse",
+    "hangul": "그",
+    "romanizacao": "geu",
+    "pt": "esse (perto de você)",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 7,
+    "exemplo": {
+      "ko": "그 사람 누구예요?",
+      "pt": "Quem é essa pessoa?"
+    },
+    "nota": "Não é “meio longe”: a referência é a outra pessoa. É também o demonstrativo do que não está à vista.",
+    "confundiveis": [
+      "dem_este",
+      "dem_aquele"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "dem_aquele",
+    "hangul": "저",
+    "romanizacao": "jeo",
+    "pt": "aquele (longe dos dois)",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 7,
+    "exemplo": {
+      "ko": "저 학교 커요.",
+      "pt": "Aquela escola é grande."
+    },
+    "nota": "Mesma grafia do 저 que quer dizer “eu”. O lugar na frase desfaz: diante de substantivo é “aquele”, sozinho é “eu”.",
+    "confundiveis": [
+      "dem_este",
+      "dem_esse",
+      "eu_humilde"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "coisa_fala",
+    "hangul": "거",
+    "romanizacao": "geo",
+    "pt": "coisa (forma falada de 것)",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 7,
+    "exemplo": {
+      "ko": "제 거예요.",
+      "pt": "É meu."
+    },
+    "nota": "É 것 encurtado na fala. Grudado em 이/그/저 forma os pronomes — e nunca se usa para gente.",
+    "confundiveis": [
+      "coisa"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "dicionario",
+    "hangul": "사전",
+    "romanizacao": "sajeon",
+    "pt": "dicionário",
+    "ilustracao": "assets/ilustracoes/dicionario.svg",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 6,
+    "sino": {
+      "사": "辭",
+      "전": "典"
+    },
+    "exemplo": {
+      "ko": "이거 사전이에요.",
+      "pt": "Isto é um dicionário."
+    },
+    "nota": "辭典 — “compêndio de palavras”. Parece com 책 na estante, mas é outra palavra.",
+    "baralho": false
+  },
+  {
+    "id": "celular",
+    "hangul": "핸드폰",
+    "romanizacao": "haendeupon",
+    "pt": "celular",
+    "ilustracao": "assets/ilustracoes/celular.svg",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 6,
+    "exemplo": {
+      "ko": "그거 핸드폰 아니에요.",
+      "pt": "Isso não é um celular."
+    },
+    "nota": "Do inglês “hand phone”, escrito em 한글 pelo som — um empréstimo que nem existe em inglês. 휴대폰 é o sinônimo mais formal.",
+    "baralho": false
+  },
+  {
+    "id": "camera",
+    "hangul": "카메라",
+    "romanizacao": "kamera",
+    "pt": "câmera",
+    "ilustracao": "assets/ilustracoes/camera.svg",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 6,
+    "exemplo": {
+      "ko": "이거 카메라예요.",
+      "pt": "Isto é uma câmera."
+    },
+    "nota": "Termina em vogal, então pede 예요, não 이에요.",
+    "baralho": false
+  },
+  {
+    "id": "chapeu",
+    "hangul": "모자",
+    "romanizacao": "moja",
+    "pt": "chapéu, boné",
+    "ilustracao": "assets/ilustracoes/chapeu.svg",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 8,
+    "sino": {
+      "모": "帽",
+      "자": "子"
+    },
+    "exemplo": {
+      "ko": "이거 모자 아니에요.",
+      "pt": "Isto não é um chapéu."
+    },
+    "nota": "帽子 — o 子 aqui não é “filho”: é o sufixo que fecha nome de objeto, o mesmo de 의자 (cadeira) e 사자 (leão).",
+    "baralho": false
+  },
+  {
+    "id": "nao_e",
+    "hangul": "아니에요",
+    "romanizacao": "anieyo",
+    "pt": "não é, não sou",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 8,
+    "exemplo": {
+      "ko": "저 학생 아니에요.",
+      "pt": "Não sou estudante."
+    },
+    "nota": "Vem depois do substantivo, separado por espaço — e não muda com 받침, ao contrário de 이에요/예요.",
+    "confundiveis": [
+      "nao",
+      "nao_ser"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "nao_ser",
+    "hangul": "아니다",
+    "romanizacao": "anida",
+    "pt": "não ser (forma de dicionário)",
+    "modulo": "gramatica",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 8,
+    "exemplo": {
+      "ko": "아니에요.",
+      "pt": "Não é."
+    },
+    "nota": "Todo verbo coreano termina em -다 no dicionário. Achou uma palavra em -다, é quase certo que é verbo.",
+    "confundiveis": [
+      "nao_e"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "de_verdade",
+    "hangul": "진짜",
+    "romanizacao": "jinjja",
+    "pt": "de verdade, sério",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 5,
+    "sino": {
+      "진": "眞"
+    },
+    "exemplo": {
+      "ko": "진짜예요?",
+      "pt": "Sério?"
+    },
+    "nota": "Termina em vogal, então 진짜예요. É das palavras mais ouvidas em conversa informal — funciona como “sério?” e como “muito”.",
+    "baralho": false
+  },
+  {
+    "id": "computador",
+    "hangul": "컴퓨터",
+    "romanizacao": "keompyuteo",
+    "pt": "computador",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 7,
+    "exemplo": {
+      "ko": "이 컴퓨터 좋아요.",
+      "pt": "Este computador é bom."
+    },
+    "nota": "Empréstimo do inglês. O ㅓ final é o som que o português não tem — nem “u”, nem “o”.",
+    "baralho": false
+  },
+  {
+    "id": "sorvete",
+    "hangul": "아이스크림",
+    "romanizacao": "aiseukeurim",
+    "pt": "sorvete",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 7,
+    "exemplo": {
+      "ko": "이 아이스크림 맛있어요.",
+      "pt": "Este sorvete é gostoso."
+    },
+    "nota": "Cinco sílabas para o que em inglês tem duas: 한글 escreve cada consoante com sua vogal, e empréstimo estica.",
+    "baralho": false
+  },
+  {
+    "id": "carro",
+    "hangul": "차",
+    "romanizacao": "cha",
+    "pt": "carro",
+    "modulo": "transporte",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 7,
+    "sino": {
+      "차": "車"
+    },
+    "exemplo": {
+      "ko": "이 차 제 거예요.",
+      "pt": "Este carro é meu."
+    },
+    "nota": "車 também se lê 거 em 자전거 (bicicleta). E 차 sozinho é ainda “chá” — duas palavras, mesma sílaba.",
+    "confundiveis": [
+      "onibus"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "tigre",
+    "hangul": "호랑이",
+    "romanizacao": "horangi",
+    "pt": "tigre",
+    "modulo": "animais",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 8,
+    "exemplo": {
+      "ko": "그거 호랑이 아니에요.",
+      "pt": "Isso não é um tigre."
+    },
+    "nota": "O tigre é o animal dos contos e do folclore coreano — 옛날 옛적에 호랑이 담배 피던 시절 (“era uma vez, quando os tigres fumavam”) é o “era uma vez” deles.",
+    "confundiveis": [
+      "leao",
+      "gato"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "leao",
+    "hangul": "사자",
+    "romanizacao": "saja",
+    "pt": "leão",
+    "modulo": "animais",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 8,
+    "sino": {
+      "사": "獅",
+      "자": "子"
+    },
+    "exemplo": {
+      "ko": "저거 사자예요.",
+      "pt": "Aquilo é um leão."
+    },
+    "nota": "獅子 — mesmo 子 de 의자 e 모자, o sufixo que fecha nome de coisa.",
+    "confundiveis": [
+      "tigre",
+      "gato"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "rato",
+    "hangul": "쥐",
+    "romanizacao": "jwi",
+    "pt": "rato",
+    "modulo": "animais",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 8,
+    "exemplo": {
+      "ko": "이거 쥐 아니에요.",
+      "pt": "Isto não é um rato."
+    },
+    "nota": "Uma sílaba só, com a vogal ㅟ — que é ㅜ e ㅣ ditos juntos, num movimento só.",
+    "confundiveis": [
+      "cachorrinho",
+      "gato"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "cachorrinho",
+    "hangul": "강아지",
+    "romanizacao": "gangaji",
+    "pt": "cachorrinho, filhote",
+    "modulo": "animais",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 8,
+    "exemplo": {
+      "ko": "강아지예요.",
+      "pt": "É um cachorrinho."
+    },
+    "nota": "강아지 é o filhote; 개 é o cachorro adulto. Como em português, o diminutivo virou o jeito carinhoso de chamar qualquer um dos dois.",
+    "confundiveis": [
+      "cachorro",
+      "rato"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "bebida_alcoolica",
+    "hangul": "술",
+    "romanizacao": "sul",
+    "pt": "bebida alcoólica",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "aula": 8,
+    "exemplo": {
+      "ko": "저거 술 아니에요.",
+      "pt": "Aquilo não é bebida."
+    },
+    "nota": "술 cobre tudo que tem álcool — 소주, 맥주, 막걸리. Termina em ㄹ, então pede 이에요.",
+    "confundiveis": [
+      "agua",
+      "leite"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "caneta",
+    "hangul": "볼펜",
+    "romanizacao": "bolpen",
+    "pt": "caneta esferográfica",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 6,
+    "exemplo": {
+      "ko": "이거 볼펜이에요?",
+      "pt": "Isto é uma caneta?"
+    },
+    "nota": "De “ball pen”. Termina em ㄴ, então 볼펜이에요.",
+    "confundiveis": [
+      "lapiseira"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "lapiseira",
+    "hangul": "샤프",
+    "romanizacao": "syapeu",
+    "pt": "lapiseira",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "aula": 6,
+    "exemplo": {
+      "ko": "아니요. 샤프예요.",
+      "pt": "Não. É uma lapiseira."
+    },
+    "nota": "De “sharp pencil”, outro empréstimo que não existe em inglês. Termina em vogal: 샤프예요.",
+    "confundiveis": [
+      "caneta"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "brinquedo",
+    "hangul": "장난감",
+    "romanizacao": "jangnangam",
+    "pt": "brinquedo",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 5,
+    "exemplo": {
+      "ko": "장난감이에요.",
+      "pt": "É um brinquedo."
+    },
+    "nota": "장난 (brincadeira, travessura) + 감 (material). Termina em ㅁ, então 장난감이에요.",
+    "baralho": false
+  },
+  {
+    "id": "microfone",
+    "hangul": "마이크",
+    "romanizacao": "maikeu",
+    "pt": "microfone",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 7,
+    "exemplo": {
+      "ko": "저 마이크 주세요.",
+      "pt": "Me dá aquele microfone."
+    },
+    "nota": "Empréstimo do inglês “mike”. Termina em vogal: 마이크예요.",
+    "baralho": false
+  },
+  {
+    "id": "mesa",
+    "hangul": "테이블",
+    "romanizacao": "teibeul",
+    "pt": "mesa",
+    "modulo": "casa",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 7,
+    "exemplo": {
+      "ko": "저 테이블 좋아요.",
+      "pt": "Aquela mesa é boa."
+    },
+    "nota": "Convive com 책상 (escrivaninha, 冊床). 테이블 é a mesa de refeição ou de café.",
+    "confundiveis": [
+      "cadeira"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "restaurante_lugar",
+    "hangul": "레스토랑",
+    "romanizacao": "reseutorang",
+    "pt": "restaurante (ocidental)",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "aula": 7,
+    "exemplo": {
+      "ko": "저 레스토랑 비싸요.",
+      "pt": "Aquele restaurante é caro."
+    },
+    "nota": "Do francês via inglês, e reservado a restaurante ocidental. O restaurante comum é 식당 (食堂), que o baralho já traz.",
+    "confundiveis": [
+      "restaurante",
+      "hotel"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "hotel",
+    "hangul": "호텔",
+    "romanizacao": "hotel",
+    "pt": "hotel",
+    "modulo": "lugares",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "aula": 7,
+    "exemplo": {
+      "ko": "이 호텔이에요.",
+      "pt": "É este hotel."
+    },
+    "nota": "Termina em ㄹ, então 호텔이에요.",
+    "confundiveis": [
+      "restaurante_lugar"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "taxi",
+    "hangul": "택시",
+    "romanizacao": "taeksi",
+    "pt": "táxi",
+    "modulo": "transporte",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 7,
+    "exemplo": {
+      "ko": "이 택시 타세요.",
+      "pt": "Pegue este táxi."
+    },
+    "nota": "O ㅐ de 택 e o ㅔ de 테 soam praticamente igual no coreano de hoje — a diferença sobrevive só na escrita.",
+    "confundiveis": [
+      "onibus",
+      "carro"
+    ],
+    "baralho": false
+  },
+  {
+    "id": "aqui_esta",
+    "hangul": "여기요",
+    "romanizacao": "yeogiyo",
+    "pt": "aqui está; ei (para chamar)",
+    "modulo": "expressoes",
+    "classe": "expressao",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 1,
+    "exemplo": {
+      "ko": "여기요. 감사합니다.",
+      "pt": "Aqui está. — Obrigado."
+    },
+    "nota": "De 여기 (“aqui”). Serve para entregar algo e, como 저기요, para chamar o garçom.",
+    "confundiveis": [
+      "com_licenca"
+    ],
+    "baralho": false
   }
 ]

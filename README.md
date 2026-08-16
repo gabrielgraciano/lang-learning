@@ -43,10 +43,16 @@ o estado real do cartão. Quando a palavra fica firme, a célula revela a
 ilustração — a grade vira álbum.
 
 **A gramática é lida, não adivinhada.** Além do baralho, o Nível 1 traz oito
-aulas com explicação em texto e em áudio e 88 exercícios — e dentro de cada
-trecho da explicação há um atalho para os exercícios daquele trecho, para
-praticar sem perder o lugar da leitura. O que cada aula cobre está em
-[`livros.md`](livros.md).
+aulas com explicação em texto e em áudio e 213 exercícios — sendo 49 de ouvir e
+responder. Dentro de cada trecho da explicação há um atalho para os exercícios
+daquele trecho, para praticar sem perder o lugar da leitura. O que cada aula
+cobre está em [`livros.md`](livros.md).
+
+**O vocabulário das aulas vira dicionário antes de virar cartão.** Toda palavra
+apresentada no Nível 1 entra em `dados/palavras.json` com o esquema completo —
+romanização, morfemas sino-coreanos, exemplo, nota — mas marcada `baralho:
+false`, fora da fila do dia. Ela já conta para as famílias de morfemas e aparece
+no mapa; virar cartão é apagar uma linha do JSON.
 
 Sem streak, sem vidas, sem ranking. Meta semanal com folga e ritmo ajustável.
 
@@ -101,7 +107,7 @@ src/licoes.js              # correção dos exercícios e progresso das aulas
 src/sino.js                # morfemas sino-coreanos e famílias de palavras
 src/teclado.js             # transliteração 두벌식 e teclado de tela
 src/armazenamento.js       # progresso, registro, exportar/importar
-dados/palavras.json        # fonte da verdade do vocabulário
+dados/palavras.json        # o dicionário: baralho + vocabulário das aulas
 dados/hanja.json           # morfema → significado
 dados/licoes.json          # fonte da verdade das aulas do Nível 1
 assets/ilustracoes/*.svg   # uma ilustração por palavra
@@ -164,6 +170,8 @@ aparece legível.
 | `imageabilidade` | 1 a 5, curadoria manual — o critério de entrada no baralho |
 | `pronuncia` | só quando a regra não dá conta (물고기 → 물꼬기); o normal é deixar em branco e o motor derivar |
 | `sino` | mapa sílaba → hanja (`{"학":"學","교":"校"}`); alimenta as famílias. Por sílaba e não por posição, porque em 빨간색 só o 색 é sino-coreano |
+| `baralho` | `false` guarda a palavra no dicionário sem pôr na fila do dia. É como o vocabulário do Nível 1 entra antes de virar cartão; ausente significa `true` |
+| `aula` | de qual aula do Nível 1 a palavra veio, quando veio de alguma |
 | `classe` | `substantivo`, `verbo`, `adjetivo`, `numeral` ou `funcional` — impede que a múltipla escolha ofereça um substantivo onde só cabe um verbo |
 | `campo` | subgrupo dentro do módulo; é o que mantém os distratores dentro do mesmo sistema (nativo vs. sino nos números) |
 | `par` | id do antônimo; obrigatório em adjetivo, que só se aprende em par |
