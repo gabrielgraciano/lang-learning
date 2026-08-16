@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Um círculo preto e um branco ao lado de um lápis">
+  <circle cx="100" cy="100" r="94" fill="#E9E7E2"/>
+  <circle cx="58" cy="72" r="34" fill="#2E2E2E"/>
+  <circle cx="58" cy="132" r="34" fill="#FBFAF7" stroke="#C9C6BE" stroke-width="4"/>
+  <path d="M112 150l10-32 46-72 22 14-46 72z" fill="#E0A63A"/>
+  <path d="M168 46l22 14 8-13-22-14z" fill="#B05A42"/>
+  <path d="M112 150l10-32 22 14z" fill="#F3EFE4"/>
+  <path d="M112 150l4-13 9 6z" fill="#2E2E2E"/>
+</svg>

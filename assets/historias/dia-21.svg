@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma placa de aeroporto e uma bifurcação de setas">
+  <circle cx="100" cy="100" r="94" fill="#DCEAE8"/>
+  <rect x="16" y="40" width="82" height="46" rx="6" fill="#2F6B5C"/>
+  <path d="M28 66h30l-6-10 22 10-22 10 6-10z" fill="#E6F0EA"/>
+  <path d="M76 54h12v24H76z" fill="#E6F0EA"/>
+  <path d="M56 86v76" stroke="#7FA894" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M110 122h40l-8-14 34 22-34 22 8-14h-40z" fill="#C08A38"/>
+  <path d="M116 74h48l10-16 10 16-10 16-10-16z" fill="#4F8F96"/>
+  <path d="M110 74h48" stroke="#4F8F96" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <path d="M104 60v104" stroke="#9CC2C0" stroke-width="8" stroke-linecap="round" fill="none"/>
+</svg>

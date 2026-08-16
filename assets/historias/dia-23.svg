@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Duas alianças ao lado de uma arara de roupas">
+  <circle cx="100" cy="100" r="94" fill="#EFE1E4"/>
+  <circle cx="48" cy="76" r="26" fill="none" stroke="#C08A38" stroke-width="10"/>
+  <circle cx="82" cy="96" r="26" fill="none" stroke="#E0A63A" stroke-width="10"/>
+  <path d="M48 44l-6-12h12z" fill="#C9C6DC"/>
+  <path d="M112 52h74" stroke="#8E8AA8" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M126 56v-8" stroke="#8E8AA8" stroke-width="5" fill="none"/>
+  <path d="M112 60h28l6 44-20 8-20-8z" fill="#A8332C"/>
+  <path d="M154 56v-8" stroke="#8E8AA8" stroke-width="5" fill="none"/>
+  <path d="M144 60h30v20l-8 44h-14l-8-44z" fill="#4F8F96"/>
+  <path d="M118 148h64" stroke="#C9506A" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M150 152v22" stroke="#8E8AA8" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Um rosto sorridente ao lado de um avião subindo">
+  <circle cx="100" cy="100" r="94" fill="#E4E3EC"/>
+  <circle cx="62" cy="76" r="34" fill="#C08A38"/>
+  <circle cx="50" cy="70" r="5" fill="#4A3A22"/>
+  <circle cx="76" cy="70" r="5" fill="#4A3A22"/>
+  <path d="M48 88a16 12 0 0 0 28 0" fill="none" stroke="#4A3A22" stroke-width="5" stroke-linecap="round"/>
+  <path d="M50 120h24v42H50z" fill="#4F4A82"/>
+  <path d="M44 162h36" stroke="#4F4A82" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M182 52l-64 42-24-8 20-16-18-4-14 10-14-6 26-18z" fill="#8E8AA8"/>
+  <path d="M118 94l6 24 12-8z" fill="#4F4A82"/>
+  <path d="M40 176h120" stroke="#C3C1D2" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

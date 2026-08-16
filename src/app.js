@@ -163,7 +163,7 @@ let palavras = [];
 let dicionario = [];
 /** @type {object[]} As vinte e cinco aulas do Nível 1. */
 let aulas = [];
-/** @type {object[]} Os dez dias das Histórias. */
+/** @type {object[]} Os vinte e cinco dias das Histórias. */
 let dias = [];
 /** @type {object|null} */
 let aulaAberta = null;
@@ -1022,7 +1022,7 @@ function pintarNivel1() {
 }
 
 /**
- * A lista dos dez dias.
+ * A lista dos vinte e cinco dias.
  *
  * Um dia não é uma aula — é um bloco de vinte palavras dentro de duas cenas —
  * mas a escada é a mesma: ler, praticar, conferir. Por isso a listagem é outra
@@ -1031,13 +1031,14 @@ function pintarNivel1() {
 function pintarHistorias() {
   const geral = licoes.progressoGeral(dias, feitos());
   const promovidas = new Set(estado.promovidas);
+  const totalDePalavras = new Set(dias.flatMap((dia) => dia.palavras)).size;
   const naFila = dias.flatMap((dia) => dia.palavras)
     .filter((id) => promovidas.has(id) || dicionario.find((p) => p.id === id)?.baralho !== false);
 
   el.historiasProgresso.textContent = geral.total
     ? `${geral.aulasCompletas} de ${geral.aulas} dias concluídos · `
       + `${geral.acertos} de ${geral.total} exercícios · `
-      + `${new Set(naFila).size} de 200 palavras no baralho`
+      + `${new Set(naFila).size} de ${totalDePalavras} palavras no baralho`
     : '';
 
   el.listaDias.replaceChildren(...dias.map((dia) => {
@@ -1073,7 +1074,7 @@ function pintarHistorias() {
 
   el.atalhoHistoriasProgresso.textContent = geral.total
     ? `${geral.aulasCompletas}/${geral.aulas} dias · ${geral.acertos}/${geral.total} exercícios`
-    : 'dez dias';
+    : `${dias.length} dias`;
 }
 
 function barraProgresso({ acertos, total, fracao }) {

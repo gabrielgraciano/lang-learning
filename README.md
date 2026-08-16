@@ -48,11 +48,12 @@ exercícios — sendo 138 de ouvir e responder. Dentro de cada trecho da explica
 daquele trecho, para praticar sem perder o lugar da leitura. O que cada aula
 cobre está em [`livros.md`](livros.md).
 
-**Palavra solta se decora e se esquece.** As Histórias trazem dez dias de vinte
-palavras cada, e cada dia amarra as suas em duas cenas curtas — alguém que
-trabalha demais e só aparece no fim de semana, a manhã de sempre, a cachorra que
-morreu. São 200 palavras e 499 exercícios, tirados das próprias frases das cenas.
-O que cada dia cobre está em [`historias.md`](historias.md).
+**Palavra solta se decora e se esquece.** As Histórias trazem vinte e cinco dias
+de vinte palavras cada, e cada dia amarra as suas em duas cenas curtas — alguém
+que trabalha demais e só aparece no fim de semana, a cachorra que morreu, a
+chave que caiu debaixo do carro. São 500 palavras e 1245 exercícios, tirados das
+próprias frases das cenas. O que cada dia cobre está em
+[`historias.md`](historias.md).
 
 **O vocabulário novo vira dicionário antes de virar cartão.** Toda palavra
 apresentada no Nível 1 ou nas Histórias entra em `dados/palavras.json` com o
@@ -181,7 +182,7 @@ aparece legível.
 | `imageabilidade` | 1 a 5, curadoria manual — o critério de entrada no baralho |
 | `pronuncia` | só quando a regra não dá conta (물고기 → 물꼬기); o normal é deixar em branco e o motor derivar |
 | `sino` | mapa sílaba → hanja (`{"학":"學","교":"校"}`); alimenta as famílias. Por sílaba e não por posição, porque em 빨간색 só o 색 é sino-coreano |
-| `baralho` | `false` guarda a palavra no dicionário sem pôr na fila do dia. É como o vocabulário do Nível 1 e das Histórias entra antes de virar cartão; ausente significa `true`. Hoje: 114 no baralho, 302 só no dicionário |
+| `baralho` | `false` guarda a palavra no dicionário sem pôr na fila do dia. É como o vocabulário do Nível 1 e das Histórias entra antes de virar cartão; ausente significa `true`. Hoje: 114 no baralho, 534 só no dicionário |
 | `aula` | de qual aula do Nível 1 a palavra veio, quando veio de alguma |
 | `dia` | de qual dia das Histórias a palavra veio. O botão do dia promove as vinte dele para a fila, e a promoção mora no `localStorage`, não aqui |
 | `classe` | `substantivo`, `verbo`, `adjetivo`, `numeral` ou `funcional` — impede que a múltipla escolha ofereça um substantivo onde só cabe um verbo |
@@ -223,6 +224,6 @@ sistema. Contador também é frase, porque contador nunca aparece sozinho.
 ## Próximos passos
 
 - Tela interna com os itens de maior taxa de erro — detector de ilustração ambígua
-- Os dias 11 a 25 das Histórias (o livro tem cinquenta; dez viraram vinte aqui)
+- Ilustração para as palavras das Histórias que ainda entram só como texto
 - Mais vocabulário de alta frequência no formato de frase
 - Alinhamento explícito com os níveis TOPIK

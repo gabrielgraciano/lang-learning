@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma flor de primavera ao lado de um floco de neve">
+  <circle cx="100" cy="100" r="94" fill="#EFE1E4"/>
+  <g fill="#C9506A">
+    <ellipse cx="58" cy="56" rx="13" ry="20"/>
+    <ellipse cx="58" cy="96" rx="13" ry="20"/>
+    <ellipse cx="38" cy="76" rx="20" ry="13"/>
+    <ellipse cx="78" cy="76" rx="20" ry="13"/>
+  </g>
+  <circle cx="58" cy="76" r="11" fill="#E8CE8C"/>
+  <path d="M58 96v66" stroke="#4F7A68" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M58 126c-14 0-22-8-24-18 14-4 22 4 24 18z" fill="#4F7A68"/>
+  <g stroke="#5E8FB0" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M142 62v82"/><path d="M106 82l72 42"/><path d="M178 82l-72 42"/>
+    <path d="M142 78l-12-12"/><path d="M142 78l12-12"/>
+    <path d="M142 128l-12 12"/><path d="M142 128l12 12"/>
+  </g>
+  <circle cx="142" cy="103" r="8" fill="#9CC2C0"/>
+</svg>
