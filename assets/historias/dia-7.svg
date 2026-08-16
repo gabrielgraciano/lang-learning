@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Ondas do mar sob um sol grande de verão">
+  <circle cx="100" cy="100" r="94" fill="#DCEAE8"/>
+  <circle cx="132" cy="66" r="30" fill="#E0A63A"/>
+  <g stroke="#E0A63A" stroke-width="6" stroke-linecap="round">
+    <path d="M132 20v-8"/><path d="M172 66h10"/><path d="M100 34l-8-8"/><path d="M164 34l8-8"/><path d="M100 98l-8 8"/>
+  </g>
+  <path d="M18 118c16-12 30 8 46-4s30 8 46-4 30 8 46-4 24 6 26 4" stroke="#2F6B5C" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M14 144c16-12 30 8 46-4s30 8 46-4 30 8 46-4 30 8 34 4" stroke="#4F8F96" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M22 168c16-10 30 6 46-2s30 6 46-2 30 6 46-2" stroke="#9CC2C0" stroke-width="9" fill="none" stroke-linecap="round"/>
+</svg>

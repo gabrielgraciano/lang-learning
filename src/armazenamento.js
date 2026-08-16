@@ -38,6 +38,18 @@ const VAZIO = {
    * intervalo, sem entrar na fila do dia.
    */
   licoes: {},
+  /**
+   * Ids de palavras que estavam fora do baralho (`baralho: false` no JSON) e
+   * que quem estuda mandou entrar na fila.
+   *
+   * Existe uma fila só, e é de propósito: dois baralhos seriam duas sessões por
+   * dia, dois mapas e duas redes de morfemas, e 자 de 의자 nunca reencontraria o
+   * de 모자. O que não podia era despejar duzentas palavras de uma vez numa
+   * fila calibrada para cento e quatorze. Então a porta é a mesma — só que quem
+   * abre é quem estuda, um dia de cada vez, e o teto de `novasPorDia` continua
+   * regulando a vazão.
+   */
+  promovidas: [],
 };
 
 const clonar = (valor) => JSON.parse(JSON.stringify(valor));
@@ -58,6 +70,7 @@ export function ler() {
         registro: salvo.registro ?? [],
         dias: salvo.dias ?? {},
         licoes: salvo.licoes ?? {},
+        promovidas: salvo.promovidas ?? [],
       };
     }
     return migrar();
@@ -141,6 +154,18 @@ export function registrarExercicio(estado, id, acertou) {
   };
 }
 
+/**
+ * Manda as palavras de um dia para a fila.
+ *
+ * Só acrescenta: tirar do baralho o que já foi visto jogaria fora o estado
+ * FSRS da palavra, e o que se aprendeu não deixa de ter sido aprendido porque
+ * a pessoa mudou de ideia sobre o dia.
+ */
+export function promover(estado, ids) {
+  const juntas = new Set([...estado.promovidas, ...ids]);
+  return { ...estado, promovidas: [...juntas] };
+}
+
 export const comPreferencias = (estado, patch) => ({
   ...estado,
   preferencias: { ...estado.preferencias, ...patch },
@@ -188,5 +213,6 @@ export function importar(texto) {
     registro: Array.isArray(dados.registro) ? dados.registro : [],
     dias: dados.dias ?? {},
     licoes: dados.licoes ?? {},
+    promovidas: Array.isArray(dados.promovidas) ? dados.promovidas : [],
   };
 }

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Duas pessoas se encontrando e um sol nascendo sobre a linha do horizonte">
+  <circle cx="100" cy="100" r="94" fill="#E4E3EC"/>
+  <g fill="#4F4A82">
+    <circle cx="58" cy="62" r="16"/>
+    <path d="M40 122c0-20 8-40 18-40s18 20 18 40z"/>
+  </g>
+  <g fill="#8E8AA8">
+    <circle cx="96" cy="62" r="16"/>
+    <path d="M78 122c0-20 8-40 18-40s18 20 18 40z"/>
+  </g>
+  <circle cx="146" cy="76" r="26" fill="#C08A38"/>
+  <g stroke="#C08A38" stroke-width="6" stroke-linecap="round">
+    <path d="M146 34v-12"/><path d="M180 76h12"/><path d="M120 50l-9-9"/><path d="M172 50l9-9"/>
+  </g>
+  <path d="M30 140h140" stroke="#4F4A82" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M46 160h108" stroke="#C3C1D2" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

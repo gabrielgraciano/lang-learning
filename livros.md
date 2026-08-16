@@ -5,7 +5,9 @@ vinte e cinco aulas ensina, onde o conteúdo mora, como acrescentar a próxima, 
 que foi deliberadamente deixado de fora.
 
 O *porquê* de o app inteiro ser como é continua em `docs/fundamentacao.md`; as
-convenções de código continuam em `CLAUDE.md`. Aqui é só o Nível 1.
+convenções de código continuam em `CLAUDE.md`. Aqui é só o Nível 1 — a seção
+**Histórias**, que vem de outro livro e ensina vocabulário em vez de gramática,
+tem o seu próprio mapa em [`historias.md`](historias.md).
 
 ---
 
@@ -495,8 +497,9 @@ Mesmas regras de `CLAUDE.md`: 200×200, sujeito isolado, paleta de ~5 cores,
 
 Toda palavra que aparece na seção de vocabulário de uma aula está também em
 **`dados/palavras.json`**, com o mesmo esquema das palavras do baralho:
-romanização, módulo, classe, `sino` quando é sino-coreana, exemplo e nota. São
-**277 entradas** hoje — 114 no baralho, 163 só no dicionário.
+romanização, módulo, classe, `sino` quando é sino-coreana, exemplo e nota. Com
+as palavras que as **Histórias** trouxeram depois, são **416 entradas** hoje —
+114 no baralho e 302 só no dicionário.
 
 O que separa as duas metades é um campo:
 
@@ -509,13 +512,17 @@ O que separa as duas metades é um campo:
 mora num lugar só, no carregamento de `src/app.js`:
 
 ```js
-dicionario = await respostaPalavras.json();
-palavras   = dicionario.filter((p) => p.baralho !== false);
+function recalcularBaralho() {
+  const promovidas = new Set(estado.promovidas);
+  palavras = dicionario.filter((p) => p.baralho !== false || promovidas.has(p.id));
+}
 ```
 
 Daí para baixo, tudo que fala em `palavras` — a fila do dia, os contadores, a
 grade do mapa, os distratores — vê só o baralho, sem precisar saber que a
-separação existe. Promover uma palavra a cartão é apagar uma linha do JSON.
+separação existe. Promover uma palavra a cartão é apagar uma linha do JSON; as
+Histórias acrescentaram um segundo caminho, pelo botão do dia, que grava o id em
+`estado.promovidas` sem tocar no arquivo (ver `historias.md`).
 
 Uma exceção deliberada: **o índice sino-coreano cobre o dicionário inteiro.**
 의자 (cadeira) está no baralho, 모자 (chapéu) e 사자 (leão) não — e as três
@@ -524,7 +531,7 @@ ainda não serem cartão, e a família é a melhor coisa que o app tem a dizer s
 vocabulário.
 
 O que está no dicionário e fora do baralho aparece na tela do **Mapa**, numa
-lista própria com a aula de origem. Em texto, não em células: célula no mapa
+lista própria com a aula (ou o dia) de origem. Em texto, não em células: célula no mapa
 significa estado de memória, e estas palavras não têm nenhum — pintá-las todas
 de “não vista” seria afirmar algo falso.
 

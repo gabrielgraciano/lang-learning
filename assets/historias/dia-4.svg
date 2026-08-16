@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma mala de viagem fechada ao lado de um aparelho de televisão">
+  <circle cx="100" cy="100" r="94" fill="#EDE4DE"/>
+  <path d="M48 56c0-7 5-12 12-12h12c7 0 12 5 12 12" fill="none" stroke="#8C4A38" stroke-width="7"/>
+  <rect x="28" y="56" width="76" height="82" rx="10" fill="#B05A42"/>
+  <rect x="28" y="86" width="76" height="12" fill="#8C4A38"/>
+  <rect x="58" y="80" width="16" height="24" rx="3" fill="#F0E3DC"/>
+  <rect x="108" y="62" width="72" height="58" rx="8" fill="#4A4A4A"/>
+  <rect x="118" y="72" width="52" height="38" rx="4" fill="#CFE0DA"/>
+  <path d="M130 100l14-18 10 12 8-8 8 14z" fill="#7FA894"/>
+  <path d="M128 62l-12-18" stroke="#4A4A4A" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M160 62l12-18" stroke="#4A4A4A" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M126 120v14h44v-14" fill="none" stroke="#4A4A4A" stroke-width="7"/>
+  <path d="M20 156h160" stroke="#C7A79A" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

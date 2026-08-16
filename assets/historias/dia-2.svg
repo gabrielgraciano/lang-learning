@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Um caderno aberto sobre a mesa ao lado de um pão">
+  <circle cx="100" cy="100" r="94" fill="#E3EAE6"/>
+  <rect x="24" y="52" width="80" height="62" rx="6" fill="#2F6B5C"/>
+  <g stroke="#E6F0EA" stroke-width="5" stroke-linecap="round">
+    <path d="M38 72h52"/><path d="M38 86h52"/><path d="M38 100h34"/>
+  </g>
+  <path d="M108 60l30-14 8 16-30 14z" fill="#C08A38"/>
+  <path d="M112 108c0-14 12-24 28-24s28 10 28 24c0 8-6 12-14 12h-28c-8 0-14-4-14-12z" fill="#B08238"/>
+  <g stroke="#E6F0EA" stroke-width="4" stroke-linecap="round">
+    <path d="M126 96l6 8"/><path d="M140 94l6 8"/><path d="M154 96l6 8"/>
+  </g>
+  <path d="M20 132h160" stroke="#7FA894" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M42 140v22" stroke="#7FA894" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M158 140v22" stroke="#7FA894" stroke-width="7" stroke-linecap="round" fill="none"/>
+</svg>

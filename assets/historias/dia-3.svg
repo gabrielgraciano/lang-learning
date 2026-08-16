@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma árvore de parque ao lado da frente de um ônibus">
+  <circle cx="100" cy="100" r="94" fill="#E3EAE6"/>
+  <circle cx="58" cy="72" r="34" fill="#2F6B5C"/>
+  <circle cx="36" cy="92" r="20" fill="#7FA894"/>
+  <circle cx="80" cy="94" r="18" fill="#7FA894"/>
+  <path d="M54 104h8v52h-8z" fill="#8A6A3C"/>
+  <rect x="104" y="52" width="72" height="86" rx="12" fill="#C08A38"/>
+  <rect x="114" y="64" width="52" height="30" rx="5" fill="#F3EFE4"/>
+  <path d="M140 64v30" stroke="#C08A38" stroke-width="5"/>
+  <circle cx="122" cy="112" r="7" fill="#F3EFE4"/>
+  <circle cx="158" cy="112" r="7" fill="#F3EFE4"/>
+  <circle cx="120" cy="144" r="11" fill="#4A4A4A"/>
+  <circle cx="160" cy="144" r="11" fill="#4A4A4A"/>
+  <path d="M18 162h164" stroke="#7FA894" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

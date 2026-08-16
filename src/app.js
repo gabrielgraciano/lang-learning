@@ -21,6 +21,7 @@ import * as banco from './armazenamento.js';
 const URL_DADOS = new URL('../dados/palavras.json', import.meta.url);
 const URL_HANJA = new URL('../dados/hanja.json', import.meta.url);
 const URL_LICOES = new URL('../dados/licoes.json', import.meta.url);
+const URL_DIAS = new URL('../dados/dias.json', import.meta.url);
 
 const $ = (seletor) => document.querySelector(seletor);
 
@@ -31,6 +32,7 @@ const el = {
     fim: $('#tela-fim'),
     mapa: $('#tela-mapa'),
     nivel1: $('#tela-nivel1'),
+    historias: $('#tela-historias'),
     aula: $('#tela-aula'),
     ajustes: $('#tela-ajustes'),
   },
@@ -122,6 +124,12 @@ const el = {
   nivel1Progresso: $('#nivel1-progresso'),
   listaAulas: $('#lista-aulas'),
 
+  atalhoHistorias: $('#atalho-historias'),
+  atalhoHistoriasProgresso: $('#atalho-historias-progresso'),
+  historiasProgresso: $('#historias-progresso'),
+  listaDias: $('#lista-dias'),
+
+  aulaVoltar: $('#aula-voltar'),
   aulaTitulo: $('#aula-titulo'),
   aulaIlustracao: $('#aula-ilustracao'),
   aulaSelo: $('#aula-selo'),
@@ -141,19 +149,26 @@ const el = {
  * O baralho: só as palavras que entram na fila do dia.
  *
  * `dados/palavras.json` é maior que isso. Ele guarda também o vocabulário que
- * as aulas do Nível 1 apresentam mas que ainda não vira cartão — o dicionário
- * que o app vai acumulando. Quem separa os dois é o campo `baralho: false`, e a
- * separação existe aqui, num lugar só, para nenhuma tela precisar lembrar dela.
+ * as aulas do Nível 1 e os dias das Histórias apresentam mas que ainda não vira
+ * cartão — o dicionário que o app vai acumulando. Quem separa os dois é o campo
+ * `baralho: false`, mais os ids que quem estuda promoveu pelo botão do dia.
+ *
+ * A separação existe aqui, num lugar só, para nenhuma tela precisar lembrar
+ * dela — e é por isso que promover uma palavra é só recalcular esta lista.
  *
  * @type {object[]}
  */
 let palavras = [];
 /** Tudo que está no arquivo, baralho + dicionário. Alimenta o índice sino. */
 let dicionario = [];
-/** @type {object[]} As oito aulas do Nível 1. */
+/** @type {object[]} As vinte e cinco aulas do Nível 1. */
 let aulas = [];
+/** @type {object[]} Os dez dias das Histórias. */
+let dias = [];
 /** @type {object|null} */
 let aulaAberta = null;
+/** A lista a que a unidade aberta pertence — é ela que o anterior/próxima percorre. */
+let colecaoAberta = [];
 let estado = banco.ler();
 /** @type {null | ReturnType<typeof novaSessao>} */
 let sessao = null;
@@ -187,7 +202,19 @@ function ir(nome) {
   if (nome === 'hoje') pintarHoje();
   if (nome === 'mapa') pintarMapa();
   if (nome === 'nivel1') pintarNivel1();
+  if (nome === 'historias') pintarHistorias();
   if (nome === 'ajustes') pintarAjustes();
+}
+
+/**
+ * Recalcula o baralho a partir do arquivo e do que já foi promovido.
+ *
+ * Chamado no carregamento e a cada promoção — a fila do dia sai daqui, então
+ * promover é literalmente acrescentar à lista e refazer a tela inicial.
+ */
+function recalcularBaralho() {
+  const promovidas = new Set(estado.promovidas);
+  palavras = dicionario.filter((p) => p.baralho !== false || promovidas.has(p.id));
 }
 
 // -------------------------------------------------------------------- áudio
@@ -807,7 +834,10 @@ function pintarMapa() {
  * para quem usa — é arquivo.
  */
 function pintarDicionario() {
-  const soltas = dicionario.filter((p) => p.baralho === false);
+  // O que foi promovido sai daqui e passa a aparecer no mapa como cartão: a
+  // palavra não está em dois lugares, ela mudou de lugar.
+  const soltas = dicionario.filter((p) => p.baralho === false
+    && !estado.promovidas.includes(p.id));
   el.blocoDicionario.hidden = soltas.length === 0;
   if (!soltas.length) return;
 
@@ -828,11 +858,13 @@ function pintarDicionario() {
     pt.textContent = palavra.pt;
 
     item.append(ko, pt);
-    if (palavra.aula) {
-      const aula = document.createElement('span');
-      aula.className = 'dicionario-aula';
-      aula.textContent = `aula ${palavra.aula}`;
-      item.append(aula);
+    const origem = palavra.aula ? `aula ${palavra.aula}`
+      : palavra.dia ? `dia ${palavra.dia}` : null;
+    if (origem) {
+      const marca = document.createElement('span');
+      marca.className = 'dicionario-aula';
+      marca.textContent = origem;
+      item.append(marca);
     }
     return item;
   }));
@@ -975,6 +1007,61 @@ function pintarNivel1() {
   el.atalhoNivel1Progresso.textContent = geralTexto;
 }
 
+/**
+ * A lista dos dez dias.
+ *
+ * Um dia não é uma aula — é um bloco de vinte palavras dentro de duas cenas —
+ * mas a escada é a mesma: ler, praticar, conferir. Por isso a listagem é outra
+ * e a tela de dentro é a mesma; o que muda é o conteúdo, não o percurso.
+ */
+function pintarHistorias() {
+  const geral = licoes.progressoGeral(dias, feitos());
+  const promovidas = new Set(estado.promovidas);
+  const naFila = dias.flatMap((dia) => dia.palavras)
+    .filter((id) => promovidas.has(id) || dicionario.find((p) => p.id === id)?.baralho !== false);
+
+  el.historiasProgresso.textContent = geral.total
+    ? `${geral.aulasCompletas} de ${geral.aulas} dias concluídos · `
+      + `${geral.acertos} de ${geral.total} exercícios · `
+      + `${new Set(naFila).size} de 200 palavras no baralho`
+    : '';
+
+  el.listaDias.replaceChildren(...dias.map((dia) => {
+    const p = licoes.progressoDaAula(dia, feitos());
+
+    const cartao = nova('button', 'cartao-aula');
+    cartao.type = 'button';
+    if (p.completa) cartao.classList.add('cartao-aula-completa');
+
+    const selo = nova('span', 'selo-aula', dia.hanja);
+    selo.lang = 'ko';
+    selo.setAttribute('aria-hidden', 'true');
+
+    const corpo = nova('span', 'cartao-aula-corpo');
+    const numero = nova('span', 'cartao-aula-numero', `Dia ${dia.numero}`);
+    const hangul = nova('span', 'cartao-aula-hangul', dia.hangul);
+    hangul.lang = 'ko';
+    const titulo = nova('span', 'cartao-aula-titulo', dia.titulo);
+    corpo.append(numero, hangul, titulo, barraProgresso(p));
+
+    if (dia.palavras.every((id) => promovidas.has(id)
+        || dicionario.find((w) => w.id === id)?.baralho !== false)) {
+      corpo.append(nova('span', 'cartao-aula-marca', 'no baralho'));
+    }
+
+    cartao.append(selo, corpo);
+    cartao.addEventListener('click', () => abrirAula(dia, dias));
+
+    const linha = nova('li');
+    linha.append(cartao);
+    return linha;
+  }));
+
+  el.atalhoHistoriasProgresso.textContent = geral.total
+    ? `${geral.aulasCompletas}/${geral.aulas} dias · ${geral.acertos}/${geral.total} exercícios`
+    : 'dez dias';
+}
+
 function barraProgresso({ acertos, total, fracao }) {
   const barra = nova('span', 'progresso');
   const trilho = nova('span', 'progresso-trilho');
@@ -985,10 +1072,27 @@ function barraProgresso({ acertos, total, fracao }) {
   return barra;
 }
 
-function abrirAula(aula) {
+/**
+ * Abre uma unidade — aula do Nível 1 ou dia das Histórias.
+ *
+ * A tela é a mesma para as duas porque o percurso é o mesmo: ler, praticar na
+ * outra aba, andar para a seguinte. `colecao` é o que diz de onde ela veio, e é
+ * o que o anterior/próxima e o botão de voltar consultam.
+ */
+function abrirAula(aula, colecao = aulas) {
   aulaAberta = aula;
+  colecaoAberta = colecao;
 
-  el.aulaTitulo.textContent = `Aula ${aula.numero} · ${aula.titulo}`;
+  const eDia = colecao === dias;
+  const rotulo = eDia ? 'Dia' : 'Aula';
+
+  el.aulaVoltar.dataset.ir = eDia ? 'historias' : 'nivel1';
+  el.aulaVoltar.setAttribute('aria-label',
+    eDia ? 'Voltar para os dias' : 'Voltar para as aulas');
+  el.aulaAnterior.textContent = `← ${rotulo} anterior`;
+  el.aulaProxima.textContent = `Próximo ${rotulo.toLowerCase()} →`;
+
+  el.aulaTitulo.textContent = `${rotulo} ${aula.numero} · ${aula.titulo}`;
   el.aulaIlustracao.src = aula.ilustracao;
   el.aulaIlustracao.alt = '';
   el.aulaSelo.textContent = aula.hanja;
@@ -997,9 +1101,9 @@ function abrirAula(aula) {
   el.aulaResumo.textContent = aula.resumo;
   el.aulaObjetivo.textContent = aula.objetivo;
 
-  const posicao = aulas.indexOf(aula);
+  const posicao = colecao.indexOf(aula);
   el.aulaAnterior.disabled = posicao <= 0;
-  el.aulaProxima.disabled = posicao >= aulas.length - 1;
+  el.aulaProxima.disabled = posicao >= colecao.length - 1;
 
   pintarExplicacao(aula);
   pintarExercicios(aula);
@@ -1022,12 +1126,57 @@ function pintarExplicacao(aula) {
     partes.push(atalhoParaGrupo(grupo));
   }
 
+  if (aula.palavras) partes.push(blocoPromocao(aula));
+
   el.painelExplicacao.replaceChildren(...partes);
+}
+
+/**
+ * O botão que manda as vinte palavras do dia para a fila do FSRS.
+ *
+ * Fica no fim da leitura, e não no começo, porque promover antes de ler seria
+ * pedir para reencontrar no dia seguinte uma palavra que nunca teve contexto —
+ * e é o contexto que faz a palavra colar.
+ */
+function blocoPromocao(dia) {
+  const secao = nova('section', 'bloco-aula promocao');
+  const dentro = (id) => estado.promovidas.includes(id)
+    || dicionario.find((p) => p.id === id)?.baralho !== false;
+  const faltam = dia.palavras.filter((id) => !dentro(id));
+
+  secao.append(nova('h3', 'rotulo', 'Levar para o baralho'));
+
+  if (!faltam.length) {
+    secao.append(nova('p', 'topico-p',
+      'As vinte palavras deste dia já estão na fila de revisão. Elas entram no '
+      + 'ritmo que você definiu em Ajustes, não todas de uma vez.'));
+    return secao;
+  }
+
+  secao.append(nova('p', 'topico-p',
+    `Estas palavras já estão no dicionário e já contam para o mapa e para as `
+    + `famílias de morfemas. Faltam ${faltam.length} delas entrarem na fila do `
+    + `dia — e aí passam a ser cobradas pela escada de quatro níveis, como `
+    + `qualquer outro cartão.`));
+
+  const botao = nova('button', 'botao botao-forte',
+    `Pôr ${faltam.length} palavras na fila`);
+  botao.type = 'button';
+  botao.addEventListener('click', () => {
+    estado = banco.promover(estado, dia.palavras);
+    banco.salvar(estado);
+    recalcularBaralho();
+    pintarExplicacao(dia);
+  });
+
+  secao.append(botao);
+  return secao;
 }
 
 function blocoVocabulario(aula) {
   const secao = nova('section', 'bloco-aula');
-  secao.append(nova('h3', 'rotulo', 'Palavras desta aula'));
+  secao.append(nova('h3', 'rotulo',
+    aula.palavras ? 'As vinte palavras deste dia' : 'Palavras desta aula'));
 
   const lista = nova('ul', 'vocabulario');
   for (const palavra of aula.vocabulario) {
@@ -1049,6 +1198,12 @@ function blocoVocabulario(aula) {
 
     const pt = nova('span', 'vocabulario-pt', palavra.pt);
     linha.append(ko, pt);
+
+    // A romanização segue a preferência global: ela é muleta, e por padrão vem
+    // desligada aqui pelo mesmo motivo que vem desligada no baralho.
+    if (palavra.romanizacao && estado.preferencias.romanizacao) {
+      linha.append(nova('span', 'vocabulario-rom', palavra.romanizacao));
+    }
 
     if (palavra.hanja) {
       const hanjaTexto = nova('span', 'vocabulario-hanja', palavra.hanja);
@@ -1134,6 +1289,9 @@ function pintarParte(parte) {
     case 'exemplos':
       return pintarExemplos(parte.itens);
 
+    case 'combinacoes':
+      return pintarCombinacoes(parte.itens);
+
     case 'dialogo':
       return blocoDialogo(parte, null);
 
@@ -1146,6 +1304,34 @@ function pintarParte(parte) {
 }
 
 const korean = (elemento) => { elemento.lang = 'ko'; return elemento; };
+
+/**
+ * A companhia que a palavra costuma ter: 물을 마시다, 옷을 입다, 버스를 타다.
+ *
+ * Palavra sozinha vira lista, e lista se decora e se esquece. É por isso que
+ * este bloco existe junto da cena e não numa tela de apoio — e por isso cada
+ * linha fala quando tocada: a colocação é o que se repete em voz alta.
+ */
+function pintarCombinacoes(itens) {
+  const figura = nova('figure', 'combinacoes-bloco');
+  figura.append(nova('figcaption', 'combinacoes-rotulo', 'A companhia dessas palavras'));
+
+  const lista = nova('ul', 'combinacoes');
+  for (const item of itens) {
+    const linha = nova('li', 'combinacao');
+
+    const ko = korean(nova('button', 'combinacao-ko', item.ko));
+    ko.type = 'button';
+    ko.title = 'Ouvir';
+    ko.addEventListener('click', () => falarAgora(item.ko));
+
+    linha.append(ko, nova('span', 'combinacao-pt', item.pt));
+    lista.append(linha);
+  }
+
+  figura.append(lista);
+  return figura;
+}
 
 /**
  * A fórmula: 감사 + 합니다 = 감사합니다. É o formato em que estas oito aulas
@@ -1325,7 +1511,7 @@ function segmentosDoTopico(topico) {
     } else if (parte.tipo === 'formula') {
       fila.push({ texto: parte.resultado, lang: 'ko' });
       if (parte.traducao) fila.push({ texto: parte.traducao, lang: 'pt' });
-    } else if (parte.tipo === 'exemplos') {
+    } else if (parte.tipo === 'exemplos' || parte.tipo === 'combinacoes') {
       for (const item of parte.itens) {
         fila.push({ texto: item.ko, lang: 'ko' });
         fila.push({ texto: item.pt, lang: 'pt' });
@@ -1848,13 +2034,13 @@ for (const aba of document.querySelectorAll('[data-aba]')) {
 }
 
 el.aulaAnterior.addEventListener('click', () => {
-  const anterior = aulas[aulas.indexOf(aulaAberta) - 1];
-  if (anterior) abrirAula(anterior);
+  const anterior = colecaoAberta[colecaoAberta.indexOf(aulaAberta) - 1];
+  if (anterior) abrirAula(anterior, colecaoAberta);
 });
 
 el.aulaProxima.addEventListener('click', () => {
-  const proxima = aulas[aulas.indexOf(aulaAberta) + 1];
-  if (proxima) abrirAula(proxima);
+  const proxima = colecaoAberta[colecaoAberta.indexOf(aulaAberta) + 1];
+  if (proxima) abrirAula(proxima, colecaoAberta);
 });
 
 el.ritmo.addEventListener('input', () => {
@@ -1905,14 +2091,15 @@ if (window.speechSynthesis) {
 // -------------------------------------------------------------- carregamento
 
 try {
-  const [respostaPalavras, respostaHanja, respostaLicoes] = await Promise.all([
-    fetch(URL_DADOS), fetch(URL_HANJA), fetch(URL_LICOES),
+  const [respostaPalavras, respostaHanja, respostaLicoes, respostaDias] = await Promise.all([
+    fetch(URL_DADOS), fetch(URL_HANJA), fetch(URL_LICOES), fetch(URL_DIAS),
   ]);
   if (!respostaPalavras.ok) throw new Error(`HTTP ${respostaPalavras.status}`);
   dicionario = await respostaPalavras.json();
-  palavras = dicionario.filter((p) => p.baralho !== false);
+  recalcularBaralho();
   hanja = respostaHanja.ok ? await respostaHanja.json() : {};
   aulas = respostaLicoes.ok ? await respostaLicoes.json() : [];
+  dias = respostaDias.ok ? await respostaDias.json() : [];
   // O índice sino cobre o dicionário inteiro: 의자, 모자 e 사자 dividem o 子, e
   // seria perder a família justamente por duas delas ainda não serem cartão.
   indiceSino = indexar(dicionario);
@@ -1921,11 +2108,13 @@ try {
   el.areaTeclado.append(montarTeclado(campo, responderDigitado));
 
   // Sem aulas o baralho continua inteiro, então o atalho some em vez de levar
-  // a uma tela vazia.
+  // a uma tela vazia. Vale o mesmo para os dias.
   el.atalhoNivel1.hidden = aulas.length === 0;
+  el.atalhoHistorias.hidden = dias.length === 0;
 
   pintarHoje();
   pintarNivel1();
+  pintarHistorias();
 } catch (causa) {
   el.comecar.disabled = true;
   el.erro.hidden = false;

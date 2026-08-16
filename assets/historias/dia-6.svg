@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Uma caixa de presente com laço ao lado de um bolo com vela acesa">
+  <circle cx="100" cy="100" r="94" fill="#EFE1E4"/>
+  <rect x="24" y="76" width="74" height="66" rx="6" fill="#A8332C"/>
+  <rect x="18" y="62" width="86" height="20" rx="5" fill="#8C2B25"/>
+  <path d="M55 62h12v80H55z" fill="#E8CE8C"/>
+  <path d="M61 62c-14 0-20-8-20-14s10-10 14-4 6 12 6 18z" fill="#E8CE8C"/>
+  <path d="M61 62c14 0 20-8 20-14s-10-10-14-4-6 12-6 18z" fill="#E8CE8C"/>
+  <path d="M110 112h68v26a8 8 0 0 1-8 8h-52a8 8 0 0 1-8-8z" fill="#C08A38"/>
+  <path d="M110 96c0-8 6-14 14-14h40c8 0 14 6 14 14v16h-68z" fill="#F0E3D2"/>
+  <path d="M110 104c8 6 12-4 18 0s10 6 16 0 10-6 16 0 10 6 18 0" stroke="#B05A42" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M140 82V64" stroke="#8E8AA8" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M140 62c-6-8 0-12 0-16 4 6 8 8 6 12s-6 4-6 4z" fill="#E0A63A"/>
+</svg>

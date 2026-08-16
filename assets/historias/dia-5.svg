@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Um cachorro sentado diante de ondas de água">
+  <circle cx="100" cy="100" r="94" fill="#DFE8EE"/>
+  <g fill="#7A6248">
+    <path d="M52 76c0-14 10-24 24-24s24 10 24 24v10c0 8-6 14-14 14H66c-8 0-14-6-14-14z"/>
+    <path d="M50 54l-8-22 20 8z"/>
+    <path d="M102 54l8-22-20 8z"/>
+    <path d="M60 100h32c8 0 14 8 14 18v22H46v-22c0-10 6-18 14-18z"/>
+  </g>
+  <circle cx="68" cy="74" r="5" fill="#EDE7E0"/>
+  <circle cx="88" cy="74" r="5" fill="#EDE7E0"/>
+  <path d="M78 88a6 6 0 0 0 0-8" stroke="#EDE7E0" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M106 128c14-10 26 10 40 0s26 10 40 0" stroke="#3D7A9B" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M96 152c14-10 26 10 40 0s26 10 40 0" stroke="#7FAAC4" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M20 152c8-6 14 4 22 0" stroke="#7FAAC4" stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

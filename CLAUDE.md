@@ -18,6 +18,11 @@ numeradas 1–14). Uma mudança que pareça óbvia — "por que a romanização 
 desligada?", "por que o card de frase não é uma tela separada?" — quase sempre
 tem uma decisão documentada por trás. Leia antes de reverter.
 
+Além do baralho há duas seções de conteúdo, cada uma com o seu próprio mapa:
+**Nível 1** (gramática, 25 aulas) em `livros.md`, e **Histórias** (vocabulário,
+10 dias de 20 palavras) em `historias.md`. As duas rodam na mesma tela e são
+corrigidas pelo mesmo `src/licoes.js`; o que muda é o arquivo de dados.
+
 ## Regra zero: sem build, sem dependências
 
 Não há `package.json`, não há bundler, não há linter configurado, não há
@@ -87,6 +92,19 @@ reinventar:
   sozinho, então a camada de `classe` existe para a alternativa errada
   continuar sendo *possível*.
 
+  Repare que `modulo` vem **antes** de `classe`: módulo que mistura classes
+  devolve a classe errada antes de chegar ao degrau que a protege. É para isso
+  que serve o `campo` — `nocao`, `ritmo`, `posicao`, `sabor`, `bebida` existem
+  porque `alta-frequencia`, `tempo` e `comida` misturam. Ao acrescentar palavra
+  a um módulo misto, dê `campo` a ela e rode a checagem de distratores.
+
+- **O baralho não é o arquivo.** `baralho: false` guarda a palavra no dicionário
+  sem pôr na fila, e `estado.promovidas` (localStorage) é o que quem estuda
+  acrescenta pelo botão de cada dia das Histórias. Os dois se juntam em
+  `recalcularBaralho()`, em `src/app.js` — um lugar só, de propósito. Qualquer
+  invariante do baralho precisa valer também para o baralho **depois** de
+  promover todos os dias, porque isso é um estado que o app alcança sozinho.
+
 ## Vocabulário (`dados/palavras.json`)
 
 Fonte única de verdade — nenhuma mudança de card exige tocar em código. O
@@ -111,7 +129,9 @@ duplicado aqui. Ao adicionar palavra:
    hoje nenhuma das 114 palavras do baralho precisa do override.
 4. **`confundiveis` precisa ser recíproco em espírito**, mesmo que não em
    código: se A lista B como confundível, normalmente B deveria listar A. Isso
-   não é validado automaticamente — confira à mão.
+   não é validado automaticamente — confira à mão. E precisa ser da **mesma
+   classe gramatical**: é o primeiro degrau da escada de distratores, e cruzar
+   classe ali faz o exercício testar sintaxe em vez de significado.
 5. Depois de editar o JSON, rode as checagens de invariante da seção seguinte
    antes de considerar terminado.
 
@@ -146,17 +166,26 @@ const vaza = palavras.filter((w) => {
 });
 console.log('dica que vaza a resposta:', vaza.length ? vaza.map(w => w.hangul) : 'nenhuma');
 
-// distratores: nunca repetido, nunca de classe gramatical diferente
+// distratores: nunca repetido, nunca de classe gramatical diferente.
+// Roda nos DOIS baralhos que o app alcança: o do arquivo e o do arquivo com os
+// dez dias das Histórias promovidos, que é um clique de distância.
 import { distratores, alternativas } from './src/niveis.js';
-let fora = 0, tot = 0, dup = 0, rodadas = 0;
-for (let i = 0; i < 15; i++) for (const w of palavras) {
-  const alts = alternativas(w, palavras).map(respostaDe);
-  rodadas++; if (alts.length !== new Set(alts).size) dup++;
-  const d = distratores(w, palavras);
-  tot += d.length; fora += d.filter((x) => x.classe !== w.classe).length;
+import dias from './dados/dias.json' with { type: 'json' };
+const idsDias = new Set(dias.flatMap((d) => d.palavras));
+for (const [nome, banco] of [
+  ['baralho de hoje', palavras.filter((p) => p.baralho !== false)],
+  ['com os dez dias', palavras.filter((p) => p.baralho !== false || idsDias.has(p.id))],
+]) {
+  let fora = 0, tot = 0, dup = 0, rodadas = 0;
+  for (let i = 0; i < 15; i++) for (const w of banco) {
+    const alts = alternativas(w, banco).map(respostaDe);
+    rodadas++; if (alts.length !== new Set(alts).size) dup++;
+    const d = distratores(w, banco);
+    tot += d.length; fora += d.filter((x) => x.classe !== w.classe).length;
+  }
+  console.log(nome, '| rodadas com repetição:', dup, 'de', rodadas,
+    '| distratores de classe errada:', (100 * fora / tot).toFixed(2) + '%');
 }
-console.log('rodadas com repetição:', dup, 'de', rodadas);
-console.log('distratores de classe errada:', (100 * fora / tot).toFixed(1) + '%');
 ```
 
 Todas devem dar exatamente os valores comentados / zero. Se `dup`, `fora`, ou
@@ -176,6 +205,13 @@ console.log('confundíveis órfãos:',
 console.log('par órfão:', p.filter((w) => w.par && !ids.has(w.par)).map((w) => w.id));
 console.log('frase sem {}:',
   p.filter((w) => w.tipo === 'frase' && !w.frase.ko.includes('{}')).map((w) => w.id));
+
+const hanja = JSON.parse(fs.readFileSync('dados/hanja.json', 'utf8'));
+console.log('hanja sem verbete:',
+  [...new Set(p.flatMap((w) => Object.values(w.sino || {})).filter((h) => !hanja[h]))]);
+const dias = JSON.parse(fs.readFileSync('dados/dias.json', 'utf8'));
+console.log('id promovido que não existe:',
+  dias.flatMap((d) => d.palavras).filter((i) => !ids.has(i)));
 ```
 
 **Fluxo completo no navegador (Playwright).** O ambiente de execução já traz
@@ -204,15 +240,15 @@ suíte de regressão estável que vale reusar sempre), aí sim vale commitar em
 
 ## Git
 
-- Branch de trabalho: `claude/app-restructure-education-insights-now8q9`.
+- Branch de trabalho: `claude/level-1-lessons-exercises-y38u8e`.
 - Mensagem de commit em português, primeira linha curta e no imperativo,
   corpo explicando o *porquê* — os commits já no histórico
   (`git log --oneline`) são o padrão a seguir, não um genérico "update files".
 - PR sempre com merge commit (não squash, não rebase) — é a convenção que o
   histórico deste repo já usa desde antes desta leva de trabalho.
 - Nunca force-push sobre uma branch cujo PR já foi mergeado. Se o PR de
-  `claude/app-restructure-education-insights-now8q9` mergeou, a próxima leva
+  `claude/level-1-lessons-exercises-y38u8e` mergeou, a próxima leva
   reinicia a branch a partir da `main` atualizada
   (`git checkout main && git pull && git checkout -B
-  claude/app-restructure-education-insights-now8q9`) em vez de empilhar em
+  claude/level-1-lessons-exercises-y38u8e`) em vez de empilhar em
   cima de histórico já mergeado.
