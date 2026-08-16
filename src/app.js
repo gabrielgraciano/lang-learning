@@ -99,6 +99,8 @@ const el = {
   voltarHoje: $('#voltar-hoje'),
 
   mapa: $('#mapa'),
+  blocoDicionario: $('#bloco-dicionario'),
+  listaDicionario: $('#lista-dicionario'),
   blocoFamilias: $('#bloco-familias'),
   listaFamilias: $('#lista-familias'),
   detalhe: $('#detalhe'),
@@ -135,8 +137,19 @@ const el = {
   aulaProxima: $('#aula-proxima'),
 };
 
-/** @type {object[]} */
+/**
+ * O baralho: só as palavras que entram na fila do dia.
+ *
+ * `dados/palavras.json` é maior que isso. Ele guarda também o vocabulário que
+ * as aulas do Nível 1 apresentam mas que ainda não vira cartão — o dicionário
+ * que o app vai acumulando. Quem separa os dois é o campo `baralho: false`, e a
+ * separação existe aqui, num lugar só, para nenhuma tela precisar lembrar dela.
+ *
+ * @type {object[]}
+ */
 let palavras = [];
+/** Tudo que está no arquivo, baralho + dicionário. Alimenta o índice sino. */
+let dicionario = [];
 /** @type {object[]} As oito aulas do Nível 1. */
 let aulas = [];
 /** @type {object|null} */
@@ -784,7 +797,45 @@ function pintarMapa() {
     return secao;
   }));
 
+  pintarDicionario();
   pintarFamilias();
+}
+
+/**
+ * O vocabulário que as aulas apresentam e o app guarda sem ainda cobrar. Fica
+ * visível porque um dicionário que só existe dentro do JSON não é dicionário
+ * para quem usa — é arquivo.
+ */
+function pintarDicionario() {
+  const soltas = dicionario.filter((p) => p.baralho === false);
+  el.blocoDicionario.hidden = soltas.length === 0;
+  if (!soltas.length) return;
+
+  el.listaDicionario.replaceChildren(...soltas.map((palavra) => {
+    const item = document.createElement('li');
+    item.className = 'dicionario-item';
+
+    const ko = document.createElement('button');
+    ko.type = 'button';
+    ko.className = 'dicionario-ko';
+    ko.lang = 'ko';
+    ko.textContent = palavra.hangul;
+    ko.title = 'Ouvir';
+    ko.addEventListener('click', () => falarAgora(palavra.hangul));
+
+    const pt = document.createElement('span');
+    pt.className = 'dicionario-pt';
+    pt.textContent = palavra.pt;
+
+    item.append(ko, pt);
+    if (palavra.aula) {
+      const aula = document.createElement('span');
+      aula.className = 'dicionario-aula';
+      aula.textContent = `aula ${palavra.aula}`;
+      item.append(aula);
+    }
+    return item;
+  }));
 }
 
 function pintarFamilias() {
@@ -959,6 +1010,13 @@ function pintarExplicacao(aula) {
 
   for (const topico of aula.topicos) partes.push(blocoTopico(aula, topico));
   if (aula.dialogo) partes.push(blocoDialogo(aula.dialogo, 'Diálogo'));
+
+  // Grupos soltos — o ditado — não pertencem a um tópico: treinam a aula
+  // inteira. Ganham o atalho no fim da leitura para nenhum exercício ficar
+  // acessível só por quem pensou em abrir a outra aba.
+  for (const grupo of aula.grupos.filter((g) => g.solto)) {
+    partes.push(atalhoParaGrupo(grupo));
+  }
 
   el.painelExplicacao.replaceChildren(...partes);
 }
@@ -1304,7 +1362,9 @@ function pintarExercicios(aula) {
     voltar.addEventListener('click', () => {
       const topico = aula.topicos.find((t) => t.grupo === grupo.id);
       trocarAba('explicacao');
+      // Grupo solto não tem tópico de origem: a volta é para o começo da aula.
       if (topico) rolarAte(document.getElementById(topico.id));
+      else window.scrollTo({ top: 0 });
     });
     secao.append(voltar);
 
@@ -1347,10 +1407,9 @@ function montarExercicio(item, numero) {
 }
 
 function corpoDoExercicio(item, concluir) {
+  if (licoes.ehEscolha(item)) return exercicioEscolha(item, concluir);
+
   switch (item.tipo) {
-    case 'escolha':
-    case 'imagem':
-      return exercicioEscolha(item, concluir);
     case 'vf':
       return exercicioVerdadeiroFalso(item, concluir);
     case 'lacuna':
@@ -1378,6 +1437,28 @@ function exercicioEscolha(item, concluir) {
     figura.src = item.ilustracao;
     figura.alt = 'Ilustração da palavra a reconhecer';
     caixa.append(figura);
+  }
+
+  // Ditado por alternativa: o estímulo é o som, então o botão de tocar precisa
+  // vir antes das opções — e, sem voz no aparelho, o texto entra no lugar dele
+  // para o exercício não virar adivinhação.
+  if (item.audio) {
+    const semVoz = nova('p', 'exercicio-dica');
+    semVoz.hidden = true;
+
+    const ouvir = nova('button', 'botao-ouvir', '♪ Ouvir de novo');
+    ouvir.type = 'button';
+    ouvir.addEventListener('click', () => {
+      if (falarAgora(item.audio)) return;
+      ouvir.disabled = true;
+      ouvir.textContent = 'Sem voz coreana neste aparelho';
+      semVoz.hidden = false;
+      semVoz.lang = 'ko';
+      semVoz.textContent = `Sem áudio disponível, então aqui está o texto: ${item.audio}`;
+    });
+
+    caixa.append(ouvir, semVoz);
+    window.setTimeout(() => falarAgora(item.audio), 200);
   }
 
   const { opcoes, correta } = licoes.alternativasEmbaralhadas(item);
@@ -1824,10 +1905,13 @@ try {
     fetch(URL_DADOS), fetch(URL_HANJA), fetch(URL_LICOES),
   ]);
   if (!respostaPalavras.ok) throw new Error(`HTTP ${respostaPalavras.status}`);
-  palavras = await respostaPalavras.json();
+  dicionario = await respostaPalavras.json();
+  palavras = dicionario.filter((p) => p.baralho !== false);
   hanja = respostaHanja.ok ? await respostaHanja.json() : {};
   aulas = respostaLicoes.ok ? await respostaLicoes.json() : [];
-  indiceSino = indexar(palavras);
+  // O índice sino cobre o dicionário inteiro: 의자, 모자 e 사자 dividem o 子, e
+  // seria perder a família justamente por duas delas ainda não serem cartão.
+  indiceSino = indexar(dicionario);
 
   campo = ligarCampo(el.resposta, { aoEnviar: responderDigitado });
   el.areaTeclado.append(montarTeclado(campo, responderDigitado));

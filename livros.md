@@ -49,80 +49,99 @@ voltarem por descuido. Guarde os livros na pasta de estudo, fora daqui.
 ## As oito aulas
 
 Cada aula tem: uma capa (selo, frase-título, resumo, objetivo), uma lista de
-vocabulário, **três tópicos** de explicação, um diálogo de fecho, e **três
-grupos** de exercícios — um por tópico. São **88 exercícios** no total.
+vocabulário, **três tópicos** de explicação, um diálogo de fecho, e **quatro
+grupos** de exercícios — um por tópico, mais um de ditado que treina a aula
+inteira. São **213 exercícios** no total.
+
+| Aula | Palavras | Exercícios | Por grupo | Ditado |
+|---|---|---|---|---|
+| 1 | 8 | 25 | 8 + 6 + 6 + 5 | 5 |
+| 2 | 5 | 21 | 7 + 4 + 6 + 4 | 4 |
+| 3 | 6 | 20 | 4 + 9 + 3 + 4 | 4 |
+| 4 | 6 | 21 | 4 + 5 + 8 + 4 | 4 |
+| 5 | 7 | 33 | 4 + 15 + 8 + 6 | 6 |
+| 6 | 6 | 29 | 9 + 7 + 8 + 5 | 5 |
+| 7 | 6 | 29 | 7 + 6 + 11 + 5 | 5 |
+| 8 | 6 | 35 | 7 + 12 + 10 + 6 | 6 |
 
 ### Aula 1 · 안녕하세요. 감사합니다. — “Oi e obrigado”
-*8 palavras · 10 exercícios*
+*8 palavras · 25 exercícios*
 
 | Tópico | O que ensina | Grupo de exercícios |
 |---|---|---|
-| 안녕하세요 serve para o dia inteiro | 안녕 (paz) + 하세요 (você faz?); uma saudação só, sem faixa de horário; a resposta é a mesma frase; ponto ou interrogação, tanto faz | A saudação (4) |
-| 감사합니다 não tem “você” dentro | 감사 (gratidão) + 합니다 (eu faço); coreano dispensa sujeito e objeto óbvios; 합니다 soa [함니다] por nasalização | O agradecimento (3) |
-| 존댓말 e 반말 | os dois registros; regra de bolso: termina em -요 ou -니다 → 존댓말; errar para o formal não ofende, para o informal ofende | Formal ou informal (3) |
+| 안녕하세요 serve para o dia inteiro | 안녕 (paz) + 하세요 (você faz?); uma saudação só, sem faixa de horário; a resposta é a mesma frase; ponto ou interrogação, tanto faz | A saudação (8) |
+| 감사합니다 não tem “você” dentro | 감사 (gratidão) + 합니다 (eu faço); coreano dispensa sujeito e objeto óbvios; 합니다 soa [함니다] por nasalização | O agradecimento (6) |
+| 존댓말 e 반말 | os dois registros; regra de bolso: termina em -요 ou -니다 → 존댓말; errar para o formal não ofende, para o informal ofende | Formal ou informal (6) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (5) |
 
 ### Aula 2 · 네. 아니요. — “Sim, não, como?”
-*5 palavras · 9 exercícios*
+*5 palavras · 21 exercícios*
 
 | Tópico | O que ensina | Grupo de exercícios |
 |---|---|---|
-| 네 e 아니요 respondem à pessoa, não ao fato | concordância, não valor de verdade; a inversão aparente diante de pergunta negativa (커피 안 좋아해요? → 네 = “isso, não gosto”) | Concordar e discordar (4) |
-| 네 sozinho quase nunca é “sim” | 네 como marcador de escuta (“sei”, “ahã”) e como resposta a ser chamado | Os outros usos de 네 (2) |
-| 네, 맞아요 e 네? | 맞아요 para concordar sem ambiguidade; 네? como “como?”, pedido de repetição e surpresa | Reforçar e pedir repetição (3) |
+| 네 e 아니요 respondem à pessoa, não ao fato | concordância, não valor de verdade; a inversão aparente diante de pergunta negativa (커피 안 좋아해요? → 네 = “isso, não gosto”) | Concordar e discordar (7) |
+| 네 sozinho quase nunca é “sim” | 네 como marcador de escuta (“sei”, “ahã”) e como resposta a ser chamado | Os outros usos de 네 (4) |
+| 네, 맞아요 e 네? | 맞아요 para concordar sem ambiguidade; 네? como “como?”, pedido de repetição e surpresa | Reforçar e pedir repetição (6) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (4) |
 
 ### Aula 3 · 안녕히 계세요. 안녕히 가세요. — “Tchau — mas quem está indo?”
-*6 palavras · 9 exercícios*
+*6 palavras · 20 exercícios*
 
 | Tópico | O que ensina | Grupo de exercícios |
 |---|---|---|
-| A mesma palavra 안녕 de novo | 안녕히 계세요 = “fique em paz”, 안녕히 가세요 = “vá em paz” | As peças (2) |
-| Quem sai diz uma, quem fica diz a outra | a escolha é pela cena, não pela formalidade; os dois saindo → ambos dizem 가세요 | Quem sai, quem fica (5) |
-| Na rua ninguém pronuncia tudo | frase frequente encurta; o que sobra ao ouvido costuma ser 세요 | Ouvir de verdade (2) |
+| A mesma palavra 안녕 de novo | 안녕히 계세요 = “fique em paz”, 안녕히 가세요 = “vá em paz” | As peças (4) |
+| Quem sai diz uma, quem fica diz a outra | a escolha é pela cena, não pela formalidade; os dois saindo → ambos dizem 가세요 | Quem sai, quem fica (9) |
+| Na rua ninguém pronuncia tudo | frase frequente encurta; o que sobra ao ouvido costuma ser 세요 | Ouvir de verdade (3) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (4) |
 
 ### Aula 4 · 죄송합니다. 저기요. — “Desculpa e licença”
-*6 palavras · 8 exercícios*
+*6 palavras · 21 exercícios*
 
 | Tópico | O que ensina | Grupo de exercícios |
 |---|---|---|
-| 죄송합니다 é a mesma fôrma de 감사합니다 | 죄송 (culpa) + 합니다; mesma nasalização | A construção (2) |
-| 죄송합니다 não é “sinto muito” | só assume culpa; nunca serve para lamentar notícia ruim | O falso amigo (2) |
-| 저기요 chama; 죄송합니다 abre caminho | 저기 = “ali”; a divisão entre chamar alguém, chamar o garçom e passar no meio de gente (잠시만요 / 잠깐만요) | Chamar e passar (4) |
+| 죄송합니다 é a mesma fôrma de 감사합니다 | 죄송 (culpa) + 합니다; mesma nasalização | A construção (4) |
+| 죄송합니다 não é “sinto muito” | só assume culpa; nunca serve para lamentar notícia ruim | O falso amigo (5) |
+| 저기요 chama; 죄송합니다 abre caminho | 저기 = “ali”; a divisão entre chamar alguém, chamar o garçom e passar no meio de gente (잠시만요 / 잠깐만요) | Chamar e passar (8) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (4) |
 
 ### Aula 5 · -이에요 / -예요 — “É isso”
-*7 palavras · 12 exercícios*
+*7 palavras · 33 exercícios*
 
 | Tópico | O que ensina | Grupo de exercícios |
 |---|---|---|
-| A ordem é invertida | o “ser” vem depois do substantivo e colado; sem artigo, sem sujeito obrigatório | Vocabulário da aula (1) |
-| 이에요 ou 예요: olhe a última letra | consoante final (받침) → 이에요; vogal → 예요; a ligação 연음 (물이에요 → [무리에요]) | 이에요 ou 예요 (7) |
-| Pergunta é a mesma frase, subindo | sem inversão nem palavra extra; 뭐예요? | Afirmar e perguntar (4) |
+| A ordem é invertida | o “ser” vem depois do substantivo e colado; sem artigo, sem sujeito obrigatório | Vocabulário da aula (4) |
+| 이에요 ou 예요: olhe a última letra | consoante final (받침) → 이에요; vogal → 예요; a ligação 연음 (물이에요 → [무리에요]) | 이에요 ou 예요 (15) |
+| Pergunta é a mesma frase, subindo | sem inversão nem palavra extra; 뭐예요? | Afirmar e perguntar (8) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (6) |
 
 ### Aula 6 · 이거. 이거 뭐예요? — “Isto aqui”
-*6 palavras · 13 exercícios*
+*6 palavras · 29 exercícios*
 
 | Tópico | O que ensina | Grupo de exercícios |
 |---|---|---|
-| 이거 = 이 (este) + 것 (coisa) | a forma antiga 이것 e o encurtamento para 이거 | Vocabulário da aula (6) |
-| 이거 + substantivo + 이에요/예요 | a frase da aula 5 com o demonstrativo na frente; a terminação continua sendo decidida pelo substantivo | Isto é… (3) |
-| 이거 뭐예요? | a pergunta que transforma qualquer pessoa por perto em professor de vocabulário; respostas com 네, 맞아요 / 아니요 | Perguntar e responder (4) |
+| 이거 = 이 (este) + 것 (coisa) | a forma antiga 이것 e o encurtamento para 이거 | Vocabulário da aula (9) |
+| 이거 + substantivo + 이에요/예요 | a frase da aula 5 com o demonstrativo na frente; a terminação continua sendo decidida pelo substantivo | Isto é… (7) |
+| 이거 뭐예요? | a pergunta que transforma qualquer pessoa por perto em professor de vocabulário; respostas com 네, 맞아요 / 아니요 | Perguntar e responder (8) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (5) |
 
 ### Aula 7 · 이 / 그 / 저 + 거·것 — “Este, esse, aquele”
-*5 palavras · 12 exercícios*
+*6 palavras · 29 exercícios*
 
 | Tópico | O que ensina | Grupo de exercícios |
 |---|---|---|
-| Três posições, não duas | 이 perto de quem fala, 그 perto de quem ouve, 저 longe dos dois; 그 não é “meio longe” | As três posições (4) |
-| 그 também serve para o que não está à vista | o que foi mencionado, o que ninguém vê | Modificador e pronome (3) |
-| 이, 그, 저 não andam sozinhos | são modificadores; viram pronome com 거/것; com gente é 사람, nunca 거 | Traduzir (5) |
+| Três posições, não duas | 이 perto de quem fala, 그 perto de quem ouve, 저 longe dos dois; 그 não é “meio longe” | As três posições (7) |
+| 그 também serve para o que não está à vista | o que foi mencionado, o que ninguém vê | Modificador e pronome (6) |
+| 이, 그, 저 não andam sozinhos | são modificadores; viram pronome com 거/것; com gente é 사람, nunca 거 | Traduzir (11) |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (5) |
 
 ### Aula 8 · 아니에요 — “Não é isso”
-*6 palavras · 15 exercícios*
+*6 palavras · 35 exercícios*
 
 | Tópico | O que ensina | Grupo de exercícios |
 |---|---|---|
-| Substantivo + 아니에요 | a negação de “ser”; forma única, sem variação por 받침 | Vocabulário e forma (4) |
-| A ordem completa da frase | 이거 책 아니에요 = “isto livro não-é”; o que se nega fica no fim | Montar a negação (6) |
-| 아니에요 vem de 아니다 | a forma de dicionário; todo verbo coreano termina em -다 | Revisão das oito aulas (5) |
+| Substantivo + 아니에요 | a negação de “ser”; forma única, sem variação por 받침 | Vocabulário e forma (7) |
+| A ordem completa da frase | 이거 책 아니에요 = “isto livro não-é”; o que se nega fica no fim | Montar a negação (12) |
+| 아니에요 vem de 아니다 | a forma de dicionário; todo verbo coreano termina em -다 | Revisão das oito aulas (10) |
 
 ---
 
@@ -196,10 +215,26 @@ acertando *e* errando — ela é o ensino, não o castigo.
 | `montar` | `dica?`, `pecas[]`, `correta` | toca nas peças na ordem; tocar numa peça posta a devolve |
 | `ditado` | `audio`, `pecas[]`, `correta` | ouve e monta |
 | `associar` | `pares[{a, b}]` | toca de um lado, toca do outro; o par certo trava na hora |
+| *(a aula inteira)* | reconhecer e escrever o que se ouve | O que você ouviu (6) |
+
+**`ditado` vem em dois feitios.** Com `pecas`, você monta o que ouviu — cobra a
+grafia inteira. Com `opcoes`, você escolhe entre quatro — cobra só distinguir o
+que entrou no ouvido. O segundo existe porque separar 사전 de 사람 é uma
+habilidade diferente de saber escrever 사전, e vem antes dela. Nos dois casos o
+campo `audio` é o texto que a voz lê, e ele toca sozinho ao abrir o exercício.
+Use `ehEscolha()` de `src/licoes.js` para saber de que lado um item cai, em vez
+de olhar `tipo` — é o que a tela e o checador fazem.
 
 **No JSON a resposta certa é sempre o índice 0 / a primeira ordem**, para o
 arquivo poder ser lido e revisado à mão. Quem embaralha é a tela
 (`alternativasEmbaralhadas`, `bancoEmbaralhado`, `embaralhar`).
+
+**Grupo solto.** Os três primeiros grupos de cada aula pertencem a um tópico e
+são alcançados pelo “Praticar isto” dele. O quarto — o ditado — treina a aula
+inteira e não tem tópico dono: leva `"solto": true` e ganha um atalho próprio no
+fim da explicação. A regra que a checagem cobra não é “todo grupo tem um
+tópico”, e sim **todo grupo é alcançável a partir da leitura** — a marca `solto`
+é o que distingue um grupo deliberadamente sem dono de um esquecido.
 
 **`montar` e `ditado` aceitam peça distratora.** Escolher entre 이에요 e 예요 é
 a lição inteira da aula 5, e ela sumiria se as duas tivessem que ser usadas.
@@ -251,6 +286,49 @@ Mesmas regras de `CLAUDE.md`: 200×200, sujeito isolado, paleta de ~5 cores,
 
 ---
 
+## O vocabulário vira dicionário
+
+Toda palavra que aparece na seção de vocabulário de uma aula está também em
+**`dados/palavras.json`**, com o mesmo esquema das palavras do baralho:
+romanização, módulo, classe, `sino` quando é sino-coreana, exemplo e nota. São
+**171 entradas** hoje — 114 no baralho, 57 só no dicionário.
+
+O que separa as duas metades é um campo:
+
+```jsonc
+{ "id": "sorvete", "hangul": "아이스크림", "pt": "sorvete",
+  "aula": 7, "baralho": false }
+```
+
+`baralho: false` quer dizer “está no dicionário, ainda não é cartão”. O filtro
+mora num lugar só, no carregamento de `src/app.js`:
+
+```js
+dicionario = await respostaPalavras.json();
+palavras   = dicionario.filter((p) => p.baralho !== false);
+```
+
+Daí para baixo, tudo que fala em `palavras` — a fila do dia, os contadores, a
+grade do mapa, os distratores — vê só o baralho, sem precisar saber que a
+separação existe. Promover uma palavra a cartão é apagar uma linha do JSON.
+
+Uma exceção deliberada: **o índice sino-coreano cobre o dicionário inteiro.**
+의자 (cadeira) está no baralho, 모자 (chapéu) e 사자 (leão) não — e as três
+dividem o 子. Indexar só o baralho perderia a família justamente por duas delas
+ainda não serem cartão, e a família é a melhor coisa que o app tem a dizer sobre
+vocabulário.
+
+O que está no dicionário e fora do baralho aparece na tela do **Mapa**, numa
+lista própria com a aula de origem. Em texto, não em células: célula no mapa
+significa estado de memória, e estas palavras não têm nenhum — pintá-las todas
+de “não vista” seria afirmar algo falso.
+
+Ao acrescentar palavra ao dicionário, valem as mesmas regras do `CLAUDE.md` que
+valem para o baralho — `sino` por sílaba e nunca posicional, `confundiveis`
+recíprocos, `pronuncia` só quando a regra não é recuperável da grafia — e
+acrescente em `dados/hanja.json` qualquer ideograma novo que você citar, senão a
+família aparece sem significado.
+
 ## Progresso
 
 Fica em `localStorage`, na mesma chave do baralho (`coreano.flashcards.v2`),
@@ -281,6 +359,20 @@ O que essas atividades faziam de bom — repetir a forma até a mão saber —
 aparece de outro jeito: montando a frase peça por peça, e no baralho, que cobra
 a palavra digitada em 한글.
 
+**Tudo o mais foi portado.** Vale registrar que a primeira leva não tinha feito
+isso: ela compactava sete definições de vocabulário numa associação de quatro
+pares, trazia um item de ditado onde o caderno traz quatro, e os exercícios do
+livro-texto — que são de outro feitio, quase todos situacionais — não tinham
+entrado. Não havia um princípio por trás disso, era só volume. A leva seguinte
+levou o total de 88 para 213 e o ditado de 9 para 49, cobrindo as 26 faixas de
+ditado do caderno e acrescentando reconhecimento auditivo das palavras de cada
+seção de vocabulário.
+
+Os dois livros se somam bem porque cobram de jeitos diferentes: o caderno é
+mecânico (definir, desembaralhar, traduzir, ouvir e escrever) e o livro-texto é
+situacional (“você pisou no pé de alguém no metrô; o que diz?”). Onde os dois
+cobriam o mesmo ponto, ficou um exercício só.
+
 ---
 
 ## Verificação
@@ -299,33 +391,57 @@ const aulas = JSON.parse(fs.readFileSync('dados/licoes.json', 'utf8'));
 Confira, para cada item:
 
 1. **id único** em todo o arquivo, e `enunciado` + `explicacao` preenchidos.
-2. **Cada tópico aponta um grupo que existe**, e cada grupo é apontado por
-   **exatamente um** tópico.
+2. **Cada tópico aponta um grupo que existe**; cada grupo é apontado por
+   **exatamente um** tópico, **ou** está marcado `"solto": true`.
 3. **Toda ilustração citada existe em disco** (capa, vocabulário, exercício).
-4. `escolha`/`imagem`: `correta` dentro do intervalo, opções sem repetição,
-   `conferir()` aceita a certa e recusa a errada.
+4. `escolha`/`imagem`/`ditado` com `opcoes`: `correta` dentro do intervalo,
+   opções sem repetição, `conferir()` aceita a certa e recusa a errada. Use
+   `ehEscolha()` para decidir de que lado o item cai, não o `tipo`.
 5. `lacuna`: `correta` dentro do banco, banco sem repetição.
 6. `vf`: `correta` é booleano.
 7. `associar`: sem repetição em nenhum dos dois lados.
-8. **`montar`/`ditado`: existe uma ordem das peças que produz `correta`.** Esta
+8. `ditado`: `audio` preenchido, nos dois feitios.
+9. **`montar`/`ditado` de montar: existe uma ordem das peças que produz
+   `correta`.** Esta
    é a que pega erro de verdade — peça faltando ou sílaba trocada torna o
    exercício insolúvel, e nada na tela denuncia isso. Faça a busca por
    subconjunto ordenado (não permutação total, por causa das distratoras) e
    confirme que `completou()` dispara na montagem certa e **não** dispara num
    prefixo dela.
 
-Tudo deve dar zero problema. Hoje: **8 aulas, 88 exercícios** — escolha 28,
-montar 22, lacuna 9, ditado 9, associar 7, imagem 7, vf 6.
+Tudo deve dar zero problema. Hoje: **8 aulas, 213 exercícios** — escolha 61,
+ditado 49, montar 42, vf 20, lacuna 16, associar 15, imagem 10.
+
+### Dicionário e baralho (Node, sem navegador)
+
+1. **O baralho não muda de tamanho** quando você só acrescenta dicionário
+   (`p.filter((w) => w.baralho !== false).length`) — é o que garante que nenhuma
+   palavra nova entrou na fila do dia sem querer.
+2. **Todo hanja citado em algum `sino` tem verbete em `dados/hanja.json`**,
+   senão a família aparece sem significado.
+3. **Todo o vocabulário das aulas existe no dicionário**: para cada `ko` de
+   `licoes.json`, um `hangul` correspondente em `palavras.json`.
+4. As checagens de integridade que já estão no `CLAUDE.md` (ilustração faltando,
+   confundível órfão, par órfão) valem para o arquivo inteiro, não só para o
+   baralho.
 
 ### Fluxo no navegador (Playwright)
 
 Mesma receita de `CLAUDE.md` (Chromium em `/opt/pw-browsers`, `python3 -m
 http.server`). O roteiro específico daqui: abrir as oito aulas, conferir que o
 número de tópicos e de atalhos bate com o JSON, clicar num “Praticar isto” e
-verificar que ele troca de aba **e** revela o grupo certo, responder os 88
+verificar que ele troca de aba **e** revela o grupo certo, responder os 213
 exercícios **lendo as respostas de `dados/licoes.json`** (nunca decoradas no
 script), e conferir ao final: zero erro de console, contador de cada aba em
-`n/n`, resumo em “8 de 8 aulas”, e o progresso sobrevivendo a um `reload`.
+`n/n`, resumo em “8 de 8 aulas”, e o progresso sobrevivendo a um `reload`. Os
+atalhos são um por tópico **mais** um por grupo solto.
+
+Um segundo roteiro cobre a separação dicionário/baralho, e é o que impede a
+regressão mais fácil de cometer aqui: a ficha da tela inicial conta só o
+baralho, nenhuma palavra com `baralho: false` aparece numa sessão de estudo, a
+grade do mapa tem uma célula por palavra do baralho, a lista do dicionário tem
+uma linha por palavra fora dele, e a família 子 mostra 의자, 모자 e 사자 —
+prova de que o índice sino atravessa a fronteira de propósito.
 
 Duas armadilhas que já custaram tempo:
 
@@ -340,13 +456,15 @@ Duas armadilhas que já custaram tempo:
 ## Acrescentar a aula 9
 
 1. Escreva a entrada em `dados/licoes.json` seguindo o esquema acima: três
-   tópicos, três grupos, um grupo por tópico.
+   tópicos, três grupos com dono, e um grupo de ditado marcado `"solto": true`.
 2. Desenhe `assets/licoes/aula-9.svg` (200×200, sem texto). Olhe as oito
    existentes antes — as de gramática são diagramáticas, não figurativas.
-3. Se o vocabulário novo precisar de objeto ilustrado que ainda não existe,
+3. Acrescente o vocabulário da aula a `dados/palavras.json` com
+   `"baralho": false` e `"aula": 9`, e os hanja novos a `dados/hanja.json`.
+4. Se o vocabulário novo precisar de objeto ilustrado que ainda não existe,
    desenhe em `assets/ilustracoes/` seguindo as regras do `CLAUDE.md`.
-4. Rode as invariantes acima e o fluxo do navegador.
-5. Atualize a tabela deste documento.
+5. Rode as invariantes acima e os dois roteiros do navegador.
+6. Atualize as tabelas deste documento.
 
 Nada disso exige tocar em `src/`. Se parecer que exige, provavelmente o formato
 novo cabe num `tipo` de bloco ou de exercício que já existe — vale conferir

@@ -42,8 +42,15 @@ export function conferir(item, resposta) {
     case 'vf':
       return resposta === item.correta;
 
-    case 'montar':
+    // Ditado vem em dois feitios. Montar o que se ouviu cobra a grafia inteira;
+    // escolher entre quatro cobra só distinguir o que entrou no ouvido. O
+    // segundo existe porque discriminar 사전 de 사람 é uma habilidade separada
+    // de saber escrever 사전, e a primeira vem antes.
     case 'ditado':
+      if (ehEscolha(item)) return resposta === item.correta;
+      return normalizar(montado(resposta)) === normalizar(item.correta);
+
+    case 'montar':
       return normalizar(montado(resposta)) === normalizar(item.correta);
 
     case 'associar':
@@ -66,6 +73,11 @@ export function conferir(item, resposta) {
  */
 export const completou = (item, pecas) =>
   normalizar(montado(pecas)).length >= normalizar(item.correta).length;
+
+/** Se o item se responde tocando numa alternativa em vez de montando. */
+export const ehEscolha = (item) =>
+  item.tipo === 'escolha' || item.tipo === 'imagem' ||
+  (item.tipo === 'ditado' && Array.isArray(item.opcoes));
 
 /** Todos os exercícios de uma aula, achatados na ordem em que aparecem. */
 export const itensDaAula = (aula) => aula.grupos.flatMap((grupo) => grupo.itens);
