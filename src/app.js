@@ -21,6 +21,7 @@ import * as banco from './armazenamento.js';
 const URL_DADOS = new URL('../dados/palavras.json', import.meta.url);
 const URL_HANJA = new URL('../dados/hanja.json', import.meta.url);
 const URL_LICOES = new URL('../dados/licoes.json', import.meta.url);
+const URL_LICOES2 = new URL('../dados/licoes2.json', import.meta.url);
 const URL_DIAS = new URL('../dados/dias.json', import.meta.url);
 
 const $ = (seletor) => document.querySelector(seletor);
@@ -32,6 +33,7 @@ const el = {
     fim: $('#tela-fim'),
     mapa: $('#tela-mapa'),
     nivel1: $('#tela-nivel1'),
+    nivel2: $('#tela-nivel2'),
     historias: $('#tela-historias'),
     aula: $('#tela-aula'),
     ajustes: $('#tela-ajustes'),
@@ -124,6 +126,11 @@ const el = {
   nivel1Progresso: $('#nivel1-progresso'),
   listaAulas: $('#lista-aulas'),
 
+  atalhoNivel2: $('#atalho-nivel2'),
+  atalhoNivel2Progresso: $('#atalho-nivel2-progresso'),
+  nivel2Progresso: $('#nivel2-progresso'),
+  listaAulas2: $('#lista-aulas-2'),
+
   atalhoHistorias: $('#atalho-historias'),
   atalhoHistoriasProgresso: $('#atalho-historias-progresso'),
   historiasProgresso: $('#historias-progresso'),
@@ -163,6 +170,8 @@ let palavras = [];
 let dicionario = [];
 /** @type {object[]} As vinte e cinco aulas do Nível 1. */
 let aulas = [];
+/** @type {object[]} As aulas do Nível 2, que continua sendo escrito em levas. */
+let aulas2 = [];
 /** @type {object[]} Os vinte e cinco dias das Histórias. */
 let dias = [];
 /** @type {object|null} */
@@ -216,6 +225,7 @@ function ir(nome) {
   if (destino === 'hoje') pintarHoje();
   if (destino === 'mapa') pintarMapa();
   if (destino === 'nivel1') pintarNivel1();
+  if (destino === 'nivel2') pintarNivel2();
   if (destino === 'historias') pintarHistorias();
   if (destino === 'ajustes') pintarAjustes();
 }
@@ -872,7 +882,11 @@ function pintarDicionario() {
     pt.textContent = palavra.pt;
 
     item.append(ko, pt);
-    const origem = palavra.aula ? `aula ${palavra.aula}`
+    // O número da aula sozinho virou ambíguo quando o Nível 2 entrou: cada
+    // nível recomeça a contagem no 1. Só o segundo carrega a marca, porque o
+    // primeiro é o caso de longe mais comum.
+    const origem = palavra.aula
+      ? (palavra.nivel === 2 ? `N2 · aula ${palavra.aula}` : `aula ${palavra.aula}`)
       : palavra.dia ? `dia ${palavra.dia}` : null;
     if (origem) {
       const marca = document.createElement('span');
@@ -979,14 +993,22 @@ function nova(tag, classe, texto) {
 
 const feitos = () => estado.licoes ?? {};
 
-function pintarNivel1() {
-  const geral = licoes.progressoGeral(aulas, feitos());
+/**
+ * A lista de aulas de um nível.
+ *
+ * O Nível 1 e o Nível 2 são a mesma tela com outro arquivo por trás: mesmo
+ * cartão, mesma barra de progresso, mesmo percurso de leitura. O que muda é a
+ * coleção e onde o resultado é pintado, então é só isso que a função recebe —
+ * o terceiro nível não deve custar uma terceira cópia disto.
+ */
+function pintarNivel(colecao, { progresso, lista, atalho }) {
+  const geral = licoes.progressoGeral(colecao, feitos());
 
-  el.nivel1Progresso.textContent = geral.total
+  progresso.textContent = geral.total
     ? `${geral.aulasCompletas} de ${geral.aulas} aulas concluídas · ${geral.acertos} de ${geral.total} exercícios`
     : '';
 
-  el.listaAulas.replaceChildren(...aulas.map((aula) => {
+  lista.replaceChildren(...colecao.map((aula) => {
     const p = licoes.progressoDaAula(aula, feitos());
 
     const cartao = nova('button', 'cartao-aula');
@@ -1008,18 +1030,29 @@ function pintarNivel1() {
     corpo.append(numero, hangul, titulo, barraProgresso(p));
 
     cartao.append(selo, corpo);
-    cartao.addEventListener('click', () => abrirAula(aula));
+    cartao.addEventListener('click', () => abrirAula(aula, colecao));
 
     const linha = nova('li');
     linha.append(cartao);
     return linha;
   }));
 
-  const geralTexto = geral.total
+  atalho.textContent = geral.total
     ? `${geral.aulasCompletas}/${geral.aulas} aulas · ${geral.acertos}/${geral.total} exercícios`
-    : 'oito aulas';
-  el.atalhoNivel1Progresso.textContent = geralTexto;
+    : `${colecao.length} aulas`;
 }
+
+const pintarNivel1 = () => pintarNivel(aulas, {
+  progresso: el.nivel1Progresso,
+  lista: el.listaAulas,
+  atalho: el.atalhoNivel1Progresso,
+});
+
+const pintarNivel2 = () => pintarNivel(aulas2, {
+  progresso: el.nivel2Progresso,
+  lista: el.listaAulas2,
+  atalho: el.atalhoNivel2Progresso,
+});
 
 /**
  * A lista dos vinte e cinco dias.
@@ -1101,7 +1134,7 @@ function abrirAula(aula, colecao = aulas) {
   const eDia = colecao === dias;
   const rotulo = eDia ? 'Dia' : 'Aula';
 
-  el.aulaVoltar.dataset.ir = eDia ? 'historias' : 'nivel1';
+  el.aulaVoltar.dataset.ir = eDia ? 'historias' : colecao === aulas2 ? 'nivel2' : 'nivel1';
   el.aulaVoltar.setAttribute('aria-label',
     eDia ? 'Voltar para os dias' : 'Voltar para as aulas');
   el.aulaAnterior.textContent = `← ${rotulo} anterior`;
@@ -2106,14 +2139,16 @@ if (window.speechSynthesis) {
 // -------------------------------------------------------------- carregamento
 
 try {
-  const [respostaPalavras, respostaHanja, respostaLicoes, respostaDias] = await Promise.all([
-    fetch(URL_DADOS), fetch(URL_HANJA), fetch(URL_LICOES), fetch(URL_DIAS),
-  ]);
+  const [respostaPalavras, respostaHanja, respostaLicoes, respostaLicoes2, respostaDias] =
+    await Promise.all([
+      fetch(URL_DADOS), fetch(URL_HANJA), fetch(URL_LICOES), fetch(URL_LICOES2), fetch(URL_DIAS),
+    ]);
   if (!respostaPalavras.ok) throw new Error(`HTTP ${respostaPalavras.status}`);
   dicionario = await respostaPalavras.json();
   recalcularBaralho();
   hanja = respostaHanja.ok ? await respostaHanja.json() : {};
   aulas = respostaLicoes.ok ? await respostaLicoes.json() : [];
+  aulas2 = respostaLicoes2.ok ? await respostaLicoes2.json() : [];
   dias = respostaDias.ok ? await respostaDias.json() : [];
   // O índice sino cobre o dicionário inteiro: 의자, 모자 e 사자 dividem o 子, e
   // seria perder a família justamente por duas delas ainda não serem cartão.
@@ -2123,12 +2158,14 @@ try {
   el.areaTeclado.append(montarTeclado(campo, responderDigitado));
 
   // Sem aulas o baralho continua inteiro, então o atalho some em vez de levar
-  // a uma tela vazia. Vale o mesmo para os dias.
+  // a uma tela vazia. Vale o mesmo para o Nível 2 e para os dias.
   el.atalhoNivel1.hidden = aulas.length === 0;
+  el.atalhoNivel2.hidden = aulas2.length === 0;
   el.atalhoHistorias.hidden = dias.length === 0;
 
   pintarHoje();
   pintarNivel1();
+  pintarNivel2();
   pintarHistorias();
 } catch (causa) {
   el.comecar.disabled = true;

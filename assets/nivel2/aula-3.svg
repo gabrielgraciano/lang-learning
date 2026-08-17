@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Dois quadros iguais ligados por uma barra e, abaixo, dois quadros diferentes ligados por uma seta">
+  <circle cx="100" cy="100" r="94" fill="#E1E7E4"/>
+  <rect x="26" y="48" width="54" height="36" rx="5" fill="#3B6B5C"/>
+  <rect x="120" y="48" width="54" height="36" rx="5" fill="#3B6B5C"/>
+  <path d="M86 66h28" stroke="#7FA396" stroke-width="8" stroke-linecap="round"/>
+  <rect x="26" y="118" width="54" height="36" rx="5" fill="#B5762F"/>
+  <rect x="120" y="118" width="54" height="36" rx="5" fill="#8C4A3C"/>
+  <path d="M86 136h20" stroke="#B5762F" stroke-width="8" stroke-linecap="round"/>
+  <path d="M104 125l16 11-16 11z" fill="#B5762F"/>
+</svg>

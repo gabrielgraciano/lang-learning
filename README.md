@@ -48,6 +48,15 @@ exercícios — sendo 138 de ouvir e responder. Dentro de cada trecho da explica
 daquele trecho, para praticar sem perder o lugar da leitura. O que cada aula
 cobre está em [`livros.md`](livros.md).
 
+**E o Nível 1 não é o fim.** O Nível 2 começou: as cinco primeiras aulas do
+livro seguinte trazem o futuro, a partícula que marca o objeto, as duas
+primeiras conjunções e os dias da semana — 117 exercícios, no mesmo formato e
+com a mesma correção. A aula dos dias da semana é a que mais rende fora dela
+mesma: as sete sílabas entram no índice sino-coreano e a família do 日 salta de
+três palavras para dez, de modo que 생일 passa a se ler como “dia do
+nascimento” sem que ninguém precise dizer. O que cada aula cobre está em
+[`nivel2.md`](nivel2.md).
+
 **Palavra solta se decora e se esquece.** As Histórias trazem vinte e cinco dias
 de vinte palavras cada, e cada dia amarra as suas em duas cenas curtas — alguém
 que trabalha demais e só aparece no fim de semana, a cachorra que morreu, a
@@ -104,7 +113,7 @@ funciona sem configuração extra.
 ## Estrutura
 
 ```
-index.html                 # hoje, estudo, fim, mapa, nível 1, histórias, aula, ajustes
+index.html                 # hoje, estudo, fim, mapa, nível 1, nível 2, histórias, aula, ajustes
 estilos/main.css           # tokens, células, temas claro e escuro
 src/app.js                 # orquestra as telas, o laço de estudo, as aulas e os dias
 src/hangul.js              # decompõe e compõe sílabas 한글
@@ -119,12 +128,15 @@ src/armazenamento.js       # progresso, registro, exportar/importar
 dados/palavras.json        # o dicionário: baralho + vocabulário das aulas e dos dias
 dados/hanja.json           # morfema → significado
 dados/licoes.json          # fonte da verdade das aulas do Nível 1
+dados/licoes2.json         # fonte da verdade das aulas do Nível 2
 dados/dias.json            # fonte da verdade dos dias das Histórias
 assets/ilustracoes/*.svg   # uma ilustração por palavra
-assets/licoes/*.svg        # uma ilustração por aula
+assets/licoes/*.svg        # uma ilustração por aula do Nível 1
+assets/nivel2/*.svg        # uma ilustração por aula do Nível 2
 assets/historias/*.svg     # uma ilustração por dia
 docs/fundamentacao.md      # por que o app é assim
 livros.md                  # o que cada aula do Nível 1 cobre
+nivel2.md                  # o que cada aula do Nível 2 cobre
 historias.md               # o que cada dia das Histórias cobre
 protocolo.md               # como portar o próximo livro para dentro do app
 ```
@@ -183,8 +195,9 @@ aparece legível.
 | `imageabilidade` | 1 a 5, curadoria manual — o critério de entrada no baralho |
 | `pronuncia` | só quando a regra não dá conta (물고기 → 물꼬기); o normal é deixar em branco e o motor derivar |
 | `sino` | mapa sílaba → hanja (`{"학":"學","교":"校"}`); alimenta as famílias. Por sílaba e não por posição, porque em 빨간색 só o 색 é sino-coreano |
-| `baralho` | `false` guarda a palavra no dicionário sem pôr na fila do dia. É como o vocabulário do Nível 1 e das Histórias entra antes de virar cartão; ausente significa `true`. Hoje: 114 no baralho, 534 só no dicionário |
-| `aula` | de qual aula do Nível 1 a palavra veio, quando veio de alguma |
+| `baralho` | `false` guarda a palavra no dicionário sem pôr na fila do dia. É como o vocabulário das aulas e das Histórias entra antes de virar cartão; ausente significa `true`. Hoje: 114 no baralho, 555 só no dicionário |
+| `aula` | de qual aula a palavra veio, quando veio de alguma |
+| `nivel` | `2` quando a aula de origem é do Nível 2, porque a numeração recomeça a cada nível. Ausente significa Nível 1 |
 | `dia` | de qual dia das Histórias a palavra veio. O botão do dia promove as vinte dele para a fila, e a promoção mora no `localStorage`, não aqui |
 | `classe` | `substantivo`, `verbo`, `adjetivo`, `numeral` ou `funcional` — impede que a múltipla escolha ofereça um substantivo onde só cabe um verbo |
 | `campo` | subgrupo dentro do módulo; é o que mantém os distratores dentro do mesmo sistema (nativo vs. sino nos números) |

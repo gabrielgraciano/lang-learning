@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Dois quadros presos por um encaixe que sai do primeiro, e abaixo dois círculos que se sobrepõem">
+  <circle cx="100" cy="100" r="94" fill="#E4E2EA"/>
+  <rect x="24" y="50" width="54" height="52" rx="6" fill="#4C4A7A"/>
+  <path d="M78 66h24v20H78z" fill="#C08A3E"/>
+  <rect x="102" y="50" width="54" height="52" rx="6" fill="#7B79A6"/>
+  <circle cx="84" cy="146" r="26" fill="#4C4A7A" opacity=".85"/>
+  <circle cx="116" cy="146" r="26" fill="#B5762F" opacity=".75"/>
+</svg>
