@@ -1,13 +1,14 @@
 # Protocolo — como portar um livro para dentro do app
 
 Passo a passo do que foi feito para o **Nível 1** (livro-texto + caderno de
-exercícios, 25 aulas, 598 exercícios) e para as **Histórias** (livro de
-vocabulário, 25 dias, 1245 exercícios). Use este documento para portar o
-próximo livro.
+exercícios, 25 aulas, 598 exercícios), para as **Histórias** (livro de
+vocabulário, 25 dias, 1245 exercícios) e para o **Nível 2** (o par seguinte dos
+mesmos dois livros, 5 aulas até agora, 117 exercícios). Use este documento para
+portar o próximo livro.
 
-O que cada seção pronta cobre está em [`livros.md`](livros.md) e
-[`historias.md`](historias.md). O esquema dos dados está detalhado lá; aqui é
-só o processo.
+O que cada seção pronta cobre está em [`livros.md`](livros.md),
+[`nivel2.md`](nivel2.md) e [`historias.md`](historias.md). O esquema dos dados
+está detalhado lá; aqui é só o processo.
 
 ---
 
@@ -96,9 +97,15 @@ O que o Nível 1 e as Histórias tiveram que acrescentar em código, cada um:
 - **Histórias** (segunda seção): a tela de listagem, um tipo de bloco novo
   (`combinacoes`), o botão de promoção, e `abrirAula()` passou a receber a
   coleção a que a unidade pertence. Mais nada.
+- **Nível 2** (terceira seção): a tela de listagem, uma linha em `ir()`, mais um
+  `fetch` no carregamento, e `abrirAula()` sabendo voltar para uma terceira
+  lista. Nenhum bloco novo, nenhum exercício novo, nada em `src/licoes.js`. E a
+  listagem, que era `pintarNivel1()`, virou `pintarNivel()` recebendo a coleção
+  e onde pintar — um Nível 3 já não custa cópia nenhuma.
 
-Um terceiro livro deve ficar mais perto do segundo caso. Se estiver ficando
-perto do primeiro, releia o parágrafo acima.
+A previsão de que um terceiro livro ficaria perto do segundo caso se confirmou,
+e por baixo. Se a sua leva estiver ficando perto do primeiro, releia o parágrafo
+acima.
 
 ---
 
@@ -131,8 +138,8 @@ por um tópico **ou** tem `"solto": true`. Grupo órfão é exercício que ningu
 alcança lendo.
 
 **Os ids de exercício são globais.** `estado.licoes` é um mapa só para o app
-inteiro. Use um prefixo por seção (`a5-e3` no Nível 1, `d12-e7` nas Histórias) e
-confira colisão contra os arquivos que já existem.
+inteiro. Use um prefixo por seção (`a5-e3` no Nível 1, `d12-e7` nas Histórias,
+`n2a1-e3` no Nível 2) e confira colisão contra os arquivos que já existem.
 
 ---
 
@@ -231,7 +238,8 @@ gabarito tem que bater com ele.
 Toda palavra apresentada entra em `dados/palavras.json` com o esquema completo e
 **`"baralho": false`** — fica no dicionário, conta para o mapa e para as famílias
 de morfemas, e não ocupa a fila do dia. Marque a origem com `aula: N` ou
-`dia: N`.
+`dia: N`, e acrescente `nivel: N` quando o número da aula sozinho for ambíguo —
+cada nível recomeça a contagem no 1, e o dicionário do mapa mostra essa marca.
 
 Antes de escrever a entrada:
 
@@ -358,12 +366,26 @@ O script tem que **responder todos os exercícios lendo as respostas do próprio
 JSON** — nunca decoradas no script — e conferir: zero erro de console, o
 contador da aba fechando em `N/N`, e o progresso sobrevivendo ao recarregamento.
 
-Dois detalhes que já quebraram o harness:
+Quatro detalhes que já quebraram o harness:
 
 - `hasText` do Playwright é **substring**: `예요` casa com o botão `이에요`.
   Ancore com `new RegExp('^' + escapado + '$')`.
-- Seletor de classe genérica (`.cartao-aula`) pega as duas seções, incluindo a
-  escondida. Escope pelo id da lista (`#lista-dias .cartao-aula`).
+- Seletor de classe genérica (`.cartao-aula`) pega as três seções, incluindo as
+  escondidas. Escope pelo id da lista (`#lista-dias .cartao-aula`).
+- **Botão que existe em toda tela** — `[data-ir="hoje"]` é o de voltar, e há um
+  em cada seção, quase todas escondidas. `.first()` pega uma invisível e o
+  clique trava esperando visibilidade. Escope pela tela
+  (`#tela-nivel2 [data-ir="hoje"]`).
+- **Morfema que aparece numa palavra só não forma família.** `familias()` exige
+  mais de uma, então esperar na tela a família de um hanja que você acabou de
+  introduzir sozinho é esperar errado.
+
+E um do checador, não do harness: **a busca pela ordem das peças de um `montar`
+não pode chamar `normalizar()` peça a peça.** Ela apara a pontuação final, e uma
+peça que termina em ponto no meio da montagem (`["아니요.", "집에", "안",
+"가요."]`) perde o ponto e nunca casa com o alvo — o checador acusa insolúvel um
+exercício perfeito. A poda compara só sem espaço; `normalizar()` é para a
+aceitação, que é o que `conferir()` faz.
 
 O harness **não é commitado**: cada leva precisa de um cenário um pouco
 diferente, e escrever sob medida no scratchpad é mais rápido que manter um

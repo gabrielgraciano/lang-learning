@@ -13548,5 +13548,516 @@
       "pt": "a resposta está certa"
     },
     "baralho": false
+  },
+  {
+    "id": "calca_jeans",
+    "hangul": "청바지",
+    "romanizacao": "cheongbaji",
+    "pt": "calça jeans",
+    "modulo": "roupa",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 1,
+    "nivel": 2,
+    "sino": {
+      "청": "靑"
+    },
+    "confundiveis": [
+      "calca",
+      "camiseta"
+    ],
+    "exemplo": {
+      "ko": "청바지 입을 거예요.",
+      "pt": "Vou vestir calça jeans."
+    },
+    "nota": "靑 é o azul-esverdeado dos ideogramas e 바지 é palavra nativa — a mesma palavra tem uma metade de cada origem.",
+    "baralho": false
+  },
+  {
+    "id": "e_conjuncao",
+    "hangul": "그리고",
+    "romanizacao": "geurigo",
+    "pt": "e, e então",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 3,
+    "nivel": 2,
+    "confundiveis": [
+      "por_isso_conj"
+    ],
+    "exemplo": {
+      "ko": "서울 그리고 부산",
+      "pt": "Seul e Busan"
+    },
+    "nota": "Liga frases muito mais do que substantivos. Para juntar dois substantivos, o coreano prefere -하고 e -(이)랑.",
+    "baralho": false
+  },
+  {
+    "id": "por_isso_conj",
+    "hangul": "그래서",
+    "romanizacao": "geuraeseo",
+    "pt": "por isso, então",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 3,
+    "nivel": 2,
+    "confundiveis": [
+      "e_conjuncao"
+    ],
+    "exemplo": {
+      "ko": "저는 학생이에요. 그래서 돈이 없어요.",
+      "pt": "Sou estudante. Por isso não tenho dinheiro."
+    },
+    "nota": "A causa vem sempre antes. Não existe a ordem inversa: para começar pelo efeito, o coreano precisa de outra construção.",
+    "baralho": false
+  },
+  {
+    "id": "bastante",
+    "hangul": "많이",
+    "romanizacao": "mani",
+    "pt": "muito (em quantidade)",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "campo": "funcao",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 3,
+    "nivel": 2,
+    "confundiveis": [
+      "muito",
+      "com_frequencia"
+    ],
+    "exemplo": {
+      "ko": "김치를 많이 먹어요.",
+      "pt": "Como muito kimchi."
+    },
+    "nota": "Vem de 많다 (“ser muito”) e mede quantidade ou frequência. 아주 e 너무 medem grau e acompanham adjetivo: 아주 맛있어요, nunca “많이 맛있어요”.",
+    "baralho": false
+  },
+  {
+    "id": "relampago",
+    "hangul": "번개",
+    "romanizacao": "beongae",
+    "pt": "relâmpago",
+    "modulo": "natureza",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 4,
+    "nivel": 2,
+    "confundiveis": [
+      "trovao",
+      "chuva"
+    ],
+    "exemplo": {
+      "ko": "번개하고 천둥",
+      "pt": "relâmpago e trovão"
+    },
+    "nota": "Palavra nativa. Anda em par com 천둥 — e o par é o exemplo canônico de -하고 entre coisas.",
+    "baralho": false
+  },
+  {
+    "id": "trovao",
+    "hangul": "천둥",
+    "romanizacao": "cheondung",
+    "pt": "trovão",
+    "modulo": "natureza",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "aula": 4,
+    "nivel": 2,
+    "confundiveis": [
+      "relampago",
+      "chuva"
+    ],
+    "exemplo": {
+      "ko": "천둥이 무서워요.",
+      "pt": "Trovão dá medo."
+    },
+    "nota": "O que se vê é 번개; o que se ouve é 천둥. O coreano separa os dois como o português separa.",
+    "baralho": false
+  },
+  {
+    "id": "escada_de_mao",
+    "hangul": "사다리",
+    "romanizacao": "sadari",
+    "pt": "escada (de mão)",
+    "modulo": "objetos",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 4,
+    "nivel": 2,
+    "confundiveis": [
+      "cadeira",
+      "escrivaninha"
+    ],
+    "exemplo": {
+      "ko": "사다리하고 의자",
+      "pt": "uma escada e uma cadeira"
+    },
+    "nota": "É a escada portátil. A escada de prédio, com degraus fixos, é 계단.",
+    "baralho": false
+  },
+  {
+    "id": "presidente",
+    "hangul": "대통령",
+    "romanizacao": "daetongnyeong",
+    "pt": "presidente (do país)",
+    "modulo": "pessoas",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 4,
+    "nivel": 2,
+    "sino": {
+      "대": "大",
+      "통": "統",
+      "령": "領"
+    },
+    "confundiveis": [
+      "professor",
+      "pessoa"
+    ],
+    "exemplo": {
+      "ko": "대통령을 봤어요.",
+      "pt": "Eu vi o presidente."
+    },
+    "nota": "大統領 — “o que comanda o conjunto grande”. O ㄹ de 령 vira ㄴ depois do ㅇ de 통: soa [대통녕].",
+    "baralho": false
+  },
+  {
+    "id": "lamen",
+    "hangul": "라면",
+    "romanizacao": "ramyeon",
+    "pt": "lámen (macarrão instantâneo)",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 4,
+    "nivel": 2,
+    "confundiveis": [
+      "gimbap",
+      "samgyeopsal"
+    ],
+    "exemplo": {
+      "ko": "김밥하고 라면 좋아해요.",
+      "pt": "Gosto de gimbap e de lámen."
+    },
+    "nota": "김밥하고 라면 é a dupla de lanchonete mais pedida da Coreia — por isso ela aparece em todo exercício de “e”.",
+    "baralho": false
+  },
+  {
+    "id": "caderno_notas",
+    "hangul": "노트",
+    "romanizacao": "noteu",
+    "pt": "caderno de anotações",
+    "modulo": "escola",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 4,
+    "nivel": 2,
+    "confundiveis": [
+      "caderno",
+      "caneta_pen"
+    ],
+    "exemplo": {
+      "ko": "노트랑 펜 샀어요.",
+      "pt": "Comprei um caderno e uma caneta."
+    },
+    "nota": "노트 e 공책 nomeiam a mesma coisa: um veio do inglês “note”, o outro do sino-coreano 空冊, “livro vazio”.",
+    "baralho": false
+  },
+  {
+    "id": "domingo",
+    "hangul": "일요일",
+    "romanizacao": "iryoil",
+    "pt": "domingo",
+    "modulo": "tempo",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 5,
+    "nivel": 2,
+    "sino": {
+      "일": "日",
+      "요": "曜"
+    },
+    "confundiveis": [
+      "segunda",
+      "sabado"
+    ],
+    "exemplo": {
+      "ko": "일요일에 집에 있을 거예요.",
+      "pt": "No domingo vou ficar em casa."
+    },
+    "nota": "日曜日 — o dia do sol. Na semana coreana ele é o primeiro, não o último.",
+    "baralho": false
+  },
+  {
+    "id": "segunda",
+    "hangul": "월요일",
+    "romanizacao": "woryoil",
+    "pt": "segunda-feira",
+    "modulo": "tempo",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 5,
+    "nivel": 2,
+    "sino": {
+      "월": "月",
+      "요": "曜",
+      "일": "日"
+    },
+    "confundiveis": [
+      "domingo",
+      "terca"
+    ],
+    "exemplo": {
+      "ko": "월요일에 영화를 봤어요.",
+      "pt": "Na segunda eu vi um filme."
+    },
+    "nota": "月曜日 — o dia da lua.",
+    "baralho": false
+  },
+  {
+    "id": "terca",
+    "hangul": "화요일",
+    "romanizacao": "hwayoil",
+    "pt": "terça-feira",
+    "modulo": "tempo",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 5,
+    "nivel": 2,
+    "sino": {
+      "화": "火",
+      "요": "曜",
+      "일": "日"
+    },
+    "confundiveis": [
+      "segunda",
+      "quarta"
+    ],
+    "exemplo": {
+      "ko": "오늘 화요일이에요.",
+      "pt": "Hoje é terça."
+    },
+    "nota": "火曜日 — o dia do fogo. O mesmo 화 (火) está em 화성, Marte.",
+    "baralho": false
+  },
+  {
+    "id": "quarta",
+    "hangul": "수요일",
+    "romanizacao": "suyoil",
+    "pt": "quarta-feira",
+    "modulo": "tempo",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 5,
+    "nivel": 2,
+    "sino": {
+      "수": "水",
+      "요": "曜",
+      "일": "日"
+    },
+    "confundiveis": [
+      "terca",
+      "quinta"
+    ],
+    "exemplo": {
+      "ko": "수요일 아니에요?",
+      "pt": "Não é quarta?"
+    },
+    "nota": "水曜日 — o dia da água. O mesmo 수 (水) está em 수성, Mercúrio.",
+    "baralho": false
+  },
+  {
+    "id": "quinta",
+    "hangul": "목요일",
+    "romanizacao": "mogyoil",
+    "pt": "quinta-feira",
+    "modulo": "tempo",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 5,
+    "nivel": 2,
+    "sino": {
+      "목": "木",
+      "요": "曜",
+      "일": "日"
+    },
+    "confundiveis": [
+      "quarta",
+      "sexta"
+    ],
+    "exemplo": {
+      "ko": "목요일에 만날 거예요.",
+      "pt": "Vamos nos encontrar na quinta."
+    },
+    "nota": "木曜日 — o dia da árvore. O ㄱ atravessa para a sílaba seguinte: soa [모교일].",
+    "baralho": false
+  },
+  {
+    "id": "sexta",
+    "hangul": "금요일",
+    "romanizacao": "geumyoil",
+    "pt": "sexta-feira",
+    "modulo": "tempo",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 5,
+    "nivel": 2,
+    "sino": {
+      "금": "金",
+      "요": "曜",
+      "일": "日"
+    },
+    "confundiveis": [
+      "quinta",
+      "sabado"
+    ],
+    "exemplo": {
+      "ko": "오늘은 금요일이에요.",
+      "pt": "Hoje é sexta."
+    },
+    "nota": "金曜日 — o dia do metal. Soa [그묘일], e o mesmo 금 (金) está em 금성, Vênus.",
+    "baralho": false
+  },
+  {
+    "id": "sabado",
+    "hangul": "토요일",
+    "romanizacao": "toyoil",
+    "pt": "sábado",
+    "modulo": "tempo",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 5,
+    "nivel": 2,
+    "sino": {
+      "토": "土",
+      "요": "曜",
+      "일": "日"
+    },
+    "confundiveis": [
+      "sexta",
+      "domingo"
+    ],
+    "exemplo": {
+      "ko": "토요일에 소풍을 갈 거예요.",
+      "pt": "No sábado vou fazer um piquenique."
+    },
+    "nota": "土曜日 — o dia da terra. O mesmo 토 (土) está em 토성, Saturno.",
+    "baralho": false
+  },
+  {
+    "id": "que_qual",
+    "hangul": "무슨",
+    "romanizacao": "museun",
+    "pt": "que, qual",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 5,
+    "nivel": 2,
+    "confundiveis": [
+      "o_que",
+      "o_que_pleno"
+    ],
+    "exemplo": {
+      "ko": "오늘 무슨 요일이에요?",
+      "pt": "Que dia é hoje?"
+    },
+    "nota": "무슨 acompanha um substantivo e vem antes dele. 뭐 ocupa o lugar do substantivo; 무슨, não.",
+    "baralho": false
+  },
+  {
+    "id": "piquenique",
+    "hangul": "소풍",
+    "romanizacao": "sopung",
+    "pt": "piquenique, passeio",
+    "modulo": "lazer",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "aula": 5,
+    "nivel": 2,
+    "confundiveis": [
+      "passeio",
+      "viagem"
+    ],
+    "exemplo": {
+      "ko": "토요일에 소풍을 갈 거예요.",
+      "pt": "No sábado vou fazer um piquenique."
+    },
+    "nota": "É o passeio de um dia, quase sempre da escola ou da família. Viagem com pernoite é 여행.",
+    "baralho": false
+  },
+  {
+    "id": "idioma",
+    "hangul": "언어",
+    "romanizacao": "eoneo",
+    "pt": "língua, idioma",
+    "modulo": "escola",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 5,
+    "nivel": 2,
+    "sino": {
+      "언": "言",
+      "어": "語"
+    },
+    "confundiveis": [
+      "lingua_coreana",
+      "palavra_vocabulo"
+    ],
+    "exemplo": {
+      "ko": "저는 언어를 많이 좋아해요.",
+      "pt": "Eu gosto muito de idiomas."
+    },
+    "nota": "言語 — o mesmo 어 (語) de 한국어 e 영어. É o morfema que transforma o nome de um país no nome de uma língua.",
+    "baralho": false
+  },
+  {
+    "id": "marte",
+    "hangul": "화성",
+    "romanizacao": "hwaseong",
+    "pt": "Marte",
+    "modulo": "natureza",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "aula": 5,
+    "nivel": 2,
+    "sino": {
+      "화": "火",
+      "성": "星"
+    },
+    "confundiveis": [
+      "estrela",
+      "terra_planeta"
+    ],
+    "exemplo": {
+      "ko": "화성하고 목성",
+      "pt": "Marte e Júpiter"
+    },
+    "nota": "火星 — “o astro de fogo”. O mesmo 성 (星) está em 목성, 금성 e 토성, e o mesmo 화 (火) está em 화요일.",
+    "baralho": false
   }
 ]

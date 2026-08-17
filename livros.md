@@ -501,8 +501,8 @@ Mesmas regras de `CLAUDE.md`: 200×200, sujeito isolado, paleta de ~5 cores,
 Toda palavra que aparece na seção de vocabulário de uma aula está também em
 **`dados/palavras.json`**, com o mesmo esquema das palavras do baralho:
 romanização, módulo, classe, `sino` quando é sino-coreana, exemplo e nota. Com
-as palavras que as **Histórias** trouxeram depois, são **416 entradas** hoje —
-114 no baralho e 302 só no dicionário.
+as palavras que as **Histórias** e o **Nível 2** trouxeram depois, são **669
+entradas** hoje — 114 no baralho e 555 só no dicionário.
 
 O que separa as duas metades é um campo:
 
@@ -674,13 +674,16 @@ Duas armadilhas que já custaram tempo:
 
 ## O Nível 1 está completo
 
-As vinte e cinco lições dos dois livros estão portadas. O que vem depois — futuro,
-obrigação, permissão, conexão entre orações — é outro nível, e vai pedir uma
-seção nova, não mais aulas nesta.
+As vinte e cinco lições dos dois livros estão portadas. O que vem depois —
+futuro, obrigação, permissão, conexão entre orações — é outro nível, e pediu
+uma seção nova em vez de mais aulas nesta.
 
-Se for esse o caso, quase tudo aqui se reaproveita: o esquema de `licoes.json`, os
-sete tipos de exercício, o grupo solto de ditado, a separação dicionário/baralho e
-os roteiros de verificação. O que muda é o número no `id` e o conteúdo.
+Foi o que aconteceu: o **Nível 2** existe, em `dados/licoes2.json`, e o mapa
+dele está em [`nivel2.md`](nivel2.md). A previsão se confirmou — quase tudo
+daqui se reaproveitou sem uma linha nova: o esquema de `licoes.json`, os nove
+tipos de bloco, os sete tipos de exercício, o grupo solto de ditado, a separação
+dicionário/baralho e os roteiros de verificação. O que mudou foi o prefixo do
+`id`, o conteúdo, e uma tela de listagem.
 
 ## Acrescentar uma aula
 

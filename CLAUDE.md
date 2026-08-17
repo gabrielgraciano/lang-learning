@@ -18,10 +18,13 @@ numeradas 1–14). Uma mudança que pareça óbvia — "por que a romanização 
 desligada?", "por que o card de frase não é uma tela separada?" — quase sempre
 tem uma decisão documentada por trás. Leia antes de reverter.
 
-Além do baralho há duas seções de conteúdo, cada uma com o seu próprio mapa:
-**Nível 1** (gramática, 25 aulas) em `livros.md`, e **Histórias** (vocabulário,
-25 dias de 20 palavras) em `historias.md`. As duas rodam na mesma tela e são
-corrigidas pelo mesmo `src/licoes.js`; o que muda é o arquivo de dados.
+Além do baralho há três seções de conteúdo, cada uma com o seu próprio mapa:
+**Nível 1** (gramática, 25 aulas) em `livros.md`, **Nível 2** (gramática, 5
+aulas até agora, em andamento) em `nivel2.md`, e **Histórias** (vocabulário, 25
+dias de 20 palavras) em `historias.md`. As três rodam na mesma tela e são
+corrigidas pelo mesmo `src/licoes.js`; o que muda é o arquivo de dados. Os dois
+níveis dividem também a listagem — `pintarNivel()` em `src/app.js` recebe a
+coleção e onde pintar, então um Nível 3 não deve custar uma terceira cópia.
 
 Se a tarefa for **portar mais um livro**, leia `protocolo.md` antes de começar:
 é o passo a passo do que foi feito nas duas seções, com as armadilhas que já
@@ -130,7 +133,10 @@ duplicado aqui. Ao adicionar palavra:
 3. **`pronuncia` só quando a regra morfológica não é recuperável da grafia**
    (ex.: `물고기` → `물꼬기`). Antes de preencher esse campo, rode a palavra
    por `pronunciar()` (`src/pronuncia.js`) e confira se ela já acerta sozinha —
-   hoje nenhuma das 114 palavras do baralho precisa do override.
+   hoje nenhuma das 114 palavras do baralho precisa do override. O motor tem
+   três lacunas conhecidas, todas por não saber onde termina cada palavra: as
+   duas primeiras estão em `livros.md`, e a terceira (a tensificação depois do
+   `-(으)ㄹ` do futuro: 갈 거예요 é [갈 꺼예요]) está em `nivel2.md`.
 4. **`confundiveis` precisa ser recíproco em espírito**, mesmo que não em
    código: se A lista B como confundível, normalmente B deveria listar A. Isso
    não é validado automaticamente — confira à mão. E precisa ser da **mesma
@@ -244,7 +250,7 @@ suíte de regressão estável que vale reusar sempre), aí sim vale commitar em
 
 ## Git
 
-- Branch de trabalho: `claude/level-1-lessons-exercises-y38u8e`.
+- Branch de trabalho: `claude/livros-2-capitulos-coreano-3mblw1`.
 - Mensagem de commit em português, primeira linha curta e no imperativo,
   corpo explicando o *porquê* — os commits já no histórico
   (`git log --oneline`) são o padrão a seguir, não um genérico "update files".

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Sete colunas de alturas diferentes apoiadas numa mesma base, com um sol e uma lua acima">
+  <circle cx="100" cy="100" r="94" fill="#E7E4DA"/>
+  <circle cx="84" cy="40" r="10" fill="#B5762F"/>
+  <circle cx="116" cy="40" r="10" fill="none" stroke="#3F5F73" stroke-width="5"/>
+  <g fill="#6E93A8">
+    <rect x="36" y="86" width="14" height="44" rx="4"/>
+    <rect x="55" y="72" width="14" height="58" rx="4"/>
+    <rect x="74" y="94" width="14" height="36" rx="4"/>
+    <rect x="93" y="64" width="14" height="66" rx="4"/>
+    <rect x="112" y="90" width="14" height="40" rx="4"/>
+    <rect x="150" y="78" width="14" height="52" rx="4"/>
+  </g>
+  <rect x="131" y="56" width="14" height="74" rx="4" fill="#B5762F"/>
+  <rect x="30" y="130" width="140" height="18" rx="5" fill="#3F5F73"/>
+</svg>
