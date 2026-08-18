@@ -48,10 +48,10 @@ exercícios — sendo 138 de ouvir e responder. Dentro de cada trecho da explica
 daquele trecho, para praticar sem perder o lugar da leitura. O que cada aula
 cobre está em [`livros.md`](livros.md).
 
-**E o Nível 1 não é o fim.** O Nível 2 começou: as cinco primeiras aulas do
-livro seguinte trazem o futuro, a partícula que marca o objeto, as duas
-primeiras conjunções e os dias da semana — 117 exercícios, no mesmo formato e
-com a mesma correção. A aula dos dias da semana é a que mais rende fora dela
+**E o Nível 1 não é o fim.** O Nível 2 começou: as dez primeiras aulas do
+livro seguinte trazem o futuro, a partícula que marca o objeto, as conjunções
+que emendam duas frases, os dias da semana, as horas, os contadores e o
+progressivo — 236 exercícios, no mesmo formato e com a mesma correção. A aula dos dias da semana é a que mais rende fora dela
 mesma: as sete sílabas entram no índice sino-coreano e a família do 日 salta de
 três palavras para dez, de modo que 생일 passa a se ler como “dia do
 nascimento” sem que ninguém precise dizer. O que cada aula cobre está em
@@ -195,7 +195,7 @@ aparece legível.
 | `imageabilidade` | 1 a 5, curadoria manual — o critério de entrada no baralho |
 | `pronuncia` | só quando a regra não dá conta (물고기 → 물꼬기); o normal é deixar em branco e o motor derivar |
 | `sino` | mapa sílaba → hanja (`{"학":"學","교":"校"}`); alimenta as famílias. Por sílaba e não por posição, porque em 빨간색 só o 색 é sino-coreano |
-| `baralho` | `false` guarda a palavra no dicionário sem pôr na fila do dia. É como o vocabulário das aulas e das Histórias entra antes de virar cartão; ausente significa `true`. Hoje: 114 no baralho, 555 só no dicionário |
+| `baralho` | `false` guarda a palavra no dicionário sem pôr na fila do dia. É como o vocabulário das aulas e das Histórias entra antes de virar cartão; ausente significa `true`. Hoje: 114 no baralho, 576 só no dicionário |
 | `aula` | de qual aula a palavra veio, quando veio de alguma |
 | `nivel` | `2` quando a aula de origem é do Nível 2, porque a numeração recomeça a cada nível. Ausente significa Nível 1 |
 | `dia` | de qual dia das Histórias a palavra veio. O botão do dia promove as vinte dele para a fila, e a promoção mora no `localStorage`, não aqui |

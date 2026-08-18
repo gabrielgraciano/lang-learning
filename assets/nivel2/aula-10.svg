@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Um anel percorrido em três quartos, com a ponta marcada por um disco">
+  <circle cx="100" cy="100" r="94" fill="#E2E6E9"/>
+  <circle cx="100" cy="100" r="56" fill="none" stroke="#A9B6BE" stroke-width="14"/>
+  <path d="M100 44A56 56 0 1 1 51.5 128" fill="none" stroke="#2F6B6B" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="51.5" cy="128" r="13" fill="#C08A3E"/>
+  <circle cx="100" cy="100" r="14" fill="#2F6B6B"/>
+</svg>

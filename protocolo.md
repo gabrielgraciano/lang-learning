@@ -3,7 +3,7 @@
 Passo a passo do que foi feito para o **Nível 1** (livro-texto + caderno de
 exercícios, 25 aulas, 598 exercícios), para as **Histórias** (livro de
 vocabulário, 25 dias, 1245 exercícios) e para o **Nível 2** (o par seguinte dos
-mesmos dois livros, 5 aulas até agora, 117 exercícios). Use este documento para
+mesmos dois livros, 10 aulas até agora, 236 exercícios). Use este documento para
 portar o próximo livro.
 
 O que cada seção pronta cobre está em [`livros.md`](livros.md),
@@ -102,10 +102,13 @@ O que o Nível 1 e as Histórias tiveram que acrescentar em código, cada um:
   lista. Nenhum bloco novo, nenhum exercício novo, nada em `src/licoes.js`. E a
   listagem, que era `pintarNivel1()`, virou `pintarNivel()` recebendo a coleção
   e onde pintar — um Nível 3 já não custa cópia nenhuma.
+- **Nível 2, segunda leva** (aulas 6 a 10): **zero linhas de código.** Só dados
+  e ilustrações.
 
 A previsão de que um terceiro livro ficaria perto do segundo caso se confirmou,
-e por baixo. Se a sua leva estiver ficando perto do primeiro, releia o parágrafo
-acima.
+e por baixo. A leva seguinte, dentro da mesma seção, custou nada — que é o que
+uma seção bem modelada deve custar a partir da segunda leva. Se a sua estiver
+pedindo código, desconfie do modelo antes de escrever a função.
 
 ---
 

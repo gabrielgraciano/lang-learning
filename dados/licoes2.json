@@ -9,14 +9,38 @@
     "ilustracao": "assets/nivel2/aula-1.svg",
     "objetivo": "Pôr qualquer verbo no futuro e perguntar à outra pessoa o que ela vai fazer.",
     "vocabulario": [
-      { "ko": "청바지", "pt": "calça jeans" },
-      { "ko": "티셔츠", "pt": "camiseta" },
-      { "ko": "입다", "pt": "vestir, pôr (roupa)" },
-      { "ko": "팔다", "pt": "vender" },
-      { "ko": "놀다", "pt": "sair, passar o tempo" },
-      { "ko": "살다", "pt": "morar, viver" },
-      { "ko": "혼자", "pt": "sozinho" },
-      { "ko": "얼마", "pt": "quanto (dinheiro)" }
+      {
+        "ko": "청바지",
+        "pt": "calça jeans"
+      },
+      {
+        "ko": "티셔츠",
+        "pt": "camiseta"
+      },
+      {
+        "ko": "입다",
+        "pt": "vestir, pôr (roupa)"
+      },
+      {
+        "ko": "팔다",
+        "pt": "vender"
+      },
+      {
+        "ko": "놀다",
+        "pt": "sair, passar o tempo"
+      },
+      {
+        "ko": "살다",
+        "pt": "morar, viver"
+      },
+      {
+        "ko": "혼자",
+        "pt": "sozinho"
+      },
+      {
+        "ko": "얼마",
+        "pt": "quanto (dinheiro)"
+      }
     ],
     "topicos": [
       {
@@ -30,28 +54,68 @@
           },
           {
             "tipo": "formula",
-            "partes": ["가", "ㄹ 거예요"],
-            "glosas": ["ir", "vou"],
+            "partes": [
+              "가",
+              "ㄹ 거예요"
+            ],
+            "glosas": [
+              "ir",
+              "vou"
+            ],
             "resultado": "갈 거예요",
             "traducao": "vou (ir)"
           },
           {
             "tipo": "regra",
             "linhas": [
-              { "condicao": "radical em vogal (가다, 보다, 자다)", "resultado": "-ㄹ 거예요 → 갈 거예요" },
-              { "condicao": "radical em consoante (먹다, 찾다, 입다)", "resultado": "-을 거예요 → 먹을 거예요" }
+              {
+                "condicao": "radical em vogal (가다, 보다, 자다)",
+                "resultado": "-ㄹ 거예요 → 갈 거예요"
+              },
+              {
+                "condicao": "radical em consoante (먹다, 찾다, 입다)",
+                "resultado": "-을 거예요 → 먹을 거예요"
+              }
             ]
           },
           {
             "tipo": "tabela",
-            "colunas": ["Dicionário", "Futuro", "Tradução"],
+            "colunas": [
+              "Dicionário",
+              "Futuro",
+              "Tradução"
+            ],
             "linhas": [
-              ["가다", "갈 거예요", "vou"],
-              ["보다", "볼 거예요", "vou ver"],
-              ["자다", "잘 거예요", "vou dormir"],
-              ["먹다", "먹을 거예요", "vou comer"],
-              ["입다", "입을 거예요", "vou vestir"],
-              ["찾다", "찾을 거예요", "vou procurar"]
+              [
+                "가다",
+                "갈 거예요",
+                "vou"
+              ],
+              [
+                "보다",
+                "볼 거예요",
+                "vou ver"
+              ],
+              [
+                "자다",
+                "잘 거예요",
+                "vou dormir"
+              ],
+              [
+                "먹다",
+                "먹을 거예요",
+                "vou comer"
+              ],
+              [
+                "입다",
+                "입을 거예요",
+                "vou vestir"
+              ],
+              [
+                "찾다",
+                "찾을 거예요",
+                "vou procurar"
+              ]
             ]
           },
           {
@@ -75,17 +139,32 @@
           },
           {
             "tipo": "formula",
-            "partes": ["놀", "거예요"],
-            "glosas": ["sair", "vou"],
+            "partes": [
+              "놀",
+              "거예요"
+            ],
+            "glosas": [
+              "sair",
+              "vou"
+            ],
             "resultado": "놀 거예요",
             "traducao": "vou sair"
           },
           {
             "tipo": "exemplos",
             "itens": [
-              { "ko": "내일 혼자 놀 거예요.", "pt": "Amanhã vou sair sozinho." },
-              { "ko": "이거 얼마에 팔 거예요?", "pt": "Por quanto você vai vender isto?" },
-              { "ko": "서울에서 살 거예요.", "pt": "Vou morar em Seul." }
+              {
+                "ko": "내일 혼자 놀 거예요.",
+                "pt": "Amanhã vou sair sozinho."
+              },
+              {
+                "ko": "이거 얼마에 팔 거예요?",
+                "pt": "Por quanto você vai vender isto?"
+              },
+              {
+                "ko": "서울에서 살 거예요.",
+                "pt": "Vou morar em Seul."
+              }
             ]
           },
           {
@@ -110,11 +189,26 @@
           {
             "tipo": "exemplos",
             "itens": [
-              { "ko": "뭐 할 거예요?", "pt": "O que você vai fazer?" },
-              { "ko": "언제 할 거예요?", "pt": "Quando você vai fazer?" },
-              { "ko": "누구 만날 거예요?", "pt": "Quem você vai encontrar?" },
-              { "ko": "어디에서 먹을 거예요?", "pt": "Onde você vai comer?" },
-              { "ko": "얼마에 팔 거예요?", "pt": "Por quanto você vai vender?" }
+              {
+                "ko": "뭐 할 거예요?",
+                "pt": "O que você vai fazer?"
+              },
+              {
+                "ko": "언제 할 거예요?",
+                "pt": "Quando você vai fazer?"
+              },
+              {
+                "ko": "누구 만날 거예요?",
+                "pt": "Quem você vai encontrar?"
+              },
+              {
+                "ko": "어디에서 먹을 거예요?",
+                "pt": "Onde você vai comer?"
+              },
+              {
+                "ko": "얼마에 팔 거예요?",
+                "pt": "Por quanto você vai vender?"
+              }
             ]
           },
           {
@@ -124,8 +218,16 @@
           {
             "tipo": "dialogo",
             "falas": [
-              { "quem": "A", "ko": "내일 뭐 할 거예요?", "pt": "O que você vai fazer amanhã?" },
-              { "quem": "B", "ko": "혼자 영화 볼 거예요.", "pt": "Vou ver um filme sozinho." }
+              {
+                "quem": "A",
+                "ko": "내일 뭐 할 거예요?",
+                "pt": "O que você vai fazer amanhã?"
+              },
+              {
+                "quem": "B",
+                "ko": "혼자 영화 볼 거예요.",
+                "pt": "Vou ver um filme sozinho."
+              }
             ]
           },
           {
@@ -135,8 +237,16 @@
           {
             "tipo": "exemplos",
             "itens": [
-              { "ko": "내일 가요.", "pt": "Vou amanhã.", "conta": "o 내일 já marca o futuro" },
-              { "ko": "내일 갈 거예요.", "pt": "Vou amanhã.", "conta": "a intenção fica explícita" }
+              {
+                "ko": "내일 가요.",
+                "pt": "Vou amanhã.",
+                "conta": "o 내일 já marca o futuro"
+              },
+              {
+                "ko": "내일 갈 거예요.",
+                "pt": "Vou amanhã.",
+                "conta": "a intenção fica explícita"
+              }
             ]
           },
           {
@@ -149,10 +259,26 @@
     "dialogo": {
       "contexto": "Combinando o fim de semana.",
       "falas": [
-        { "quem": "A", "ko": "토요일에 뭐 할 거예요?", "pt": "O que você vai fazer no sábado?" },
-        { "quem": "B", "ko": "친구 만날 거예요.", "pt": "Vou encontrar um amigo." },
-        { "quem": "A", "ko": "어디에서 만날 거예요?", "pt": "Onde vocês vão se encontrar?" },
-        { "quem": "B", "ko": "아직 몰라요.", "pt": "Ainda não sei." }
+        {
+          "quem": "A",
+          "ko": "토요일에 뭐 할 거예요?",
+          "pt": "O que você vai fazer no sábado?"
+        },
+        {
+          "quem": "B",
+          "ko": "친구 만날 거예요.",
+          "pt": "Vou encontrar um amigo."
+        },
+        {
+          "quem": "A",
+          "ko": "어디에서 만날 거예요?",
+          "pt": "Onde vocês vão se encontrar?"
+        },
+        {
+          "quem": "B",
+          "ko": "아직 몰라요.",
+          "pt": "Ainda não sei."
+        }
       ]
     },
     "grupos": [
@@ -165,11 +291,26 @@
             "tipo": "associar",
             "enunciado": "Ligue cada palavra à tradução.",
             "pares": [
-              { "a": "청바지", "b": "calça jeans" },
-              { "a": "티셔츠", "b": "camiseta" },
-              { "a": "혼자", "b": "sozinho" },
-              { "a": "얼마", "b": "quanto (dinheiro)" },
-              { "a": "팔다", "b": "vender" }
+              {
+                "a": "청바지",
+                "b": "calça jeans"
+              },
+              {
+                "a": "티셔츠",
+                "b": "camiseta"
+              },
+              {
+                "a": "혼자",
+                "b": "sozinho"
+              },
+              {
+                "a": "얼마",
+                "b": "quanto (dinheiro)"
+              },
+              {
+                "a": "팔다",
+                "b": "vender"
+              }
             ],
             "explicacao": "청바지 é literalmente “calça azul” — 청 é o azul-esverdeado dos ideogramas, e 바지 é calça."
           },
@@ -177,7 +318,20 @@
             "id": "n2a1-e2",
             "tipo": "escolha",
             "enunciado": "O radical termina em vogal. Qual terminação entra?",
-            "opcoes": [{ "ko": "-ㄹ 거예요" }, { "ko": "-을 거예요" }, { "ko": "-이 거예요" }, { "ko": "-는 거예요" }],
+            "opcoes": [
+              {
+                "ko": "-ㄹ 거예요"
+              },
+              {
+                "ko": "-을 거예요"
+              },
+              {
+                "ko": "-이 거예요"
+              },
+              {
+                "ko": "-는 거예요"
+              }
+            ],
             "correta": 0,
             "explicacao": "가다 → 갈 거예요. Sem vogal de apoio, porque a boca não precisa dela."
           },
@@ -185,7 +339,20 @@
             "id": "n2a1-e3",
             "tipo": "escolha",
             "enunciado": "E quando o radical termina em consoante?",
-            "opcoes": [{ "ko": "-을 거예요" }, { "ko": "-ㄹ 거예요" }, { "ko": "-거예요" }, { "ko": "-가 거예요" }],
+            "opcoes": [
+              {
+                "ko": "-을 거예요"
+              },
+              {
+                "ko": "-ㄹ 거예요"
+              },
+              {
+                "ko": "-거예요"
+              },
+              {
+                "ko": "-가 거예요"
+              }
+            ],
             "correta": 0,
             "explicacao": "먹다 → 먹을 거예요. O -으- entra para separar as duas consoantes."
           },
@@ -194,7 +361,11 @@
             "tipo": "montar",
             "enunciado": "Monte “Vou vestir calça jeans.”",
             "dica": "입다 termina em consoante",
-            "pecas": ["청바지", "입을 거예요.", "입다"],
+            "pecas": [
+              "청바지",
+              "입을 거예요.",
+              "입다"
+            ],
             "correta": "청바지입을거예요.",
             "explicacao": "청바지 입을 거예요."
           },
@@ -204,7 +375,11 @@
             "enunciado": "Complete o futuro de 먹다.",
             "antes": "먹",
             "depois": " 거예요",
-            "banco": ["을", "ㄹ", "는"],
+            "banco": [
+              "을",
+              "ㄹ",
+              "는"
+            ],
             "correta": 0,
             "explicacao": "먹을 거예요 — 먹 termina em ㄱ, então entra o -을-."
           },
@@ -228,7 +403,20 @@
             "id": "n2a1-e8",
             "tipo": "escolha",
             "enunciado": "Qual é o futuro de 찾다?",
-            "opcoes": [{ "ko": "찾을 거예요" }, { "ko": "찾ㄹ 거예요" }, { "ko": "차즐 거예요" }, { "ko": "찾거예요" }],
+            "opcoes": [
+              {
+                "ko": "찾을 거예요"
+              },
+              {
+                "ko": "찾ㄹ 거예요"
+              },
+              {
+                "ko": "차즐 거예요"
+              },
+              {
+                "ko": "찾거예요"
+              }
+            ],
             "correta": 0,
             "explicacao": "찾을 거예요. A grafia mantém o ㅈ, mesmo que o ouvido escute [차즐]."
           }
@@ -242,7 +430,20 @@
             "id": "n2a1-e9",
             "tipo": "escolha",
             "enunciado": "Qual é o futuro de 놀다?",
-            "opcoes": [{ "ko": "놀 거예요" }, { "ko": "놀을 거예요" }, { "ko": "노를 거예요" }, { "ko": "놀ㄹ 거예요" }],
+            "opcoes": [
+              {
+                "ko": "놀 거예요"
+              },
+              {
+                "ko": "놀을 거예요"
+              },
+              {
+                "ko": "노를 거예요"
+              },
+              {
+                "ko": "놀ㄹ 거예요"
+              }
+            ],
             "correta": 0,
             "explicacao": "놀 거예요 — o ㄹ da terminação já está no radical."
           },
@@ -250,7 +451,20 @@
             "id": "n2a1-e10",
             "tipo": "escolha",
             "enunciado": "Qual é o futuro de 살다?",
-            "opcoes": [{ "ko": "살 거예요" }, { "ko": "살을 거예요" }, { "ko": "사를 거예요" }, { "ko": "살거다" }],
+            "opcoes": [
+              {
+                "ko": "살 거예요"
+              },
+              {
+                "ko": "살을 거예요"
+              },
+              {
+                "ko": "사를 거예요"
+              },
+              {
+                "ko": "살거다"
+              }
+            ],
             "correta": 0,
             "explicacao": "살 거예요. Mesma regra de 놀다, 팔다 e 멀다."
           },
@@ -259,7 +473,12 @@
             "tipo": "montar",
             "enunciado": "Monte “Por quanto você vai vender isto?”",
             "dica": "팔다 termina em ㄹ",
-            "pecas": ["이거", "얼마에", "팔 거예요?", "팔을 거예요?"],
+            "pecas": [
+              "이거",
+              "얼마에",
+              "팔 거예요?",
+              "팔을 거예요?"
+            ],
             "correta": "이거얼마에팔거예요?",
             "explicacao": "이거 얼마에 팔 거예요? — o -에 de 얼마에 marca o preço."
           },
@@ -277,7 +496,11 @@
             "enunciado": "Complete “Vou morar em Seul.”",
             "antes": "서울에서 ",
             "depois": " 거예요.",
-            "banco": ["살", "살을", "사"],
+            "banco": [
+              "살",
+              "살을",
+              "사"
+            ],
             "correta": 0,
             "explicacao": "서울에서 살 거예요."
           },
@@ -286,10 +509,18 @@
             "tipo": "escolha",
             "enunciado": "Por que 팔다 não ganha o -을-?",
             "opcoes": [
-              { "pt": "Porque o ㄹ que a terminação traria já está no radical" },
-              { "pt": "Porque é verbo irregular" },
-              { "pt": "Porque termina em vogal" },
-              { "pt": "Porque só verbos longos ganham o -을-" }
+              {
+                "pt": "Porque o ㄹ que a terminação traria já está no radical"
+              },
+              {
+                "pt": "Porque é verbo irregular"
+              },
+              {
+                "pt": "Porque termina em vogal"
+              },
+              {
+                "pt": "Porque só verbos longos ganham o -을-"
+              }
             ],
             "correta": 0,
             "explicacao": "팔 거예요. A terminação é -(으)ㄹ; o ㄹ já está lá, então não sobra nada para acrescentar."
@@ -305,7 +536,11 @@
             "tipo": "montar",
             "enunciado": "Monte “O que você vai fazer?”",
             "dica": "하다 termina em vogal",
-            "pecas": ["뭐", "할 거예요?", "해요?"],
+            "pecas": [
+              "뭐",
+              "할 거예요?",
+              "해요?"
+            ],
             "correta": "뭐할거예요?",
             "explicacao": "뭐 할 거예요?"
           },
@@ -314,7 +549,11 @@
             "tipo": "montar",
             "enunciado": "Monte “Quem você vai encontrar?”",
             "dica": "만나다 → 만날",
-            "pecas": ["누구", "만날 거예요?", "만나다"],
+            "pecas": [
+              "누구",
+              "만날 거예요?",
+              "만나다"
+            ],
             "correta": "누구만날거예요?",
             "explicacao": "누구 만날 거예요?"
           },
@@ -323,7 +562,11 @@
             "tipo": "montar",
             "enunciado": "Perguntam 언제 할 거예요? Responda “amanhã”.",
             "dica": "a resposta repete o verbo da pergunta",
-            "pecas": ["내일", "할 거예요.", "했어요."],
+            "pecas": [
+              "내일",
+              "할 거예요.",
+              "했어요."
+            ],
             "correta": "내일할거예요.",
             "explicacao": "내일 할 거예요."
           },
@@ -332,7 +575,11 @@
             "tipo": "montar",
             "enunciado": "Perguntam 뭐 먹을 거예요? Responda “samgyeopsal”.",
             "dica": "삼겹살",
-            "pecas": ["삼겹살", "먹을 거예요.", "먹었어요."],
+            "pecas": [
+              "삼겹살",
+              "먹을 거예요.",
+              "먹었어요."
+            ],
             "correta": "삼겹살먹을거예요.",
             "explicacao": "삼겹살 먹을 거예요."
           },
@@ -349,10 +596,18 @@
             "tipo": "escolha",
             "enunciado": "내일 가요, no presente, está errado?",
             "opcoes": [
-              { "pt": "Não — o 내일 já avisa que é futuro" },
-              { "pt": "Sim, falta a terminação de futuro" },
-              { "pt": "Sim, 가요 só serve para o passado" },
-              { "pt": "Só está certo em 반말" }
+              {
+                "pt": "Não — o 내일 já avisa que é futuro"
+              },
+              {
+                "pt": "Sim, falta a terminação de futuro"
+              },
+              {
+                "pt": "Sim, 가요 só serve para o passado"
+              },
+              {
+                "pt": "Só está certo em 반말"
+              }
             ],
             "correta": 0,
             "explicacao": "Quando o contexto deixa claro que a coisa ainda não aconteceu, o presente basta."
@@ -369,7 +624,11 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "뭐 입을 거예요?",
-            "pecas": ["뭐", "입을 거예요?", "입었어요?"],
+            "pecas": [
+              "뭐",
+              "입을 거예요?",
+              "입었어요?"
+            ],
             "correta": "뭐입을거예요?",
             "explicacao": "뭐 입을 거예요? — “o que você vai vestir?”"
           },
@@ -378,7 +637,11 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "누구 만날 거예요?",
-            "pecas": ["누구", "만날 거예요?", "만났어요?"],
+            "pecas": [
+              "누구",
+              "만날 거예요?",
+              "만났어요?"
+            ],
             "correta": "누구만날거예요?",
             "explicacao": "누구 만날 거예요?"
           },
@@ -387,7 +650,11 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "지금 갈 거예요",
-            "pecas": ["지금", "갈 거예요", "가요"],
+            "pecas": [
+              "지금",
+              "갈 거예요",
+              "가요"
+            ],
             "correta": "지금갈거예요",
             "explicacao": "지금 갈 거예요 — “vou agora”."
           },
@@ -397,10 +664,22 @@
             "enunciado": "Ouça e escolha a frase que você ouviu.",
             "audio": "혼자 갈 거예요",
             "opcoes": [
-              { "ko": "혼자 갈 거예요", "pt": "vou sozinho" },
-              { "ko": "혼자 가요", "pt": "vou sozinho (agora)" },
-              { "ko": "혼자 갔어요", "pt": "fui sozinho" },
-              { "ko": "혼자 살 거예요", "pt": "vou morar sozinho" }
+              {
+                "ko": "혼자 갈 거예요",
+                "pt": "vou sozinho"
+              },
+              {
+                "ko": "혼자 가요",
+                "pt": "vou sozinho (agora)"
+              },
+              {
+                "ko": "혼자 갔어요",
+                "pt": "fui sozinho"
+              },
+              {
+                "ko": "혼자 살 거예요",
+                "pt": "vou morar sozinho"
+              }
             ],
             "correta": 0,
             "explicacao": "혼자 갈 거예요. Repare que 갈 e 살 se distinguem só na primeira consoante."
@@ -410,7 +689,20 @@
             "tipo": "ditado",
             "enunciado": "Ouça e escolha a palavra do vocabulário que você ouviu.",
             "audio": "청바지",
-            "opcoes": [{ "ko": "청바지" }, { "ko": "티셔츠" }, { "ko": "치마" }, { "ko": "모자" }],
+            "opcoes": [
+              {
+                "ko": "청바지"
+              },
+              {
+                "ko": "티셔츠"
+              },
+              {
+                "ko": "치마"
+              },
+              {
+                "ko": "모자"
+              }
+            ],
             "correta": 0,
             "explicacao": "청바지 — calça jeans."
           }
@@ -428,14 +720,38 @@
     "ilustracao": "assets/nivel2/aula-2.svg",
     "objetivo": "Marcar o objeto de uma frase e saber quando a marca é dispensável.",
     "vocabulario": [
-      { "ko": "지갑", "pt": "carteira" },
-      { "ko": "텔레비전", "pt": "televisão" },
-      { "ko": "사과", "pt": "maçã" },
-      { "ko": "자전거", "pt": "bicicleta" },
-      { "ko": "화장실", "pt": "banheiro" },
-      { "ko": "이상하다", "pt": "ser estranho" },
-      { "ko": "자주", "pt": "com frequência" },
-      { "ko": "잃어버리다", "pt": "perder (algo)" }
+      {
+        "ko": "지갑",
+        "pt": "carteira"
+      },
+      {
+        "ko": "텔레비전",
+        "pt": "televisão"
+      },
+      {
+        "ko": "사과",
+        "pt": "maçã"
+      },
+      {
+        "ko": "자전거",
+        "pt": "bicicleta"
+      },
+      {
+        "ko": "화장실",
+        "pt": "banheiro"
+      },
+      {
+        "ko": "이상하다",
+        "pt": "ser estranho"
+      },
+      {
+        "ko": "자주",
+        "pt": "com frequência"
+      },
+      {
+        "ko": "잃어버리다",
+        "pt": "perder (algo)"
+      }
     ],
     "topicos": [
       {
@@ -450,20 +766,47 @@
           {
             "tipo": "regra",
             "linhas": [
-              { "condicao": "termina em consoante (받침)", "resultado": "-을 → 책을, 밥을, 방을" },
-              { "condicao": "termina em vogal", "resultado": "-를 → 우유를, 모자를, 카메라를" }
+              {
+                "condicao": "termina em consoante (받침)",
+                "resultado": "-을 → 책을, 밥을, 방을"
+              },
+              {
+                "condicao": "termina em vogal",
+                "resultado": "-를 → 우유를, 모자를, 카메라를"
+              }
             ]
           },
           {
             "tipo": "tabela",
-            "colunas": ["Palavra", "Com a partícula"],
+            "colunas": [
+              "Palavra",
+              "Com a partícula"
+            ],
             "linhas": [
-              ["우유", "우유를"],
-              ["책", "책을"],
-              ["모자", "모자를"],
-              ["카메라", "카메라를"],
-              ["방", "방을"],
-              ["지갑", "지갑을"]
+              [
+                "우유",
+                "우유를"
+              ],
+              [
+                "책",
+                "책을"
+              ],
+              [
+                "모자",
+                "모자를"
+              ],
+              [
+                "카메라",
+                "카메라를"
+              ],
+              [
+                "방",
+                "방을"
+              ],
+              [
+                "지갑",
+                "지갑을"
+              ]
             ]
           },
           {
@@ -494,9 +837,21 @@
           {
             "tipo": "exemplos",
             "itens": [
-              { "ko": "사과를 먹었어요.", "pt": "Comi a maçã.", "conta": "a maçã é o alvo da ação" },
-              { "ko": "사과가 맛있어요.", "pt": "A maçã está gostosa.", "conta": "ninguém agiu sobre ela; a frase é sobre ela" },
-              { "ko": "사과는 맛있어요.", "pt": "Maçã é gostosa.", "conta": "o contraste do 은/는 da aula 9" }
+              {
+                "ko": "사과를 먹었어요.",
+                "pt": "Comi a maçã.",
+                "conta": "a maçã é o alvo da ação"
+              },
+              {
+                "ko": "사과가 맛있어요.",
+                "pt": "A maçã está gostosa.",
+                "conta": "ninguém agiu sobre ela; a frase é sobre ela"
+              },
+              {
+                "ko": "사과는 맛있어요.",
+                "pt": "Maçã é gostosa.",
+                "conta": "o contraste do 은/는 da aula 9"
+              }
             ]
           },
           {
@@ -529,9 +884,21 @@
           {
             "tipo": "exemplos",
             "itens": [
-              { "ko": "누구 만났어요?", "pt": "Quem você encontrou?", "conta": "curta; a partícula é dispensável" },
-              { "ko": "어제 여기에서 누구를 만났어요?", "pt": "Quem você encontrou aqui ontem?", "conta": "duas informações no meio; a partícula segura" },
-              { "ko": "어제 누구를 여기에서 만났어요?", "pt": "Quem você encontrou aqui ontem?", "conta": "a ordem mudou; sem a partícula a frase se perde" }
+              {
+                "ko": "누구 만났어요?",
+                "pt": "Quem você encontrou?",
+                "conta": "curta; a partícula é dispensável"
+              },
+              {
+                "ko": "어제 여기에서 누구를 만났어요?",
+                "pt": "Quem você encontrou aqui ontem?",
+                "conta": "duas informações no meio; a partícula segura"
+              },
+              {
+                "ko": "어제 누구를 여기에서 만났어요?",
+                "pt": "Quem você encontrou aqui ontem?",
+                "conta": "a ordem mudou; sem a partícula a frase se perde"
+              }
             ]
           },
           {
@@ -548,10 +915,26 @@
     "dialogo": {
       "contexto": "Alguém procurando alguma coisa.",
       "falas": [
-        { "quem": "A", "ko": "지갑 찾았어요?", "pt": "Você achou a carteira?" },
-        { "quem": "B", "ko": "아니요. 핸드폰을 잃어버렸어요.", "pt": "Não. Eu perdi o celular." },
-        { "quem": "A", "ko": "어디에서 잃어버렸어요?", "pt": "Onde você perdeu?" },
-        { "quem": "B", "ko": "잘 모르겠어요.", "pt": "Não sei bem." }
+        {
+          "quem": "A",
+          "ko": "지갑 찾았어요?",
+          "pt": "Você achou a carteira?"
+        },
+        {
+          "quem": "B",
+          "ko": "아니요. 핸드폰을 잃어버렸어요.",
+          "pt": "Não. Eu perdi o celular."
+        },
+        {
+          "quem": "A",
+          "ko": "어디에서 잃어버렸어요?",
+          "pt": "Onde você perdeu?"
+        },
+        {
+          "quem": "B",
+          "ko": "잘 모르겠어요.",
+          "pt": "Não sei bem."
+        }
       ]
     },
     "grupos": [
@@ -564,11 +947,26 @@
             "tipo": "associar",
             "enunciado": "Ligue cada palavra à tradução.",
             "pares": [
-              { "a": "지갑", "b": "carteira" },
-              { "a": "텔레비전", "b": "televisão" },
-              { "a": "자전거", "b": "bicicleta" },
-              { "a": "화장실", "b": "banheiro" },
-              { "a": "자주", "b": "com frequência" }
+              {
+                "a": "지갑",
+                "b": "carteira"
+              },
+              {
+                "a": "텔레비전",
+                "b": "televisão"
+              },
+              {
+                "a": "자전거",
+                "b": "bicicleta"
+              },
+              {
+                "a": "화장실",
+                "b": "banheiro"
+              },
+              {
+                "a": "자주",
+                "b": "com frequência"
+              }
             ],
             "explicacao": "화장실 é literalmente “sala de maquiagem” — o eufemismo virou a palavra comum."
           },
@@ -576,7 +974,20 @@
             "id": "n2a2-e2",
             "tipo": "escolha",
             "enunciado": "Qual partícula de objeto 책 recebe?",
-            "opcoes": [{ "ko": "책을" }, { "ko": "책를" }, { "ko": "책이" }, { "ko": "책는" }],
+            "opcoes": [
+              {
+                "ko": "책을"
+              },
+              {
+                "ko": "책를"
+              },
+              {
+                "ko": "책이"
+              },
+              {
+                "ko": "책는"
+              }
+            ],
             "correta": 0,
             "explicacao": "책 termina em ㄱ, então entra -을."
           },
@@ -584,7 +995,20 @@
             "id": "n2a2-e3",
             "tipo": "escolha",
             "enunciado": "E 우유?",
-            "opcoes": [{ "ko": "우유를" }, { "ko": "우유을" }, { "ko": "우유가" }, { "ko": "우유은" }],
+            "opcoes": [
+              {
+                "ko": "우유를"
+              },
+              {
+                "ko": "우유을"
+              },
+              {
+                "ko": "우유가"
+              },
+              {
+                "ko": "우유은"
+              }
+            ],
             "correta": 0,
             "explicacao": "우유 termina em vogal, então entra -를."
           },
@@ -593,7 +1017,20 @@
             "tipo": "imagem",
             "enunciado": "Marque esta palavra como objeto da frase.",
             "ilustracao": "assets/ilustracoes/roupa.svg",
-            "opcoes": [{ "ko": "옷을" }, { "ko": "옷를" }, { "ko": "옷이" }, { "ko": "옷가" }],
+            "opcoes": [
+              {
+                "ko": "옷을"
+              },
+              {
+                "ko": "옷를"
+              },
+              {
+                "ko": "옷이"
+              },
+              {
+                "ko": "옷가"
+              }
+            ],
             "correta": 0,
             "explicacao": "옷 termina em ㅅ: 옷을, que soa [오슬]."
           },
@@ -602,7 +1039,20 @@
             "tipo": "imagem",
             "enunciado": "Marque esta palavra como objeto da frase.",
             "ilustracao": "assets/ilustracoes/maca.svg",
-            "opcoes": [{ "ko": "사과를" }, { "ko": "사과을" }, { "ko": "사과이" }, { "ko": "사과은" }],
+            "opcoes": [
+              {
+                "ko": "사과를"
+              },
+              {
+                "ko": "사과을"
+              },
+              {
+                "ko": "사과이"
+              },
+              {
+                "ko": "사과은"
+              }
+            ],
             "correta": 0,
             "explicacao": "사과 termina em vogal: 사과를."
           },
@@ -612,7 +1062,11 @@
             "enunciado": "Complete “Comprei uma câmera.”",
             "antes": "카메라",
             "depois": " 샀어요.",
-            "banco": ["를", "을", "이"],
+            "banco": [
+              "를",
+              "을",
+              "이"
+            ],
             "correta": 0,
             "explicacao": "카메라를 샀어요."
           },
@@ -622,7 +1076,11 @@
             "enunciado": "Complete “Achei a carteira.”",
             "antes": "지갑",
             "depois": " 찾았어요.",
-            "banco": ["을", "를", "가"],
+            "banco": [
+              "을",
+              "를",
+              "가"
+            ],
             "correta": 0,
             "explicacao": "지갑을 찾았어요 — soa [지가블]."
           }
@@ -637,10 +1095,18 @@
             "tipo": "escolha",
             "enunciado": "Você ouve 사과를… e a frase ainda não terminou. O que vem depois?",
             "opcoes": [
-              { "pt": "Um verbo de ação: comprar, comer, vender" },
-              { "pt": "Uma descrição: estar gostosa, ser cara" },
-              { "pt": "Outro substantivo" },
-              { "pt": "Nada — a frase já acabou" }
+              {
+                "pt": "Um verbo de ação: comprar, comer, vender"
+              },
+              {
+                "pt": "Uma descrição: estar gostosa, ser cara"
+              },
+              {
+                "pt": "Outro substantivo"
+              },
+              {
+                "pt": "Nada — a frase já acabou"
+              }
             ],
             "correta": 0,
             "explicacao": "-를 diz que a maçã é o alvo de uma ação, então o verbo que vem é transitivo."
@@ -650,10 +1116,18 @@
             "tipo": "escolha",
             "enunciado": "Em 사과가 맛있어요, por que 가 e não 를?",
             "opcoes": [
-              { "pt": "Porque ninguém age sobre a maçã; a frase fala dela" },
-              { "pt": "Porque 사과 termina em vogal" },
-              { "pt": "Porque 맛있어요 está no passado" },
-              { "pt": "Porque 가 é a forma mais formal" }
+              {
+                "pt": "Porque ninguém age sobre a maçã; a frase fala dela"
+              },
+              {
+                "pt": "Porque 사과 termina em vogal"
+              },
+              {
+                "pt": "Porque 맛있어요 está no passado"
+              },
+              {
+                "pt": "Porque 가 é a forma mais formal"
+              }
             ],
             "correta": 0,
             "explicacao": "맛있어요 descreve a maçã. Descrição pede sujeito, não objeto."
@@ -671,7 +1145,11 @@
             "tipo": "montar",
             "enunciado": "Monte “Perdi o celular.”",
             "dica": "잃어버리다 no passado",
-            "pecas": ["핸드폰을", "잃어버렸어요.", "핸드폰이"],
+            "pecas": [
+              "핸드폰을",
+              "잃어버렸어요.",
+              "핸드폰이"
+            ],
             "correta": "핸드폰을잃어버렸어요.",
             "explicacao": "핸드폰을 잃어버렸어요 — o celular é o que se perdeu, então é objeto."
           },
@@ -681,7 +1159,11 @@
             "enunciado": "Complete “O tempo está bom demais hoje.”",
             "antes": "오늘 날씨",
             "depois": " 너무 좋아요.",
-            "banco": ["가", "를", "을"],
+            "banco": [
+              "가",
+              "를",
+              "을"
+            ],
             "correta": 0,
             "explicacao": "좋아요 descreve o tempo — sujeito, não objeto: 날씨가."
           },
@@ -691,7 +1173,11 @@
             "enunciado": "Complete “Vou andar de bicicleta.”",
             "antes": "자전거",
             "depois": " 탈 거예요.",
-            "banco": ["를", "이", "은"],
+            "banco": [
+              "를",
+              "이",
+              "은"
+            ],
             "correta": 0,
             "explicacao": "타다 é ação e a bicicleta é o alvo dela: 자전거를 탈 거예요."
           }
@@ -714,10 +1200,18 @@
             "tipo": "escolha",
             "enunciado": "Em qual destas frases a partícula faz mais falta?",
             "opcoes": [
-              { "ko": "어제 여기에서 누구를 만났어요?" },
-              { "ko": "누구 만났어요?" },
-              { "ko": "밥 먹어요?" },
-              { "ko": "뭐 사요?" }
+              {
+                "ko": "어제 여기에서 누구를 만났어요?"
+              },
+              {
+                "ko": "누구 만났어요?"
+              },
+              {
+                "ko": "밥 먹어요?"
+              },
+              {
+                "ko": "뭐 사요?"
+              }
             ],
             "correta": 0,
             "explicacao": "É a única em que há informação entre o objeto e o verbo."
@@ -727,7 +1221,13 @@
             "tipo": "montar",
             "enunciado": "Monte “Quem você encontrou aqui ontem?”",
             "dica": "tempo, lugar, objeto, verbo",
-            "pecas": ["어제", "여기에서", "누구를", "만났어요?", "만나요?"],
+            "pecas": [
+              "어제",
+              "여기에서",
+              "누구를",
+              "만났어요?",
+              "만나요?"
+            ],
             "correta": "어제여기에서누구를만났어요?",
             "explicacao": "어제 여기에서 누구를 만났어요?"
           },
@@ -736,10 +1236,18 @@
             "tipo": "escolha",
             "enunciado": "O que decide se a partícula pode cair?",
             "opcoes": [
-              { "pt": "A distância entre o objeto e o verbo" },
-              { "pt": "A formalidade da conversa" },
-              { "pt": "Se a palavra tem 받침" },
-              { "pt": "Se o verbo está no passado" }
+              {
+                "pt": "A distância entre o objeto e o verbo"
+              },
+              {
+                "pt": "A formalidade da conversa"
+              },
+              {
+                "pt": "Se a palavra tem 받침"
+              },
+              {
+                "pt": "Se o verbo está no passado"
+              }
             ],
             "correta": 0,
             "explicacao": "Frase curta dispensa; frase comprida ou com a ordem trocada, não."
@@ -764,7 +1272,12 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "어제 뭐 했어요?",
-            "pecas": ["어제", "뭐", "했어요?", "할 거예요?"],
+            "pecas": [
+              "어제",
+              "뭐",
+              "했어요?",
+              "할 거예요?"
+            ],
             "correta": "어제뭐했어요?",
             "explicacao": "어제 뭐 했어요? — “o que você fez ontem?”"
           },
@@ -773,7 +1286,11 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "누구를 만났어요?",
-            "pecas": ["누구를", "만났어요?", "만날 거예요?"],
+            "pecas": [
+              "누구를",
+              "만났어요?",
+              "만날 거예요?"
+            ],
             "correta": "누구를만났어요?",
             "explicacao": "누구를 만났어요?"
           },
@@ -782,7 +1299,11 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "지갑 찾았어요?",
-            "pecas": ["지갑", "찾았어요?", "찾을 거예요?"],
+            "pecas": [
+              "지갑",
+              "찾았어요?",
+              "찾을 거예요?"
+            ],
             "correta": "지갑찾았어요?",
             "explicacao": "지갑 찾았어요? — aqui a partícula caiu, e a frase continua clara."
           },
@@ -791,7 +1312,20 @@
             "tipo": "ditado",
             "enunciado": "Ouça e escolha a palavra que você ouviu.",
             "audio": "화장실",
-            "opcoes": [{ "ko": "화장실" }, { "ko": "학교" }, { "ko": "회사" }, { "ko": "교실" }],
+            "opcoes": [
+              {
+                "ko": "화장실"
+              },
+              {
+                "ko": "학교"
+              },
+              {
+                "ko": "회사"
+              },
+              {
+                "ko": "교실"
+              }
+            ],
             "correta": 0,
             "explicacao": "화장실 — banheiro."
           },
@@ -800,7 +1334,20 @@
             "tipo": "ditado",
             "enunciado": "Ouça e escolha a palavra que você ouviu.",
             "audio": "텔레비전",
-            "opcoes": [{ "ko": "텔레비전" }, { "ko": "핸드폰" }, { "ko": "카메라" }, { "ko": "자전거" }],
+            "opcoes": [
+              {
+                "ko": "텔레비전"
+              },
+              {
+                "ko": "핸드폰"
+              },
+              {
+                "ko": "카메라"
+              },
+              {
+                "ko": "자전거"
+              }
+            ],
             "correta": 0,
             "explicacao": "텔레비전 — televisão."
           }
@@ -818,14 +1365,38 @@
     "ilustracao": "assets/nivel2/aula-3.svg",
     "objetivo": "Emendar duas frases somando ou explicando, e ler um parágrafo inteiro.",
     "vocabulario": [
-      { "ko": "그리고", "pt": "e, e então" },
-      { "ko": "그래서", "pt": "por isso, então" },
-      { "ko": "많이", "pt": "muito, bastante" },
-      { "ko": "내다", "pt": "pagar; apresentar" },
-      { "ko": "카페", "pt": "cafeteria" },
-      { "ko": "연필", "pt": "lápis" },
-      { "ko": "공책", "pt": "caderno" },
-      { "ko": "돈", "pt": "dinheiro" }
+      {
+        "ko": "그리고",
+        "pt": "e, e então"
+      },
+      {
+        "ko": "그래서",
+        "pt": "por isso, então"
+      },
+      {
+        "ko": "많이",
+        "pt": "muito, bastante"
+      },
+      {
+        "ko": "내다",
+        "pt": "pagar; apresentar"
+      },
+      {
+        "ko": "카페",
+        "pt": "cafeteria"
+      },
+      {
+        "ko": "연필",
+        "pt": "lápis"
+      },
+      {
+        "ko": "공책",
+        "pt": "caderno"
+      },
+      {
+        "ko": "돈",
+        "pt": "dinheiro"
+      }
     ],
     "topicos": [
       {
@@ -844,9 +1415,20 @@
           {
             "tipo": "exemplos",
             "itens": [
-              { "ko": "커피, 빵, 그리고 물", "pt": "café, pão e água", "conta": "entre substantivos" },
-              { "ko": "서울 그리고 부산", "pt": "Seul e Busan" },
-              { "ko": "친구를 만났어요. 그리고 밥을 먹었어요.", "pt": "Encontrei um amigo. E comi.", "conta": "entre frases — o uso mais comum" }
+              {
+                "ko": "커피, 빵, 그리고 물",
+                "pt": "café, pão e água",
+                "conta": "entre substantivos"
+              },
+              {
+                "ko": "서울 그리고 부산",
+                "pt": "Seul e Busan"
+              },
+              {
+                "ko": "친구를 만났어요. 그리고 밥을 먹었어요.",
+                "pt": "Encontrei um amigo. E comi.",
+                "conta": "entre frases — o uso mais comum"
+              }
             ]
           },
           {
@@ -871,16 +1453,31 @@
           {
             "tipo": "exemplos",
             "itens": [
-              { "ko": "오늘은 비가 왔어요. 그래서 집에 있었어요.", "pt": "Hoje choveu. Por isso fiquei em casa." },
-              { "ko": "저는 학생이에요. 그래서 돈이 없어요.", "pt": "Eu sou estudante. Por isso não tenho dinheiro." },
-              { "ko": "김치는 맛있어요. 그래서 김치를 많이 먹어요.", "pt": "Kimchi é gostoso. Por isso como muito kimchi." }
+              {
+                "ko": "오늘은 비가 왔어요. 그래서 집에 있었어요.",
+                "pt": "Hoje choveu. Por isso fiquei em casa."
+              },
+              {
+                "ko": "저는 학생이에요. 그래서 돈이 없어요.",
+                "pt": "Eu sou estudante. Por isso não tenho dinheiro."
+              },
+              {
+                "ko": "김치는 맛있어요. 그래서 김치를 많이 먹어요.",
+                "pt": "Kimchi é gostoso. Por isso como muito kimchi."
+              }
             ]
           },
           {
             "tipo": "regra",
             "linhas": [
-              { "condicao": "as duas frases só se somam", "resultado": "그리고" },
-              { "condicao": "a segunda decorre da primeira", "resultado": "그래서" }
+              {
+                "condicao": "as duas frases só se somam",
+                "resultado": "그리고"
+              },
+              {
+                "condicao": "a segunda decorre da primeira",
+                "resultado": "그래서"
+              }
             ]
           },
           {
@@ -905,11 +1502,26 @@
           {
             "tipo": "exemplos",
             "itens": [
-              { "ko": "어제 지갑을 잃어버렸어요.", "pt": "Ontem eu perdi a carteira." },
-              { "ko": "그래서 돈이 없었어요.", "pt": "Por isso fiquei sem dinheiro." },
-              { "ko": "학교에서 친구를 만났어요. 그리고 밥을 먹었어요.", "pt": "Encontrei um amigo na escola. E comemos." },
-              { "ko": "친구가 돈을 냈어요.", "pt": "O amigo pagou." },
-              { "ko": "오늘 지갑을 찾았어요. 그래서 카페에서 커피를 샀어요.", "pt": "Hoje eu achei a carteira. Por isso comprei café na cafeteria." }
+              {
+                "ko": "어제 지갑을 잃어버렸어요.",
+                "pt": "Ontem eu perdi a carteira."
+              },
+              {
+                "ko": "그래서 돈이 없었어요.",
+                "pt": "Por isso fiquei sem dinheiro."
+              },
+              {
+                "ko": "학교에서 친구를 만났어요. 그리고 밥을 먹었어요.",
+                "pt": "Encontrei um amigo na escola. E comemos."
+              },
+              {
+                "ko": "친구가 돈을 냈어요.",
+                "pt": "O amigo pagou."
+              },
+              {
+                "ko": "오늘 지갑을 찾았어요. 그래서 카페에서 커피를 샀어요.",
+                "pt": "Hoje eu achei a carteira. Por isso comprei café na cafeteria."
+              }
             ]
           },
           {
@@ -926,9 +1538,21 @@
     "dialogo": {
       "contexto": "Explicando uma falta.",
       "falas": [
-        { "quem": "A", "ko": "오늘 많이 아팠어요. 그래서 회사에 안 갔어요.", "pt": "Hoje eu passei muito mal. Por isso não fui ao trabalho." },
-        { "quem": "B", "ko": "진짜요? 병원에 갔어요?", "pt": "Sério? Você foi ao hospital?" },
-        { "quem": "A", "ko": "아니요. 지금 갈 거예요.", "pt": "Não. Vou agora." }
+        {
+          "quem": "A",
+          "ko": "오늘 많이 아팠어요. 그래서 회사에 안 갔어요.",
+          "pt": "Hoje eu passei muito mal. Por isso não fui ao trabalho."
+        },
+        {
+          "quem": "B",
+          "ko": "진짜요? 병원에 갔어요?",
+          "pt": "Sério? Você foi ao hospital?"
+        },
+        {
+          "quem": "A",
+          "ko": "아니요. 지금 갈 거예요.",
+          "pt": "Não. Vou agora."
+        }
       ]
     },
     "grupos": [
@@ -941,11 +1565,26 @@
             "tipo": "associar",
             "enunciado": "Ligue cada palavra à tradução.",
             "pares": [
-              { "a": "그리고", "b": "e, e então" },
-              { "a": "그래서", "b": "por isso" },
-              { "a": "많이", "b": "muito" },
-              { "a": "내다", "b": "pagar" },
-              { "a": "카페", "b": "cafeteria" }
+              {
+                "a": "그리고",
+                "b": "e, e então"
+              },
+              {
+                "a": "그래서",
+                "b": "por isso"
+              },
+              {
+                "a": "많이",
+                "b": "muito"
+              },
+              {
+                "a": "내다",
+                "b": "pagar"
+              },
+              {
+                "a": "카페",
+                "b": "cafeteria"
+              }
             ],
             "explicacao": "카페 é o “café” do francês, escrito em 한글 pelo som. 커피숍 é sinônimo e vem do inglês."
           },
@@ -955,7 +1594,11 @@
             "enunciado": "Complete “um livro, um lápis e um caderno”.",
             "antes": "책, 연필 ",
             "depois": " 공책",
-            "banco": ["그리고", "그래서", "너무"],
+            "banco": [
+              "그리고",
+              "그래서",
+              "너무"
+            ],
             "correta": 0,
             "explicacao": "Uma lista se soma, não se explica: 그리고."
           },
@@ -965,7 +1608,11 @@
             "enunciado": "Complete “Seul e Busan”.",
             "antes": "서울 ",
             "depois": " 부산",
-            "banco": ["그리고", "그래서", "자주"],
+            "banco": [
+              "그리고",
+              "그래서",
+              "자주"
+            ],
             "correta": 0,
             "explicacao": "서울 그리고 부산 — duas cidades somadas."
           },
@@ -974,7 +1621,12 @@
             "tipo": "montar",
             "enunciado": "Monte “Encontrei um amigo. E comi.”",
             "dica": "duas frases somadas",
-            "pecas": ["친구를 만났어요.", "그리고", "밥을 먹었어요.", "그래서"],
+            "pecas": [
+              "친구를 만났어요.",
+              "그리고",
+              "밥을 먹었어요.",
+              "그래서"
+            ],
             "correta": "친구를만났어요.그리고밥을먹었어요.",
             "explicacao": "친구를 만났어요. 그리고 밥을 먹었어요."
           },
@@ -983,10 +1635,18 @@
             "tipo": "escolha",
             "enunciado": "Onde 그리고 entra?",
             "opcoes": [
-              { "pt": "No começo da segunda frase" },
-              { "pt": "No fim da primeira frase" },
-              { "pt": "Entre o verbo e a terminação" },
-              { "pt": "Depois do verbo final" }
+              {
+                "pt": "No começo da segunda frase"
+              },
+              {
+                "pt": "No fim da primeira frase"
+              },
+              {
+                "pt": "Entre o verbo e a terminação"
+              },
+              {
+                "pt": "Depois do verbo final"
+              }
             ],
             "correta": 0,
             "explicacao": "Ela abre a frase que está sendo acrescentada."
@@ -1011,7 +1671,11 @@
             "enunciado": "Complete “Sou estudante. Por isso não tenho dinheiro.”",
             "antes": "저는 학생이에요. ",
             "depois": " 돈이 없어요.",
-            "banco": ["그래서", "그리고", "많이"],
+            "banco": [
+              "그래서",
+              "그리고",
+              "많이"
+            ],
             "correta": 0,
             "explicacao": "Ser estudante é a causa de não ter dinheiro."
           },
@@ -1021,7 +1685,11 @@
             "enunciado": "Complete “Gimbap é gostoso. Por isso como gimbap com frequência.”",
             "antes": "김밥은 맛있어요. ",
             "depois": " 김밥을 자주 먹어요.",
-            "banco": ["그래서", "그리고", "혼자"],
+            "banco": [
+              "그래서",
+              "그리고",
+              "혼자"
+            ],
             "correta": 0,
             "explicacao": "O gosto explica a frequência."
           },
@@ -1031,7 +1699,11 @@
             "enunciado": "Complete “Choveu. Por isso fiquei em casa.”",
             "antes": "비가 왔어요. ",
             "depois": " 집에 있었어요.",
-            "banco": ["그래서", "그리고", "너무"],
+            "banco": [
+              "그래서",
+              "그리고",
+              "너무"
+            ],
             "correta": 0,
             "explicacao": "비가 왔어요. 그래서 집에 있었어요."
           },
@@ -1040,10 +1712,18 @@
             "tipo": "escolha",
             "enunciado": "그래서 significa:",
             "opcoes": [
-              { "pt": "Por isso, então" },
-              { "pt": "E, e então" },
-              { "pt": "Mas, porém" },
-              { "pt": "Porque" }
+              {
+                "pt": "Por isso, então"
+              },
+              {
+                "pt": "E, e então"
+              },
+              {
+                "pt": "Mas, porém"
+              },
+              {
+                "pt": "Porque"
+              }
             ],
             "correta": 0,
             "explicacao": "“Porque” também explica, mas viria antes da causa. 그래서 vem antes do efeito."
@@ -1053,7 +1733,12 @@
             "tipo": "montar",
             "enunciado": "Monte “Hoje choveu. Por isso fiquei em casa.”",
             "dica": "a causa vem primeiro",
-            "pecas": ["오늘은 비가 왔어요.", "그래서", "집에 있었어요.", "그리고"],
+            "pecas": [
+              "오늘은 비가 왔어요.",
+              "그래서",
+              "집에 있었어요.",
+              "그리고"
+            ],
             "correta": "오늘은비가왔어요.그래서집에있었어요.",
             "explicacao": "오늘은 비가 왔어요. 그래서 집에 있었어요."
           },
@@ -1061,7 +1746,20 @@
             "id": "n2a3-e12",
             "tipo": "escolha",
             "enunciado": "Qual das duas frases vem antes do 그래서?",
-            "opcoes": [{ "pt": "A causa" }, { "pt": "O efeito" }, { "pt": "Tanto faz" }, { "pt": "A pergunta" }],
+            "opcoes": [
+              {
+                "pt": "A causa"
+              },
+              {
+                "pt": "O efeito"
+              },
+              {
+                "pt": "Tanto faz"
+              },
+              {
+                "pt": "A pergunta"
+              }
+            ],
             "correta": 0,
             "explicacao": "그래서 abre a frase do efeito, então o que vem antes dela é a causa."
           },
@@ -1084,10 +1782,18 @@
             "tipo": "escolha",
             "enunciado": "어제 지갑을 잃어버렸어요. 그래서 돈이 없었어요. — por que a pessoa ficou sem dinheiro?",
             "opcoes": [
-              { "pt": "Porque perdeu a carteira" },
-              { "pt": "Porque comprou café" },
-              { "pt": "Porque o amigo pagou" },
-              { "pt": "Porque foi à escola" }
+              {
+                "pt": "Porque perdeu a carteira"
+              },
+              {
+                "pt": "Porque comprou café"
+              },
+              {
+                "pt": "Porque o amigo pagou"
+              },
+              {
+                "pt": "Porque foi à escola"
+              }
             ],
             "correta": 0,
             "explicacao": "O 그래서 é que amarra as duas frases: a perda causou a falta."
@@ -1097,10 +1803,18 @@
             "tipo": "escolha",
             "enunciado": "학교에서 친구를 만났어요. 그리고 밥을 먹었어요. — o que o 그리고 diz aqui?",
             "opcoes": [
-              { "pt": "Que uma coisa veio depois da outra" },
-              { "pt": "Que uma coisa causou a outra" },
-              { "pt": "Que as duas se contradizem" },
-              { "pt": "Que a segunda não chegou a acontecer" }
+              {
+                "pt": "Que uma coisa veio depois da outra"
+              },
+              {
+                "pt": "Que uma coisa causou a outra"
+              },
+              {
+                "pt": "Que as duas se contradizem"
+              },
+              {
+                "pt": "Que a segunda não chegou a acontecer"
+              }
             ],
             "correta": 0,
             "explicacao": "그리고 só soma. Se houvesse causa, seria 그래서."
@@ -1110,10 +1824,18 @@
             "tipo": "escolha",
             "enunciado": "친구가 돈을 냈어요 — quem pagou?",
             "opcoes": [
-              { "pt": "O amigo" },
-              { "pt": "Quem escreve o diário" },
-              { "pt": "Ninguém pagou" },
-              { "pt": "Os dois, cada um a sua parte" }
+              {
+                "pt": "O amigo"
+              },
+              {
+                "pt": "Quem escreve o diário"
+              },
+              {
+                "pt": "Ninguém pagou"
+              },
+              {
+                "pt": "Os dois, cada um a sua parte"
+              }
             ],
             "correta": 0,
             "explicacao": "-가 marca quem faz a ação, e 돈을 marca o que foi pago. A partícula resolve a frase sozinha."
@@ -1123,7 +1845,12 @@
             "tipo": "montar",
             "enunciado": "Monte “Hoje achei a carteira. Por isso comprei café.”",
             "dica": "achar é a causa",
-            "pecas": ["오늘 지갑을 찾았어요.", "그래서", "커피를 샀어요.", "그리고"],
+            "pecas": [
+              "오늘 지갑을 찾았어요.",
+              "그래서",
+              "커피를 샀어요.",
+              "그리고"
+            ],
             "correta": "오늘지갑을찾았어요.그래서커피를샀어요.",
             "explicacao": "오늘 지갑을 찾았어요. 그래서 커피를 샀어요."
           },
@@ -1147,7 +1874,12 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "서울 그리고 부산",
-            "pecas": ["서울", "그리고", "부산", "그래서"],
+            "pecas": [
+              "서울",
+              "그리고",
+              "부산",
+              "그래서"
+            ],
             "correta": "서울그리고부산",
             "explicacao": "서울 그리고 부산."
           },
@@ -1156,7 +1888,11 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "오늘은 비가 왔어요. 그래서 집에 있었어요.",
-            "pecas": ["오늘은 비가 왔어요.", "그래서", "집에 있었어요."],
+            "pecas": [
+              "오늘은 비가 왔어요.",
+              "그래서",
+              "집에 있었어요."
+            ],
             "correta": "오늘은비가왔어요.그래서집에있었어요.",
             "explicacao": "오늘은 비가 왔어요. 그래서 집에 있었어요."
           },
@@ -1165,7 +1901,12 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "저는 학생이에요. 그래서 돈이 없어요.",
-            "pecas": ["저는 학생이에요.", "그래서", "돈이 없어요.", "그리고"],
+            "pecas": [
+              "저는 학생이에요.",
+              "그래서",
+              "돈이 없어요.",
+              "그리고"
+            ],
             "correta": "저는학생이에요.그래서돈이없어요.",
             "explicacao": "저는 학생이에요. 그래서 돈이 없어요."
           },
@@ -1174,7 +1915,20 @@
             "tipo": "ditado",
             "enunciado": "Ouça e escolha a conjunção que você ouviu.",
             "audio": "그래서",
-            "opcoes": [{ "ko": "그래서" }, { "ko": "그리고" }, { "ko": "그런데" }, { "ko": "그러면" }],
+            "opcoes": [
+              {
+                "ko": "그래서"
+              },
+              {
+                "ko": "그리고"
+              },
+              {
+                "ko": "그런데"
+              },
+              {
+                "ko": "그러면"
+              }
+            ],
             "correta": 0,
             "explicacao": "그래서. As quatro começam igual — o que muda é o que vem depois do 그."
           },
@@ -1183,7 +1937,20 @@
             "tipo": "ditado",
             "enunciado": "Ouça e escolha a palavra que você ouviu.",
             "audio": "카페",
-            "opcoes": [{ "ko": "카페" }, { "ko": "커피" }, { "ko": "학교" }, { "ko": "회사" }],
+            "opcoes": [
+              {
+                "ko": "카페"
+              },
+              {
+                "ko": "커피"
+              },
+              {
+                "ko": "학교"
+              },
+              {
+                "ko": "회사"
+              }
+            ],
             "correta": 0,
             "explicacao": "카페 — cafeteria."
           }
@@ -1201,14 +1968,38 @@
     "ilustracao": "assets/nivel2/aula-4.svg",
     "objetivo": "Juntar dois substantivos numa frase só e dizer com quem você fez alguma coisa.",
     "vocabulario": [
-      { "ko": "번개", "pt": "relâmpago" },
-      { "ko": "천둥", "pt": "trovão" },
-      { "ko": "사다리", "pt": "escada (de mão)" },
-      { "ko": "대통령", "pt": "presidente (do país)" },
-      { "ko": "라면", "pt": "lámen" },
-      { "ko": "노트", "pt": "caderno de anotações" },
-      { "ko": "무섭다", "pt": "ser assustador, dar medo" },
-      { "ko": "같이", "pt": "juntos, junto com" }
+      {
+        "ko": "번개",
+        "pt": "relâmpago"
+      },
+      {
+        "ko": "천둥",
+        "pt": "trovão"
+      },
+      {
+        "ko": "사다리",
+        "pt": "escada (de mão)"
+      },
+      {
+        "ko": "대통령",
+        "pt": "presidente (do país)"
+      },
+      {
+        "ko": "라면",
+        "pt": "lámen"
+      },
+      {
+        "ko": "노트",
+        "pt": "caderno de anotações"
+      },
+      {
+        "ko": "무섭다",
+        "pt": "ser assustador, dar medo"
+      },
+      {
+        "ko": "같이",
+        "pt": "juntos, junto com"
+      }
     ],
     "topicos": [
       {
@@ -1222,17 +2013,34 @@
           },
           {
             "tipo": "formula",
-            "partes": ["우유", "하고", "빵"],
-            "glosas": ["leite", "e", "pão"],
+            "partes": [
+              "우유",
+              "하고",
+              "빵"
+            ],
+            "glosas": [
+              "leite",
+              "e",
+              "pão"
+            ],
             "resultado": "우유하고 빵",
             "traducao": "leite e pão"
           },
           {
             "tipo": "exemplos",
             "itens": [
-              { "ko": "이거하고 이거 주세요.", "pt": "Me vê este e este." },
-              { "ko": "우유하고 빵 샀어요.", "pt": "Comprei leite e pão." },
-              { "ko": "김밥하고 라면 좋아해요.", "pt": "Gosto de gimbap e de lámen." }
+              {
+                "ko": "이거하고 이거 주세요.",
+                "pt": "Me vê este e este."
+              },
+              {
+                "ko": "우유하고 빵 샀어요.",
+                "pt": "Comprei leite e pão."
+              },
+              {
+                "ko": "김밥하고 라면 좋아해요.",
+                "pt": "Gosto de gimbap e de lámen."
+              }
             ]
           },
           {
@@ -1257,17 +2065,39 @@
           {
             "tipo": "regra",
             "linhas": [
-              { "condicao": "termina em vogal", "resultado": "-랑 → 우유랑" },
-              { "condicao": "termina em consoante", "resultado": "-이랑 → 빵이랑" }
+              {
+                "condicao": "termina em vogal",
+                "resultado": "-랑 → 우유랑"
+              },
+              {
+                "condicao": "termina em consoante",
+                "resultado": "-이랑 → 빵이랑"
+              }
             ]
           },
           {
             "tipo": "tabela",
-            "colunas": ["Com -하고", "Com -(이)랑", "Tradução"],
+            "colunas": [
+              "Com -하고",
+              "Com -(이)랑",
+              "Tradução"
+            ],
             "linhas": [
-              ["우유하고 빵", "우유랑 빵", "leite e pão"],
-              ["빵하고 우유", "빵이랑 우유", "pão e leite"],
-              ["노트하고 펜", "노트랑 펜", "caderno e caneta"]
+              [
+                "우유하고 빵",
+                "우유랑 빵",
+                "leite e pão"
+              ],
+              [
+                "빵하고 우유",
+                "빵이랑 우유",
+                "pão e leite"
+              ],
+              [
+                "노트하고 펜",
+                "노트랑 펜",
+                "caderno e caneta"
+              ]
             ]
           },
           {
@@ -1292,9 +2122,19 @@
           {
             "tipo": "exemplos",
             "itens": [
-              { "ko": "친구하고 영화 봤어요.", "pt": "Vi um filme com um amigo.", "conta": "“vi um amigo e um filme” não é frase que alguém diga" },
-              { "ko": "누구랑 갔어요?", "pt": "Você foi com quem?" },
-              { "ko": "동생하고 공부할 거예요.", "pt": "Vou estudar com meu irmão mais novo." }
+              {
+                "ko": "친구하고 영화 봤어요.",
+                "pt": "Vi um filme com um amigo.",
+                "conta": "“vi um amigo e um filme” não é frase que alguém diga"
+              },
+              {
+                "ko": "누구랑 갔어요?",
+                "pt": "Você foi com quem?"
+              },
+              {
+                "ko": "동생하고 공부할 거예요.",
+                "pt": "Vou estudar com meu irmão mais novo."
+              }
             ]
           },
           {
@@ -1304,8 +2144,14 @@
           {
             "tipo": "exemplos",
             "itens": [
-              { "ko": "친구하고 같이 영화 봤어요.", "pt": "Vi um filme junto com um amigo." },
-              { "ko": "누구랑 같이 갔어요?", "pt": "Com quem você foi?" }
+              {
+                "ko": "친구하고 같이 영화 봤어요.",
+                "pt": "Vi um filme junto com um amigo."
+              },
+              {
+                "ko": "누구랑 같이 갔어요?",
+                "pt": "Com quem você foi?"
+              }
             ]
           },
           {
@@ -1318,10 +2164,26 @@
     "dialogo": {
       "contexto": "Depois da viagem.",
       "falas": [
-        { "quem": "A", "ko": "여행 누구랑 갔어요?", "pt": "Você viajou com quem?" },
-        { "quem": "B", "ko": "가족이랑 갔어요.", "pt": "Fui com a família." },
-        { "quem": "A", "ko": "거기에서 뭐 했어요?", "pt": "O que vocês fizeram lá?" },
-        { "quem": "B", "ko": "밥 먹었어요. 그리고 영화 봤어요.", "pt": "Comemos. E vimos um filme." }
+        {
+          "quem": "A",
+          "ko": "여행 누구랑 갔어요?",
+          "pt": "Você viajou com quem?"
+        },
+        {
+          "quem": "B",
+          "ko": "가족이랑 갔어요.",
+          "pt": "Fui com a família."
+        },
+        {
+          "quem": "A",
+          "ko": "거기에서 뭐 했어요?",
+          "pt": "O que vocês fizeram lá?"
+        },
+        {
+          "quem": "B",
+          "ko": "밥 먹었어요. 그리고 영화 봤어요.",
+          "pt": "Comemos. E vimos um filme."
+        }
       ]
     },
     "grupos": [
@@ -1334,11 +2196,26 @@
             "tipo": "associar",
             "enunciado": "Ligue cada palavra à tradução.",
             "pares": [
-              { "a": "번개", "b": "relâmpago" },
-              { "a": "천둥", "b": "trovão" },
-              { "a": "사다리", "b": "escada de mão" },
-              { "a": "대통령", "b": "presidente" },
-              { "a": "라면", "b": "lámen" }
+              {
+                "a": "번개",
+                "b": "relâmpago"
+              },
+              {
+                "a": "천둥",
+                "b": "trovão"
+              },
+              {
+                "a": "사다리",
+                "b": "escada de mão"
+              },
+              {
+                "a": "대통령",
+                "b": "presidente"
+              },
+              {
+                "a": "라면",
+                "b": "lámen"
+              }
             ],
             "explicacao": "번개 e 천둥 andam juntos na natureza e também na frase: 번개하고 천둥."
           },
@@ -1347,10 +2224,18 @@
             "tipo": "escolha",
             "enunciado": "Como se escreve “leite e pão” com -하고?",
             "opcoes": [
-              { "ko": "우유하고 빵" },
-              { "ko": "우유 하고 빵" },
-              { "ko": "우유하고 빵하고" },
-              { "ko": "하고 우유 빵" }
+              {
+                "ko": "우유하고 빵"
+              },
+              {
+                "ko": "우유 하고 빵"
+              },
+              {
+                "ko": "우유하고 빵하고"
+              },
+              {
+                "ko": "하고 우유 빵"
+              }
             ],
             "correta": 0,
             "explicacao": "A partícula cola na primeira palavra e a segunda vem sozinha."
@@ -1361,7 +2246,11 @@
             "enunciado": "Complete “Gosto de gimbap e de lámen.”",
             "antes": "김밥",
             "depois": " 라면 좋아해요.",
-            "banco": ["하고", "그리고", "에서"],
+            "banco": [
+              "하고",
+              "그리고",
+              "에서"
+            ],
             "correta": 0,
             "explicacao": "Entre dois substantivos, a partícula. 그리고 é para frases."
           },
@@ -1370,7 +2259,12 @@
             "tipo": "montar",
             "enunciado": "Monte “Me vê este e este.”",
             "dica": "이거 + a partícula",
-            "pecas": ["이거하고", "이거", "주세요.", "이거랑"],
+            "pecas": [
+              "이거하고",
+              "이거",
+              "주세요.",
+              "이거랑"
+            ],
             "correta": "이거하고이거주세요.",
             "explicacao": "이거하고 이거 주세요."
           },
@@ -1386,7 +2280,20 @@
             "id": "n2a4-e6",
             "tipo": "escolha",
             "enunciado": "Numa lista de duas palavras, a partícula entra em quantas?",
-            "opcoes": [{ "pt": "Só na primeira" }, { "pt": "Nas duas" }, { "pt": "Só na última" }, { "pt": "Em nenhuma" }],
+            "opcoes": [
+              {
+                "pt": "Só na primeira"
+              },
+              {
+                "pt": "Nas duas"
+              },
+              {
+                "pt": "Só na última"
+              },
+              {
+                "pt": "Em nenhuma"
+              }
+            ],
             "correta": 0,
             "explicacao": "우유하고 빵 — o 빵 não recebe nada."
           }
@@ -1400,7 +2307,20 @@
             "id": "n2a4-e7",
             "tipo": "escolha",
             "enunciado": "우유 + -(이)랑 dá:",
-            "opcoes": [{ "ko": "우유랑" }, { "ko": "우유이랑" }, { "ko": "우유하랑" }, { "ko": "우유을랑" }],
+            "opcoes": [
+              {
+                "ko": "우유랑"
+              },
+              {
+                "ko": "우유이랑"
+              },
+              {
+                "ko": "우유하랑"
+              },
+              {
+                "ko": "우유을랑"
+              }
+            ],
             "correta": 0,
             "explicacao": "우유 termina em vogal, então não precisa do -이-."
           },
@@ -1408,7 +2328,20 @@
             "id": "n2a4-e8",
             "tipo": "escolha",
             "enunciado": "E 빵 + -(이)랑?",
-            "opcoes": [{ "ko": "빵이랑" }, { "ko": "빵랑" }, { "ko": "빵하랑" }, { "ko": "빵의랑" }],
+            "opcoes": [
+              {
+                "ko": "빵이랑"
+              },
+              {
+                "ko": "빵랑"
+              },
+              {
+                "ko": "빵하랑"
+              },
+              {
+                "ko": "빵의랑"
+              }
+            ],
             "correta": 0,
             "explicacao": "빵 termina em ㅇ, então entra o -이- de apoio."
           },
@@ -1418,7 +2351,11 @@
             "enunciado": "Complete “Comprei um caderno e uma caneta.”",
             "antes": "노트",
             "depois": " 펜 샀어요.",
-            "banco": ["랑", "이랑", "에"],
+            "banco": [
+              "랑",
+              "이랑",
+              "에"
+            ],
             "correta": 0,
             "explicacao": "노트 termina em vogal: 노트랑 펜."
           },
@@ -1427,7 +2364,11 @@
             "tipo": "montar",
             "enunciado": "Monte “pão e leite”, na forma coloquial.",
             "dica": "빵 tem 받침",
-            "pecas": ["빵이랑", "우유", "빵랑"],
+            "pecas": [
+              "빵이랑",
+              "우유",
+              "빵랑"
+            ],
             "correta": "빵이랑우유",
             "explicacao": "빵이랑 우유."
           },
@@ -1435,7 +2376,20 @@
             "id": "n2a4-e11",
             "tipo": "escolha",
             "enunciado": "Qual das duas evitar numa situação formal?",
-            "opcoes": [{ "ko": "-(이)랑" }, { "ko": "-하고" }, { "pt": "As duas" }, { "pt": "Nenhuma das duas" }],
+            "opcoes": [
+              {
+                "ko": "-(이)랑"
+              },
+              {
+                "ko": "-하고"
+              },
+              {
+                "pt": "As duas"
+              },
+              {
+                "pt": "Nenhuma das duas"
+              }
+            ],
             "correta": 0,
             "explicacao": "-(이)랑 é o registro de conversa. -하고 serve em qualquer lugar."
           },
@@ -1458,10 +2412,18 @@
             "tipo": "escolha",
             "enunciado": "친구하고 영화 봤어요 quer dizer:",
             "opcoes": [
-              { "pt": "Vi um filme com um amigo" },
-              { "pt": "Vi um amigo e um filme" },
-              { "pt": "Meu amigo viu um filme" },
-              { "pt": "Vou ver um filme com um amigo" }
+              {
+                "pt": "Vi um filme com um amigo"
+              },
+              {
+                "pt": "Vi um amigo e um filme"
+              },
+              {
+                "pt": "Meu amigo viu um filme"
+              },
+              {
+                "pt": "Vou ver um filme com um amigo"
+              }
             ],
             "correta": 0,
             "explicacao": "Entre gente e coisa, a leitura “com” é a única que faz sentido."
@@ -1472,7 +2434,11 @@
             "enunciado": "Complete “Fui junto com um amigo.”",
             "antes": "친구",
             "depois": " 같이 갔어요.",
-            "banco": ["하고", "을", "에서"],
+            "banco": [
+              "하고",
+              "을",
+              "에서"
+            ],
             "correta": 0,
             "explicacao": "친구하고 같이 갔어요."
           },
@@ -1481,7 +2447,11 @@
             "tipo": "montar",
             "enunciado": "Monte “Você foi com quem?”",
             "dica": "누구 + -랑",
-            "pecas": ["누구랑", "갔어요?", "누구를"],
+            "pecas": [
+              "누구랑",
+              "갔어요?",
+              "누구를"
+            ],
             "correta": "누구랑갔어요?",
             "explicacao": "누구랑 갔어요? — 누구 termina em vogal, então -랑."
           },
@@ -1489,7 +2459,20 @@
             "id": "n2a4-e16",
             "tipo": "escolha",
             "enunciado": "Que palavra deixa claro que é “junto com”, e não “e”?",
-            "opcoes": [{ "ko": "같이" }, { "ko": "많이" }, { "ko": "자주" }, { "ko": "혼자" }],
+            "opcoes": [
+              {
+                "ko": "같이"
+              },
+              {
+                "ko": "많이"
+              },
+              {
+                "ko": "자주"
+              },
+              {
+                "ko": "혼자"
+              }
+            ],
             "correta": 0,
             "explicacao": "같이 quer dizer “junto”. 혼자, o oposto, quer dizer “sozinho”."
           },
@@ -1498,7 +2481,11 @@
             "tipo": "montar",
             "enunciado": "Monte “Vou estudar com meu irmão mais novo.”",
             "dica": "futuro, da aula 1",
-            "pecas": ["동생하고", "공부할 거예요.", "공부했어요."],
+            "pecas": [
+              "동생하고",
+              "공부할 거예요.",
+              "공부했어요."
+            ],
             "correta": "동생하고공부할거예요.",
             "explicacao": "동생하고 공부할 거예요."
           }
@@ -1514,7 +2501,11 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "빵이랑 우유",
-            "pecas": ["빵이랑", "우유", "빵하고"],
+            "pecas": [
+              "빵이랑",
+              "우유",
+              "빵하고"
+            ],
             "correta": "빵이랑우유",
             "explicacao": "빵이랑 우유 — pão e leite."
           },
@@ -1523,7 +2514,12 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "친구하고 영화 봤어요.",
-            "pecas": ["친구하고", "영화", "봤어요.", "볼 거예요."],
+            "pecas": [
+              "친구하고",
+              "영화",
+              "봤어요.",
+              "볼 거예요."
+            ],
             "correta": "친구하고영화봤어요.",
             "explicacao": "친구하고 영화 봤어요."
           },
@@ -1532,7 +2528,11 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "누구랑 갔어요?",
-            "pecas": ["누구랑", "갔어요?", "갈 거예요?"],
+            "pecas": [
+              "누구랑",
+              "갔어요?",
+              "갈 거예요?"
+            ],
             "correta": "누구랑갔어요?",
             "explicacao": "누구랑 갔어요?"
           },
@@ -1541,7 +2541,20 @@
             "tipo": "ditado",
             "enunciado": "Ouça e escolha a palavra que você ouviu.",
             "audio": "번개",
-            "opcoes": [{ "ko": "번개" }, { "ko": "천둥" }, { "ko": "사다리" }, { "ko": "대통령" }],
+            "opcoes": [
+              {
+                "ko": "번개"
+              },
+              {
+                "ko": "천둥"
+              },
+              {
+                "ko": "사다리"
+              },
+              {
+                "ko": "대통령"
+              }
+            ],
             "correta": 0,
             "explicacao": "번개 — relâmpago."
           },
@@ -1550,7 +2563,20 @@
             "tipo": "ditado",
             "enunciado": "Ouça e escolha a palavra que você ouviu.",
             "audio": "라면",
-            "opcoes": [{ "ko": "라면" }, { "ko": "김밥" }, { "ko": "노트" }, { "ko": "사과" }],
+            "opcoes": [
+              {
+                "ko": "라면"
+              },
+              {
+                "ko": "김밥"
+              },
+              {
+                "ko": "노트"
+              },
+              {
+                "ko": "사과"
+              }
+            ],
             "correta": 0,
             "explicacao": "라면 — lámen."
           }
@@ -1568,18 +2594,63 @@
     "ilustracao": "assets/nivel2/aula-5.svg",
     "objetivo": "Dizer que dia é hoje, marcar alguma coisa num dia e reconhecer os morfemas por trás dos nomes.",
     "vocabulario": [
-      { "ko": "요일", "pt": "dia da semana", "hanja": "曜日" },
-      { "ko": "일요일", "pt": "domingo", "hanja": "日曜日" },
-      { "ko": "월요일", "pt": "segunda-feira", "hanja": "月曜日" },
-      { "ko": "화요일", "pt": "terça-feira", "hanja": "火曜日" },
-      { "ko": "수요일", "pt": "quarta-feira", "hanja": "水曜日" },
-      { "ko": "목요일", "pt": "quinta-feira", "hanja": "木曜日" },
-      { "ko": "금요일", "pt": "sexta-feira", "hanja": "金曜日" },
-      { "ko": "토요일", "pt": "sábado", "hanja": "土曜日" },
-      { "ko": "무슨", "pt": "que, qual" },
-      { "ko": "소풍", "pt": "piquenique, passeio" },
-      { "ko": "언어", "pt": "língua, idioma" },
-      { "ko": "화성", "pt": "Marte", "hanja": "火星" }
+      {
+        "ko": "요일",
+        "pt": "dia da semana",
+        "hanja": "曜日"
+      },
+      {
+        "ko": "일요일",
+        "pt": "domingo",
+        "hanja": "日曜日"
+      },
+      {
+        "ko": "월요일",
+        "pt": "segunda-feira",
+        "hanja": "月曜日"
+      },
+      {
+        "ko": "화요일",
+        "pt": "terça-feira",
+        "hanja": "火曜日"
+      },
+      {
+        "ko": "수요일",
+        "pt": "quarta-feira",
+        "hanja": "水曜日"
+      },
+      {
+        "ko": "목요일",
+        "pt": "quinta-feira",
+        "hanja": "木曜日"
+      },
+      {
+        "ko": "금요일",
+        "pt": "sexta-feira",
+        "hanja": "金曜日"
+      },
+      {
+        "ko": "토요일",
+        "pt": "sábado",
+        "hanja": "土曜日"
+      },
+      {
+        "ko": "무슨",
+        "pt": "que, qual"
+      },
+      {
+        "ko": "소풍",
+        "pt": "piquenique, passeio"
+      },
+      {
+        "ko": "언어",
+        "pt": "língua, idioma"
+      },
+      {
+        "ko": "화성",
+        "pt": "Marte",
+        "hanja": "火星"
+      }
     ],
     "topicos": [
       {
@@ -1593,15 +2664,39 @@
           },
           {
             "tipo": "tabela",
-            "colunas": ["Dia", "Coreano"],
+            "colunas": [
+              "Dia",
+              "Coreano"
+            ],
             "linhas": [
-              ["domingo", "일요일"],
-              ["segunda-feira", "월요일"],
-              ["terça-feira", "화요일"],
-              ["quarta-feira", "수요일"],
-              ["quinta-feira", "목요일"],
-              ["sexta-feira", "금요일"],
-              ["sábado", "토요일"]
+              [
+                "domingo",
+                "일요일"
+              ],
+              [
+                "segunda-feira",
+                "월요일"
+              ],
+              [
+                "terça-feira",
+                "화요일"
+              ],
+              [
+                "quarta-feira",
+                "수요일"
+              ],
+              [
+                "quinta-feira",
+                "목요일"
+              ],
+              [
+                "sexta-feira",
+                "금요일"
+              ],
+              [
+                "sábado",
+                "토요일"
+              ]
             ]
           },
           {
@@ -1636,15 +2731,47 @@
           },
           {
             "tipo": "tabela",
-            "colunas": ["Sílaba", "Ideograma", "Significado"],
+            "colunas": [
+              "Sílaba",
+              "Ideograma",
+              "Significado"
+            ],
             "linhas": [
-              ["월", "月", "lua"],
-              ["화", "火", "fogo"],
-              ["수", "水", "água"],
-              ["목", "木", "árvore"],
-              ["금", "金", "metal, ouro"],
-              ["토", "土", "terra"],
-              ["일", "日", "sol, dia"]
+              [
+                "월",
+                "月",
+                "lua"
+              ],
+              [
+                "화",
+                "火",
+                "fogo"
+              ],
+              [
+                "수",
+                "水",
+                "água"
+              ],
+              [
+                "목",
+                "木",
+                "árvore"
+              ],
+              [
+                "금",
+                "金",
+                "metal, ouro"
+              ],
+              [
+                "토",
+                "土",
+                "terra"
+              ],
+              [
+                "일",
+                "日",
+                "sol, dia"
+              ]
             ]
           },
           {
@@ -1653,13 +2780,37 @@
           },
           {
             "tipo": "tabela",
-            "colunas": ["Planeta", "Coreano", "Dia"],
+            "colunas": [
+              "Planeta",
+              "Coreano",
+              "Dia"
+            ],
             "linhas": [
-              ["Marte", "화성", "화요일"],
-              ["Mercúrio", "수성", "수요일"],
-              ["Júpiter", "목성", "목요일"],
-              ["Vênus", "금성", "금요일"],
-              ["Saturno", "토성", "토요일"]
+              [
+                "Marte",
+                "화성",
+                "화요일"
+              ],
+              [
+                "Mercúrio",
+                "수성",
+                "수요일"
+              ],
+              [
+                "Júpiter",
+                "목성",
+                "목요일"
+              ],
+              [
+                "Vênus",
+                "금성",
+                "금요일"
+              ],
+              [
+                "Saturno",
+                "토성",
+                "토요일"
+              ]
             ]
           },
           {
@@ -1684,8 +2835,14 @@
           {
             "tipo": "exemplos",
             "itens": [
-              { "ko": "오늘 무슨 요일이에요?", "pt": "Que dia é hoje?" },
-              { "ko": "내일 무슨 요일이에요?", "pt": "Que dia é amanhã?" }
+              {
+                "ko": "오늘 무슨 요일이에요?",
+                "pt": "Que dia é hoje?"
+              },
+              {
+                "ko": "내일 무슨 요일이에요?",
+                "pt": "Que dia é amanhã?"
+              }
             ]
           },
           {
@@ -1703,9 +2860,18 @@
           {
             "tipo": "exemplos",
             "itens": [
-              { "ko": "토요일에 소풍을 갈 거예요.", "pt": "No sábado vou fazer um piquenique." },
-              { "ko": "월요일에 영화를 봤어요.", "pt": "Na segunda eu vi um filme." },
-              { "ko": "금요일에 친구를 만날 거예요.", "pt": "Na sexta vou encontrar um amigo." }
+              {
+                "ko": "토요일에 소풍을 갈 거예요.",
+                "pt": "No sábado vou fazer um piquenique."
+              },
+              {
+                "ko": "월요일에 영화를 봤어요.",
+                "pt": "Na segunda eu vi um filme."
+              },
+              {
+                "ko": "금요일에 친구를 만날 거예요.",
+                "pt": "Na sexta vou encontrar um amigo."
+              }
             ]
           },
           {
@@ -1718,10 +2884,26 @@
     "dialogo": {
       "contexto": "Alguém perdido na semana.",
       "falas": [
-        { "quem": "A", "ko": "오늘 무슨 요일이에요?", "pt": "Que dia é hoje?" },
-        { "quem": "B", "ko": "화요일이에요.", "pt": "É terça." },
-        { "quem": "A", "ko": "아, 수요일 아니에요?", "pt": "Ah, não é quarta?" },
-        { "quem": "B", "ko": "아니요. 내일이 수요일이에요.", "pt": "Não. Amanhã é que é quarta." }
+        {
+          "quem": "A",
+          "ko": "오늘 무슨 요일이에요?",
+          "pt": "Que dia é hoje?"
+        },
+        {
+          "quem": "B",
+          "ko": "화요일이에요.",
+          "pt": "É terça."
+        },
+        {
+          "quem": "A",
+          "ko": "아, 수요일 아니에요?",
+          "pt": "Ah, não é quarta?"
+        },
+        {
+          "quem": "B",
+          "ko": "아니요. 내일이 수요일이에요.",
+          "pt": "Não. Amanhã é que é quarta."
+        }
       ]
     },
     "grupos": [
@@ -1734,11 +2916,26 @@
             "tipo": "associar",
             "enunciado": "Ligue cada dia à tradução.",
             "pares": [
-              { "a": "일요일", "b": "domingo" },
-              { "a": "화요일", "b": "terça-feira" },
-              { "a": "토요일", "b": "sábado" },
-              { "a": "목요일", "b": "quinta-feira" },
-              { "a": "수요일", "b": "quarta-feira" }
+              {
+                "a": "일요일",
+                "b": "domingo"
+              },
+              {
+                "a": "화요일",
+                "b": "terça-feira"
+              },
+              {
+                "a": "토요일",
+                "b": "sábado"
+              },
+              {
+                "a": "목요일",
+                "b": "quinta-feira"
+              },
+              {
+                "a": "수요일",
+                "b": "quarta-feira"
+              }
             ],
             "explicacao": "Os cinco se distinguem só pela primeira sílaba — é nela que a atenção tem que estar."
           },
@@ -1746,7 +2943,20 @@
             "id": "n2a5-e2",
             "tipo": "escolha",
             "enunciado": "Qual é “sexta-feira”?",
-            "opcoes": [{ "ko": "금요일" }, { "ko": "목요일" }, { "ko": "수요일" }, { "ko": "월요일" }],
+            "opcoes": [
+              {
+                "ko": "금요일"
+              },
+              {
+                "ko": "목요일"
+              },
+              {
+                "ko": "수요일"
+              },
+              {
+                "ko": "월요일"
+              }
+            ],
             "correta": 0,
             "explicacao": "금요일, do 금 de metal e ouro."
           },
@@ -1754,7 +2964,20 @@
             "id": "n2a5-e3",
             "tipo": "escolha",
             "enunciado": "Qual é “segunda-feira”?",
-            "opcoes": [{ "ko": "월요일" }, { "ko": "일요일" }, { "ko": "화요일" }, { "ko": "토요일" }],
+            "opcoes": [
+              {
+                "ko": "월요일"
+              },
+              {
+                "ko": "일요일"
+              },
+              {
+                "ko": "화요일"
+              },
+              {
+                "ko": "토요일"
+              }
+            ],
             "correta": 0,
             "explicacao": "월요일, o dia da lua. 일요일 é domingo, o dia do sol."
           },
@@ -1764,7 +2987,11 @@
             "enunciado": "Complete “quinta-feira”.",
             "antes": "",
             "depois": "요일",
-            "banco": ["목", "무", "묵"],
+            "banco": [
+              "목",
+              "무",
+              "묵"
+            ],
             "correta": 0,
             "explicacao": "목요일 — a sílaba é 목, de árvore."
           },
@@ -1773,7 +3000,12 @@
             "tipo": "montar",
             "enunciado": "Monte “quinta-feira”, sílaba por sílaba.",
             "dica": "árvore + dia da semana",
-            "pecas": ["목", "요", "일", "금"],
+            "pecas": [
+              "목",
+              "요",
+              "일",
+              "금"
+            ],
             "correta": "목요일",
             "explicacao": "목 + 요일. A cauda 요일 é comum aos sete."
           },
@@ -1789,7 +3021,20 @@
             "id": "n2a5-e7",
             "tipo": "escolha",
             "enunciado": "O que 요일 quer dizer sozinho?",
-            "opcoes": [{ "pt": "Dia da semana" }, { "pt": "Fim de semana" }, { "pt": "Feriado" }, { "pt": "Hoje" }],
+            "opcoes": [
+              {
+                "pt": "Dia da semana"
+              },
+              {
+                "pt": "Fim de semana"
+              },
+              {
+                "pt": "Feriado"
+              },
+              {
+                "pt": "Hoje"
+              }
+            ],
             "correta": 0,
             "explicacao": "É a palavra genérica — por isso 무슨 요일이에요? é “que dia da semana é?”."
           }
@@ -1804,11 +3049,26 @@
             "tipo": "associar",
             "enunciado": "Ligue cada sílaba ao significado do ideograma.",
             "pares": [
-              { "a": "월", "b": "lua" },
-              { "a": "화", "b": "fogo" },
-              { "a": "수", "b": "água" },
-              { "a": "목", "b": "árvore" },
-              { "a": "토", "b": "terra" }
+              {
+                "a": "월",
+                "b": "lua"
+              },
+              {
+                "a": "화",
+                "b": "fogo"
+              },
+              {
+                "a": "수",
+                "b": "água"
+              },
+              {
+                "a": "목",
+                "b": "árvore"
+              },
+              {
+                "a": "토",
+                "b": "terra"
+              }
             ],
             "explicacao": "月, 火, 水, 木, 土 — a mesma sequência de elementos que nomeia os planetas."
           },
@@ -1816,7 +3076,20 @@
             "id": "n2a5-e9",
             "tipo": "escolha",
             "enunciado": "화성 é qual planeta?",
-            "opcoes": [{ "pt": "Marte" }, { "pt": "Mercúrio" }, { "pt": "Júpiter" }, { "pt": "Vênus" }],
+            "opcoes": [
+              {
+                "pt": "Marte"
+              },
+              {
+                "pt": "Mercúrio"
+              },
+              {
+                "pt": "Júpiter"
+              },
+              {
+                "pt": "Vênus"
+              }
+            ],
             "correta": 0,
             "explicacao": "화 é fogo, e o planeta vermelho é o do fogo — a mesma imagem do Marte romano."
           },
@@ -1824,7 +3097,20 @@
             "id": "n2a5-e10",
             "tipo": "escolha",
             "enunciado": "Qual dia da semana divide a sílaba com 목성 (Júpiter)?",
-            "opcoes": [{ "ko": "목요일" }, { "ko": "금요일" }, { "ko": "토요일" }, { "ko": "수요일" }],
+            "opcoes": [
+              {
+                "ko": "목요일"
+              },
+              {
+                "ko": "금요일"
+              },
+              {
+                "ko": "토요일"
+              },
+              {
+                "ko": "수요일"
+              }
+            ],
             "correta": 0,
             "explicacao": "목성 e 목요일 — o mesmo 木."
           },
@@ -1834,7 +3120,11 @@
             "enunciado": "Complete “Mercúrio”.",
             "antes": "",
             "depois": "성",
-            "banco": ["수", "목", "금"],
+            "banco": [
+              "수",
+              "목",
+              "금"
+            ],
             "correta": 0,
             "explicacao": "수성, do 수 de água — e daí 수요일, quarta-feira."
           },
@@ -1850,7 +3140,20 @@
             "id": "n2a5-e13",
             "tipo": "escolha",
             "enunciado": "土, a sílaba 토, significa:",
-            "opcoes": [{ "pt": "Terra, solo" }, { "pt": "Fogo" }, { "pt": "Metal" }, { "pt": "Árvore" }],
+            "opcoes": [
+              {
+                "pt": "Terra, solo"
+              },
+              {
+                "pt": "Fogo"
+              },
+              {
+                "pt": "Metal"
+              },
+              {
+                "pt": "Árvore"
+              }
+            ],
             "correta": 0,
             "explicacao": "土 — e daí 토성, Saturno, e 토요일, sábado."
           }
@@ -1865,7 +3168,12 @@
             "tipo": "montar",
             "enunciado": "Monte “Que dia é hoje?”",
             "dica": "무슨 antes de 요일",
-            "pecas": ["오늘", "무슨", "요일이에요?", "요일예요?"],
+            "pecas": [
+              "오늘",
+              "무슨",
+              "요일이에요?",
+              "요일예요?"
+            ],
             "correta": "오늘무슨요일이에요?",
             "explicacao": "오늘 무슨 요일이에요?"
           },
@@ -1874,10 +3182,18 @@
             "tipo": "escolha",
             "enunciado": "Por que é 요일이에요 e não 요일예요?",
             "opcoes": [
-              { "pt": "Porque 요일 termina em 받침 (o ㄹ de 일)" },
-              { "pt": "Porque 요일 termina em vogal" },
-              { "pt": "Porque a frase é uma pergunta" },
-              { "pt": "Porque 요일 é palavra estrangeira" }
+              {
+                "pt": "Porque 요일 termina em 받침 (o ㄹ de 일)"
+              },
+              {
+                "pt": "Porque 요일 termina em vogal"
+              },
+              {
+                "pt": "Porque a frase é uma pergunta"
+              },
+              {
+                "pt": "Porque 요일 é palavra estrangeira"
+              }
             ],
             "correta": 0,
             "explicacao": "A regra da aula 5 do Nível 1: consoante final pede 이에요."
@@ -1888,7 +3204,11 @@
             "enunciado": "Complete “No sábado vou fazer um piquenique.”",
             "antes": "토요일",
             "depois": " 소풍을 갈 거예요.",
-            "banco": ["에", "를", "하고"],
+            "banco": [
+              "에",
+              "를",
+              "하고"
+            ],
             "correta": 0,
             "explicacao": "-에 marca quando. Sem ele, 토요일 소풍 vira “o piquenique de sábado”."
           },
@@ -1897,7 +3217,12 @@
             "tipo": "montar",
             "enunciado": "Monte “Na segunda eu vi um filme.”",
             "dica": "no passado",
-            "pecas": ["월요일에", "영화를", "봤어요.", "볼 거예요."],
+            "pecas": [
+              "월요일에",
+              "영화를",
+              "봤어요.",
+              "볼 거예요."
+            ],
             "correta": "월요일에영화를봤어요.",
             "explicacao": "월요일에 영화를 봤어요."
           },
@@ -1906,10 +3231,18 @@
             "tipo": "escolha",
             "enunciado": "Como se responde 오늘 무슨 요일이에요?",
             "opcoes": [
-              { "ko": "화요일이에요." },
-              { "ko": "네, 맞아요." },
-              { "ko": "오늘이에요." },
-              { "ko": "무슨 요일이에요." }
+              {
+                "ko": "화요일이에요."
+              },
+              {
+                "ko": "네, 맞아요."
+              },
+              {
+                "ko": "오늘이에요."
+              },
+              {
+                "ko": "무슨 요일이에요."
+              }
             ],
             "correta": 0,
             "explicacao": "A interrogativa 무슨 요일 sai e o dia entra no lugar dela."
@@ -1934,7 +3267,11 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "오늘은 금요일이에요.",
-            "pecas": ["오늘은", "금요일이에요.", "목요일이에요."],
+            "pecas": [
+              "오늘은",
+              "금요일이에요.",
+              "목요일이에요."
+            ],
             "correta": "오늘은금요일이에요.",
             "explicacao": "오늘은 금요일이에요 — “hoje é sexta”."
           },
@@ -1943,7 +3280,15 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte a semana como ela se recita em coreano.",
             "audio": "월화수목금토일",
-            "pecas": ["월", "화", "수", "목", "금", "토", "일"],
+            "pecas": [
+              "월",
+              "화",
+              "수",
+              "목",
+              "금",
+              "토",
+              "일"
+            ],
             "correta": "월화수목금토일",
             "explicacao": "월화수목금토일 — a recitação começa na segunda, mesmo que a lista comece no domingo."
           },
@@ -1952,7 +3297,12 @@
             "tipo": "ditado",
             "enunciado": "Ouça e monte.",
             "audio": "토요일에 영화 봤어요.",
-            "pecas": ["토요일에", "영화", "봤어요.", "볼 거예요."],
+            "pecas": [
+              "토요일에",
+              "영화",
+              "봤어요.",
+              "볼 거예요."
+            ],
             "correta": "토요일에영화봤어요.",
             "explicacao": "토요일에 영화 봤어요."
           },
@@ -1961,7 +3311,20 @@
             "tipo": "ditado",
             "enunciado": "Ouça e escolha o dia que você ouviu.",
             "audio": "목요일",
-            "opcoes": [{ "ko": "목요일" }, { "ko": "금요일" }, { "ko": "월요일" }, { "ko": "토요일" }],
+            "opcoes": [
+              {
+                "ko": "목요일"
+              },
+              {
+                "ko": "금요일"
+              },
+              {
+                "ko": "월요일"
+              },
+              {
+                "ko": "토요일"
+              }
+            ],
             "correta": 0,
             "explicacao": "목요일 — e no ouvido ela soa [모교일]."
           },
@@ -1970,9 +3333,3428 @@
             "tipo": "ditado",
             "enunciado": "Ouça e escolha a palavra que você ouviu.",
             "audio": "소풍",
-            "opcoes": [{ "ko": "소풍" }, { "ko": "서울" }, { "ko": "수요일" }, { "ko": "언어" }],
+            "opcoes": [
+              {
+                "ko": "소풍"
+              },
+              {
+                "ko": "서울"
+              },
+              {
+                "ko": "수요일"
+              },
+              {
+                "ko": "언어"
+              }
+            ],
             "correta": 0,
             "explicacao": "소풍 — piquenique."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-aula-6",
+    "numero": 6,
+    "hanja": "六",
+    "titulo": "Mas, e no entanto",
+    "hangul": "그렇지만, 그런데",
+    "resumo": "Duas maneiras de dizer “mas” — e uma delas também serve para “e, por sinal”.",
+    "ilustracao": "assets/nivel2/aula-6.svg",
+    "objetivo": "Contrariar uma frase com a seguinte, e escolher a conjunção que a conversa pede.",
+    "vocabulario": [
+      {
+        "ko": "그렇지만",
+        "pt": "mas, no entanto"
+      },
+      {
+        "ko": "그런데",
+        "pt": "mas; e por sinal"
+      },
+      {
+        "ko": "피곤하다",
+        "pt": "estar cansado"
+      },
+      {
+        "ko": "늦게",
+        "pt": "tarde (a uma hora avançada)"
+      },
+      {
+        "ko": "어젯밤",
+        "pt": "ontem à noite"
+      },
+      {
+        "ko": "일찍",
+        "pt": "cedo"
+      },
+      {
+        "ko": "일어나다",
+        "pt": "levantar, acordar"
+      },
+      {
+        "ko": "매일",
+        "pt": "todo dia"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "n2a6-t1",
+        "titulo": "그렇지만 contraria, e só",
+        "grupo": "n2a6-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "A aula 3 deu duas coisas que uma frase pode fazer com a seguinte: somar (그리고) e explicar (그래서). Falta a terceira, que é se contrariar."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "피곤해요. 그렇지만 영화 보고 싶어요.",
+                "pt": "Estou cansado. Mas quero ver um filme."
+              },
+              {
+                "ko": "어제 학교에 갔어요. 그렇지만 일요일이었어요.",
+                "pt": "Fui à escola ontem. Mas era domingo."
+              }
+            ]
+          },
+          {
+            "tipo": "som",
+            "grafia": "그렇지만",
+            "texto": "O ㅎ de 렇 não emudece: ele se funde com o ㅈ seguinte e sai um ㅊ."
+          },
+          {
+            "tipo": "destaque",
+            "texto": "그렇지만 é “mas”, e nada além disso. Ela soa formal, e aparece bem mais na escrita do que na conversa."
+          }
+        ]
+      },
+      {
+        "id": "n2a6-t2",
+        "titulo": "그런데 contraria — e também emenda",
+        "grupo": "n2a6-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "그런데 faz o mesmo serviço, mas tem uma segunda vida. Dependendo do que a conversa já estabeleceu, ela significa “mas” ou “e, por sinal” — às vezes “e aí eu descobri que”."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "어제 이거 샀어요. 그런데 정말 커요.",
+                "pt": "Comprei isto ontem. Mas é enorme.",
+                "conta": "decepção com o tamanho"
+              },
+              {
+                "ko": "어제 이거 샀어요. 그런데 정말 커요.",
+                "pt": "Comprei isto ontem — e, olha, é enorme.",
+                "conta": "a mesma frase, lida como descoberta"
+              }
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "Não há ambiguidade na prática: quem ouve sabe qual das duas leituras cabe, porque só uma delas conversa com o que veio antes."
+          },
+          {
+            "tipo": "destaque",
+            "texto": "그렇지만 = “mas”. 그런데 = “mas” ou “e, por sinal”. Quem decide é o contexto."
+          },
+          {
+            "tipo": "nota",
+            "texto": "Na fala 그런데 encurta para 근데, e é assim que você vai ouvir na maior parte das vezes. Se for decorar só uma das duas conjunções desta aula, decore esta."
+          }
+        ]
+      },
+      {
+        "id": "n2a6-t3",
+        "titulo": "As quatro juntas",
+        "grupo": "n2a6-g3",
+        "corpo": [
+          {
+            "tipo": "regra",
+            "linhas": [
+              {
+                "condicao": "contrariar dois fatos, e só isso",
+                "resultado": "그렇지만 ou 그런데"
+              },
+              {
+                "condicao": "a primeira frase é o pano de fundo da segunda",
+                "resultado": "só 그런데"
+              }
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "É por isso que 그런데 cobre mais terreno. Onde há só oposição, as duas servem; onde a primeira frase prepara a segunda, só ela."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "어젯밤 늦게 잤어요. 그런데 피곤하지 않아요.",
+                "pt": "Dormi tarde ontem à noite. Mas não estou cansado."
+              },
+              {
+                "ko": "저는 매일 일찍 일어나요. 그런데 오늘은 늦게 일어났어요.",
+                "pt": "Eu me levanto cedo todo dia. Mas hoje levantei tarde."
+              }
+            ]
+          },
+          {
+            "tipo": "som",
+            "grafia": "늦게",
+            "texto": "O ㅈ do fim da sílaba desaba em ㄷ, e o ㄷ endurece o ㄱ seguinte."
+          },
+          {
+            "tipo": "p",
+            "texto": "Com esta aula você tem as quatro conjunções que emendam frase em coreano no começo:"
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Conjunção",
+              "O que faz",
+              "Exemplo"
+            ],
+            "linhas": [
+              [
+                "그리고",
+                "soma",
+                "밥 먹었어요. 그리고 커피 마셨어요."
+              ],
+              [
+                "그래서",
+                "explica",
+                "비가 왔어요. 그래서 집에 있었어요."
+              ],
+              [
+                "그렇지만",
+                "contraria",
+                "피곤해요. 그렇지만 영화 보고 싶어요."
+              ],
+              [
+                "그런데",
+                "contraria ou emenda",
+                "어제 이거 샀어요. 그런데 정말 커요."
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "De manhã, no trabalho.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "어젯밤에 일찍 잤어요. 그런데 오늘 늦게 일어났어요.",
+          "pt": "Dormi cedo ontem à noite. Mas hoje acordei tarde."
+        },
+        {
+          "quem": "B",
+          "ko": "지금 피곤해요?",
+          "pt": "Está cansado agora?"
+        },
+        {
+          "quem": "A",
+          "ko": "아니요. 안 피곤해요.",
+          "pt": "Não. Não estou cansado."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "n2a6-g1",
+        "titulo": "Contrariar com 그렇지만",
+        "itens": [
+          {
+            "id": "n2a6-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra à tradução.",
+            "pares": [
+              {
+                "a": "피곤하다",
+                "b": "estar cansado"
+              },
+              {
+                "a": "늦게",
+                "b": "tarde"
+              },
+              {
+                "a": "일찍",
+                "b": "cedo"
+              },
+              {
+                "a": "어젯밤",
+                "b": "ontem à noite"
+              },
+              {
+                "a": "일어나다",
+                "b": "levantar, acordar"
+              }
+            ],
+            "explicacao": "늦게 e 일찍 são o par que esta aula usa o tempo todo — um é o oposto do outro."
+          },
+          {
+            "id": "n2a6-e2",
+            "tipo": "lacuna",
+            "enunciado": "Complete “Estou cansado. Mas quero ver um filme.”",
+            "antes": "피곤해요. ",
+            "depois": " 영화 보고 싶어요.",
+            "banco": [
+              "그렇지만",
+              "그래서",
+              "그리고"
+            ],
+            "correta": 0,
+            "explicacao": "Estar cansado se opõe a querer sair — é contraste, não soma nem causa."
+          },
+          {
+            "id": "n2a6-e3",
+            "tipo": "escolha",
+            "enunciado": "그렇지만 significa:",
+            "opcoes": [
+              {
+                "pt": "Mas, no entanto"
+              },
+              {
+                "pt": "E, e então"
+              },
+              {
+                "pt": "Por isso"
+              },
+              {
+                "pt": "Porque"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Só isso. É a mais estreita das quatro conjunções."
+          },
+          {
+            "id": "n2a6-e4",
+            "tipo": "montar",
+            "enunciado": "Monte “Fui à escola ontem. Mas era domingo.”",
+            "dica": "contraste",
+            "pecas": [
+              "어제 학교에 갔어요.",
+              "그렇지만",
+              "일요일이었어요.",
+              "그래서"
+            ],
+            "correta": "어제학교에갔어요.그렇지만일요일이었어요.",
+            "explicacao": "어제 학교에 갔어요. 그렇지만 일요일이었어요."
+          },
+          {
+            "id": "n2a6-e5",
+            "tipo": "escolha",
+            "enunciado": "Onde 그렇지만 aparece mais?",
+            "opcoes": [
+              {
+                "pt": "Na escrita e em situação formal"
+              },
+              {
+                "pt": "Na conversa entre amigos"
+              },
+              {
+                "pt": "Só em pergunta"
+              },
+              {
+                "pt": "Só com verbo no passado"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Na conversa do dia a dia quem domina é 그런데."
+          },
+          {
+            "id": "n2a6-e6",
+            "tipo": "escolha",
+            "enunciado": "그렇지만 soa [그러치만]. Por quê?",
+            "opcoes": [
+              {
+                "pt": "O ㅎ de 렇 se funde com o ㅈ seguinte e produz ㅊ"
+              },
+              {
+                "pt": "O ㅎ some no fim da sílaba"
+              },
+              {
+                "pt": "É exceção, sem regra por trás"
+              },
+              {
+                "pt": "A grafia certa seria 그러치만"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Chama-se 격음화, aspiração. A mesma regra faz 좋지만 soar [조치만]."
+          }
+        ]
+      },
+      {
+        "id": "n2a6-g2",
+        "titulo": "그런데, a que faz as duas coisas",
+        "itens": [
+          {
+            "id": "n2a6-e7",
+            "tipo": "escolha",
+            "enunciado": "그런데 pode significar:",
+            "opcoes": [
+              {
+                "pt": "“mas” ou “e, por sinal”, conforme o contexto"
+              },
+              {
+                "pt": "Só “mas”"
+              },
+              {
+                "pt": "Só “por isso”"
+              },
+              {
+                "pt": "Só “e”"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "É o que a diferencia de 그렇지만, que só contraria."
+          },
+          {
+            "id": "n2a6-e8",
+            "tipo": "lacuna",
+            "enunciado": "Complete com a conjunção que também deixa ler “e aí eu vi que”.",
+            "antes": "어제 이거 샀어요. ",
+            "depois": " 정말 커요.",
+            "banco": [
+              "그런데",
+              "그래서",
+              "그리고"
+            ],
+            "correta": 0,
+            "explicacao": "그렇지만 caberia como “mas”, mas só 그런데 carrega a leitura de descoberta."
+          },
+          {
+            "id": "n2a6-e9",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Na conversa do dia a dia, 그렇지만 é mais comum que 그런데.",
+            "correta": false,
+            "explicacao": "É o contrário. 그렇지만 soa formal e vive mais na escrita."
+          },
+          {
+            "id": "n2a6-e10",
+            "tipo": "montar",
+            "enunciado": "Monte “Dormi tarde ontem à noite. Mas não estou cansado.”",
+            "dica": "안, da aula 21 do Nível 1",
+            "pecas": [
+              "어젯밤 늦게 잤어요.",
+              "그런데",
+              "안 피곤해요.",
+              "그래서"
+            ],
+            "correta": "어젯밤늦게잤어요.그런데안피곤해요.",
+            "explicacao": "어젯밤 늦게 잤어요. 그런데 안 피곤해요."
+          },
+          {
+            "id": "n2a6-e11",
+            "tipo": "escolha",
+            "enunciado": "어제 학교에 갔어요. 그런데 일요일이었어요 — quantas leituras a frase aceita?",
+            "opcoes": [
+              {
+                "pt": "Duas: “mas era domingo” e “e aí descobri que era domingo”"
+              },
+              {
+                "pt": "Uma só: “mas era domingo”"
+              },
+              {
+                "pt": "Uma só: “por isso era domingo”"
+              },
+              {
+                "pt": "Nenhuma — a frase está errada"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Com 그렇지만 no lugar, sobraria só a primeira."
+          },
+          {
+            "id": "n2a6-e12",
+            "tipo": "escolha",
+            "enunciado": "Como 그런데 aparece encurtada na fala?",
+            "opcoes": [
+              {
+                "ko": "근데"
+              },
+              {
+                "ko": "그데"
+              },
+              {
+                "ko": "런데"
+              },
+              {
+                "ko": "그니"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "근데. É o que você mais vai ouvir, ainda que a escrita cuidadosa mantenha 그런데."
+          }
+        ]
+      },
+      {
+        "id": "n2a6-g3",
+        "titulo": "Escolher entre as quatro",
+        "itens": [
+          {
+            "id": "n2a6-e13",
+            "tipo": "lacuna",
+            "enunciado": "Complete “Sou estudante. Por isso não tenho dinheiro.”",
+            "antes": "저는 학생이에요. ",
+            "depois": " 돈이 없어요.",
+            "banco": [
+              "그래서",
+              "그렇지만",
+              "그리고"
+            ],
+            "correta": 0,
+            "explicacao": "Causa e efeito continua sendo 그래서 — a aula 3 não caducou."
+          },
+          {
+            "id": "n2a6-e14",
+            "tipo": "lacuna",
+            "enunciado": "Complete “Tomei café. Mas estou cansado.”",
+            "antes": "커피 마셨어요. ",
+            "depois": " 피곤해요.",
+            "banco": [
+              "그렇지만",
+              "그래서",
+              "그리고"
+            ],
+            "correta": 0,
+            "explicacao": "O café deveria ter resolvido, e não resolveu — é oposição."
+          },
+          {
+            "id": "n2a6-e15",
+            "tipo": "escolha",
+            "enunciado": "Qual conjunção soma duas frases, sem opor nem explicar?",
+            "opcoes": [
+              {
+                "ko": "그리고"
+              },
+              {
+                "ko": "그래서"
+              },
+              {
+                "ko": "그렇지만"
+              },
+              {
+                "ko": "그런데"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "그리고, da aula 3."
+          },
+          {
+            "id": "n2a6-e16",
+            "tipo": "escolha",
+            "enunciado": "A primeira frase é pano de fundo da segunda. Qual das quatro cabe?",
+            "opcoes": [
+              {
+                "ko": "그런데"
+              },
+              {
+                "ko": "그렇지만"
+              },
+              {
+                "ko": "그래서"
+              },
+              {
+                "ko": "그리고"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Só 그런데 faz esse serviço — é o que a torna mais larga que 그렇지만."
+          },
+          {
+            "id": "n2a6-e17",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "그렇지만 e 그런데 são sempre intercambiáveis.",
+            "correta": false,
+            "explicacao": "São, quando o serviço é só contrariar. Onde a primeira frase prepara a segunda, só 그런데 entra."
+          },
+          {
+            "id": "n2a6-e18",
+            "tipo": "montar",
+            "enunciado": "Monte “Eu me levanto cedo todo dia. Mas hoje levantei tarde.”",
+            "dica": "매일 … 오늘은 …",
+            "pecas": [
+              "저는 매일 일찍 일어나요.",
+              "그런데",
+              "오늘은 늦게 일어났어요.",
+              "그래서"
+            ],
+            "correta": "저는매일일찍일어나요.그런데오늘은늦게일어났어요.",
+            "explicacao": "저는 매일 일찍 일어나요. 그런데 오늘은 늦게 일어났어요."
+          }
+        ]
+      },
+      {
+        "id": "n2a6-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "n2a6-e19",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "어제 이거 샀어요. 그런데 정말 커요.",
+            "pecas": [
+              "어제 이거 샀어요.",
+              "그런데",
+              "정말 커요.",
+              "그렇지만"
+            ],
+            "correta": "어제이거샀어요.그런데정말커요.",
+            "explicacao": "어제 이거 샀어요. 그런데 정말 커요."
+          },
+          {
+            "id": "n2a6-e20",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "피곤해요. 그렇지만 영화 보고 싶어요.",
+            "pecas": [
+              "피곤해요.",
+              "그렇지만",
+              "영화 보고 싶어요.",
+              "그런데"
+            ],
+            "correta": "피곤해요.그렇지만영화보고싶어요.",
+            "explicacao": "피곤해요. 그렇지만 영화 보고 싶어요."
+          },
+          {
+            "id": "n2a6-e21",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "어제 학교에 갔어요. 그런데 일요일이었어요.",
+            "pecas": [
+              "어제 학교에 갔어요.",
+              "그런데",
+              "일요일이었어요."
+            ],
+            "correta": "어제학교에갔어요.그런데일요일이었어요.",
+            "explicacao": "어제 학교에 갔어요. 그런데 일요일이었어요."
+          },
+          {
+            "id": "n2a6-e22",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a conjunção que você ouviu.",
+            "audio": "그렇지만",
+            "opcoes": [
+              {
+                "ko": "그렇지만"
+              },
+              {
+                "ko": "그런데"
+              },
+              {
+                "ko": "그래서"
+              },
+              {
+                "ko": "그리고"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "그렇지만, que no ouvido chega como [그러치만]."
+          },
+          {
+            "id": "n2a6-e23",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a palavra que você ouviu.",
+            "audio": "어젯밤",
+            "opcoes": [
+              {
+                "ko": "어젯밤"
+              },
+              {
+                "ko": "어제"
+              },
+              {
+                "ko": "아침"
+              },
+              {
+                "ko": "저녁"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "어젯밤 — ontem à noite. Soa [어젣빰]."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-aula-7",
+    "numero": 7,
+    "hanja": "七",
+    "titulo": "Para alguém, de alguém",
+    "hangul": "-한테, -한테서",
+    "resumo": "A partícula que marca a pessoa que recebe — ou de quem a coisa veio. Ela não serve para lugar nenhum.",
+    "ilustracao": "assets/nivel2/aula-7.svg",
+    "objetivo": "Dizer a quem você deu, mandou ou perguntou alguma coisa, e de quem recebeu.",
+    "vocabulario": [
+      {
+        "ko": "-한테",
+        "pt": "para / de (alguém)"
+      },
+      {
+        "ko": "-한테서",
+        "pt": "de (alguém)"
+      },
+      {
+        "ko": "질문",
+        "pt": "pergunta",
+        "hanja": "質問"
+      },
+      {
+        "ko": "얻다",
+        "pt": "conseguir, obter"
+      },
+      {
+        "ko": "받다",
+        "pt": "receber"
+      },
+      {
+        "ko": "주다",
+        "pt": "dar"
+      },
+      {
+        "ko": "보내다",
+        "pt": "enviar"
+      },
+      {
+        "ko": "물어보다",
+        "pt": "perguntar"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "n2a7-t1",
+        "titulo": "-한테 vale para os dois lados",
+        "grupo": "n2a7-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Você já tem -에 e -에서 para lugar, da aula 18, e -부터 … -까지 para percurso, da aula 25. Falta a partícula da pessoa: quem recebe, e de quem veio."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "친구",
+              "한테"
+            ],
+            "glosas": [
+              "amigo",
+              "para / de"
+            ],
+            "resultado": "친구한테",
+            "traducao": "para um amigo / de um amigo"
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "친구한테 이메일을 보냈어요.",
+                "pt": "Mandei um e-mail para um amigo.",
+                "conta": "보내다 empurra — aqui é “para”"
+              },
+              {
+                "ko": "친구한테 이메일을 받았어요.",
+                "pt": "Recebi um e-mail de um amigo.",
+                "conta": "받다 puxa — aqui é “de”"
+              },
+              {
+                "ko": "누구한테 물어봤어요?",
+                "pt": "A quem você perguntou?"
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "-한테 não escolhe entre “para” e “de”. Quem escolhe é o verbo."
+          },
+          {
+            "tipo": "nota",
+            "texto": "É por isso que decorar “-한테 = para” dá errado na primeira frase com 받다. A partícula marca a pessoa envolvida; a direção fica com o verbo."
+          }
+        ]
+      },
+      {
+        "id": "n2a7-t2",
+        "titulo": "-한테서 só puxa",
+        "grupo": "n2a7-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Quando você quer deixar explícito que a coisa veio da pessoa, existe -한테서, que só significa “de”."
+          },
+          {
+            "tipo": "regra",
+            "linhas": [
+              {
+                "condicao": "-한테",
+                "resultado": "para alguém ou de alguém"
+              },
+              {
+                "condicao": "-한테서",
+                "resultado": "só de alguém"
+              }
+            ]
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "친구한테서 이거 얻었어요.",
+                "pt": "Consegui isto de um amigo."
+              },
+              {
+                "ko": "누구한테서 받았어요?",
+                "pt": "De quem você recebeu?"
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "As duas se trocam só no sentido de “de”. Onde -한테 significa “para”, -한테서 não entra."
+          },
+          {
+            "tipo": "nota",
+            "texto": "Há um par mais formal, -에게 e -에게서, que faz o mesmo serviço na língua escrita. Na fala, -한테 domina."
+          }
+        ]
+      },
+      {
+        "id": "n2a7-t3",
+        "titulo": "Só gente e bicho",
+        "grupo": "n2a7-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "É a restrição que mais pega quem está começando: -한테 e -한테서 só se prendem a pessoa ou animal. Lugar e coisa não aceitam."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "O que você quer dizer",
+              "Certo",
+              "Errado"
+            ],
+            "linhas": [
+              [
+                "para um amigo",
+                "친구한테",
+                "—"
+              ],
+              [
+                "para o gato",
+                "고양이한테",
+                "—"
+              ],
+              [
+                "para Seul",
+                "서울에",
+                "서울한테"
+              ],
+              [
+                "de Seul até Busan",
+                "서울에서 부산까지",
+                "서울한테 부산한테"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Pessoa e bicho: -한테. Lugar: -에 e -에서, exatamente como a aula 18 ensinou."
+          },
+          {
+            "tipo": "p",
+            "texto": "E há um uso que surpreende. Com verbo que já carrega sentido passivo, -한테 vira “por”. 맞다 costuma ser “estar certo”, mas também significa “apanhar” — e aí A한테 맞다 é “apanhar de A”."
+          },
+          {
+            "tipo": "nota",
+            "texto": "Não é uma regra à parte: continua sendo a mesma partícula marcando a pessoa envolvida. O que mudou foi de que lado da ação ela está."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Um e-mail que não chegou.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "저한테 이메일 보냈어요?",
+          "pt": "Você me mandou um e-mail?"
+        },
+        {
+          "quem": "B",
+          "ko": "네, 어제 보냈어요.",
+          "pt": "Mandei, ontem."
+        },
+        {
+          "quem": "A",
+          "ko": "그런데 안 왔어요.",
+          "pt": "Mas não chegou."
+        },
+        {
+          "quem": "B",
+          "ko": "지금 보낼 거예요.",
+          "pt": "Vou mandar agora."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "n2a7-g1",
+        "titulo": "Os dois lados de -한테",
+        "itens": [
+          {
+            "id": "n2a7-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra à tradução.",
+            "pares": [
+              {
+                "a": "질문",
+                "b": "pergunta"
+              },
+              {
+                "a": "얻다",
+                "b": "conseguir, obter"
+              },
+              {
+                "a": "받다",
+                "b": "receber"
+              },
+              {
+                "a": "보내다",
+                "b": "enviar"
+              },
+              {
+                "a": "물어보다",
+                "b": "perguntar"
+              }
+            ],
+            "explicacao": "질문 é o substantivo “pergunta”; 물어보다 é o verbo. 질문하다 junta os dois."
+          },
+          {
+            "id": "n2a7-e2",
+            "tipo": "lacuna",
+            "enunciado": "Complete “Mandei um e-mail para um amigo.”",
+            "antes": "친구",
+            "depois": " 이메일을 보냈어요.",
+            "banco": [
+              "한테",
+              "에",
+              "에서"
+            ],
+            "correta": 0,
+            "explicacao": "Amigo é gente, então -한테. -에 marcaria lugar."
+          },
+          {
+            "id": "n2a7-e3",
+            "tipo": "escolha",
+            "enunciado": "저한테 pode significar:",
+            "opcoes": [
+              {
+                "pt": "“para mim” ou “de mim”"
+              },
+              {
+                "pt": "Só “para mim”"
+              },
+              {
+                "pt": "Só “de mim”"
+              },
+              {
+                "pt": "“comigo”"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Os dois. “Comigo” seria 저하고 ou 저랑, da aula 4."
+          },
+          {
+            "id": "n2a7-e4",
+            "tipo": "escolha",
+            "enunciado": "Quem decide se -한테 é “para” ou “de”?",
+            "opcoes": [
+              {
+                "pt": "O verbo da frase"
+              },
+              {
+                "pt": "A entonação"
+              },
+              {
+                "pt": "O 받침 da palavra"
+              },
+              {
+                "pt": "O tempo verbal"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "보내다 empurra, 받다 puxa. A partícula só marca quem está do outro lado."
+          },
+          {
+            "id": "n2a7-e5",
+            "tipo": "montar",
+            "enunciado": "Monte “Você me mandou um e-mail?”",
+            "dica": "저 + a partícula",
+            "pecas": [
+              "저한테",
+              "이메일",
+              "보냈어요?",
+              "저한테서"
+            ],
+            "correta": "저한테이메일보냈어요?",
+            "explicacao": "저한테 이메일 보냈어요? — 보내다 empurra, então -한테서 não caberia."
+          },
+          {
+            "id": "n2a7-e6",
+            "tipo": "montar",
+            "enunciado": "Monte “A quem você perguntou?”",
+            "dica": "누구 + a partícula",
+            "pecas": [
+              "누구한테",
+              "물어봤어요?",
+              "누구를"
+            ],
+            "correta": "누구한테물어봤어요?",
+            "explicacao": "누구한테 물어봤어요?"
+          },
+          {
+            "id": "n2a7-e7",
+            "tipo": "lacuna",
+            "enunciado": "Complete “Vou dar isto para meu irmão mais novo.”",
+            "antes": "동생",
+            "depois": " 이거 줄 거예요.",
+            "banco": [
+              "한테",
+              "에",
+              "까지"
+            ],
+            "correta": 0,
+            "explicacao": "동생한테 이거 줄 거예요 — e o 줄 거예요 é o futuro da aula 1."
+          }
+        ]
+      },
+      {
+        "id": "n2a7-g2",
+        "titulo": "Quando a coisa vem da pessoa",
+        "itens": [
+          {
+            "id": "n2a7-e8",
+            "tipo": "escolha",
+            "enunciado": "-한테서 significa:",
+            "opcoes": [
+              {
+                "pt": "Só “de alguém”"
+              },
+              {
+                "pt": "Só “para alguém”"
+              },
+              {
+                "pt": "“para” ou “de”"
+              },
+              {
+                "pt": "“com alguém”"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O -서 do fim é o mesmo de -에서: ele marca origem."
+          },
+          {
+            "id": "n2a7-e9",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "-한테 e -한테서 são sempre intercambiáveis.",
+            "correta": false,
+            "explicacao": "Só quando o sentido é “de”. Onde -한테 significa “para”, -한테서 não serve."
+          },
+          {
+            "id": "n2a7-e10",
+            "tipo": "escolha",
+            "enunciado": "Qual destas só pode ser lida como “de um amigo”?",
+            "opcoes": [
+              {
+                "ko": "친구한테서"
+              },
+              {
+                "ko": "친구한테"
+              },
+              {
+                "ko": "친구하고"
+              },
+              {
+                "ko": "친구에서"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "친구한테 também caberia aqui, mas ela aceita as duas leituras. 친구에서 não existe — lugar é que leva -에서."
+          },
+          {
+            "id": "n2a7-e11",
+            "tipo": "lacuna",
+            "enunciado": "Complete “De quem você recebeu?”",
+            "antes": "누구",
+            "depois": " 받았어요?",
+            "banco": [
+              "한테서",
+              "에서",
+              "까지"
+            ],
+            "correta": 0,
+            "explicacao": "누구한테서 받았어요? — gente pede -한테서, nunca -에서."
+          },
+          {
+            "id": "n2a7-e12",
+            "tipo": "escolha",
+            "enunciado": "Qual é o par mais formal, que vive na língua escrita?",
+            "opcoes": [
+              {
+                "ko": "-에게, -에게서"
+              },
+              {
+                "ko": "-하고, -(이)랑"
+              },
+              {
+                "ko": "-에, -에서"
+              },
+              {
+                "ko": "-부터, -까지"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Mesmo serviço, outro registro."
+          },
+          {
+            "id": "n2a7-e13",
+            "tipo": "montar",
+            "enunciado": "Monte “Consegui isto de um amigo”, deixando explícito de quem veio.",
+            "dica": "a forma que só significa “de”",
+            "pecas": [
+              "친구한테서",
+              "이거",
+              "얻었어요.",
+              "친구에서"
+            ],
+            "correta": "친구한테서이거얻었어요.",
+            "explicacao": "친구한테서 이거 얻었어요."
+          }
+        ]
+      },
+      {
+        "id": "n2a7-g3",
+        "titulo": "Gente e bicho, nunca lugar",
+        "itens": [
+          {
+            "id": "n2a7-e14",
+            "tipo": "escolha",
+            "enunciado": "Como se diz “para Seul”?",
+            "opcoes": [
+              {
+                "ko": "서울에"
+              },
+              {
+                "ko": "서울한테"
+              },
+              {
+                "ko": "서울한테서"
+              },
+              {
+                "ko": "서울하고"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Cidade é lugar, e lugar leva -에."
+          },
+          {
+            "id": "n2a7-e15",
+            "tipo": "escolha",
+            "enunciado": "E “de Seul até Busan”?",
+            "opcoes": [
+              {
+                "ko": "서울에서 부산까지"
+              },
+              {
+                "ko": "서울한테 부산한테"
+              },
+              {
+                "ko": "서울한테 부산까지"
+              },
+              {
+                "ko": "서울에게 부산한테"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "É o -에서 … -까지 da aula 25, intacto."
+          },
+          {
+            "id": "n2a7-e16",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "-한테 pode se prender a lugar, desde que seja uma cidade.",
+            "correta": false,
+            "explicacao": "Nunca. Só pessoa e animal."
+          },
+          {
+            "id": "n2a7-e17",
+            "tipo": "lacuna",
+            "enunciado": "Complete “Dei comida para o gato.”",
+            "antes": "고양이",
+            "depois": " 밥을 줬어요.",
+            "banco": [
+              "한테",
+              "에",
+              "에서"
+            ],
+            "correta": 0,
+            "explicacao": "Bicho conta como gente aqui: 고양이한테."
+          },
+          {
+            "id": "n2a7-e18",
+            "tipo": "escolha",
+            "enunciado": "A한테 맞다 quer dizer:",
+            "opcoes": [
+              {
+                "pt": "Apanhar de A"
+              },
+              {
+                "pt": "Estar certo sobre A"
+              },
+              {
+                "pt": "Encontrar A"
+              },
+              {
+                "pt": "Bater em A"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "맞다 aqui é “apanhar”, e a partícula marca de quem — o que em português vira “por”."
+          },
+          {
+            "id": "n2a7-e19",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "-한테 e -한테서 só se prendem a pessoa ou animal.",
+            "correta": true,
+            "explicacao": "É a regra desta aula, e ela não tem exceção."
+          }
+        ]
+      },
+      {
+        "id": "n2a7-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "n2a7-e20",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "저한테 팔 거예요?",
+            "pecas": [
+              "저한테",
+              "팔 거예요?",
+              "저한테서"
+            ],
+            "correta": "저한테팔거예요?",
+            "explicacao": "저한테 팔 거예요? — “vai vender para mim?”"
+          },
+          {
+            "id": "n2a7-e21",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "동생한테 갈 거예요.",
+            "pecas": [
+              "동생한테",
+              "갈 거예요.",
+              "갔어요."
+            ],
+            "correta": "동생한테갈거예요.",
+            "explicacao": "동생한테 갈 거예요."
+          },
+          {
+            "id": "n2a7-e22",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "누구한테 물어봤어요?",
+            "pecas": [
+              "누구한테",
+              "물어봤어요?",
+              "물어볼 거예요?"
+            ],
+            "correta": "누구한테물어봤어요?",
+            "explicacao": "누구한테 물어봤어요?"
+          },
+          {
+            "id": "n2a7-e23",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a palavra que você ouviu.",
+            "audio": "질문",
+            "opcoes": [
+              {
+                "ko": "질문"
+              },
+              {
+                "ko": "이메일"
+              },
+              {
+                "ko": "친구"
+              },
+              {
+                "ko": "동생"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "질문 — pergunta."
+          },
+          {
+            "id": "n2a7-e24",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a partícula que você ouviu.",
+            "audio": "친구한테서",
+            "opcoes": [
+              {
+                "ko": "친구한테서"
+              },
+              {
+                "ko": "친구한테"
+              },
+              {
+                "ko": "친구하고"
+              },
+              {
+                "ko": "친구랑"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "친구한테서 — repare na sílaba a mais no fim."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-aula-8",
+    "numero": 8,
+    "hanja": "八",
+    "titulo": "Que horas são",
+    "hangul": "한 시, 두 시, 세 시…",
+    "resumo": "A única frase do idioma em que os dois sistemas de número trabalham juntos — um para a hora, outro para o minuto.",
+    "ilustracao": "assets/nivel2/aula-8.svg",
+    "objetivo": "Dizer e perguntar as horas, e marcar alguma coisa num horário.",
+    "vocabulario": [
+      {
+        "ko": "시",
+        "pt": "hora",
+        "hanja": "時"
+      },
+      {
+        "ko": "분",
+        "pt": "minuto",
+        "hanja": "分"
+      },
+      {
+        "ko": "몇",
+        "pt": "quanto, quantos"
+      },
+      {
+        "ko": "반",
+        "pt": "meia, metade",
+        "hanja": "半"
+      },
+      {
+        "ko": "수업",
+        "pt": "aula",
+        "hanja": "授業"
+      },
+      {
+        "ko": "끝나다",
+        "pt": "terminar, acabar"
+      },
+      {
+        "ko": "지금",
+        "pt": "agora"
+      },
+      {
+        "ko": "아침",
+        "pt": "manhã"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "n2a8-t1",
+        "titulo": "A hora é nativa, e quatro delas encurtam",
+        "grupo": "n2a8-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "As aulas 15 e 20 do Nível 1 apresentaram os dois sistemas de número e explicaram que cada um tem o seu domínio. Aqui eles se encontram na mesma frase: a hora usa o nativo, o minuto usa o sino-coreano."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "한",
+              "시"
+            ],
+            "glosas": [
+              "um",
+              "hora"
+            ],
+            "resultado": "한 시",
+            "traducao": "uma hora"
+          },
+          {
+            "tipo": "regra",
+            "linhas": [
+              {
+                "condicao": "하나, 둘, 셋, 넷 antes de 시",
+                "resultado": "한, 두, 세, 네 — encurtam"
+              },
+              {
+                "condicao": "de 다섯 em diante",
+                "resultado": "a forma não muda: 다섯 시, 여섯 시"
+              }
+            ]
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Hora",
+              "Coreano"
+            ],
+            "linhas": [
+              [
+                "1h",
+                "한 시"
+              ],
+              [
+                "2h",
+                "두 시"
+              ],
+              [
+                "3h",
+                "세 시"
+              ],
+              [
+                "4h",
+                "네 시"
+              ],
+              [
+                "5h",
+                "다섯 시"
+              ],
+              [
+                "10h",
+                "열 시"
+              ],
+              [
+                "11h",
+                "열한 시"
+              ],
+              [
+                "12h",
+                "열두 시"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "É o mesmo encurtamento que 한 개 e 한 명 pedem. 시 é contador, e contador encurta o número que vem antes."
+          },
+          {
+            "tipo": "nota",
+            "texto": "하나 시 e 둘 시 não existem. O encurtamento não é opcional, e ele volta na próxima aula com todos os outros contadores."
+          }
+        ]
+      },
+      {
+        "id": "n2a8-t2",
+        "titulo": "O minuto troca de sistema",
+        "grupo": "n2a8-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Passada a hora, o número muda de família. O minuto é sino-coreano — 일, 이, 삼, 사 — e não encurta nada."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "오 분",
+                "pt": "cinco minutos"
+              },
+              {
+                "ko": "십오 분",
+                "pt": "quinze minutos"
+              },
+              {
+                "ko": "삼십 분",
+                "pt": "trinta minutos"
+              },
+              {
+                "ko": "오십오 분",
+                "pt": "cinquenta e cinco minutos"
+              }
+            ]
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Relógio",
+              "Coreano"
+            ],
+            "linhas": [
+              [
+                "1:05",
+                "한 시 오 분"
+              ],
+              [
+                "1:15",
+                "한 시 십오 분"
+              ],
+              [
+                "3:20",
+                "세 시 이십 분"
+              ],
+              [
+                "10:00",
+                "열 시"
+              ],
+              [
+                "10:30",
+                "열 시 삼십 분"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Hora em número nativo, minuto em sino-coreano, na mesma frase. Nenhum outro contexto do idioma mistura os dois assim."
+          },
+          {
+            "tipo": "nota",
+            "texto": "삼십 분 tem um atalho: 반, “meia”. 열 시 반 é dez e meia. E “em ponto” é 정각 — 열 시 정각."
+          }
+        ]
+      },
+      {
+        "id": "n2a8-t3",
+        "titulo": "Perguntar a hora e marcar um horário",
+        "grupo": "n2a8-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "몇 é “quanto, quantos”, e é ele que pergunta as horas:"
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "지금 몇 시예요?",
+                "pt": "Que horas são agora?"
+              },
+              {
+                "ko": "지금 몇 시 몇 분이에요?",
+                "pt": "Que hora e que minuto são agora?"
+              }
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "Para marcar alguma coisa num horário, entra o -에 da aula 18 — o mesmo que marca lugar e dia:"
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "오늘 몇 시에 친구를 만나요?",
+                "pt": "Que horas você encontra seu amigo hoje?"
+              },
+              {
+                "ko": "수업이 네 시 반에 끝나요.",
+                "pt": "A aula termina às quatro e meia."
+              },
+              {
+                "ko": "아홉 시에 갈 거예요.",
+                "pt": "Vou às nove."
+              }
+            ]
+          },
+          {
+            "tipo": "som",
+            "grafia": "끝나다",
+            "texto": "O ㅌ do fim da sílaba desaba em ㄷ, e antes do ㄴ ele vira ㄴ também."
+          },
+          {
+            "tipo": "destaque",
+            "texto": "몇 시예요? pergunta que horas são. 몇 시에? pergunta a que horas alguma coisa acontece. Uma sílaba separa as duas."
+          },
+          {
+            "tipo": "nota",
+            "texto": "시 termina em vogal, então a terminação é 예요, não 이에요 — 몇 시예요?. Já 분 tem 받침, e por isso é 몇 분이에요?"
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Combinando a saída.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "지금 몇 시예요?",
+          "pt": "Que horas são agora?"
+        },
+        {
+          "quem": "B",
+          "ko": "네 시 반이에요.",
+          "pt": "Quatro e meia."
+        },
+        {
+          "quem": "A",
+          "ko": "수업이 몇 시에 끝나요?",
+          "pt": "A que horas a aula termina?"
+        },
+        {
+          "quem": "B",
+          "ko": "다섯 시에 끝나요.",
+          "pt": "Termina às cinco."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "n2a8-g1",
+        "titulo": "A hora e o número curto",
+        "itens": [
+          {
+            "id": "n2a8-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra à tradução.",
+            "pares": [
+              {
+                "a": "시",
+                "b": "hora"
+              },
+              {
+                "a": "분",
+                "b": "minuto"
+              },
+              {
+                "a": "몇",
+                "b": "quanto, quantos"
+              },
+              {
+                "a": "반",
+                "b": "meia, metade"
+              },
+              {
+                "a": "수업",
+                "b": "aula"
+              }
+            ],
+            "explicacao": "時, 分 e 半 são sino-coreanos, e você vai reencontrá-los em 시간, 오분, 반값."
+          },
+          {
+            "id": "n2a8-e2",
+            "tipo": "escolha",
+            "enunciado": "Como se diz “uma hora”?",
+            "opcoes": [
+              {
+                "ko": "한 시"
+              },
+              {
+                "ko": "하나 시"
+              },
+              {
+                "ko": "일 시"
+              },
+              {
+                "ko": "한 분"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "하나 encurta para 한 antes do contador, e a hora nunca é sino-coreana."
+          },
+          {
+            "id": "n2a8-e3",
+            "tipo": "escolha",
+            "enunciado": "E “quatro horas”?",
+            "opcoes": [
+              {
+                "ko": "네 시"
+              },
+              {
+                "ko": "넷 시"
+              },
+              {
+                "ko": "사 시"
+              },
+              {
+                "ko": "네 분"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "넷 → 네. É a quarta e última das formas curtas."
+          },
+          {
+            "id": "n2a8-e4",
+            "tipo": "lacuna",
+            "enunciado": "Complete “três horas”.",
+            "antes": "",
+            "depois": " 시",
+            "banco": [
+              "세",
+              "셋",
+              "삼"
+            ],
+            "correta": 0,
+            "explicacao": "셋 → 세 시. 삼 시 usaria o sistema errado."
+          },
+          {
+            "id": "n2a8-e5",
+            "tipo": "escolha",
+            "enunciado": "Qual destes números NÃO encurta antes de 시?",
+            "opcoes": [
+              {
+                "ko": "다섯"
+              },
+              {
+                "ko": "하나"
+              },
+              {
+                "ko": "둘"
+              },
+              {
+                "ko": "넷"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Só 하나, 둘, 셋 e 넷 mudam. De 다섯 em diante a forma é a mesma."
+          },
+          {
+            "id": "n2a8-e6",
+            "tipo": "montar",
+            "enunciado": "Monte “doze horas”.",
+            "dica": "열 + 둘, e o 둘 encurta",
+            "pecas": [
+              "열두",
+              "시",
+              "열둘"
+            ],
+            "correta": "열두시",
+            "explicacao": "열두 시 — o encurtamento pega o 둘 mesmo dentro de 열둘."
+          },
+          {
+            "id": "n2a8-e7",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "As horas usam os números sino-coreanos: 일 시, 이 시, 삼 시.",
+            "correta": false,
+            "explicacao": "Usam os nativos: 한 시, 두 시, 세 시. O sino-coreano fica com o minuto."
+          }
+        ]
+      },
+      {
+        "id": "n2a8-g2",
+        "titulo": "O minuto",
+        "itens": [
+          {
+            "id": "n2a8-e8",
+            "tipo": "escolha",
+            "enunciado": "Como se diz “dez minutos”?",
+            "opcoes": [
+              {
+                "ko": "십 분"
+              },
+              {
+                "ko": "열 분"
+              },
+              {
+                "ko": "십 시"
+              },
+              {
+                "ko": "열 시"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Minuto é sino-coreano: 십, não 열."
+          },
+          {
+            "id": "n2a8-e9",
+            "tipo": "lacuna",
+            "enunciado": "Complete “quinze minutos”.",
+            "antes": "",
+            "depois": " 분",
+            "banco": [
+              "십오",
+              "열다섯",
+              "십다섯"
+            ],
+            "correta": 0,
+            "explicacao": "십오 분. 열다섯 é o nativo, que serve para hora e para contador, não para minuto."
+          },
+          {
+            "id": "n2a8-e10",
+            "tipo": "montar",
+            "enunciado": "Monte “1:15”.",
+            "dica": "hora nativa, minuto sino-coreano",
+            "pecas": [
+              "한 시",
+              "십오 분",
+              "하나 시",
+              "열다섯 분"
+            ],
+            "correta": "한시십오분",
+            "explicacao": "한 시 십오 분 — os dois sistemas na mesma frase."
+          },
+          {
+            "id": "n2a8-e11",
+            "tipo": "montar",
+            "enunciado": "Monte “3:20”.",
+            "dica": "셋 encurta; vinte é sino-coreano",
+            "pecas": [
+              "세 시",
+              "이십 분",
+              "셋 시",
+              "스무 분"
+            ],
+            "correta": "세시이십분",
+            "explicacao": "세 시 이십 분."
+          },
+          {
+            "id": "n2a8-e12",
+            "tipo": "escolha",
+            "enunciado": "Qual é o atalho para 삼십 분?",
+            "opcoes": [
+              {
+                "ko": "반"
+              },
+              {
+                "ko": "정각"
+              },
+              {
+                "ko": "몇"
+              },
+              {
+                "ko": "시"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "반 é “meia”. 정각 é “em ponto”, outra coisa."
+          },
+          {
+            "id": "n2a8-e13",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Numa mesma frase, a hora vem em número nativo e o minuto em sino-coreano.",
+            "correta": true,
+            "explicacao": "É o que torna esta aula estranha à primeira vista — e ela é o único lugar onde isso acontece."
+          }
+        ]
+      },
+      {
+        "id": "n2a8-g3",
+        "titulo": "Perguntar e marcar",
+        "itens": [
+          {
+            "id": "n2a8-e14",
+            "tipo": "montar",
+            "enunciado": "Monte “Que horas são agora?”",
+            "dica": "시 termina em vogal",
+            "pecas": [
+              "지금",
+              "몇",
+              "시예요?",
+              "시이에요?"
+            ],
+            "correta": "지금몇시예요?",
+            "explicacao": "지금 몇 시예요? — vogal no fim pede 예요, pela regra da aula 5."
+          },
+          {
+            "id": "n2a8-e15",
+            "tipo": "lacuna",
+            "enunciado": "Complete “A aula termina às quatro e meia.”",
+            "antes": "수업이 네 시 반",
+            "depois": " 끝나요.",
+            "banco": [
+              "에",
+              "에서",
+              "까지"
+            ],
+            "correta": 0,
+            "explicacao": "-에 marca o ponto no tempo, como já marcava dia e lugar."
+          },
+          {
+            "id": "n2a8-e16",
+            "tipo": "escolha",
+            "enunciado": "몇 시예요? e 몇 시에…? — qual a diferença?",
+            "opcoes": [
+              {
+                "pt": "A primeira pergunta que horas são; a segunda, a que horas algo acontece"
+              },
+              {
+                "pt": "Nenhuma"
+              },
+              {
+                "pt": "A primeira é formal, a segunda informal"
+              },
+              {
+                "pt": "A segunda só serve para o passado"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O -에 é que transforma a pergunta sobre o relógio em pergunta sobre um compromisso."
+          },
+          {
+            "id": "n2a8-e17",
+            "tipo": "montar",
+            "enunciado": "Monte “Que horas você encontra o amigo hoje?”",
+            "dica": "몇 시에",
+            "pecas": [
+              "오늘",
+              "몇 시에",
+              "친구를",
+              "만나요?",
+              "몇 시예요?"
+            ],
+            "correta": "오늘몇시에친구를만나요?",
+            "explicacao": "오늘 몇 시에 친구를 만나요? — e o 를 é a partícula da aula 2."
+          },
+          {
+            "id": "n2a8-e18",
+            "tipo": "escolha",
+            "enunciado": "몇 시 soa [멷 씨]. Por quê?",
+            "opcoes": [
+              {
+                "pt": "O ㅊ de 몇 desaba em ㄷ, e o ㄷ endurece o ㅅ seguinte"
+              },
+              {
+                "pt": "O ㅅ soa sempre ㅆ depois de vogal"
+              },
+              {
+                "pt": "É exceção, sem regra por trás"
+              },
+              {
+                "pt": "A grafia certa seria 멷 씨"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Duas regras encadeadas: 음절의 끝소리 e depois 경음화."
+          },
+          {
+            "id": "n2a8-e19",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "-에 marca hora do mesmo jeito que marca dia e lugar.",
+            "correta": true,
+            "explicacao": "세 시에, 토요일에, 학교에 — a mesma partícula nos três."
+          }
+        ]
+      },
+      {
+        "id": "n2a8-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "n2a8-e20",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte o horário.",
+            "audio": "한 시 십일 분",
+            "pecas": [
+              "한 시",
+              "십일 분",
+              "하나 시"
+            ],
+            "correta": "한시십일분",
+            "explicacao": "한 시 십일 분 — 1:11."
+          },
+          {
+            "id": "n2a8-e21",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte o horário.",
+            "audio": "세 시 삼십육 분",
+            "pecas": [
+              "세 시",
+              "삼십육 분",
+              "셋 시"
+            ],
+            "correta": "세시삼십육분",
+            "explicacao": "세 시 삼십육 분 — 3:36."
+          },
+          {
+            "id": "n2a8-e22",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte o horário.",
+            "audio": "일곱 시 반",
+            "pecas": [
+              "일곱 시",
+              "반",
+              "칠 시"
+            ],
+            "correta": "일곱시반",
+            "explicacao": "일곱 시 반 — 7:30, com o atalho de 삼십 분."
+          },
+          {
+            "id": "n2a8-e23",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha o horário.",
+            "audio": "여덟 시 오십칠 분",
+            "opcoes": [
+              {
+                "ko": "여덟 시 오십칠 분",
+                "pt": "8:57"
+              },
+              {
+                "ko": "여덟 시 오십 분",
+                "pt": "8:50"
+              },
+              {
+                "ko": "여섯 시 오십칠 분",
+                "pt": "6:57"
+              },
+              {
+                "ko": "열 시 사십 분",
+                "pt": "10:40"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "여덟 시 오십칠 분. 여덟 e 여섯 se distinguem só na última sílaba."
+          },
+          {
+            "id": "n2a8-e24",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha o horário.",
+            "audio": "네 시 십구 분",
+            "opcoes": [
+              {
+                "ko": "네 시 십구 분",
+                "pt": "4:19"
+              },
+              {
+                "ko": "네 시 구 분",
+                "pt": "4:09"
+              },
+              {
+                "ko": "두 시 십구 분",
+                "pt": "2:19"
+              },
+              {
+                "ko": "네 시 십 분",
+                "pt": "4:10"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "네 시 십구 분 — 4:19."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-aula-9",
+    "numero": 9,
+    "hanja": "九",
+    "titulo": "Contar coisas e contar gente",
+    "hangul": "개, 명",
+    "resumo": "Em coreano não se conta “duas maçãs” — conta-se “maçã dois unidades”. A ordem é outra, e no meio entra um contador.",
+    "ilustracao": "assets/nivel2/aula-9.svg",
+    "objetivo": "Contar objetos e pessoas na ordem certa e escolher o contador que cada coisa pede.",
+    "vocabulario": [
+      {
+        "ko": "개",
+        "pt": "contador de peças, unidades",
+        "hanja": "個"
+      },
+      {
+        "ko": "명",
+        "pt": "contador de pessoas",
+        "hanja": "名"
+      },
+      {
+        "ko": "마리",
+        "pt": "contador de animais"
+      },
+      {
+        "ko": "권",
+        "pt": "contador de livros, volumes"
+      },
+      {
+        "ko": "장",
+        "pt": "contador de folhas, coisas planas"
+      },
+      {
+        "ko": "대",
+        "pt": "contador de veículos e máquinas",
+        "hanja": "臺"
+      },
+      {
+        "ko": "병",
+        "pt": "contador de garrafas"
+      },
+      {
+        "ko": "사탕",
+        "pt": "bala, doce"
+      },
+      {
+        "ko": "몇",
+        "pt": "quanto, quantos"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "n2a9-t1",
+        "titulo": "Substantivo, número, contador",
+        "grupo": "n2a9-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Em português o número vem antes da coisa: “três livros”. Em coreano ele vem depois, e ainda traz um terceiro elemento junto — a unidade em que aquilo se conta."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "사과",
+              "한",
+              "개"
+            ],
+            "glosas": [
+              "maçã",
+              "um",
+              "unidade"
+            ],
+            "resultado": "사과 한 개",
+            "traducao": "uma maçã"
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Português",
+              "Coreano",
+              "Ao pé da letra"
+            ],
+            "linhas": [
+              [
+                "uma maçã",
+                "사과 한 개",
+                "maçã · um · unidade"
+              ],
+              [
+                "dois livros",
+                "책 두 권",
+                "livro · dois · volume"
+              ],
+              [
+                "três amigos",
+                "친구 세 명",
+                "amigo · três · pessoa"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "É a mesma lógica de “duas fatias de pão” ou “três folhas de papel”. A diferença é que em coreano ela não é opcional: nenhum substantivo se conta sozinho."
+          },
+          {
+            "tipo": "nota",
+            "texto": "Existem centenas de contadores. Não se decoram todos de uma vez — aprendem-se conforme aparecem, e esta aula traz os dois que resolvem quase tudo no começo."
+          }
+        ]
+      },
+      {
+        "id": "n2a9-t2",
+        "titulo": "개 para coisa, 명 para gente",
+        "grupo": "n2a9-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "개 conta objeto. 명 conta pessoa. Com esses dois você atravessa a maior parte das situações."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "사과 한 개",
+                "pt": "uma maçã"
+              },
+              {
+                "ko": "학생 두 명",
+                "pt": "dois estudantes"
+              },
+              {
+                "ko": "친구 세 명",
+                "pt": "três amigos"
+              },
+              {
+                "ko": "몇 개 있어요?",
+                "pt": "Quantos (objetos) tem?"
+              },
+              {
+                "ko": "몇 명 있어요?",
+                "pt": "Quantas pessoas tem?"
+              }
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "E o número encurta antes do contador, exatamente como encurtava antes de 시 na aula passada:"
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Número",
+              "Antes de contador"
+            ],
+            "linhas": [
+              [
+                "하나",
+                "한 개"
+              ],
+              [
+                "둘",
+                "두 개"
+              ],
+              [
+                "셋",
+                "세 개"
+              ],
+              [
+                "넷",
+                "네 개"
+              ],
+              [
+                "다섯",
+                "다섯 개"
+              ],
+              [
+                "스물",
+                "스무 개"
+              ]
+            ]
+          },
+          {
+            "tipo": "som",
+            "grafia": "여덟",
+            "texto": "O ㅂ do fim não chega a soar: de duas consoantes finais só uma sobrevive, e aqui sobra o ㄹ."
+          },
+          {
+            "tipo": "destaque",
+            "texto": "한, 두, 세, 네 e 스무. Cinco formas curtas, e elas valem para todo contador — 한 시, 한 개, 한 명, 한 마리."
+          },
+          {
+            "tipo": "nota",
+            "texto": "개 como palavra solta significa “cachorro”. Como contador, não tem nada a ver: são duas palavras que calharam de soar igual."
+          }
+        ]
+      },
+      {
+        "id": "n2a9-t3",
+        "titulo": "Os outros que valem a pena",
+        "grupo": "n2a9-g3",
+        "corpo": [
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Contador",
+              "Conta",
+              "Exemplo"
+            ],
+            "linhas": [
+              [
+                "마리",
+                "bicho",
+                "고양이 아홉 마리"
+              ],
+              [
+                "권",
+                "livro, volume",
+                "책 다섯 권"
+              ],
+              [
+                "장",
+                "folha, papel, ingresso",
+                "종이 스물두 장"
+              ],
+              [
+                "병",
+                "garrafa",
+                "콜라 한 병"
+              ],
+              [
+                "대",
+                "carro, máquina",
+                "차 한 대"
+              ]
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "개 socorre quando você não lembra o contador certo: 연필 한 개 passa, mesmo o contador exato de lápis sendo 자루. Mas o socorro tem limite."
+          },
+          {
+            "tipo": "destaque",
+            "texto": "차 한 개 está errado, e não passa. Carro pede 대, e alguns contadores são assim — não se deixam substituir."
+          },
+          {
+            "tipo": "p",
+            "texto": "몇 na frente de qualquer um deles vira a pergunta:"
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "고양이 몇 마리 있어요?",
+                "pt": "Quantos gatos tem?"
+              },
+              {
+                "ko": "책 몇 권 샀어요?",
+                "pt": "Quantos livros você comprou?"
+              }
+            ]
+          },
+          {
+            "tipo": "nota",
+            "texto": "사람 também conta gente, mas só em número pequeno e sem precisão: 두 사람 passa, 열 사람 soa estranho — aí é 열 명."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Arrumando a sala antes da reunião.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "의자 몇 개 있어요?",
+          "pt": "Quantas cadeiras tem?"
+        },
+        {
+          "quem": "B",
+          "ko": "스무 개요.",
+          "pt": "Vinte."
+        },
+        {
+          "quem": "A",
+          "ko": "지금 몇 명 있어요?",
+          "pt": "Quantas pessoas tem agora?"
+        },
+        {
+          "quem": "B",
+          "ko": "열 명 있어요.",
+          "pt": "Tem dez."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "n2a9-g1",
+        "titulo": "A ordem coreana",
+        "itens": [
+          {
+            "id": "n2a9-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada contador ao que ele conta.",
+            "pares": [
+              {
+                "a": "개",
+                "b": "coisas, unidades"
+              },
+              {
+                "a": "명",
+                "b": "pessoas"
+              },
+              {
+                "a": "마리",
+                "b": "animais"
+              },
+              {
+                "a": "병",
+                "b": "garrafas"
+              },
+              {
+                "a": "대",
+                "b": "veículos e máquinas"
+              }
+            ],
+            "explicacao": "개 e 명 cobrem quase tudo; os outros três aparecem o tempo todo em loja e restaurante."
+          },
+          {
+            "id": "n2a9-e2",
+            "tipo": "escolha",
+            "enunciado": "Como se diz “uma maçã”?",
+            "opcoes": [
+              {
+                "ko": "사과 한 개"
+              },
+              {
+                "ko": "한 개 사과"
+              },
+              {
+                "ko": "하나 사과"
+              },
+              {
+                "ko": "사과 하나 개"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Substantivo primeiro, número depois, contador por último."
+          },
+          {
+            "id": "n2a9-e3",
+            "tipo": "escolha",
+            "enunciado": "Qual é a ordem coreana?",
+            "opcoes": [
+              {
+                "pt": "Substantivo, número, contador"
+              },
+              {
+                "pt": "Número, contador, substantivo"
+              },
+              {
+                "pt": "Contador, número, substantivo"
+              },
+              {
+                "pt": "Número, substantivo"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "A última é a ordem do português, e é justamente a que não funciona."
+          },
+          {
+            "id": "n2a9-e4",
+            "tipo": "montar",
+            "enunciado": "Monte “dois livros”.",
+            "dica": "livro pede 권",
+            "pecas": [
+              "책",
+              "두",
+              "권",
+              "둘"
+            ],
+            "correta": "책두권",
+            "explicacao": "책 두 권 — e o 둘 encurta para 두."
+          },
+          {
+            "id": "n2a9-e5",
+            "tipo": "montar",
+            "enunciado": "Monte “três amigos”.",
+            "dica": "gente pede 명",
+            "pecas": [
+              "친구",
+              "세",
+              "명",
+              "셋"
+            ],
+            "correta": "친구세명",
+            "explicacao": "친구 세 명."
+          },
+          {
+            "id": "n2a9-e6",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Em coreano o número vem antes do substantivo, como em português.",
+            "correta": false,
+            "explicacao": "Vem depois, e traz o contador junto: 사과 한 개."
+          }
+        ]
+      },
+      {
+        "id": "n2a9-g2",
+        "titulo": "개, 명 e o número curto",
+        "itens": [
+          {
+            "id": "n2a9-e7",
+            "tipo": "escolha",
+            "enunciado": "Qual contador conta pessoas?",
+            "opcoes": [
+              {
+                "ko": "명"
+              },
+              {
+                "ko": "개"
+              },
+              {
+                "ko": "마리"
+              },
+              {
+                "ko": "권"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "명. Usar 개 para gente seria tratar a pessoa como objeto."
+          },
+          {
+            "id": "n2a9-e8",
+            "tipo": "lacuna",
+            "enunciado": "Complete “uma unidade”.",
+            "antes": "",
+            "depois": " 개",
+            "banco": [
+              "한",
+              "하나",
+              "일"
+            ],
+            "correta": 0,
+            "explicacao": "하나 encurta para 한. 일 é do outro sistema de número."
+          },
+          {
+            "id": "n2a9-e9",
+            "tipo": "lacuna",
+            "enunciado": "Complete “vinte unidades”.",
+            "antes": "",
+            "depois": " 개",
+            "banco": [
+              "스무",
+              "스물",
+              "이십"
+            ],
+            "correta": 0,
+            "explicacao": "스물 também encurta: 스무 개."
+          },
+          {
+            "id": "n2a9-e10",
+            "tipo": "escolha",
+            "enunciado": "Quais números encurtam antes de contador?",
+            "opcoes": [
+              {
+                "pt": "하나, 둘, 셋, 넷 e 스물"
+              },
+              {
+                "pt": "Todos"
+              },
+              {
+                "pt": "Só 하나"
+              },
+              {
+                "pt": "Nenhum"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Cinco formas, e elas valem para 시, 개, 명, 마리 — para todo contador."
+          },
+          {
+            "id": "n2a9-e11",
+            "tipo": "montar",
+            "enunciado": "Monte “quinze maçãs”.",
+            "dica": "quinze em número nativo",
+            "pecas": [
+              "사과",
+              "열다섯",
+              "개",
+              "십오"
+            ],
+            "correta": "사과열다섯개",
+            "explicacao": "사과 열다섯 개 — contador pede número nativo, então 십오 fica de fora."
+          },
+          {
+            "id": "n2a9-e12",
+            "tipo": "escolha",
+            "enunciado": "개, como palavra solta, significa:",
+            "opcoes": [
+              {
+                "pt": "Cachorro"
+              },
+              {
+                "pt": "Unidade"
+              },
+              {
+                "pt": "Pessoa"
+              },
+              {
+                "pt": "Garrafa"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "São duas palavras diferentes que soam igual — o contexto separa as duas sem esforço."
+          },
+          {
+            "id": "n2a9-e13",
+            "tipo": "montar",
+            "enunciado": "Monte “Quantas pessoas tem?”",
+            "dica": "몇 + contador",
+            "pecas": [
+              "몇",
+              "명",
+              "있어요?",
+              "개"
+            ],
+            "correta": "몇명있어요?",
+            "explicacao": "몇 명 있어요?"
+          }
+        ]
+      },
+      {
+        "id": "n2a9-g3",
+        "titulo": "Escolher o contador certo",
+        "itens": [
+          {
+            "id": "n2a9-e14",
+            "tipo": "escolha",
+            "enunciado": "Qual contador para gato?",
+            "opcoes": [
+              {
+                "ko": "마리"
+              },
+              {
+                "ko": "개"
+              },
+              {
+                "ko": "명"
+              },
+              {
+                "ko": "장"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "마리 conta bicho — de gato a pato."
+          },
+          {
+            "id": "n2a9-e15",
+            "tipo": "lacuna",
+            "enunciado": "Complete “vinte e duas folhas de papel”.",
+            "antes": "종이 스물두 ",
+            "depois": "",
+            "banco": [
+              "장",
+              "권",
+              "마리"
+            ],
+            "correta": 0,
+            "explicacao": "장 conta o que é plano: papel, ingresso, foto."
+          },
+          {
+            "id": "n2a9-e16",
+            "tipo": "escolha",
+            "enunciado": "차 한 개 está errado. Qual é o certo?",
+            "opcoes": [
+              {
+                "ko": "차 한 대"
+              },
+              {
+                "ko": "차 한 마리"
+              },
+              {
+                "ko": "차 한 권"
+              },
+              {
+                "ko": "차 한 명"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "대 conta veículo e máquina, e é dos contadores que 개 não substitui."
+          },
+          {
+            "id": "n2a9-e17",
+            "tipo": "montar",
+            "enunciado": "Monte “nove gatos”.",
+            "dica": "bicho pede 마리",
+            "pecas": [
+              "고양이",
+              "아홉",
+              "마리",
+              "명"
+            ],
+            "correta": "고양이아홉마리",
+            "explicacao": "고양이 아홉 마리 — e 아홉 não encurta."
+          },
+          {
+            "id": "n2a9-e18",
+            "tipo": "escolha",
+            "enunciado": "몇 명 있어요? e 몇 사람 있어요? — o que muda?",
+            "opcoes": [
+              {
+                "pt": "사람 só cabe em número pequeno; 열 사람 soa estranho"
+              },
+              {
+                "pt": "Nada"
+              },
+              {
+                "pt": "사람 é a forma mais formal"
+              },
+              {
+                "pt": "사람 só serve em pergunta"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "두 사람 passa. A partir de um punhado de gente, o natural é 명."
+          },
+          {
+            "id": "n2a9-e19",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "연필 한 개 passa, mesmo o contador exato de lápis sendo 자루.",
+            "correta": true,
+            "explicacao": "개 socorre em boa parte dos casos. Só não socorre onde o contador é obrigatório, como 대."
+          }
+        ]
+      },
+      {
+        "id": "n2a9-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "n2a9-e20",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "사과 스물아홉 개",
+            "pecas": [
+              "사과",
+              "스물아홉",
+              "개",
+              "이십구"
+            ],
+            "correta": "사과스물아홉개",
+            "explicacao": "사과 스물아홉 개 — vinte e nove maçãs."
+          },
+          {
+            "id": "n2a9-e21",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "사탕 몇 개 있어요?",
+            "pecas": [
+              "사탕",
+              "몇",
+              "개",
+              "있어요?",
+              "명"
+            ],
+            "correta": "사탕몇개있어요?",
+            "explicacao": "사탕 몇 개 있어요? — “quantas balas tem?”"
+          },
+          {
+            "id": "n2a9-e22",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "책 한 권 주세요.",
+            "pecas": [
+              "책",
+              "한",
+              "권",
+              "주세요.",
+              "개"
+            ],
+            "correta": "책한권주세요.",
+            "explicacao": "책 한 권 주세요 — e o 주세요 é da aula 11 do Nível 1."
+          },
+          {
+            "id": "n2a9-e23",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha o que você ouviu.",
+            "audio": "고양이 아홉 마리",
+            "opcoes": [
+              {
+                "ko": "고양이 아홉 마리"
+              },
+              {
+                "ko": "고양이 여덟 마리"
+              },
+              {
+                "ko": "고양이 아홉 명"
+              },
+              {
+                "ko": "고양이 아홉 개"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "고양이 아홉 마리. As duas últimas usam contador de gente e de coisa para bicho."
+          },
+          {
+            "id": "n2a9-e24",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a palavra que você ouviu.",
+            "audio": "사탕",
+            "opcoes": [
+              {
+                "ko": "사탕"
+              },
+              {
+                "ko": "사과"
+              },
+              {
+                "ko": "사람"
+              },
+              {
+                "ko": "사다리"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "사탕 — bala. Quatro palavras que começam pela mesma sílaba."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "n2-aula-10",
+    "numero": 10,
+    "hanja": "十",
+    "titulo": "Estar fazendo agora",
+    "hangul": "-고 있어요",
+    "resumo": "O radical do verbo mais o 있다 que você já conhece — e a ação deixa de ser fato para estar em curso.",
+    "ilustracao": "assets/nivel2/aula-10.svg",
+    "objetivo": "Dizer o que está acontecendo agora, o que estava acontecendo e o que estará.",
+    "vocabulario": [
+      {
+        "ko": "불다",
+        "pt": "soprar (vento)"
+      },
+      {
+        "ko": "영상",
+        "pt": "vídeo",
+        "hanja": "映像"
+      },
+      {
+        "ko": "공부하다",
+        "pt": "estudar"
+      },
+      {
+        "ko": "듣다",
+        "pt": "ouvir, escutar"
+      },
+      {
+        "ko": "일하다",
+        "pt": "trabalhar"
+      },
+      {
+        "ko": "생각하다",
+        "pt": "pensar"
+      },
+      {
+        "ko": "졸다",
+        "pt": "cochilar"
+      },
+      {
+        "ko": "바람",
+        "pt": "vento"
+      }
+    ],
+    "topicos": [
+      {
+        "id": "n2a10-t1",
+        "titulo": "Radical + -고 있어요",
+        "grupo": "n2a10-g1",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Tire o -다 da forma de dicionário, ponha -고, e emende o 있어요 da aula 10 do Nível 1. A ação deixa de ser um fato e passa a estar em curso."
+          },
+          {
+            "tipo": "formula",
+            "partes": [
+              "보",
+              "고 있어요"
+            ],
+            "glosas": [
+              "ver",
+              "estar -ndo"
+            ],
+            "resultado": "보고 있어요",
+            "traducao": "estou vendo"
+          },
+          {
+            "tipo": "destaque",
+            "texto": "Diferente do futuro e do presente, aqui não há vogal de apoio nem forma a escolher. -고 gruda igual em todo radical, com 받침 ou sem."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "밖에 비가 오고 있어요.",
+                "pt": "Está chovendo lá fora."
+              },
+              {
+                "ko": "밖에 눈이 오고 있어요.",
+                "pt": "Está nevando lá fora."
+              },
+              {
+                "ko": "바람이 불고 있어요.",
+                "pt": "O vento está soprando."
+              }
+            ]
+          },
+          {
+            "tipo": "som",
+            "grafia": "듣고",
+            "texto": "O ㄷ do fim da sílaba endurece o ㄱ seguinte. A grafia mantém 듣고; o ouvido escuta outra coisa."
+          },
+          {
+            "tipo": "som",
+            "grafia": "읽고",
+            "texto": "Aqui são duas em sequência: das duas consoantes finais sobra o ㄱ, e ele endurece o ㄱ da sílaba seguinte."
+          }
+        ]
+      },
+      {
+        "id": "n2a10-t2",
+        "titulo": "O mesmo molde no passado e no futuro",
+        "grupo": "n2a10-g2",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "O que se conjuga é o 있다 do fim. O -고 nunca muda, e o radical do verbo também não."
+          },
+          {
+            "tipo": "tabela",
+            "colunas": [
+              "Quando",
+              "Forma",
+              "Exemplo"
+            ],
+            "linhas": [
+              [
+                "agora",
+                "-고 있어요",
+                "일하고 있어요"
+              ],
+              [
+                "antes",
+                "-고 있었어요",
+                "일하고 있었어요"
+              ],
+              [
+                "depois",
+                "-고 있을 거예요",
+                "일하고 있을 거예요"
+              ]
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "-고 있을 거예요 amarra esta aula na aula 1: o 있다 vira futuro pela regra de sempre — 있 termina em consoante, então 있을 거예요."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "듣고 있었어요.",
+                "pt": "Eu estava ouvindo."
+              },
+              {
+                "ko": "공부하고 있을 거예요.",
+                "pt": "Eu estarei estudando."
+              },
+              {
+                "ko": "졸고 있어요.",
+                "pt": "Está cochilando."
+              }
+            ]
+          },
+          {
+            "tipo": "nota",
+            "texto": "졸다 termina em ㄹ e mesmo assim é 졸고 있어요. O -고 não mexe no radical de ninguém — foi o futuro que tinha essa mania, não este."
+          }
+        ]
+      },
+      {
+        "id": "n2a10-t3",
+        "titulo": "Quando não usar",
+        "grupo": "n2a10-g3",
+        "corpo": [
+          {
+            "tipo": "p",
+            "texto": "Duas armadilhas, e as duas nascem de traduzir do português ao pé da letra."
+          },
+          {
+            "tipo": "p",
+            "texto": "A primeira: em português o gerúndio às vezes fala do futuro — “amanhã não estou indo trabalhar”. Em coreano isso é futuro, e -고 있어요 não entra."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "내일 회사에 안 갈 거예요.",
+                "pt": "Amanhã não vou trabalhar.",
+                "conta": "futuro, mesmo que o português use gerúndio"
+              }
+            ]
+          },
+          {
+            "tipo": "p",
+            "texto": "A segunda: mesmo quando a ação está mesmo em curso, o coreano do dia a dia costuma resolver com o presente simples."
+          },
+          {
+            "tipo": "exemplos",
+            "itens": [
+              {
+                "ko": "지금 뭐 하고 있어요?",
+                "pt": "O que você está fazendo agora?",
+                "conta": "correto, e um pouco mais enfático"
+              },
+              {
+                "ko": "지금 뭐 해요?",
+                "pt": "O que você está fazendo agora?",
+                "conta": "é o que se ouve na maior parte das vezes"
+              }
+            ]
+          },
+          {
+            "tipo": "destaque",
+            "texto": "-고 있어요 nunca está errado quando a ação está em curso. Ele só não é obrigatório."
+          }
+        ]
+      }
+    ],
+    "dialogo": {
+      "contexto": "Sobre um vídeo que alguém mandou.",
+      "falas": [
+        {
+          "quem": "A",
+          "ko": "그 영상 봤어요?",
+          "pt": "Você viu aquele vídeo?"
+        },
+        {
+          "quem": "B",
+          "ko": "지금 보고 있어요.",
+          "pt": "Estou vendo agora."
+        },
+        {
+          "quem": "A",
+          "ko": "재미있어요?",
+          "pt": "É divertido?"
+        },
+        {
+          "quem": "B",
+          "ko": "네, 재미있어요.",
+          "pt": "É, é divertido."
+        }
+      ]
+    },
+    "grupos": [
+      {
+        "id": "n2a10-g1",
+        "titulo": "Formar o progressivo",
+        "itens": [
+          {
+            "id": "n2a10-e1",
+            "tipo": "associar",
+            "enunciado": "Ligue cada palavra à tradução.",
+            "pares": [
+              {
+                "a": "불다",
+                "b": "soprar"
+              },
+              {
+                "a": "영상",
+                "b": "vídeo"
+              },
+              {
+                "a": "졸다",
+                "b": "cochilar"
+              },
+              {
+                "a": "생각하다",
+                "b": "pensar"
+              },
+              {
+                "a": "일하다",
+                "b": "trabalhar"
+              }
+            ],
+            "explicacao": "생각하다 e 일하다 são da fábrica de 하다 da aula 22 do Nível 1 — substantivo mais 하다."
+          },
+          {
+            "id": "n2a10-e2",
+            "tipo": "escolha",
+            "enunciado": "Como se forma o progressivo?",
+            "opcoes": [
+              {
+                "pt": "Radical + -고 있어요"
+              },
+              {
+                "pt": "Radical + -을 거예요"
+              },
+              {
+                "pt": "Radical + -지 않다"
+              },
+              {
+                "pt": "Radical + -하고"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "As outras três são o futuro da aula 1, a negação da aula 21 e a partícula da aula 4."
+          },
+          {
+            "id": "n2a10-e3",
+            "tipo": "montar",
+            "enunciado": "Monte “Estou vendo.”",
+            "dica": "보다 → radical 보",
+            "pecas": [
+              "보",
+              "고 있어요.",
+              "볼 거예요."
+            ],
+            "correta": "보고있어요.",
+            "explicacao": "보고 있어요."
+          },
+          {
+            "id": "n2a10-e4",
+            "tipo": "lacuna",
+            "enunciado": "Complete “Está chovendo lá fora.”",
+            "antes": "밖에 비가 오",
+            "depois": " 있어요.",
+            "banco": [
+              "고",
+              "을",
+              "지"
+            ],
+            "correta": 0,
+            "explicacao": "밖에 비가 오고 있어요."
+          },
+          {
+            "id": "n2a10-e5",
+            "tipo": "escolha",
+            "enunciado": "O -고 muda de forma conforme o 받침 do radical?",
+            "opcoes": [
+              {
+                "pt": "Não — gruda igual em todo radical"
+              },
+              {
+                "pt": "Sim, vira -으고"
+              },
+              {
+                "pt": "Sim, vira -이고"
+              },
+              {
+                "pt": "Só em verbo de 하다"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "É o que torna esta construção a mais fácil do Nível 2: não há forma a escolher."
+          },
+          {
+            "id": "n2a10-e6",
+            "tipo": "montar",
+            "enunciado": "Monte “O vento está soprando.”",
+            "dica": "불다 → radical 불",
+            "pecas": [
+              "바람이",
+              "불",
+              "고 있어요.",
+              "불 거예요."
+            ],
+            "correta": "바람이불고있어요.",
+            "explicacao": "바람이 불고 있어요."
+          },
+          {
+            "id": "n2a10-e7",
+            "tipo": "escolha",
+            "enunciado": "듣고 soa [듣꼬]. Por quê?",
+            "opcoes": [
+              {
+                "pt": "O ㄷ do fim da sílaba endurece o ㄱ seguinte"
+              },
+              {
+                "pt": "O ㄱ é sempre ㄲ depois de consoante"
+              },
+              {
+                "pt": "É exceção, sem regra por trás"
+              },
+              {
+                "pt": "A grafia certa seria 듣꼬"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "경음화, tensificação. A mesma regra faz 읽고 soar [익꼬]."
+          }
+        ]
+      },
+      {
+        "id": "n2a10-g2",
+        "titulo": "Passado e futuro",
+        "itens": [
+          {
+            "id": "n2a10-e8",
+            "tipo": "escolha",
+            "enunciado": "Como se diz “eu estava trabalhando”?",
+            "opcoes": [
+              {
+                "ko": "일하고 있었어요"
+              },
+              {
+                "ko": "일하고 있어요"
+              },
+              {
+                "ko": "일했어요"
+              },
+              {
+                "ko": "일하고 있을 거예요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "일했어요 é “trabalhei” — fato encerrado, não ação em curso no passado."
+          },
+          {
+            "id": "n2a10-e9",
+            "tipo": "escolha",
+            "enunciado": "E “estarei trabalhando”?",
+            "opcoes": [
+              {
+                "ko": "일하고 있을 거예요"
+              },
+              {
+                "ko": "일하고 있었어요"
+              },
+              {
+                "ko": "일할 거예요"
+              },
+              {
+                "ko": "일하고 있어요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "일할 거예요 é “vou trabalhar”. O progressivo põe o 있다 no futuro, não o verbo."
+          },
+          {
+            "id": "n2a10-e10",
+            "tipo": "lacuna",
+            "enunciado": "Complete “Eu estava ouvindo.”",
+            "antes": "듣고 ",
+            "depois": "",
+            "banco": [
+              "있었어요",
+              "있어요",
+              "있을 거예요"
+            ],
+            "correta": 0,
+            "explicacao": "듣고 있었어요."
+          },
+          {
+            "id": "n2a10-e11",
+            "tipo": "escolha",
+            "enunciado": "O que se conjuga nesta construção?",
+            "opcoes": [
+              {
+                "pt": "O 있다 do fim"
+              },
+              {
+                "pt": "O -고"
+              },
+              {
+                "pt": "O radical do verbo"
+              },
+              {
+                "pt": "O radical e o 있다, os dois"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "Só o 있다. O resto fica parado nos três tempos."
+          },
+          {
+            "id": "n2a10-e12",
+            "tipo": "montar",
+            "enunciado": "Monte “Vou estar estudando.”",
+            "dica": "o 있다 é que vira futuro",
+            "pecas": [
+              "공부하",
+              "고 있을 거예요.",
+              "고 있었어요."
+            ],
+            "correta": "공부하고있을거예요.",
+            "explicacao": "공부하고 있을 거예요."
+          },
+          {
+            "id": "n2a10-e13",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "졸다 termina em ㄹ, então o progressivo é 조고 있어요.",
+            "correta": false,
+            "explicacao": "É 졸고 있어요. O ㄹ só caía no futuro; aqui o radical fica inteiro."
+          }
+        ]
+      },
+      {
+        "id": "n2a10-g3",
+        "titulo": "Quando não usar",
+        "itens": [
+          {
+            "id": "n2a10-e14",
+            "tipo": "escolha",
+            "enunciado": "“Amanhã não vou trabalhar”, em coreano, é:",
+            "opcoes": [
+              {
+                "ko": "내일 회사에 안 갈 거예요"
+              },
+              {
+                "ko": "내일 회사에 안 가고 있어요"
+              },
+              {
+                "ko": "내일 회사에 안 갔어요"
+              },
+              {
+                "ko": "내일 회사에 가고 있었어요"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O 내일 já denuncia: é futuro, e futuro é a aula 1."
+          },
+          {
+            "id": "n2a10-e15",
+            "tipo": "escolha",
+            "enunciado": "Por que -고 있어요 não cabe ali?",
+            "opcoes": [
+              {
+                "pt": "Porque a frase fala do futuro, e não de algo em curso"
+              },
+              {
+                "pt": "Porque a frase tem 안"
+              },
+              {
+                "pt": "Porque 회사 é lugar"
+              },
+              {
+                "pt": "Porque 가다 não aceita -고"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O gerúndio do português engana: ele às vezes fala de amanhã, e o coreano não deixa."
+          },
+          {
+            "id": "n2a10-e16",
+            "tipo": "escolha",
+            "enunciado": "지금 뭐 해요? está errado, se a ação está em curso?",
+            "opcoes": [
+              {
+                "pt": "Não — é o que se ouve mais no dia a dia"
+              },
+              {
+                "pt": "Sim, falta o -고 있어요"
+              },
+              {
+                "pt": "Sim, 해요 só serve para o passado"
+              },
+              {
+                "pt": "Só está certo em 반말"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "O presente simples cobre o progressivo na conversa comum."
+          },
+          {
+            "id": "n2a10-e17",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "-고 있어요 é obrigatório sempre que a ação está acontecendo agora.",
+            "correta": false,
+            "explicacao": "Não é obrigatório. 지금 뭐 해요? é frase perfeita."
+          },
+          {
+            "id": "n2a10-e18",
+            "tipo": "montar",
+            "enunciado": "Perguntam 그 영상 봤어요? Responda que está vendo agora.",
+            "dica": "지금 + progressivo",
+            "pecas": [
+              "지금",
+              "보고 있어요.",
+              "봤어요."
+            ],
+            "correta": "지금보고있어요.",
+            "explicacao": "지금 보고 있어요."
+          },
+          {
+            "id": "n2a10-e19",
+            "tipo": "vf",
+            "enunciado": "Verdadeiro ou falso?",
+            "afirmacao": "Quando a ação está mesmo em curso, -고 있어요 nunca está errado.",
+            "correta": true,
+            "explicacao": "Nunca erra — só nem sempre é a escolha mais natural."
+          }
+        ]
+      },
+      {
+        "id": "n2a10-g4",
+        "titulo": "O que você ouviu",
+        "solto": true,
+        "itens": [
+          {
+            "id": "n2a10-e20",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "책을 읽고 있어요.",
+            "pecas": [
+              "책을",
+              "읽고 있어요.",
+              "읽을 거예요."
+            ],
+            "correta": "책을읽고있어요.",
+            "explicacao": "책을 읽고 있어요 — e o 을 é a partícula da aula 2."
+          },
+          {
+            "id": "n2a10-e21",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "지금 뭐 하고 있어요?",
+            "pecas": [
+              "지금",
+              "뭐",
+              "하고 있어요?",
+              "했어요?"
+            ],
+            "correta": "지금뭐하고있어요?",
+            "explicacao": "지금 뭐 하고 있어요?"
+          },
+          {
+            "id": "n2a10-e22",
+            "tipo": "ditado",
+            "enunciado": "Ouça e monte.",
+            "audio": "자고 있었어요.",
+            "pecas": [
+              "자고",
+              "있었어요.",
+              "있어요."
+            ],
+            "correta": "자고있었어요.",
+            "explicacao": "자고 있었어요 — “eu estava dormindo”."
+          },
+          {
+            "id": "n2a10-e23",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a forma que você ouviu.",
+            "audio": "공부하고 있을 거예요",
+            "opcoes": [
+              {
+                "ko": "공부하고 있을 거예요",
+                "pt": "estarei estudando"
+              },
+              {
+                "ko": "공부하고 있었어요",
+                "pt": "estava estudando"
+              },
+              {
+                "ko": "공부하고 있어요",
+                "pt": "estou estudando"
+              },
+              {
+                "ko": "공부할 거예요",
+                "pt": "vou estudar"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "As quatro só se distinguem no fim — é lá que o tempo mora."
+          },
+          {
+            "id": "n2a10-e24",
+            "tipo": "ditado",
+            "enunciado": "Ouça e escolha a palavra que você ouviu.",
+            "audio": "영상",
+            "opcoes": [
+              {
+                "ko": "영상"
+              },
+              {
+                "ko": "영화"
+              },
+              {
+                "ko": "영어"
+              },
+              {
+                "ko": "사진"
+              }
+            ],
+            "correta": 0,
+            "explicacao": "영상 — vídeo. 영화 é filme, e 영어 é a língua inglesa."
           }
         ]
       }

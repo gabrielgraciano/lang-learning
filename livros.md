@@ -501,8 +501,8 @@ Mesmas regras de `CLAUDE.md`: 200×200, sujeito isolado, paleta de ~5 cores,
 Toda palavra que aparece na seção de vocabulário de uma aula está também em
 **`dados/palavras.json`**, com o mesmo esquema das palavras do baralho:
 romanização, módulo, classe, `sino` quando é sino-coreana, exemplo e nota. Com
-as palavras que as **Histórias** e o **Nível 2** trouxeram depois, são **669
-entradas** hoje — 114 no baralho e 555 só no dicionário.
+as palavras que as **Histórias** e o **Nível 2** trouxeram depois, são **690
+entradas** hoje — 114 no baralho e 576 só no dicionário.
 
 O que separa as duas metades é um campo:
 

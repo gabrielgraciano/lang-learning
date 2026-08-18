@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Duas setas que se encontram de frente, vindas de quadros opostos">
+  <circle cx="100" cy="100" r="94" fill="#E8E3E1"/>
+  <rect x="16" y="76" width="48" height="48" rx="6" fill="#3D6B77"/>
+  <path d="M70 100h12" stroke="#3D6B77" stroke-width="8" stroke-linecap="round"/>
+  <path d="M80 88l16 12-16 12z" fill="#3D6B77"/>
+  <rect x="136" y="76" width="48" height="48" rx="6" fill="#A0512F"/>
+  <path d="M130 100h-12" stroke="#A0512F" stroke-width="8" stroke-linecap="round"/>
+  <path d="M120 88l-16 12 16 12z" fill="#A0512F"/>
+  <path d="M100 44v22M100 134v22" stroke="#C8A24A" stroke-width="6" stroke-linecap="round"/>
+</svg>

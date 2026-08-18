@@ -19,7 +19,7 @@ desligada?", "por que o card de frase não é uma tela separada?" — quase semp
 tem uma decisão documentada por trás. Leia antes de reverter.
 
 Além do baralho há três seções de conteúdo, cada uma com o seu próprio mapa:
-**Nível 1** (gramática, 25 aulas) em `livros.md`, **Nível 2** (gramática, 5
+**Nível 1** (gramática, 25 aulas) em `livros.md`, **Nível 2** (gramática, 10
 aulas até agora, em andamento) em `nivel2.md`, e **Histórias** (vocabulário, 25
 dias de 20 palavras) em `historias.md`. As três rodam na mesma tela e são
 corrigidas pelo mesmo `src/licoes.js`; o que muda é o arquivo de dados. Os dois

@@ -14059,5 +14059,507 @@
     },
     "nota": "火星 — “o astro de fogo”. O mesmo 성 (星) está em 목성, 금성 e 토성, e o mesmo 화 (火) está em 화요일.",
     "baralho": false
+  },
+  {
+    "id": "mas_formal",
+    "hangul": "그렇지만",
+    "romanizacao": "geureochiman",
+    "pt": "mas, no entanto",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 6,
+    "nivel": 2,
+    "confundiveis": [
+      "mas_porem",
+      "por_isso_conj"
+    ],
+    "exemplo": {
+      "ko": "피곤해요. 그렇지만 영화 보고 싶어요.",
+      "pt": "Estou cansado. Mas quero ver um filme."
+    },
+    "nota": "Soa formal e vive mais na escrita. O ㅎ se funde com o ㅈ seguinte: [그러치만].",
+    "baralho": false
+  },
+  {
+    "id": "mas_porem",
+    "hangul": "그런데",
+    "romanizacao": "geureonde",
+    "pt": "mas; e por sinal",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 6,
+    "nivel": 2,
+    "confundiveis": [
+      "mas_formal",
+      "e_conjuncao"
+    ],
+    "exemplo": {
+      "ko": "어제 이거 샀어요. 그런데 정말 커요.",
+      "pt": "Comprei isto ontem. Mas é enorme."
+    },
+    "nota": "Faz dois serviços: contraria como 그렇지만 e emenda como “e, por sinal”. Na fala encurta para 근데.",
+    "baralho": false
+  },
+  {
+    "id": "cansado",
+    "hangul": "피곤하다",
+    "romanizacao": "pigonhada",
+    "pt": "estar cansado",
+    "modulo": "qualidades",
+    "classe": "adjetivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 6,
+    "nivel": 2,
+    "sino": {
+      "피": "疲",
+      "곤": "困"
+    },
+    "confundiveis": [
+      "doer",
+      "divertido"
+    ],
+    "exemplo": {
+      "ko": "어젯밤 늦게 잤어요. 그런데 안 피곤해요.",
+      "pt": "Dormi tarde ontem à noite. Mas não estou cansado."
+    },
+    "nota": "疲困 — os dois ideogramas significam cansaço, e a palavra empilha um sobre o outro para reforçar.",
+    "baralho": false
+  },
+  {
+    "id": "tarde_adv",
+    "hangul": "늦게",
+    "romanizacao": "neutge",
+    "pt": "tarde (a uma hora avançada)",
+    "modulo": "alta-frequencia",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 6,
+    "nivel": 2,
+    "campo": "funcao",
+    "confundiveis": [
+      "cedo",
+      "com_frequencia"
+    ],
+    "exemplo": {
+      "ko": "오늘 늦게 일어났어요.",
+      "pt": "Hoje acordei tarde."
+    },
+    "nota": "Vem de 늦다, “estar atrasado”. É o oposto exato de 일찍, e o par aparece junto o tempo todo.",
+    "baralho": false
+  },
+  {
+    "id": "ontem_a_noite",
+    "hangul": "어젯밤",
+    "romanizacao": "eojetbam",
+    "pt": "ontem à noite",
+    "modulo": "tempo",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 6,
+    "nivel": 2,
+    "confundiveis": [
+      "ontem",
+      "noite_tarde"
+    ],
+    "exemplo": {
+      "ko": "어젯밤에 일찍 잤어요.",
+      "pt": "Dormi cedo ontem à noite."
+    },
+    "nota": "어제 + 밤, com um ㅅ de ligação no meio. Ele não se pronuncia sozinho: endurece o ㅂ seguinte, e sai [어젣빰].",
+    "baralho": false
+  },
+  {
+    "id": "particula_para_alguem",
+    "hangul": "-한테",
+    "romanizacao": "hante",
+    "pt": "para / de (alguém)",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 7,
+    "nivel": 2,
+    "confundiveis": [
+      "particula_de_alguem",
+      "particula_em"
+    ],
+    "exemplo": {
+      "ko": "친구한테 이메일을 보냈어요.",
+      "pt": "Mandei um e-mail para um amigo."
+    },
+    "nota": "Só se prende a pessoa ou animal — 서울한테 não existe. Quem decide se é “para” ou “de” é o verbo.",
+    "baralho": false
+  },
+  {
+    "id": "particula_de_alguem",
+    "hangul": "-한테서",
+    "romanizacao": "hanteseo",
+    "pt": "de (alguém)",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 7,
+    "nivel": 2,
+    "confundiveis": [
+      "particula_para_alguem",
+      "particula_em_acao"
+    ],
+    "exemplo": {
+      "ko": "친구한테서 이거 얻었어요.",
+      "pt": "Consegui isto de um amigo."
+    },
+    "nota": "O -서 do fim é o mesmo de -에서: ele marca origem. Por isso -한테서 nunca significa “para”.",
+    "baralho": false
+  },
+  {
+    "id": "pergunta_subst",
+    "hangul": "질문",
+    "romanizacao": "jilmun",
+    "pt": "pergunta",
+    "modulo": "escola",
+    "classe": "substantivo",
+    "imageabilidade": 2,
+    "topik": 1,
+    "aula": 7,
+    "nivel": 2,
+    "sino": {
+      "질": "質",
+      "문": "問"
+    },
+    "confundiveis": [
+      "palavra_vocabulo",
+      "prova"
+    ],
+    "exemplo": {
+      "ko": "저한테 질문 있어요?",
+      "pt": "Você tem alguma pergunta para mim?"
+    },
+    "nota": "質問 — o mesmo 문 (問) de 문제 (problema, questão). O verbo correspondente é 물어보다.",
+    "baralho": false
+  },
+  {
+    "id": "obter",
+    "hangul": "얻다",
+    "romanizacao": "eotda",
+    "pt": "conseguir, obter",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 7,
+    "nivel": 2,
+    "confundiveis": [
+      "receber",
+      "procurar"
+    ],
+    "exemplo": {
+      "ko": "친구한테서 이거 얻었어요.",
+      "pt": "Consegui isto de um amigo."
+    },
+    "nota": "받다 é receber o que alguém entregou; 얻다 é conseguir, com ou sem alguém do outro lado.",
+    "baralho": false
+  },
+  {
+    "id": "cont_hora",
+    "hangul": "시",
+    "romanizacao": "si",
+    "pt": "hora (contador)",
+    "modulo": "contadores",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 8,
+    "nivel": 2,
+    "campo": "contador",
+    "sino": {
+      "시": "時"
+    },
+    "confundiveis": [
+      "cont_minuto",
+      "cont_generico"
+    ],
+    "exemplo": {
+      "ko": "지금 몇 시예요?",
+      "pt": "Que horas são agora?"
+    },
+    "nota": "Pede número nativo, e encurta os quatro primeiros: 한 시, 두 시, 세 시, 네 시. É o mesmo 시 (時) de 시간.",
+    "baralho": false
+  },
+  {
+    "id": "cont_minuto",
+    "hangul": "분",
+    "romanizacao": "bun",
+    "pt": "minuto (contador)",
+    "modulo": "contadores",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 8,
+    "nivel": 2,
+    "campo": "contador",
+    "sino": {
+      "분": "分"
+    },
+    "confundiveis": [
+      "cont_hora",
+      "cont_generico"
+    ],
+    "exemplo": {
+      "ko": "한 시 십오 분이에요.",
+      "pt": "É uma e quinze."
+    },
+    "nota": "Pede número sino-coreano, ao contrário de 시. É a única frase do idioma em que os dois sistemas convivem.",
+    "baralho": false
+  },
+  {
+    "id": "quantos",
+    "hangul": "몇",
+    "romanizacao": "myeot",
+    "pt": "quanto, quantos",
+    "modulo": "gramatica",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 8,
+    "nivel": 2,
+    "confundiveis": [
+      "quanto_grau",
+      "quanto_custa"
+    ],
+    "exemplo": {
+      "ko": "몇 명 있어요?",
+      "pt": "Quantas pessoas tem?"
+    },
+    "nota": "Vai sempre antes de um contador: 몇 시, 몇 개, 몇 명. Sozinho ele não fica de pé.",
+    "baralho": false
+  },
+  {
+    "id": "metade",
+    "hangul": "반",
+    "romanizacao": "ban",
+    "pt": "meia, metade",
+    "modulo": "numeros",
+    "classe": "numeral",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 8,
+    "nivel": 2,
+    "sino": {
+      "반": "半"
+    },
+    "confundiveis": [
+      "zero_conta",
+      "sino_cem"
+    ],
+    "exemplo": {
+      "ko": "네 시 반에 끝나요.",
+      "pt": "Termina às quatro e meia."
+    },
+    "nota": "半 — o atalho de 삼십 분. O mesmo 반 está em 반값 (metade do preço) e em 반년 (meio ano).",
+    "baralho": false
+  },
+  {
+    "id": "aula_escolar",
+    "hangul": "수업",
+    "romanizacao": "sueop",
+    "pt": "aula",
+    "modulo": "escola",
+    "classe": "substantivo",
+    "imageabilidade": 3,
+    "topik": 1,
+    "aula": 8,
+    "nivel": 2,
+    "sino": {
+      "수": "授",
+      "업": "業"
+    },
+    "confundiveis": [
+      "sala_de_aula",
+      "prova"
+    ],
+    "exemplo": {
+      "ko": "수업이 네 시 반에 끝나요.",
+      "pt": "A aula termina às quatro e meia."
+    },
+    "nota": "授業 — “o trabalho de transmitir”. É a aula como evento; a sala é 교실.",
+    "baralho": false
+  },
+  {
+    "id": "terminar",
+    "hangul": "끝나다",
+    "romanizacao": "kkeunnada",
+    "pt": "terminar, acabar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 8,
+    "nivel": 2,
+    "confundiveis": [
+      "comecar",
+      "sair_passear"
+    ],
+    "exemplo": {
+      "ko": "수업이 끝났어요.",
+      "pt": "A aula terminou."
+    },
+    "nota": "O ㅌ do fim de 끝 desaba em ㄷ e, antes do ㄴ, vira ㄴ: [끈나다]. O oposto é 시작하다.",
+    "baralho": false
+  },
+  {
+    "id": "cont_veiculos",
+    "hangul": "대",
+    "romanizacao": "dae",
+    "pt": "contador de veículos e máquinas",
+    "modulo": "contadores",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 9,
+    "nivel": 2,
+    "campo": "contador",
+    "sino": {
+      "대": "臺"
+    },
+    "confundiveis": [
+      "cont_generico",
+      "cont_garrafas"
+    ],
+    "exemplo": {
+      "ko": "차 한 대 있어요.",
+      "pt": "Tem um carro."
+    },
+    "nota": "臺 é “plataforma, suporte”. É dos poucos contadores que 개 não substitui: 차 한 개 está errado.",
+    "baralho": false
+  },
+  {
+    "id": "cont_garrafas",
+    "hangul": "병",
+    "romanizacao": "byeong",
+    "pt": "contador de garrafas",
+    "modulo": "contadores",
+    "classe": "funcional",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 9,
+    "nivel": 2,
+    "campo": "contador",
+    "sino": {
+      "병": "甁"
+    },
+    "confundiveis": [
+      "cont_copos",
+      "cont_generico"
+    ],
+    "exemplo": {
+      "ko": "콜라 한 병 주세요.",
+      "pt": "Me vê uma garrafa de refrigerante."
+    },
+    "nota": "병 sozinho também é “garrafa”. Não confunda com o 병 de 병원 (hospital), que é outro ideograma.",
+    "baralho": false
+  },
+  {
+    "id": "bala_doce",
+    "hangul": "사탕",
+    "romanizacao": "satang",
+    "pt": "bala, doce",
+    "modulo": "comida",
+    "classe": "substantivo",
+    "imageabilidade": 5,
+    "topik": 1,
+    "aula": 9,
+    "nivel": 2,
+    "confundiveis": [
+      "bolo",
+      "sorvete"
+    ],
+    "exemplo": {
+      "ko": "사탕 몇 개 있어요?",
+      "pt": "Quantas balas tem?"
+    },
+    "nota": "Conta-se com 개, como quase todo objeto pequeno.",
+    "baralho": false
+  },
+  {
+    "id": "soprar",
+    "hangul": "불다",
+    "romanizacao": "bulda",
+    "pt": "soprar (vento)",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 10,
+    "nivel": 2,
+    "confundiveis": [
+      "vir",
+      "correr"
+    ],
+    "exemplo": {
+      "ko": "바람이 불고 있어요.",
+      "pt": "O vento está soprando."
+    },
+    "nota": "O sujeito é o vento, não a pessoa: 바람이 불어요. Para soprar uma vela, o verbo é o mesmo.",
+    "baralho": false
+  },
+  {
+    "id": "video",
+    "hangul": "영상",
+    "romanizacao": "yeongsang",
+    "pt": "vídeo",
+    "modulo": "tecnologia",
+    "classe": "substantivo",
+    "imageabilidade": 4,
+    "topik": 1,
+    "aula": 10,
+    "nivel": 2,
+    "sino": {
+      "영": "映",
+      "상": "像"
+    },
+    "confundiveis": [
+      "filme",
+      "email"
+    ],
+    "exemplo": {
+      "ko": "그 영상 봤어요?",
+      "pt": "Você viu aquele vídeo?"
+    },
+    "nota": "映像 — “imagem projetada”. 영화 é o filme de cinema; 영상 é o vídeo, do clipe ao registro caseiro.",
+    "baralho": false
+  },
+  {
+    "id": "estudar_v",
+    "hangul": "공부하다",
+    "romanizacao": "gongbuhada",
+    "pt": "estudar",
+    "modulo": "acoes",
+    "classe": "verbo",
+    "imageabilidade": 1,
+    "topik": 1,
+    "aula": 10,
+    "nivel": 2,
+    "sino": {
+      "공": "工",
+      "부": "夫"
+    },
+    "confundiveis": [
+      "trabalhar",
+      "ler"
+    ],
+    "exemplo": {
+      "ko": "공부하고 있어요.",
+      "pt": "Estou estudando."
+    },
+    "nota": "É 공부 (estudo) passado pela fábrica de 하다 da aula 22 do Nível 1 — o mesmo caminho de 일하다 e 운동하다.",
+    "baralho": false
   }
 ]

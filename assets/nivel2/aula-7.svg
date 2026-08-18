@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Duas figuras com uma seta cheia de ida e uma seta vazada de volta entre elas">
+  <circle cx="100" cy="100" r="94" fill="#E3E7E2"/>
+  <circle cx="44" cy="66" r="17" fill="#3F6B4E"/>
+  <path d="M19 122a25 25 0 0 1 50 0z" fill="#3F6B4E"/>
+  <circle cx="156" cy="66" r="17" fill="#8A6A3A"/>
+  <path d="M131 122a25 25 0 0 1 50 0z" fill="#8A6A3A"/>
+  <path d="M70 148h44" stroke="#3F6B4E" stroke-width="7" stroke-linecap="round"/>
+  <path d="M110 138l18 10-18 10z" fill="#3F6B4E"/>
+  <path d="M130 176H86" stroke="#8A6A3A" stroke-width="7" stroke-linecap="round"/>
+  <path d="M90 166l-18 10 18 10z" fill="none" stroke="#8A6A3A" stroke-width="6" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Um relógio com o ponteiro das horas e o dos minutos em cores diferentes">
+  <circle cx="100" cy="100" r="94" fill="#E5E7E2"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#7A8B84" stroke-width="7"/>
+  <g stroke="#7A8B84" stroke-width="6" stroke-linecap="round">
+    <path d="M100 44v10"/><path d="M100 146v10"/><path d="M44 100h10"/><path d="M146 100h10"/>
+  </g>
+  <path d="M100 100V64" stroke="#2E5F73" stroke-width="11" stroke-linecap="round"/>
+  <path d="M100 100l38 22" stroke="#B5762F" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="100" cy="100" r="7" fill="#2E5F73"/>
+</svg>
